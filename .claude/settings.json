@@ -1,4 +1,7 @@
 {
+  "sandbox": {
+    "excludedCommands": ["say *", "afplay *"]
+  },
   "hooks": {
     "SessionStart": [
       {
