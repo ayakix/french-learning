@@ -5,6 +5,7 @@
 # 音声は git 管理外のため、clone 直後や教材を追加したときに実行する。
 # say-fr のキャッシュを経由するので、生成済みのテキストはクレジットを消費しない。
 # 各項目の tts（なければ fr）を音声化する。表示用の綴りと読ませたいテキストが違う場合に tts を使う。
+# 項目は入れ子になっていてもよい（例：アクセント記号ごとに例の単語のリストを持つ）。
 set -euo pipefail
 
 root="$(cd "$(dirname "$0")/.." && pwd)"
@@ -15,7 +16,7 @@ if [ $# -lt 1 ]; then
 fi
 
 for yaml in "$@"; do
-  yq -r '.[] | (.tts // .fr) | select(. != null)' "$yaml" | while IFS= read -r text; do
+  yq -r '.. | select(tag == "!!map") | (.tts // .fr) | select(. != null)' "$yaml" | while IFS= read -r text; do
     "$root/scripts/say-fr" --no-play "$text" > /dev/null
     echo "ok: $text"
   done

@@ -1,0 +1,329 @@
+---
+import { getCollection, getEntry } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import { audioUrl } from '../lib/audio';
+
+const ladder = (await getEntry('eLadder', 'ladder'))!.data;
+const ladderSrc = audioUrl(ladder.fr);
+
+const pairs = (await getCollection('eSounds')).map((entry) => ({
+  id: entry.id,
+  close: { ...entry.data.close, src: audioUrl(entry.data.close.fr) },
+  open: { ...entry.data.open, src: audioUrl(entry.data.open.fr) },
+}));
+
+// クイズの出題候補。ブラウザ側でランダムに選ぶ
+const quizItems = pairs.flatMap((p) => [
+  { ...p.close, answer: 'close' },
+  { ...p.open, answer: 'open' },
+]);
+---
+
+<Base title="é と è">
+  <main>
+    <header>
+      <a href="/" class="back">← ホーム</a>
+      <h1>é [e] と è [ɛ]</h1>
+      <p class="lead">
+        日本語の「エ」は、é と è のちょうど中間にあります。<strong>é は「イ」寄り、è は「ア」寄り</strong>の「エ」です。
+      </p>
+    </header>
+
+    <section class="card">
+      <div class="section-head">
+        <h2>1. 口の形：i → é → è → a の階段</h2>
+        <button type="button" class="pill play" data-src={ladderSrc}>▶ お手本</button>
+      </div>
+      <ol class="ladder">
+        {
+          ladder.steps.map((s) => (
+            <li>
+              <span class="mark">{s.mark}</span>
+              <span class="ipa">[{s.ipa}]</span>
+              <span class="mouth">{s.mouth}</span>
+            </li>
+          ))
+        }
+      </ol>
+      <p class="tip">
+        鏡を見ながら、あごを 1 段ずつ下げていく。口の前に指を縦に当てると、è のほうが上下の歯の間が広いことを確かめられる。
+      </p>
+    </section>
+
+    <section class="card">
+      <h2>2. 聞き比べ</h2>
+      <p class="sub">é と è だけが違う単語のペア。左右を交互に聞いて、口の開き方の違いを感じる。</p>
+      <ul class="pairs">
+        {
+          pairs.map((p) => (
+            <li class="pair">
+              {[p.close, p.open].map((w, i) => (
+                <button type="button" class:list={['word', 'play', i === 0 ? 'close' : 'open']} data-src={w.src}>
+                  <span class="tag">{i === 0 ? 'é [e]' : 'è [ɛ]'}</span>
+                  <span class="fr">{w.fr}</span>
+                  <span class="ipa">[{w.ipa}]</span>
+                  <span class="ja">{w.ja}</span>
+                </button>
+              ))}
+            </li>
+          ))
+        }
+      </ul>
+    </section>
+
+    <section class="card" id="quiz" data-items={JSON.stringify(quizItems)}>
+      <h2>3. 聞き取りクイズ</h2>
+      <p class="sub">再生される単語が é [e] か è [ɛ] かを当てる。</p>
+      <div class="quiz-controls">
+        <button type="button" id="quiz-next" class="pill primary">▶ 出題する</button>
+        <button type="button" id="quiz-replay" class="pill" disabled>もう一度聞く</button>
+        <span id="quiz-score" class="score">0 / 0</span>
+      </div>
+      <div class="answers">
+        <button type="button" class="answer close" data-answer="close" disabled>é [e]<small>口を横に引く</small></button>
+        <button type="button" class="answer open" data-answer="open" disabled>è [ɛ]<small>あごを下げる</small></button>
+      </div>
+      <p id="quiz-result" class="result" aria-live="polite"></p>
+    </section>
+  </main>
+</Base>
+
+<script>
+  type QuizItem = { fr: string; ipa: string; ja: string; src: string; answer: 'close' | 'open' };
+
+  // 音声を重ねて鳴らさないよう、Audio は 1 つだけ使い回す
+  const audio = new Audio();
+
+  function play(src: string, button?: Element) {
+    document.querySelectorAll('.play').forEach((b) => b.classList.toggle('playing', b === button));
+    audio.src = src;
+    audio.onended = () => button?.classList.remove('playing');
+    audio.play().catch(() => {});
+  }
+
+  document.querySelectorAll<HTMLButtonElement>('.play').forEach((button) =>
+    button.addEventListener('click', () => play(button.dataset.src!, button)),
+  );
+
+  // クイズ
+  const quiz = document.querySelector<HTMLElement>('#quiz')!;
+  const items: QuizItem[] = JSON.parse(quiz.dataset.items!);
+  const nextButton = document.querySelector<HTMLButtonElement>('#quiz-next')!;
+  const replayButton = document.querySelector<HTMLButtonElement>('#quiz-replay')!;
+  const answerButtons = [...document.querySelectorAll<HTMLButtonElement>('.answer')];
+  const scoreLabel = document.querySelector<HTMLElement>('#quiz-score')!;
+  const resultLabel = document.querySelector<HTMLElement>('#quiz-result')!;
+
+  let current: QuizItem | null = null;
+  let correct = 0;
+  let total = 0;
+
+  function ask() {
+    // 同じ単語が連続すると答えを推測できてしまうので、直前と違うものを選ぶ
+    const candidates = items.filter((i) => i !== current);
+    current = candidates[Math.floor(Math.random() * candidates.length)];
+    resultLabel.textContent = '';
+    resultLabel.className = 'result';
+    answerButtons.forEach((b) => (b.disabled = false));
+    replayButton.disabled = false;
+    nextButton.textContent = '▶ 次の問題';
+    play(current.src);
+  }
+
+  function answer(choice: string) {
+    if (!current) return;
+    total++;
+    const ok = choice === current.answer;
+    if (ok) correct++;
+    scoreLabel.textContent = `${correct} / ${total}`;
+    resultLabel.className = `result ${ok ? 'ok' : 'ng'}`;
+    resultLabel.textContent = `${ok ? '正解！' : '残念…'} ${current.fr} [${current.ipa}]（${current.ja}）は ${
+      current.answer === 'close' ? 'é [e]' : 'è [ɛ]'
+    }`;
+    answerButtons.forEach((b) => (b.disabled = true));
+  }
+
+  nextButton.addEventListener('click', ask);
+  replayButton.addEventListener('click', () => current && play(current.src));
+  answerButtons.forEach((b) => b.addEventListener('click', () => answer(b.dataset.answer!)));
+</script>
+
+<style>
+  main {
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 24px 16px 48px;
+  }
+  .back {
+    font-size: 0.9rem;
+    text-decoration: none;
+  }
+  h1 {
+    margin: 8px 0 4px;
+  }
+  h2 {
+    font-size: 1.1rem;
+    margin: 0;
+  }
+  .lead {
+    color: var(--muted);
+    margin: 0 0 20px;
+  }
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 16px;
+    margin-bottom: 16px;
+  }
+  .section-head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+  }
+  .sub,
+  .tip {
+    color: var(--muted);
+    font-size: 0.9rem;
+    margin: 4px 0 12px;
+  }
+  button {
+    font: inherit;
+    color: inherit;
+    cursor: pointer;
+  }
+  .pill {
+    padding: 6px 16px;
+    border-radius: 999px;
+    border: 1px solid var(--accent);
+    background: none;
+    color: var(--accent);
+    font-weight: 600;
+  }
+  .pill.primary {
+    background: var(--accent);
+    color: var(--bg);
+  }
+  .pill:disabled {
+    opacity: 0.4;
+    cursor: default;
+  }
+  .pill.playing {
+    background: var(--accent-soft);
+  }
+  .ladder {
+    list-style: none;
+    padding: 0;
+    margin: 12px 0 0;
+    display: grid;
+    gap: 6px;
+  }
+  .ladder li {
+    display: grid;
+    grid-template-columns: 2.5em 3em 1fr;
+    align-items: baseline;
+    gap: 8px;
+  }
+  .mark {
+    font-size: 1.6rem;
+    font-weight: 700;
+  }
+  .ipa {
+    font-family: 'Charis SIL', 'Doulos SIL', 'Times New Roman', serif;
+  }
+  .mouth {
+    font-size: 0.92rem;
+  }
+  .pairs {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 10px;
+  }
+  .pair {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  .word {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 12px;
+    border: 2px solid var(--border);
+    border-radius: 12px;
+    background: var(--bg);
+    text-align: left;
+  }
+  .word:hover,
+  .word.playing {
+    border-color: var(--accent);
+  }
+  .word.playing {
+    background: var(--accent-soft);
+  }
+  .tag {
+    font-size: 0.75rem;
+    color: var(--muted);
+  }
+  .fr {
+    font-size: 1.4rem;
+    font-weight: 700;
+  }
+  .ja {
+    font-size: 0.85rem;
+  }
+  .quiz-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 12px;
+  }
+  .score {
+    margin-left: auto;
+    font-weight: 600;
+  }
+  .answers {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  .answer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 14px;
+    border: 2px solid var(--border);
+    border-radius: 12px;
+    background: var(--bg);
+    font-size: 1.3rem;
+    font-weight: 700;
+  }
+  .answer small {
+    font-size: 0.78rem;
+    font-weight: 400;
+    color: var(--muted);
+  }
+  .answer:not(:disabled):hover {
+    border-color: var(--accent);
+  }
+  .answer:disabled {
+    opacity: 0.5;
+    cursor: default;
+  }
+  .result {
+    min-height: 1.6em;
+    margin: 12px 0 0;
+    font-weight: 600;
+  }
+  .result.ok {
+    color: var(--accent);
+  }
+  .result.ng {
+    color: var(--caution);
+  }
+</style>

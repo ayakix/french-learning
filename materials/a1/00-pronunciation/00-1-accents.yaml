@@ -1,0 +1,52 @@
+# 00-1 アクセント記号（Web アプリのアクセント記号画面のデータ）
+# id: 識別子 / marks: 記号のつく文字 / fr: 記号の名前（音声化する） / role: 役割
+# words: 例の単語（fr: 綴り・音声化するテキスト / ja: 意味 / ipa: 発音記号 / note: ポイント）
+- id: aigu
+  marks: "é"
+  fr: "accent aigu"
+  role: "常に [e]。口を横に引いた「エ」"
+  words:
+    - { fr: "café", ja: "コーヒー", ipa: "kafe", note: "最後の é で口を横に引く" }
+    - { fr: "été", ja: "夏", ipa: "ete", note: "2 つとも [e]" }
+- id: grave
+  marks: "è à ù"
+  fr: "accent grave"
+  role: "è は [ɛ]（口を縦に開けた「エ」）。à・ù は音は変わらず、意味を区別する"
+  words:
+    - { fr: "très", ja: "とても", ipa: "tʁɛ", note: "口を縦に開ける" }
+    - { fr: "mère", ja: "母", ipa: "mɛʁ", note: "語末の e は読まない" }
+    - { fr: "à", ja: "〜に、〜で", ipa: "a", note: "a（avoir の活用）と音は同じ" }
+    - { fr: "où", ja: "どこ", ipa: "u", note: "ou（または）と音は同じ" }
+- id: circonflexe
+  marks: "â ê î ô û"
+  fr: "accent circonflexe"
+  role: "ê は [ɛ]。多くは昔あった s の名残"
+  words:
+    - { fr: "fête", ja: "祭り", ipa: "fɛt", note: "ê は è と同じ音" }
+    - { fr: "forêt", ja: "森", ipa: "fɔʁɛ", note: "英語の forest の s が消えた形" }
+    - { fr: "hôpital", ja: "病院", ipa: "opital", note: "英語の hospital の s が消えた形" }
+- id: trema
+  marks: "ë ï ü"
+  fr: "tréma"
+  role: "前の母音と切り離して読む"
+  words:
+    - { fr: "Noël", ja: "クリスマス", ipa: "nɔɛl", note: "o と e を別々に読む" }
+    - { fr: "naïf", ja: "素朴な", ipa: "naif", note: "a と i を別々に読む（ai を [ɛ] と読まない）" }
+- id: cedille
+  marks: "ç"
+  fr: "cédille"
+  role: "c を [s] で読む（a・o・u の前で使う）"
+  words:
+    - { fr: "ça", ja: "それ", ipa: "sa", note: "ç がないと [ka] になる" }
+    - { fr: "français", ja: "フランス語", ipa: "fʁɑ̃sɛ" }
+    - { fr: "garçon", ja: "男の子", ipa: "ɡaʁsɔ̃" }
+# œ はアクセント記号ではなく合字（2 文字を 1 文字にしたもの）だが、A1 でもよく使うので一緒に扱う。
+# 同じ合字の æ と、記号付きの ÿ は、使う場面がほとんどないため載せていない。
+- id: ligature
+  marks: "œ"
+  fr: "e dans l'o"
+  role: "o と e をくっつけた文字（合字）。œu は唇を丸めた「エ」[œ] / [ø]"
+  words:
+    - { fr: "sœur", ja: "姉・妹", ipa: "sœʁ", note: "œu で 1 つの音" }
+    - { fr: "cœur", ja: "心・心臓", ipa: "kœʁ" }
+    - { fr: "œuf", ja: "卵", ipa: "œf", note: "単語の最初に来ることもある" }

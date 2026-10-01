@@ -14,4 +14,36 @@ const alphabet = defineCollection({
   }),
 });
 
-export const collections = { alphabet };
+const accents = defineCollection({
+  loader: file('../../materials/a1/00-pronunciation/00-1-accents.yaml'),
+  schema: z.object({
+    marks: z.string(),
+    fr: z.string(),
+    role: z.string(),
+    words: z.array(
+      z.object({
+        fr: z.string(),
+        ja: z.string(),
+        ipa: z.string(),
+        note: z.string().optional(),
+      }),
+    ),
+  }),
+});
+
+const word = z.object({ fr: z.string(), ipa: z.string(), ja: z.string() });
+
+const eSounds = defineCollection({
+  loader: file('../../materials/a1/00-pronunciation/00-1-e-sounds.yaml'),
+  schema: z.object({ close: word, open: word }),
+});
+
+const eLadder = defineCollection({
+  loader: file('../../materials/a1/00-pronunciation/00-1-e-ladder.yaml'),
+  schema: z.object({
+    fr: z.string(),
+    steps: z.array(z.object({ mark: z.string(), ipa: z.string(), mouth: z.string() })),
+  }),
+});
+
+export const collections = { alphabet, accents, eSounds, eLadder };

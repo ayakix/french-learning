@@ -1,4 +1,5 @@
 {
+  "promptSuggestionEnabled": false,
   "sandbox": {
     "excludedCommands": ["say *", "afplay *", "scripts/say-fr *"]
   },
