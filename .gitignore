@@ -1,0 +1,13 @@
+# 音声はテキストから再生成できるため git に入れない（リポジトリ肥大化の防止）
+*.mp3
+*.wav
+*.m4a
+*.ogg
+
+# 秘密情報（APIキーなど）
+.env
+.env.*
+
+# OS / ツール
+.DS_Store
+node_modules/
