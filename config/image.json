@@ -1,5 +1,5 @@
 {
-  "model_id": "gemini-3.1-flash-image",
-  "width": 1024,
+  "model_id": "gemini-3.1-flash-lite-image",
+  "width": 768,
   "webp_quality": 80
 }

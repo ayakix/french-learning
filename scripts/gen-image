@@ -3,7 +3,7 @@
 # 使い方: scripts/gen-image <出力先.webp> "<プロンプト>"
 # 例:     scripts/gen-image materials/a1/01-greetings/images/cafe-terrace.webp "A Parisian café terrace..."
 #
-# 生成元の画像は約 1MB あり、リポジトリが重くなるので、幅と品質を落とした WebP（約 80KB）だけを残す。
+# 生成元の画像は約 1MB あり、リポジトリが重くなるので、幅と品質を落とした WebP（約 40KB）だけを残す。
 # 生成には料金がかかるため、既存のファイルは上書きしない（作り直すときは先に削除する）。
 set -euo pipefail
 
