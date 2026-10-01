@@ -50,4 +50,8 @@ total_minutes: 0
 ## 教材
 
 - 音声ファイルは git に入れない（.gitignore 済み）。テキストから再生成できる形で残す
+- フランス語の再生は `scripts/say-fr "テキスト"` を使う（ElevenLabs・Nicolas・eleven_v4、`.cache/tts/` にキャッシュ）
+  - Starter プラン（月約 30k クレジット）のため、不要な再生成は避ける
+  - ボイスとモデルは `config/tts.json`。変えると音声のファイル名（ハッシュ）が変わり、全音声の再生成が必要になる
+- Web アプリで使う教材は `materials/` に YAML で置き、`scripts/gen-audio <yaml>` で音声を生成する（詳細は `apps/web/README.md`）
 - APIキーなどの秘密情報は `.env` に置き、絶対にコミットしない（公開リポジトリのため）

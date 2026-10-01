@@ -1,6 +1,6 @@
 {
   "sandbox": {
-    "excludedCommands": ["say *", "afplay *"]
+    "excludedCommands": ["say *", "afplay *", "scripts/say-fr *"]
   },
   "hooks": {
     "SessionStart": [

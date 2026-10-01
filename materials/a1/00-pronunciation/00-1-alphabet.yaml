@@ -1,0 +1,35 @@
+# 00-1 アルファベット（Web アプリのアルファベット画面のデータ）
+# id: 文字 / ipa: 発音記号 / tts: 音声化するテキスト / caution: 英語の読み方につられやすい文字 / note: 注意点
+#
+# tts には文字そのもの（"Z." など）ではなく、文字の名前の綴り（"zède" など）を渡す。
+# 大文字 1 文字だと TTS が別の読み方をするため：
+#   - 「I.」がローマ数字の un と読まれ、「Z.」も誤読された（2026-10-01）
+#   - 他にも V・X・L・C・D はローマ数字、M. は Monsieur の略、Y は単語 y [i]「そこに」と読まれうる
+# E だけは「E.」のまま。名前の綴り e / eu は、単語 et や別の音 [ø] と紛れるため。
+# M・N は名前の綴り emme・enne が「オム」「オヌ」のように誤読されたため、同じ発音の単語 aime [ɛm]・haine [ɛn] を使う。
+- { id: A, ipa: "a", tts: "a" }
+- { id: B, ipa: "be", tts: "bé" }
+- { id: C, ipa: "se", tts: "cé", note: "英語の「スィー」ではない" }
+- { id: D, ipa: "de", tts: "dé" }
+- { id: E, ipa: "ə", tts: "E.", caution: true, note: "力を抜いた弱い音。英語の「イー」ではない" }
+- { id: F, ipa: "ɛf", tts: "effe" }
+- { id: G, ipa: "ʒe", tts: "gé", caution: true, note: "「エ」で終わる。J と逆に感じやすい" }
+- { id: H, ipa: "aʃ", tts: "ache", caution: true, note: "英語の「エイチ」ではない" }
+- { id: I, ipa: "i", tts: "i", caution: true, note: "「イ」。英語の「アイ」ではない" }
+- { id: J, ipa: "ʒi", tts: "ji", caution: true, note: "「イ」で終わる。G と逆に感じやすい" }
+- { id: K, ipa: "ka", tts: "ka" }
+- { id: L, ipa: "ɛl", tts: "elle" }
+- { id: M, ipa: "ɛm", tts: "aime" }
+- { id: N, ipa: "ɛn", tts: "haine" }
+- { id: O, ipa: "o", tts: "o" }
+- { id: P, ipa: "pe", tts: "pé" }
+- { id: Q, ipa: "ky", tts: "cu", caution: true, note: "唇を丸めて「キ」。英語の「キュー」ではない" }
+- { id: R, ipa: "ɛʁ", tts: "erre", caution: true, note: "「エ」＋喉の奥をこする音" }
+- { id: S, ipa: "ɛs", tts: "esse" }
+- { id: T, ipa: "te", tts: "té" }
+- { id: U, ipa: "y", tts: "u", caution: true, note: "唇を丸めて「イ」。英語の「ユー」ではない" }
+- { id: V, ipa: "ve", tts: "vé" }
+- { id: W, ipa: "dubləve", tts: "double vé", caution: true, note: "double V（2 つの V）という意味" }
+- { id: X, ipa: "iks", tts: "ixe" }
+- { id: Y, ipa: "iɡʁɛk", tts: "i grec", caution: true, note: "i grec（ギリシャの i）という意味" }
+- { id: Z, ipa: "zɛd", tts: "zède", note: "英語の「ズィー」ではない" }

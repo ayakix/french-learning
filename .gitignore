@@ -3,6 +3,7 @@
 *.wav
 *.m4a
 *.ogg
+.cache/
 
 # 秘密情報（APIキーなど）
 .env

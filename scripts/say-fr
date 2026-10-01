@@ -1,0 +1,58 @@
+#!/bin/bash
+# フランス語のテキストを ElevenLabs で音声化して再生する。
+# 使い方: scripts/say-fr "Bonjour"
+#         scripts/say-fr --no-play "Bonjour"   # 再生せず、音声ファイルのパスを出力する
+#
+# 同じテキストを再生成するとクレジットを消費するため、音声は .cache/tts/ に保存して使い回す。
+# キャッシュのキーにボイスとモデルを含めるのは、どちらかを変えたときに古い音声を再生しないため。
+set -euo pipefail
+
+root="$(cd "$(dirname "$0")/.." && pwd)"
+
+play=true
+if [ "${1:-}" = "--no-play" ]; then
+  play=false
+  shift
+fi
+
+if [ $# -lt 1 ] || [ -z "$1" ]; then
+  echo "使い方: scripts/say-fr [--no-play] \"フランス語のテキスト\"" >&2
+  exit 1
+fi
+text="$1"
+
+set -a
+. "$root/.env"
+set +a
+
+# ボイスはライブラリの利用データで選定した Nicolas - Narrator（fr-FR）。経緯は journal/2026/10/2026-10-01.md
+# Web アプリも同じ設定から音声ファイル名（ハッシュ）を計算するため、設定は config/tts.json に一本化している
+voice="${ELEVENLABS_VOICE_ID:-$(jq -r .voice_id "$root/config/tts.json")}"
+model="${ELEVENLABS_MODEL_ID:-$(jq -r .model_id "$root/config/tts.json")}"
+
+cache_dir="$root/.cache/tts"
+key=$(printf '%s|%s|%s' "$model" "$voice" "$text" | shasum -a 256 | cut -c1-16)
+file="$cache_dir/$key.mp3"
+
+if [ ! -f "$file" ]; then
+  mkdir -p "$cache_dir"
+  tmp="$file.tmp"
+  status=$(jq -n --arg text "$text" --arg model "$model" '{text: $text, model_id: $model}' |
+    curl -sS "https://api.elevenlabs.io/v1/text-to-speech/$voice?output_format=mp3_44100_128" \
+      -H "xi-api-key: $ELEVENLABS_API_KEY" \
+      -H 'Content-Type: application/json' \
+      -d @- -o "$tmp" -w '%{http_code}')
+  if [ "$status" != "200" ]; then
+    echo "ElevenLabs エラー (HTTP $status):" >&2
+    cat "$tmp" >&2
+    rm -f "$tmp"
+    exit 1
+  fi
+  mv "$tmp" "$file"
+fi
+
+if $play; then
+  afplay "$file"
+else
+  echo "$file"
+fi

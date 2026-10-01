@@ -1,0 +1,246 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import { audioUrl } from '../lib/audio';
+
+const letters = (await getCollection('alphabet')).map((entry) => ({
+  letter: entry.id,
+  ...entry.data,
+  src: audioUrl(entry.data.tts),
+}));
+---
+
+<Base title="アルファベット">
+  <main>
+    <header>
+      <a href="/" class="back">← ホーム</a>
+      <h1>アルファベット</h1>
+      <p class="lead">
+        カードをクリック（またはキーボードで文字を押す）と発音を再生します。オレンジ色は英語の読み方につられやすい文字です。
+      </p>
+    </header>
+
+    <div class="controls">
+      <button id="play-all" type="button" class="primary">▶ 通しで再生</button>
+      <label>
+        間隔
+        <select id="gap">
+          <option value="300">短い</option>
+          <option value="800" selected>ふつう</option>
+          <option value="2000">長い（まねする時間）</option>
+        </select>
+      </label>
+      <label><input id="loop" type="checkbox" /> 繰り返す</label>
+      <label><input id="caution-only" type="checkbox" /> 要注意の文字だけ</label>
+    </div>
+
+    <ul class="grid">
+      {
+        letters.map((l) => (
+          <li>
+            <button
+              type="button"
+              class:list={['card', { caution: l.caution }]}
+              data-letter={l.letter}
+              data-src={l.src}
+              data-caution={l.caution ? 'true' : 'false'}
+            >
+              <span class="letter">{l.letter}</span>
+              <span class="ipa">[{l.ipa}]</span>
+              {l.note && <span class="note">{l.note}</span>}
+            </button>
+          </li>
+        ))
+      }
+    </ul>
+
+    <p class="hint">
+      ショートカット：A〜Z のキーでその文字を再生 / スペースキーで通し再生の開始・停止
+    </p>
+  </main>
+</Base>
+
+<script>
+  const cards = [...document.querySelectorAll<HTMLButtonElement>('.card')];
+  const playAllButton = document.querySelector<HTMLButtonElement>('#play-all')!;
+  const gapSelect = document.querySelector<HTMLSelectElement>('#gap')!;
+  const loopCheckbox = document.querySelector<HTMLInputElement>('#loop')!;
+  const cautionOnly = document.querySelector<HTMLInputElement>('#caution-only')!;
+
+  // 音声を重ねて鳴らさないよう、Audio は 1 つだけ使い回す
+  const audio = new Audio();
+  let playingAll = false;
+  let nextTimer: number | undefined;
+
+  function highlight(card: HTMLButtonElement | null) {
+    cards.forEach((c) => c.classList.toggle('playing', c === card));
+  }
+
+  function play(card: HTMLButtonElement): Promise<void> {
+    highlight(card);
+    audio.src = card.dataset.src!;
+    return new Promise((resolve) => {
+      audio.onended = () => resolve();
+      audio.onerror = () => resolve();
+      audio.play().catch(() => resolve());
+    });
+  }
+
+  function visibleCards() {
+    return cards.filter((c) => !cautionOnly.checked || c.dataset.caution === 'true');
+  }
+
+  function stopAll() {
+    playingAll = false;
+    clearTimeout(nextTimer);
+    audio.pause();
+    highlight(null);
+    playAllButton.textContent = '▶ 通しで再生';
+  }
+
+  async function playAll() {
+    playingAll = true;
+    playAllButton.textContent = '■ 停止';
+    do {
+      for (const card of visibleCards()) {
+        if (!playingAll) return;
+        await play(card);
+        // 「間隔」はまねして声に出す時間。最後の文字の後も待つのは、繰り返し時に区切りを作るため
+        await new Promise<void>((r) => (nextTimer = window.setTimeout(r, Number(gapSelect.value))));
+      }
+    } while (playingAll && loopCheckbox.checked);
+    stopAll();
+  }
+
+  cards.forEach((card) =>
+    card.addEventListener('click', () => {
+      stopAll();
+      play(card).then(() => highlight(null));
+    }),
+  );
+
+  playAllButton.addEventListener('click', () => (playingAll ? stopAll() : playAll()));
+
+  cautionOnly.addEventListener('change', () => {
+    cards.forEach((c) => {
+      c.closest('li')!.hidden = cautionOnly.checked && c.dataset.caution !== 'true';
+    });
+  });
+
+  document.addEventListener('keydown', (e) => {
+    if (e.metaKey || e.ctrlKey || e.altKey) return;
+    if (e.target instanceof HTMLSelectElement || e.target instanceof HTMLInputElement) return;
+    if (e.key === ' ') {
+      e.preventDefault();
+      playingAll ? stopAll() : playAll();
+      return;
+    }
+    const card = cards.find((c) => c.dataset.letter === e.key.toUpperCase());
+    if (card) {
+      stopAll();
+      play(card).then(() => highlight(null));
+    }
+  });
+</script>
+
+<style>
+  main {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 24px 16px 48px;
+  }
+  .back {
+    font-size: 0.9rem;
+    text-decoration: none;
+  }
+  h1 {
+    margin: 8px 0 4px;
+  }
+  .lead {
+    color: var(--muted);
+    margin: 0 0 20px;
+  }
+  .controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px 20px;
+    align-items: center;
+    margin-bottom: 20px;
+    font-size: 0.95rem;
+  }
+  .controls select {
+    margin-left: 4px;
+    font: inherit;
+  }
+  .primary {
+    font: inherit;
+    font-weight: 600;
+    padding: 8px 18px;
+    border-radius: 999px;
+    border: none;
+    background: var(--accent);
+    color: var(--bg);
+    cursor: pointer;
+  }
+  .grid {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+    gap: 12px;
+  }
+  .card {
+    width: 100%;
+    height: 100%;
+    min-height: 140px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+    padding: 14px 10px;
+    border: 2px solid var(--border);
+    border-radius: 14px;
+    background: var(--surface);
+    color: inherit;
+    font: inherit;
+    cursor: pointer;
+    transition:
+      border-color 0.15s,
+      background 0.15s,
+      transform 0.15s;
+  }
+  .card:hover {
+    border-color: var(--accent);
+  }
+  .card.caution {
+    border-color: var(--caution);
+    background: var(--caution-soft);
+  }
+  .card.playing {
+    border-color: var(--accent);
+    background: var(--accent-soft);
+    transform: scale(1.04);
+  }
+  .letter {
+    font-size: 2.6rem;
+    font-weight: 700;
+    line-height: 1.1;
+  }
+  .ipa {
+    font-size: 1.15rem;
+    font-family: 'Charis SIL', 'Doulos SIL', 'Times New Roman', serif;
+  }
+  .note {
+    margin-top: 6px;
+    font-size: 0.78rem;
+    color: var(--muted);
+    text-align: center;
+    line-height: 1.4;
+  }
+  .hint {
+    margin-top: 24px;
+    font-size: 0.85rem;
+    color: var(--muted);
+  }
+</style>
