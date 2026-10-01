@@ -54,4 +54,19 @@ total_minutes: 0
   - Starter プラン（月約 30k クレジット）のため、不要な再生成は避ける
   - ボイスとモデルは `config/tts.json`。変えると音声のファイル名（ハッシュ）が変わり、全音声の再生成が必要になる
 - Web アプリで使う教材は `materials/` に YAML で置き、`scripts/gen-audio <yaml>` で音声を生成する（詳細は `apps/web/README.md`）
-- APIキーなどの秘密情報は `.env` に置き、絶対にコミットしない（公開リポジトリのため）
+
+### 画像
+
+- 画像は Gemini で生成する：`scripts/gen-image <出力先.webp> "<プロンプト>"`（モデル・幅・品質は `config/image.json`）
+  - 自動で WebP（幅 1024px・品質 80、約 20〜80KB）に変換される。**WebP は git にコミットする**（音声と違い、同じプロンプトでも同じ画像は再生成できないため）
+  - 生成には料金がかかるので、既存のファイルは上書きしない
+- 置き場所：単元ごとに `materials/<レベル>/<単元>/images/<id>.webp`
+  - 画像ごとのプロンプトと、答えてほしい語彙・表現は、同じ単元の YAML に書く（評価・添削に使う）
+- Claude は生成した画像を Read で確認できる。プロンプトにない物が描かれることもあるので、評価の前に必ず画像を確認する
+
+## 秘密情報
+
+- API キーは `.env` に置き、絶対にコミットしない（公開リポジトリのため）
+  - `ELEVENLABS_API_KEY`：TTS（権限：Text to Speech / Voices / Models / User）
+  - `GEMINI_API_KEY`：画像生成（Google AI Studio で発行した Gemini API のキー）
+- ユーザーにキーを入力してもらうときは、チャットに貼らず `.env` を直接編集してもらう（会話のログに残るため）

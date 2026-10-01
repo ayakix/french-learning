@@ -1,0 +1,62 @@
+#!/bin/bash
+# Gemini で画像を生成し、WebP に変換して保存する（WebP は git にコミットする）。
+# 使い方: scripts/gen-image <出力先.webp> "<プロンプト>"
+# 例:     scripts/gen-image materials/a1/01-greetings/images/cafe-terrace.webp "A Parisian café terrace..."
+#
+# 生成元の画像は約 1MB あり、リポジトリが重くなるので、幅と品質を落とした WebP（約 80KB）だけを残す。
+# 生成には料金がかかるため、既存のファイルは上書きしない（作り直すときは先に削除する）。
+set -euo pipefail
+
+root="$(cd "$(dirname "$0")/.." && pwd)"
+
+if [ $# -ne 2 ] || [ -z "$2" ]; then
+  echo "使い方: scripts/gen-image <出力先.webp> \"<プロンプト>\"" >&2
+  exit 1
+fi
+out="$1"
+prompt="$2"
+
+case "$out" in
+  *.webp) ;;
+  *) echo "出力先は .webp にしてください: $out" >&2; exit 1 ;;
+esac
+if [ -e "$out" ]; then
+  echo "すでに存在します（作り直す場合は先に削除）: $out" >&2
+  exit 1
+fi
+
+set -a
+. "$root/.env"
+set +a
+
+config="$root/config/image.json"
+model="$(jq -r .model_id "$config")"
+width="$(jq -r .width "$config")"
+quality="$(jq -r .webp_quality "$config")"
+
+tmp="$(mktemp -d)"
+trap 'rm -rf "$tmp"' EXIT
+
+status=$(jq -n --arg p "$prompt" '{contents: [{parts: [{text: $p}]}]}' |
+  curl -sS "https://generativelanguage.googleapis.com/v1beta/models/$model:generateContent" \
+    -H "x-goog-api-key: $GEMINI_API_KEY" \
+    -H 'Content-Type: application/json' \
+    -d @- -o "$tmp/response.json" -w '%{http_code}')
+if [ "$status" != "200" ]; then
+  echo "Gemini エラー (HTTP $status):" >&2
+  jq -r '.error.message // .' "$tmp/response.json" >&2
+  exit 1
+fi
+
+# 画像が返らず、テキストだけが返ることがある（安全フィルタなど）
+data=$(jq -r '[.candidates[0].content.parts[]? | select(.inlineData) | .inlineData.data][0] // empty' "$tmp/response.json")
+if [ -z "$data" ]; then
+  echo "画像が生成されませんでした。応答:" >&2
+  jq -r '[.candidates[0].content.parts[]?.text // empty] | join("\n")' "$tmp/response.json" >&2
+  exit 1
+fi
+
+printf '%s' "$data" | base64 -d > "$tmp/original"
+mkdir -p "$(dirname "$out")"
+cwebp -quiet -q "$quality" -resize "$width" 0 "$tmp/original" -o "$out"
+echo "$out ($(du -h "$out" | cut -f1 | tr -d ' '))"
