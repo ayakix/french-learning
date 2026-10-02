@@ -1,6 +1,7 @@
 ---
 import { getCollection, type CollectionEntry } from 'astro:content';
 import Base from '../../layouts/Base.astro';
+import MistakeList from '../../components/MistakeList.astro';
 import { audioUrl } from '../../lib/audio';
 
 export async function getStaticPaths() {
@@ -37,7 +38,7 @@ const quizItems = quiz.map((q) => ({ ...q, ...splitShow(q.show), src: audioUrl(q
       <h2>1. ルール</h2>
       <table class="rules">
         <thead>
-          <tr><th>位置</th><th>読み方</th><th>例（クリックで再生）</th></tr>
+          <tr><th>条件</th><th>読み方</th><th>例（クリックで再生）</th></tr>
         </thead>
         <tbody>
           {
@@ -85,11 +86,14 @@ const quizItems = quiz.map((q) => ({ ...q, ...splitShow(q.show), src: audioUrl(q
         }
       </div>
       <p id="quiz-result" class="result" aria-live="polite"></p>
+      <MistakeList />
     </section>
   </main>
 </Base>
 
 <script>
+  import { createMistakeList } from '../../scripts/mistakes';
+
   type QuizItem = {
     fr: string;
     ipa: string;
@@ -125,16 +129,24 @@ const quizItems = quiz.map((q) => ({ ...q, ...splitShow(q.show), src: audioUrl(q
   const wordLabel = document.querySelector<HTMLElement>('#quiz-word')!;
   const resultLabel = document.querySelector<HTMLElement>('#quiz-result')!;
 
+  const mistakes = createMistakeList(play);
+
   let current: QuizItem | null = null;
   let correct = 0;
   let total = 0;
+
+  // innerHTML ではなく要素として組み立てる（データに < などが含まれても表示が崩れないように）
+  function highlighted(item: QuizItem) {
+    const span = document.createElement('span');
+    span.append(item.before, Object.assign(document.createElement('mark'), { textContent: item.target }), item.after);
+    return span;
+  }
 
   function ask() {
     // 同じ問題が連続しないよう、直前と違うものを選ぶ
     const candidates = items.filter((i) => i !== current);
     current = candidates[Math.floor(Math.random() * candidates.length)];
-    // innerHTML ではなく要素として組み立てる（データに < などが含まれても表示が崩れないように）
-    wordLabel.replaceChildren(current.before, Object.assign(document.createElement('mark'), { textContent: current.target }), current.after);
+    wordLabel.replaceChildren(highlighted(current));
     resultLabel.textContent = '';
     resultLabel.className = 'result';
     answerButtons.forEach((b) => (b.disabled = false));
@@ -151,6 +163,17 @@ const quizItems = quiz.map((q) => ({ ...q, ...splitShow(q.show), src: audioUrl(q
     resultLabel.textContent = `${ok ? '正解！' : '残念…'} 答えは「${choiceName[current.answer]}」：${current.fr} [${current.ipa}]（${current.ja}）`;
     answerButtons.forEach((b) => (b.disabled = true));
     play(current.src);
+    if (!ok) {
+      mistakes.add({
+        // 同じ単語でも判断する箇所が違えば別の問題（bell{e} と b{e}lle）なので、強調した位置も含めて区別する
+        key: `${current.fr}|${current.before}|${current.target}`,
+        word: highlighted(current),
+        detail: `[${current.ipa}] ${current.ja}`,
+        chosen: choiceName[choice],
+        correct: choiceName[current.answer],
+        src: current.src,
+      });
+    }
   }
 
   nextButton.addEventListener('click', ask);

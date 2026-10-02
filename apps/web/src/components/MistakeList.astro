@@ -1,0 +1,71 @@
+---
+// クイズで間違えた問題の一覧。中身は src/scripts/mistakes.ts の createMistakeList で追加する。
+// 何を間違えたかが残らないと復習できないため、聞き比べ画面と読み方ルール画面の両方で使う。
+---
+
+<div id="mistakes" class="mistakes" hidden>
+  <h3>間違えた問題 <span class="count"></span></h3>
+  <ul></ul>
+</div>
+
+<style>
+  .mistakes {
+    margin-top: 16px;
+    border-top: 1px solid var(--border);
+    padding-top: 12px;
+  }
+  h3 {
+    font-size: 0.95rem;
+    margin: 0 0 8px;
+    color: var(--caution);
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    gap: 6px;
+  }
+  ul :global(button) {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 4px 12px;
+    padding: 8px 12px;
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    background: var(--bg);
+    font: inherit;
+    color: inherit;
+    text-align: left;
+    cursor: pointer;
+  }
+  ul :global(button:hover),
+  ul :global(button.playing) {
+    border-color: var(--accent);
+  }
+  ul :global(.m-word) {
+    font-weight: 700;
+    font-size: 1.1rem;
+  }
+  ul :global(.m-word mark) {
+    background: var(--caution-soft);
+    color: var(--caution);
+    border-radius: 4px;
+    padding: 0 1px;
+  }
+  ul :global(.m-detail) {
+    font-size: 0.85rem;
+    color: var(--muted);
+  }
+  ul :global(.m-answer) {
+    font-size: 0.85rem;
+    margin-left: auto;
+  }
+  ul :global(.m-times) {
+    font-size: 0.8rem;
+    font-weight: 700;
+    color: var(--caution);
+  }
+</style>

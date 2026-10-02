@@ -1,0 +1,58 @@
+# 00-3 複数の文字で 1 つの音を表す綴り（Web アプリの読み方ルール画面 /rules/vowels のデータ）
+# 形式は 00-2-e-rules.yaml と同じ
+#
+# eu / œu の [ø] と [œ] は、A1 では区別できなくても通じるので、選択肢は 1 つにまとめている。
+slug: vowels
+title: "複数の文字で 1 つの音を表す綴り"
+lead: "母音の文字が並ぶと、まとめて 1 つの音で読みます。ローマ字読みで「ア・イ」と分けて読まないのがポイントです。"
+choices:
+  - { id: u, name: "[u]", hint: "唇を突き出す「ウ」" }
+  - { id: e, name: "[ɛ]", hint: "あごを下げた「エ」" }
+  - { id: o, name: "[o]", hint: "唇をすぼめた「オ」" }
+  - { id: eu, name: "[ø] / [œ]", hint: "唇を丸めた「エ」" }
+  - { id: wa, name: "[wa]", hint: "「ワ」" }
+rules:
+  - where: "ou"
+    answer: u
+    examples:
+      - { fr: "rouge", ipa: "ʁuʒ", ja: "赤い" }
+      - { fr: "vous", ipa: "vu", ja: "あなた" }
+      - { fr: "jour", ipa: "ʒuʁ", ja: "日" }
+  - where: "ai / ei"
+    answer: e
+    examples:
+      - { fr: "lait", ipa: "lɛ", ja: "牛乳" }
+      - { fr: "neige", ipa: "nɛʒ", ja: "雪" }
+      - { fr: "maison", ipa: "mɛzɔ̃", ja: "家" }
+  - where: "au / eau"
+    answer: o
+    examples:
+      - { fr: "auto", ipa: "oto", ja: "自動車" }
+      - { fr: "beau", ipa: "bo", ja: "美しい" }
+      - { fr: "eau", ipa: "o", ja: "水" }
+  - where: "eu / œu"
+    answer: eu
+    note: "後ろに読む子音があると、少し口を開けた [œ] になる"
+    examples:
+      - { fr: "deux", ipa: "dø", ja: "2" }
+      - { fr: "bleu", ipa: "blø", ja: "青い" }
+      - { fr: "sœur", ipa: "sœʁ", ja: "姉・妹" }
+  - where: "oi"
+    answer: wa
+    examples:
+      - { fr: "moi", ipa: "mwa", ja: "私" }
+      - { fr: "trois", ipa: "tʁwa", ja: "3" }
+      - { fr: "voiture", ipa: "vwatyʁ", ja: "車" }
+quiz:
+  - { fr: "amour", show: "am{ou}r", answer: u, ipa: "amuʁ", ja: "愛" }
+  - { fr: "nous", show: "n{ou}s", answer: u, ipa: "nu", ja: "私たち" }
+  - { fr: "chaise", show: "ch{ai}se", answer: e, ipa: "ʃɛz", ja: "椅子" }
+  - { fr: "mais", show: "m{ai}s", answer: e, ipa: "mɛ", ja: "しかし" }
+  - { fr: "peine", show: "p{ei}ne", answer: e, ipa: "pɛn", ja: "苦労" }
+  - { fr: "jaune", show: "j{au}ne", answer: o, ipa: "ʒon", ja: "黄色い" }
+  - { fr: "chaud", show: "ch{au}d", answer: o, ipa: "ʃo", ja: "暑い・熱い" }
+  - { fr: "bateau", show: "bat{eau}", answer: o, ipa: "bato", ja: "船" }
+  - { fr: "cheveux", show: "chev{eu}x", answer: eu, ipa: "ʃəvø", ja: "髪" }
+  - { fr: "fleur", show: "fl{eu}r", answer: eu, ipa: "flœʁ", ja: "花" }
+  - { fr: "toi", show: "t{oi}", answer: wa, ipa: "twa", ja: "君" }
+  - { fr: "soir", show: "s{oi}r", answer: wa, ipa: "swaʁ", ja: "夕方・夜" }

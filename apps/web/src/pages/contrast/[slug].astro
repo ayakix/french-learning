@@ -1,6 +1,7 @@
 ---
 import { getCollection, type CollectionEntry } from 'astro:content';
 import Base from '../../layouts/Base.astro';
+import MistakeList from '../../components/MistakeList.astro';
 import { audioUrl } from '../../lib/audio';
 
 export async function getStaticPaths() {
@@ -94,11 +95,14 @@ const quizItems = pairs.flatMap((p) => [
         }
       </div>
       <p id="quiz-result" class="result" aria-live="polite"></p>
+      <MistakeList />
     </section>
   </main>
 </Base>
 
 <script>
+  import { createMistakeList } from '../../scripts/mistakes';
+
   type Side = 'a' | 'b';
   type QuizItem = { fr: string; ipa: string; ja: string; src: string; answer: Side };
   type Labels = Record<Side, { name: string; hint: string }>;
@@ -127,6 +131,8 @@ const quizItems = pairs.flatMap((p) => [
   const scoreLabel = document.querySelector<HTMLElement>('#quiz-score')!;
   const resultLabel = document.querySelector<HTMLElement>('#quiz-result')!;
 
+  const mistakes = createMistakeList(play);
+
   let current: QuizItem | null = null;
   let correct = 0;
   let total = 0;
@@ -154,6 +160,16 @@ const quizItems = pairs.flatMap((p) => [
       labels[current.answer].name
     }`;
     answerButtons.forEach((b) => (b.disabled = true));
+    if (!ok) {
+      mistakes.add({
+        key: current.fr,
+        word: document.createTextNode(current.fr),
+        detail: `[${current.ipa}] ${current.ja}`,
+        chosen: labels[choice as Side].name,
+        correct: labels[current.answer].name,
+        src: current.src,
+      });
+    }
   }
 
   nextButton.addEventListener('click', ask);
