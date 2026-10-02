@@ -1,0 +1,28 @@
+# 00-2 u [y] と ou [u] の聞き比べ（Web アプリの聞き比べ画面 /contrast/u のデータ）
+# 形式は 00-1-e-contrast.yaml と同じ
+#
+# ladder で i から始めるのは、[y] が「i の舌の位置のまま唇を丸める」音だから。
+# i → u → ou の順に、唇 → 舌の順で 1 か所ずつ動かすと違いを体で覚えやすい。
+slug: u
+title: "u [y] と ou [u]"
+lead: "日本語の「ウ」は、この 2 つの中間くらいの音です。u [y] は「イ」の舌のまま唇を丸めた明るい音、ou [u] は唇を突き出した暗くこもった音です。"
+labels:
+  a: { name: "u [y]", hint: "「イ」の舌で唇を丸める" }
+  b: { name: "ou [u]", hint: "唇を突き出して奥で響かせる" }
+ladder:
+  title: "i → u → ou"
+  fr: "i... u... ou."
+  steps:
+    - { mark: "i", ipa: "i", mouth: "唇を横に引いて「イー」と言い続ける" }
+    - { mark: "u", ipa: "y", mouth: "舌の位置はそのまま、唇だけを丸めて突き出す" }
+    - { mark: "ou", ipa: "u", mouth: "唇はそのまま、舌を奥に引く" }
+  tip: "u が「ユ」や日本語の「ウ」にならないように。鏡で唇がしっかり丸まっているかを確かめる。"
+pairs:
+  - a: { fr: "tu", ipa: "ty", ja: "君" }
+    b: { fr: "tout", ipa: "tu", ja: "全部" }
+  - a: { fr: "rue", ipa: "ʁy", ja: "通り" }
+    b: { fr: "roue", ipa: "ʁu", ja: "車輪" }
+  - a: { fr: "vu", ipa: "vy", ja: "見た（voir の過去分詞）" }
+    b: { fr: "vous", ipa: "vu", ja: "あなた" }
+  - a: { fr: "dessus", ipa: "dəsy", ja: "上に" }
+    b: { fr: "dessous", ipa: "dəsu", ja: "下に" }

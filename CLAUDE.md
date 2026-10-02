@@ -54,6 +54,11 @@ total_minutes: 0
   - Starter プラン（月約 30k クレジット）のため、不要な再生成は避ける
   - ボイスとモデルは `config/tts.json`。変えると音声のファイル名（ハッシュ）が変わり、全音声の再生成が必要になる
 - Web アプリで使う教材は `materials/` に YAML で置き、`scripts/gen-audio <yaml>` で音声を生成する（詳細は `apps/web/README.md`）
+- 聞き比べ（ミニマルペア）の練習は `*-contrast.yaml` を 1 つ追加するだけで、画面 `/contrast/<slug>` と CLI のクイズが増える（形式は `materials/a1/00-pronunciation/00-1-e-contrast.yaml` を参照）
+- Web の画面を作ったり変えたりしたら、ユーザーに渡す前に headless Chrome でスクリーンショットを撮って見た目を確認する
+  - `"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" --headless=new --window-size=800,900 --screenshot=<scratchpad>/x.png <URL>`
+- CLI で聞き取りクイズを出すときは、`say-fr` ではなく `scripts/quiz` を使う（`say-fr` だとコマンドに答えが表示されてしまう）
+  - `scripts/quiz start alphabet:4 e:3` → `play` → ユーザーが回答 → `reveal`
 
 ### 画像
 

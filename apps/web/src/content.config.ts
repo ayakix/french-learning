@@ -1,5 +1,5 @@
 import { defineCollection } from 'astro:content';
-import { file } from 'astro/loaders';
+import { file, glob } from 'astro/loaders';
 import { z } from 'astro/zod';
 
 // 教材の正本は materials/ にある（README の「リポジトリが source of truth」の方針）。
@@ -32,18 +32,45 @@ const accents = defineCollection({
 });
 
 const word = z.object({ fr: z.string(), ipa: z.string(), ja: z.string() });
+const label = z.object({ name: z.string(), hint: z.string() });
 
-const eSounds = defineCollection({
-  loader: file('../../materials/a1/00-pronunciation/00-1-e-sounds.yaml'),
-  schema: z.object({ close: word, open: word }),
-});
-
-const eLadder = defineCollection({
-  loader: file('../../materials/a1/00-pronunciation/00-1-e-ladder.yaml'),
+// 聞き比べ（ミニマルペア）の練習。1 つの練習 = 1 ファイル（*-contrast.yaml）にして、
+// 練習を増やすときは YAML を追加するだけで画面（/contrast/<slug>）とクイズが増えるようにしている。
+const contrasts = defineCollection({
+  loader: glob({ pattern: '**/*-contrast.yaml', base: '../../materials' }),
   schema: z.object({
-    fr: z.string(),
-    steps: z.array(z.object({ mark: z.string(), ipa: z.string(), mouth: z.string() })),
+    title: z.string(),
+    lead: z.string(),
+    labels: z.object({ a: label, b: label }),
+    ladder: z.object({
+      title: z.string(),
+      fr: z.string(),
+      steps: z.array(z.object({ mark: z.string(), ipa: z.string(), mouth: z.string() })),
+      tip: z.string(),
+    }),
+    pairs: z.array(z.object({ a: word, b: word })),
   }),
 });
 
-export const collections = { alphabet, accents, eSounds, eLadder };
+// 綴りを見て読み方を判断する練習（例：e を読むか、鼻母音になるか）。1 つの練習 = 1 ファイル（*-rules.yaml）
+const choice = z.object({ id: z.string(), name: z.string(), hint: z.string() });
+
+const rules = defineCollection({
+  loader: glob({ pattern: '**/*-rules.yaml', base: '../../materials' }),
+  schema: z.object({
+    title: z.string(),
+    lead: z.string(),
+    choices: z.array(choice),
+    rules: z.array(
+      z.object({
+        where: z.string(),
+        answer: z.string(),
+        note: z.string().optional(),
+        examples: z.array(word),
+      }),
+    ),
+    quiz: z.array(word.extend({ show: z.string(), answer: z.string() })),
+  }),
+});
+
+export const collections = { alphabet, accents, contrasts, rules };

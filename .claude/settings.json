@@ -1,7 +1,7 @@
 {
   "promptSuggestionEnabled": false,
   "sandbox": {
-    "excludedCommands": ["say *", "afplay *", "scripts/say-fr *"]
+    "excludedCommands": ["say *", "afplay *", "scripts/say-fr *", "scripts/quiz *"]
   },
   "hooks": {
     "SessionStart": [

@@ -1,0 +1,85 @@
+#!/bin/bash
+# 聞き取りクイズ。問題の中身（答え）を画面に出さずに出題する。
+# 使い方:
+#   scripts/quiz start <種類>:<問題数> [...]   問題をランダムに選んで準備する（例: alphabet:4 e:3 u:3）
+#                                              種類は alphabet、または聞き比べ（*-contrast.yaml）の slug
+#   scripts/quiz play                          今の問題を再生する
+#   scripts/quiz reveal                        今の問題の答えを表示して、次の問題に進む
+#
+# Claude が say-fr でテキストを指定して再生すると、実行したコマンド（＝答え）が画面に表示されてしまう。
+# そのため問題の選択もこのスクリプトで行い、答えはユーザーが回答するまで .cache/quiz/ に隠しておく。
+set -euo pipefail
+
+root="$(cd "$(dirname "$0")/.." && pwd)"
+unit="$root/materials/a1/00-pronunciation"
+state="$root/.cache/quiz"
+queue="$state/queue.tsv"
+pos_file="$state/pos"
+
+# 種類ごとに「音声化するテキスト<TAB>答え」の行を出力する
+items() {
+  case "$1" in
+    alphabet)
+      yq -r '.[] | [.tts, .id + " [" + .ipa + "]"] | @tsv' "$unit/00-1-alphabet.yaml"
+      ;;
+    *)
+      # それ以外は聞き比べ（*-contrast.yaml の slug）として扱う。例：e（é/è）、u（u/ou）
+      local file
+      file=$(grep -lx "slug: $1" "$root"/materials/*/*/*-contrast.yaml 2>/dev/null | head -1)
+      if [ -z "$file" ]; then
+        echo "不明な種類: $1（alphabet、または *-contrast.yaml の slug）" >&2
+        exit 1
+      fi
+      # yq では「,」が「|」より優先度が低いので、全体を括弧で囲む
+      yq -r '.labels.a.name as $la | .labels.b.name as $lb | .pairs[] |
+             (([.a.fr, $la + "：" + .a.fr + " [" + .a.ipa + "] = " + .a.ja] | @tsv),
+              ([.b.fr, $lb + "：" + .b.fr + " [" + .b.ipa + "] = " + .b.ja] | @tsv))' "$file"
+      ;;
+  esac
+}
+
+current() {
+  [ -f "$queue" ] && [ -f "$pos_file" ] || { echo "クイズが始まっていません（scripts/quiz start）" >&2; exit 1; }
+  local pos total
+  pos=$(cat "$pos_file")
+  total=$(wc -l < "$queue" | tr -d ' ')
+  if [ "$pos" -gt "$total" ]; then
+    echo "全 $total 問が終わりました" >&2
+    exit 1
+  fi
+  sed -n "${pos}p" "$queue"
+}
+
+case "${1:-}" in
+  start)
+    shift
+    [ $# -ge 1 ] || { echo "使い方: scripts/quiz start <種類>:<問題数> [...]" >&2; exit 1; }
+    mkdir -p "$state"
+    : > "$queue"
+    for spec in "$@"; do
+      kind="${spec%%:*}"
+      count="${spec#*:}"
+      items "$kind" | sort -R | head -n "$count" >> "$queue"
+    done
+    # 出題中に待たせないよう、音声を先に用意しておく（出力は答えが見えるので捨てる）
+    cut -f1 "$queue" | while IFS= read -r text; do
+      "$root/scripts/say-fr" --no-play "$text" > /dev/null
+    done
+    echo 1 > "$pos_file"
+    echo "$(wc -l < "$queue" | tr -d ' ') 問を用意しました"
+    ;;
+  play)
+    text=$(current | cut -f1)
+    afplay "$("$root/scripts/say-fr" --no-play "$text")"
+    ;;
+  reveal)
+    pos=$(cat "$pos_file" 2>/dev/null || echo 0)
+    answer=$(current | cut -f2)
+    echo "第 $pos 問の答え：$answer"
+    echo $((pos + 1)) > "$pos_file"
+    ;;
+  *)
+    echo "使い方: scripts/quiz start <種類>:<問題数> [...] | play | reveal" >&2
+    exit 1
+    ;;
+esac

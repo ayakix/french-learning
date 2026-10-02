@@ -1,0 +1,51 @@
+# 00-2 アクセント記号のない e の読み方（Web アプリの読み方ルール画面 /rules/e のデータ）
+# slug: URL / choices: 読み方の選択肢 / rules: 位置ごとのルールと例 / quiz: 読み方クイズ
+# quiz の show は、判断してほしい e を {} で囲む（1 つの単語に e が複数あることがあるため）
+#
+# 単語の途中の e は [ə] と省略のどちらにもなり、話す速さでも変わる（petit は [pəti] も [pti] もある）。
+# クイズでは答えが 1 つに決まるものだけを出す。
+slug: e
+title: "アクセント記号のない e の読み方"
+lead: "アクセント記号のない e は、単語の中の位置で読み方が変わります。一番大事なのは「語末の e は読まない」です。"
+choices:
+  - { id: silent, name: "読まない", hint: "音にならない" }
+  - { id: schwa, name: "[ə]", hint: "力を抜いた弱い音" }
+  - { id: open, name: "[ɛ]", hint: "è と同じ。あごを下げる" }
+rules:
+  - where: "語末"
+    answer: silent
+    examples:
+      - { fr: "table", ipa: "tabl", ja: "テーブル" }
+      - { fr: "France", ipa: "fʁɑ̃s", ja: "フランス" }
+      - { fr: "école", ipa: "ekɔl", ja: "学校" }
+  - where: "1 音節の短い単語"
+    answer: schwa
+    examples:
+      - { fr: "le", ipa: "lə", ja: "その（冠詞）" }
+      - { fr: "je", ipa: "ʒə", ja: "私は" }
+      - { fr: "de", ipa: "də", ja: "〜の" }
+  - where: "後ろに子音が 2 つ"
+    answer: open
+    examples:
+      - { fr: "merci", ipa: "mɛʁsi", ja: "ありがとう" }
+      - { fr: "elle", ipa: "ɛl", ja: "彼女" }
+      - { fr: "reste", ipa: "ʁɛst", ja: "残る" }
+  - where: "単語の途中"
+    answer: schwa
+    note: "[ə] になるか、省略されることが多い"
+    examples:
+      - { fr: "petit", ipa: "pəti", ja: "小さい" }
+      - { fr: "samedi", ipa: "samdi", ja: "土曜日（e が消える）" }
+quiz:
+  - { fr: "table", show: "tabl{e}", answer: silent, ipa: "tabl", ja: "テーブル" }
+  - { fr: "porte", show: "port{e}", answer: silent, ipa: "pɔʁt", ja: "ドア" }
+  - { fr: "le", show: "l{e}", answer: schwa, ipa: "lə", ja: "その（冠詞）" }
+  - { fr: "je", show: "j{e}", answer: schwa, ipa: "ʒə", ja: "私は" }
+  - { fr: "de", show: "d{e}", answer: schwa, ipa: "də", ja: "〜の" }
+  - { fr: "merci", show: "m{e}rci", answer: open, ipa: "mɛʁsi", ja: "ありがとう" }
+  - { fr: "elle", show: "{e}lle", answer: open, ipa: "ɛl", ja: "彼女" }
+  - { fr: "reste", show: "r{e}ste", answer: open, ipa: "ʁɛst", ja: "残る" }
+  - { fr: "belle", show: "b{e}lle", answer: open, ipa: "bɛl", ja: "美しい（女性形）" }
+  - { fr: "belle", show: "bell{e}", answer: silent, ipa: "bɛl", ja: "美しい（女性形）" }
+  - { fr: "petite", show: "p{e}tite", answer: schwa, ipa: "pətit", ja: "小さい（女性形）" }
+  - { fr: "petite", show: "petit{e}", answer: silent, ipa: "pətit", ja: "小さい（女性形）" }

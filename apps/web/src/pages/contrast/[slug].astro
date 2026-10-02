@@ -1,37 +1,43 @@
 ---
-import { getCollection, getEntry } from 'astro:content';
-import Base from '../layouts/Base.astro';
-import { audioUrl } from '../lib/audio';
+import { getCollection, type CollectionEntry } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import { audioUrl } from '../../lib/audio';
 
-const ladder = (await getEntry('eLadder', 'ladder'))!.data;
+export async function getStaticPaths() {
+  const contrasts = await getCollection('contrasts');
+  return contrasts.map((contrast) => ({
+    params: { slug: contrast.id },
+    props: { contrast },
+  }));
+}
+
+const { contrast } = Astro.props as { contrast: CollectionEntry<'contrasts'> };
+const { title, lead, labels, ladder, pairs: rawPairs } = contrast.data;
+
 const ladderSrc = audioUrl(ladder.fr);
-
-const pairs = (await getCollection('eSounds')).map((entry) => ({
-  id: entry.id,
-  close: { ...entry.data.close, src: audioUrl(entry.data.close.fr) },
-  open: { ...entry.data.open, src: audioUrl(entry.data.open.fr) },
+const pairs = rawPairs.map((p) => ({
+  a: { ...p.a, src: audioUrl(p.a.fr) },
+  b: { ...p.b, src: audioUrl(p.b.fr) },
 }));
 
 // クイズの出題候補。ブラウザ側でランダムに選ぶ
 const quizItems = pairs.flatMap((p) => [
-  { ...p.close, answer: 'close' },
-  { ...p.open, answer: 'open' },
+  { ...p.a, answer: 'a' },
+  { ...p.b, answer: 'b' },
 ]);
 ---
 
-<Base title="é と è">
+<Base title={title}>
   <main>
     <header>
       <a href="/" class="back">← ホーム</a>
-      <h1>é [e] と è [ɛ]</h1>
-      <p class="lead">
-        日本語の「エ」は、é と è のちょうど中間にあります。<strong>é は「イ」寄り、è は「ア」寄り</strong>の「エ」です。
-      </p>
+      <h1>{title}</h1>
+      <p class="lead">{lead}</p>
     </header>
 
     <section class="card">
       <div class="section-head">
-        <h2>1. 口の形：i → é → è → a の階段</h2>
+        <h2>1. 口の形：{ladder.title}</h2>
         <button type="button" class="pill play" data-src={ladderSrc}>▶ お手本</button>
       </div>
       <ol class="ladder">
@@ -45,24 +51,22 @@ const quizItems = pairs.flatMap((p) => [
           ))
         }
       </ol>
-      <p class="tip">
-        鏡を見ながら、あごを 1 段ずつ下げていく。口の前に指を縦に当てると、è のほうが上下の歯の間が広いことを確かめられる。
-      </p>
+      <p class="tip">{ladder.tip}</p>
     </section>
 
     <section class="card">
       <h2>2. 聞き比べ</h2>
-      <p class="sub">é と è だけが違う単語のペア。左右を交互に聞いて、口の開き方の違いを感じる。</p>
+      <p class="sub">{labels.a.name} と {labels.b.name} だけが違う単語のペア。左右を交互に聞いて、違いを感じる。</p>
       <ul class="pairs">
         {
           pairs.map((p) => (
             <li class="pair">
-              {[p.close, p.open].map((w, i) => (
-                <button type="button" class:list={['word', 'play', i === 0 ? 'close' : 'open']} data-src={w.src}>
-                  <span class="tag">{i === 0 ? 'é [e]' : 'è [ɛ]'}</span>
-                  <span class="fr">{w.fr}</span>
-                  <span class="ipa">[{w.ipa}]</span>
-                  <span class="ja">{w.ja}</span>
+              {(['a', 'b'] as const).map((side) => (
+                <button type="button" class="word play" data-src={p[side].src}>
+                  <span class="tag">{labels[side].name}</span>
+                  <span class="fr">{p[side].fr}</span>
+                  <span class="ipa">[{p[side].ipa}]</span>
+                  <span class="ja">{p[side].ja}</span>
                 </button>
               ))}
             </li>
@@ -71,17 +75,23 @@ const quizItems = pairs.flatMap((p) => [
       </ul>
     </section>
 
-    <section class="card" id="quiz" data-items={JSON.stringify(quizItems)}>
+    <section class="card" id="quiz" data-items={JSON.stringify(quizItems)} data-labels={JSON.stringify(labels)}>
       <h2>3. 聞き取りクイズ</h2>
-      <p class="sub">再生される単語が é [e] か è [ɛ] かを当てる。</p>
+      <p class="sub">再生される単語が {labels.a.name} か {labels.b.name} かを当てる。</p>
       <div class="quiz-controls">
         <button type="button" id="quiz-next" class="pill primary">▶ 出題する</button>
         <button type="button" id="quiz-replay" class="pill" disabled>もう一度聞く</button>
         <span id="quiz-score" class="score">0 / 0</span>
       </div>
       <div class="answers">
-        <button type="button" class="answer close" data-answer="close" disabled>é [e]<small>口を横に引く</small></button>
-        <button type="button" class="answer open" data-answer="open" disabled>è [ɛ]<small>あごを下げる</small></button>
+        {
+          (['a', 'b'] as const).map((side) => (
+            <button type="button" class="answer" data-answer={side} disabled>
+              {labels[side].name}
+              <small>{labels[side].hint}</small>
+            </button>
+          ))
+        }
       </div>
       <p id="quiz-result" class="result" aria-live="polite"></p>
     </section>
@@ -89,7 +99,9 @@ const quizItems = pairs.flatMap((p) => [
 </Base>
 
 <script>
-  type QuizItem = { fr: string; ipa: string; ja: string; src: string; answer: 'close' | 'open' };
+  type Side = 'a' | 'b';
+  type QuizItem = { fr: string; ipa: string; ja: string; src: string; answer: Side };
+  type Labels = Record<Side, { name: string; hint: string }>;
 
   // 音声を重ねて鳴らさないよう、Audio は 1 つだけ使い回す
   const audio = new Audio();
@@ -108,6 +120,7 @@ const quizItems = pairs.flatMap((p) => [
   // クイズ
   const quiz = document.querySelector<HTMLElement>('#quiz')!;
   const items: QuizItem[] = JSON.parse(quiz.dataset.items!);
+  const labels: Labels = JSON.parse(quiz.dataset.labels!);
   const nextButton = document.querySelector<HTMLButtonElement>('#quiz-next')!;
   const replayButton = document.querySelector<HTMLButtonElement>('#quiz-replay')!;
   const answerButtons = [...document.querySelectorAll<HTMLButtonElement>('.answer')];
@@ -138,7 +151,7 @@ const quizItems = pairs.flatMap((p) => [
     scoreLabel.textContent = `${correct} / ${total}`;
     resultLabel.className = `result ${ok ? 'ok' : 'ng'}`;
     resultLabel.textContent = `${ok ? '正解！' : '残念…'} ${current.fr} [${current.ipa}]（${current.ja}）は ${
-      current.answer === 'close' ? 'é [e]' : 'è [ɛ]'
+      labels[current.answer].name
     }`;
     answerButtons.forEach((b) => (b.disabled = true));
   }
@@ -213,18 +226,19 @@ const quizItems = pairs.flatMap((p) => [
   .pill.playing {
     background: var(--accent-soft);
   }
+  /* mark は 1 文字（i、é）のことも単語（école）のこともあるので、列幅は固定せず最長の内容に合わせる。
+     li を display: contents にして ol 全体を 1 つのグリッドにし、行をまたいで列を揃える */
   .ladder {
     list-style: none;
     padding: 0;
     margin: 12px 0 0;
     display: grid;
-    gap: 6px;
+    grid-template-columns: max-content max-content 1fr;
+    align-items: baseline;
+    gap: 6px 14px;
   }
   .ladder li {
-    display: grid;
-    grid-template-columns: 2.5em 3em 1fr;
-    align-items: baseline;
-    gap: 8px;
+    display: contents;
   }
   .mark {
     font-size: 1.6rem;

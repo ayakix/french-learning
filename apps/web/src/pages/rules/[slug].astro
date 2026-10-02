@@ -1,0 +1,335 @@
+---
+import { getCollection, type CollectionEntry } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import { audioUrl } from '../../lib/audio';
+
+export async function getStaticPaths() {
+  const rules = await getCollection('rules');
+  return rules.map((entry) => ({
+    params: { slug: entry.id },
+    props: { entry },
+  }));
+}
+
+const { entry } = Astro.props as { entry: CollectionEntry<'rules'> };
+const { title, lead, choices, rules, quiz } = entry.data;
+const choiceName = Object.fromEntries(choices.map((c) => [c.id, c.name]));
+
+// show の {} で囲んだ部分を強調表示するため、前・対象・後に分ける
+function splitShow(show: string) {
+  const m = show.match(/^(.*)\{(.+?)\}(.*)$/);
+  if (!m) throw new Error(`show に {} がありません: ${show}`);
+  return { before: m[1], target: m[2], after: m[3] };
+}
+
+const quizItems = quiz.map((q) => ({ ...q, ...splitShow(q.show), src: audioUrl(q.fr) }));
+---
+
+<Base title={title}>
+  <main>
+    <header>
+      <a href="/" class="back">← ホーム</a>
+      <h1>{title}</h1>
+      <p class="lead">{lead}</p>
+    </header>
+
+    <section class="card">
+      <h2>1. ルール</h2>
+      <table class="rules">
+        <thead>
+          <tr><th>位置</th><th>読み方</th><th>例（クリックで再生）</th></tr>
+        </thead>
+        <tbody>
+          {
+            rules.map((r) => (
+              <tr>
+                <td class="where">{r.where}</td>
+                <td class="answer-cell">
+                  <strong>{choiceName[r.answer]}</strong>
+                  {r.note && <small>{r.note}</small>}
+                </td>
+                <td>
+                  <div class="examples">
+                    {r.examples.map((w) => (
+                      <button type="button" class="example play" data-src={audioUrl(w.fr)}>
+                        <span class="fr">{w.fr}</span>
+                        <span class="ipa">[{w.ipa}]</span>
+                        <span class="ja">{w.ja}</span>
+                      </button>
+                    ))}
+                  </div>
+                </td>
+              </tr>
+            ))
+          }
+        </tbody>
+      </table>
+    </section>
+
+    <section class="card" id="quiz" data-items={JSON.stringify(quizItems)} data-choices={JSON.stringify(choiceName)}>
+      <h2>2. 読み方クイズ</h2>
+      <p class="sub">色の付いた部分をどう読むか選ぶ。答えると発音が流れる。</p>
+      <div class="quiz-controls">
+        <button type="button" id="quiz-next" class="pill primary">▶ 出題する</button>
+        <span id="quiz-score" class="score">0 / 0</span>
+      </div>
+      <p id="quiz-word" class="quiz-word" aria-live="polite">&nbsp;</p>
+      <div class="answers" style={`grid-template-columns: repeat(${choices.length}, 1fr)`}>
+        {
+          choices.map((c) => (
+            <button type="button" class="answer" data-answer={c.id} disabled>
+              {c.name}
+              <small>{c.hint}</small>
+            </button>
+          ))
+        }
+      </div>
+      <p id="quiz-result" class="result" aria-live="polite"></p>
+    </section>
+  </main>
+</Base>
+
+<script>
+  type QuizItem = {
+    fr: string;
+    ipa: string;
+    ja: string;
+    answer: string;
+    before: string;
+    target: string;
+    after: string;
+    src: string;
+  };
+
+  // 音声を重ねて鳴らさないよう、Audio は 1 つだけ使い回す
+  const audio = new Audio();
+
+  function play(src: string, button?: Element) {
+    document.querySelectorAll('.play').forEach((b) => b.classList.toggle('playing', b === button));
+    audio.src = src;
+    audio.onended = () => button?.classList.remove('playing');
+    audio.play().catch(() => {});
+  }
+
+  document.querySelectorAll<HTMLButtonElement>('.play').forEach((button) =>
+    button.addEventListener('click', () => play(button.dataset.src!, button)),
+  );
+
+  // クイズ
+  const quiz = document.querySelector<HTMLElement>('#quiz')!;
+  const items: QuizItem[] = JSON.parse(quiz.dataset.items!);
+  const choiceName: Record<string, string> = JSON.parse(quiz.dataset.choices!);
+  const nextButton = document.querySelector<HTMLButtonElement>('#quiz-next')!;
+  const answerButtons = [...document.querySelectorAll<HTMLButtonElement>('.answer')];
+  const scoreLabel = document.querySelector<HTMLElement>('#quiz-score')!;
+  const wordLabel = document.querySelector<HTMLElement>('#quiz-word')!;
+  const resultLabel = document.querySelector<HTMLElement>('#quiz-result')!;
+
+  let current: QuizItem | null = null;
+  let correct = 0;
+  let total = 0;
+
+  function ask() {
+    // 同じ問題が連続しないよう、直前と違うものを選ぶ
+    const candidates = items.filter((i) => i !== current);
+    current = candidates[Math.floor(Math.random() * candidates.length)];
+    // innerHTML ではなく要素として組み立てる（データに < などが含まれても表示が崩れないように）
+    wordLabel.replaceChildren(current.before, Object.assign(document.createElement('mark'), { textContent: current.target }), current.after);
+    resultLabel.textContent = '';
+    resultLabel.className = 'result';
+    answerButtons.forEach((b) => (b.disabled = false));
+    nextButton.textContent = '▶ 次の問題';
+  }
+
+  function answer(choice: string) {
+    if (!current) return;
+    total++;
+    const ok = choice === current.answer;
+    if (ok) correct++;
+    scoreLabel.textContent = `${correct} / ${total}`;
+    resultLabel.className = `result ${ok ? 'ok' : 'ng'}`;
+    resultLabel.textContent = `${ok ? '正解！' : '残念…'} 答えは「${choiceName[current.answer]}」：${current.fr} [${current.ipa}]（${current.ja}）`;
+    answerButtons.forEach((b) => (b.disabled = true));
+    play(current.src);
+  }
+
+  nextButton.addEventListener('click', ask);
+  answerButtons.forEach((b) => b.addEventListener('click', () => answer(b.dataset.answer!)));
+</script>
+
+<style>
+  main {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 24px 16px 48px;
+  }
+  .back {
+    font-size: 0.9rem;
+    text-decoration: none;
+  }
+  h1 {
+    margin: 8px 0 4px;
+  }
+  h2 {
+    font-size: 1.1rem;
+    margin: 0 0 8px;
+  }
+  .lead {
+    color: var(--muted);
+    margin: 0 0 20px;
+  }
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 16px;
+    margin-bottom: 16px;
+  }
+  .sub {
+    color: var(--muted);
+    font-size: 0.9rem;
+    margin: 0 0 12px;
+  }
+  button {
+    font: inherit;
+    color: inherit;
+    cursor: pointer;
+  }
+  .rules {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  .rules th {
+    text-align: left;
+    font-size: 0.8rem;
+    color: var(--muted);
+    font-weight: 600;
+    padding: 0 8px 6px;
+  }
+  .rules td {
+    border-top: 1px solid var(--border);
+    padding: 10px 8px;
+    vertical-align: top;
+  }
+  .where {
+    white-space: nowrap;
+    font-weight: 600;
+  }
+  .answer-cell {
+    white-space: nowrap;
+  }
+  .answer-cell small {
+    display: block;
+    font-size: 0.75rem;
+    color: var(--muted);
+    white-space: normal;
+    max-width: 10em;
+  }
+  .examples {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .example {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 6px 10px;
+    border: 2px solid var(--border);
+    border-radius: 10px;
+    background: var(--bg);
+    text-align: left;
+  }
+  .example:hover,
+  .example.playing {
+    border-color: var(--accent);
+  }
+  .example.playing {
+    background: var(--accent-soft);
+  }
+  .fr {
+    font-size: 1.15rem;
+    font-weight: 700;
+  }
+  .ipa {
+    font-family: 'Charis SIL', 'Doulos SIL', 'Times New Roman', serif;
+    font-size: 0.9rem;
+  }
+  .ja {
+    font-size: 0.75rem;
+    color: var(--muted);
+  }
+  .pill {
+    padding: 6px 16px;
+    border-radius: 999px;
+    border: 1px solid var(--accent);
+    background: none;
+    color: var(--accent);
+    font-weight: 600;
+  }
+  .pill.primary {
+    background: var(--accent);
+    color: var(--bg);
+  }
+  .quiz-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;
+  }
+  .score {
+    margin-left: auto;
+    font-weight: 600;
+  }
+  .quiz-word {
+    text-align: center;
+    font-size: 2.6rem;
+    font-weight: 700;
+    margin: 4px 0 16px;
+    letter-spacing: 0.04em;
+  }
+  .quiz-word :global(mark) {
+    background: var(--caution-soft);
+    color: var(--caution);
+    border-radius: 6px;
+    padding: 0 2px;
+  }
+  .answers {
+    display: grid;
+    gap: 10px;
+  }
+  .answer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 12px;
+    border: 2px solid var(--border);
+    border-radius: 12px;
+    background: var(--bg);
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+  .answer small {
+    font-size: 0.75rem;
+    font-weight: 400;
+    color: var(--muted);
+  }
+  .answer:not(:disabled):hover {
+    border-color: var(--accent);
+  }
+  .answer:disabled {
+    opacity: 0.5;
+    cursor: default;
+  }
+  .result {
+    min-height: 1.6em;
+    margin: 12px 0 0;
+    font-weight: 600;
+  }
+  .result.ok {
+    color: var(--accent);
+  }
+  .result.ng {
+    color: var(--caution);
+  }
+</style>
