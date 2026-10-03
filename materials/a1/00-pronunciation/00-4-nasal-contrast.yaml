@@ -1,0 +1,33 @@
+# 00-4 鼻母音 [ɛ̃] [ɑ̃] [ɔ̃] の聞き比べ（Web アプリの聞き比べ画面 /contrast/nasal のデータ）
+# 形式は 00-1-e-contrast.yaml と同じ。鼻母音は 3 つを区別するため、選択肢を a, b, c の 3 つにしている。
+#
+# ladder は、口を横に引く [ɛ̃] → あごを下げる [ɑ̃] → 唇を丸める [ɔ̃] の順に口の形が変わるように並べている。
+# 鼻母音だけを TTS に読ませると不自然になりやすいので、vin / vent / vont の単語で読ませる。
+slug: nasal
+title: "鼻母音 [ɛ̃] [ɑ̃] [ɔ̃]"
+lead: "最後に「ン」と言わず、舌の先を上あごにつけないまま、母音を鼻に響かせて終わります。3 つの違いは口の形です。"
+labels:
+  a: { name: "[ɛ̃] in", hint: "口を横に引いた「エ」" }
+  b: { name: "[ɑ̃] an", hint: "あごを下げた「ア」" }
+  c: { name: "[ɔ̃] on", hint: "唇を丸めた「オ」" }
+ladder:
+  title: "vin → vent → vont の口の形"
+  fr: "vin... vent... vont."
+  steps:
+    - { mark: "vin", ipa: "vɛ̃", mouth: "唇を横に引いて「エ」の口のまま、鼻に響かせる" }
+    - { mark: "vent", ipa: "vɑ̃", mouth: "あごを下げて口を大きく開け、「ア」を鼻に響かせる" }
+    - { mark: "vont", ipa: "vɔ̃", mouth: "唇を丸めて前に出し、「オ」を鼻に響かせる" }
+  tip: "鼻をつまんで言ってみると、鼻に響いているかを確かめられる。最後に舌の先が上あごに触れたら、それは余計な「ン」。"
+pairs:
+  - a: { fr: "vin", ipa: "vɛ̃", ja: "ワイン" }
+    b: { fr: "vent", ipa: "vɑ̃", ja: "風" }
+    c: { fr: "vont", ipa: "vɔ̃", ja: "行く（aller の活用）" }
+  - a: { fr: "lin", ipa: "lɛ̃", ja: "亜麻・リネン" }
+    b: { fr: "lent", ipa: "lɑ̃", ja: "遅い" }
+    c: { fr: "long", ipa: "lɔ̃", ja: "長い" }
+  - a: { fr: "teint", ipa: "tɛ̃", ja: "顔色" }
+    b: { fr: "temps", ipa: "tɑ̃", ja: "時間・天気" }
+    c: { fr: "ton", ipa: "tɔ̃", ja: "君の・口調" }
+  - a: { fr: "sain", ipa: "sɛ̃", ja: "健康な" }
+    b: { fr: "sans", ipa: "sɑ̃", ja: "〜なしで" }
+    c: { fr: "son", ipa: "sɔ̃", ja: "音・彼の" }

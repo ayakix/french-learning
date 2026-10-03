@@ -15,17 +15,17 @@ export async function getStaticPaths() {
 const { contrast } = Astro.props as { contrast: CollectionEntry<'contrasts'> };
 const { title, lead, labels, ladder, pairs: rawPairs } = contrast.data;
 
+// 選択肢（a, b, c…）。2 択のことも 3 択のこともある
+const sides = Object.keys(labels);
+const names = sides.map((side) => labels[side].name).join(' / ');
+
 const ladderSrc = audioUrl(ladder.fr);
-const pairs = rawPairs.map((p) => ({
-  a: { ...p.a, src: audioUrl(p.a.fr) },
-  b: { ...p.b, src: audioUrl(p.b.fr) },
-}));
+const pairs = rawPairs.map((p) =>
+  Object.fromEntries(sides.map((side) => [side, { ...p[side], src: audioUrl(p[side].fr) }])),
+);
 
 // クイズの出題候補。ブラウザ側でランダムに選ぶ
-const quizItems = pairs.flatMap((p) => [
-  { ...p.a, answer: 'a' },
-  { ...p.b, answer: 'b' },
-]);
+const quizItems = pairs.flatMap((p) => sides.map((side) => ({ ...p[side], answer: side })));
 ---
 
 <Base title={title}>
@@ -57,12 +57,12 @@ const quizItems = pairs.flatMap((p) => [
 
     <section class="card">
       <h2>2. 聞き比べ</h2>
-      <p class="sub">{labels.a.name} と {labels.b.name} だけが違う単語のペア。左右を交互に聞いて、違いを感じる。</p>
-      <ul class="pairs">
+      <p class="sub">{names} だけが違う単語の組。交互に聞いて、違いを感じる。</p>
+      <ul class="pairs" style={`--columns: ${sides.length}`}>
         {
           pairs.map((p) => (
             <li class="pair">
-              {(['a', 'b'] as const).map((side) => (
+              {sides.map((side) => (
                 <button type="button" class="word play" data-src={p[side].src}>
                   <span class="tag">{labels[side].name}</span>
                   <span class="fr">{p[side].fr}</span>
@@ -78,15 +78,15 @@ const quizItems = pairs.flatMap((p) => [
 
     <section class="card" id="quiz" data-items={JSON.stringify(quizItems)} data-labels={JSON.stringify(labels)}>
       <h2>3. 聞き取りクイズ</h2>
-      <p class="sub">再生される単語が {labels.a.name} か {labels.b.name} かを当てる。</p>
+      <p class="sub">再生される単語が {names} のどれかを当てる。</p>
       <div class="quiz-controls">
         <button type="button" id="quiz-next" class="pill primary">▶ 出題する</button>
         <button type="button" id="quiz-replay" class="pill" disabled>もう一度聞く</button>
         <span id="quiz-score" class="score">0 / 0</span>
       </div>
-      <div class="answers">
+      <div class="answers" style={`--columns: ${sides.length}`}>
         {
-          (['a', 'b'] as const).map((side) => (
+          sides.map((side) => (
             <button type="button" class="answer" data-answer={side} disabled>
               {labels[side].name}
               <small>{labels[side].hint}</small>
@@ -103,7 +103,8 @@ const quizItems = pairs.flatMap((p) => [
 <script>
   import { createMistakeList } from '../../scripts/mistakes';
 
-  type Side = 'a' | 'b';
+  // 選択肢のキー（a, b, c…）
+  type Side = string;
   type QuizItem = { fr: string; ipa: string; ja: string; src: string; answer: Side };
   type Labels = Record<Side, { name: string; hint: string }>;
 
@@ -275,7 +276,7 @@ const quizItems = pairs.flatMap((p) => [
   }
   .pair {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(var(--columns), 1fr);
     gap: 10px;
   }
   .word {
@@ -319,7 +320,7 @@ const quizItems = pairs.flatMap((p) => [
   }
   .answers {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(var(--columns), 1fr);
     gap: 10px;
   }
   .answer {

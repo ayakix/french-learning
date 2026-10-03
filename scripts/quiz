@@ -30,10 +30,9 @@ items() {
         echo "不明な種類: $1（alphabet、または *-contrast.yaml の slug）" >&2
         exit 1
       fi
-      # yq では「,」が「|」より優先度が低いので、全体を括弧で囲む
-      yq -r '.labels.a.name as $la | .labels.b.name as $lb | .pairs[] |
-             (([.a.fr, $la + "：" + .a.fr + " [" + .a.ipa + "] = " + .a.ja] | @tsv),
-              ([.b.fr, $lb + "：" + .b.fr + " [" + .b.ipa + "] = " + .b.ja] | @tsv))' "$file"
+      # 選択肢は 2 つとは限らない（鼻母音は 3 択）ので、pairs の各組のキー（a, b, c…）をすべて出す
+      yq -r '.labels as $l | .pairs[] | to_entries[] |
+             [.value.fr, $l[.key].name + "：" + .value.fr + " [" + .value.ipa + "] = " + .value.ja] | @tsv' "$file"
       ;;
   esac
 }

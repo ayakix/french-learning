@@ -1,0 +1,52 @@
+# 00-4 鼻母音になるかどうか（Web アプリの読み方ルール画面 /rules/nasal のデータ）
+# 形式は 00-2-e-rules.yaml と同じ
+#
+# 綴りの n / m は「ン」と読む印ではなく、直前の母音を鼻に響かせる印。
+# 後ろに母音が続くと、n / m は次の音節の子音として読まれるので鼻母音にならない（bon [bɔ̃] / bonne [bɔn]）。
+# ルール表の例とクイズの単語は分けている。例を見て覚えた単語ではなく、ルールで判断できるかを確かめるため。
+slug: nasal
+title: "鼻母音になるかどうか"
+lead: "母音の後ろの n / m は「ン」ではなく、母音を鼻に響かせる印です。ただし、n / m の後ろに母音が続くときは鼻母音になりません。"
+choices:
+  - { id: nasal, name: "鼻母音", hint: "鼻に響かせて、「ン」は言わない" }
+  - { id: oral, name: "鼻母音ではない", hint: "母音 ＋ n / m の音" }
+rules:
+  - where: "n / m で終わる"
+    answer: nasal
+    examples:
+      - { fr: "bon", ipa: "bɔ̃", ja: "良い（男性形）" }
+      - { fr: "vin", ipa: "vɛ̃", ja: "ワイン" }
+      - { fr: "nom", ipa: "nɔ̃", ja: "名前" }
+  - where: "n / m の後ろが子音"
+    answer: nasal
+    note: "例外：動詞の語尾 -ent は読まない（ils parlent [il paʁl]）"
+    examples:
+      - { fr: "France", ipa: "fʁɑ̃s", ja: "フランス" }
+      - { fr: "lundi", ipa: "lɛ̃di", ja: "月曜日" }
+      - { fr: "monde", ipa: "mɔ̃d", ja: "世界" }
+  - where: "n / m の後ろが母音"
+    answer: oral
+    examples:
+      - { fr: "une", ipa: "yn", ja: "1 つの（女性形）" }
+      - { fr: "américaine", ipa: "ameʁikɛn", ja: "アメリカの（女性形）" }
+      - { fr: "fine", ipa: "fin", ja: "細い（女性形）" }
+  - where: "nn / mm と重なる"
+    answer: oral
+    note: "例外：en で始まる ennui [ɑ̃nɥi]・emmener [ɑ̃mne] などは鼻母音"
+    examples:
+      - { fr: "bonne", ipa: "bɔn", ja: "良い（女性形）" }
+      - { fr: "année", ipa: "ane", ja: "年" }
+      - { fr: "pomme", ipa: "pɔm", ja: "りんご" }
+quiz:
+  - { fr: "bonjour", show: "b{on}jour", answer: nasal, ipa: "bɔ̃ʒuʁ", ja: "こんにちは" }
+  - { fr: "téléphone", show: "téléph{on}e", answer: oral, ipa: "telefɔn", ja: "電話" }
+  - { fr: "ami", show: "{am}i", answer: oral, ipa: "ami", ja: "友達" }
+  - { fr: "chambre", show: "ch{am}bre", answer: nasal, ipa: "ʃɑ̃bʁ", ja: "部屋" }
+  - { fr: "cinéma", show: "c{in}éma", answer: oral, ipa: "sinema", ja: "映画館" }
+  - { fr: "enfant", show: "{en}fant", answer: nasal, ipa: "ɑ̃fɑ̃", ja: "子ども" }
+  - { fr: "pain", show: "p{ain}", answer: nasal, ipa: "pɛ̃", ja: "パン" }
+  - { fr: "semaine", show: "sem{ain}e", answer: oral, ipa: "səmɛn", ja: "週" }
+  - { fr: "jambon", show: "j{am}bon", answer: nasal, ipa: "ʒɑ̃bɔ̃", ja: "ハム" }
+  - { fr: "tomate", show: "t{om}ate", answer: oral, ipa: "tɔmat", ja: "トマト" }
+  - { fr: "homme", show: "h{omm}e", answer: oral, ipa: "ɔm", ja: "男の人" }
+  - { fr: "italienne", show: "itali{enn}e", answer: oral, ipa: "italjɛn", ja: "イタリアの（女性形）" }

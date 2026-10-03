@@ -36,19 +36,21 @@ const label = z.object({ name: z.string(), hint: z.string() });
 
 // 聞き比べ（ミニマルペア）の練習。1 つの練習 = 1 ファイル（*-contrast.yaml）にして、
 // 練習を増やすときは YAML を追加するだけで画面（/contrast/<slug>）とクイズが増えるようにしている。
+// 選択肢は 2 つとは限らない（鼻母音は vin / vent / vont の 3 択）ため、labels と pairs のキー（a, b, c…）は自由にしている。
+// 選択肢の並び順は labels に書いた順。
 const contrasts = defineCollection({
   loader: glob({ pattern: '**/*-contrast.yaml', base: '../../materials' }),
   schema: z.object({
     title: z.string(),
     lead: z.string(),
-    labels: z.object({ a: label, b: label }),
+    labels: z.record(z.string(), label),
     ladder: z.object({
       title: z.string(),
       fr: z.string(),
       steps: z.array(z.object({ mark: z.string(), ipa: z.string(), mouth: z.string() })),
       tip: z.string(),
     }),
-    pairs: z.array(z.object({ a: word, b: word })),
+    pairs: z.array(z.record(z.string(), word)),
   }),
 });
 
