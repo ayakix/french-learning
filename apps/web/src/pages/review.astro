@@ -1,0 +1,309 @@
+---
+// 復習画面。保存したクイズの結果（results/、results-api.mjs）から、まだ克服していない問題だけを出題する。
+// 「克服した」= 間違えた後に 2 回続けて正解した。1 回の正解だと、2 択のまぐれ当たりと区別できないため。
+// 結果は開発サーバーの API から読むので、出題する問題はここで全部用意しておき、ブラウザ側で絞り込む。
+import { getCollection } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import { audioUrl } from '../lib/audio';
+import { contrastKey, rulesKey } from '../scripts/results';
+import '../styles/material.css';
+
+const contrasts = await getCollection('contrasts');
+const rules = await getCollection('rules');
+
+const items = [
+  ...contrasts.flatMap((c) => {
+    const choices = Object.entries(c.data.labels).map(([id, l]) => ({ id, ...l }));
+    return c.data.pairs.flatMap((p) =>
+      Object.entries(p).map(([side, w]) => ({
+        type: 'contrast',
+        key: contrastKey(c.id, w.fr),
+        title: c.data.title,
+        href: `/contrast/${c.id}`,
+        fr: w.fr,
+        ipa: w.ipa,
+        ja: w.ja,
+        src: audioUrl(w.fr),
+        answer: side,
+        choices,
+      })),
+    );
+  }),
+  ...rules.flatMap((r) =>
+    r.data.quiz.map((q) => {
+      const m = q.show.match(/^(.*)\{(.+?)\}(.*)$/)!;
+      return {
+        type: 'rules',
+        key: rulesKey(r.id, q.show),
+        title: r.data.title,
+        href: `/rules/${r.id}`,
+        fr: q.fr,
+        ipa: q.ipa,
+        ja: q.ja,
+        src: audioUrl(q.fr),
+        answer: q.answer,
+        choices: r.data.choices,
+        before: m[1],
+        target: m[2],
+        after: m[3],
+      };
+    }),
+  ),
+];
+---
+
+<Base title="復習">
+  <main>
+    <header>
+      <a href="/" class="back">← ホーム</a>
+      <h1>復習</h1>
+      <p class="lead">
+        これまでのクイズで間違えて、まだ克服していない問題です。間違えた後に 2 回続けて正解すると、ここから消えます。
+      </p>
+    </header>
+
+    <p id="status" class="sub">読み込み中…</p>
+
+    <section class="card" id="quiz" data-items={JSON.stringify(items)} hidden>
+      <div class="quiz-controls">
+        <button type="button" id="quiz-next" class="pill primary">▶ 出題する</button>
+        <button type="button" id="quiz-replay" class="pill" hidden>もう一度聞く</button>
+        <span id="quiz-score" class="score"></span>
+      </div>
+      <p id="quiz-title" class="sub">&nbsp;</p>
+      <p id="quiz-word" class="quiz-word" aria-live="polite">&nbsp;</p>
+      <div id="answers" class="answers"></div>
+      <p id="quiz-result" class="result" aria-live="polite"></p>
+    </section>
+
+    <section class="card" id="questions" hidden>
+      <h2>聞き取り・読む文書で間違えた質問</h2>
+      <p class="sub">文章を読み直さないと答えられないので、画面へのリンクだけ出します。</p>
+      <ul></ul>
+    </section>
+  </main>
+</Base>
+
+<script>
+  import { loadResults, saveResult, type SavedResult } from '../scripts/results';
+
+  type Choice = { id: string; name: string; hint: string };
+  type Item = {
+    type: 'contrast' | 'rules';
+    key: string;
+    title: string;
+    href: string;
+    fr: string;
+    ipa: string;
+    ja: string;
+    src: string;
+    answer: string;
+    choices: Choice[];
+    before?: string;
+    target?: string;
+    after?: string;
+  };
+
+  const quiz = document.querySelector<HTMLElement>('#quiz')!;
+  const items: Item[] = JSON.parse(quiz.dataset.items!);
+  const status = document.querySelector<HTMLElement>('#status')!;
+  const nextButton = document.querySelector<HTMLButtonElement>('#quiz-next')!;
+  const replayButton = document.querySelector<HTMLButtonElement>('#quiz-replay')!;
+  const scoreLabel = document.querySelector<HTMLElement>('#quiz-score')!;
+  const titleLabel = document.querySelector<HTMLElement>('#quiz-title')!;
+  const wordLabel = document.querySelector<HTMLElement>('#quiz-word')!;
+  const answers = document.querySelector<HTMLElement>('#answers')!;
+  const resultLabel = document.querySelector<HTMLElement>('#quiz-result')!;
+
+  // 音声を重ねて鳴らさないよう、Audio は 1 つだけ使い回す
+  const audio = new Audio();
+  function play(src: string) {
+    audio.src = src;
+    audio.play().catch(() => {});
+  }
+
+  // key ごとの正誤の履歴（古い順）
+  const history = new Map<string, boolean[]>();
+  function push(key: string, ok: boolean) {
+    history.set(key, [...(history.get(key) ?? []), ok]);
+  }
+
+  function isWeak(key: string) {
+    const h = history.get(key) ?? [];
+    return h.includes(false) && !(h.length >= 2 && h.at(-1) && h.at(-2));
+  }
+
+  // 1 周のあいだは同じ問題を出さない。1 周終わったら、残った問題でもう 1 周する
+  let round: Item[] = [];
+  let current: Item | null = null;
+  let correct = 0;
+  let total = 0;
+
+  function startRound() {
+    round = items.filter((i) => isWeak(i.key)).sort(() => Math.random() - 0.5);
+  }
+
+  function updateScore() {
+    const left = items.filter((i) => isWeak(i.key)).length;
+    scoreLabel.textContent = `${correct} / ${total}（残り ${left} 問）`;
+  }
+
+  function ask() {
+    if (round.length === 0) startRound();
+    current = round.shift() ?? null;
+    resultLabel.textContent = '';
+    resultLabel.className = 'result';
+    if (!current) {
+      titleLabel.textContent = '';
+      wordLabel.textContent = '全部克服しました 🎉';
+      answers.replaceChildren();
+      replayButton.hidden = true;
+      nextButton.disabled = true;
+      return;
+    }
+    nextButton.textContent = '▶ 次の問題';
+    // どの練習の問題かを出す（選択肢の意味がわかるように）。答えのヒントにはならない
+    titleLabel.textContent = current.title;
+    answers.style.gridTemplateColumns = `repeat(${current.choices.length}, 1fr)`;
+    answers.replaceChildren(
+      ...current.choices.map((c) => {
+        const b = Object.assign(document.createElement('button'), { type: 'button', className: 'answer' });
+        b.append(c.name, Object.assign(document.createElement('small'), { textContent: c.hint }));
+        b.addEventListener('click', () => answer(c));
+        return b;
+      }),
+    );
+    if (current.type === 'contrast') {
+      // 聞き比べは音だけで答える
+      wordLabel.textContent = '🔊';
+      replayButton.hidden = false;
+      play(current.src);
+    } else {
+      const span = document.createElement('span');
+      span.append(current.before!, Object.assign(document.createElement('mark'), { textContent: current.target }), current.after!);
+      wordLabel.replaceChildren(span);
+      replayButton.hidden = true;
+    }
+  }
+
+  function answer(choice: Choice) {
+    if (!current) return;
+    const item = current;
+    const ok = choice.id === item.answer;
+    const correctName = item.choices.find((c) => c.id === item.answer)!.name;
+    total++;
+    if (ok) correct++;
+    push(item.key, ok);
+    saveResult({ type: item.type, key: item.key, word: item.type === 'rules' ? `${item.before}{${item.target}}${item.after}` : item.fr, chosen: choice.name, answer: correctName, ok });
+    answers.querySelectorAll('button').forEach((b) => (b.disabled = true));
+    resultLabel.className = `result ${ok ? 'ok' : 'ng'}`;
+    resultLabel.textContent = `${ok ? '正解！' : '残念…'} 答えは「${correctName}」：${item.fr} [${item.ipa}]（${item.ja}）`;
+    if (item.type === 'contrast') wordLabel.textContent = item.fr;
+    play(item.src);
+    // 間違えたら、この周の最後にもう一度出す（その場で覚え直せるように）
+    if (!ok) round.push(item);
+    updateScore();
+  }
+
+  function showQuestions(results: SavedResult[]) {
+    // 質問ごとの最後の結果が不正解のものだけ出す
+    const last = new Map<string, SavedResult>();
+    for (const r of results) if (r.type === 'question') last.set(r.key, r);
+    const wrong = [...last.values()].filter((r) => !r.ok);
+    if (wrong.length === 0) return;
+    const section = document.querySelector<HTMLElement>('#questions')!;
+    section.querySelector('ul')!.replaceChildren(
+      ...wrong.map((r) => {
+        const li = document.createElement('li');
+        li.append(Object.assign(document.createElement('a'), { href: r.page, textContent: r.page }), `　${r.word}（正解：${r.answer}）`);
+        return li;
+      }),
+    );
+    section.hidden = false;
+  }
+
+  const results = await loadResults();
+  if (!results) {
+    status.textContent = '結果を読み込めませんでした。結果の保存と復習は、開発サーバー（npm run dev）でだけ動きます。';
+  } else {
+    for (const r of results) push(r.key, r.ok);
+    showQuestions(results);
+    const left = items.filter((i) => isWeak(i.key)).length;
+    if (left === 0) {
+      status.textContent = '復習が必要な問題はありません。各画面のクイズで間違えると、ここに出てきます。';
+    } else {
+      status.textContent = `復習が必要な問題が ${left} 問あります。`;
+      quiz.hidden = false;
+      updateScore();
+    }
+  }
+
+  nextButton.addEventListener('click', ask);
+  replayButton.addEventListener('click', () => current && play(current.src));
+</script>
+
+<style>
+  .lead {
+    color: var(--muted);
+    margin: 0 0 20px;
+  }
+  .quiz-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;
+  }
+  .score {
+    margin-left: auto;
+    font-weight: 600;
+  }
+  .quiz-word {
+    text-align: center;
+    font-size: 2.6rem;
+    font-weight: 700;
+    margin: 4px 0 16px;
+    letter-spacing: 0.04em;
+  }
+  .quiz-word :global(mark) {
+    background: var(--caution-soft);
+    color: var(--caution);
+    border-radius: 6px;
+    padding: 0 2px;
+  }
+  .answers {
+    display: grid;
+    gap: 10px;
+  }
+  .answers :global(.answer) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 12px;
+    border: 2px solid var(--border);
+    border-radius: 12px;
+    background: var(--bg);
+    font-size: 1.2rem;
+    font-weight: 700;
+  }
+  .answers :global(.answer small) {
+    font-size: 0.75rem;
+    font-weight: 400;
+    color: var(--muted);
+  }
+  .answers :global(.answer:not(:disabled):hover) {
+    border-color: var(--accent);
+  }
+  .answers :global(.answer:disabled) {
+    opacity: 0.5;
+    cursor: default;
+  }
+  .result {
+    min-height: 1.6em;
+    margin: 12px 0 0;
+    font-weight: 600;
+  }
+  #questions ul {
+    padding-left: 1.2em;
+    margin: 0;
+  }
+</style>

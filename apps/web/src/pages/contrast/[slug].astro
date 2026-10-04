@@ -76,7 +76,13 @@ const quizItems = pairs.flatMap((p) => sides.map((side) => ({ ...p[side], answer
       </ul>
     </section>
 
-    <section class="card" id="quiz" data-items={JSON.stringify(quizItems)} data-labels={JSON.stringify(labels)}>
+    <section
+      class="card"
+      id="quiz"
+      data-slug={contrast.id}
+      data-items={JSON.stringify(quizItems)}
+      data-labels={JSON.stringify(labels)}
+    >
       <h2>3. 聞き取りクイズ</h2>
       <p class="sub">再生される単語が {names} のどれかを当てる。</p>
       <div class="quiz-controls">
@@ -102,6 +108,7 @@ const quizItems = pairs.flatMap((p) => sides.map((side) => ({ ...p[side], answer
 
 <script>
   import { createMistakeList } from '../../scripts/mistakes';
+  import { contrastKey, saveResult } from '../../scripts/results';
 
   // 選択肢のキー（a, b, c…）
   type Side = string;
@@ -161,6 +168,14 @@ const quizItems = pairs.flatMap((p) => sides.map((side) => ({ ...p[side], answer
       labels[current.answer].name
     }`;
     answerButtons.forEach((b) => (b.disabled = true));
+    saveResult({
+      type: 'contrast',
+      key: contrastKey(quiz.dataset.slug!, current.fr),
+      word: current.fr,
+      chosen: labels[choice as Side].name,
+      answer: labels[current.answer].name,
+      ok,
+    });
     if (!ok) {
       mistakes.add({
         key: current.fr,

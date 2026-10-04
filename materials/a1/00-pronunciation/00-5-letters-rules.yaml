@@ -1,0 +1,75 @@
+# 00-5 2 文字以上で 1 つの音を表す子音の綴り（Web アプリの読み方ルール画面 /rules/letters のデータ）
+# 形式は 00-2-e-rules.yaml と同じ
+#
+# h は 1 文字だが、ch / ph / th のように他の文字と組んで音を変えるので、同じ練習で「単独では読まない」ことを確かめる。
+# -tion の [sjɔ̃] は 2 音だが、綴りのまとまりとして覚えたほうが早いので 1 つの選択肢にしている。
+slug: letters
+title: "2 文字以上で 1 つの音を表す子音の綴り"
+lead: "子音の文字が組むと、別の 1 つの音になります。英語と似た綴りでも、ch は「シュ」、th は「ト」と読むので注意します。"
+choices:
+  - { id: sh, name: "[ʃ]", hint: "「シュ」" }
+  - { id: f, name: "[f]", hint: "「フ」" }
+  - { id: k, name: "[k]", hint: "「ク」" }
+  - { id: t, name: "[t]", hint: "「ト」（英語の th ではない）" }
+  - { id: ny, name: "[ɲ]", hint: "「ニュ」" }
+  - { id: sjon, name: "[sjɔ̃]", hint: "「スィヨン」" }
+  - { id: y, name: "[j]", hint: "「ユ」の子音（ヤ行）" }
+  - { id: silent, name: "読まない", hint: "綴りにだけある" }
+rules:
+  - where: "ch"
+    answer: sh
+    examples:
+      - { fr: "chat", ipa: "ʃa", ja: "猫" }
+      - { fr: "chocolat", ipa: "ʃɔkɔla", ja: "チョコレート" }
+  - where: "ph"
+    answer: f
+    examples:
+      - { fr: "photo", ipa: "fɔto", ja: "写真" }
+  - where: "qu"
+    answer: k
+    note: "u は読まない"
+    examples:
+      - { fr: "qui", ipa: "ki", ja: "誰" }
+      - { fr: "quatre", ipa: "katʁ", ja: "4" }
+  - where: "th"
+    answer: t
+    examples:
+      - { fr: "thé", ipa: "te", ja: "お茶" }
+  - where: "gn"
+    answer: ny
+    examples:
+      - { fr: "montagne", ipa: "mɔ̃taɲ", ja: "山" }
+      - { fr: "champagne", ipa: "ʃɑ̃paɲ", ja: "シャンパン" }
+  - where: "-tion"
+    answer: sjon
+    examples:
+      - { fr: "nation", ipa: "nasjɔ̃", ja: "国家" }
+      - { fr: "attention", ipa: "atɑ̃sjɔ̃", ja: "注意" }
+  - where: "ill / 母音 ＋ il"
+    answer: y
+    note: "例外：ville [vil]（町）、mille [mil]（千）は [l]"
+    examples:
+      - { fr: "fille", ipa: "fij", ja: "娘・女の子" }
+      - { fr: "famille", ipa: "famij", ja: "家族" }
+      - { fr: "travail", ipa: "tʁavaj", ja: "仕事" }
+  - where: "h（単独）"
+    answer: silent
+    examples:
+      - { fr: "hôtel", ipa: "otɛl", ja: "ホテル" }
+      - { fr: "homme", ipa: "ɔm", ja: "男の人" }
+      - { fr: "heure", ipa: "œʁ", ja: "時間" }
+quiz:
+  - { fr: "dimanche", show: "diman{ch}e", answer: sh, ipa: "dimɑ̃ʃ", ja: "日曜日" }
+  - { fr: "pharmacie", show: "{ph}armacie", answer: f, ipa: "faʁmasi", ja: "薬局" }
+  - { fr: "quand", show: "{qu}and", answer: k, ipa: "kɑ̃", ja: "いつ" }
+  - { fr: "théâtre", show: "{th}éâtre", answer: t, ipa: "teɑtʁ", ja: "劇場" }
+  - { fr: "Espagne", show: "Espa{gn}e", answer: ny, ipa: "ɛspaɲ", ja: "スペイン" }
+  - { fr: "station", show: "sta{tion}", answer: sjon, ipa: "stasjɔ̃", ja: "駅（地下鉄）・ステーション" }
+  - { fr: "bouteille", show: "boute{ill}e", answer: y, ipa: "butɛj", ja: "瓶" }
+  - { fr: "hiver", show: "{h}iver", answer: silent, ipa: "ivɛʁ", ja: "冬" }
+  - { fr: "chose", show: "{ch}ose", answer: sh, ipa: "ʃoz", ja: "物・こと" }
+  - { fr: "téléphone", show: "télé{ph}one", answer: f, ipa: "telefɔn", ja: "電話" }
+  - { fr: "magnifique", show: "ma{gn}ifique", answer: ny, ipa: "maɲifik", ja: "すばらしい" }
+  - { fr: "soleil", show: "sole{il}", answer: y, ipa: "sɔlɛj", ja: "太陽" }
+  - { fr: "habiter", show: "{h}abiter", answer: silent, ipa: "abite", ja: "住む" }
+  - { fr: "musique", show: "musi{qu}e", answer: k, ipa: "myzik", ja: "音楽" }

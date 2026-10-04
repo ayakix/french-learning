@@ -31,6 +31,14 @@ npx astro dev stop            # 停止
 | `/numbers` | `a1/common/numbers.yaml` |
 | `/verbs` | `a1/common/verbs.yaml` |
 | `/voices` | `config/tts.json` の声の聞き比べ |
+| `/review` | `results/` のクイズの結果から、克服していない問題を出題する |
+
+## クイズの結果
+
+- クイズに答えるたびに、`results/YYYY/MM/YYYY-MM-DD.jsonl` に 1 行追記する（`results-api.mjs`：開発サーバーにだけある `/api/results`。POST で追記、GET で全件）
+- 静的に書き出したサイトには API がないので、保存に失敗しても画面は普通に動く
+- 問題の key の作り方は `src/scripts/results.ts` にまとめている（各画面と `/review` で同じ問題を引き当てるため）
+- `scripts/results [日付]` で、画面ごとの正解数と間違えた問題を表示する
 
 ## 今後（フェーズ 2）
 

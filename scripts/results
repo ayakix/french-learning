@@ -1,0 +1,21 @@
+#!/bin/bash
+# Web のクイズの結果（results/、apps/web/results-api.mjs が書き出す）を、journal に書ける形にまとめる。
+# 使い方: scripts/results [YYYY-MM-DD]   （省略時は今日）
+#
+# 画面ごとの正解数と、間違えた問題の一覧を出す。Claude が「終了」の合図で journal と mistakes/ に転記するときに使う。
+set -euo pipefail
+
+root="$(cd "$(dirname "$0")/.." && pwd)"
+day="${1:-$(date +%Y-%m-%d)}"
+file="$root/results/${day:0:4}/${day:5:2}/$day.jsonl"
+[ -f "$file" ] || { echo "$day の結果はありません"; exit 0; }
+
+echo "## $day の結果"
+echo
+echo "| 画面 | 結果 |"
+echo "|---|---|"
+jq -rs 'group_by(.page) | .[] | "| \(.[0].page) | \(map(select(.ok)) | length) / \(length) |"' "$file"
+echo
+echo "### 間違えた問題"
+echo
+jq -r 'select(.ok | not) | "- \(.time) \(.page)：\(.word)（あなた：\(.chosen) → 正解：\(.answer)）"' "$file"

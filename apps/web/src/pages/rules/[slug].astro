@@ -67,7 +67,13 @@ const quizItems = quiz.map((q) => ({ ...q, ...splitShow(q.show), src: audioUrl(q
       </table>
     </section>
 
-    <section class="card" id="quiz" data-items={JSON.stringify(quizItems)} data-choices={JSON.stringify(choiceName)}>
+    <section
+      class="card"
+      id="quiz"
+      data-slug={entry.id}
+      data-items={JSON.stringify(quizItems)}
+      data-choices={JSON.stringify(choiceName)}
+    >
       <h2>2. 読み方クイズ</h2>
       <p class="sub">色の付いた部分をどう読むか選ぶ。答えると発音が流れる。</p>
       <div class="quiz-controls">
@@ -93,9 +99,11 @@ const quizItems = quiz.map((q) => ({ ...q, ...splitShow(q.show), src: audioUrl(q
 
 <script>
   import { createMistakeList } from '../../scripts/mistakes';
+  import { rulesKey, saveResult } from '../../scripts/results';
 
   type QuizItem = {
     fr: string;
+    show: string;
     ipa: string;
     ja: string;
     answer: string;
@@ -163,6 +171,14 @@ const quizItems = quiz.map((q) => ({ ...q, ...splitShow(q.show), src: audioUrl(q
     resultLabel.textContent = `${ok ? '正解！' : '残念…'} 答えは「${choiceName[current.answer]}」：${current.fr} [${current.ipa}]（${current.ja}）`;
     answerButtons.forEach((b) => (b.disabled = true));
     play(current.src);
+    saveResult({
+      type: 'rules',
+      key: rulesKey(quiz.dataset.slug!, current.show),
+      word: current.show,
+      chosen: choiceName[choice],
+      answer: choiceName[current.answer],
+      ok,
+    });
     if (!ok) {
       mistakes.add({
         // 同じ単語でも判断する箇所が違えば別の問題（bell{e} と b{e}lle）なので、強調した位置も含めて区別する

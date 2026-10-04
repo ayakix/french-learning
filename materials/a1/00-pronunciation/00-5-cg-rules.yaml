@@ -1,0 +1,64 @@
+# 00-5 c と g の読み方（Web アプリの読み方ルール画面 /rules/cg のデータ）
+# 形式は 00-2-e-rules.yaml と同じ
+#
+# c と g は、どちらも「後ろの文字が e / i / y かどうか」で読み方が変わる、同じ仕組みなので 1 つの練習にまとめている。
+# ç と gu は、その仕組みに逆らって音を保つための綴りなので、同じ表に並べて違いを見せる。
+slug: cg
+title: "c と g の読み方"
+lead: "c と g は、後ろが e / i / y だと柔らかい音（[s] / [ʒ]）、それ以外では硬い音（[k] / [ɡ]）になります。ç と gu は、音を変えないための綴りです。"
+choices:
+  - { id: k, name: "[k]", hint: "「ク」の子音" }
+  - { id: s, name: "[s]", hint: "「ス」の子音" }
+  - { id: g, name: "[ɡ]", hint: "「グ」の子音" }
+  - { id: zh, name: "[ʒ]", hint: "「ジュ」の子音（舌を上あごにつけない）" }
+rules:
+  - where: "c ＋ a / o / u（子音の前も）"
+    answer: k
+    examples:
+      - { fr: "café", ipa: "kafe", ja: "コーヒー" }
+      - { fr: "comme", ipa: "kɔm", ja: "〜のように" }
+      - { fr: "cuisine", ipa: "kɥizin", ja: "台所・料理" }
+  - where: "c ＋ e / i / y"
+    answer: s
+    examples:
+      - { fr: "ce", ipa: "sə", ja: "これ" }
+      - { fr: "ici", ipa: "isi", ja: "ここ" }
+      - { fr: "cinéma", ipa: "sinema", ja: "映画館" }
+  - where: "ç（セディーユ付き）"
+    answer: s
+    note: "a / o / u の前でも [s] にするための印。e / i の前には付けない"
+    examples:
+      - { fr: "ça", ipa: "sa", ja: "それ" }
+      - { fr: "garçon", ipa: "ɡaʁsɔ̃", ja: "男の子" }
+  - where: "g ＋ a / o / u（子音の前も）"
+    answer: g
+    examples:
+      - { fr: "gare", ipa: "ɡaʁ", ja: "駅" }
+      - { fr: "gomme", ipa: "ɡɔm", ja: "消しゴム" }
+      - { fr: "grand", ipa: "ɡʁɑ̃", ja: "大きい" }
+  - where: "g ＋ e / i / y"
+    answer: zh
+    examples:
+      - { fr: "âge", ipa: "ɑʒ", ja: "年齢" }
+      - { fr: "girafe", ipa: "ʒiʁaf", ja: "キリン" }
+  - where: "gu ＋ e / i"
+    answer: g
+    note: "e / i の前でも [ɡ] にするための綴り。u は読まない"
+    examples:
+      - { fr: "guitare", ipa: "ɡitaʁ", ja: "ギター" }
+      - { fr: "langue", ipa: "lɑ̃ɡ", ja: "言語・舌" }
+quiz:
+  - { fr: "carte", show: "{c}arte", answer: k, ipa: "kaʁt", ja: "カード・地図" }
+  - { fr: "merci", show: "mer{c}i", answer: s, ipa: "mɛʁsi", ja: "ありがとう" }
+  - { fr: "français", show: "fran{ç}ais", answer: s, ipa: "fʁɑ̃sɛ", ja: "フランスの" }
+  - { fr: "gâteau", show: "{g}âteau", answer: g, ipa: "ɡɑto", ja: "ケーキ" }
+  - { fr: "rouge", show: "rou{g}e", answer: zh, ipa: "ʁuʒ", ja: "赤い" }
+  - { fr: "guide", show: "{gu}ide", answer: g, ipa: "ɡid", ja: "ガイド" }
+  - { fr: "bicyclette", show: "bi{c}yclette", answer: s, ipa: "bisiklɛt", ja: "自転車" }
+  - { fr: "orange", show: "oran{g}e", answer: zh, ipa: "ɔʁɑ̃ʒ", ja: "オレンジ" }
+  - { fr: "court", show: "{c}ourt", answer: k, ipa: "kuʁ", ja: "短い" }
+  - { fr: "reçu", show: "re{ç}u", answer: s, ipa: "ʁəsy", ja: "領収書" }
+  - { fr: "glace", show: "{g}lace", answer: g, ipa: "ɡlas", ja: "アイスクリーム・氷" }
+  - { fr: "région", show: "ré{g}ion", answer: zh, ipa: "ʁeʒjɔ̃", ja: "地方" }
+  - { fr: "classe", show: "{c}lasse", answer: k, ipa: "klas", ja: "クラス" }
+  - { fr: "visage", show: "visa{g}e", answer: zh, ipa: "vizaʒ", ja: "顔" }

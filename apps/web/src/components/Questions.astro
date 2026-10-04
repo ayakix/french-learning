@@ -27,7 +27,9 @@ const { questions } = Astro.props as { questions: Question[] };
 </ol>
 
 <script>
-  document.querySelectorAll<HTMLElement>('.question').forEach((q) => {
+  import { questionKey, saveResult } from '../scripts/results';
+
+  document.querySelectorAll<HTMLElement>('.question').forEach((q, index) => {
     const answer = Number(q.dataset.answer);
     const result = q.querySelector<HTMLElement>('.result')!;
     const choices = [...q.querySelectorAll<HTMLButtonElement>('.choice')];
@@ -39,6 +41,14 @@ const { questions } = Astro.props as { questions: Question[] };
         choices[answer].classList.add('ok');
         result.className = `result ${ok ? 'ok' : 'ng'}`;
         result.textContent = ok ? '正解！' : `残念… 正解は「${choices[answer].textContent!.trim()}」`;
+        saveResult({
+          type: 'question',
+          key: questionKey(location.pathname, index),
+          word: q.querySelector('.q')!.firstChild!.textContent!.trim(),
+          chosen: button.textContent!.trim(),
+          answer: choices[answer].textContent!.trim(),
+          ok,
+        });
       }),
     );
   });

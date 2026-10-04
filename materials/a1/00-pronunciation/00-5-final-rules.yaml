@@ -1,0 +1,47 @@
+# 00-5 語末の子音を読むかどうか（Web アプリの読み方ルール画面 /rules/final のデータ）
+# 形式は 00-2-e-rules.yaml と同じ
+#
+# 語末の e が前の子音を「起こす」ルールも入れている。形容詞の男性形・女性形（petit / petite）を
+# 耳で区別する土台になるため。
+# ルール表の例とクイズの単語は分けている。例を見て覚えた単語ではなく、ルールで判断できるかを確かめるため。
+slug: final
+title: "語末の子音を読むかどうか"
+lead: "語末の子音は基本的に読みません。例外は c / r / f / l（英単語 CaReFuL で覚える）。また、語末に e があると、その前の子音を読むようになります。"
+choices:
+  - { id: read, name: "読む", hint: "子音まで発音する" }
+  - { id: silent, name: "読まない", hint: "子音は綴りにだけある" }
+rules:
+  - where: "語末の子音（c / r / f / l 以外）"
+    answer: silent
+    examples:
+      - { fr: "petit", ipa: "pəti", ja: "小さい（男性形）" }
+      - { fr: "trop", ipa: "tʁo", ja: "〜すぎる" }
+      - { fr: "vous", ipa: "vu", ja: "あなた" }
+  - where: "語末の c / r / f / l"
+    answer: read
+    note: "例外：-er で終わる動詞の r は読まない（parler [paʁle]）"
+    examples:
+      - { fr: "avec", ipa: "avɛk", ja: "〜と一緒に" }
+      - { fr: "bonjour", ipa: "bɔ̃ʒuʁ", ja: "こんにちは" }
+      - { fr: "neuf", ipa: "nœf", ja: "9" }
+      - { fr: "hôtel", ipa: "otɛl", ja: "ホテル" }
+  - where: "子音 ＋ 語末の e"
+    answer: read
+    note: "e 自体は読まない。形容詞の女性形はこの形が多い"
+    examples:
+      - { fr: "petite", ipa: "pətit", ja: "小さい（女性形）" }
+      - { fr: "grande", ipa: "ɡʁɑ̃d", ja: "大きい（女性形）" }
+      - { fr: "française", ipa: "fʁɑ̃sɛz", ja: "フランスの（女性形）" }
+quiz:
+  - { fr: "nuit", show: "nui{t}", answer: silent, ipa: "nɥi", ja: "夜" }
+  - { fr: "sac", show: "sa{c}", answer: read, ipa: "sak", ja: "鞄" }
+  - { fr: "chanter", show: "chante{r}", answer: silent, ipa: "ʃɑ̃te", ja: "歌う" }
+  - { fr: "noir", show: "noi{r}", answer: read, ipa: "nwaʁ", ja: "黒い" }
+  - { fr: "froid", show: "froi{d}", answer: silent, ipa: "fʁwa", ja: "寒い・冷たい" }
+  - { fr: "soif", show: "soi{f}", answer: read, ipa: "swaf", ja: "のどの渇き" }
+  - { fr: "avril", show: "avri{l}", answer: read, ipa: "avʁil", ja: "4 月" }
+  - { fr: "gris", show: "gri{s}", answer: silent, ipa: "ɡʁi", ja: "灰色の" }
+  - { fr: "chaude", show: "chau{d}e", answer: read, ipa: "ʃod", ja: "暑い・熱い（女性形）" }
+  - { fr: "chaud", show: "chau{d}", answer: silent, ipa: "ʃo", ja: "暑い・熱い（男性形）" }
+  - { fr: "assez", show: "asse{z}", answer: silent, ipa: "ase", ja: "十分に" }
+  - { fr: "verte", show: "ver{t}e", answer: read, ipa: "vɛʁt", ja: "緑の（女性形）" }
