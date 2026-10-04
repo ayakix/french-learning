@@ -6,7 +6,7 @@ import '../styles/material.css';
 
 const [entry] = await getCollection('numbers');
 const groups = entry
-  ? entry.data.groups.map((g) => ({ ...g, items: g.items.map((i) => ({ ...i, src: audioUrl(i.fr) })) }))
+  ? entry.data.groups.map((g) => ({ ...g, items: g.items.map((i) => ({ ...i, src: audioUrl(i.tts ?? i.fr) })) }))
   : [];
 ---
 

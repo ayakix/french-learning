@@ -18,7 +18,7 @@ groups:
       - {show: "4", fr: "quatre", ipa: "katʁ"}
       - {show: "5", fr: "cinq", ipa: "sɛ̃k", note: "単独では最後の q を読む [sɛ̃k]"}
       - {show: "6", fr: "six", ipa: "sis", note: "単独では [sis]。子音の前では [si]、母音の前では [siz] と変わる"}
-      - {show: "7", fr: "sept", ipa: "sɛt"}
+      - {show: "7", fr: "sept", ipa: "sɛt", tts: "sept !", note: "sept だけだと英語の Sept.（September）と読まれるため、tts は sept !"}
       - {show: "8", fr: "huit", ipa: "ɥit", note: "単独では最後の t を読む [ɥit]。子音の前では [ɥi]"}
       - {show: "9", fr: "neuf", ipa: "nœf", note: "ans / heures の前だけ f が [v] になる（neuf ans [nœ vɑ̃]）"}
       - {show: "10", fr: "dix", ipa: "dis", note: "単独では [dis]。子音の前では [di]、母音の前では [diz] と変わる"}

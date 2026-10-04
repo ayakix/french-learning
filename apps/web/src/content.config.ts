@@ -171,6 +171,8 @@ const numbers = defineCollection({
             show: z.string(),
             fr: z.string(),
             ipa: z.string(),
+            // 単独だと読み間違える語（sept → September など）に、読ませる文を書く
+            tts: z.string().optional(),
             ja: z.string().optional(),
             note: z.string().optional(),
           }),
