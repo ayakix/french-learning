@@ -6,16 +6,16 @@ title: "週末の予定"
 type: "dialogue"
 situation: "金曜日の夕方、クレールがポールを週末のピクニックに誘う"
 speakers:
-  claire: { name: "Claire", voice: "claire" }
+  claire: { name: "Claire", voice: "lucie" }
   paul: { name: "Paul" }
 lines:
-  - { speaker: "claire", voice: "claire", fr: "Salut Paul ! Tu es libre samedi ?", ja: "やあ、ポール！土曜日は空いてる？" }
+  - { speaker: "claire", voice: "lucie", fr: "Salut Paul ! Tu es libre samedi ?", ja: "やあ、ポール！土曜日は空いてる？" }
   - { speaker: "paul", fr: "Samedi ? Désolé, je ne peux pas. Je vais aider mon frère. Pourquoi ?", ja: "土曜？ごめん、無理なんだ。兄を手伝うんだ。どうして？" }
-  - { speaker: "claire", voice: "claire", fr: "Je vais faire un pique-nique au parc avec des amis.", ja: "友達と公園でピクニックをするの。" }
+  - { speaker: "claire", voice: "lucie", fr: "Je vais faire un pique-nique au parc avec des amis.", ja: "友達と公園でピクニックをするの。" }
   - { speaker: "paul", fr: "Oh, c'est dommage ! Et dimanche ?", ja: "ああ、残念！日曜は？" }
-  - { speaker: "claire", voice: "claire", fr: "Dimanche, il va pleuvoir. Alors, on va au musée ?", ja: "日曜は雨が降るみたい。じゃあ、美術館に行く？" }
+  - { speaker: "claire", voice: "lucie", fr: "Dimanche, il va pleuvoir. Alors, on va au musée ?", ja: "日曜は雨が降るみたい。じゃあ、美術館に行く？" }
   - { speaker: "paul", fr: "Avec plaisir ! À quelle heure ?", ja: "喜んで！何時に？" }
-  - { speaker: "claire", voice: "claire", fr: "À deux heures, devant le musée.", ja: "2 時に、美術館の前で。" }
+  - { speaker: "claire", voice: "lucie", fr: "À deux heures, devant le musée.", ja: "2 時に、美術館の前で。" }
   - { speaker: "paul", fr: "D'accord. À dimanche !", ja: "わかった。じゃあ日曜に！" }
 questions:
   - q: "Pourquoi Paul n'est pas libre samedi ?"

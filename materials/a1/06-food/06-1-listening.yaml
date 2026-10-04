@@ -7,17 +7,17 @@ type: "dialogue"
 situation: "朝のパン屋で、男性客が女性の店員に注文する"
 speakers:
   client: { name: "le client" }
-  vendeuse: { name: "la vendeuse", voice: "claire" }
+  vendeuse: { name: "la vendeuse", voice: "lucie" }
 lines:
-  - { speaker: "vendeuse", voice: "claire", fr: "Bonjour monsieur, vous désirez ?", ja: "いらっしゃいませ、何になさいますか？" }
+  - { speaker: "vendeuse", voice: "lucie", fr: "Bonjour monsieur, vous désirez ?", ja: "いらっしゃいませ、何になさいますか？" }
   - { speaker: "client", fr: "Bonjour ! Je voudrais une baguette et deux croissants, s'il vous plaît.", ja: "こんにちは！バゲット 1 本とクロワッサンを 2 つください。" }
-  - { speaker: "vendeuse", voice: "claire", fr: "Voilà. Et avec ceci ?", ja: "どうぞ。ほかに何か？" }
+  - { speaker: "vendeuse", voice: "lucie", fr: "Voilà. Et avec ceci ?", ja: "どうぞ。ほかに何か？" }
   - { speaker: "client", fr: "Vous avez des tartes aux pommes ?", ja: "りんごのタルトはありますか？" }
-  - { speaker: "vendeuse", voice: "claire", fr: "Ah non, désolée, il n'y a pas de tartes aujourd'hui. Mais j'ai des gâteaux au chocolat.", ja: "あいにく、今日はタルトがないんです。でもチョコレートケーキならあります。" }
+  - { speaker: "vendeuse", voice: "lucie", fr: "Ah non, désolée, il n'y a pas de tartes aujourd'hui. Mais j'ai des gâteaux au chocolat.", ja: "あいにく、今日はタルトがないんです。でもチョコレートケーキならあります。" }
   - { speaker: "client", fr: "Alors, un gâteau au chocolat. C'est tout. Ça fait combien ?", ja: "じゃあ、チョコレートケーキを 1 つ。以上です。いくらですか？" }
-  - { speaker: "vendeuse", voice: "claire", fr: "Ça fait six euros quarante.", ja: "6 ユーロ 40 セントです。" }
+  - { speaker: "vendeuse", voice: "lucie", fr: "Ça fait six euros quarante.", ja: "6 ユーロ 40 セントです。" }
   - { speaker: "client", fr: "Je peux payer par carte ?", ja: "カードで払えますか？" }
-  - { speaker: "vendeuse", voice: "claire", fr: "Oui, bien sûr. Merci et bonne journée !", ja: "はい、もちろん。ありがとうございます、良い一日を！" }
+  - { speaker: "vendeuse", voice: "lucie", fr: "Oui, bien sûr. Merci et bonne journée !", ja: "はい、もちろん。ありがとうございます、良い一日を！" }
 questions:
   - q: "Qu'est-ce que l'homme achète d'abord ?"
     q_ja: "男性が最初に頼んだ物は？"

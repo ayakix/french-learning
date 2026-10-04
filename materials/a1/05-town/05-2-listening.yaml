@@ -7,15 +7,15 @@ type: "dialogue"
 situation: "レアが、引っ越したばかりのトマに新しいアパートについて聞く"
 speakers:
   thomas: { name: "Thomas" }
-  lea: { name: "Léa", voice: "claire" }
+  lea: { name: "Léa", voice: "lucie" }
 lines:
-  - { speaker: "lea", voice: "claire", fr: "Salut Thomas ! Alors, ton nouvel appartement ?", ja: "やあトマ！で、新しいアパートはどう？" }
+  - { speaker: "lea", voice: "lucie", fr: "Salut Thomas ! Alors, ton nouvel appartement ?", ja: "やあトマ！で、新しいアパートはどう？" }
   - { speaker: "thomas", fr: "Il est super ! Il est près de la gare, au quatrième étage.", ja: "最高だよ！駅の近くで、5 階なんだ。" }
-  - { speaker: "lea", voice: "claire", fr: "Il y a un ascenseur ?", ja: "エレベーターはあるの？" }
+  - { speaker: "lea", voice: "lucie", fr: "Il y a un ascenseur ?", ja: "エレベーターはあるの？" }
   - { speaker: "thomas", fr: "Non, il n'y a pas d'ascenseur. Mais l'appartement est grand et très clair.", ja: "ううん、エレベーターはないんだ。でも部屋は広くてとても明るいよ。" }
-  - { speaker: "lea", voice: "claire", fr: "Il y a deux chambres ?", ja: "寝室は 2 つ？" }
+  - { speaker: "lea", voice: "lucie", fr: "Il y a deux chambres ?", ja: "寝室は 2 つ？" }
   - { speaker: "thomas", fr: "Non, une chambre, un salon et une petite cuisine.", ja: "いや、寝室 1 つとリビングと小さな台所。" }
-  - { speaker: "lea", voice: "claire", fr: "Et le quartier, il est calme ?", ja: "それで、地区は静か？" }
+  - { speaker: "lea", voice: "lucie", fr: "Et le quartier, il est calme ?", ja: "それで、地区は静か？" }
   - { speaker: "thomas", fr: "Oui, très calme. Et il y a un parc derrière l'immeuble.", ja: "うん、とても静か。それに建物の裏に公園があるんだ。" }
 questions:
   - q: "L'appartement de Thomas est à quel étage ?"

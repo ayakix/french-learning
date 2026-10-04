@@ -5,14 +5,14 @@ title: "ニースからの留守番電話"
 type: "voicemail"
 situation: "ナタリーが、旅行先のニースから友達のマルクに留守番電話を残す"
 speakers:
-  nathalie: { name: "Nathalie", voice: "claire" }
+  nathalie: { name: "Nathalie", voice: "lucie" }
 lines:
-  - { speaker: "nathalie", voice: "claire", fr: "Allô Marc, c'est Nathalie.", ja: "もしもしマルク、ナタリーです。" }
-  - { speaker: "nathalie", voice: "claire", fr: "Je suis bien arrivée à Nice hier soir, à vingt-deux heures.", ja: "昨日の夜 22 時に、無事ニースに着きました。" }
-  - { speaker: "nathalie", voice: "claire", fr: "Le train est parti avec une heure de retard.", ja: "電車は 1 時間遅れで出発したの。" }
-  - { speaker: "nathalie", voice: "claire", fr: "Ce matin, je suis allée à la plage. Il a fait très beau !", ja: "今朝はビーチに行ったよ。とてもいい天気だった！" }
-  - { speaker: "nathalie", voice: "claire", fr: "Mais j'ai oublié mon chargeur de téléphone chez toi.", ja: "でも、あなたの家に携帯の充電器を忘れちゃった。" }
-  - { speaker: "nathalie", voice: "claire", fr: "Je vais passer chez toi samedi prochain. Bisous !", ja: "次の土曜日に取りに寄るね。じゃあね！" }
+  - { speaker: "nathalie", voice: "lucie", fr: "Allô Marc, c'est Nathalie.", ja: "もしもしマルク、ナタリーです。" }
+  - { speaker: "nathalie", voice: "lucie", fr: "Je suis bien arrivée à Nice hier soir, à vingt-deux heures.", ja: "昨日の夜 22 時に、無事ニースに着きました。" }
+  - { speaker: "nathalie", voice: "lucie", fr: "Le train est parti avec une heure de retard.", ja: "電車は 1 時間遅れで出発したの。" }
+  - { speaker: "nathalie", voice: "lucie", fr: "Ce matin, je suis allée à la plage. Il a fait très beau !", ja: "今朝はビーチに行ったよ。とてもいい天気だった！" }
+  - { speaker: "nathalie", voice: "lucie", fr: "Mais j'ai oublié mon chargeur de téléphone chez toi.", ja: "でも、あなたの家に携帯の充電器を忘れちゃった。" }
+  - { speaker: "nathalie", voice: "lucie", fr: "Je vais passer chez toi samedi prochain. Bisous !", ja: "次の土曜日に取りに寄るね。じゃあね！" }
 questions:
   - q: "À quelle heure Nathalie est arrivée à Nice ?"
     q_ja: "ナタリーは何時にニースに着きましたか？"

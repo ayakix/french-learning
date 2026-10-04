@@ -5,16 +5,16 @@ title: "家族の写真"
 type: "dialogue"
 situation: "語学学校の休み時間に、エマがトマにスマートフォンで家族の写真を見せる"
 speakers:
-  emma: { name: "Emma", voice: "claire" }
+  emma: { name: "Emma", voice: "lucie" }
   thomas: { name: "Thomas" }
 lines:
-  - { speaker: "emma", voice: "claire", fr: "Regarde, c'est ma famille.", ja: "見て、私の家族よ。" }
+  - { speaker: "emma", voice: "lucie", fr: "Regarde, c'est ma famille.", ja: "見て、私の家族よ。" }
   - { speaker: "thomas", fr: "Ah, super ! C'est ton père, l'homme avec des lunettes ?", ja: "へえ、いいね！めがねの男の人が君のお父さん？" }
-  - { speaker: "emma", voice: "claire", fr: "Oui, et la femme blonde, c'est ma mère.", ja: "そう。それから金髪の女性が母よ。" }
+  - { speaker: "emma", voice: "lucie", fr: "Oui, et la femme blonde, c'est ma mère.", ja: "そう。それから金髪の女性が母よ。" }
   - { speaker: "thomas", fr: "Tu as des frères et sœurs ?", ja: "きょうだいはいるの？" }
-  - { speaker: "emma", voice: "claire", fr: "J'ai un frère et une sœur. Mon frère, Hugo, a seize ans.", ja: "兄弟が 1 人と姉妹が 1 人。弟のユゴーは 16 歳。" }
+  - { speaker: "emma", voice: "lucie", fr: "J'ai un frère et une sœur. Mon frère, Hugo, a seize ans.", ja: "兄弟が 1 人と姉妹が 1 人。弟のユゴーは 16 歳。" }
   - { speaker: "thomas", fr: "Et ta sœur, c'est la petite fille aux cheveux roux ?", ja: "で、妹さんは赤毛の小さい女の子？" }
-  - { speaker: "emma", voice: "claire", fr: "Oui, c'est Jade. Elle a huit ans. Elle est très drôle !", ja: "そう、ジャードよ。8 歳。すごくおもしろいの！" }
+  - { speaker: "emma", voice: "lucie", fr: "Oui, c'est Jade. Elle a huit ans. Elle est très drôle !", ja: "そう、ジャードよ。8 歳。すごくおもしろいの！" }
 questions:
   - q: "Emma a combien de frères et sœurs ?"
     q_ja: "エマのきょうだいは何人？"

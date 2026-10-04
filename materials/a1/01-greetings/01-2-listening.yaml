@@ -6,18 +6,18 @@ title: "語学学校の受付で"
 type: "dialogue"
 situation: "語学学校の受付で、受付の女性がリュカに名前や年齢を聞いて登録する"
 speakers:
-  secretaire: { name: "La secrétaire", voice: "claire" }
+  secretaire: { name: "La secrétaire", voice: "lucie" }
   lucas: { name: "Lucas" }
 lines:
-  - { speaker: "secretaire", voice: "claire", fr: "Bonjour, monsieur. Vous vous appelez comment ?", ja: "こんにちは。お名前は？" }
+  - { speaker: "secretaire", voice: "lucie", fr: "Bonjour, monsieur. Vous vous appelez comment ?", ja: "こんにちは。お名前は？" }
   - { speaker: "lucas", fr: "Bonjour, madame. Je m'appelle Lucas Bernard.", ja: "こんにちは。リュカ・ベルナールです。" }
-  - { speaker: "secretaire", voice: "claire", fr: "Vous avez quel âge ?", ja: "おいくつですか？" }
+  - { speaker: "secretaire", voice: "lucie", fr: "Vous avez quel âge ?", ja: "おいくつですか？" }
   - { speaker: "lucas", fr: "J'ai dix-neuf ans.", ja: "19 歳です。" }
-  - { speaker: "secretaire", voice: "claire", fr: "Vous êtes de quelle nationalité ?", ja: "国籍はどちらですか？" }
+  - { speaker: "secretaire", voice: "lucie", fr: "Vous êtes de quelle nationalité ?", ja: "国籍はどちらですか？" }
   - { speaker: "lucas", fr: "Je suis belge. J'habite à Bruxelles.", ja: "ベルギー人です。ブリュッセルに住んでいます。" }
-  - { speaker: "secretaire", voice: "claire", fr: "Et vous parlez quelles langues ?", ja: "何語を話しますか？" }
+  - { speaker: "secretaire", voice: "lucie", fr: "Et vous parlez quelles langues ?", ja: "何語を話しますか？" }
   - { speaker: "lucas", fr: "Je parle français, anglais et un peu allemand.", ja: "フランス語と英語、それに少しドイツ語を話します。" }
-  - { speaker: "secretaire", voice: "claire", fr: "Très bien. Vous êtes dans la classe quatorze. Bienvenue !", ja: "結構です。あなたは 14 番のクラスです。ようこそ！" }
+  - { speaker: "secretaire", voice: "lucie", fr: "Très bien. Vous êtes dans la classe quatorze. Bienvenue !", ja: "結構です。あなたは 14 番のクラスです。ようこそ！" }
   - { speaker: "lucas", fr: "Merci beaucoup, madame. Au revoir !", ja: "どうもありがとうございます。さようなら！" }
 questions:
   - q: "Lucas a quel âge ?"

@@ -5,14 +5,14 @@ title: "誕生日会への招待"
 type: "voicemail"
 situation: "レアが友達のユゴーの留守番電話に、誕生日会の招待のメッセージを残す"
 speakers:
-  lea: { name: "Léa", voice: "claire" }
+  lea: { name: "Léa", voice: "lucie" }
 lines:
-  - { speaker: "lea", voice: "claire", fr: "Salut Hugo, c'est Léa !", ja: "やあユゴー、レアだよ！" }
-  - { speaker: "lea", voice: "claire", fr: "Je t'appelle pour t'inviter à mon anniversaire, samedi soir.", ja: "土曜の夜の私の誕生日会に招待したくて電話したの。" }
-  - { speaker: "lea", voice: "claire", fr: "La fête commence à vingt heures, chez moi, au 15 rue des Lilas.", ja: "パーティーは 20 時から、私の家、リラ通り 15 番地でね。" }
-  - { speaker: "lea", voice: "claire", fr: "Tu peux apporter une boisson ou un dessert, si tu veux.", ja: "よかったら、飲み物かデザートを持ってきて。" }
-  - { speaker: "lea", voice: "claire", fr: "Est-ce que tu peux me répondre avant jeudi ?", ja: "木曜までに返事をくれる？" }
-  - { speaker: "lea", voice: "claire", fr: "Tu peux me rappeler au 06 78 41 25 93. Bisous, à samedi !", ja: "06 78 41 25 93 にかけ直してね。じゃあね、土曜日に！" }
+  - { speaker: "lea", voice: "lucie", fr: "Salut Hugo, c'est Léa !", ja: "やあユゴー、レアだよ！" }
+  - { speaker: "lea", voice: "lucie", fr: "Je t'appelle pour t'inviter à mon anniversaire, samedi soir.", ja: "土曜の夜の私の誕生日会に招待したくて電話したの。" }
+  - { speaker: "lea", voice: "lucie", fr: "La fête commence à vingt heures, chez moi, au 15 rue des Lilas.", ja: "パーティーは 20 時から、私の家、リラ通り 15 番地でね。" }
+  - { speaker: "lea", voice: "lucie", fr: "Tu peux apporter une boisson ou un dessert, si tu veux.", ja: "よかったら、飲み物かデザートを持ってきて。" }
+  - { speaker: "lea", voice: "lucie", fr: "Est-ce que tu peux me répondre avant jeudi ?", ja: "木曜までに返事をくれる？" }
+  - { speaker: "lea", voice: "lucie", fr: "Tu peux me rappeler au 06 78 41 25 93. Bisous, à samedi !", ja: "06 78 41 25 93 にかけ直してね。じゃあね、土曜日に！" }
 questions:
   - q: "Quand est la fête ?"
     q_ja: "パーティーはいつ？"

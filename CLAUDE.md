@@ -53,7 +53,7 @@ total_minutes: 0
 - フランス語の再生は `scripts/say-fr "テキスト"` を使う（ElevenLabs・Nicolas・eleven_v4_turbo、`.cache/tts/` にキャッシュ）
   - Starter プラン（月約 30k クレジット）のため、不要な再生成は避ける
   - ボイスとモデルは `config/tts.json`。変えると音声のファイル名（ハッシュ）が変わり、全音声の再生成が必要になる
-  - 会話の 2 人目（女性）の声は `config/tts.json` の `voices`（今は Claire）。YAML の項目に `voice: claire` と書くとその声で読む
+  - 会話の 2 人目（女性）の声は `config/tts.json` の `voices`（今は Lucie。Claire より聞き取りやすいため 2026-10-04 に変更）。YAML の項目に `voice: lucie` と書くとその声で読む
 - Web アプリで使う教材は `materials/` に YAML で置き、`scripts/gen-audio <yaml>` で音声を生成する（詳細は `apps/web/README.md`）
   - まとめて生成する前に `scripts/gen-audio --dry-run <yaml>` で件数と消費クレジットを見積もる
   - 単元 01〜10 の単語・1 文リーディング・聞き取りと、`materials/a1/common/`（数字・動詞の活用）は 2026-10-04 にまとめて作成済み。形式は各 YAML の先頭のコメントを参照

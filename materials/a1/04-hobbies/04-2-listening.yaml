@@ -6,16 +6,16 @@ title: "同僚と週末の話"
 type: "dialogue"
 situation: "月曜日の朝、会社でレアとアントワーヌが趣味について話す"
 speakers:
-  lea: { name: "Léa", voice: "claire" }
+  lea: { name: "Léa", voice: "lucie" }
   antoine: { name: "Antoine" }
 lines:
-  - { speaker: "lea", voice: "claire", fr: "Antoine, tu aimes le cinéma ?", ja: "アントワーヌ、映画は好き？" }
+  - { speaker: "lea", voice: "lucie", fr: "Antoine, tu aimes le cinéma ?", ja: "アントワーヌ、映画は好き？" }
   - { speaker: "antoine", fr: "Pas du tout ! Les films, c'est trop long. Je préfère lire.", ja: "全然！映画は長すぎるよ。読書のほうが好き。" }
-  - { speaker: "lea", voice: "claire", fr: "Tu lis des romans ?", ja: "小説を読むの？" }
+  - { speaker: "lea", voice: "lucie", fr: "Tu lis des romans ?", ja: "小説を読むの？" }
   - { speaker: "antoine", fr: "Non, des BD. C'est drôle et facile.", ja: "いや、バンド・デシネ。おもしろいし、簡単だから。" }
-  - { speaker: "lea", voice: "claire", fr: "Moi, j'adore la cuisine. Le dimanche, je cuisine pour six amis.", ja: "私は料理が大好き。日曜日は友達 6 人のために料理するの。" }
+  - { speaker: "lea", voice: "lucie", fr: "Moi, j'adore la cuisine. Le dimanche, je cuisine pour six amis.", ja: "私は料理が大好き。日曜日は友達 6 人のために料理するの。" }
   - { speaker: "antoine", fr: "Six ! Ce n'est pas fatigant ?", ja: "6 人も！疲れない？" }
-  - { speaker: "lea", voice: "claire", fr: "Non, c'est très relaxant pour moi.", ja: "ううん、私にはすごくリラックスできるの。" }
+  - { speaker: "lea", voice: "lucie", fr: "Non, c'est très relaxant pour moi.", ja: "ううん、私にはすごくリラックスできるの。" }
 questions:
   - q: "Pourquoi Antoine n'aime pas les films ?"
     q_ja: "アントワーヌが映画を好きではない理由は？"

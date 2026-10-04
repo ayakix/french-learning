@@ -1,21 +1,21 @@
 # 単元 03 聞き取り 2：朝、母親が寝坊した息子を起こす会話（DELF A1 の短い会話の形式）
 # 「今の時刻」「授業の開始時刻」「帰宅時刻」と似た数字を 3 つ並べ、どれが何の時刻かを聞き分ける練習にしている。
-# 女性のセリフには必ず voice: "claire" を付ける（男性は標準の声）。
+# 女性のセリフには必ず voice: "lucie" を付ける（男性は標準の声）。
 unit: "03"
 title: "朝のしたく"
 type: "dialogue"
 situation: "平日の朝、母親が息子のユーゴを起こす"
 speakers:
-  mere: { name: "Maman", voice: "claire" }
+  mere: { name: "Maman", voice: "lucie" }
   hugo: { name: "Hugo" }
 lines:
-  - { speaker: "mere", voice: "claire", fr: "Hugo, lève-toi ! Il est sept heures vingt !", ja: "ユーゴ、起きなさい！7 時 20 分よ！" }
+  - { speaker: "mere", voice: "lucie", fr: "Hugo, lève-toi ! Il est sept heures vingt !", ja: "ユーゴ、起きなさい！7 時 20 分よ！" }
   - { speaker: "hugo", fr: "Déjà ? Mon réveil est cassé !", ja: "もう？目覚まし時計が壊れてる！" }
-  - { speaker: "mere", voice: "claire", fr: "Ton cours commence à huit heures, non ?", ja: "授業は 8 時に始まるんでしょ？" }
+  - { speaker: "mere", voice: "lucie", fr: "Ton cours commence à huit heures, non ?", ja: "授業は 8 時に始まるんでしょ？" }
   - { speaker: "hugo", fr: "Non, le mardi, je commence à neuf heures.", ja: "ううん、火曜日は 9 時からだよ。" }
-  - { speaker: "mere", voice: "claire", fr: "Ah bon ! Alors tu as le temps de prendre le petit-déjeuner.", ja: "あら！じゃあ朝ごはんを食べる時間があるわね。" }
+  - { speaker: "mere", voice: "lucie", fr: "Ah bon ! Alors tu as le temps de prendre le petit-déjeuner.", ja: "あら！じゃあ朝ごはんを食べる時間があるわね。" }
   - { speaker: "hugo", fr: "Oui. D'abord, je me douche, et ensuite, je mange.", ja: "うん。まずシャワーを浴びて、それから食べるよ。" }
-  - { speaker: "mere", voice: "claire", fr: "Et ce soir, tu rentres à quelle heure ?", ja: "それで、今晩は何時に帰るの？" }
+  - { speaker: "mere", voice: "lucie", fr: "Et ce soir, tu rentres à quelle heure ?", ja: "それで、今晩は何時に帰るの？" }
   - { speaker: "hugo", fr: "Vers dix-neuf heures. J'ai un cours de sport.", ja: "19 時ごろ。スポーツの授業があるんだ。" }
 questions:
   - q: "Quelle heure est-il ?"

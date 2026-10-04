@@ -7,18 +7,18 @@ type: "dialogue"
 situation: "観光案内所で、旅行者のアンナが美術館について係の人に尋ねる"
 speakers:
   agent: { name: "L'employé" }
-  anna: { name: "Anna", voice: "claire" }
+  anna: { name: "Anna", voice: "lucie" }
 lines:
   - { speaker: "agent", fr: "Bonjour, madame. Je peux vous aider ?", ja: "こんにちは。何かお手伝いしましょうか？" }
-  - { speaker: "anna", voice: "claire", fr: "Bonjour. Où est le musée des Beaux-Arts, s'il vous plaît ?", ja: "こんにちは。美術館はどこですか？" }
+  - { speaker: "anna", voice: "lucie", fr: "Bonjour. Où est le musée des Beaux-Arts, s'il vous plaît ?", ja: "こんにちは。美術館はどこですか？" }
   - { speaker: "agent", fr: "C'est à dix minutes à pied, en face de la cathédrale.", ja: "歩いて 10 分です。大聖堂の向かいですよ。" }
-  - { speaker: "anna", voice: "claire", fr: "Est-ce que le musée est ouvert le lundi ?", ja: "美術館は月曜日に開いていますか？" }
+  - { speaker: "anna", voice: "lucie", fr: "Est-ce que le musée est ouvert le lundi ?", ja: "美術館は月曜日に開いていますか？" }
   - { speaker: "agent", fr: "Non, il est fermé le lundi. Il est ouvert du mardi au dimanche.", ja: "いいえ、月曜日は休館です。火曜日から日曜日まで開いています。" }
-  - { speaker: "anna", voice: "claire", fr: "Et il ouvre à quelle heure ?", ja: "何時に開きますか？" }
+  - { speaker: "anna", voice: "lucie", fr: "Et il ouvre à quelle heure ?", ja: "何時に開きますか？" }
   - { speaker: "agent", fr: "À neuf heures et demie.", ja: "9 時半です。" }
-  - { speaker: "anna", voice: "claire", fr: "Combien coûte l'entrée ?", ja: "入場料はいくらですか？" }
+  - { speaker: "anna", voice: "lucie", fr: "Combien coûte l'entrée ?", ja: "入場料はいくらですか？" }
   - { speaker: "agent", fr: "Huit euros. Et c'est gratuit pour les étudiants.", ja: "8 ユーロです。学生は無料ですよ。" }
-  - { speaker: "anna", voice: "claire", fr: "Merci beaucoup !", ja: "どうもありがとう！" }
+  - { speaker: "anna", voice: "lucie", fr: "Merci beaucoup !", ja: "どうもありがとう！" }
 questions:
   - q: "Le musée est fermé quel jour ?"
     q_ja: "美術館の休館日は？"

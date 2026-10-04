@@ -6,13 +6,13 @@ title: "ソフィーの家への行き方"
 type: "voicemail"
 situation: "ソフィーが友達のマルクに、土曜日の夕食に来るための道順を留守番電話に残す"
 speakers:
-  sophie: { name: "Sophie", voice: "claire" }
+  sophie: { name: "Sophie", voice: "lucie" }
 lines:
-  - { speaker: "sophie", voice: "claire", fr: "Allô Marc, c'est Sophie. Pour samedi soir, voilà le chemin.", ja: "もしもしマルク、ソフィーよ。土曜の夜の行き方を伝えるね。" }
-  - { speaker: "sophie", voice: "claire", fr: "Devant la gare, tu tournes à droite et tu continues tout droit jusqu'à la place.", ja: "駅の前で右に曲がって、広場までまっすぐ進んで。" }
-  - { speaker: "sophie", voice: "claire", fr: "J'habite au douze, rue des Lilas, à côté de la pharmacie.", ja: "住所はリラ通り 12 番地、薬局の隣よ。" }
-  - { speaker: "sophie", voice: "claire", fr: "C'est au troisième étage, la porte à gauche.", ja: "4 階で、左側のドアね。" }
-  - { speaker: "sophie", voice: "claire", fr: "Il n'y a pas d'ascenseur, désolée ! À samedi !", ja: "エレベーターはないの、ごめんね！じゃあ土曜日に！" }
+  - { speaker: "sophie", voice: "lucie", fr: "Allô Marc, c'est Sophie. Pour samedi soir, voilà le chemin.", ja: "もしもしマルク、ソフィーよ。土曜の夜の行き方を伝えるね。" }
+  - { speaker: "sophie", voice: "lucie", fr: "Devant la gare, tu tournes à droite et tu continues tout droit jusqu'à la place.", ja: "駅の前で右に曲がって、広場までまっすぐ進んで。" }
+  - { speaker: "sophie", voice: "lucie", fr: "J'habite au douze, rue des Lilas, à côté de la pharmacie.", ja: "住所はリラ通り 12 番地、薬局の隣よ。" }
+  - { speaker: "sophie", voice: "lucie", fr: "C'est au troisième étage, la porte à gauche.", ja: "4 階で、左側のドアね。" }
+  - { speaker: "sophie", voice: "lucie", fr: "Il n'y a pas d'ascenseur, désolée ! À samedi !", ja: "エレベーターはないの、ごめんね！じゃあ土曜日に！" }
 questions:
   - q: "Quelle est l'adresse de Sophie ?"
     q_ja: "ソフィーの住所は？"

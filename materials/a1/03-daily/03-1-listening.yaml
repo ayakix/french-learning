@@ -1,20 +1,20 @@
 # 単元 03 聞き取り 1：朝の会社で、同僚が起きる時刻と通勤の方法を話す（DELF A1 の短い会話の形式）
 # 起床時刻・乗り物・始業時刻を聞かせるのは、DELF で数字・時刻・手段がよく問われるため。
-# 女性のセリフには必ず voice: "claire" を付ける（男性は標準の声）。
+# 女性のセリフには必ず voice: "lucie" を付ける（男性は標準の声）。
 unit: "03"
 title: "朝のオフィスで"
 type: "dialogue"
 situation: "朝のオフィスで、トマとレアが起きる時間と通勤の方法を話す"
 speakers:
   thomas: { name: "Thomas" }
-  lea: { name: "Léa", voice: "claire" }
+  lea: { name: "Léa", voice: "lucie" }
 lines:
   - { speaker: "thomas", fr: "Salut Léa ! Tu arrives tôt ce matin !", ja: "やあ、レア！今朝は早いね！" }
-  - { speaker: "lea", voice: "claire", fr: "Oui, maintenant, je me lève à six heures.", ja: "うん、最近は 6 時に起きてるの。" }
+  - { speaker: "lea", voice: "lucie", fr: "Oui, maintenant, je me lève à six heures.", ja: "うん、最近は 6 時に起きてるの。" }
   - { speaker: "thomas", fr: "Six heures ? C'est tôt ! Tu arrives en métro ?", ja: "6 時？早いね！地下鉄で来てるの？" }
-  - { speaker: "lea", voice: "claire", fr: "Non, à vélo. Le trajet dure trente-cinq minutes.", ja: "ううん、自転車。35 分かかるの。" }
+  - { speaker: "lea", voice: "lucie", fr: "Non, à vélo. Le trajet dure trente-cinq minutes.", ja: "ううん、自転車。35 分かかるの。" }
   - { speaker: "thomas", fr: "Moi, je me lève à sept heures et quart et j'arrive en bus.", ja: "僕は 7 時 15 分に起きて、バスで来るよ。" }
-  - { speaker: "lea", voice: "claire", fr: "Et tu commences à quelle heure ?", ja: "それで、何時に仕事を始めるの？" }
+  - { speaker: "lea", voice: "lucie", fr: "Et tu commences à quelle heure ?", ja: "それで、何時に仕事を始めるの？" }
   - { speaker: "thomas", fr: "À huit heures et demie. Et le soir, je rentre vers dix-huit heures.", ja: "8 時半。夜は 18 時ごろに帰るよ。" }
 questions:
   - q: "À quelle heure Léa se lève-t-elle ?"

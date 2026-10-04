@@ -7,14 +7,14 @@ type: "dialogue"
 situation: "大学のカフェで、トマとジュリーが週末の過ごし方について話す"
 speakers:
   thomas: { name: "Thomas" }
-  julie: { name: "Julie", voice: "claire" }
+  julie: { name: "Julie", voice: "lucie" }
 lines:
   - { speaker: "thomas", fr: "Julie, tu fais du sport ?", ja: "ジュリー、スポーツはする？" }
-  - { speaker: "julie", voice: "claire", fr: "Oui, je joue au tennis le mercredi. Et toi ?", ja: "うん、毎週水曜日にテニスをしてるよ。あなたは？" }
+  - { speaker: "julie", voice: "lucie", fr: "Oui, je joue au tennis le mercredi. Et toi ?", ja: "うん、毎週水曜日にテニスをしてるよ。あなたは？" }
   - { speaker: "thomas", fr: "Moi, je n'aime pas le tennis. Je préfère le football. Je joue dans un club le samedi.", ja: "僕はテニスは好きじゃない。サッカーのほうが好き。毎週土曜日にクラブでやってる。" }
-  - { speaker: "julie", voice: "claire", fr: "Ah, cool ! Et tu joues d'un instrument ?", ja: "へえ、いいね！楽器は何か弾く？" }
+  - { speaker: "julie", voice: "lucie", fr: "Ah, cool ! Et tu joues d'un instrument ?", ja: "へえ、いいね！楽器は何か弾く？" }
   - { speaker: "thomas", fr: "Oui, je joue de la guitare. J'adore le rock !", ja: "うん、ギターを弾くよ。ロックが大好きなんだ！" }
-  - { speaker: "julie", voice: "claire", fr: "Moi, je joue du piano, mais je préfère la musique classique.", ja: "私はピアノを弾くけど、クラシックのほうが好き。" }
+  - { speaker: "julie", voice: "lucie", fr: "Moi, je joue du piano, mais je préfère la musique classique.", ja: "私はピアノを弾くけど、クラシックのほうが好き。" }
 questions:
   - q: "Quand est-ce que Julie joue au tennis ?"
     q_ja: "ジュリーがテニスをするのはいつ？"

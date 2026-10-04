@@ -6,14 +6,14 @@ type: "dialogue"
 situation: "ルーカスがいとこのカミーユを駅に迎えに行く。カミーユの姉のサラに電話で特徴を聞く"
 speakers:
   lucas: { name: "Lucas" }
-  sarah: { name: "Sarah", voice: "claire" }
+  sarah: { name: "Sarah", voice: "lucie" }
 lines:
   - { speaker: "lucas", fr: "Allô, Sarah ? Je suis à la gare. Ta sœur Camille, elle est comment ?", ja: "もしもし、サラ？駅にいるんだ。君の妹のカミーユって、どんな感じ？" }
-  - { speaker: "sarah", voice: "claire", fr: "Elle est grande et mince. Elle a les cheveux bruns et courts.", ja: "背が高くてやせてる。髪は茶色でショートよ。" }
+  - { speaker: "sarah", voice: "lucie", fr: "Elle est grande et mince. Elle a les cheveux bruns et courts.", ja: "背が高くてやせてる。髪は茶色でショートよ。" }
   - { speaker: "lucas", fr: "Elle a des lunettes ?", ja: "めがねはかけてる？" }
-  - { speaker: "sarah", voice: "claire", fr: "Oui, des lunettes rouges. Et elle a un manteau vert.", ja: "うん、赤いめがね。それから緑のコートを着てる。" }
+  - { speaker: "sarah", voice: "lucie", fr: "Oui, des lunettes rouges. Et elle a un manteau vert.", ja: "うん、赤いめがね。それから緑のコートを着てる。" }
   - { speaker: "lucas", fr: "D'accord. Elle a quel âge maintenant ?", ja: "わかった。今いくつ？" }
-  - { speaker: "sarah", voice: "claire", fr: "Elle a dix-neuf ans. Elle est un peu timide, mais très gentille.", ja: "19 歳。ちょっと人見知りだけど、すごく優しいよ。" }
+  - { speaker: "sarah", voice: "lucie", fr: "Elle a dix-neuf ans. Elle est un peu timide, mais très gentille.", ja: "19 歳。ちょっと人見知りだけど、すごく優しいよ。" }
   - { speaker: "lucas", fr: "Ah, je vois une grande fille avec un manteau vert. C'est elle !", ja: "あ、緑のコートの背の高い子が見える。あの子だ！" }
 questions:
   - q: "De quelle couleur sont les lunettes de Camille ?"

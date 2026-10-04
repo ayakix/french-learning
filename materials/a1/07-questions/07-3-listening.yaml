@@ -6,14 +6,14 @@ title: "ジュリーからの留守番電話"
 type: "voicemail"
 situation: "トマの携帯に、友達のジュリーから留守番電話のメッセージが入っている"
 speakers:
-  julie: { name: "Julie", voice: "claire" }
+  julie: { name: "Julie", voice: "lucie" }
 lines:
-  - { speaker: "julie", voice: "claire", fr: "Salut Thomas, c'est Julie !", ja: "やあトマ、ジュリーだよ！" }
-  - { speaker: "julie", voice: "claire", fr: "Est-ce que tu es libre samedi soir ? C'est l'anniversaire de Paul.", ja: "土曜日の夜は空いてる？ポールの誕生日なの。" }
-  - { speaker: "julie", voice: "claire", fr: "On va au restaurant italien, à côté de la gare. Tu viens avec nous ?", ja: "駅の隣のイタリアンレストランに行くんだ。一緒に来る？" }
-  - { speaker: "julie", voice: "claire", fr: "Le rendez-vous, c'est à vingt heures, devant le restaurant.", ja: "待ち合わせは 20 時、レストランの前だよ。" }
-  - { speaker: "julie", voice: "claire", fr: "Et est-ce que tu peux apporter un gâteau ? Paul adore le chocolat !", ja: "それと、ケーキを持ってきてくれる？ポールはチョコレートが大好きなの！" }
-  - { speaker: "julie", voice: "claire", fr: "Rappelle-moi ce soir, d'accord ? Bisous !", ja: "今夜折り返し電話してね。じゃあね！" }
+  - { speaker: "julie", voice: "lucie", fr: "Salut Thomas, c'est Julie !", ja: "やあトマ、ジュリーだよ！" }
+  - { speaker: "julie", voice: "lucie", fr: "Est-ce que tu es libre samedi soir ? C'est l'anniversaire de Paul.", ja: "土曜日の夜は空いてる？ポールの誕生日なの。" }
+  - { speaker: "julie", voice: "lucie", fr: "On va au restaurant italien, à côté de la gare. Tu viens avec nous ?", ja: "駅の隣のイタリアンレストランに行くんだ。一緒に来る？" }
+  - { speaker: "julie", voice: "lucie", fr: "Le rendez-vous, c'est à vingt heures, devant le restaurant.", ja: "待ち合わせは 20 時、レストランの前だよ。" }
+  - { speaker: "julie", voice: "lucie", fr: "Et est-ce que tu peux apporter un gâteau ? Paul adore le chocolat !", ja: "それと、ケーキを持ってきてくれる？ポールはチョコレートが大好きなの！" }
+  - { speaker: "julie", voice: "lucie", fr: "Rappelle-moi ce soir, d'accord ? Bisous !", ja: "今夜折り返し電話してね。じゃあね！" }
 questions:
   - q: "Où est le rendez-vous ?"
     q_ja: "待ち合わせ場所はどこ？"

@@ -6,18 +6,18 @@ title: "授業中の質問"
 type: "dialogue"
 situation: "語学学校の授業で、ケンが先生のソフィーに質問する"
 speakers:
-  sophie: { name: "Sophie", voice: "claire" }
+  sophie: { name: "Sophie", voice: "lucie" }
   ken: { name: "Ken" }
 lines:
-  - { speaker: "sophie", voice: "claire", fr: "Ouvrez le livre à la page vingt-cinq, s'il vous plaît.", ja: "教科書の 25 ページを開いてください。" }
+  - { speaker: "sophie", voice: "lucie", fr: "Ouvrez le livre à la page vingt-cinq, s'il vous plaît.", ja: "教科書の 25 ページを開いてください。" }
   - { speaker: "ken", fr: "Pardon, madame, vous pouvez répéter ? Quelle page ?", ja: "すみません、先生、もう一度言っていただけますか？何ページですか？" }
-  - { speaker: "sophie", voice: "claire", fr: "Page vingt-cinq. Tu as une question, Ken ?", ja: "25 ページ。ケン、質問がある？" }
+  - { speaker: "sophie", voice: "lucie", fr: "Page vingt-cinq. Tu as une question, Ken ?", ja: "25 ページ。ケン、質問がある？" }
   - { speaker: "ken", fr: "Oui. Qu'est-ce que ça veut dire, « un horaire » ?", ja: "はい。「un horaire」ってどういう意味ですか？" }
-  - { speaker: "sophie", voice: "claire", fr: "C'est la liste des heures des trains ou des bus.", ja: "電車やバスの時刻の一覧のことよ。" }
+  - { speaker: "sophie", voice: "lucie", fr: "C'est la liste des heures des trains ou des bus.", ja: "電車やバスの時刻の一覧のことよ。" }
   - { speaker: "ken", fr: "Ah, d'accord ! Et comment ça s'écrit ?", ja: "ああ、わかりました！それで、どう書くんですか？" }
-  - { speaker: "sophie", voice: "claire", fr: "Avec un h au début, comme « heure ».", ja: "最初に h が付くの。「heure（時間）」と同じね。" }
+  - { speaker: "sophie", voice: "lucie", fr: "Avec un h au début, comme « heure ».", ja: "最初に h が付くの。「heure（時間）」と同じね。" }
   - { speaker: "ken", fr: "Merci. Et les devoirs, c'est pour quand ?", ja: "ありがとうございます。それと、宿題はいつまでですか？" }
-  - { speaker: "sophie", voice: "claire", fr: "Pour jeudi : les exercices un et deux.", ja: "木曜日までよ。練習問題の 1 と 2 ね。" }
+  - { speaker: "sophie", voice: "lucie", fr: "Pour jeudi : les exercices un et deux.", ja: "木曜日までよ。練習問題の 1 と 2 ね。" }
 questions:
   - q: "Les élèves ouvrent le livre à quelle page ?"
     q_ja: "生徒たちは教科書の何ページを開く？"

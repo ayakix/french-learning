@@ -6,16 +6,16 @@ type: "dialogue"
 situation: "月曜日の朝、職場でトマとレアが週末のことを話す"
 speakers:
   thomas: { name: "Thomas" }
-  lea: { name: "Léa", voice: "claire" }
+  lea: { name: "Léa", voice: "lucie" }
 lines:
   - { speaker: "thomas", fr: "Salut Léa ! Tu as passé un bon week-end ?", ja: "やあ、レア！いい週末だった？" }
-  - { speaker: "lea", voice: "claire", fr: "Oui, super ! Samedi, je suis allée à Lille chez ma sœur.", ja: "うん、最高！土曜日にリールの姉の家に行ったの。" }
+  - { speaker: "lea", voice: "lucie", fr: "Oui, super ! Samedi, je suis allée à Lille chez ma sœur.", ja: "うん、最高！土曜日にリールの姉の家に行ったの。" }
   - { speaker: "thomas", fr: "Ah bon ? Tu as pris le train ?", ja: "へえ、電車で行ったの？" }
-  - { speaker: "lea", voice: "claire", fr: "Oui, le train de huit heures.", ja: "うん、8 時の電車。" }
+  - { speaker: "lea", voice: "lucie", fr: "Oui, le train de huit heures.", ja: "うん、8 時の電車。" }
   - { speaker: "thomas", fr: "Et qu'est-ce que vous avez fait ?", ja: "それで、何をしたの？" }
-  - { speaker: "lea", voice: "claire", fr: "D'abord, nous avons visité un musée, puis nous avons mangé au restaurant.", ja: "まず美術館に行って、それからレストランで食べたよ。" }
+  - { speaker: "lea", voice: "lucie", fr: "D'abord, nous avons visité un musée, puis nous avons mangé au restaurant.", ja: "まず美術館に行って、それからレストランで食べたよ。" }
   - { speaker: "thomas", fr: "Et tu es rentrée quand ?", ja: "いつ帰ってきたの？" }
-  - { speaker: "lea", voice: "claire", fr: "Dimanche soir, vers vingt heures.", ja: "日曜の夜、20 時ごろ。" }
+  - { speaker: "lea", voice: "lucie", fr: "Dimanche soir, vers vingt heures.", ja: "日曜の夜、20 時ごろ。" }
 questions:
   - q: "Où est allée Léa ?"
     q_ja: "レアはどこへ行きましたか？"

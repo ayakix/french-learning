@@ -6,14 +6,14 @@ title: "先生からの留守番電話"
 type: "voicemail"
 situation: "ニースの語学学校に入学するユキの電話に、担当の先生が留守番電話を残した"
 speakers:
-  sophie: { name: "Sophie Martin", voice: "claire" }
+  sophie: { name: "Sophie Martin", voice: "lucie" }
 lines:
-  - { speaker: "sophie", voice: "claire", fr: "Bonjour, Yuki ! C'est Sophie Martin, de l'école de langues de Nice.", ja: "こんにちは、ユキ！ニースの語学学校のソフィー・マルタンです。" }
-  - { speaker: "sophie", voice: "claire", fr: "Je suis ta professeure de français. Bienvenue !", ja: "あなたのフランス語の先生です。ようこそ！" }
-  - { speaker: "sophie", voice: "claire", fr: "Ta classe est dans la salle seize.", ja: "あなたのクラスは 16 番教室です。" }
-  - { speaker: "sophie", voice: "claire", fr: "Tu es avec Pablo, un étudiant espagnol, et Anna, une étudiante allemande.", ja: "スペイン人の学生パブロと、ドイツ人の学生アナと一緒です。" }
-  - { speaker: "sophie", voice: "claire", fr: "Moi, je parle un peu japonais !", ja: "私は少し日本語を話しますよ！" }
-  - { speaker: "sophie", voice: "claire", fr: "À bientôt, Yuki !", ja: "またね、ユキ！" }
+  - { speaker: "sophie", voice: "lucie", fr: "Bonjour, Yuki ! C'est Sophie Martin, de l'école de langues de Nice.", ja: "こんにちは、ユキ！ニースの語学学校のソフィー・マルタンです。" }
+  - { speaker: "sophie", voice: "lucie", fr: "Je suis ta professeure de français. Bienvenue !", ja: "あなたのフランス語の先生です。ようこそ！" }
+  - { speaker: "sophie", voice: "lucie", fr: "Ta classe est dans la salle seize.", ja: "あなたのクラスは 16 番教室です。" }
+  - { speaker: "sophie", voice: "lucie", fr: "Tu es avec Pablo, un étudiant espagnol, et Anna, une étudiante allemande.", ja: "スペイン人の学生パブロと、ドイツ人の学生アナと一緒です。" }
+  - { speaker: "sophie", voice: "lucie", fr: "Moi, je parle un peu japonais !", ja: "私は少し日本語を話しますよ！" }
+  - { speaker: "sophie", voice: "lucie", fr: "À bientôt, Yuki !", ja: "またね、ユキ！" }
 questions:
   - q: "Qui est Sophie Martin ?"
     q_ja: "ソフィー・マルタンは誰？"

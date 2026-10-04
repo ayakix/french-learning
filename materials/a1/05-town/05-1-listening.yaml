@@ -7,15 +7,15 @@ type: "dialogue"
 situation: "旅行者の男性が、通りで女性に郵便局への行き方を尋ねる"
 speakers:
   paul: { name: "Paul" }
-  claire: { name: "Claire", voice: "claire" }
+  claire: { name: "Claire", voice: "lucie" }
 lines:
   - { speaker: "paul", fr: "Excusez-moi, madame. La poste, c'est loin ?", ja: "すみません。郵便局は遠いですか？" }
-  - { speaker: "claire", voice: "claire", fr: "Non, c'est tout près. Vous allez tout droit jusqu'au carrefour.", ja: "いいえ、すぐ近くです。交差点までまっすぐ行ってください。" }
+  - { speaker: "claire", voice: "lucie", fr: "Non, c'est tout près. Vous allez tout droit jusqu'au carrefour.", ja: "いいえ、すぐ近くです。交差点までまっすぐ行ってください。" }
   - { speaker: "paul", fr: "Jusqu'au carrefour, d'accord. Et après ?", ja: "交差点までですね。それから？" }
-  - { speaker: "claire", voice: "claire", fr: "Après, vous tournez à gauche, rue Victor Hugo.", ja: "そこで左に曲がって、ヴィクトル・ユゴー通りです。" }
-  - { speaker: "claire", voice: "claire", fr: "La poste est à côté de la pharmacie, en face de la banque.", ja: "郵便局は薬局の隣で、銀行の向かいです。" }
+  - { speaker: "claire", voice: "lucie", fr: "Après, vous tournez à gauche, rue Victor Hugo.", ja: "そこで左に曲がって、ヴィクトル・ユゴー通りです。" }
+  - { speaker: "claire", voice: "lucie", fr: "La poste est à côté de la pharmacie, en face de la banque.", ja: "郵便局は薬局の隣で、銀行の向かいです。" }
   - { speaker: "paul", fr: "C'est à cinq minutes ?", ja: "5 分くらいですか？" }
-  - { speaker: "claire", voice: "claire", fr: "Oui, à cinq minutes à pied. Bonne journée !", ja: "はい、歩いて 5 分です。よい一日を！" }
+  - { speaker: "claire", voice: "lucie", fr: "Oui, à cinq minutes à pied. Bonne journée !", ja: "はい、歩いて 5 分です。よい一日を！" }
   - { speaker: "paul", fr: "Merci beaucoup, madame !", ja: "どうもありがとうございます！" }
 questions:
   - q: "Au carrefour, l'homme tourne où ?"

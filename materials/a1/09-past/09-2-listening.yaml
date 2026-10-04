@@ -5,16 +5,16 @@ title: "ジュリーの誕生日パーティー"
 type: "dialogue"
 situation: "カミーユが、昨日のパーティーに来なかったユーゴに話しかける"
 speakers:
-  camille: { name: "Camille", voice: "claire" }
+  camille: { name: "Camille", voice: "lucie" }
   hugo: { name: "Hugo" }
 lines:
-  - { speaker: "camille", voice: "claire", fr: "Hugo, tu n'es pas venu à la fête de Julie hier soir ?", ja: "ユーゴ、昨日の夜ジュリーのパーティーに来なかったよね？" }
+  - { speaker: "camille", voice: "lucie", fr: "Hugo, tu n'es pas venu à la fête de Julie hier soir ?", ja: "ユーゴ、昨日の夜ジュリーのパーティーに来なかったよね？" }
   - { speaker: "hugo", fr: "Non, je suis resté à la maison. J'ai eu beaucoup de travail.", ja: "うん、家にいたんだ。仕事がたくさんあって。" }
-  - { speaker: "camille", voice: "claire", fr: "Dommage ! C'était son anniversaire, elle a eu trente ans.", ja: "残念！彼女の誕生日で、30 歳になったんだよ。" }
+  - { speaker: "camille", voice: "lucie", fr: "Dommage ! C'était son anniversaire, elle a eu trente ans.", ja: "残念！彼女の誕生日で、30 歳になったんだよ。" }
   - { speaker: "hugo", fr: "Et vous avez dansé ?", ja: "それで、踊ったの？" }
-  - { speaker: "camille", voice: "claire", fr: "Oui, jusqu'à deux heures du matin ! Et j'ai rencontré son frère.", ja: "うん、夜中の 2 時まで！それに彼女のお兄さんに会ったよ。" }
+  - { speaker: "camille", voice: "lucie", fr: "Oui, jusqu'à deux heures du matin ! Et j'ai rencontré son frère.", ja: "うん、夜中の 2 時まで！それに彼女のお兄さんに会ったよ。" }
   - { speaker: "hugo", fr: "Qu'est-ce que tu as offert à Julie ?", ja: "ジュリーに何をあげたの？" }
-  - { speaker: "camille", voice: "claire", fr: "Un livre et des fleurs.", ja: "本と花。" }
+  - { speaker: "camille", voice: "lucie", fr: "Un livre et des fleurs.", ja: "本と花。" }
 questions:
   - q: "Pourquoi Hugo n'est pas venu ?"
     q_ja: "ユーゴはなぜ来なかったのですか？"

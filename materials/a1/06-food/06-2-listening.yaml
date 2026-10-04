@@ -7,14 +7,14 @@ type: "dialogue"
 situation: "昼のレストランで、ウェイターと女性客レアが話す"
 speakers:
   serveur: { name: "le serveur" }
-  lea: { name: "Léa", voice: "claire" }
+  lea: { name: "Léa", voice: "lucie" }
 lines:
   - { speaker: "serveur", fr: "Bonjour madame. Aujourd'hui, le plat du jour, c'est du poulet avec du riz.", ja: "いらっしゃいませ。今日の日替わり料理は、鶏肉とごはんです。" }
-  - { speaker: "lea", voice: "claire", fr: "Très bien, je voudrais le plat du jour, s'il vous plaît.", ja: "いいですね、日替わり料理をお願いします。" }
+  - { speaker: "lea", voice: "lucie", fr: "Très bien, je voudrais le plat du jour, s'il vous plaît.", ja: "いいですね、日替わり料理をお願いします。" }
   - { speaker: "serveur", fr: "Et comme boisson ?", ja: "お飲み物は？" }
-  - { speaker: "lea", voice: "claire", fr: "Une bouteille d'eau minérale et un verre de vin rouge.", ja: "ミネラルウォーターを 1 本と、赤ワインをグラスで 1 杯。" }
+  - { speaker: "lea", voice: "lucie", fr: "Une bouteille d'eau minérale et un verre de vin rouge.", ja: "ミネラルウォーターを 1 本と、赤ワインをグラスで 1 杯。" }
   - { speaker: "serveur", fr: "Vous voulez un dessert ?", ja: "デザートはいかがですか？" }
-  - { speaker: "lea", voice: "claire", fr: "Oui, une glace à la vanille. Et l'addition, s'il vous plaît.", ja: "はい、バニラアイスを。それと、お会計をお願いします。" }
+  - { speaker: "lea", voice: "lucie", fr: "Oui, une glace à la vanille. Et l'addition, s'il vous plaît.", ja: "はい、バニラアイスを。それと、お会計をお願いします。" }
   - { speaker: "serveur", fr: "Voilà, madame. Ça fait dix-huit euros.", ja: "どうぞ。18 ユーロです。" }
 questions:
   - q: "Qu'est-ce que c'est, le plat du jour ?"
