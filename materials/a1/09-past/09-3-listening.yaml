@@ -1,0 +1,28 @@
+# 単元 09 の聞き取り 3（留守番電話）。DELF A1 の聞き取りで定番の「留守番電話のメッセージ」の形式。
+# 「到着の時刻・忘れ物・次に会う日」を聞く。過去の報告と、最後の近接未来（単元 08）を聞き分けるため。
+unit: "09"
+title: "ニースからの留守番電話"
+type: "voicemail"
+situation: "ナタリーが、旅行先のニースから友達のマルクに留守番電話を残す"
+speakers:
+  nathalie: { name: "Nathalie", voice: "claire" }
+lines:
+  - { speaker: "nathalie", voice: "claire", fr: "Allô Marc, c'est Nathalie.", ja: "もしもしマルク、ナタリーです。" }
+  - { speaker: "nathalie", voice: "claire", fr: "Je suis bien arrivée à Nice hier soir, à vingt-deux heures.", ja: "昨日の夜 22 時に、無事ニースに着きました。" }
+  - { speaker: "nathalie", voice: "claire", fr: "Le train est parti avec une heure de retard.", ja: "電車は 1 時間遅れで出発したの。" }
+  - { speaker: "nathalie", voice: "claire", fr: "Ce matin, je suis allée à la plage. Il a fait très beau !", ja: "今朝はビーチに行ったよ。とてもいい天気だった！" }
+  - { speaker: "nathalie", voice: "claire", fr: "Mais j'ai oublié mon chargeur de téléphone chez toi.", ja: "でも、あなたの家に携帯の充電器を忘れちゃった。" }
+  - { speaker: "nathalie", voice: "claire", fr: "Je vais passer chez toi samedi prochain. Bisous !", ja: "次の土曜日に取りに寄るね。じゃあね！" }
+questions:
+  - q: "À quelle heure Nathalie est arrivée à Nice ?"
+    q_ja: "ナタリーは何時にニースに着きましたか？"
+    choices: ["20 heures", "21 heures", "22 heures"]
+    answer: 2
+  - q: "Qu'est-ce qu'elle a oublié chez Marc ?"
+    q_ja: "ナタリーはマルクの家に何を忘れましたか？"
+    choices: ["Son chargeur", "Ses clés", "Son parapluie"]
+    answer: 0
+  - q: "Quand va-t-elle passer chez Marc ?"
+    q_ja: "ナタリーはいつマルクの家に寄りますか？"
+    choices: ["Vendredi", "Samedi", "Dimanche"]
+    answer: 1

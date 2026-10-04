@@ -1,0 +1,137 @@
+---
+import { getCollection, type CollectionEntry } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import { audioUrl } from '../../lib/audio';
+import '../../styles/material.css';
+
+export async function getStaticPaths() {
+  const entries = await getCollection('reading');
+  return entries.map((entry) => ({ params: { unit: entry.data.unit }, props: { entry } }));
+}
+
+const { entry } = Astro.props as { entry: CollectionEntry<'reading'> };
+const { unit, title, sentences } = entry.data;
+---
+
+<Base title={`${unit} リーディング`}>
+  <main>
+    <header>
+      <a href="/" class="back">← ホーム</a>
+      <h1>{unit} {title}：1 文リーディング</h1>
+      <p class="lead">
+        まず自分で読んで意味を考える → ▶ で発音を確かめる → 「意味と単語」で答え合わせ。
+        「文を隠す」にすると、音声だけを聞いて書き取る練習（ディクテーション）になります。
+      </p>
+    </header>
+
+    <div class="toolbar">
+      <button type="button" class="pill" id="hide-fr" aria-pressed="false">文を隠す（書き取り）</button>
+    </div>
+
+    <ol class="sentences">
+      {
+        sentences.map((s, i) => (
+          <li class="card sentence">
+            <div class="row">
+              <span class="num">{i + 1}</span>
+              <p class="fr text">{s.fr}</p>
+              <button type="button" class="pill play" data-src={audioUrl(s.fr)} aria-label="再生">
+                ▶
+              </button>
+            </div>
+            <details>
+              <summary>意味と単語</summary>
+              <p class="ja">{s.ja}</p>
+              {s.grammar && <p class="grammar">文法：{s.grammar}</p>}
+              {s.words.length > 0 && (
+                <dl class="gloss">
+                  {s.words.map((w) => (
+                    <>
+                      <dt>{w.w}</dt>
+                      <dd>{w.ja}</dd>
+                    </>
+                  ))}
+                </dl>
+              )}
+            </details>
+          </li>
+        ))
+      }
+    </ol>
+  </main>
+</Base>
+
+<script>
+  import { bindPlayButtons } from '../../scripts/player';
+
+  bindPlayButtons();
+
+  const button = document.querySelector<HTMLButtonElement>('#hide-fr')!;
+  const main = document.querySelector('main')!;
+  button.addEventListener('click', () => {
+    const on = button.getAttribute('aria-pressed') !== 'true';
+    button.setAttribute('aria-pressed', String(on));
+    main.classList.toggle('hide-fr', on);
+  });
+  // 書き取りの答え合わせ：隠しているときは、文をクリックするとその文だけ表示する
+  document.querySelectorAll('.text').forEach((el) => el.addEventListener('click', () => el.classList.add('revealed')));
+</script>
+
+<style>
+  .sentences {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  .sentence {
+    margin-bottom: 10px;
+    padding: 12px 16px;
+  }
+  .row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .num {
+    color: var(--muted);
+    font-size: 0.85rem;
+    min-width: 1.5em;
+  }
+  .text {
+    flex: 1;
+    margin: 0;
+    font-size: 1.15rem;
+    font-weight: 600;
+  }
+  main.hide-fr .text:not(.revealed) {
+    color: transparent;
+    background: var(--border);
+    border-radius: 6px;
+    cursor: pointer;
+    user-select: none;
+  }
+  details {
+    margin: 6px 0 0 calc(1.5em + 12px);
+  }
+  .ja {
+    margin: 6px 0 2px;
+  }
+  .grammar {
+    margin: 0 0 6px;
+    font-size: 0.85rem;
+    color: var(--muted);
+  }
+  .gloss {
+    display: grid;
+    grid-template-columns: max-content 1fr;
+    gap: 2px 12px;
+    margin: 0;
+    font-size: 0.9rem;
+  }
+  .gloss dt {
+    font-weight: 600;
+  }
+  .gloss dd {
+    margin: 0;
+  }
+</style>

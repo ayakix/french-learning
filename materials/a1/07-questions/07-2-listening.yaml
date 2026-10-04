@@ -1,0 +1,34 @@
+# 単元 07 聞き取り 2：観光案内所で美術館について尋ねる会話（DELF A1 の短い会話の形式）
+# où / est-ce que / à quelle heure / combien と、この単元の質問の形を 1 本の会話で一通り使うため。
+# 答えに出てくる曜日・時刻・値段は、DELF の聞き取りで最もよく問われる情報。
+unit: "07"
+title: "観光案内所で"
+type: "dialogue"
+situation: "観光案内所で、旅行者のアンナが美術館について係の人に尋ねる"
+speakers:
+  agent: { name: "L'employé" }
+  anna: { name: "Anna", voice: "claire" }
+lines:
+  - { speaker: "agent", fr: "Bonjour, madame. Je peux vous aider ?", ja: "こんにちは。何かお手伝いしましょうか？" }
+  - { speaker: "anna", voice: "claire", fr: "Bonjour. Où est le musée des Beaux-Arts, s'il vous plaît ?", ja: "こんにちは。美術館はどこですか？" }
+  - { speaker: "agent", fr: "C'est à dix minutes à pied, en face de la cathédrale.", ja: "歩いて 10 分です。大聖堂の向かいですよ。" }
+  - { speaker: "anna", voice: "claire", fr: "Est-ce que le musée est ouvert le lundi ?", ja: "美術館は月曜日に開いていますか？" }
+  - { speaker: "agent", fr: "Non, il est fermé le lundi. Il est ouvert du mardi au dimanche.", ja: "いいえ、月曜日は休館です。火曜日から日曜日まで開いています。" }
+  - { speaker: "anna", voice: "claire", fr: "Et il ouvre à quelle heure ?", ja: "何時に開きますか？" }
+  - { speaker: "agent", fr: "À neuf heures et demie.", ja: "9 時半です。" }
+  - { speaker: "anna", voice: "claire", fr: "Combien coûte l'entrée ?", ja: "入場料はいくらですか？" }
+  - { speaker: "agent", fr: "Huit euros. Et c'est gratuit pour les étudiants.", ja: "8 ユーロです。学生は無料ですよ。" }
+  - { speaker: "anna", voice: "claire", fr: "Merci beaucoup !", ja: "どうもありがとう！" }
+questions:
+  - q: "Le musée est fermé quel jour ?"
+    q_ja: "美術館の休館日は？"
+    choices: ["le lundi", "le mardi", "le dimanche"]
+    answer: 0
+  - q: "Le musée ouvre à quelle heure ?"
+    q_ja: "美術館は何時に開く？"
+    choices: ["9 h", "9 h 30", "10 h"]
+    answer: 1
+  - q: "Combien coûte l'entrée pour Anna ?"
+    q_ja: "アンナの入場料はいくら？"
+    choices: ["gratuit", "8 €", "18 €"]
+    answer: 1

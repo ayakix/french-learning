@@ -1,0 +1,132 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import { audioUrl } from '../lib/audio';
+import '../styles/material.css';
+
+const [entry] = await getCollection('verbs');
+const verbs = entry?.data.verbs ?? [];
+const src = (f: { fr: string; tts?: string }) => audioUrl(f.tts ?? f.fr);
+---
+
+<Base title="動詞の活用">
+  <main>
+    <header>
+      <a href="/" class="back">← ホーム</a>
+      <h1>動詞の活用</h1>
+      <p class="lead">
+        現在形の 6 つの形と、複合過去の例。形をクリックで再生、「まとめて再生」で不定詞から順に続けて聞けます。
+        書くと違うのに同じ音になる形（je parle / tu parles / il parle / ils parlent など）に注意。
+      </p>
+    </header>
+
+    <nav class="toolbar">
+      {verbs.map((v) => <a class="pill" href={`#${v.slug}`}>{v.inf}</a>)}
+    </nav>
+
+    <div class="verbs">
+      {
+        verbs.map((v) => (
+          <section class="card verb" id={v.slug}>
+            <div class="section-head">
+              <h2>
+                <button type="button" class="tile play inf" data-src={src(v.infinitive)}>
+                  <span class="fr">{v.inf}</span>
+                  <span class="ipa">[{v.ipa}]</span>
+                </button>
+              </h2>
+              <button type="button" class="pill play-verb">▶ まとめて再生</button>
+            </div>
+            <p class="meta">
+              {v.ja}
+              <span class="type">{v.type}</span>
+              {v.unit && <span class="unit">単元 {v.unit}</span>}
+            </p>
+            <ul class="forms">
+              {v.present.map((f) => (
+                <li>
+                  <button type="button" class="tile play form" data-src={src(f)}>
+                    <span class="fr">{f.fr}</span>
+                    <span class="ipa">[{f.ipa}]</span>
+                    {f.note && <span class="note">{f.note}</span>}
+                  </button>
+                </li>
+              ))}
+            </ul>
+            {v.past && (
+              <p class="past">
+                複合過去：
+                <button type="button" class="tile play form" data-src={src(v.past)}>
+                  <span class="fr">{v.past.fr}</span>
+                  <span class="ipa">[{v.past.ipa}]</span>
+                </button>
+              </p>
+            )}
+          </section>
+        ))
+      }
+    </div>
+  </main>
+</Base>
+
+<script>
+  import { bindPlayButtons, playAll } from '../scripts/player';
+
+  bindPlayButtons();
+
+  document.querySelectorAll<HTMLButtonElement>('.play-verb').forEach((button) =>
+    button.addEventListener('click', () => {
+      const verb = button.closest('.verb')!;
+      const els = [...verb.querySelectorAll<HTMLElement>('.inf, .form')];
+      playAll(els.map((el) => ({ src: el.dataset.src!, el })), 300);
+    }),
+  );
+</script>
+
+<style>
+  nav.toolbar a {
+    text-decoration: none;
+    font-size: 0.85rem;
+    padding: 4px 12px;
+  }
+  .inf {
+    flex-direction: row;
+    align-items: baseline;
+    gap: 8px;
+    font-size: 1.2rem;
+  }
+  .meta {
+    margin: 0 0 10px;
+    font-size: 0.9rem;
+  }
+  .type,
+  .unit {
+    font-size: 0.75rem;
+    margin-left: 8px;
+    padding: 0 8px;
+    border-radius: 999px;
+    background: var(--accent-soft);
+    color: var(--accent);
+  }
+  .forms {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 6px;
+  }
+  .form {
+    width: 100%;
+  }
+  .past {
+    margin: 10px 0 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 0.9rem;
+  }
+  .past .form {
+    width: auto;
+  }
+</style>

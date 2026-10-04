@@ -1,0 +1,30 @@
+# 単元 09 の聞き取り 2（会話）。行けなかったパーティーの話を聞く。
+# 「理由・年齢・時刻」を聞く。否定や être を使う動詞（venu / resté）を会話の中で聞き取るため。
+unit: "09"
+title: "ジュリーの誕生日パーティー"
+type: "dialogue"
+situation: "カミーユが、昨日のパーティーに来なかったユーゴに話しかける"
+speakers:
+  camille: { name: "Camille", voice: "claire" }
+  hugo: { name: "Hugo" }
+lines:
+  - { speaker: "camille", voice: "claire", fr: "Hugo, tu n'es pas venu à la fête de Julie hier soir ?", ja: "ユーゴ、昨日の夜ジュリーのパーティーに来なかったよね？" }
+  - { speaker: "hugo", fr: "Non, je suis resté à la maison. J'ai eu beaucoup de travail.", ja: "うん、家にいたんだ。仕事がたくさんあって。" }
+  - { speaker: "camille", voice: "claire", fr: "Dommage ! C'était son anniversaire, elle a eu trente ans.", ja: "残念！彼女の誕生日で、30 歳になったんだよ。" }
+  - { speaker: "hugo", fr: "Et vous avez dansé ?", ja: "それで、踊ったの？" }
+  - { speaker: "camille", voice: "claire", fr: "Oui, jusqu'à deux heures du matin ! Et j'ai rencontré son frère.", ja: "うん、夜中の 2 時まで！それに彼女のお兄さんに会ったよ。" }
+  - { speaker: "hugo", fr: "Qu'est-ce que tu as offert à Julie ?", ja: "ジュリーに何をあげたの？" }
+  - { speaker: "camille", voice: "claire", fr: "Un livre et des fleurs.", ja: "本と花。" }
+questions:
+  - q: "Pourquoi Hugo n'est pas venu ?"
+    q_ja: "ユーゴはなぜ来なかったのですか？"
+    choices: ["Il a été malade.", "Il a eu beaucoup de travail.", "Il a raté le train."]
+    answer: 1
+  - q: "Quel âge a Julie ?"
+    q_ja: "ジュリーは何歳ですか？"
+    choices: ["20 ans", "30 ans", "40 ans"]
+    answer: 1
+  - q: "Jusqu'à quelle heure ont-ils dansé ?"
+    q_ja: "何時まで踊りましたか？"
+    choices: ["Minuit", "1 heure du matin", "2 heures du matin"]
+    answer: 2

@@ -1,0 +1,131 @@
+---
+import { getCollection } from 'astro:content';
+import Base from '../layouts/Base.astro';
+import { audioUrl } from '../lib/audio';
+import '../styles/material.css';
+
+const [entry] = await getCollection('numbers');
+const groups = entry
+  ? entry.data.groups.map((g) => ({ ...g, items: g.items.map((i) => ({ ...i, src: audioUrl(i.fr) })) }))
+  : [];
+---
+
+<Base title="数字・日付・時刻・値段">
+  <main>
+    <header>
+      <a href="/" class="back">← ホーム</a>
+      <h1>数字・日付・時刻・値段</h1>
+      <p class="lead">
+        DELF A1 の聞き取りでは、数字・時刻・値段・日付がよく問われます。カードをクリックで再生。
+        「聞いて当てる」は、ランダムに 1 つ再生するので、何と言ったかを考えてから答えを見ます。
+      </p>
+    </header>
+
+    <nav class="toolbar">
+      {groups.map((g) => <a class="pill" href={`#${g.slug}`}>{g.name}</a>)}
+    </nav>
+
+    {
+      groups.map((g) => (
+        <section class="card group" id={g.slug} data-items={JSON.stringify(g.items.map((i) => ({ src: i.src, show: i.show, fr: i.fr })))}>
+          <div class="section-head">
+            <h2>{g.name}</h2>
+            <div class="quiz">
+              <button type="button" class="pill primary ask">▶ 聞いて当てる</button>
+              <button type="button" class="pill reveal" disabled>
+                答えを見る
+              </button>
+            </div>
+          </div>
+          <p class="answer" aria-live="polite" />
+          <ul class="items">
+            {g.items.map((i) => (
+              <li>
+                <button type="button" class="tile play item" data-src={i.src}>
+                  <span class="show">{i.show}</span>
+                  <span class="fr">{i.fr}</span>
+                  <span class="ipa">[{i.ipa}]</span>
+                  {i.ja && <span class="ja">{i.ja}</span>}
+                  {i.note && <span class="note">{i.note}</span>}
+                </button>
+              </li>
+            ))}
+          </ul>
+        </section>
+      ))
+    }
+  </main>
+</Base>
+
+<script>
+  import { bindPlayButtons, play } from '../scripts/player';
+
+  bindPlayButtons();
+
+  type Item = { src: string; show: string; fr: string };
+
+  document.querySelectorAll<HTMLElement>('.group').forEach((group) => {
+    const items: Item[] = JSON.parse(group.dataset.items!);
+    const ask = group.querySelector<HTMLButtonElement>('.ask')!;
+    const reveal = group.querySelector<HTMLButtonElement>('.reveal')!;
+    const answer = group.querySelector<HTMLElement>('.answer')!;
+    let current: Item | null = null;
+
+    ask.addEventListener('click', () => {
+      // 同じものが続くと練習にならないので、直前と違うものを選ぶ
+      const candidates = items.filter((i) => i !== current);
+      current = candidates[Math.floor(Math.random() * candidates.length)];
+      answer.textContent = '';
+      reveal.disabled = false;
+      ask.textContent = '▶ 次の問題';
+      play(current.src);
+    });
+    reveal.addEventListener('click', () => {
+      if (!current) return;
+      answer.textContent = `${current.show}：${current.fr}`;
+      play(current.src);
+    });
+  });
+</script>
+
+<style>
+  nav.toolbar a {
+    text-decoration: none;
+    font-size: 0.85rem;
+    padding: 4px 12px;
+  }
+  .quiz {
+    display: flex;
+    gap: 8px;
+  }
+  .answer {
+    min-height: 1.4em;
+    margin: 0 0 8px;
+    font-weight: 700;
+    color: var(--accent);
+  }
+  .items {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 8px;
+  }
+  .item {
+    width: 100%;
+    height: 100%;
+  }
+  .show {
+    font-size: 1.3rem;
+    font-weight: 700;
+  }
+  .fr {
+    font-weight: 600;
+    font-size: 0.9rem;
+  }
+  .ipa,
+  .ja {
+    font-size: 0.8rem;
+  }
+</style>

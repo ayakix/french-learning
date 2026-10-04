@@ -1,0 +1,33 @@
+# 単元 01 の聞き取り 1：語学学校のカフェでの初対面の会話（DELF A1 の「短い会話」形式）
+# 自己紹介の 4 要素（名前・国籍・住んでいる町・職業）を聞き取れるかを確かめる。
+# 質問の選択肢に会話中の他の情報（Lyon、chinois など）を混ぜているのは、聞こえた語をただ選ぶのではなく、誰の情報かまで聞き分ける練習にするため。
+unit: "01"
+title: "カフェで自己紹介"
+type: "dialogue"
+situation: "語学学校のカフェで、クレールとケンジが初めて話す"
+speakers:
+  kenji: { name: "Kenji" }
+  claire: { name: "Claire", voice: "claire" }
+lines:
+  - { speaker: "claire", voice: "claire", fr: "Bonjour ! Je m'appelle Claire. Et toi ?", ja: "こんにちは！私はクレール。あなたは？" }
+  - { speaker: "kenji", fr: "Bonjour, Claire. Moi, c'est Kenji. Enchanté !", ja: "こんにちは、クレール。僕はケンジ。はじめまして！" }
+  - { speaker: "claire", voice: "claire", fr: "Enchantée ! Tu es chinois ?", ja: "はじめまして！あなたは中国人？" }
+  - { speaker: "kenji", fr: "Non, je suis japonais. J'habite à Osaka.", ja: "いや、日本人だよ。大阪に住んでいる。" }
+  - { speaker: "claire", voice: "claire", fr: "Moi, je suis française. J'habite à Lyon. Tu es étudiant ?", ja: "私はフランス人。リヨンに住んでいるの。あなたは学生？" }
+  - { speaker: "kenji", fr: "Non, je suis cuisinier. Et toi ?", ja: "いや、料理人だよ。君は？" }
+  - { speaker: "claire", voice: "claire", fr: "Moi, je suis professeure d'anglais.", ja: "私は英語の先生よ。" }
+  - { speaker: "kenji", fr: "Ah, super ! Tu parles japonais ?", ja: "へえ、すごい！日本語は話せる？" }
+  - { speaker: "claire", voice: "claire", fr: "Oui, un peu !", ja: "うん、少しね！" }
+questions:
+  - q: "Kenji est..."
+    q_ja: "ケンジの国籍は？"
+    choices: ["chinois", "japonais", "français"]
+    answer: 1
+  - q: "Où habite Kenji ?"
+    q_ja: "ケンジはどこに住んでいる？"
+    choices: ["à Osaka", "à Tokyo", "à Lyon"]
+    answer: 0
+  - q: "Quel est le métier de Claire ?"
+    q_ja: "クレールの職業は？"
+    choices: ["étudiante", "cuisinière", "professeure"]
+    answer: 2

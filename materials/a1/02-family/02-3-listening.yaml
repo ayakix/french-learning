@@ -1,0 +1,28 @@
+# 単元 02 聞き取り 3：スーパーの迷子のアナウンス（DELF A1 の「アナウンス」形式）
+# 迷子の呼び出しは、年齢・外見・服の色・場所の番号が一度に流れる典型的なアナウンス。1 回で要点を拾う練習にする。
+unit: "02"
+title: "迷子のお知らせ"
+type: "announcement"
+situation: "スーパーマーケットの店内放送で、迷子の男の子の両親を呼び出している"
+speakers:
+  annonceur: { name: "Annonceur" }
+lines:
+  - { speaker: "annonceur", fr: "Attention, s'il vous plaît.", ja: "お客様にお知らせします。" }
+  - { speaker: "annonceur", fr: "Nous avons un petit garçon de cinq ans. Il s'appelle Léo.", ja: "5 歳の男の子をお預かりしています。名前はレオくんです。" }
+  - { speaker: "annonceur", fr: "Il est blond, il a les yeux bleus et un tee-shirt jaune.", ja: "金髪で青い目、黄色い T シャツを着ています。" }
+  - { speaker: "annonceur", fr: "Il a aussi un petit sac à dos gris.", ja: "小さな灰色のリュックも持っています。" }
+  - { speaker: "annonceur", fr: "Les parents de Léo sont priés de venir à l'accueil, caisse numéro douze.", ja: "レオくんのご両親は、12 番レジのサービスカウンターまでお越しください。" }
+  - { speaker: "annonceur", fr: "Merci.", ja: "ありがとうございました。" }
+questions:
+  - q: "Quel âge a Léo ?"
+    q_ja: "レオは何歳？"
+    choices: ["4 ans", "5 ans", "7 ans"]
+    answer: 1
+  - q: "De quelle couleur est le tee-shirt de Léo ?"
+    q_ja: "レオの T シャツは何色？"
+    choices: ["jaune", "bleu", "gris"]
+    answer: 0
+  - q: "Où sont attendus les parents ?"
+    q_ja: "両親はどこに行けばいい？"
+    choices: ["caisse numéro 2", "caisse numéro 10", "caisse numéro 12"]
+    answer: 2

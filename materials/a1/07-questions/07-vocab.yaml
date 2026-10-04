@@ -1,0 +1,89 @@
+# 単元 07 質問する の必須単語（Web アプリの単語画面 /vocab/07 のデータ）
+# 名詞は不定冠詞 un / une を付けて読ませる。性（男性・女性）を音で一緒に覚えるため。
+#
+# 疑問詞だけでなく、est-ce que などの「質問の形」と、授業や会話で聞き返すための決まり文句をまとめている。
+# A1 では、わからないときに聞き返せることが会話を続ける一番の力になるため。
+# 答えの語（si など）も入れるのは、質問とセットで覚えたほうが使えるようになるため。
+unit: "07"
+title: "質問する"
+groups:
+  - name: "疑問詞"
+    words:
+      - {fr: "qui", ipa: "ki", ja: "誰", pos: "疑問詞"}
+      - {fr: "que", ipa: "kə", ja: "何（動詞の前で）", pos: "疑問詞", note: "単独では使わず、qu'est-ce que・Que fais-tu ? の形で使う"}
+      - {fr: "quoi", ipa: "kwa", ja: "何（文末・前置詞の後で）", pos: "疑問詞", note: "que は文末に置けないので、文末では quoi になる（C'est quoi ?）"}
+      - {fr: "où", ipa: "u", ja: "どこ", pos: "疑問詞", note: "ou（または）と区別するためにアクセント記号が付く"}
+      - {fr: "d'où", ipa: "du", ja: "どこから・どこの出身", pos: "疑問詞"}
+      - {fr: "quand", ipa: "kɑ̃", ja: "いつ", pos: "疑問詞", note: "後ろに母音が続くと d を [t] でつなぐ（quand est-ce que）"}
+      - {fr: "comment", ipa: "kɔmɑ̃", ja: "どのように・どう", pos: "疑問詞"}
+      - {fr: "combien", ipa: "kɔ̃bjɛ̃", ja: "いくら・どれだけ", pos: "疑問詞"}
+      - {fr: "combien de", ipa: "kɔ̃bjɛ̃ də", ja: "いくつの〜", pos: "疑問詞", note: "名詞の前は冠詞なしで de（combien de langues）"}
+      - {fr: "pourquoi", ipa: "puʁkwa", ja: "なぜ", pos: "疑問詞", note: "答えは parce que（なぜなら）で始める"}
+      - {fr: "quel", ipa: "kɛl", ja: "どの・何の（単数）", pos: "疑問詞", f: "quelle", f_ipa: "kɛl", tts: "quel, quelle", note: "後ろの名詞の性に合わせる。発音は同じ"}
+      - {fr: "quels", ipa: "kɛl", ja: "どの・何の（複数）", pos: "疑問詞", f: "quelles", f_ipa: "kɛl", tts: "quels, quelles", note: "s は読まないが、母音の前ではリエゾンする（quels amis [kɛl zami]）"}
+      - {fr: "avec qui", ipa: "avɛk ki", ja: "誰と", pos: "表現"}
+  - name: "質問の形"
+    words:
+      - {fr: "est-ce que", ipa: "ɛs kə", ja: "〜ですか（はい・いいえで答える質問）", pos: "表現", note: "文の頭に付けるだけで、語順を変えずに質問にできる"}
+      - {fr: "qu'est-ce que", ipa: "kɛs kə", ja: "何を〜ですか", pos: "表現"}
+      - {fr: "où est-ce que", ipa: "u ɛs kə", ja: "どこで〜ですか", pos: "表現", note: "疑問詞 + est-ce que + 普通の語順"}
+      - {fr: "quand est-ce que", ipa: "kɑ̃ tɛs kə", ja: "いつ〜ですか", pos: "表現", note: "quand の d は [t] の音でリエゾンする"}
+      - {fr: "Qu'est-ce que c'est ?", ipa: "kɛs kə sɛ", ja: "これは何ですか？", pos: "表現"}
+      - {fr: "Qui est-ce ?", ipa: "ki ɛs", ja: "（あの人は）誰ですか？", pos: "表現"}
+      - {fr: "C'est quoi ?", ipa: "sɛ kwa", ja: "それ何？（くだけた言い方）", pos: "表現"}
+      - {fr: "n'est-ce pas ?", ipa: "nɛs pa", ja: "〜ですよね？", pos: "表現"}
+      - {fr: "Qu'est-ce qu'il y a ?", ipa: "kɛs kil i a", ja: "どうしたの？・何があるの？", pos: "表現"}
+      - {fr: "Quoi de neuf ?", ipa: "kwa də nœf", ja: "最近どう？（友達どうしで）", pos: "表現"}
+  - name: "聞き返す・尋ねる決まり文句"
+    words:
+      - {fr: "Pardon ?", ipa: "paʁdɔ̃", ja: "えっ？（聞き返し）", pos: "表現"}
+      - {fr: "Vous pouvez répéter, s'il vous plaît ?", ipa: "vu puve ʁepete sil vu plɛ", ja: "もう一度言っていただけますか？", pos: "表現"}
+      - {fr: "Vous pouvez parler plus lentement ?", ipa: "vu puve paʁle ply lɑ̃tmɑ̃", ja: "もっとゆっくり話していただけますか？", pos: "表現"}
+      - {fr: "Qu'est-ce que ça veut dire ?", ipa: "kɛs kə sa vø diʁ", ja: "それはどういう意味ですか？", pos: "表現"}
+      - {fr: "Ça veut dire quoi ?", ipa: "sa vø diʁ kwa", ja: "それってどういう意味？（くだけた言い方）", pos: "表現"}
+      - {fr: "Comment on dit ... en français ?", ipa: "kɔmɑ̃ ɔ̃ di ... ɑ̃ fʁɑ̃sɛ", ja: "…はフランス語で何と言いますか？", pos: "表現", tts: "Comment on dit ça en français ?", note: "... に言いたい語を入れる。音声は ça（それ）で読ませている"}
+      - {fr: "Comment ça s'écrit ?", ipa: "kɔmɑ̃ sa sekʁi", ja: "それはどう書きますか？", pos: "表現"}
+      - {fr: "Ça se prononce comment ?", ipa: "sa sə pʁɔnɔ̃s kɔmɑ̃", ja: "それはどう発音しますか？", pos: "表現"}
+      - {fr: "Vous pouvez épeler, s'il vous plaît ?", ipa: "vu puve eple sil vu plɛ", ja: "つづりを言っていただけますか？", pos: "表現"}
+      - {fr: "J'ai une question.", ipa: "ʒe yn kɛstjɔ̃", ja: "質問があります。", pos: "表現"}
+      - {fr: "C'est correct ?", ipa: "sɛ kɔʁɛkt", ja: "これで合っていますか？", pos: "表現"}
+  - name: "答える"
+    words:
+      - {fr: "si", ipa: "si", ja: "いいえ、〜です（否定の質問を打ち消す）", pos: "副詞", note: "Tu n'aimes pas ... ? に「好きだよ」と答えるときは oui ではなく si"}
+      - {fr: "peut-être", ipa: "pøtɛtʁ", ja: "たぶん・かもしれない", pos: "副詞"}
+      - {fr: "bien sûr", ipa: "bjɛ̃ syʁ", ja: "もちろん", pos: "表現"}
+      - {fr: "C'est ça.", ipa: "sɛ sa", ja: "そのとおり。", pos: "表現"}
+      - {fr: "exactement", ipa: "ɛɡzaktəmɑ̃", ja: "まさにそのとおり", pos: "副詞"}
+      - {fr: "moi aussi", ipa: "mwa osi", ja: "私も（肯定に対して）", pos: "表現"}
+      - {fr: "moi non plus", ipa: "mwa nɔ̃ ply", ja: "私も〜ない（否定に対して）", pos: "表現", note: "否定の文に「私も」と言うときは aussi ではなく non plus"}
+      - {fr: "Je ne sais pas.", ipa: "ʒə nə sɛ pa", ja: "わかりません・知りません。", pos: "表現"}
+      - {fr: "Ça dépend.", ipa: "sa depɑ̃", ja: "場合によります。", pos: "表現"}
+      - {fr: "Vraiment ?", ipa: "vʁɛmɑ̃", ja: "本当に？", pos: "表現"}
+  - name: "尋ねる・答える動詞"
+    words:
+      - {fr: "demander", ipa: "dəmɑ̃de", ja: "尋ねる・頼む", pos: "動詞"}
+      - {fr: "répondre", ipa: "ʁepɔ̃dʁ", ja: "答える", pos: "動詞"}
+      - {fr: "poser une question", ipa: "poze yn kɛstjɔ̃", ja: "質問する", pos: "表現", note: "「質問をする」は faire ではなく poser を使う"}
+      - {fr: "comprendre", ipa: "kɔ̃pʁɑ̃dʁ", ja: "わかる・理解する", pos: "動詞"}
+      - {fr: "répéter", ipa: "ʁepete", ja: "繰り返す・もう一度言う", pos: "動詞"}
+      - {fr: "épeler", ipa: "eple", ja: "つづりを言う", pos: "動詞"}
+      - {fr: "expliquer", ipa: "ɛksplike", ja: "説明する", pos: "動詞"}
+      - {fr: "dire", ipa: "diʁ", ja: "言う", pos: "動詞"}
+      - {fr: "vouloir dire", ipa: "vulwaʁ diʁ", ja: "意味する", pos: "動詞"}
+      - {fr: "traduire", ipa: "tʁadɥiʁ", ja: "翻訳する", pos: "動詞"}
+      - {fr: "savoir", ipa: "savwaʁ", ja: "（事実を）知っている", pos: "動詞"}
+      - {fr: "connaître", ipa: "kɔnɛtʁ", ja: "（人・場所を）知っている", pos: "動詞", note: "事柄は savoir、人や場所は connaître"}
+  - name: "ことば・やりとりの語"
+    words:
+      - {fr: "une question", ipa: "yn kɛstjɔ̃", ja: "質問", pos: "名詞", g: "f"}
+      - {fr: "une réponse", ipa: "yn ʁepɔ̃s", ja: "答え", pos: "名詞", g: "f"}
+      - {fr: "un mot", ipa: "œ̃ mo", ja: "単語", pos: "名詞", g: "m"}
+      - {fr: "une phrase", ipa: "yn fʁaz", ja: "文", pos: "名詞", g: "f", note: "日本語の「フレーズ」ではなく、1 つの文のこと"}
+      - {fr: "un exemple", ipa: "œ̃ nɛɡzɑ̃pl", ja: "例", pos: "名詞", g: "m"}
+      - {fr: "un dictionnaire", ipa: "œ̃ diksjɔnɛʁ", ja: "辞書", pos: "名詞", g: "m"}
+      - {fr: "une erreur", ipa: "yn ɛʁœʁ", ja: "間違い", pos: "名詞", g: "f"}
+      - {fr: "une information", ipa: "yn ɛ̃fɔʁmasjɔ̃", ja: "情報", pos: "名詞", g: "f"}
+      - {fr: "un renseignement", ipa: "œ̃ ʁɑ̃sɛɲmɑ̃", ja: "（窓口で尋ねる）案内・情報", pos: "名詞", g: "m", note: "駅や役所で「お尋ねしたいのですが」と言うときに使う"}
+      - {fr: "lentement", ipa: "lɑ̃tmɑ̃", ja: "ゆっくり", pos: "副詞"}
+      - {fr: "plus fort", ipa: "ply fɔʁ", ja: "もっと大きな声で", pos: "表現"}
+      - {fr: "encore une fois", ipa: "ɑ̃kɔʁ yn fwa", ja: "もう一度", pos: "表現"}

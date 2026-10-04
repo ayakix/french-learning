@@ -1,0 +1,139 @@
+# 単元 02 家族と人 の 1 文リーディング（Web アプリの読む画面のデータ）
+# 易しい順に並べている。前半は avoir と所有形容詞だけ、後半で形容詞の一致や de（〜の）を重ねていく。
+# 文法は 01（être、s'appeler、数字 0〜20）と 02（avoir、冠詞、所有形容詞、形容詞の一致）の範囲に限る。
+# 否定（ne...pas）や -er 動詞の活用はまだ習っていないので使わない。
+unit: "02"
+title: "家族と人"
+sentences:
+  - fr: "J'ai un chat et un chien."
+    ja: "私は猫を 1 匹と犬を 1 匹飼っています。"
+    grammar: "avoir + 不定冠詞"
+    words:
+      - { w: "j'ai", ja: "私は〜を持っている（avoir）" }
+      - { w: "un chat", ja: "猫" }
+      - { w: "un chien", ja: "犬" }
+  - fr: "Mon frère est grand et mince."
+    ja: "兄（弟）は背が高くてやせています。"
+    grammar: "所有形容詞 mon / être + 形容詞"
+    words:
+      - { w: "mon frère", ja: "私の兄・弟" }
+      - { w: "grand", ja: "背が高い" }
+      - { w: "mince", ja: "やせている" }
+  - fr: "Ma petite sœur s'appelle Léa."
+    ja: "妹の名前はレアです。"
+    grammar: "所有形容詞 ma / 名詞の前に置く形容詞 petit"
+    words:
+      - { w: "ma petite sœur", ja: "私の妹（年下の姉妹）" }
+      - { w: "petite", ja: "小さい・年下の（petit の女性形）" }
+  - fr: "Tu as des frères et sœurs ?"
+    ja: "きょうだいはいる？"
+    grammar: "avoir の tu の形 / 不定冠詞 des"
+    words:
+      - { w: "tu as", ja: "君は〜を持っている" }
+      - { w: "des", ja: "いくつかの（不定冠詞の複数形）" }
+      - { w: "frères et sœurs", ja: "きょうだい" }
+  - fr: "J'ai deux sœurs et un frère."
+    ja: "姉妹が 2 人と兄弟が 1 人います。"
+    grammar: "avoir + 数 + 名詞の複数形"
+    words:
+      - { w: "deux sœurs", ja: "2 人の姉妹（s は読まない）" }
+  - fr: "Mon cousin a douze ans."
+    ja: "いとこは 12 歳です。"
+    grammar: "avoir + 数 + ans（年齢）"
+    words:
+      - { w: "mon cousin", ja: "私のいとこ（男）" }
+      - { w: "a", ja: "〜歳である（avoir の il の形）" }
+      - { w: "douze ans", ja: "12 歳" }
+  - fr: "Elle a les yeux bleus."
+    ja: "彼女は青い目をしています。"
+    grammar: "avoir + 定冠詞 les + 体の部分 + 形容詞"
+    words:
+      - { w: "les yeux", ja: "目（œil の複数形）。リエゾンして le zjø" }
+      - { w: "bleus", ja: "青い（複数形）" }
+  - fr: "Mes parents sont très gentils."
+    ja: "両親はとても優しいです。"
+    grammar: "所有形容詞 mes / 形容詞の複数形"
+    words:
+      - { w: "mes parents", ja: "私の両親" }
+      - { w: "sont", ja: "〜である（être の ils の形）" }
+      - { w: "gentils", ja: "優しい（複数形。l も s も読まない）" }
+  - fr: "Voici ma grand-mère, elle a les cheveux blancs."
+    ja: "こちらは祖母です。髪は白いです。"
+    grammar: "voici / avoir les cheveux + 形容詞"
+    words:
+      - { w: "voici", ja: "こちらが〜です" }
+      - { w: "les cheveux", ja: "髪" }
+      - { w: "blancs", ja: "白い（複数形）" }
+  - fr: "Notre chien est noir et blanc."
+    ja: "うちの犬は白黒です。"
+    grammar: "所有形容詞 notre"
+    words:
+      - { w: "notre", ja: "私たちの" }
+      - { w: "noir et blanc", ja: "黒と白の" }
+  - fr: "Mon amie Sophie est très sympa."
+    ja: "友達のソフィーはとても感じがいいです。"
+    grammar: "母音の前の女性名詞にも mon"
+    words:
+      - { w: "mon amie", ja: "私の友達（女性）。ma ではなく mon" }
+      - { w: "sympa", ja: "感じがいい" }
+  - fr: "Le chat de Marie est petit et roux."
+    ja: "マリーの猫は小さくて茶トラです。"
+    grammar: "定冠詞 + 名詞 + de + 人（〜の）"
+    words:
+      - { w: "le chat de Marie", ja: "マリーの猫" }
+      - { w: "roux", ja: "赤毛の（猫なら茶トラ）" }
+  - fr: "Ma tante est blonde et elle a les cheveux longs."
+    ja: "おばは金髪で、髪が長いです。"
+    grammar: "形容詞の女性形と複数形"
+    words:
+      - { w: "ma tante", ja: "私のおば" }
+      - { w: "blonde", ja: "金髪の（女性形。d を読む）" }
+      - { w: "longs", ja: "長い（複数形）" }
+  - fr: "Ils ont trois enfants : deux fils et une fille."
+    ja: "彼らには子どもが 3 人います。息子 2 人と娘 1 人です。"
+    grammar: "avoir の ils の形 / fils と fille"
+    words:
+      - { w: "ils ont", ja: "彼らは〜を持っている。リエゾンして il zɔ̃" }
+      - { w: "trois enfants", ja: "3 人の子ども。リエゾンして tʁwa zɑ̃fɑ̃" }
+      - { w: "fils", ja: "息子（単数でも複数でも fis）" }
+  - fr: "C'est mon oncle Paul, le frère de ma mère."
+    ja: "こちらはおじのポール、母の兄（弟）です。"
+    grammar: "c'est + 人 / de（〜の）"
+    words:
+      - { w: "c'est", ja: "これは〜です" }
+      - { w: "mon oncle", ja: "私のおじ。リエゾンして mɔ̃ nɔ̃kl" }
+      - { w: "le frère de ma mère", ja: "母の兄・弟" }
+  - fr: "Votre fille est sérieuse et très intelligente."
+    ja: "あなたの娘さんはまじめで、とても頭がいいです。"
+    grammar: "所有形容詞 votre / 形容詞の女性形"
+    words:
+      - { w: "votre fille", ja: "あなたの娘" }
+      - { w: "sérieuse", ja: "まじめな（女性形）" }
+      - { w: "intelligente", ja: "頭がいい（女性形。t を読む）" }
+  - fr: "Mon neveu a dix ans et il est très sportif."
+    ja: "甥は 10 歳で、とてもスポーツ好きです。"
+    grammar: "avoir（年齢）と être（性質）の使い分け"
+    words:
+      - { w: "mon neveu", ja: "私の甥" }
+      - { w: "dix ans", ja: "10 歳。リエゾンして di zɑ̃" }
+      - { w: "sportif", ja: "スポーツ好きな" }
+  - fr: "Leurs enfants sont drôles, mais un peu bavards."
+    ja: "彼らの子どもたちはおもしろいけれど、少しおしゃべりです。"
+    grammar: "所有形容詞 leurs / 形容詞の複数形"
+    words:
+      - { w: "leurs enfants", ja: "彼らの子どもたち。リエゾンして lœʁ zɑ̃fɑ̃" }
+      - { w: "mais", ja: "しかし" }
+      - { w: "un peu", ja: "少し" }
+  - fr: "Sa femme est grande et brune, elle a les yeux verts."
+    ja: "彼の妻は背が高くて髪が茶色く、緑の目をしています。"
+    grammar: "所有形容詞 sa（後ろの名詞の性で決まる）"
+    words:
+      - { w: "sa femme", ja: "彼の妻（彼が男性でも sa）" }
+      - { w: "brune", ja: "髪が茶色・黒っぽい（女性形）" }
+      - { w: "verts", ja: "緑の（複数形）" }
+  - fr: "J'ai les yeux de ma mère et les cheveux de mon père."
+    ja: "私は目が母に、髪が父に似ています。"
+    grammar: "avoir + 定冠詞 + 体の部分 + de（〜の）"
+    words:
+      - { w: "j'ai les yeux de ma mère", ja: "目は母譲りだ（母の目を持っている）" }
+      - { w: "les cheveux de mon père", ja: "父の髪" }

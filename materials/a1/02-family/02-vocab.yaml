@@ -1,0 +1,131 @@
+# 単元 02 家族と人 の必須単語（Web アプリの単語画面 /vocab/02 のデータ）
+# 名詞は不定冠詞 un / une を付けて読ませる。性（男性・女性）を音で一緒に覚えるため。
+# 形容詞は男性形と女性形を続けて読ませる。この単元の文法（形容詞の一致）で、語尾の子音が出る・出ないを耳で覚えるため。
+# 所有形容詞は単独だと短すぎて聞き取りにくいので、tts で名詞と一緒に読ませる。
+unit: "02"
+title: "家族と人"
+groups:
+  - name: "家族"
+    words:
+      - {fr: "une famille", ipa: "yn famij", ja: "家族", pos: "名詞", g: "f"}
+      - {fr: "un père", ipa: "œ̃ pɛʁ", ja: "父", pos: "名詞", g: "m"}
+      - {fr: "une mère", ipa: "yn mɛʁ", ja: "母", pos: "名詞", g: "f"}
+      - {fr: "des parents", ipa: "de paʁɑ̃", ja: "両親", pos: "名詞", g: "m", note: "un parent は「親（の片方）」や「親戚」"}
+      - {fr: "un frère", ipa: "œ̃ fʁɛʁ", ja: "兄・弟", pos: "名詞", g: "m"}
+      - {fr: "une sœur", ipa: "yn sœʁ", ja: "姉・妹", pos: "名詞", g: "f"}
+      - {fr: "un fils", ipa: "œ̃ fis", ja: "息子", pos: "名詞", g: "m", note: "l は読まず、s は読む（例外的な語）"}
+      - {fr: "une fille", ipa: "yn fij", ja: "娘・女の子", pos: "名詞", g: "f", note: "ill は「イユ」の音。fils と混同しやすい"}
+      - {fr: "un mari", ipa: "œ̃ maʁi", ja: "夫", pos: "名詞", g: "m"}
+      - {fr: "une femme", ipa: "yn fam", ja: "妻・女性", pos: "名詞", g: "f", note: "emm は例外的に「アム」と読む"}
+      - {fr: "un grand-père", ipa: "œ̃ ɡʁɑ̃pɛʁ", ja: "祖父", pos: "名詞", g: "m"}
+      - {fr: "une grand-mère", ipa: "yn ɡʁɑ̃mɛʁ", ja: "祖母", pos: "名詞", g: "f", note: "女性名詞でも grand は grande にならない"}
+      - {fr: "des grands-parents", ipa: "de ɡʁɑ̃paʁɑ̃", ja: "祖父母", pos: "名詞", g: "m"}
+      - {fr: "un petit-fils", ipa: "œ̃ pətifis", ja: "孫（男）", pos: "名詞", g: "m"}
+      - {fr: "une petite-fille", ipa: "yn pətitfij", ja: "孫（女）", pos: "名詞", g: "f"}
+      - {fr: "un oncle", ipa: "œ̃ nɔ̃kl", ja: "おじ", pos: "名詞", g: "m"}
+      - {fr: "une tante", ipa: "yn tɑ̃t", ja: "おば", pos: "名詞", g: "f"}
+      - {fr: "un cousin", ipa: "œ̃ kuzɛ̃", ja: "いとこ（男）", pos: "名詞", g: "m"}
+      - {fr: "une cousine", ipa: "yn kuzin", ja: "いとこ（女）", pos: "名詞", g: "f"}
+      - {fr: "un neveu", ipa: "œ̃ nəvø", ja: "甥", pos: "名詞", g: "m", pl: "des neveux"}
+      - {fr: "une nièce", ipa: "yn njɛs", ja: "姪", pos: "名詞", g: "f"}
+      - {fr: "marié", ipa: "maʁje", ja: "結婚している", pos: "形容詞", f: "mariée", f_ipa: "maʁje", tts: "marié, mariée", note: "女性形は e が付くが、発音は同じ"}
+      - {fr: "célibataire", ipa: "selibatɛʁ", ja: "独身の", pos: "形容詞"}
+      - {fr: "unique", ipa: "ynik", ja: "ひとりっ子の（fils unique / fille unique）", pos: "形容詞"}
+  - name: "人"
+    words:
+      - {fr: "une personne", ipa: "yn pɛʁsɔn", ja: "人", pos: "名詞", g: "f", note: "男性を指すときも une personne"}
+      - {fr: "un homme", ipa: "œ̃ nɔm", ja: "男の人", pos: "名詞", g: "m", note: "h は読まないので un とリエゾンする"}
+      - {fr: "un enfant", ipa: "œ̃ nɑ̃fɑ̃", ja: "子ども", pos: "名詞", g: "m", note: "女の子なら une enfant"}
+      - {fr: "un garçon", ipa: "œ̃ ɡaʁsɔ̃", ja: "男の子", pos: "名詞", g: "m"}
+      - {fr: "un bébé", ipa: "œ̃ bebe", ja: "赤ちゃん", pos: "名詞", g: "m", note: "女の子の赤ちゃんでも un bébé"}
+      - {fr: "un monsieur", ipa: "œ̃ məsjø", ja: "男性（丁寧）", pos: "名詞", g: "m", pl: "des messieurs"}
+      - {fr: "une dame", ipa: "yn dam", ja: "女性（丁寧）", pos: "名詞", g: "f"}
+      - {fr: "des gens", ipa: "de ʒɑ̃", ja: "人々", pos: "名詞", g: "m"}
+      - {fr: "un voisin", ipa: "œ̃ vwazɛ̃", ja: "隣人（男）", pos: "名詞", g: "m"}
+      - {fr: "une voisine", ipa: "yn vwazin", ja: "隣人（女）", pos: "名詞", g: "f"}
+      - {fr: "jeune", ipa: "ʒœn", ja: "若い", pos: "形容詞"}
+      - {fr: "vieux", ipa: "vjø", ja: "年をとった・古い", pos: "形容詞", f: "vieille", f_ipa: "vjɛj", tts: "vieux, vieille"}
+      - {fr: "âgé", ipa: "aʒe", ja: "高齢の", pos: "形容詞", f: "âgée", f_ipa: "aʒe", tts: "âgé, âgée"}
+  - name: "ペット"
+    words:
+      - {fr: "un animal", ipa: "œ̃ nanimal", ja: "動物", pos: "名詞", g: "m", pl: "des animaux"}
+      - {fr: "un chien", ipa: "œ̃ ʃjɛ̃", ja: "犬", pos: "名詞", g: "m"}
+      - {fr: "un chat", ipa: "œ̃ ʃa", ja: "猫", pos: "名詞", g: "m"}
+      - {fr: "un oiseau", ipa: "œ̃ nwazo", ja: "鳥", pos: "名詞", g: "m", pl: "des oiseaux"}
+      - {fr: "un poisson rouge", ipa: "œ̃ pwasɔ̃ ʁuʒ", ja: "金魚", pos: "名詞", g: "m"}
+      - {fr: "un lapin", ipa: "œ̃ lapɛ̃", ja: "うさぎ", pos: "名詞", g: "m"}
+      - {fr: "un hamster", ipa: "œ̃ amstɛʁ", ja: "ハムスター", pos: "名詞", g: "m", note: "h が「有音の h」なので un とリエゾンしない"}
+      - {fr: "une tortue", ipa: "yn tɔʁty", ja: "カメ", pos: "名詞", g: "f"}
+      - {fr: "un cheval", ipa: "œ̃ ʃəval", ja: "馬", pos: "名詞", g: "m", pl: "des chevaux"}
+  - name: "外見"
+    words:
+      - {fr: "des cheveux", ipa: "de ʃəvø", ja: "髪", pos: "名詞", g: "m", note: "髪全体は複数形で言う（les cheveux）"}
+      - {fr: "un œil", ipa: "œ̃ nœj", ja: "目", pos: "名詞", g: "m", pl: "des yeux", note: "複数形は形がまったく変わる。des yeux はリエゾンして de zjø"}
+      - {fr: "une barbe", ipa: "yn baʁb", ja: "あごひげ", pos: "名詞", g: "f"}
+      - {fr: "des lunettes", ipa: "de lynɛt", ja: "めがね", pos: "名詞", g: "f", note: "めがね 1 つでも複数形"}
+      - {fr: "grand", ipa: "ɡʁɑ̃", ja: "背が高い・大きい", pos: "形容詞", f: "grande", f_ipa: "ɡʁɑ̃d", tts: "grand, grande"}
+      - {fr: "petit", ipa: "pəti", ja: "背が低い・小さい", pos: "形容詞", f: "petite", f_ipa: "pətit", tts: "petit, petite"}
+      - {fr: "mince", ipa: "mɛ̃s", ja: "やせている", pos: "形容詞"}
+      - {fr: "gros", ipa: "ɡʁo", ja: "太っている", pos: "形容詞", f: "grosse", f_ipa: "ɡʁos", tts: "gros, grosse"}
+      - {fr: "beau", ipa: "bo", ja: "美しい・かっこいい", pos: "形容詞", f: "belle", f_ipa: "bɛl", tts: "beau, belle"}
+      - {fr: "joli", ipa: "ʒɔli", ja: "かわいい・きれいな", pos: "形容詞", f: "jolie", f_ipa: "ʒɔli", tts: "joli, jolie"}
+      - {fr: "blond", ipa: "blɔ̃", ja: "金髪の", pos: "形容詞", f: "blonde", f_ipa: "blɔ̃d", tts: "blond, blonde"}
+      - {fr: "brun", ipa: "bʁœ̃", ja: "茶色の髪の・黒っぽい髪の", pos: "形容詞", f: "brune", f_ipa: "bʁyn", tts: "brun, brune"}
+      - {fr: "châtain", ipa: "ʃatɛ̃", ja: "（髪が）栗色の", pos: "形容詞", note: "女性の人にも châtain をそのまま使うことが多い"}
+      - {fr: "roux", ipa: "ʁu", ja: "赤毛の", pos: "形容詞", f: "rousse", f_ipa: "ʁus", tts: "roux, rousse"}
+      - {fr: "long", ipa: "lɔ̃", ja: "長い", pos: "形容詞", f: "longue", f_ipa: "lɔ̃ɡ", tts: "long, longue"}
+      - {fr: "court", ipa: "kuʁ", ja: "短い", pos: "形容詞", f: "courte", f_ipa: "kuʁt", tts: "court, courte"}
+      - {fr: "frisé", ipa: "fʁize", ja: "（髪が）巻き毛の", pos: "形容詞", f: "frisée", f_ipa: "fʁize", tts: "frisé, frisée"}
+  - name: "性格"
+    words:
+      - {fr: "gentil", ipa: "ʒɑ̃ti", ja: "親切な・優しい", pos: "形容詞", f: "gentille", f_ipa: "ʒɑ̃tij", tts: "gentil, gentille", note: "男性形の l は読まない"}
+      - {fr: "sympa", ipa: "sɛ̃pa", ja: "感じがいい", pos: "形容詞", note: "sympathique の短縮形。話し言葉でよく使う"}
+      - {fr: "drôle", ipa: "dʁol", ja: "おもしろい", pos: "形容詞"}
+      - {fr: "sérieux", ipa: "seʁjø", ja: "まじめな", pos: "形容詞", f: "sérieuse", f_ipa: "seʁjøz", tts: "sérieux, sérieuse"}
+      - {fr: "timide", ipa: "timid", ja: "内気な", pos: "形容詞"}
+      - {fr: "calme", ipa: "kalm", ja: "落ち着いた", pos: "形容詞"}
+      - {fr: "sportif", ipa: "spɔʁtif", ja: "スポーツ好きな", pos: "形容詞", f: "sportive", f_ipa: "spɔʁtiv", tts: "sportif, sportive"}
+      - {fr: "intelligent", ipa: "ɛ̃teliʒɑ̃", ja: "頭がいい", pos: "形容詞", f: "intelligente", f_ipa: "ɛ̃teliʒɑ̃t", tts: "intelligent, intelligente"}
+      - {fr: "curieux", ipa: "kyʁjø", ja: "好奇心が強い", pos: "形容詞", f: "curieuse", f_ipa: "kyʁjøz", tts: "curieux, curieuse"}
+      - {fr: "généreux", ipa: "ʒeneʁø", ja: "気前がいい", pos: "形容詞", f: "généreuse", f_ipa: "ʒeneʁøz", tts: "généreux, généreuse"}
+      - {fr: "bavard", ipa: "bavaʁ", ja: "おしゃべりな", pos: "形容詞", f: "bavarde", f_ipa: "bavaʁd", tts: "bavard, bavarde"}
+      - {fr: "patient", ipa: "pasjɑ̃", ja: "辛抱強い", pos: "形容詞", f: "patiente", f_ipa: "pasjɑ̃t", tts: "patient, patiente", note: "ti は「スィ」の音"}
+      - {fr: "méchant", ipa: "meʃɑ̃", ja: "意地悪な", pos: "形容詞", f: "méchante", f_ipa: "meʃɑ̃t", tts: "méchant, méchante"}
+      - {fr: "heureux", ipa: "øʁø", ja: "幸せな", pos: "形容詞", f: "heureuse", f_ipa: "øʁøz", tts: "heureux, heureuse"}
+      - {fr: "paresseux", ipa: "paʁesø", ja: "怠け者の", pos: "形容詞", f: "paresseuse", f_ipa: "paʁesøz", tts: "paresseux, paresseuse"}
+      - {fr: "sociable", ipa: "sɔsjabl", ja: "人付き合いのいい", pos: "形容詞"}
+      - {fr: "travailleur", ipa: "tʁavajœʁ", ja: "働き者の", pos: "形容詞", f: "travailleuse", f_ipa: "tʁavajøz", tts: "travailleur, travailleuse"}
+  - name: "色"
+    words:
+      - {fr: "une couleur", ipa: "yn kulœʁ", ja: "色", pos: "名詞", g: "f"}
+      - {fr: "blanc", ipa: "blɑ̃", ja: "白い", pos: "形容詞", f: "blanche", f_ipa: "blɑ̃ʃ", tts: "blanc, blanche", note: "男性形の c は読まない"}
+      - {fr: "noir", ipa: "nwaʁ", ja: "黒い", pos: "形容詞", f: "noire", f_ipa: "nwaʁ", tts: "noir, noire"}
+      - {fr: "rouge", ipa: "ʁuʒ", ja: "赤い", pos: "形容詞"}
+      - {fr: "bleu", ipa: "blø", ja: "青い", pos: "形容詞", f: "bleue", f_ipa: "blø", tts: "bleu, bleue"}
+      - {fr: "vert", ipa: "vɛʁ", ja: "緑の", pos: "形容詞", f: "verte", f_ipa: "vɛʁt", tts: "vert, verte"}
+      - {fr: "jaune", ipa: "ʒon", ja: "黄色い", pos: "形容詞"}
+      - {fr: "gris", ipa: "ɡʁi", ja: "灰色の", pos: "形容詞", f: "grise", f_ipa: "ɡʁiz", tts: "gris, grise"}
+      - {fr: "marron", ipa: "maʁɔ̃", ja: "茶色の", pos: "形容詞", note: "女性形・複数形でも形が変わらない（des yeux marron）"}
+      - {fr: "rose", ipa: "ʁoz", ja: "ピンクの", pos: "形容詞"}
+      - {fr: "orange", ipa: "ɔʁɑ̃ʒ", ja: "オレンジ色の", pos: "形容詞", note: "女性形・複数形でも形が変わらない"}
+      - {fr: "violet", ipa: "vjɔlɛ", ja: "紫の", pos: "形容詞", f: "violette", f_ipa: "vjɔlɛt", tts: "violet, violette"}
+  - name: "所有形容詞と avoir"
+    words:
+      - {fr: "ressembler à", ipa: "ʁəsɑ̃ble a", ja: "〜に似ている", pos: "動詞"}
+      - {fr: "mon", ipa: "mɔ̃", ja: "私の（男性単数）", pos: "形容詞", tts: "mon frère", note: "母音で始まる女性名詞にも mon（mon amie）"}
+      - {fr: "ma", ipa: "ma", ja: "私の（女性単数）", pos: "形容詞", tts: "ma sœur"}
+      - {fr: "mes", ipa: "me", ja: "私の（複数）", pos: "形容詞", tts: "mes parents"}
+      - {fr: "ton", ipa: "tɔ̃", ja: "君の（男性単数）", pos: "形容詞", tts: "ton père"}
+      - {fr: "ta", ipa: "ta", ja: "君の（女性単数）", pos: "形容詞", tts: "ta mère"}
+      - {fr: "tes", ipa: "te", ja: "君の（複数）", pos: "形容詞", tts: "tes cousins"}
+      - {fr: "son", ipa: "sɔ̃", ja: "彼の・彼女の（男性単数）", pos: "形容詞", tts: "son chien", note: "持ち主ではなく、後ろの名詞の性で決まる"}
+      - {fr: "sa", ipa: "sa", ja: "彼の・彼女の（女性単数）", pos: "形容詞", tts: "sa fille"}
+      - {fr: "ses", ipa: "se", ja: "彼の・彼女の（複数）", pos: "形容詞", tts: "ses enfants"}
+      - {fr: "notre", ipa: "nɔtʁ", ja: "私たちの（単数）", pos: "形容詞", tts: "notre chat"}
+      - {fr: "votre", ipa: "vɔtʁ", ja: "あなた（たち）の（単数）", pos: "形容詞", tts: "votre famille"}
+      - {fr: "leur", ipa: "lœʁ", ja: "彼らの（単数）", pos: "形容詞", tts: "leur fils"}
+      - {fr: "nos", ipa: "no", ja: "私たちの（複数）", pos: "形容詞", tts: "nos enfants"}
+      - {fr: "vos", ipa: "vo", ja: "あなた（たち）の（複数）", pos: "形容詞", tts: "vos parents"}
+      - {fr: "leurs", ipa: "lœʁ", ja: "彼らの（複数）", pos: "形容詞", tts: "leurs enfants", note: "leur と同じ発音。母音の前ではリエゾンする（leurs enfants）"}
+      - {fr: "Tu as des frères et sœurs ?", ipa: "ty a de fʁɛʁ e sœʁ", ja: "きょうだいはいる？", pos: "表現"}
+      - {fr: "Je suis fils unique.", ipa: "ʒə sɥi fis ynik", ja: "私はひとりっ子です（男性）", pos: "表現", note: "女性なら Je suis fille unique."}

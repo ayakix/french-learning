@@ -1,0 +1,152 @@
+# 単元 03 一日の生活 の必須単語（Web アプリの単語画面 /vocab/03 のデータ）
+# 名詞は不定冠詞 un / une を付けて読ませる。性（男性・女性）を音で一緒に覚えるため。
+# 時刻・曜日・数字は common で扱うので入れない。d'abord / ensuite / après などの順番の言葉は 09 で扱う。
+# 代名動詞は se を付けた形で覚える。「起こす (réveiller)」と「起きる (se réveiller)」のように、se の有無で意味が変わるため。
+unit: "03"
+title: "一日の生活"
+groups:
+  - name: "朝のしたく"
+    words:
+      - {fr: "se réveiller", ipa: "sə ʁeveje", ja: "目を覚ます", pos: "動詞"}
+      - {fr: "se lever", ipa: "sə ləve", ja: "起きる（起き上がる）", pos: "動詞", note: "目を覚ますのは se réveiller、ベッドから出るのが se lever"}
+      - {fr: "se laver", ipa: "sə lave", ja: "体を洗う", pos: "動詞"}
+      - {fr: "se doucher", ipa: "sə duʃe", ja: "シャワーを浴びる", pos: "動詞"}
+      - {fr: "prendre une douche", ipa: "pʁɑ̃dʁ yn duʃ", ja: "シャワーを浴びる", pos: "表現"}
+      - {fr: "se brosser les dents", ipa: "sə bʁɔse le dɑ̃", ja: "歯を磨く", pos: "表現", note: "体の部分には所有形容詞ではなく定冠詞 les を使う（se で誰の歯かわかるため）"}
+      - {fr: "s'habiller", ipa: "sabije", ja: "服を着る", pos: "動詞"}
+      - {fr: "se maquiller", ipa: "sə makije", ja: "化粧をする", pos: "動詞"}
+      - {fr: "se raser", ipa: "sə ʁaze", ja: "ひげを剃る", pos: "動詞"}
+      - {fr: "se coiffer", ipa: "sə kwafe", ja: "髪を整える", pos: "動詞"}
+      - {fr: "se préparer", ipa: "sə pʁepaʁe", ja: "したくをする", pos: "動詞"}
+      - {fr: "se dépêcher", ipa: "sə depeʃe", ja: "急ぐ", pos: "動詞"}
+      - {fr: "réveiller", ipa: "ʁeveje", ja: "（人を）起こす", pos: "動詞"}
+      - {fr: "un petit-déjeuner", ipa: "œ̃ pəti deʒœne", ja: "朝食", pos: "名詞", g: "m"}
+      - {fr: "prendre le petit-déjeuner", ipa: "pʁɑ̃dʁ lə pəti deʒœne", ja: "朝食をとる", pos: "表現"}
+      - {fr: "déjeuner", ipa: "deʒœne", ja: "昼食をとる", pos: "動詞"}
+      - {fr: "un déjeuner", ipa: "œ̃ deʒœne", ja: "昼食", pos: "名詞", g: "m"}
+      - {fr: "dîner", ipa: "dine", ja: "夕食をとる", pos: "動詞"}
+      - {fr: "un dîner", ipa: "œ̃ dine", ja: "夕食", pos: "名詞", g: "m"}
+  - name: "家での時間"
+    words:
+      - {fr: "rentrer", ipa: "ʁɑ̃tʁe", ja: "帰る（家に戻る）", pos: "動詞"}
+      - {fr: "se reposer", ipa: "sə ʁəpoze", ja: "休む", pos: "動詞"}
+      - {fr: "se coucher", ipa: "sə kuʃe", ja: "寝る（床に就く）", pos: "動詞"}
+      - {fr: "s'endormir", ipa: "sɑ̃dɔʁmiʁ", ja: "眠りにつく", pos: "動詞"}
+      - {fr: "dormir", ipa: "dɔʁmiʁ", ja: "眠る", pos: "動詞"}
+      - {fr: "préparer", ipa: "pʁepaʁe", ja: "準備する・（料理を）作る", pos: "動詞"}
+      - {fr: "ranger", ipa: "ʁɑ̃ʒe", ja: "片付ける", pos: "動詞"}
+      - {fr: "nettoyer", ipa: "netwaje", ja: "掃除する", pos: "動詞"}
+      - {fr: "laver", ipa: "lave", ja: "（物を）洗う", pos: "動詞"}
+      - {fr: "téléphoner", ipa: "telefɔne", ja: "電話する", pos: "動詞"}
+      - {fr: "une douche", ipa: "yn duʃ", ja: "シャワー", pos: "名詞", g: "f"}
+      - {fr: "un bain", ipa: "œ̃ bɛ̃", ja: "風呂（入浴）", pos: "名詞", g: "m"}
+      - {fr: "une habitude", ipa: "yn abityd", ja: "習慣", pos: "名詞", g: "f"}
+      - {fr: "une routine", ipa: "yn ʁutin", ja: "日課", pos: "名詞", g: "f"}
+      - {fr: "quotidien", ipa: "kɔtidjɛ̃", ja: "毎日の", pos: "形容詞", f: "quotidienne", f_ipa: "kɔtidjɛn", tts: "quotidien, quotidienne"}
+      - {fr: "fatigué", ipa: "fatiɡe", ja: "疲れた", pos: "形容詞", f: "fatiguée", f_ipa: "fatiɡe", tts: "fatigué, fatiguée", note: "女性形は e が付くだけで発音は同じ"}
+      - {fr: "occupé", ipa: "ɔkype", ja: "忙しい", pos: "形容詞", f: "occupée", f_ipa: "ɔkype", tts: "occupé, occupée"}
+      - {fr: "libre", ipa: "libʁ", ja: "暇な・空いている", pos: "形容詞"}
+  - name: "一日の時間帯"
+    words:
+      - {fr: "un matin", ipa: "œ̃ matɛ̃", ja: "朝", pos: "名詞", g: "m"}
+      - {fr: "une matinée", ipa: "yn matine", ja: "午前中（朝のあいだ）", pos: "名詞", g: "f", note: "matin は時点、matinée は朝の時間の長さ"}
+      - {fr: "un après-midi", ipa: "œ̃ napʁɛmidi", ja: "午後", pos: "名詞", g: "m"}
+      - {fr: "un soir", ipa: "œ̃ swaʁ", ja: "夕方・晩", pos: "名詞", g: "m"}
+      - {fr: "une nuit", ipa: "yn nɥi", ja: "夜", pos: "名詞", g: "f"}
+      - {fr: "une journée", ipa: "yn ʒuʁne", ja: "一日（日中）", pos: "名詞", g: "f"}
+      - {fr: "le matin", ipa: "lə matɛ̃", ja: "朝に（いつも）", pos: "表現", note: "定冠詞 le で「毎朝」の習慣を表す"}
+      - {fr: "l'après-midi", ipa: "lapʁɛmidi", ja: "午後に（いつも）", pos: "表現"}
+      - {fr: "le soir", ipa: "lə swaʁ", ja: "晩に（いつも）", pos: "表現"}
+      - {fr: "ce soir", ipa: "sə swaʁ", ja: "今晩", pos: "表現"}
+      - {fr: "tôt", ipa: "to", ja: "早く（時間が）", pos: "副詞"}
+      - {fr: "tard", ipa: "taʁ", ja: "遅く", pos: "副詞"}
+      - {fr: "en retard", ipa: "ɑ̃ ʁətaʁ", ja: "遅れて・遅刻して", pos: "表現"}
+      - {fr: "en avance", ipa: "ɑ̃ navɑ̃s", ja: "早めに・予定より早く", pos: "表現"}
+      - {fr: "vite", ipa: "vit", ja: "速く・急いで", pos: "副詞"}
+      - {fr: "vers", ipa: "vɛʁ", ja: "〜ごろ", pos: "前置詞", note: "vers sept heures（7 時ごろ）のように時刻の前に置く"}
+      - {fr: "jusqu'à", ipa: "ʒyska", ja: "〜まで", pos: "前置詞"}
+  - name: "どのくらいの頻度で"
+    words:
+      - {fr: "toujours", ipa: "tuʒuʁ", ja: "いつも", pos: "副詞"}
+      - {fr: "souvent", ipa: "suvɑ̃", ja: "よく・しばしば", pos: "副詞"}
+      - {fr: "parfois", ipa: "paʁfwa", ja: "ときどき", pos: "副詞"}
+      - {fr: "quelquefois", ipa: "kɛlkəfwa", ja: "ときどき", pos: "副詞"}
+      - {fr: "de temps en temps", ipa: "də tɑ̃ zɑ̃ tɑ̃", ja: "ときどき", pos: "表現", note: "temps の s を en につなげて読む（リエゾン）"}
+      - {fr: "rarement", ipa: "ʁaʁmɑ̃", ja: "めったに〜ない", pos: "副詞"}
+      - {fr: "d'habitude", ipa: "dabityd", ja: "ふだんは", pos: "副詞"}
+      - {fr: "normalement", ipa: "nɔʁmalmɑ̃", ja: "ふつうは", pos: "副詞"}
+      - {fr: "généralement", ipa: "ʒeneʁalmɑ̃", ja: "たいてい", pos: "副詞"}
+      - {fr: "tous les jours", ipa: "tu le ʒuʁ", ja: "毎日", pos: "表現"}
+      - {fr: "tous les matins", ipa: "tu le matɛ̃", ja: "毎朝", pos: "表現"}
+      - {fr: "tous les soirs", ipa: "tu le swaʁ", ja: "毎晩", pos: "表現"}
+      - {fr: "chaque matin", ipa: "ʃak matɛ̃", ja: "毎朝", pos: "表現", note: "chaque の後ろの名詞は単数"}
+  - name: "仕事と学校"
+    words:
+      - {fr: "commencer", ipa: "kɔmɑ̃se", ja: "始める・始まる", pos: "動詞"}
+      - {fr: "terminer", ipa: "tɛʁmine", ja: "終える・終わる", pos: "動詞"}
+      - {fr: "finir", ipa: "finiʁ", ja: "終える・終わる", pos: "動詞"}
+      - {fr: "arriver", ipa: "aʁive", ja: "着く", pos: "動詞"}
+      - {fr: "partir", ipa: "paʁtiʁ", ja: "出発する・出かける", pos: "動詞"}
+      - {fr: "quitter", ipa: "kite", ja: "（場所を）出る", pos: "動詞"}
+      - {fr: "un travail", ipa: "œ̃ tʁavaj", ja: "仕事", pos: "名詞", g: "m"}
+      - {fr: "un bureau", ipa: "œ̃ byʁo", ja: "オフィス・机", pos: "名詞", g: "m"}
+      - {fr: "une entreprise", ipa: "yn ɑ̃tʁəpʁiz", ja: "会社", pos: "名詞", g: "f"}
+      - {fr: "un collègue", ipa: "œ̃ kɔlɛɡ", ja: "同僚（男性）", pos: "名詞", g: "m", note: "女性は une collègue（綴りは同じ）"}
+      - {fr: "une réunion", ipa: "yn ʁeynjɔ̃", ja: "会議", pos: "名詞", g: "f"}
+      - {fr: "une pause", ipa: "yn poz", ja: "休憩", pos: "名詞", g: "f"}
+      - {fr: "un cours", ipa: "œ̃ kuʁ", ja: "授業", pos: "名詞", g: "m"}
+      - {fr: "une classe", ipa: "yn klas", ja: "クラス・教室", pos: "名詞", g: "f"}
+      - {fr: "une leçon", ipa: "yn ləsɔ̃", ja: "レッスン・課", pos: "名詞", g: "f"}
+      - {fr: "des devoirs", ipa: "de dəvwaʁ", ja: "宿題", pos: "名詞", g: "m"}
+      - {fr: "un examen", ipa: "œ̃ nɛɡzamɛ̃", ja: "試験", pos: "名詞", g: "m"}
+      - {fr: "une université", ipa: "yn ynivɛʁsite", ja: "大学", pos: "名詞", g: "f"}
+      - {fr: "une cantine", ipa: "yn kɑ̃tin", ja: "（学校・会社の）食堂", pos: "名詞", g: "f"}
+      - {fr: "un emploi du temps", ipa: "œ̃ nɑ̃plwa dy tɑ̃", ja: "時間割・スケジュール", pos: "名詞", g: "m"}
+  - name: "乗り物と移動"
+    words:
+      - {fr: "prendre", ipa: "pʁɑ̃dʁ", ja: "（乗り物に）乗る・取る", pos: "動詞"}
+      - {fr: "marcher", ipa: "maʁʃe", ja: "歩く", pos: "動詞"}
+      - {fr: "conduire", ipa: "kɔ̃dɥiʁ", ja: "運転する", pos: "動詞"}
+      - {fr: "attendre", ipa: "atɑ̃dʁ", ja: "待つ", pos: "動詞"}
+      - {fr: "un bus", ipa: "œ̃ bys", ja: "バス", pos: "名詞", g: "m", note: "語末の s を読む"}
+      - {fr: "un métro", ipa: "œ̃ metʁo", ja: "地下鉄", pos: "名詞", g: "m"}
+      - {fr: "un train", ipa: "œ̃ tʁɛ̃", ja: "電車・列車", pos: "名詞", g: "m"}
+      - {fr: "un tramway", ipa: "œ̃ tʁamwɛ", ja: "路面電車", pos: "名詞", g: "m"}
+      - {fr: "une voiture", ipa: "yn vwatyʁ", ja: "車", pos: "名詞", g: "f"}
+      - {fr: "un vélo", ipa: "œ̃ velo", ja: "自転車", pos: "名詞", g: "m"}
+      - {fr: "un taxi", ipa: "œ̃ taksi", ja: "タクシー", pos: "名詞", g: "m"}
+      - {fr: "une moto", ipa: "yn moto", ja: "バイク", pos: "名詞", g: "f"}
+      - {fr: "en voiture", ipa: "ɑ̃ vwatyʁ", ja: "車で", pos: "表現", note: "中に乗る乗り物は en（en bus, en métro）"}
+      - {fr: "à vélo", ipa: "a velo", ja: "自転車で", pos: "表現", note: "またがる乗り物は à（à moto）。en vélo も会話ではよく聞く"}
+      - {fr: "à pied", ipa: "a pje", ja: "歩いて", pos: "表現"}
+      - {fr: "un arrêt de bus", ipa: "œ̃ naʁɛ də bys", ja: "バス停", pos: "名詞", g: "m"}
+      - {fr: "une station de métro", ipa: "yn stasjɔ̃ də metʁo", ja: "地下鉄の駅", pos: "名詞", g: "f"}
+      - {fr: "un ticket", ipa: "œ̃ tikɛ", ja: "切符（バス・地下鉄）", pos: "名詞", g: "m"}
+      - {fr: "un trajet", ipa: "œ̃ tʁaʒɛ", ja: "道のり・移動時間", pos: "名詞", g: "m"}
+  - name: "身の回りの物"
+    words:
+      - {fr: "un réveil", ipa: "œ̃ ʁevɛj", ja: "目覚まし時計", pos: "名詞", g: "m"}
+      - {fr: "une brosse à dents", ipa: "yn bʁɔs a dɑ̃", ja: "歯ブラシ", pos: "名詞", g: "f"}
+      - {fr: "du dentifrice", ipa: "dy dɑ̃tifʁis", ja: "歯みがき粉", pos: "名詞", g: "m"}
+      - {fr: "une serviette", ipa: "yn sɛʁvjɛt", ja: "タオル", pos: "名詞", g: "f"}
+      - {fr: "du savon", ipa: "dy savɔ̃", ja: "石けん", pos: "名詞", g: "m"}
+      - {fr: "du shampoing", ipa: "dy ʃɑ̃pwɛ̃", ja: "シャンプー", pos: "名詞", g: "m"}
+      - {fr: "un sac", ipa: "œ̃ sak", ja: "かばん", pos: "名詞", g: "m"}
+      - {fr: "un portable", ipa: "œ̃ pɔʁtabl", ja: "携帯電話", pos: "名詞", g: "m"}
+      - {fr: "un ordinateur", ipa: "œ̃ nɔʁdinatœʁ", ja: "パソコン", pos: "名詞", g: "m"}
+      - {fr: "une clé", ipa: "yn kle", ja: "鍵", pos: "名詞", g: "f"}
+      - {fr: "un portefeuille", ipa: "œ̃ pɔʁtəfœj", ja: "財布", pos: "名詞", g: "m"}
+      - {fr: "un parapluie", ipa: "œ̃ paʁaplɥi", ja: "傘", pos: "名詞", g: "m"}
+      - {fr: "une montre", ipa: "yn mɔ̃tʁ", ja: "腕時計", pos: "名詞", g: "f"}
+      - {fr: "un stylo", ipa: "œ̃ stilo", ja: "ペン", pos: "名詞", g: "m"}
+      - {fr: "un cahier", ipa: "œ̃ kaje", ja: "ノート", pos: "名詞", g: "m"}
+  - name: "順番を言う"
+    words:
+      - {fr: "d'abord", ipa: "dabɔʁ", ja: "まず", pos: "副詞"}
+      - {fr: "ensuite", ipa: "ɑ̃sɥit", ja: "次に", pos: "副詞"}
+      - {fr: "puis", ipa: "pɥi", ja: "それから", pos: "副詞"}
+      - {fr: "après", ipa: "apʁɛ", ja: "そのあと・〜のあとで", pos: "副詞"}
+      - {fr: "enfin", ipa: "ɑ̃fɛ̃", ja: "最後に", pos: "副詞"}
+      - {fr: "finalement", ipa: "finalmɑ̃", ja: "結局", pos: "副詞"}
+      - {fr: "pendant", ipa: "pɑ̃dɑ̃", ja: "〜の間", pos: "前置詞", note: "pendant trois jours（3 日間）"}
+      - {fr: "avant", ipa: "avɑ̃", ja: "〜の前に", pos: "前置詞"}

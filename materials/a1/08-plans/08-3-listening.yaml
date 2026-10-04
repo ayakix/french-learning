@@ -1,0 +1,29 @@
+# 単元 08 聞き取り 3：ラジオの天気予報（DELF A1 の「アナウンス」形式）
+# 天気予報は、地名・曜日・気温・天気が次々に出てくるので、必要な情報だけを拾う練習になる。
+# 未来の天気は、ラジオでもよく使う近接未来（il va + 不定詞）で言っている。
+unit: "08"
+title: "週末の天気予報"
+type: "announcement"
+situation: "金曜日の夜、ラジオで週末の天気予報が流れる"
+speakers:
+  radio: { name: "Radio" }
+lines:
+  - { speaker: "radio", fr: "Bonsoir à tous ! Voici la météo du week-end.", ja: "皆さん、こんばんは！週末の天気予報です。" }
+  - { speaker: "radio", fr: "Samedi, il va faire beau et doux à Paris, avec dix-huit degrés.", ja: "土曜日、パリは晴れて暖かく、気温は 18 度でしょう。" }
+  - { speaker: "radio", fr: "À Lyon, il va y avoir des nuages le matin, mais du soleil l'après-midi.", ja: "リヨンは朝は曇りですが、午後は晴れるでしょう。" }
+  - { speaker: "radio", fr: "Dimanche, il va pleuvoir dans le nord, et il va faire froid.", ja: "日曜日は北部で雨が降り、寒くなるでしょう。" }
+  - { speaker: "radio", fr: "À Marseille, attention : il va y avoir beaucoup de vent.", ja: "マルセイユは強い風に注意してください。" }
+  - { speaker: "radio", fr: "À la montagne, il va neiger. Bon week-end à tous !", ja: "山では雪が降るでしょう。皆さん、よい週末を！" }
+questions:
+  - q: "Combien de degrés à Paris samedi ?"
+    q_ja: "土曜日のパリの気温は？"
+    choices: ["8 degrés", "18 degrés", "28 degrés"]
+    answer: 1
+  - q: "Quel temps va-t-il faire dimanche dans le nord ?"
+    q_ja: "日曜日の北部の天気は？"
+    choices: ["Il va pleuvoir.", "Il va neiger.", "Il va faire beau."]
+    answer: 0
+  - q: "Où va-t-il neiger ?"
+    q_ja: "雪が降るのはどこ？"
+    choices: ["À Marseille", "À Lyon", "À la montagne"]
+    answer: 2

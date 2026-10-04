@@ -1,0 +1,28 @@
+# 単元 10 の聞き取り 2：友達からの誕生日会の招待（DELF A1 の留守番電話の形式）
+# 留守番電話は「誰が・何のために・いつ・どこで・何をしてほしいか」の順に話すのが定番なので、その順で並べている。
+unit: "10"
+title: "誕生日会への招待"
+type: "voicemail"
+situation: "レアが友達のユゴーの留守番電話に、誕生日会の招待のメッセージを残す"
+speakers:
+  lea: { name: "Léa", voice: "claire" }
+lines:
+  - { speaker: "lea", voice: "claire", fr: "Salut Hugo, c'est Léa !", ja: "やあユゴー、レアだよ！" }
+  - { speaker: "lea", voice: "claire", fr: "Je t'appelle pour t'inviter à mon anniversaire, samedi soir.", ja: "土曜の夜の私の誕生日会に招待したくて電話したの。" }
+  - { speaker: "lea", voice: "claire", fr: "La fête commence à vingt heures, chez moi, au 15 rue des Lilas.", ja: "パーティーは 20 時から、私の家、リラ通り 15 番地でね。" }
+  - { speaker: "lea", voice: "claire", fr: "Tu peux apporter une boisson ou un dessert, si tu veux.", ja: "よかったら、飲み物かデザートを持ってきて。" }
+  - { speaker: "lea", voice: "claire", fr: "Est-ce que tu peux me répondre avant jeudi ?", ja: "木曜までに返事をくれる？" }
+  - { speaker: "lea", voice: "claire", fr: "Tu peux me rappeler au 06 78 41 25 93. Bisous, à samedi !", ja: "06 78 41 25 93 にかけ直してね。じゃあね、土曜日に！" }
+questions:
+  - q: "Quand est la fête ?"
+    q_ja: "パーティーはいつ？"
+    choices: ["samedi à vingt heures", "vendredi à vingt heures", "samedi à dix-huit heures"]
+    answer: 0
+  - q: "Quelle est l'adresse de Léa ?"
+    q_ja: "レアの住所は？"
+    choices: ["5 rue des Lilas", "15 rue des Lilas", "50 rue des Lilas"]
+    answer: 1
+  - q: "Qu'est-ce que Hugo peut apporter ?"
+    q_ja: "ユゴーは何を持っていけばいい？"
+    choices: ["des fleurs", "un cadeau", "une boisson ou un dessert"]
+    answer: 2

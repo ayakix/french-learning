@@ -1,0 +1,141 @@
+# 単元 05 住まいと街 の 1 文リーディング（20 文、易しい順）
+# 使う文法は 05 までの範囲（il y a、場所の前置詞、aller、à + 冠詞の縮約、-er 動詞、否定）に限っている。
+# 疑問詞（07）と近接未来（08）は出さない。道案内は命令形よりも「vous + 現在形」を中心にした。
+# 現在形のまま覚えられ、実際の道案内でもよく使われるため。
+unit: "05"
+title: "住まいと街"
+sentences:
+  - fr: "Le chat est sous la table."
+    ja: "猫はテーブルの下にいます。"
+    grammar: "être + 場所の前置詞"
+    words:
+      - { w: "sous", ja: "〜の下に" }
+      - { w: "la table", ja: "テーブル" }
+  - fr: "Il y a un parc près de chez moi."
+    ja: "家の近くに公園があります。"
+    grammar: "il y a + 不定冠詞"
+    words:
+      - { w: "il y a", ja: "〜がある" }
+      - { w: "près de", ja: "〜の近くに" }
+      - { w: "chez moi", ja: "私の家" }
+  - fr: "J'habite dans un petit appartement à Lyon."
+    ja: "私はリヨンの小さなアパートに住んでいます。"
+    grammar: "habiter dans + 住まい / à + 都市"
+    words:
+      - { w: "dans", ja: "〜の中に" }
+      - { w: "un appartement", ja: "アパート" }
+  - fr: "La pharmacie est à côté de la banque."
+    ja: "薬局は銀行の隣にあります。"
+    grammar: "à côté de + 定冠詞"
+    words:
+      - { w: "la pharmacie", ja: "薬局" }
+      - { w: "à côté de", ja: "〜の隣に" }
+      - { w: "la banque", ja: "銀行" }
+  - fr: "Je vais à la poste ce matin."
+    ja: "今朝、郵便局に行きます。"
+    grammar: "aller à la + 女性名詞"
+    words:
+      - { w: "je vais", ja: "私は行く（aller）" }
+      - { w: "la poste", ja: "郵便局" }
+  - fr: "Nous allons au musée avec les enfants."
+    ja: "私たちは子どもたちと美術館に行きます。"
+    grammar: "aller au（à + le）+ 男性名詞"
+    words:
+      - { w: "nous allons", ja: "私たちは行く（aller）" }
+      - { w: "au", ja: "〜へ（à + le）" }
+      - { w: "le musée", ja: "美術館" }
+  - fr: "La gare est en face de l'hôtel."
+    ja: "駅はホテルの向かいにあります。"
+    grammar: "en face de + l'（母音の前）"
+    words:
+      - { w: "la gare", ja: "駅" }
+      - { w: "en face de", ja: "〜の向かいに" }
+  - fr: "Mon appartement est au troisième étage."
+    ja: "私のアパートは 4 階にあります。"
+    grammar: "au + 序数 + étage"
+    words:
+      - { w: "troisième", ja: "3 番目の" }
+      - { w: "l'étage", ja: "階（地上階を数えない）" }
+  - fr: "Il y a deux chambres et une grande cuisine."
+    ja: "寝室が 2 つと、広い台所があります。"
+    grammar: "il y a + 複数名詞"
+    words:
+      - { w: "une chambre", ja: "寝室" }
+      - { w: "grande", ja: "広い（grand の女性形）" }
+  - fr: "Il n'y a pas de banque dans mon quartier."
+    ja: "私の地区には銀行がありません。"
+    grammar: "il n'y a pas de + 名詞（否定で冠詞が de になる）"
+    words:
+      - { w: "il n'y a pas de", ja: "〜がない" }
+      - { w: "le quartier", ja: "地区" }
+  - fr: "Les toilettes sont au rez-de-chaussée, près de l'entrée."
+    ja: "トイレは 1 階の入口の近くにあります。"
+    grammar: "au + 男性名詞 / près de + l'"
+    words:
+      - { w: "les toilettes", ja: "トイレ（いつも複数形）" }
+      - { w: "le rez-de-chaussée", ja: "1 階（地上階）" }
+      - { w: "l'entrée", ja: "入口" }
+  - fr: "Les enfants vont à l'école à côté de la mairie."
+    ja: "子どもたちは市役所の隣の学校に行きます。"
+    grammar: "aller à l'（母音で始まる名詞）"
+    words:
+      - { w: "ils vont", ja: "彼らは行く（aller）" }
+      - { w: "à l'école", ja: "学校へ" }
+      - { w: "la mairie", ja: "市役所" }
+  - fr: "La salle de bains est au bout du couloir."
+    ja: "浴室は廊下の突き当たりにあります。"
+    grammar: "au bout de + le → au bout du"
+    words:
+      - { w: "la salle de bains", ja: "浴室" }
+      - { w: "au bout de", ja: "〜の突き当たりに" }
+      - { w: "du", ja: "de + le" }
+      - { w: "le couloir", ja: "廊下" }
+  - fr: "La bibliothèque est entre la mairie et l'église."
+    ja: "図書館は市役所と教会の間にあります。"
+    grammar: "entre A et B"
+    words:
+      - { w: "la bibliothèque", ja: "図書館" }
+      - { w: "entre", ja: "〜の間に" }
+      - { w: "l'église", ja: "教会" }
+  - fr: "Dans le salon, il y a un canapé et deux fauteuils."
+    ja: "リビングには、ソファが 1 つとひじ掛けいすが 2 つあります。"
+    grammar: "場所 + il y a"
+    words:
+      - { w: "le salon", ja: "リビング" }
+      - { w: "un canapé", ja: "ソファ" }
+      - { w: "un fauteuil", ja: "ひじ掛けいす" }
+  - fr: "Le dimanche, je vais au parc avec mon chien."
+    ja: "日曜日は、犬と公園に行きます。"
+    grammar: "le + 曜日（毎週〜）/ aller au"
+    words:
+      - { w: "le dimanche", ja: "日曜日はいつも" }
+      - { w: "au parc", ja: "公園へ" }
+  - fr: "Mon quartier est calme, mais il n'y a pas de cinéma."
+    ja: "私の地区は静かですが、映画館がありません。"
+    grammar: "être + 形容詞 / il n'y a pas de"
+    words:
+      - { w: "calme", ja: "静かな" }
+      - { w: "mais", ja: "しかし" }
+  - fr: "L'office de tourisme se trouve sur la place, devant l'église."
+    ja: "観光案内所は広場の、教会の前にあります。"
+    grammar: "se trouver（位置する）+ 場所の前置詞"
+    words:
+      - { w: "l'office de tourisme", ja: "観光案内所" }
+      - { w: "se trouve", ja: "ある・位置する" }
+      - { w: "la place", ja: "広場" }
+      - { w: "devant", ja: "〜の前に" }
+  - fr: "Pour la gare, vous traversez le pont et vous tournez à droite."
+    ja: "駅へは、橋を渡って右に曲がります。"
+    grammar: "vous + 現在形で道案内"
+    words:
+      - { w: "pour la gare", ja: "駅へ行くには" }
+      - { w: "traverser", ja: "渡る" }
+      - { w: "le pont", ja: "橋" }
+      - { w: "tourner à droite", ja: "右に曲がる" }
+  - fr: "Vous continuez tout droit et la poste est en face de la banque."
+    ja: "まっすぐ進むと、郵便局は銀行の向かいにあります。"
+    grammar: "道案内（continuer tout droit）+ 位置の説明"
+    words:
+      - { w: "continuer", ja: "進み続ける" }
+      - { w: "tout droit", ja: "まっすぐ" }
+      - { w: "en face de", ja: "〜の向かいに" }

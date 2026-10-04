@@ -1,0 +1,30 @@
+# 単元 02 聞き取り 1：家族の写真を見ながらの会話（DELF A1 の「短い会話」形式）
+# 家族の人数・年齢・外見という、この単元で一番よく聞かれる情報を、数字（0〜20）と形容詞で聞き取る練習。
+unit: "02"
+title: "家族の写真"
+type: "dialogue"
+situation: "語学学校の休み時間に、エマがトマにスマートフォンで家族の写真を見せる"
+speakers:
+  emma: { name: "Emma", voice: "claire" }
+  thomas: { name: "Thomas" }
+lines:
+  - { speaker: "emma", voice: "claire", fr: "Regarde, c'est ma famille.", ja: "見て、私の家族よ。" }
+  - { speaker: "thomas", fr: "Ah, super ! C'est ton père, l'homme avec des lunettes ?", ja: "へえ、いいね！めがねの男の人が君のお父さん？" }
+  - { speaker: "emma", voice: "claire", fr: "Oui, et la femme blonde, c'est ma mère.", ja: "そう。それから金髪の女性が母よ。" }
+  - { speaker: "thomas", fr: "Tu as des frères et sœurs ?", ja: "きょうだいはいるの？" }
+  - { speaker: "emma", voice: "claire", fr: "J'ai un frère et une sœur. Mon frère, Hugo, a seize ans.", ja: "兄弟が 1 人と姉妹が 1 人。弟のユゴーは 16 歳。" }
+  - { speaker: "thomas", fr: "Et ta sœur, c'est la petite fille aux cheveux roux ?", ja: "で、妹さんは赤毛の小さい女の子？" }
+  - { speaker: "emma", voice: "claire", fr: "Oui, c'est Jade. Elle a huit ans. Elle est très drôle !", ja: "そう、ジャードよ。8 歳。すごくおもしろいの！" }
+questions:
+  - q: "Emma a combien de frères et sœurs ?"
+    q_ja: "エマのきょうだいは何人？"
+    choices: ["1", "2", "3"]
+    answer: 1
+  - q: "Quel âge a Hugo ?"
+    q_ja: "ユゴーは何歳？"
+    choices: ["6 ans", "8 ans", "16 ans"]
+    answer: 2
+  - q: "Comment sont les cheveux de Jade ?"
+    q_ja: "ジャードの髪は？"
+    choices: ["blonds", "roux", "bruns"]
+    answer: 1

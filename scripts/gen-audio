@@ -1,23 +1,70 @@
 #!/bin/bash
 # 教材の YAML に書かれたテキストを、まとめて音声化する（.cache/tts/ に保存）。
 # 使い方: scripts/gen-audio materials/a1/00-pronunciation/00-1-alphabet.yaml [...]
+#         scripts/gen-audio --dry-run <教材の YAML> [...]   生成せずに、新しく作る文字数と消費クレジットの見積もりを出す
 #
 # 音声は git 管理外のため、clone 直後や教材を追加したときに実行する。
 # say-fr のキャッシュを経由するので、生成済みのテキストはクレジットを消費しない。
 # 各項目の tts（なければ fr）を音声化する。表示用の綴りと読ませたいテキストが違う場合に tts を使う。
 # 項目は入れ子になっていてもよい（例：アクセント記号ごとに例の単語のリストを持つ）。
+# 項目に voice（config/tts.json の voices の別名）があれば、その声で読む（会話の 2 人目など）。
+#
+# クレジットは文字数で消費する（モデルによって倍率が違う）。まとめて作る前に --dry-run で見積もる。
 set -euo pipefail
 
 root="$(cd "$(dirname "$0")/.." && pwd)"
 
+dry_run=false
+if [ "${1:-}" = "--dry-run" ]; then
+  dry_run=true
+  shift
+fi
+
 if [ $# -lt 1 ]; then
-  echo "使い方: scripts/gen-audio <教材の YAML> [...]" >&2
+  echo "使い方: scripts/gen-audio [--dry-run] <教材の YAML> [...]" >&2
   exit 1
 fi
 
-for yaml in "$@"; do
-  yq -r '.. | select(tag == "!!map") | (.tts // .fr) | select(. != null)' "$yaml" | while IFS= read -r text; do
-    "$root/scripts/say-fr" --no-play "$text" > /dev/null
-    echo "ok: $text"
-  done
-done
+# 「テキスト<TAB>声の別名（なければ空）」を、重複を除いて出力する
+texts() {
+  for yaml in "$@"; do
+    yq -r '.. | select(tag == "!!map") | select((.tts // .fr) != null) | [(.tts // .fr), (.voice // "")] | @tsv' "$yaml"
+  done | awk '!seen[$0]++'
+}
+
+# say-fr に渡す引数（声の別名があれば --voice を付ける）
+voice_args() {
+  [ -n "$1" ] && printf '%s\n' --voice "$1"
+}
+
+if $dry_run; then
+  count=0
+  chars=0
+  while IFS=$'\t' read -r text voice; do
+    file=$("$root/scripts/say-fr" --path $(voice_args "$voice") "$text")
+    if [ ! -f "$file" ]; then
+      count=$((count + 1))
+      # ElevenLabs は空白や記号も 1 文字として数える
+      chars=$((chars + $(printf '%s' "$text" | wc -m)))
+    fi
+  done < <(texts "$@")
+
+  set -a
+  . "$root/.env"
+  set +a
+  model=$(jq -r .model_id "$root/config/tts.json")
+  multiplier=$(curl -sS https://api.elevenlabs.io/v1/models -H "xi-api-key: $ELEVENLABS_API_KEY" |
+    jq -r --arg m "$model" '.[] | select(.model_id == $m) | .model_rates.character_cost_multiplier')
+  remaining=$(curl -sS https://api.elevenlabs.io/v1/user/subscription -H "xi-api-key: $ELEVENLABS_API_KEY" |
+    jq -r '.character_limit - .character_count')
+  credits=$(awk -v c="$chars" -v m="$multiplier" 'BEGIN { printf "%d", c * m + 0.5 }')
+  echo "新しく作る音声：${count} 件・${chars} 文字"
+  echo "消費クレジット（見積もり）：${credits}（${model} の倍率 ${multiplier}）"
+  echo "残りのクレジット：${remaining}"
+  exit 0
+fi
+
+while IFS=$'\t' read -r text voice; do
+  "$root/scripts/say-fr" --no-play $(voice_args "$voice") "$text" > /dev/null
+  echo "ok: ${voice:+[$voice] }$text"
+done < <(texts "$@")

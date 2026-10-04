@@ -1,0 +1,29 @@
+# 単元 03 聞き取り 3：遅刻を知らせる留守番電話のメッセージ（DELF A1 の voicemail 形式）
+# 理由・到着時刻・電話番号は、DELF の留守番電話の問題でよく問われる情報なので、それを 1 本に入れている。
+# 電話番号はフランス式に 2 桁ずつ（06 45 32 18 70）読む。数字〜100 の聞き取り練習を兼ねるため。
+unit: "03"
+title: "遅刻の連絡"
+type: "voicemail"
+situation: "会社員のジュリアンが、上司のマルタンさんの留守番電話に遅刻の連絡を残す"
+speakers:
+  julien: { name: "Julien" }
+lines:
+  - { speaker: "julien", fr: "Bonjour madame Martin, c'est Julien Petit.", ja: "こんにちは、マルタンさん。ジュリアン・プティです。" }
+  - { speaker: "julien", fr: "Je suis désolé, je suis en retard ce matin.", ja: "すみません、今朝は遅刻します。" }
+  - { speaker: "julien", fr: "Mon train est bloqué à la gare de Melun.", ja: "電車がムラン駅で止まっています。" }
+  - { speaker: "julien", fr: "La réunion commence à neuf heures et demie, mais j'arrive vers dix heures et quart.", ja: "会議は 9 時半に始まりますが、私は 10 時 15 分ごろに着きます。" }
+  - { speaker: "julien", fr: "Mon numéro, c'est le zéro six, quarante-cinq, trente-deux, dix-huit, soixante-dix.", ja: "私の番号は 06 45 32 18 70 です。" }
+  - { speaker: "julien", fr: "Merci et à tout à l'heure !", ja: "ありがとうございます。ではのちほど！" }
+questions:
+  - q: "Pourquoi Julien est-il en retard ?"
+    q_ja: "ジュリアンはなぜ遅刻しますか？"
+    choices: ["Il est malade.", "Son train est bloqué.", "Il se réveille tard."]
+    answer: 1
+  - q: "À quelle heure Julien arrive-t-il ?"
+    q_ja: "ジュリアンは何時ごろ着きますか？"
+    choices: ["9 h 30", "10 h", "10 h 15"]
+    answer: 2
+  - q: "Quel est le numéro de Julien ?"
+    q_ja: "ジュリアンの電話番号は？"
+    choices: ["06 45 32 18 70", "06 54 32 18 60", "06 45 22 18 70"]
+    answer: 0

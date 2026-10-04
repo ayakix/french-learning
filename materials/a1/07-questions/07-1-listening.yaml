@@ -1,0 +1,33 @@
+# 単元 07 聞き取り 1：授業中に先生へ質問する会話（DELF A1 の短い会話の形式）
+# 聞き返し（Vous pouvez répéter ?）と意味を尋ねる表現（Qu'est-ce que ça veut dire ?）を、実際の授業の流れの中で聞かせるため。
+# 質問はページ数・曜日・単語という、DELF でよく問われる具体的な情報にしている。
+unit: "07"
+title: "授業中の質問"
+type: "dialogue"
+situation: "語学学校の授業で、ケンが先生のソフィーに質問する"
+speakers:
+  sophie: { name: "Sophie", voice: "claire" }
+  ken: { name: "Ken" }
+lines:
+  - { speaker: "sophie", voice: "claire", fr: "Ouvrez le livre à la page vingt-cinq, s'il vous plaît.", ja: "教科書の 25 ページを開いてください。" }
+  - { speaker: "ken", fr: "Pardon, madame, vous pouvez répéter ? Quelle page ?", ja: "すみません、先生、もう一度言っていただけますか？何ページですか？" }
+  - { speaker: "sophie", voice: "claire", fr: "Page vingt-cinq. Tu as une question, Ken ?", ja: "25 ページ。ケン、質問がある？" }
+  - { speaker: "ken", fr: "Oui. Qu'est-ce que ça veut dire, « un horaire » ?", ja: "はい。「un horaire」ってどういう意味ですか？" }
+  - { speaker: "sophie", voice: "claire", fr: "C'est la liste des heures des trains ou des bus.", ja: "電車やバスの時刻の一覧のことよ。" }
+  - { speaker: "ken", fr: "Ah, d'accord ! Et comment ça s'écrit ?", ja: "ああ、わかりました！それで、どう書くんですか？" }
+  - { speaker: "sophie", voice: "claire", fr: "Avec un h au début, comme « heure ».", ja: "最初に h が付くの。「heure（時間）」と同じね。" }
+  - { speaker: "ken", fr: "Merci. Et les devoirs, c'est pour quand ?", ja: "ありがとうございます。それと、宿題はいつまでですか？" }
+  - { speaker: "sophie", voice: "claire", fr: "Pour jeudi : les exercices un et deux.", ja: "木曜日までよ。練習問題の 1 と 2 ね。" }
+questions:
+  - q: "Les élèves ouvrent le livre à quelle page ?"
+    q_ja: "生徒たちは教科書の何ページを開く？"
+    choices: ["page 15", "page 25", "page 35"]
+    answer: 1
+  - q: "Quel mot est-ce que Ken ne comprend pas ?"
+    q_ja: "ケンがわからない単語は？"
+    choices: ["un exercice", "une heure", "un horaire"]
+    answer: 2
+  - q: "Les devoirs sont pour quand ?"
+    q_ja: "宿題はいつまで？"
+    choices: ["mardi", "jeudi", "samedi"]
+    answer: 1

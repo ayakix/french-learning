@@ -1,5 +1,16 @@
 ---
+import { getCollection } from 'astro:content';
 import Base from '../layouts/Base.astro';
+import { listeningId } from '../lib/materials';
+
+// 単元 01 以降は教材の YAML から一覧を作る（教材を足すとリンクも自動で増える）
+const vocab = await getCollection('vocab');
+const reading = await getCollection('reading');
+const listening = await getCollection('listening');
+
+const units = [...new Set([...vocab, ...reading, ...listening].map((e) => e.data.unit))].sort();
+const unitTitle = (unit: string) =>
+  [...vocab, ...reading].find((e) => e.data.unit === unit)?.data.title ?? '';
 ---
 
 <Base title="ホーム">
@@ -17,6 +28,47 @@ import Base from '../layouts/Base.astro';
       <li><a href="/rules/vowels">00-3 複数の文字で 1 つの音を表す綴り</a></li>
       <li><a href="/contrast/nasal">00-4 鼻母音 [ɛ̃] [ɑ̃] [ɔ̃] の聞き比べ</a></li>
       <li><a href="/rules/nasal">00-4 鼻母音になるかどうか</a></li>
+    </ul>
+
+    <h2>A1 / 単元をまたぐ教材</h2>
+    <ul>
+      <li><a href="/numbers">数字・日付・時刻・値段</a></li>
+      <li><a href="/verbs">動詞の活用</a></li>
+    </ul>
+
+    {
+      units.map((unit) => (
+        <section>
+          <h2>
+            A1 / 単元 {unit}：{unitTitle(unit)}
+          </h2>
+          <ul>
+            {vocab.some((e) => e.data.unit === unit) && (
+              <li>
+                <a href={`/vocab/${unit}`}>単語</a>
+              </li>
+            )}
+            {reading.some((e) => e.data.unit === unit) && (
+              <li>
+                <a href={`/reading/${unit}`}>1 文リーディング</a>
+              </li>
+            )}
+            {listening
+              .filter((e) => e.data.unit === unit)
+              .sort((a, b) => listeningId(a).localeCompare(listeningId(b)))
+              .map((e) => (
+                <li>
+                  <a href={`/listening/${listeningId(e)}`}>聞き取り：{e.data.title}</a>
+                </li>
+              ))}
+          </ul>
+        </section>
+      ))
+    }
+
+    <h2>設定</h2>
+    <ul>
+      <li><a href="/voices">声の聞き比べ</a></li>
     </ul>
   </main>
 </Base>

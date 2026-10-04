@@ -1,0 +1,188 @@
+---
+import { getCollection, type CollectionEntry } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import { audioUrl } from '../../lib/audio';
+import { listeningId } from '../../lib/materials';
+import '../../styles/material.css';
+
+export async function getStaticPaths() {
+  const entries = await getCollection('listening');
+  return entries.map((entry) => ({ params: { id: listeningId(entry) }, props: { entry } }));
+}
+
+const { entry } = Astro.props as { entry: CollectionEntry<'listening'> };
+const { unit, title, type, situation, speakers, lines, questions } = entry.data;
+
+const typeNames: Record<string, string> = {
+  dialogue: '会話',
+  voicemail: '留守番電話',
+  announcement: 'アナウンス',
+  monologue: '1 人の話',
+};
+---
+
+<Base title={`${unit} 聞き取り：${title}`}>
+  <main>
+    <header>
+      <a href="/" class="back">← ホーム</a>
+      <h1>{title}</h1>
+      <p class="lead">
+        <span class="type">{typeNames[type] ?? type}</span>
+        {situation}
+      </p>
+    </header>
+
+    <section class="card">
+      <div class="section-head">
+        <h2>1. 聞く</h2>
+        <button type="button" class="pill primary" id="play-all">▶ 通して再生</button>
+      </div>
+      <p class="sub">DELF の本番と同じく、最初はスクリプトを見ずに聞きます。何度聞いても構いません。</p>
+    </section>
+
+    <section class="card">
+      <h2>2. 質問に答える</h2>
+      <ol class="questions">
+        {
+          questions.map((q) => (
+            <li class="question" data-answer={q.answer}>
+              <p class="q">
+                {q.q}
+                <small>{q.q_ja}</small>
+              </p>
+              <div class="choices">
+                {q.choices.map((c, i) => (
+                  <button type="button" class="choice" data-index={i}>
+                    {c}
+                  </button>
+                ))}
+              </div>
+              <p class="result" aria-live="polite" />
+            </li>
+          ))
+        }
+      </ol>
+    </section>
+
+    <section class="card">
+      <details>
+        <summary>3. スクリプトで確かめる（行をクリックで、その行だけ再生）</summary>
+        <ol class="script">
+          {
+            lines.map((l) => (
+              <li>
+                <button type="button" class="tile play line" data-src={audioUrl(l.fr, l.voice)}>
+                  <span class="speaker">{speakers[l.speaker]?.name ?? l.speaker}</span>
+                  <span class="fr">{l.fr}</span>
+                  <span class="ja">{l.ja}</span>
+                </button>
+              </li>
+            ))
+          }
+        </ol>
+      </details>
+    </section>
+  </main>
+</Base>
+
+<script>
+  import { bindPlayButtons, playAll } from '../../scripts/player';
+
+  bindPlayButtons();
+
+  const lines = [...document.querySelectorAll<HTMLElement>('.line')];
+  document.querySelector('#play-all')!.addEventListener('click', () =>
+    // スクリプトを開いていなくても、行の要素から音声を取り出して続けて再生する
+    playAll(lines.map((el) => ({ src: el.dataset.src!, el })), 400),
+  );
+
+  document.querySelectorAll<HTMLElement>('.question').forEach((q) => {
+    const answer = Number(q.dataset.answer);
+    const result = q.querySelector<HTMLElement>('.result')!;
+    const choices = [...q.querySelectorAll<HTMLButtonElement>('.choice')];
+    choices.forEach((button) =>
+      button.addEventListener('click', () => {
+        const ok = Number(button.dataset.index) === answer;
+        choices.forEach((c) => (c.disabled = true));
+        button.classList.add(ok ? 'ok' : 'ng');
+        choices[answer].classList.add('ok');
+        result.className = `result ${ok ? 'ok' : 'ng'}`;
+        result.textContent = ok ? '正解！' : `残念… 正解は「${choices[answer].textContent!.trim()}」`;
+      }),
+    );
+  });
+</script>
+
+<style>
+  .type {
+    display: inline-block;
+    font-size: 0.75rem;
+    padding: 0 8px;
+    margin-right: 6px;
+    border-radius: 999px;
+    background: var(--accent-soft);
+    color: var(--accent);
+  }
+  .questions {
+    padding-left: 1.2em;
+    margin: 8px 0 0;
+  }
+  .question {
+    margin-bottom: 14px;
+  }
+  .q {
+    margin: 0 0 6px;
+    font-weight: 600;
+  }
+  .q small {
+    display: block;
+    font-weight: 400;
+    color: var(--muted);
+  }
+  .choices {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+  .choice {
+    padding: 8px 14px;
+    border: 2px solid var(--border);
+    border-radius: 10px;
+    background: var(--bg);
+  }
+  .choice:not(:disabled):hover {
+    border-color: var(--accent);
+  }
+  .choice:disabled {
+    cursor: default;
+  }
+  .choice.ok {
+    border-color: var(--accent);
+    background: var(--accent-soft);
+  }
+  .choice.ng {
+    border-color: var(--caution);
+    background: var(--caution-soft);
+  }
+  .result {
+    margin: 4px 0 0;
+    min-height: 1.4em;
+  }
+  .script {
+    list-style: none;
+    padding: 0;
+    margin: 12px 0 0;
+    display: grid;
+    gap: 6px;
+  }
+  .line {
+    width: 100%;
+  }
+  .speaker {
+    font-size: 0.75rem;
+    color: var(--muted);
+  }
+  .ja {
+    font-size: 0.88rem;
+  }
+</style>

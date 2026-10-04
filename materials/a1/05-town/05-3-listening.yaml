@@ -1,0 +1,28 @@
+# 単元 05 聞き取り 3：家への行き方を伝える留守番電話（DELF A1 の「留守番電話のメッセージ」形式）
+# DELF の留守番電話では、住所の番地・階・目印のような「メモを取る情報」がよく問われるため、
+# それらを 1 本のメッセージに入れている。数字は聞き違えやすい番地（12）と階（troisième）に絞った。
+unit: "05"
+title: "ソフィーの家への行き方"
+type: "voicemail"
+situation: "ソフィーが友達のマルクに、土曜日の夕食に来るための道順を留守番電話に残す"
+speakers:
+  sophie: { name: "Sophie", voice: "claire" }
+lines:
+  - { speaker: "sophie", voice: "claire", fr: "Allô Marc, c'est Sophie. Pour samedi soir, voilà le chemin.", ja: "もしもしマルク、ソフィーよ。土曜の夜の行き方を伝えるね。" }
+  - { speaker: "sophie", voice: "claire", fr: "Devant la gare, tu tournes à droite et tu continues tout droit jusqu'à la place.", ja: "駅の前で右に曲がって、広場までまっすぐ進んで。" }
+  - { speaker: "sophie", voice: "claire", fr: "J'habite au douze, rue des Lilas, à côté de la pharmacie.", ja: "住所はリラ通り 12 番地、薬局の隣よ。" }
+  - { speaker: "sophie", voice: "claire", fr: "C'est au troisième étage, la porte à gauche.", ja: "4 階で、左側のドアね。" }
+  - { speaker: "sophie", voice: "claire", fr: "Il n'y a pas d'ascenseur, désolée ! À samedi !", ja: "エレベーターはないの、ごめんね！じゃあ土曜日に！" }
+questions:
+  - q: "Quelle est l'adresse de Sophie ?"
+    q_ja: "ソフィーの住所は？"
+    choices: ["2, rue des Lilas", "12, rue des Lilas", "12, place des Lilas"]
+    answer: 1
+  - q: "L'immeuble de Sophie est à côté de quoi ?"
+    q_ja: "ソフィーの建物は何の隣にある？"
+    choices: ["La pharmacie", "La gare", "La poste"]
+    answer: 0
+  - q: "Sophie habite à quel étage ?"
+    q_ja: "ソフィーは何階に住んでいる？"
+    choices: ["Au premier étage", "Au deuxième étage", "Au troisième étage"]
+    answer: 2

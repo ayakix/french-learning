@@ -1,0 +1,34 @@
+# 単元 01 の聞き取り 2：語学学校の受付での登録（DELF A1 の「短い会話」形式）
+# 受付で名前・年齢・国籍・話せる言語を聞かれる、留学で実際に出会う場面。
+# DELF でよく問われる数字（年齢・教室番号）を 0〜20 の範囲で入れ、似た音の数字（14 / 4 / 40 など）を選択肢にして聞き分けを確かめる。
+unit: "01"
+title: "語学学校の受付で"
+type: "dialogue"
+situation: "語学学校の受付で、受付の女性がリュカに名前や年齢を聞いて登録する"
+speakers:
+  secretaire: { name: "La secrétaire", voice: "claire" }
+  lucas: { name: "Lucas" }
+lines:
+  - { speaker: "secretaire", voice: "claire", fr: "Bonjour, monsieur. Vous vous appelez comment ?", ja: "こんにちは。お名前は？" }
+  - { speaker: "lucas", fr: "Bonjour, madame. Je m'appelle Lucas Bernard.", ja: "こんにちは。リュカ・ベルナールです。" }
+  - { speaker: "secretaire", voice: "claire", fr: "Vous avez quel âge ?", ja: "おいくつですか？" }
+  - { speaker: "lucas", fr: "J'ai dix-neuf ans.", ja: "19 歳です。" }
+  - { speaker: "secretaire", voice: "claire", fr: "Vous êtes de quelle nationalité ?", ja: "国籍はどちらですか？" }
+  - { speaker: "lucas", fr: "Je suis belge. J'habite à Bruxelles.", ja: "ベルギー人です。ブリュッセルに住んでいます。" }
+  - { speaker: "secretaire", voice: "claire", fr: "Et vous parlez quelles langues ?", ja: "何語を話しますか？" }
+  - { speaker: "lucas", fr: "Je parle français, anglais et un peu allemand.", ja: "フランス語と英語、それに少しドイツ語を話します。" }
+  - { speaker: "secretaire", voice: "claire", fr: "Très bien. Vous êtes dans la classe quatorze. Bienvenue !", ja: "結構です。あなたは 14 番のクラスです。ようこそ！" }
+  - { speaker: "lucas", fr: "Merci beaucoup, madame. Au revoir !", ja: "どうもありがとうございます。さようなら！" }
+questions:
+  - q: "Lucas a quel âge ?"
+    q_ja: "リュカは何歳？"
+    choices: ["17 ans", "19 ans", "20 ans"]
+    answer: 1
+  - q: "Lucas est..."
+    q_ja: "リュカの国籍は？"
+    choices: ["français", "belge", "suisse"]
+    answer: 1
+  - q: "Lucas est dans quelle classe ?"
+    q_ja: "リュカのクラスの番号は？"
+    choices: ["4", "14", "40"]
+    answer: 1

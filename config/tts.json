@@ -1,5 +1,10 @@
 {
   "voice_id": "aQROLel5sQbj1vuIVi6B",
   "voice_name": "Nicolas - Narrator",
-  "model_id": "eleven_v4"
+  "model_id": "eleven_v4_turbo",
+  "voices": {
+    "claire": { "voice_id": "6vTyAgAT8PncODBcLjRf", "voice_name": "Claire - Warm, Pretty and Charming" },
+    "lucie": { "voice_id": "YxrwjAKoUKULGd0g8K9Y", "voice_name": "Lucie - Support Agent" },
+    "jeanne": { "voice_id": "txtf1EDouKke753vN8SL", "voice_name": "Jeanne - Narrator" }
+  }
 }

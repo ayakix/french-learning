@@ -1,0 +1,131 @@
+# 単元 07 質問する の 1 文リーディング（20 文、易しい順）
+# 質問の文と、その答えになる文を交互に近い形で並べている。質問だけ覚えても、答えを聞き取れないと会話にならないため。
+# 疑問文は est-ce que と、話し言葉の「疑問詞を文末に置く形」を中心にしている。倒置（Où vas-tu ?）は A1 では読めれば十分なので使わない。
+unit: "07"
+title: "質問する"
+sentences:
+  - fr: "Où est la gare, s'il vous plaît ?"
+    ja: "駅はどこですか？"
+    grammar: "où + être + 名詞"
+    words:
+      - { w: "où", ja: "どこ" }
+      - { w: "la gare", ja: "駅" }
+  - fr: "Est-ce que tu parles anglais ?"
+    ja: "英語を話せる？"
+    grammar: "est-ce que + 普通の語順（はい・いいえの質問）"
+    words:
+      - { w: "est-ce que", ja: "〜ですか（文頭に付ける）" }
+      - { w: "parles", ja: "話す（parler の tu の形）" }
+  - fr: "Oui, je parle anglais, mais pas très bien."
+    ja: "うん、英語を話すけど、あまり上手じゃないよ。"
+    grammar: "oui での答え / pas très + 副詞"
+    words:
+      - { w: "mais", ja: "でも" }
+      - { w: "pas très bien", ja: "あまり上手ではない" }
+  - fr: "Vous êtes d'où, Monsieur Tanaka ?"
+    ja: "田中さん、ご出身はどちらですか？"
+    grammar: "être de + 場所（出身）を d'où で尋ねる"
+    words:
+      - { w: "d'où", ja: "どこから・どこの出身" }
+      - { w: "Monsieur", ja: "〜さん（男性）" }
+  - fr: "Je suis de Tokyo, au Japon."
+    ja: "日本の東京出身です。"
+    grammar: "être de + 都市 / au + 男性名詞の国"
+    words:
+      - { w: "de Tokyo", ja: "東京の出身" }
+      - { w: "au Japon", ja: "日本の（au = à + le）" }
+  - fr: "Qu'est-ce que ça veut dire, ce mot ?"
+    ja: "この単語はどういう意味ですか？"
+    grammar: "qu'est-ce que + 主語 + 動詞"
+    words:
+      - { w: "qu'est-ce que", ja: "何を〜か" }
+      - { w: "ça veut dire", ja: "それは〜を意味する" }
+      - { w: "ce mot", ja: "この単語" }
+  - fr: "Vous pouvez répéter plus lentement, s'il vous plaît ?"
+    ja: "もっとゆっくり、もう一度言っていただけますか？"
+    grammar: "pouvoir + 不定詞（お願い）"
+    words:
+      - { w: "vous pouvez", ja: "〜していただけますか" }
+      - { w: "répéter", ja: "繰り返す" }
+      - { w: "plus lentement", ja: "もっとゆっくり" }
+  - fr: "Désolé, je ne comprends pas la question."
+    ja: "すみません、質問がわかりません。"
+    grammar: "ne + 動詞 + pas"
+    words:
+      - { w: "désolé", ja: "すみません（話し手が男性の形）" }
+      - { w: "je ne comprends pas", ja: "わかりません" }
+  - fr: "Comment on dit « merci » en japonais ?"
+    ja: "「メルシー」は日本語で何と言いますか？"
+    grammar: "comment + on dit（決まり文句）"
+    words:
+      - { w: "comment", ja: "どのように" }
+      - { w: "on dit", ja: "（人は）言う" }
+      - { w: "en japonais", ja: "日本語で" }
+  - fr: "Si, j'aime beaucoup le café, mais pas le thé."
+    ja: "（コーヒーは嫌いなの？と聞かれて）いいえ、コーヒーは大好きだよ、紅茶はだめだけど。"
+    grammar: "否定の質問への答え si"
+    words:
+      - { w: "si", ja: "いいえ、〜です（否定の質問を打ち消す）" }
+      - { w: "beaucoup", ja: "とても" }
+  - fr: "Quand est-ce que tu vas à Paris ?"
+    ja: "いつパリに行くの？"
+    grammar: "quand + est-ce que / aller à + 都市"
+    words:
+      - { w: "quand est-ce que", ja: "いつ〜か（d を [t] でつなぐ）" }
+      - { w: "tu vas", ja: "君は行く（aller）" }
+  - fr: "Combien de langues est-ce que vous parlez ?"
+    ja: "いくつの言語を話しますか？"
+    grammar: "combien de + 無冠詞の名詞"
+    words:
+      - { w: "combien de", ja: "いくつの〜" }
+      - { w: "une langue", ja: "言語" }
+  - fr: "Quels films est-ce que tu aimes ?"
+    ja: "どんな映画が好き？"
+    grammar: "quel + 名詞（名詞に性数を合わせる）"
+    words:
+      - { w: "quels", ja: "どの・どんな（男性複数）" }
+      - { w: "un film", ja: "映画" }
+  - fr: "Qu'est-ce que tu fais le dimanche ?"
+    ja: "日曜日はいつも何をしているの？"
+    grammar: "qu'est-ce que + faire / le + 曜日（毎週）"
+    words:
+      - { w: "tu fais", ja: "君はする（faire）" }
+      - { w: "le dimanche", ja: "毎週日曜日に" }
+  - fr: "Pourquoi est-ce que tu étudies le français ?"
+    ja: "どうしてフランス語を勉強しているの？"
+    grammar: "pourquoi + est-ce que"
+    words:
+      - { w: "pourquoi", ja: "なぜ" }
+      - { w: "étudier", ja: "勉強する" }
+  - fr: "Parce que je voudrais habiter en France un jour."
+    ja: "いつかフランスに住みたいからです。"
+    grammar: "parce que + 文 / je voudrais + 不定詞"
+    words:
+      - { w: "parce que", ja: "なぜなら〜だから" }
+      - { w: "je voudrais", ja: "〜したい（ていねい）" }
+      - { w: "un jour", ja: "いつか" }
+  - fr: "Comment ça s'écrit, votre nom de famille ?"
+    ja: "あなたの名字はどう書きますか？"
+    grammar: "comment + 代名動詞 s'écrire"
+    words:
+      - { w: "ça s'écrit", ja: "それは書かれる" }
+      - { w: "un nom de famille", ja: "名字" }
+  - fr: "Avec qui est-ce que tu vas au cinéma samedi ?"
+    ja: "土曜日は誰と映画に行くの？"
+    grammar: "前置詞 + qui / aller au + 場所"
+    words:
+      - { w: "avec qui", ja: "誰と" }
+      - { w: "au cinéma", ja: "映画館に（au = à + le）" }
+  - fr: "Je ne sais pas, je ne suis pas d'ici."
+    ja: "わかりません、この辺りの者ではないので。"
+    grammar: "ne...pas / être de + 場所"
+    words:
+      - { w: "je ne sais pas", ja: "わかりません・知りません" }
+      - { w: "d'ici", ja: "ここの（地元の）" }
+  - fr: "Excusez-moi, est-ce qu'il y a une pharmacie près d'ici ?"
+    ja: "すみません、この近くに薬局はありますか？"
+    grammar: "est-ce qu'il y a + 名詞"
+    words:
+      - { w: "est-ce qu'il y a", ja: "〜はありますか" }
+      - { w: "une pharmacie", ja: "薬局" }
+      - { w: "près d'ici", ja: "この近くに" }

@@ -1,0 +1,135 @@
+# 単元 04 好きなこと・趣味 の 1 文リーディング（20 文、易しい順）
+# 使う文法は単元 04 まで（aimer + 定冠詞、ne ... pas、faire、jouer à / de、-er 動詞の現在形）に限る。
+# 好き嫌いのあとに理由（parce que / c'est + 形容詞）を足す文を後半に多くしている。この単元の目標「好き嫌いと理由を一言で言える」に直結するため。
+unit: "04"
+title: "好きなこと・趣味"
+sentences:
+  - fr: "J'aime le sport et la musique."
+    ja: "私はスポーツと音楽が好きです。"
+    grammar: "aimer + 定冠詞 + 名詞"
+    words:
+      - { w: "j'aime", ja: "私は〜が好き（je aime → j'aime）" }
+      - { w: "le / la", ja: "〜というもの（好き嫌いの対象には定冠詞）" }
+  - fr: "Je n'aime pas le football."
+    ja: "私はサッカーが好きではありません。"
+    grammar: "ne ... pas（母音の前で n'）"
+    words:
+      - { w: "n'aime pas", ja: "好きではない（ne → n'）" }
+      - { w: "le football", ja: "サッカー" }
+  - fr: "Paul adore les jeux vidéo."
+    ja: "ポールはテレビゲームが大好きです。"
+    grammar: "adorer + 定冠詞（複数）"
+    words:
+      - { w: "adore", ja: "大好きだ（adorer）" }
+      - { w: "les jeux vidéo", ja: "テレビゲーム（jeux は jeu の複数形）" }
+  - fr: "Tu aimes les films français ?"
+    ja: "フランス映画は好き？"
+    grammar: "イントネーションの疑問文"
+    words:
+      - { w: "tu aimes", ja: "君は〜が好き（s は読まない）" }
+      - { w: "français", ja: "フランスの（名詞の後ろに置く）" }
+  - fr: "Je déteste le jogging, c'est fatigant."
+    ja: "ジョギングは大嫌い、疲れるから。"
+    grammar: "c'est + 形容詞（感想）"
+    words:
+      - { w: "déteste", ja: "大嫌いだ（détester）" }
+      - { w: "c'est", ja: "それは〜だ" }
+      - { w: "fatigant", ja: "疲れる" }
+  - fr: "Je joue au tennis le samedi."
+    ja: "私は毎週土曜日にテニスをします。"
+    grammar: "jouer à + スポーツ（à + le → au）"
+    words:
+      - { w: "joue au", ja: "（スポーツを）する（au = à + le）" }
+      - { w: "le samedi", ja: "毎週土曜日に（定冠詞で「毎週」）" }
+  - fr: "Marie joue du piano et de la guitare."
+    ja: "マリーはピアノとギターを弾きます。"
+    grammar: "jouer de + 楽器（de + le → du）"
+    words:
+      - { w: "joue du", ja: "（楽器を）弾く（du = de + le）" }
+      - { w: "de la guitare", ja: "ギターを（la は縮約しない）" }
+  - fr: "Nous faisons du vélo le dimanche."
+    ja: "私たちは毎週日曜日にサイクリングをします。"
+    grammar: "faire du + 活動"
+    words:
+      - { w: "nous faisons", ja: "私たちは〜する（faire の活用。ai は [ə]）" }
+      - { w: "du vélo", ja: "自転車（に乗ること）" }
+  - fr: "Elle fait de la danse avec une amie."
+    ja: "彼女は友達とダンスをしています。"
+    grammar: "faire de la + 活動"
+    words:
+      - { w: "fait", ja: "する（faire の活用。t は読まない）" }
+      - { w: "de la danse", ja: "ダンスを" }
+      - { w: "avec", ja: "〜と一緒に" }
+  - fr: "Mon frère ne joue pas aux jeux vidéo."
+    ja: "兄（弟）はテレビゲームをしません。"
+    grammar: "ne ... pas / jouer à + les → aux"
+    words:
+      - { w: "ne joue pas", ja: "（遊びを）しない" }
+      - { w: "aux", ja: "à + les" }
+  - fr: "J'aime bien les mangas, mais je préfère les romans."
+    ja: "漫画もけっこう好きだけど、小説のほうが好きです。"
+    grammar: "aimer bien / préférer"
+    words:
+      - { w: "aimer bien", ja: "けっこう好きだ" }
+      - { w: "mais", ja: "でも" }
+      - { w: "je préfère", ja: "〜のほうが好き（é が è に変わる）" }
+  - fr: "Je ne fais pas de sport, je préfère regarder des séries."
+    ja: "私はスポーツをしません。ドラマを見るほうが好きです。"
+    grammar: "否定で du / de la → de / préférer + 不定詞"
+    words:
+      - { w: "pas de sport", ja: "スポーツをしない（否定では du が de になる）" }
+      - { w: "préférer regarder", ja: "見るほうが好き（動詞は不定詞のまま）" }
+      - { w: "des séries", ja: "ドラマ（複数）" }
+  - fr: "Le soir, j'écoute de la musique, c'est relaxant."
+    ja: "夜は音楽を聞きます。リラックスできるから。"
+    grammar: "écouter + 名詞（à は不要）"
+    words:
+      - { w: "le soir", ja: "夜に（いつも）" }
+      - { w: "j'écoute", ja: "私は聞く（je écoute → j'écoute）" }
+      - { w: "relaxant", ja: "リラックスできる" }
+  - fr: "J'aime cuisiner parce que c'est amusant."
+    ja: "料理するのが好きです。楽しいから。"
+    grammar: "aimer + 不定詞 / parce que"
+    words:
+      - { w: "aimer cuisiner", ja: "料理するのが好き（2 つ目の動詞は不定詞）" }
+      - { w: "parce que", ja: "なぜなら" }
+      - { w: "amusant", ja: "楽しい" }
+  - fr: "Je n'aime pas le jazz parce que c'est ennuyeux."
+    ja: "ジャズは好きではありません。退屈だから。"
+    grammar: "ne ... pas + parce que"
+    words:
+      - { w: "le jazz", ja: "ジャズ（j は [dʒ]）" }
+      - { w: "ennuyeux", ja: "退屈な" }
+  - fr: "Ma sœur chante dans un groupe de rock."
+    ja: "姉（妹）はロックバンドで歌っています。"
+    grammar: "-er 動詞の現在形（chanter）"
+    words:
+      - { w: "chante", ja: "歌う（chanter。e は読まない）" }
+      - { w: "dans", ja: "〜の中で" }
+      - { w: "un groupe de rock", ja: "ロックバンド" }
+  - fr: "Vous faites du sport le week-end ?"
+    ja: "週末にスポーツをしますか？"
+    grammar: "faire の活用（vous faites）"
+    words:
+      - { w: "vous faites", ja: "あなたは〜する（faire の活用）" }
+      - { w: "le week-end", ja: "週末に" }
+  - fr: "Mon passe-temps préféré, c'est la photo."
+    ja: "私のいちばんの趣味は写真です。"
+    grammar: "〜, c'est ...（強調） / 形容詞は名詞の後ろ"
+    words:
+      - { w: "un passe-temps", ja: "趣味" }
+      - { w: "préféré", ja: "いちばん好きな" }
+      - { w: "la photo", ja: "写真（を撮ること）" }
+  - fr: "Je préfère nager parce que c'est bon pour la santé."
+    ja: "私は泳ぐほうが好きです。体にいいから。"
+    grammar: "préférer + 不定詞 / parce que"
+    words:
+      - { w: "nager", ja: "泳ぐ" }
+      - { w: "bon pour la santé", ja: "体にいい" }
+  - fr: "Le samedi, je joue aux cartes avec mes amis, c'est très drôle."
+    ja: "毎週土曜日、友達とトランプをします。すごく笑えます。"
+    grammar: "jouer à + les → aux / c'est + 形容詞"
+    words:
+      - { w: "aux cartes", ja: "トランプを（à + les cartes）" }
+      - { w: "mes amis", ja: "私の友達（リエゾンで [me zami]）" }
+      - { w: "drôle", ja: "おかしい・笑える" }

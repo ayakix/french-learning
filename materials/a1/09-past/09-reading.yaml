@@ -1,0 +1,130 @@
+# 単元 09 過去の出来事（入門） の 1 文リーディング（Web アプリのリーディング画面のデータ）
+# 複合過去（avoir / être + 過去分詞）だけで「昨日・週末にしたこと」を言う文を、易しい順に並べている。
+# 前半は avoir、中盤から être（性数一致あり）、後半は否定・時の表現・順番の言葉を組み合わせる。
+# 一度に新しいことを 1 つずつ増やし、どこでつまずいたかが分かるようにするため。
+unit: "09"
+title: "過去の出来事（入門）"
+sentences:
+  - fr: "Hier, j'ai mangé une pizza."
+    ja: "昨日、ピザを食べました。"
+    grammar: "複合過去（avoir + -er 動詞の過去分詞）"
+    words:
+      - { w: "hier", ja: "昨日" }
+      - { w: "j'ai mangé", ja: "私は食べた（manger）" }
+  - fr: "Ce matin, j'ai pris un café."
+    ja: "今朝、コーヒーを飲みました。"
+    grammar: "複合過去（不規則な過去分詞 pris）"
+    words:
+      - { w: "ce matin", ja: "今朝" }
+      - { w: "j'ai pris", ja: "私は取った・飲んだ（prendre）" }
+  - fr: "Hier soir, nous avons regardé un film."
+    ja: "昨日の夜、私たちは映画を見ました。"
+    grammar: "複合過去（nous avons + 過去分詞）"
+    words:
+      - { w: "hier soir", ja: "昨日の夜" }
+      - { w: "nous avons regardé", ja: "私たちは見た（regarder）" }
+  - fr: "J'ai lu un livre et j'ai bu un thé."
+    ja: "本を読んで、紅茶を飲みました。"
+    grammar: "複合過去（lu / bu）"
+    words:
+      - { w: "j'ai lu", ja: "私は読んだ（lire）" }
+      - { w: "j'ai bu", ja: "私は飲んだ（boire）" }
+  - fr: "Tu as fini ton travail ?"
+    ja: "仕事は終わった？"
+    grammar: "複合過去の疑問文（イントネーション）"
+    words:
+      - { w: "tu as fini", ja: "君は終えた（finir）" }
+      - { w: "ton travail", ja: "君の仕事" }
+  - fr: "Samedi, Paul a fait du sport avec ses amis."
+    ja: "土曜日、ポールは友達とスポーツをしました。"
+    grammar: "複合過去（fait）"
+    words:
+      - { w: "a fait", ja: "した（faire）" }
+      - { w: "du sport", ja: "スポーツ（部分冠詞）" }
+      - { w: "ses amis", ja: "彼の友達" }
+  - fr: "Elle est allée à Paris la semaine dernière."
+    ja: "彼女は先週パリに行きました。"
+    grammar: "複合過去（être + 過去分詞、女性の一致 allée）"
+    words:
+      - { w: "elle est allée", ja: "彼女は行った（aller）" }
+      - { w: "la semaine dernière", ja: "先週" }
+  - fr: "Je suis rentré à la maison à vingt heures."
+    ja: "（男性が）20 時に家に帰りました。"
+    grammar: "複合過去（être + rentré）"
+    words:
+      - { w: "je suis rentré", ja: "私は帰った（rentrer）" }
+      - { w: "à la maison", ja: "家に" }
+  - fr: "Le train est arrivé à Lyon à dix heures."
+    ja: "電車は 10 時にリヨンに着きました。"
+    grammar: "複合過去（être + arrivé）"
+    words:
+      - { w: "est arrivé", ja: "着いた（arriver）" }
+  - fr: "Ma sœur est née à Marseille, mais elle habite à Paris."
+    ja: "姉（妹）はマルセイユで生まれましたが、パリに住んでいます。"
+    grammar: "複合過去（être + née）と現在形の対比"
+    words:
+      - { w: "est née", ja: "生まれた（naître、女性の一致）" }
+      - { w: "mais", ja: "でも" }
+  - fr: "Je n'ai pas vu Paul ce week-end."
+    ja: "今週末はポールに会いませんでした。"
+    grammar: "複合過去の否定（ne + 助動詞 + pas + 過去分詞）"
+    words:
+      - { w: "je n'ai pas vu", ja: "私は見なかった・会わなかった（voir）" }
+      - { w: "ce week-end", ja: "今週末" }
+  - fr: "Il y a deux jours, j'ai rencontré un ami au café."
+    ja: "2 日前、カフェで友達に会いました。"
+    grammar: "il y a + 期間（〜前）＋ 複合過去"
+    words:
+      - { w: "il y a deux jours", ja: "2 日前" }
+      - { w: "j'ai rencontré", ja: "私は出会った（rencontrer）" }
+      - { w: "au café", ja: "カフェで（à + le）" }
+  - fr: "J'ai perdu mes clés dans le métro."
+    ja: "地下鉄で鍵をなくしました。"
+    grammar: "複合過去（perdre → perdu）"
+    words:
+      - { w: "j'ai perdu", ja: "私はなくした（perdre）" }
+      - { w: "mes clés", ja: "私の鍵（複数）" }
+  - fr: "Samedi, nous sommes allés au concert avec des amis."
+    ja: "土曜日、私たちは友達とコンサートに行きました。"
+    grammar: "複合過去（être、複数の一致 allés）"
+    words:
+      - { w: "nous sommes allés", ja: "私たちは行った（aller、複数）" }
+      - { w: "au concert", ja: "コンサートに" }
+  - fr: "Hier, il a fait très beau à Nice."
+    ja: "昨日、ニースはとてもいい天気でした。"
+    grammar: "天気の表現の複合過去（il a fait beau）"
+    words:
+      - { w: "il a fait beau", ja: "いい天気だった" }
+  - fr: "Pour mon anniversaire, j'ai reçu un beau cadeau."
+    ja: "誕生日に、すてきなプレゼントをもらいました。"
+    grammar: "複合過去（recevoir → reçu）"
+    words:
+      - { w: "pour mon anniversaire", ja: "私の誕生日に" }
+      - { w: "j'ai reçu", ja: "私は受け取った（recevoir）" }
+      - { w: "un beau cadeau", ja: "すてきなプレゼント" }
+  - fr: "Qu'est-ce que tu as fait le week-end dernier ?"
+    ja: "先週末は何をしたの？"
+    grammar: "qu'est-ce que + 複合過去"
+    words:
+      - { w: "qu'est-ce que", ja: "何を" }
+      - { w: "le week-end dernier", ja: "先週末" }
+  - fr: "Nous sommes restés à l'hôtel pendant trois jours."
+    ja: "私たちは 3 日間ホテルに滞在しました。"
+    grammar: "複合過去（être + restés）、pendant + 期間"
+    words:
+      - { w: "nous sommes restés", ja: "私たちはとどまった（rester）" }
+      - { w: "pendant trois jours", ja: "3 日間" }
+  - fr: "Elles sont parties en vacances en Italie le mois dernier."
+    ja: "彼女たちは先月、イタリアへバカンスに出かけました。"
+    grammar: "複合過去（être、女性複数の一致 parties）"
+    words:
+      - { w: "elles sont parties", ja: "彼女たちは出発した（partir）" }
+      - { w: "en vacances", ja: "バカンスに" }
+      - { w: "le mois dernier", ja: "先月" }
+  - fr: "D'abord, j'ai pris le métro, puis je suis allé au travail."
+    ja: "（男性が）まず地下鉄に乗って、それから仕事に行きました。"
+    grammar: "avoir と être の複合過去、順番の言葉"
+    words:
+      - { w: "d'abord", ja: "まず" }
+      - { w: "puis", ja: "それから" }
+      - { w: "je suis allé", ja: "私は行った（aller）" }

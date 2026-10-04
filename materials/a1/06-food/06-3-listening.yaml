@@ -1,0 +1,27 @@
+# 単元 06 聞き取り 3：スーパーの店内アナウンス（DELF A1 の「アナウンス」形式）
+# 店内放送は 1 人が一方的に話し、値段・割引・閉店時刻など数字の情報が多い。DELF でもよく出る形のため。
+unit: "06"
+title: "スーパーのお知らせ"
+type: "announcement"
+situation: "スーパーの店内放送で、今日のお得な商品と閉店時刻を知らせる"
+speakers:
+  annonce: { name: "l'annonce" }
+lines:
+  - { speaker: "annonce", fr: "Chers clients, bonjour et bienvenue dans votre supermarché !", ja: "お客さま、こんにちは。ご来店ありがとうございます。" }
+  - { speaker: "annonce", fr: "Aujourd'hui, au rayon fruits et légumes, les fraises sont à trois euros le kilo.", ja: "本日、青果コーナーでは、いちごが 1 キロ 3 ユーロです。" }
+  - { speaker: "annonce", fr: "Le fromage et le jambon sont à moitié prix.", ja: "チーズとハムは半額です。" }
+  - { speaker: "annonce", fr: "Et à la boulangerie, pour deux baguettes, la troisième est gratuite !", ja: "そしてパン売り場では、バゲット 2 本で、3 本目が無料です！" }
+  - { speaker: "annonce", fr: "Attention, le magasin ferme à vingt heures. Merci et bonne journée !", ja: "なお、閉店は 20 時です。ありがとうございます、良い一日を！" }
+questions:
+  - q: "Combien coûtent les fraises ?"
+    q_ja: "いちごはいくら？"
+    choices: ["2 € le kilo", "3 € le kilo", "13 € le kilo"]
+    answer: 1
+  - q: "Qu'est-ce qui est à moitié prix ?"
+    q_ja: "半額なのは何？"
+    choices: ["Le fromage et le jambon", "Le pain et le beurre", "Les fruits et les légumes"]
+    answer: 0
+  - q: "À quelle heure ferme le magasin ?"
+    q_ja: "店は何時に閉まる？"
+    choices: ["À 18 h", "À 20 h", "À 22 h"]
+    answer: 1

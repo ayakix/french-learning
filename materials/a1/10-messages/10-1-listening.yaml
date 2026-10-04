@@ -1,0 +1,32 @@
+# 単元 10 の聞き取り 1：語学学校の受付で申込書を出す会話（DELF A1 の短い会話の形式）
+# 用紙の記入で聞かれる項目（名前・国籍・住所・電話番号）と、開始日・値段を聞き取る練習。
+unit: "10"
+title: "語学学校の受付で申し込む"
+type: "dialogue"
+situation: "語学学校の受付で、ケンジがフランス語講座の申込書を出す"
+speakers:
+  kenji: { name: "Kenji" }
+  secretaire: { name: "Madame Leroy", voice: "claire" }
+lines:
+  - { speaker: "secretaire", voice: "claire", fr: "Bonjour, monsieur. C'est pour l'inscription au cours de français ?", ja: "こんにちは。フランス語講座のお申し込みですか？" }
+  - { speaker: "kenji", fr: "Oui, bonjour. Voici le formulaire.", ja: "はい、こんにちは。これが申込書です。" }
+  - { speaker: "secretaire", voice: "claire", fr: "Merci. Vous êtes japonais, et vous habitez 8 rue Lepic, à Paris ?", ja: "ありがとうございます。日本の方で、パリのルピック通り 8 番地にお住まいですね？" }
+  - { speaker: "kenji", fr: "Oui, c'est ça.", ja: "はい、そうです。" }
+  - { speaker: "secretaire", voice: "claire", fr: "Et votre numéro de téléphone ?", ja: "それから、電話番号は？" }
+  - { speaker: "kenji", fr: "C'est le 06 45 22 18 30. Le cours commence quand ?", ja: "06 45 22 18 30 です。講座はいつ始まりますか？" }
+  - { speaker: "secretaire", voice: "claire", fr: "Lundi prochain, à dix heures. Et il coûte 120 euros par mois.", ja: "来週の月曜、10 時です。料金は月 120 ユーロです。" }
+  - { speaker: "kenji", fr: "Très bien. Je signe ici ?", ja: "わかりました。ここに署名しますか？" }
+  - { speaker: "secretaire", voice: "claire", fr: "Oui, en bas de la page. Merci, et à lundi !", ja: "はい、ページの下に。ありがとうございます、では月曜日に！" }
+questions:
+  - q: "Quelle est la nationalité de l'homme ?"
+    q_ja: "男性の国籍は？"
+    choices: ["japonais", "chinois", "coréen"]
+    answer: 0
+  - q: "Quand commence le cours ?"
+    q_ja: "講座はいつ始まる？"
+    choices: ["lundi à dix heures", "mardi à dix heures", "lundi à deux heures"]
+    answer: 0
+  - q: "Combien coûte le cours ?"
+    q_ja: "講座の料金は？"
+    choices: ["20 euros par mois", "120 euros par mois", "220 euros par mois"]
+    answer: 1

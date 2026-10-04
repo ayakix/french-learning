@@ -1,0 +1,148 @@
+# 単元 01 あいさつ・自己紹介 の 1 文リーディング（Web アプリのリーディング画面のデータ）
+# 1 文で完結する、自己紹介の場面でそのまま使える文を易しい順に並べている。
+# 文法は単元 01 の範囲（主語代名詞・être・s'appeler・数字 0〜20）に、自己紹介に欠かせない habiter / parler と
+# 年齢の決まり文句 J'ai ... ans を加えたものに絞る。習っていない文法で読む手が止まらないようにするため。
+unit: "01"
+title: "あいさつ・自己紹介"
+sentences:
+  - fr: "Bonjour, je m'appelle Marie Dupont."
+    ja: "こんにちは、私の名前はマリー・デュポンです。"
+    grammar: "s'appeler（je m'appelle）"
+    words:
+      - { w: "je m'appelle", ja: "私の名前は〜です" }
+
+  - fr: "Salut, moi, c'est Paul, et toi ?"
+    ja: "やあ、僕はポール。君は？"
+    grammar: "強勢形 moi / toi ＋ c'est"
+    words:
+      - { w: "moi", ja: "僕（強調）" }
+      - { w: "c'est", ja: "〜です" }
+      - { w: "et toi ?", ja: "君は？" }
+
+  - fr: "Enchantée, je suis Yuki, de Tokyo."
+    ja: "はじめまして、東京出身のユキです。"
+    grammar: "être ＋ 名前、de ＋ 都市（出身）"
+    words:
+      - { w: "enchantée", ja: "はじめまして（女性が言うとき）" }
+      - { w: "de", ja: "〜出身の" }
+
+  - fr: "Il s'appelle Thomas et il est français."
+    ja: "彼の名前はトマで、フランス人です。"
+    grammar: "s'appeler（il s'appelle）／ être ＋ 国籍"
+    words:
+      - { w: "il s'appelle", ja: "彼の名前は〜です" }
+      - { w: "français", ja: "フランス人の" }
+
+  - fr: "Je suis japonaise et j'habite à Kyoto."
+    ja: "私は日本人で、京都に住んでいます。"
+    grammar: "国籍の女性形 ／ habiter à ＋ 都市"
+    words:
+      - { w: "japonaise", ja: "日本人の（女性形）" }
+      - { w: "j'habite", ja: "私は住んでいる（je ＋ habite）" }
+      - { w: "à", ja: "〜に（都市の前）" }
+
+  - fr: "Elle est italienne, elle habite à Rome."
+    ja: "彼女はイタリア人で、ローマに住んでいます。"
+    grammar: "être ＋ 国籍の女性形"
+    words:
+      - { w: "italienne", ja: "イタリア人の（女性形）" }
+
+  - fr: "Nous sommes étudiants à Paris."
+    ja: "私たちはパリの学生です。"
+    grammar: "être（nous sommes）＋ 職業（冠詞なし・複数形）"
+    words:
+      - { w: "nous sommes", ja: "私たちは〜である" }
+      - { w: "étudiants", ja: "学生（複数形）" }
+
+  - fr: "Bonsoir, madame, vous êtes professeure ?"
+    ja: "こんばんは、あなたは先生ですか？"
+    grammar: "être（vous êtes）＋ 職業、上げ調子の疑問文"
+    words:
+      - { w: "vous êtes", ja: "あなたは〜である（丁寧）" }
+      - { w: "professeure", ja: "先生（女性形）" }
+
+  - fr: "Je parle japonais et un peu anglais."
+    ja: "私は日本語と、少し英語を話します。"
+    grammar: "parler ＋ 言語（冠詞なし）"
+    words:
+      - { w: "je parle", ja: "私は話す" }
+      - { w: "un peu", ja: "少し" }
+
+  - fr: "Je suis de Nagoya, au Japon."
+    ja: "私は日本の名古屋出身です。"
+    grammar: "être de ＋ 都市 ／ au ＋ 男性名詞の国"
+    words:
+      - { w: "être de", ja: "〜出身である" }
+      - { w: "au Japon", ja: "日本の・日本に" }
+
+  - fr: "J'ai dix-neuf ans et je suis étudiant."
+    ja: "私は 19 歳で、学生です。"
+    grammar: "avoir ＋ 数字 ＋ ans（年齢）"
+    words:
+      - { w: "j'ai", ja: "私は持っている（年齢を言うときに使う）" }
+      - { w: "dix-neuf", ja: "19" }
+      - { w: "ans", ja: "〜歳" }
+
+  - fr: "Excusez-moi, vous êtes Madame Martin ?"
+    ja: "すみません、マルタンさんでいらっしゃいますか？"
+    grammar: "être ＋ 名前で人を確かめる"
+    words:
+      - { w: "excusez-moi", ja: "すみません（呼びかけ）" }
+      - { w: "Madame Martin", ja: "マルタンさん（女性）" }
+
+  - fr: "Lucas est canadien et il habite à Montréal."
+    ja: "リュカはカナダ人で、モントリオールに住んでいます。"
+    grammar: "être ＋ 国籍 ／ habiter à ＋ 都市"
+    words:
+      - { w: "canadien", ja: "カナダ人の" }
+
+  - fr: "Elle s'appelle Emma et elle a seize ans."
+    ja: "彼女の名前はエマで、16 歳です。"
+    grammar: "s'appeler ／ avoir ＋ 数字 ＋ ans"
+    words:
+      - { w: "elle a", ja: "彼女は持っている（年齢）" }
+      - { w: "seize", ja: "16" }
+
+  - fr: "Je travaille à Lyon, je suis ingénieur."
+    ja: "私はリヨンで働いていて、エンジニアです。"
+    grammar: "être ＋ 職業（冠詞なし）"
+    words:
+      - { w: "je travaille", ja: "私は働いている" }
+      - { w: "ingénieur", ja: "エンジニア" }
+
+  - fr: "Moi, je suis japonais, et vous, vous êtes anglais ?"
+    ja: "私は日本人です。あなたはイギリス人ですか？"
+    grammar: "強勢形 moi / vous で主語を強める"
+    words:
+      - { w: "moi, je", ja: "私は（強調）" }
+      - { w: "vous, vous", ja: "あなたは（強調）" }
+
+  - fr: "Ils sont espagnols et ils parlent espagnol et français."
+    ja: "彼らはスペイン人で、スペイン語とフランス語を話します。"
+    grammar: "être（ils sont）＋ 国籍の複数形"
+    words:
+      - { w: "ils sont", ja: "彼らは〜である" }
+      - { w: "espagnols", ja: "スペイン人の（男性複数）" }
+      - { w: "ils parlent", ja: "彼らは話す（-ent は読まない）" }
+
+  - fr: "On parle français en France, en Belgique et en Suisse."
+    ja: "フランス、ベルギー、スイスではフランス語が話されています。"
+    grammar: "on（人は）／ en ＋ 女性名詞の国"
+    words:
+      - { w: "on", ja: "人は（一般の人）" }
+      - { w: "en France", ja: "フランスで" }
+
+  - fr: "Nous habitons à Osaka et nous parlons un peu français."
+    ja: "私たちは大阪に住んでいて、少しフランス語を話します。"
+    grammar: "habiter / parler（nous の形）"
+    words:
+      - { w: "nous habitons", ja: "私たちは住んでいる（リエゾンして [nuzabitɔ̃]）" }
+      - { w: "nous parlons", ja: "私たちは話す" }
+
+  - fr: "Bonjour à tous, je m'appelle Hiro, j'ai vingt ans et je suis cuisinier."
+    ja: "皆さんこんにちは、私はヒロ、20 歳で、料理人です。"
+    grammar: "名前・年齢・職業をまとめて言う"
+    words:
+      - { w: "bonjour à tous", ja: "皆さんこんにちは" }
+      - { w: "vingt ans", ja: "20 歳（t がリエゾンする）" }
+      - { w: "cuisinier", ja: "料理人" }

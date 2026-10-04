@@ -1,0 +1,115 @@
+# 単元 08 予定と天気 の必須単語（Web アプリの単語画面 /vocab/08 のデータ）
+# 名詞は不定冠詞 un / une を付けて読ませる。性（男性・女性）を音で一緒に覚えるため。
+# 天気は il fait beau / il pleut のように「il + 動詞」のかたまりで使うので、単語ではなく表現として覚える。
+# 季節は un été [œ̃ nete] のように un を付ける。l'été だと母音の前で性が聞き分けられないため。
+# la mer / la campagne などは「海に行く」の意味ではほぼ定冠詞で使うので、例外として la で載せる。
+# 数字・曜日・月・日付・時刻は common で扱うため、ここには入れない。
+unit: "08"
+title: "予定と天気"
+groups:
+  - name: "天気の言い方"
+    words:
+      - {fr: "Quel temps fait-il ?", ipa: "kɛl tɑ̃ fɛtil", ja: "天気はどう？", pos: "表現"}
+      - {fr: "il fait beau", ipa: "il fɛ bo", ja: "天気がいい", pos: "表現"}
+      - {fr: "il fait mauvais", ipa: "il fɛ movɛ", ja: "天気が悪い", pos: "表現"}
+      - {fr: "il fait chaud", ipa: "il fɛ ʃo", ja: "暑い", pos: "表現"}
+      - {fr: "il fait froid", ipa: "il fɛ fʁwa", ja: "寒い", pos: "表現"}
+      - {fr: "il fait doux", ipa: "il fɛ du", ja: "暖かい・穏やかだ", pos: "表現"}
+      - {fr: "il fait frais", ipa: "il fɛ fʁɛ", ja: "涼しい・肌寒い", pos: "表現"}
+      - {fr: "il pleut", ipa: "il plø", ja: "雨が降っている", pos: "表現"}
+      - {fr: "il neige", ipa: "il nɛʒ", ja: "雪が降っている", pos: "表現"}
+      - {fr: "il y a du soleil", ipa: "il ja dy sɔlɛj", ja: "日が照っている", pos: "表現"}
+      - {fr: "il y a du vent", ipa: "il ja dy vɑ̃", ja: "風がある", pos: "表現"}
+      - {fr: "il y a des nuages", ipa: "il ja de nɥaʒ", ja: "曇っている", pos: "表現"}
+      - {fr: "il va faire beau", ipa: "il va fɛʁ bo", ja: "いい天気になる", pos: "表現", note: "近接未来 aller + 不定詞。fait が不定詞 faire に戻る"}
+      - {fr: "il va pleuvoir", ipa: "il va pløvwaʁ", ja: "雨が降りそうだ", pos: "表現", note: "pleut の不定詞は pleuvoir"}
+  - name: "天気の単語"
+    words:
+      - {fr: "la météo", ipa: "la meteo", ja: "天気予報", pos: "名詞", g: "f", note: "ふつう定冠詞で使う（la météo de demain）"}
+      - {fr: "le ciel", ipa: "lə sjɛl", ja: "空", pos: "名詞", g: "m", note: "空は 1 つなので定冠詞で覚える"}
+      - {fr: "du soleil", ipa: "dy sɔlɛj", ja: "日差し・太陽", pos: "名詞", g: "m"}
+      - {fr: "de la pluie", ipa: "də la plɥi", ja: "雨", pos: "名詞", g: "f"}
+      - {fr: "de la neige", ipa: "də la nɛʒ", ja: "雪", pos: "名詞", g: "f"}
+      - {fr: "du vent", ipa: "dy vɑ̃", ja: "風", pos: "名詞", g: "m"}
+      - {fr: "un nuage", ipa: "œ̃ nɥaʒ", ja: "雲", pos: "名詞", g: "m"}
+      - {fr: "un orage", ipa: "œ̃ nɔʁaʒ", ja: "嵐・雷雨", pos: "名詞", g: "m"}
+      - {fr: "un degré", ipa: "œ̃ dəɡʁe", ja: "（温度の）度", pos: "名詞", g: "m"}
+      - {fr: "une température", ipa: "yn tɑ̃peʁatyʁ", ja: "気温", pos: "名詞", g: "f"}
+      - {fr: "pleuvoir", ipa: "pløvwaʁ", ja: "雨が降る", pos: "動詞", note: "主語は il だけ（il pleut）"}
+      - {fr: "neiger", ipa: "neʒe", ja: "雪が降る", pos: "動詞", note: "主語は il だけ（il neige）"}
+      - {fr: "ensoleillé", ipa: "ɑ̃sɔlɛje", ja: "晴れた・日当たりのよい", pos: "形容詞", f: "ensoleillée", f_ipa: "ɑ̃sɔlɛje", tts: "ensoleillé, ensoleillée", note: "女性形は綴りだけ変わり、音は同じ"}
+      - {fr: "nuageux", ipa: "nɥaʒø", ja: "曇った", pos: "形容詞", f: "nuageuse", f_ipa: "nɥaʒøz", tts: "nuageux, nuageuse"}
+  - name: "季節"
+    words:
+      - {fr: "une saison", ipa: "yn sɛzɔ̃", ja: "季節", pos: "名詞", g: "f"}
+      - {fr: "un printemps", ipa: "œ̃ pʁɛ̃tɑ̃", ja: "春", pos: "名詞", g: "m"}
+      - {fr: "un été", ipa: "œ̃ nete", ja: "夏", pos: "名詞", g: "m"}
+      - {fr: "un automne", ipa: "œ̃ notɔn", ja: "秋", pos: "名詞", g: "m", note: "m は読まない"}
+      - {fr: "un hiver", ipa: "œ̃ nivɛʁ", ja: "冬", pos: "名詞", g: "m"}
+      - {fr: "au printemps", ipa: "o pʁɛ̃tɑ̃", ja: "春に", pos: "表現", note: "printemps だけ子音で始まるので au"}
+      - {fr: "en été", ipa: "ɑ̃ nete", ja: "夏に", pos: "表現"}
+      - {fr: "en automne", ipa: "ɑ̃ notɔn", ja: "秋に", pos: "表現"}
+      - {fr: "en hiver", ipa: "ɑ̃ nivɛʁ", ja: "冬に", pos: "表現"}
+  - name: "時の表現"
+    words:
+      - {fr: "demain", ipa: "dəmɛ̃", ja: "明日", pos: "副詞"}
+      - {fr: "après-demain", ipa: "apʁɛdmɛ̃", ja: "あさって", pos: "副詞"}
+      - {fr: "ce matin", ipa: "sə matɛ̃", ja: "今朝", pos: "表現"}
+      - {fr: "cet après-midi", ipa: "sɛ tapʁɛmidi", ja: "今日の午後", pos: "表現", note: "母音の前なので ce ではなく cet"}
+      - {fr: "un week-end", ipa: "œ̃ wikɛnd", ja: "週末", pos: "名詞", g: "m"}
+      - {fr: "ce week-end", ipa: "sə wikɛnd", ja: "今週末", pos: "表現"}
+      - {fr: "la semaine prochaine", ipa: "la səmɛn pʁɔʃɛn", ja: "来週", pos: "表現"}
+      - {fr: "le mois prochain", ipa: "lə mwa pʁɔʃɛ̃", ja: "来月", pos: "表現"}
+      - {fr: "l'année prochaine", ipa: "lane pʁɔʃɛn", ja: "来年", pos: "表現"}
+      - {fr: "prochain", ipa: "pʁɔʃɛ̃", ja: "次の・来〜", pos: "形容詞", f: "prochaine", f_ipa: "pʁɔʃɛn", tts: "prochain, prochaine"}
+      - {fr: "bientôt", ipa: "bjɛ̃to", ja: "もうすぐ", pos: "副詞"}
+      - {fr: "plus tard", ipa: "ply taʁ", ja: "あとで", pos: "表現"}
+      - {fr: "dans une semaine", ipa: "dɑ̃ zyn səmɛn", ja: "1 週間後に", pos: "表現", note: "dans + 期間 =「〜後に」"}
+  - name: "予定を話す・誘う・断る"
+    words:
+      - {fr: "un projet", ipa: "œ̃ pʁɔʒɛ", ja: "予定・計画", pos: "名詞", g: "m"}
+      - {fr: "un rendez-vous", ipa: "œ̃ ʁɑ̃devu", ja: "会う約束・予約", pos: "名詞", g: "m"}
+      - {fr: "une fête", ipa: "yn fɛt", ja: "パーティー・祭り", pos: "名詞", g: "f"}
+      - {fr: "une invitation", ipa: "yn ɛ̃vitasjɔ̃", ja: "招待", pos: "名詞", g: "f"}
+      - {fr: "inviter", ipa: "ɛ̃vite", ja: "招待する・誘う", pos: "動詞"}
+      - {fr: "rester", ipa: "ʁɛste", ja: "とどまる・家にいる", pos: "動詞"}
+      - {fr: "avoir le temps", ipa: "avwaʁ lə tɑ̃", ja: "時間がある", pos: "表現"}
+      - {fr: "Qu'est-ce que tu vas faire ce week-end ?", ipa: "kɛs kə ty va fɛʁ sə wikɛnd", ja: "今週末は何をするの？", pos: "表現"}
+      - {fr: "Tu es libre ?", ipa: "ty ɛ libʁ", ja: "空いてる？", pos: "表現"}
+      - {fr: "Tu veux venir ?", ipa: "ty vø vəniʁ", ja: "来ない？", pos: "表現"}
+      - {fr: "On y va ?", ipa: "ɔ̃ ni va", ja: "行こうか？", pos: "表現", note: "on と y がリエゾンする"}
+      - {fr: "Avec plaisir !", ipa: "avɛk plɛziʁ", ja: "喜んで！", pos: "表現"}
+      - {fr: "Bonne idée !", ipa: "bɔn ide", ja: "いいね！", pos: "表現"}
+      - {fr: "Pourquoi pas ?", ipa: "puʁkwa pa", ja: "いいんじゃない？", pos: "表現"}
+      - {fr: "Désolé, je ne peux pas.", ipa: "dezɔle ʒə nə pø pa", ja: "ごめん、行けない。", pos: "表現", note: "女性が言うときは Désolée（音は同じ）"}
+      - {fr: "C'est dommage.", ipa: "sɛ dɔmaʒ", ja: "残念。", pos: "表現"}
+      - {fr: "Une autre fois !", ipa: "yn otʁ fwa", ja: "また今度！", pos: "表現"}
+  - name: "旅行・休暇"
+    words:
+      - {fr: "des vacances", ipa: "de vakɑ̃s", ja: "休暇・バカンス", pos: "名詞", g: "f", note: "いつも複数形で使う"}
+      - {fr: "les grandes vacances", ipa: "le ɡʁɑ̃d vakɑ̃s", ja: "夏休み", pos: "表現"}
+      - {fr: "partir en vacances", ipa: "paʁtiʁ ɑ̃ vakɑ̃s", ja: "休暇に出かける", pos: "表現"}
+      - {fr: "visiter", ipa: "vizite", ja: "（場所を）訪れる・見物する", pos: "動詞", note: "人を訪ねるときは使わない"}
+      - {fr: "une réservation", ipa: "yn ʁezɛʁvasjɔ̃", ja: "予約", pos: "名詞", g: "f"}
+      - {fr: "un billet", ipa: "œ̃ bijɛ", ja: "切符・チケット", pos: "名詞", g: "m"}
+      - {fr: "un aller-retour", ipa: "œ̃ nale ʁətuʁ", ja: "往復（切符）", pos: "名詞", g: "m"}
+      - {fr: "une valise", ipa: "yn valiz", ja: "スーツケース", pos: "名詞", g: "f"}
+      - {fr: "un passeport", ipa: "œ̃ paspɔʁ", ja: "パスポート", pos: "名詞", g: "m"}
+      - {fr: "un avion", ipa: "œ̃ navjɔ̃", ja: "飛行機", pos: "名詞", g: "m"}
+      - {fr: "un aéroport", ipa: "œ̃ naeʁɔpɔʁ", ja: "空港", pos: "名詞", g: "m"}
+      - {fr: "une voie", ipa: "yn vwa", ja: "（駅の）〜番線", pos: "名詞", g: "f", note: "駅のアナウンスで「voie 3」のように使う"}
+      - {fr: "un départ", ipa: "œ̃ depaʁ", ja: "出発", pos: "名詞", g: "m"}
+      - {fr: "une arrivée", ipa: "yn aʁive", ja: "到着", pos: "名詞", g: "f"}
+      - {fr: "à l'étranger", ipa: "a letʁɑ̃ʒe", ja: "外国で・外国へ", pos: "表現"}
+  - name: "行き先と自然"
+    words:
+      - {fr: "la mer", ipa: "la mɛʁ", ja: "海", pos: "名詞", g: "f", note: "aller à la mer のように定冠詞で使う"}
+      - {fr: "la montagne", ipa: "la mɔ̃taɲ", ja: "山（山地）", pos: "名詞", g: "f", note: "aller à la montagne のように定冠詞で使う"}
+      - {fr: "la campagne", ipa: "la kɑ̃paɲ", ja: "田舎", pos: "名詞", g: "f", note: "une campagne だと「キャンペーン」の意味になりやすい"}
+      - {fr: "une plage", ipa: "yn plaʒ", ja: "浜辺・ビーチ", pos: "名詞", g: "f"}
+      - {fr: "une forêt", ipa: "yn fɔʁɛ", ja: "森", pos: "名詞", g: "f"}
+      - {fr: "un lac", ipa: "œ̃ lak", ja: "湖", pos: "名詞", g: "m"}
+      - {fr: "une île", ipa: "yn il", ja: "島", pos: "名詞", g: "f"}
+      - {fr: "au bord de la mer", ipa: "o bɔʁ də la mɛʁ", ja: "海辺で", pos: "表現"}
+      - {fr: "se baigner", ipa: "sə beɲe", ja: "（海などで）泳ぐ・水浴びする", pos: "動詞"}
+      - {fr: "des lunettes de soleil", ipa: "de lynɛt də sɔlɛj", ja: "サングラス", pos: "名詞", g: "f"}

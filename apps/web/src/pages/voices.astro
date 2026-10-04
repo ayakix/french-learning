@@ -1,0 +1,68 @@
+---
+import { readFileSync } from 'node:fs';
+import { resolve } from 'node:path';
+import Base from '../layouts/Base.astro';
+import { audioUrl } from '../lib/audio';
+import '../styles/material.css';
+
+// 会話の 2 人目（女性）の声を選ぶための聞き比べ。候補は config/tts.json の voices。
+// 試し読みの音声は scripts/say-fr --voice <別名> "<SAMPLE>" で作る（文を変えたら作り直しが必要）
+const SAMPLE = "Bonjour ! Je voudrais un café et un croissant, s'il vous plaît. C'est combien ?";
+
+const config = JSON.parse(readFileSync(resolve(process.cwd(), '../../config/tts.json'), 'utf-8')) as {
+  voice_name: string;
+  voices: Record<string, { voice_name: string }>;
+};
+const voices = [
+  { alias: '（標準）', name: config.voice_name, src: audioUrl(SAMPLE) },
+  ...Object.entries(config.voices).map(([alias, v]) => ({ alias, name: v.voice_name, src: audioUrl(SAMPLE, alias) })),
+];
+---
+
+<Base title="声の聞き比べ">
+  <main>
+    <header>
+      <a href="/" class="back">← ホーム</a>
+      <h1>声の聞き比べ</h1>
+      <p class="lead">同じ文を、それぞれの声で読んでいます。会話で使う 2 人目の声を選ぶためのページです。</p>
+      <p class="sample fr">{SAMPLE}</p>
+    </header>
+    <ul class="voices">
+      {
+        voices.map((v) => (
+          <li>
+            <button type="button" class="tile play" data-src={v.src}>
+              <span class="fr">{v.alias}</span>
+              <span class="name">{v.name}</span>
+            </button>
+          </li>
+        ))
+      }
+    </ul>
+  </main>
+</Base>
+
+<script>
+  import { bindPlayButtons } from '../scripts/player';
+
+  bindPlayButtons();
+</script>
+
+<style>
+  .sample {
+    font-size: 1.1rem;
+  }
+  .voices {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    gap: 8px;
+  }
+  .voices .tile {
+    width: 100%;
+  }
+  .name {
+    font-size: 0.85rem;
+    color: var(--muted);
+  }
+</style>

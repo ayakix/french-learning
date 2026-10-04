@@ -1,0 +1,489 @@
+# 動詞の現在形の活用 ＋ 複合過去の例（単元をまたいで使う教材）
+# A1 で使う動詞を、最初に習う単元の順に並べた。単元ごとの単語ファイル（<NN>-vocab.yaml）では不定詞だけを扱い、活用はここにまとめる。
+#
+# inf は表示用（キーが fr だと音声化されてしまうため）。不定詞の音声は infinitive に別に持つ。
+# il / elle、ils / elles は発音が同じなので il / ils だけ載せる。
+# past は複合過去の je の形 1 つだけ。助動詞が avoir か être かを覚えるのが目的なので。
+# être 助動詞の動詞は allé(e) のように表示し、tts には男性形を書く（(e) を TTS に読ませないため）。
+title: "動詞の活用"
+verbs:
+  - slug: "etre"
+    inf: "être"
+    ipa: "ɛtʁ"
+    ja: "〜である・いる"
+    unit: "01"
+    type: "不規則"
+    infinitive: { fr: "être", ipa: "ɛtʁ" }
+    present:
+      - { fr: "je suis", ipa: "ʒə sɥi" }
+      - { fr: "tu es", ipa: "ty ɛ" }
+      - { fr: "il est", ipa: "il ɛ" }
+      - { fr: "nous sommes", ipa: "nu sɔm" }
+      - { fr: "vous êtes", ipa: "vu zɛt", note: "リエゾン" }
+      - { fr: "ils sont", ipa: "il sɔ̃", note: "ils ont [il zɔ̃] と聞き分ける" }
+    past: { fr: "j'ai été", ipa: "ʒe ete", note: "助動詞は avoir" }
+  - slug: "sappeler"
+    inf: "s'appeler"
+    ipa: "saple"
+    ja: "〜という名前である"
+    unit: "01"
+    type: "代名動詞（-er）"
+    infinitive: { fr: "s'appeler", ipa: "saple" }
+    present:
+      - { fr: "je m'appelle", ipa: "ʒə mapɛl", note: "l を 2 つ重ねて [ɛ] と読む" }
+      - { fr: "tu t'appelles", ipa: "ty tapɛl" }
+      - { fr: "il s'appelle", ipa: "il sapɛl" }
+      - { fr: "nous nous appelons", ipa: "nu nu zaplɔ̃", note: "l は 1 つ。e を読まない" }
+      - { fr: "vous vous appelez", ipa: "vu vu zaple", note: "リエゾン" }
+      - { fr: "ils s'appellent", ipa: "il sapɛl" }
+    past: { fr: "je me suis appelé(e)", ipa: "ʒə mə sɥi zaple", tts: "je me suis appelé", note: "代名動詞は助動詞 être" }
+  - slug: "habiter"
+    inf: "habiter"
+    ipa: "abite"
+    ja: "住む"
+    unit: "01"
+    type: "-er 規則"
+    infinitive: { fr: "habiter", ipa: "abite" }
+    present:
+      - { fr: "j'habite", ipa: "ʒabit", note: "h は読まないので j' になる" }
+      - { fr: "tu habites", ipa: "ty abit" }
+      - { fr: "il habite", ipa: "il abit", note: "アンシェヌマン" }
+      - { fr: "nous habitons", ipa: "nu zabitɔ̃", note: "リエゾン" }
+      - { fr: "vous habitez", ipa: "vu zabite", note: "リエゾン" }
+      - { fr: "ils habitent", ipa: "il zabit", note: "リエゾン。-ent は読まない" }
+    past: { fr: "j'ai habité", ipa: "ʒe abite" }
+  - slug: "parler"
+    inf: "parler"
+    ipa: "paʁle"
+    ja: "話す"
+    unit: "01"
+    type: "-er 規則"
+    infinitive: { fr: "parler", ipa: "paʁle" }
+    present:
+      - { fr: "je parle", ipa: "ʒə paʁl" }
+      - { fr: "tu parles", ipa: "ty paʁl", note: "s は読まない" }
+      - { fr: "il parle", ipa: "il paʁl" }
+      - { fr: "nous parlons", ipa: "nu paʁlɔ̃" }
+      - { fr: "vous parlez", ipa: "vu paʁle" }
+      - { fr: "ils parlent", ipa: "il paʁl", note: "-ent は読まない。je / tu / il / ils は同じ音" }
+    past: { fr: "j'ai parlé", ipa: "ʒe paʁle" }
+  - slug: "avoir"
+    inf: "avoir"
+    ipa: "avwaʁ"
+    ja: "持っている"
+    unit: "02"
+    type: "不規則"
+    infinitive: { fr: "avoir", ipa: "avwaʁ" }
+    present:
+      - { fr: "j'ai", ipa: "ʒe" }
+      - { fr: "tu as", ipa: "ty a" }
+      - { fr: "il a", ipa: "il a" }
+      - { fr: "nous avons", ipa: "nu zavɔ̃", note: "リエゾン" }
+      - { fr: "vous avez", ipa: "vu zave", note: "リエゾン" }
+      - { fr: "ils ont", ipa: "il zɔ̃", note: "リエゾンで [z]。ils sont [il sɔ̃] と聞き分ける" }
+    past: { fr: "j'ai eu", ipa: "ʒe y", note: "eu は [y] と読む" }
+  - slug: "manger"
+    inf: "manger"
+    ipa: "mɑ̃ʒe"
+    ja: "食べる"
+    unit: "03"
+    type: "-er 規則"
+    infinitive: { fr: "manger", ipa: "mɑ̃ʒe" }
+    present:
+      - { fr: "je mange", ipa: "ʒə mɑ̃ʒ" }
+      - { fr: "tu manges", ipa: "ty mɑ̃ʒ" }
+      - { fr: "il mange", ipa: "il mɑ̃ʒ" }
+      - { fr: "nous mangeons", ipa: "nu mɑ̃ʒɔ̃", note: "[ʒ] の音を保つため e を入れる" }
+      - { fr: "vous mangez", ipa: "vu mɑ̃ʒe" }
+      - { fr: "ils mangent", ipa: "il mɑ̃ʒ" }
+    past: { fr: "j'ai mangé", ipa: "ʒe mɑ̃ʒe" }
+  - slug: "commencer"
+    inf: "commencer"
+    ipa: "kɔmɑ̃se"
+    ja: "始める・始まる"
+    unit: "03"
+    type: "-er 規則"
+    infinitive: { fr: "commencer", ipa: "kɔmɑ̃se" }
+    present:
+      - { fr: "je commence", ipa: "ʒə kɔmɑ̃s" }
+      - { fr: "tu commences", ipa: "ty kɔmɑ̃s" }
+      - { fr: "il commence", ipa: "il kɔmɑ̃s" }
+      - { fr: "nous commençons", ipa: "nu kɔmɑ̃sɔ̃", note: "[s] の音を保つため c を ç にする" }
+      - { fr: "vous commencez", ipa: "vu kɔmɑ̃se" }
+      - { fr: "ils commencent", ipa: "il kɔmɑ̃s" }
+    past: { fr: "j'ai commencé", ipa: "ʒe kɔmɑ̃se" }
+  - slug: "se-lever"
+    inf: "se lever"
+    ipa: "sə ləve"
+    ja: "起きる"
+    unit: "03"
+    type: "代名動詞（-er）"
+    infinitive: { fr: "se lever", ipa: "sə ləve" }
+    present:
+      - { fr: "je me lève", ipa: "ʒə mə lɛv", note: "発音される語尾の前で e が è になる" }
+      - { fr: "tu te lèves", ipa: "ty tə lɛv" }
+      - { fr: "il se lève", ipa: "il sə lɛv" }
+      - { fr: "nous nous levons", ipa: "nu nu ləvɔ̃", note: "語尾が発音されるので e のまま" }
+      - { fr: "vous vous levez", ipa: "vu vu ləve" }
+      - { fr: "ils se lèvent", ipa: "il sə lɛv" }
+    past: { fr: "je me suis levé(e)", ipa: "ʒə mə sɥi ləve", tts: "je me suis levé", note: "代名動詞は助動詞 être" }
+  - slug: "se-coucher"
+    inf: "se coucher"
+    ipa: "sə kuʃe"
+    ja: "寝る（床につく）"
+    unit: "03"
+    type: "代名動詞（-er）"
+    infinitive: { fr: "se coucher", ipa: "sə kuʃe" }
+    present:
+      - { fr: "je me couche", ipa: "ʒə mə kuʃ" }
+      - { fr: "tu te couches", ipa: "ty tə kuʃ" }
+      - { fr: "il se couche", ipa: "il sə kuʃ" }
+      - { fr: "nous nous couchons", ipa: "nu nu kuʃɔ̃" }
+      - { fr: "vous vous couchez", ipa: "vu vu kuʃe" }
+      - { fr: "ils se couchent", ipa: "il sə kuʃ" }
+    past: { fr: "je me suis couché(e)", ipa: "ʒə mə sɥi kuʃe", tts: "je me suis couché", note: "代名動詞は助動詞 être" }
+  - slug: "prendre"
+    inf: "prendre"
+    ipa: "pʁɑ̃dʁ"
+    ja: "取る・（乗り物に）乗る・（食事を）とる"
+    unit: "03"
+    type: "不規則"
+    infinitive: { fr: "prendre", ipa: "pʁɑ̃dʁ" }
+    present:
+      - { fr: "je prends", ipa: "ʒə pʁɑ̃", note: "d・s は読まない" }
+      - { fr: "tu prends", ipa: "ty pʁɑ̃" }
+      - { fr: "il prend", ipa: "il pʁɑ̃" }
+      - { fr: "nous prenons", ipa: "nu pʁənɔ̃" }
+      - { fr: "vous prenez", ipa: "vu pʁəne" }
+      - { fr: "ils prennent", ipa: "il pʁɛn", note: "n が 2 つになり [ɛn] と読む" }
+    past: { fr: "j'ai pris", ipa: "ʒe pʁi" }
+  - slug: "finir"
+    inf: "finir"
+    ipa: "finiʁ"
+    ja: "終える・終わる"
+    unit: "03"
+    type: "-ir 規則"
+    infinitive: { fr: "finir", ipa: "finiʁ" }
+    present:
+      - { fr: "je finis", ipa: "ʒə fini" }
+      - { fr: "tu finis", ipa: "ty fini" }
+      - { fr: "il finit", ipa: "il fini" }
+      - { fr: "nous finissons", ipa: "nu finisɔ̃", note: "複数形に -iss- が入る" }
+      - { fr: "vous finissez", ipa: "vu finise" }
+      - { fr: "ils finissent", ipa: "il finis" }
+    past: { fr: "j'ai fini", ipa: "ʒe fini" }
+  - slug: "partir"
+    inf: "partir"
+    ipa: "paʁtiʁ"
+    ja: "出発する"
+    unit: "03"
+    type: "不規則（-ir）"
+    infinitive: { fr: "partir", ipa: "paʁtiʁ" }
+    present:
+      - { fr: "je pars", ipa: "ʒə paʁ", note: "単数は語幹の t が落ちる" }
+      - { fr: "tu pars", ipa: "ty paʁ" }
+      - { fr: "il part", ipa: "il paʁ" }
+      - { fr: "nous partons", ipa: "nu paʁtɔ̃" }
+      - { fr: "vous partez", ipa: "vu paʁte" }
+      - { fr: "ils partent", ipa: "il paʁt" }
+    past: { fr: "je suis parti(e)", ipa: "ʒə sɥi paʁti", tts: "je suis parti", note: "移動の動詞なので助動詞 être" }
+  - slug: "dormir"
+    inf: "dormir"
+    ipa: "dɔʁmiʁ"
+    ja: "眠る"
+    unit: "03"
+    type: "不規則（-ir）"
+    infinitive: { fr: "dormir", ipa: "dɔʁmiʁ" }
+    present:
+      - { fr: "je dors", ipa: "ʒə dɔʁ", note: "単数は語幹の m が落ちる" }
+      - { fr: "tu dors", ipa: "ty dɔʁ" }
+      - { fr: "il dort", ipa: "il dɔʁ" }
+      - { fr: "nous dormons", ipa: "nu dɔʁmɔ̃" }
+      - { fr: "vous dormez", ipa: "vu dɔʁme" }
+      - { fr: "ils dorment", ipa: "il dɔʁm" }
+    past: { fr: "j'ai dormi", ipa: "ʒe dɔʁmi" }
+  - slug: "faire"
+    inf: "faire"
+    ipa: "fɛʁ"
+    ja: "する・作る"
+    unit: "04"
+    type: "不規則"
+    infinitive: { fr: "faire", ipa: "fɛʁ" }
+    present:
+      - { fr: "je fais", ipa: "ʒə fɛ" }
+      - { fr: "tu fais", ipa: "ty fɛ" }
+      - { fr: "il fait", ipa: "il fɛ" }
+      - { fr: "nous faisons", ipa: "nu fəzɔ̃", note: "ai を [ə] と読む例外" }
+      - { fr: "vous faites", ipa: "vu fɛt", note: "-ez にならない" }
+      - { fr: "ils font", ipa: "il fɔ̃" }
+    past: { fr: "j'ai fait", ipa: "ʒe fɛ" }
+  - slug: "aimer"
+    inf: "aimer"
+    ipa: "eme"
+    ja: "好きだ・愛している"
+    unit: "04"
+    type: "-er 規則"
+    infinitive: { fr: "aimer", ipa: "eme" }
+    present:
+      - { fr: "j'aime", ipa: "ʒɛm" }
+      - { fr: "tu aimes", ipa: "ty ɛm" }
+      - { fr: "il aime", ipa: "il ɛm", note: "アンシェヌマン" }
+      - { fr: "nous aimons", ipa: "nu zɛmɔ̃", note: "リエゾン" }
+      - { fr: "vous aimez", ipa: "vu zɛme", note: "リエゾン" }
+      - { fr: "ils aiment", ipa: "il zɛm", note: "リエゾン。il aime と聞き分ける" }
+    past: { fr: "j'ai aimé", ipa: "ʒe eme" }
+  - slug: "preferer"
+    inf: "préférer"
+    ipa: "pʁefeʁe"
+    ja: "〜のほうが好きだ"
+    unit: "04"
+    type: "-er 規則（綴りが変わる）"
+    infinitive: { fr: "préférer", ipa: "pʁefeʁe" }
+    present:
+      - { fr: "je préfère", ipa: "ʒə pʁefɛʁ", note: "発音される語尾の前で é が è になる" }
+      - { fr: "tu préfères", ipa: "ty pʁefɛʁ" }
+      - { fr: "il préfère", ipa: "il pʁefɛʁ" }
+      - { fr: "nous préférons", ipa: "nu pʁefeʁɔ̃" }
+      - { fr: "vous préférez", ipa: "vu pʁefeʁe" }
+      - { fr: "ils préfèrent", ipa: "il pʁefɛʁ" }
+    past: { fr: "j'ai préféré", ipa: "ʒe pʁefeʁe" }
+  - slug: "sortir"
+    inf: "sortir"
+    ipa: "sɔʁtiʁ"
+    ja: "出かける・外に出る"
+    unit: "04"
+    type: "不規則（-ir）"
+    infinitive: { fr: "sortir", ipa: "sɔʁtiʁ" }
+    present:
+      - { fr: "je sors", ipa: "ʒə sɔʁ", note: "単数は語幹の t が落ちる" }
+      - { fr: "tu sors", ipa: "ty sɔʁ" }
+      - { fr: "il sort", ipa: "il sɔʁ" }
+      - { fr: "nous sortons", ipa: "nu sɔʁtɔ̃" }
+      - { fr: "vous sortez", ipa: "vu sɔʁte" }
+      - { fr: "ils sortent", ipa: "il sɔʁt" }
+    past: { fr: "je suis sorti(e)", ipa: "ʒə sɥi sɔʁti", tts: "je suis sorti", note: "移動の動詞なので助動詞 être" }
+  - slug: "lire"
+    inf: "lire"
+    ipa: "liʁ"
+    ja: "読む"
+    unit: "04"
+    type: "不規則"
+    infinitive: { fr: "lire", ipa: "liʁ" }
+    present:
+      - { fr: "je lis", ipa: "ʒə li" }
+      - { fr: "tu lis", ipa: "ty li" }
+      - { fr: "il lit", ipa: "il li" }
+      - { fr: "nous lisons", ipa: "nu lizɔ̃" }
+      - { fr: "vous lisez", ipa: "vu lize" }
+      - { fr: "ils lisent", ipa: "il liz" }
+    past: { fr: "j'ai lu", ipa: "ʒe ly" }
+  - slug: "aller"
+    inf: "aller"
+    ipa: "ale"
+    ja: "行く"
+    unit: "05"
+    type: "不規則"
+    infinitive: { fr: "aller", ipa: "ale" }
+    present:
+      - { fr: "je vais", ipa: "ʒə vɛ" }
+      - { fr: "tu vas", ipa: "ty va" }
+      - { fr: "il va", ipa: "il va" }
+      - { fr: "nous allons", ipa: "nu zalɔ̃", note: "リエゾン" }
+      - { fr: "vous allez", ipa: "vu zale", note: "リエゾン" }
+      - { fr: "ils vont", ipa: "il vɔ̃" }
+    past: { fr: "je suis allé(e)", ipa: "ʒə sɥi zale", tts: "je suis allé", note: "移動の動詞なので助動詞 être。suis allé のリエゾンはしないこともある" }
+  - slug: "venir"
+    inf: "venir"
+    ipa: "vəniʁ"
+    ja: "来る"
+    unit: "05"
+    type: "不規則"
+    infinitive: { fr: "venir", ipa: "vəniʁ" }
+    present:
+      - { fr: "je viens", ipa: "ʒə vjɛ̃" }
+      - { fr: "tu viens", ipa: "ty vjɛ̃" }
+      - { fr: "il vient", ipa: "il vjɛ̃" }
+      - { fr: "nous venons", ipa: "nu vənɔ̃" }
+      - { fr: "vous venez", ipa: "vu vəne" }
+      - { fr: "ils viennent", ipa: "il vjɛn", note: "鼻母音にならない。il vient と聞き分ける" }
+    past: { fr: "je suis venu(e)", ipa: "ʒə sɥi vəny", tts: "je suis venu", note: "移動の動詞なので助動詞 être" }
+  - slug: "attendre"
+    inf: "attendre"
+    ipa: "atɑ̃dʁ"
+    ja: "待つ"
+    unit: "05"
+    type: "-re 動詞"
+    infinitive: { fr: "attendre", ipa: "atɑ̃dʁ" }
+    present:
+      - { fr: "j'attends", ipa: "ʒatɑ̃" }
+      - { fr: "tu attends", ipa: "ty atɑ̃" }
+      - { fr: "il attend", ipa: "il atɑ̃" }
+      - { fr: "nous attendons", ipa: "nu zatɑ̃dɔ̃", note: "リエゾン" }
+      - { fr: "vous attendez", ipa: "vu zatɑ̃de", note: "リエゾン" }
+      - { fr: "ils attendent", ipa: "il zatɑ̃d", note: "リエゾン。複数は d を読む" }
+    past: { fr: "j'ai attendu", ipa: "ʒe atɑ̃dy" }
+  - slug: "acheter"
+    inf: "acheter"
+    ipa: "aʃte"
+    ja: "買う"
+    unit: "06"
+    type: "-er 規則（綴りが変わる）"
+    infinitive: { fr: "acheter", ipa: "aʃte" }
+    present:
+      - { fr: "j'achète", ipa: "ʒaʃɛt", note: "発音される語尾の前で e が è になる" }
+      - { fr: "tu achètes", ipa: "ty aʃɛt" }
+      - { fr: "il achète", ipa: "il aʃɛt" }
+      - { fr: "nous achetons", ipa: "nu zaʃtɔ̃", note: "リエゾン。e は読まない" }
+      - { fr: "vous achetez", ipa: "vu zaʃte", note: "リエゾン" }
+      - { fr: "ils achètent", ipa: "il zaʃɛt", note: "リエゾン" }
+    past: { fr: "j'ai acheté", ipa: "ʒe aʃte" }
+  - slug: "mettre"
+    inf: "mettre"
+    ipa: "mɛtʁ"
+    ja: "置く・着る"
+    unit: "06"
+    type: "不規則"
+    infinitive: { fr: "mettre", ipa: "mɛtʁ" }
+    present:
+      - { fr: "je mets", ipa: "ʒə mɛ" }
+      - { fr: "tu mets", ipa: "ty mɛ" }
+      - { fr: "il met", ipa: "il mɛ" }
+      - { fr: "nous mettons", ipa: "nu metɔ̃" }
+      - { fr: "vous mettez", ipa: "vu mete" }
+      - { fr: "ils mettent", ipa: "il mɛt" }
+    past: { fr: "j'ai mis", ipa: "ʒe mi" }
+  - slug: "vouloir"
+    inf: "vouloir"
+    ipa: "vulwaʁ"
+    ja: "〜したい・ほしい"
+    unit: "06"
+    type: "不規則"
+    infinitive: { fr: "vouloir", ipa: "vulwaʁ" }
+    present:
+      - { fr: "je veux", ipa: "ʒə vø", note: "丁寧に頼むときは je voudrais [ʒə vudʁɛ]" }
+      - { fr: "tu veux", ipa: "ty vø" }
+      - { fr: "il veut", ipa: "il vø" }
+      - { fr: "nous voulons", ipa: "nu vulɔ̃" }
+      - { fr: "vous voulez", ipa: "vu vule" }
+      - { fr: "ils veulent", ipa: "il vœl" }
+    past: { fr: "j'ai voulu", ipa: "ʒe vuly" }
+  - slug: "pouvoir"
+    inf: "pouvoir"
+    ipa: "puvwaʁ"
+    ja: "〜できる"
+    unit: "06"
+    type: "不規則"
+    infinitive: { fr: "pouvoir", ipa: "puvwaʁ" }
+    present:
+      - { fr: "je peux", ipa: "ʒə pø" }
+      - { fr: "tu peux", ipa: "ty pø" }
+      - { fr: "il peut", ipa: "il pø" }
+      - { fr: "nous pouvons", ipa: "nu puvɔ̃" }
+      - { fr: "vous pouvez", ipa: "vu puve" }
+      - { fr: "ils peuvent", ipa: "il pœv" }
+    past: { fr: "j'ai pu", ipa: "ʒe py" }
+  - slug: "boire"
+    inf: "boire"
+    ipa: "bwaʁ"
+    ja: "飲む"
+    unit: "06"
+    type: "不規則"
+    infinitive: { fr: "boire", ipa: "bwaʁ" }
+    present:
+      - { fr: "je bois", ipa: "ʒə bwa" }
+      - { fr: "tu bois", ipa: "ty bwa" }
+      - { fr: "il boit", ipa: "il bwa" }
+      - { fr: "nous buvons", ipa: "nu byvɔ̃", note: "語幹が buv- に変わる" }
+      - { fr: "vous buvez", ipa: "vu byve" }
+      - { fr: "ils boivent", ipa: "il bwav" }
+    past: { fr: "j'ai bu", ipa: "ʒe by" }
+  - slug: "savoir"
+    inf: "savoir"
+    ipa: "savwaʁ"
+    ja: "知っている（情報）・〜できる（技能）"
+    unit: "07"
+    type: "不規則"
+    infinitive: { fr: "savoir", ipa: "savwaʁ" }
+    present:
+      - { fr: "je sais", ipa: "ʒə sɛ" }
+      - { fr: "tu sais", ipa: "ty sɛ" }
+      - { fr: "il sait", ipa: "il sɛ" }
+      - { fr: "nous savons", ipa: "nu savɔ̃" }
+      - { fr: "vous savez", ipa: "vu save" }
+      - { fr: "ils savent", ipa: "il sav" }
+    past: { fr: "j'ai su", ipa: "ʒe sy" }
+  - slug: "connaitre"
+    inf: "connaître"
+    ipa: "kɔnɛtʁ"
+    ja: "知っている（人・場所）"
+    unit: "07"
+    type: "不規則"
+    infinitive: { fr: "connaître", ipa: "kɔnɛtʁ" }
+    present:
+      - { fr: "je connais", ipa: "ʒə kɔnɛ" }
+      - { fr: "tu connais", ipa: "ty kɔnɛ" }
+      - { fr: "il connaît", ipa: "il kɔnɛ", note: "il のときだけ î" }
+      - { fr: "nous connaissons", ipa: "nu kɔnɛsɔ̃" }
+      - { fr: "vous connaissez", ipa: "vu kɔnɛse" }
+      - { fr: "ils connaissent", ipa: "il kɔnɛs" }
+    past: { fr: "j'ai connu", ipa: "ʒe kɔny" }
+  - slug: "dire"
+    inf: "dire"
+    ipa: "diʁ"
+    ja: "言う"
+    unit: "07"
+    type: "不規則"
+    infinitive: { fr: "dire", ipa: "diʁ" }
+    present:
+      - { fr: "je dis", ipa: "ʒə di" }
+      - { fr: "tu dis", ipa: "ty di" }
+      - { fr: "il dit", ipa: "il di" }
+      - { fr: "nous disons", ipa: "nu dizɔ̃" }
+      - { fr: "vous dites", ipa: "vu dit", note: "-ez にならない（être・faire と同じ）" }
+      - { fr: "ils disent", ipa: "il diz" }
+    past: { fr: "j'ai dit", ipa: "ʒe di" }
+  - slug: "devoir"
+    inf: "devoir"
+    ipa: "dəvwaʁ"
+    ja: "〜しなければならない"
+    unit: "08"
+    type: "不規則"
+    infinitive: { fr: "devoir", ipa: "dəvwaʁ" }
+    present:
+      - { fr: "je dois", ipa: "ʒə dwa" }
+      - { fr: "tu dois", ipa: "ty dwa" }
+      - { fr: "il doit", ipa: "il dwa" }
+      - { fr: "nous devons", ipa: "nu dəvɔ̃" }
+      - { fr: "vous devez", ipa: "vu dəve" }
+      - { fr: "ils doivent", ipa: "il dwav" }
+    past: { fr: "j'ai dû", ipa: "ʒe dy", note: "û は du（部分冠詞）と区別するため" }
+  - slug: "voir"
+    inf: "voir"
+    ipa: "vwaʁ"
+    ja: "見る・会う"
+    unit: "08"
+    type: "不規則"
+    infinitive: { fr: "voir", ipa: "vwaʁ" }
+    present:
+      - { fr: "je vois", ipa: "ʒə vwa" }
+      - { fr: "tu vois", ipa: "ty vwa" }
+      - { fr: "il voit", ipa: "il vwa" }
+      - { fr: "nous voyons", ipa: "nu vwajɔ̃", note: "i が y になる" }
+      - { fr: "vous voyez", ipa: "vu vwaje" }
+      - { fr: "ils voient", ipa: "il vwa", note: "-ent は読まない。il voit と同じ音" }
+    past: { fr: "j'ai vu", ipa: "ʒe vy" }
+  - slug: "ecrire"
+    inf: "écrire"
+    ipa: "ekʁiʁ"
+    ja: "書く"
+    unit: "10"
+    type: "不規則"
+    infinitive: { fr: "écrire", ipa: "ekʁiʁ" }
+    present:
+      - { fr: "j'écris", ipa: "ʒekʁi" }
+      - { fr: "tu écris", ipa: "ty ekʁi" }
+      - { fr: "il écrit", ipa: "il ekʁi" }
+      - { fr: "nous écrivons", ipa: "nu zekʁivɔ̃", note: "リエゾン。複数は v が入る" }
+      - { fr: "vous écrivez", ipa: "vu zekʁive", note: "リエゾン" }
+      - { fr: "ils écrivent", ipa: "il zekʁiv", note: "リエゾン" }
+    past: { fr: "j'ai écrit", ipa: "ʒe ekʁi" }

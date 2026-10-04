@@ -1,0 +1,148 @@
+---
+import { getCollection, type CollectionEntry } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import { audioUrl } from '../../lib/audio';
+import '../../styles/material.css';
+
+export async function getStaticPaths() {
+  const entries = await getCollection('vocab');
+  return entries.map((entry) => ({ params: { unit: entry.data.unit }, props: { entry } }));
+}
+
+const { entry } = Astro.props as { entry: CollectionEntry<'vocab'> };
+const { unit, title, groups } = entry.data;
+const total = groups.reduce((n, g) => n + g.words.length, 0);
+---
+
+<Base title={`${unit} 単語`}>
+  <main>
+    <header>
+      <a href="/" class="back">← ホーム</a>
+      <h1>{unit} {title}：単語</h1>
+      <p class="lead">
+        全 {total} 語。カードをクリックすると発音を再生します。名詞は un / une を付けて読むので、性（男性・女性）も音で一緒に覚えられます。
+      </p>
+    </header>
+
+    <!-- 暗記の練習用。隠した側は、カードをクリックするとそのカードだけ表示される -->
+    <div class="toolbar">
+      <button type="button" class="pill" data-hide="ja" aria-pressed="false">意味を隠す</button>
+      <button type="button" class="pill" data-hide="fr" aria-pressed="false">フランス語を隠す</button>
+    </div>
+
+    {
+      groups.map((g) => (
+        <section class="card group">
+          <div class="section-head">
+            <h2>
+              {g.name} <small class="count">{g.words.length} 語</small>
+            </h2>
+            <button type="button" class="pill play-group">▶ まとめて再生</button>
+          </div>
+          <ul class="words">
+            {g.words.map((w) => (
+              <li>
+                <button type="button" class="tile play word" data-src={audioUrl(w.tts ?? w.fr)}>
+                  <span class="line">
+                    <span class="fr">{w.fr}</span>
+                    {w.f && <span class="fem">/ {w.f}</span>}
+                    {w.g && <span class={`gender ${w.g}`}>{w.g === 'm' ? '男' : '女'}</span>}
+                  </span>
+                  <span class="ipa">
+                    [{w.ipa}]{w.f_ipa && ` / [${w.f_ipa}]`}
+                  </span>
+                  <span class="ja">
+                    {w.ja} <small class="pos">{w.pos}</small>
+                  </span>
+                  {w.pl && <span class="pl">複数形：{w.pl}</span>}
+                  {w.note && <span class="note">{w.note}</span>}
+                </button>
+              </li>
+            ))}
+          </ul>
+        </section>
+      ))
+    }
+  </main>
+</Base>
+
+<script>
+  import { bindPlayButtons, playAll } from '../../scripts/player';
+
+  bindPlayButtons();
+
+  document.querySelectorAll<HTMLButtonElement>('.play-group').forEach((button) =>
+    button.addEventListener('click', () => {
+      const tiles = [...button.closest('.group')!.querySelectorAll<HTMLElement>('.word')];
+      playAll(tiles.map((el) => ({ src: el.dataset.src!, el })));
+    }),
+  );
+
+  const main = document.querySelector('main')!;
+  document.querySelectorAll<HTMLButtonElement>('[data-hide]').forEach((button) =>
+    button.addEventListener('click', () => {
+      const on = button.getAttribute('aria-pressed') !== 'true';
+      button.setAttribute('aria-pressed', String(on));
+      main.classList.toggle(`hide-${button.dataset.hide}`, on);
+      // 隠し方を変えたら、クリックで表示したカードもまた隠す
+      document.querySelectorAll('.word.revealed').forEach((el) => el.classList.remove('revealed'));
+    }),
+  );
+  document.querySelectorAll('.word').forEach((el) => el.addEventListener('click', () => el.classList.add('revealed')));
+</script>
+
+<style>
+  .count {
+    font-weight: 400;
+    color: var(--muted);
+    font-size: 0.8rem;
+  }
+  .words {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 8px;
+  }
+  .word {
+    width: 100%;
+    height: 100%;
+  }
+  .line {
+    display: flex;
+    align-items: baseline;
+    gap: 6px;
+    flex-wrap: wrap;
+  }
+  .fr {
+    font-size: 1.15rem;
+  }
+  .fem {
+    font-weight: 600;
+  }
+  .gender {
+    font-size: 0.7rem;
+    padding: 0 6px;
+    border-radius: 999px;
+    background: var(--accent-soft);
+    color: var(--accent);
+  }
+  .gender.f {
+    background: var(--caution-soft);
+    color: var(--caution);
+  }
+  .ja {
+    font-size: 0.9rem;
+  }
+  .pos,
+  .pl {
+    font-size: 0.75rem;
+    color: var(--muted);
+  }
+  /* 隠すのは見た目だけ（visibility）。カードの大きさが変わらないので、並びが崩れない */
+  main.hide-ja .word:not(.revealed) :is(.ja, .pl, .note),
+  main.hide-fr .word:not(.revealed) :is(.line, .ipa, .pl) {
+    visibility: hidden;
+  }
+</style>

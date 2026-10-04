@@ -1,0 +1,31 @@
+# 単元 06 聞き取り 2：レストランで注文する（DELF A1 の「短い会話」形式）
+# 前菜・メイン・飲み物・デザート・会計という、レストランの一連の流れを 1 本で聞かせる。
+# 質問は「料理の中身・飲み物・合計金額」。メニューの細部と数字を聞き取れるかを確かめるため。
+unit: "06"
+title: "レストランで注文"
+type: "dialogue"
+situation: "昼のレストランで、ウェイターと女性客レアが話す"
+speakers:
+  serveur: { name: "le serveur" }
+  lea: { name: "Léa", voice: "claire" }
+lines:
+  - { speaker: "serveur", fr: "Bonjour madame. Aujourd'hui, le plat du jour, c'est du poulet avec du riz.", ja: "いらっしゃいませ。今日の日替わり料理は、鶏肉とごはんです。" }
+  - { speaker: "lea", voice: "claire", fr: "Très bien, je voudrais le plat du jour, s'il vous plaît.", ja: "いいですね、日替わり料理をお願いします。" }
+  - { speaker: "serveur", fr: "Et comme boisson ?", ja: "お飲み物は？" }
+  - { speaker: "lea", voice: "claire", fr: "Une bouteille d'eau minérale et un verre de vin rouge.", ja: "ミネラルウォーターを 1 本と、赤ワインをグラスで 1 杯。" }
+  - { speaker: "serveur", fr: "Vous voulez un dessert ?", ja: "デザートはいかがですか？" }
+  - { speaker: "lea", voice: "claire", fr: "Oui, une glace à la vanille. Et l'addition, s'il vous plaît.", ja: "はい、バニラアイスを。それと、お会計をお願いします。" }
+  - { speaker: "serveur", fr: "Voilà, madame. Ça fait dix-huit euros.", ja: "どうぞ。18 ユーロです。" }
+questions:
+  - q: "Qu'est-ce que c'est, le plat du jour ?"
+    q_ja: "日替わり料理は何？"
+    choices: ["Du poisson avec des pâtes", "Du poulet avec du riz", "Du bœuf avec des pommes de terre"]
+    answer: 1
+  - q: "Qu'est-ce que Léa boit ?"
+    q_ja: "レアは何を飲む？"
+    choices: ["De l'eau minérale et du vin rouge", "Du jus d'orange", "De la bière"]
+    answer: 0
+  - q: "Combien est-ce que Léa paie ?"
+    q_ja: "レアはいくら払う？"
+    choices: ["8 €", "18 €", "28 €"]
+    answer: 1

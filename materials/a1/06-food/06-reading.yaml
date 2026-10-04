@@ -1,0 +1,138 @@
+# 単元 06 買い物と食事 の 1 文リーディング（Web アプリの読解画面のデータ）
+# 1 文で完結する、店・カフェ・食卓で実際に言いそう・読みそうな文を易しい順に並べる。
+# 使う文法は単元 06 まで（部分冠詞・数量表現・vouloir / pouvoir・je voudrais、否定、il y a、aller など）に限る。
+# 部分冠詞（du / de la）と、否定・数量のあとの de の使い分けを、何度も目にするように入れている。
+unit: "06"
+title: "買い物と食事"
+sentences:
+  - fr: "Je voudrais un café, s'il vous plaît."
+    ja: "コーヒーを 1 杯お願いします。"
+    grammar: "je voudrais + 名詞"
+    words:
+      - { w: "je voudrais", ja: "〜が欲しいのですが（丁寧）" }
+      - { w: "un café", ja: "コーヒー 1 杯（カフェで注文するときは un）" }
+  - fr: "L'addition, s'il vous plaît, madame."
+    ja: "すみません、お会計をお願いします。"
+    grammar: "名詞 + s'il vous plaît"
+    words:
+      - { w: "l'addition", ja: "お会計" }
+      - { w: "madame", ja: "（女性への呼びかけ）" }
+  - fr: "Ce gâteau au chocolat est délicieux !"
+    ja: "このチョコレートケーキはとてもおいしい！"
+    grammar: "être + 形容詞（男性形）"
+    words:
+      - { w: "ce", ja: "この（男性名詞の前）" }
+      - { w: "au chocolat", ja: "チョコレート味の（à + le の縮約）" }
+      - { w: "délicieux", ja: "とてもおいしい" }
+  - fr: "Je ne mange pas de viande."
+    ja: "私は肉を食べません。"
+    grammar: "否定のあとの de（de la → de）"
+    words:
+      - { w: "ne ... pas", ja: "〜しない" }
+      - { w: "de viande", ja: "否定文では de la viande が de viande になる" }
+  - fr: "Le matin, je mange du pain avec du beurre."
+    ja: "朝、私はバターを塗ったパンを食べます。"
+    grammar: "部分冠詞 du"
+    words:
+      - { w: "le matin", ja: "朝に" }
+      - { w: "du pain", ja: "（いくらかの）パン" }
+      - { w: "avec", ja: "〜と一緒に" }
+  - fr: "Elle boit du thé avec un peu de lait."
+    ja: "彼女は紅茶に牛乳を少し入れて飲みます。"
+    grammar: "boire / un peu de + 名詞"
+    words:
+      - { w: "boit", ja: "飲む（boire の il / elle の形）" }
+      - { w: "un peu de", ja: "少しの〜（de のあとに冠詞は付けない）" }
+  - fr: "Tu veux de l'eau ou du jus d'orange ?"
+    ja: "水がいい？それともオレンジジュース？"
+    grammar: "vouloir + 部分冠詞"
+    words:
+      - { w: "tu veux", ja: "君は〜が欲しい（vouloir）" }
+      - { w: "de l'eau", ja: "水（母音の前は de l'）" }
+      - { w: "ou", ja: "または" }
+  - fr: "Je n'ai pas faim, mais j'ai très soif."
+    ja: "お腹はすいていませんが、とてものどが渇いています。"
+    grammar: "avoir faim / avoir soif"
+    words:
+      - { w: "avoir faim", ja: "お腹がすいている" }
+      - { w: "avoir soif", ja: "のどが渇いている" }
+      - { w: "mais", ja: "でも" }
+  - fr: "Le croissant coûte un euro vingt."
+    ja: "クロワッサンは 1 ユーロ 20 セントです。"
+    grammar: "coûter + 値段"
+    words:
+      - { w: "coûte", ja: "（値段が）〜する（coûter）" }
+      - { w: "un euro vingt", ja: "1.20 ユーロ（centimes は言わないことが多い）" }
+  - fr: "Je peux payer par carte ?"
+    ja: "カードで払えますか？"
+    grammar: "pouvoir + 不定詞（イントネーションの疑問文）"
+    words:
+      - { w: "je peux", ja: "私は〜できる（pouvoir）" }
+      - { w: "par carte", ja: "カードで" }
+  - fr: "Nous voulons une table pour quatre personnes."
+    ja: "4 人用の席をお願いしたいのですが。"
+    grammar: "vouloir + 名詞"
+    words:
+      - { w: "nous voulons", ja: "私たちは〜が欲しい（vouloir）" }
+      - { w: "pour", ja: "〜のための" }
+      - { w: "personnes", ja: "人（une personne の複数）" }
+  - fr: "Je voudrais un kilo de pommes, s'il vous plaît."
+    ja: "りんごを 1 キロください。"
+    grammar: "数量表現 un kilo de + 名詞"
+    words:
+      - { w: "un kilo de", ja: "1 キロの〜（de のあとに冠詞は付けない）" }
+      - { w: "pommes", ja: "りんご（複数）" }
+  - fr: "Au marché, j'achète des tomates et de la salade."
+    ja: "市場で、私はトマトとレタスを買います。"
+    grammar: "acheter / 不定冠詞 des と部分冠詞 de la"
+    words:
+      - { w: "au marché", ja: "市場で（à + le の縮約）" }
+      - { w: "j'achète", ja: "私は買う（acheter。è になる）" }
+      - { w: "des tomates", ja: "（何個かの）トマト" }
+  - fr: "Le soir, nous mangeons du poisson avec du riz."
+    ja: "夜、私たちはごはんと一緒に魚を食べます。"
+    grammar: "manger の nous の形 / 部分冠詞"
+    words:
+      - { w: "le soir", ja: "夜に" }
+      - { w: "nous mangeons", ja: "私たちは食べる（g の音を残すため e が入る）" }
+  - fr: "Mon fils aime le chocolat, mais il n'aime pas le café."
+    ja: "息子はチョコレートが好きですが、コーヒーは好きではありません。"
+    grammar: "aimer + 定冠詞（好みには部分冠詞を使わない）"
+    words:
+      - { w: "mon fils", ja: "私の息子" }
+      - { w: "aime le chocolat", ja: "チョコレート（全般）が好き。好き嫌いは le / la" }
+      - { w: "n'aime pas", ja: "好きではない" }
+  - fr: "Il n'y a pas de lait, alors je vais au supermarché."
+    ja: "牛乳がないので、スーパーに行きます。"
+    grammar: "il n'y a pas de / aller à + 冠詞"
+    words:
+      - { w: "il n'y a pas de", ja: "〜がない" }
+      - { w: "alors", ja: "だから" }
+      - { w: "je vais au", ja: "〜へ行く（à + le → au）" }
+  - fr: "On peut réserver une table pour ce soir ?"
+    ja: "今晩、席を予約できますか？"
+    grammar: "pouvoir + 不定詞"
+    words:
+      - { w: "on", ja: "私たち・人は（話し言葉）" }
+      - { w: "réserver", ja: "予約する" }
+      - { w: "ce soir", ja: "今晩" }
+  - fr: "Vous voulez une entrée ou un dessert avec le plat du jour ?"
+    ja: "日替わり料理に、前菜かデザートをお付けしますか？"
+    grammar: "vouloir + 名詞"
+    words:
+      - { w: "vous voulez", ja: "あなたは〜が欲しい（vouloir）" }
+      - { w: "une entrée", ja: "前菜" }
+      - { w: "le plat du jour", ja: "日替わり料理" }
+  - fr: "La boulangerie est fermée le lundi, mais le marché est ouvert."
+    ja: "パン屋は月曜は閉まっていますが、市場は開いています。"
+    grammar: "être + 形容詞の一致 / le + 曜日"
+    words:
+      - { w: "fermée", ja: "閉まっている（boulangerie が女性名詞なので e が付く）" }
+      - { w: "le lundi", ja: "毎週月曜日に" }
+      - { w: "ouvert", ja: "開いている" }
+  - fr: "Je voudrais une bouteille d'eau et un morceau de fromage, s'il vous plaît."
+    ja: "水を 1 本と、チーズを 1 切れください。"
+    grammar: "数量表現 + de / d'"
+    words:
+      - { w: "une bouteille d'eau", ja: "水 1 本（母音の前で de → d'）" }
+      - { w: "un morceau de", ja: "1 切れの〜" }

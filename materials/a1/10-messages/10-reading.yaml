@@ -1,0 +1,144 @@
+# 単元 10 メッセージを書く の 1 文リーディング（Web アプリの読む画面のデータ）
+# DELF A1 の「読む」「書く」で出る、短いメッセージ・メール・用紙・掲示の 1 文を集めた。
+# 読んだ文をそのまま「書く」の型として使えるよう、書き出し・結び・招待・お礼・断りの定番の言い回しを入れている。
+# 用紙や掲示の指示は vous の命令形で書かれるのが普通なので、命令形は「決まった形」として読むだけにしている。
+unit: "10"
+title: "メッセージを書く"
+sentences:
+  - fr: "Chère Sophie, merci pour ta carte postale !"
+    ja: "親愛なるソフィー、絵はがきをありがとう！"
+    grammar: "Cher / Chère + 名前（手紙の書き出し）、merci pour + 名詞"
+    words:
+      - { w: "chère", ja: "親愛なる（女性に。男性には cher）" }
+      - { w: "merci pour", ja: "〜をありがとう" }
+      - { w: "une carte postale", ja: "絵はがき" }
+  - fr: "Salut Marc, j'espère que tu vas bien."
+    ja: "やあマルク、元気だといいな。"
+    grammar: "j'espère que + 文（親しい人へのメールの書き出し）"
+    words:
+      - { w: "salut", ja: "やあ" }
+      - { w: "j'espère que", ja: "〜だといいな" }
+      - { w: "tu vas bien", ja: "君は元気だ" }
+  - fr: "Mon nom est Sato et mon prénom est Kenji."
+    ja: "私の姓は佐藤で、名は健二です。"
+    grammar: "所有形容詞 mon + être"
+    words:
+      - { w: "un nom", ja: "（用紙で）姓" }
+      - { w: "un prénom", ja: "名（下の名前）" }
+  - fr: "J'habite 12 rue Victor Hugo, à Lyon."
+    ja: "私はリヨンのヴィクトル・ユゴー通り 12 番地に住んでいます。"
+    grammar: "habiter + 住所（前置詞なし）/ à + 都市"
+    words:
+      - { w: "habiter", ja: "住む" }
+      - { w: "une rue", ja: "通り" }
+      - { w: "12 rue ...", ja: "〜通り 12 番地（番地が先）" }
+  - fr: "Je suis né le 3 mai 2001 à Osaka."
+    ja: "私は 2001 年 5 月 3 日に大阪で生まれました。"
+    grammar: "複合過去（être + né）、le + 日付"
+    words:
+      - { w: "je suis né", ja: "私は生まれた（女性なら née）" }
+      - { w: "le 3 mai", ja: "5 月 3 日に" }
+  - fr: "Écrivez votre nom en majuscules, s'il vous plaît."
+    ja: "名前を大文字で書いてください。"
+    grammar: "vous の命令形（用紙の指示の決まった形）"
+    words:
+      - { w: "écrivez", ja: "書いてください（écrire の命令形）" }
+      - { w: "votre", ja: "あなたの" }
+      - { w: "en majuscules", ja: "大文字で" }
+  - fr: "Signez le formulaire en bas de la page."
+    ja: "ページの下で用紙に署名してください。"
+    grammar: "vous の命令形（用紙の指示の決まった形）"
+    words:
+      - { w: "signez", ja: "署名してください（signer の命令形）" }
+      - { w: "un formulaire", ja: "用紙" }
+      - { w: "en bas de", ja: "〜の下のほうに" }
+  - fr: "Merci pour ton invitation, je viens avec plaisir !"
+    ja: "招待ありがとう、喜んで行くよ！"
+    grammar: "招待を受ける定番の言い方（venir の現在形）"
+    words:
+      - { w: "une invitation", ja: "招待" }
+      - { w: "je viens", ja: "（そちらへ）行く（venir の活用）" }
+      - { w: "avec plaisir", ja: "喜んで" }
+  - fr: "Désolé, je ne peux pas venir samedi soir."
+    ja: "ごめん、土曜の夜は行けないんだ。"
+    grammar: "否定 ne...pas + pouvoir + 不定詞（断りの定番）"
+    words:
+      - { w: "désolé", ja: "ごめん（女性なら désolée）" }
+      - { w: "je ne peux pas", ja: "私は〜できない" }
+      - { w: "samedi soir", ja: "土曜の夜に（前置詞は不要）" }
+  - fr: "Je t'invite à mon anniversaire, dimanche à midi."
+    ja: "日曜の正午に、私の誕生日会に招待するよ。"
+    grammar: "inviter + 人 + à + 行事、à + 時刻"
+    words:
+      - { w: "je t'invite", ja: "君を招待する" }
+      - { w: "à mon anniversaire", ja: "私の誕生日（会）に" }
+      - { w: "à midi", ja: "正午に" }
+  - fr: "Est-ce que tu peux m'appeler ce soir ?"
+    ja: "今晩、電話してくれる？"
+    grammar: "est-ce que + pouvoir + 不定詞（お願い）"
+    words:
+      - { w: "est-ce que", ja: "〜ですか（疑問文の印）" }
+      - { w: "tu peux", ja: "君は〜できる" }
+      - { w: "m'appeler", ja: "私に電話する" }
+  - fr: "Mon numéro de téléphone, c'est le 06 12 34 56 78."
+    ja: "私の電話番号は 06 12 34 56 78 です。"
+    grammar: "c'est le + 番号（番号は 2 桁ずつ読む）"
+    words:
+      - { w: "un numéro de téléphone", ja: "電話番号" }
+      - { w: "06", ja: "携帯電話の番号の頭（zéro six）" }
+  - fr: "J'ai bien reçu ton courriel, merci beaucoup !"
+    ja: "メール、ちゃんと受け取ったよ。どうもありがとう！"
+    grammar: "複合過去（avoir + reçu）、bien = 確かに"
+    words:
+      - { w: "j'ai reçu", ja: "受け取った（recevoir の複合過去）" }
+      - { w: "bien", ja: "確かに・ちゃんと" }
+      - { w: "un courriel", ja: "Eメール" }
+  - fr: "Je vais t'envoyer les photos par e-mail demain."
+    ja: "明日、写真をメールで送るね。"
+    grammar: "近接未来（aller + 不定詞）、par + 手段"
+    words:
+      - { w: "je vais envoyer", ja: "送るつもりだ" }
+      - { w: "t'", ja: "君に（te の短縮）" }
+      - { w: "par e-mail", ja: "メールで" }
+  - fr: "Bonjour, c'est Paul, je te rappelle ce soir."
+    ja: "こんにちは、ポールです。今晩かけ直します。"
+    grammar: "c'est + 名前（電話・留守番電話の名乗り）"
+    words:
+      - { w: "c'est Paul", ja: "ポールです（電話での名乗り）" }
+      - { w: "je te rappelle", ja: "君にかけ直す" }
+  - fr: "Nous sommes à Nice et il fait très beau. Bisous !"
+    ja: "私たちはニースにいて、とてもいい天気だよ。またね！"
+    grammar: "être à + 都市、天気の il fait（絵はがきの定番）"
+    words:
+      - { w: "nous sommes à", ja: "私たちは〜にいる" }
+      - { w: "il fait beau", ja: "天気がいい" }
+      - { w: "bisous", ja: "またね（親しい人への結び）" }
+  - fr: "Le bureau est fermé lundi : merci de laisser un message."
+    ja: "事務所は月曜は閉まっています。伝言を残してください。"
+    grammar: "merci de + 不定詞（掲示での丁寧なお願い）"
+    words:
+      - { w: "le bureau", ja: "事務所" }
+      - { w: "fermé", ja: "閉まっている" }
+      - { w: "merci de", ja: "〜してください（掲示）" }
+      - { w: "laisser un message", ja: "伝言を残す" }
+  - fr: "Hier, j'ai appelé Marie, mais elle n'a pas répondu."
+    ja: "昨日マリーに電話したけど、出なかった。"
+    grammar: "複合過去の肯定と否定（ne + avoir + pas + 過去分詞）"
+    words:
+      - { w: "j'ai appelé", ja: "電話した" }
+      - { w: "elle n'a pas répondu", ja: "彼女は応答しなかった" }
+  - fr: "Madame, Monsieur, je voudrais m'inscrire au cours de français."
+    ja: "拝啓 フランス語の講座に申し込みたいのですが。"
+    grammar: "je voudrais + 不定詞（改まったメールのお願い）、au = à + le"
+    words:
+      - { w: "Madame, Monsieur,", ja: "拝啓（宛先不明の改まった書き出し）" }
+      - { w: "je voudrais", ja: "〜したいのですが" }
+      - { w: "m'inscrire", ja: "申し込む（s'inscrire）" }
+      - { w: "au cours", ja: "講座に" }
+  - fr: "Je vous envoie le formulaire signé en pièce jointe."
+    ja: "署名した用紙を添付でお送りします。"
+    grammar: "envoyer + 物（vous = あなたに）、過去分詞を形容詞として使う"
+    words:
+      - { w: "je vous envoie", ja: "あなたに送ります" }
+      - { w: "signé", ja: "署名された" }
+      - { w: "en pièce jointe", ja: "添付で" }

@@ -1,0 +1,31 @@
+# 単元 08 聞き取り 2：夏休みの計画（DELF A1 の「短い会話」形式）
+# 近接未来（aller + 不定詞）で、行き先・交通手段・期間を話す。
+# 質問は DELF でよく問われる「場所・交通手段・期間」を聞く。
+unit: "08"
+title: "夏休みの計画"
+type: "dialogue"
+situation: "会社の休憩時間に、トマとレアが夏休みの予定を話す"
+speakers:
+  thomas: { name: "Thomas" }
+  lea: { name: "Léa", voice: "claire" }
+lines:
+  - { speaker: "thomas", fr: "Léa, qu'est-ce que tu vas faire pendant les vacances ?", ja: "レア、休暇中は何をするの？" }
+  - { speaker: "lea", voice: "claire", fr: "Je vais partir à la montagne, dans les Alpes, avec ma sœur.", ja: "姉とアルプスの山に行くの。" }
+  - { speaker: "thomas", fr: "Super ! Vous allez partir quand ?", ja: "いいね！いつ出発するの？" }
+  - { speaker: "lea", voice: "claire", fr: "Le 12 juillet. On va prendre le train à huit heures.", ja: "7 月 12 日。8 時の電車に乗るの。" }
+  - { speaker: "thomas", fr: "Et vous allez rester combien de temps ?", ja: "どのくらい滞在するの？" }
+  - { speaker: "lea", voice: "claire", fr: "Une semaine. On va marcher et se reposer. Et toi ?", ja: "1 週間。歩いて、のんびりするつもり。あなたは？" }
+  - { speaker: "thomas", fr: "Moi, je vais aller à la mer, en Bretagne. J'adore nager !", ja: "僕はブルターニュの海に行くよ。泳ぐのが大好きなんだ！" }
+questions:
+  - q: "Où va Léa pendant les vacances ?"
+    q_ja: "レアは休暇中どこへ行く？"
+    choices: ["À la mer", "À la montagne", "À la campagne"]
+    answer: 1
+  - q: "Comment Léa va voyager ?"
+    q_ja: "レアは何で行く？"
+    choices: ["En voiture", "En avion", "En train"]
+    answer: 2
+  - q: "Léa va rester combien de temps ?"
+    q_ja: "レアはどのくらい滞在する？"
+    choices: ["Une semaine", "Deux semaines", "Un mois"]
+    answer: 0

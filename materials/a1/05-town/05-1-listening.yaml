@@ -1,0 +1,32 @@
+# 単元 05 聞き取り 1：道を尋ねる会話（DELF A1 の「短い会話」形式）
+# 道案内でよく出る「方向（à gauche / tout droit）」「目印（à côté de / en face de）」「距離（minutes）」を
+# 聞き分けられるかを問う。実際に道を聞く場面でも同じ 3 つを聞き取れれば目的地に着けるため。
+unit: "05"
+title: "郵便局への道を尋ねる"
+type: "dialogue"
+situation: "旅行者の男性が、通りで女性に郵便局への行き方を尋ねる"
+speakers:
+  paul: { name: "Paul" }
+  claire: { name: "Claire", voice: "claire" }
+lines:
+  - { speaker: "paul", fr: "Excusez-moi, madame. La poste, c'est loin ?", ja: "すみません。郵便局は遠いですか？" }
+  - { speaker: "claire", voice: "claire", fr: "Non, c'est tout près. Vous allez tout droit jusqu'au carrefour.", ja: "いいえ、すぐ近くです。交差点までまっすぐ行ってください。" }
+  - { speaker: "paul", fr: "Jusqu'au carrefour, d'accord. Et après ?", ja: "交差点までですね。それから？" }
+  - { speaker: "claire", voice: "claire", fr: "Après, vous tournez à gauche, rue Victor Hugo.", ja: "そこで左に曲がって、ヴィクトル・ユゴー通りです。" }
+  - { speaker: "claire", voice: "claire", fr: "La poste est à côté de la pharmacie, en face de la banque.", ja: "郵便局は薬局の隣で、銀行の向かいです。" }
+  - { speaker: "paul", fr: "C'est à cinq minutes ?", ja: "5 分くらいですか？" }
+  - { speaker: "claire", voice: "claire", fr: "Oui, à cinq minutes à pied. Bonne journée !", ja: "はい、歩いて 5 分です。よい一日を！" }
+  - { speaker: "paul", fr: "Merci beaucoup, madame !", ja: "どうもありがとうございます！" }
+questions:
+  - q: "Au carrefour, l'homme tourne où ?"
+    q_ja: "交差点で男性はどちらに曲がる？"
+    choices: ["À droite", "À gauche", "Il continue tout droit"]
+    answer: 1
+  - q: "La poste est à côté de quoi ?"
+    q_ja: "郵便局は何の隣にある？"
+    choices: ["La banque", "La gare", "La pharmacie"]
+    answer: 2
+  - q: "La poste est à combien de minutes à pied ?"
+    q_ja: "郵便局まで歩いて何分？"
+    choices: ["5 minutes", "10 minutes", "15 minutes"]
+    answer: 0

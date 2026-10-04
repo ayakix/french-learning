@@ -1,0 +1,28 @@
+# 単元 10 の聞き取り 3：語学学校からの改まった留守番電話（DELF A1 の留守番電話の形式）
+# 10-2 の親しい友達のメッセージと対にして、vous を使う改まった言い方と、用紙の不備の連絡を聞き取る練習。
+unit: "10"
+title: "語学学校からの連絡"
+type: "voicemail"
+situation: "語学学校のデュランさんが、申込書に不備があったことをケンジの留守番電話に伝える"
+speakers:
+  durand: { name: "Monsieur Durand" }
+lines:
+  - { speaker: "durand", fr: "Bonjour, monsieur Sato. Ici Marc Durand, de l'école de langues Lumière.", ja: "こんにちは、佐藤さん。語学学校リュミエールのマルク・デュランです。" }
+  - { speaker: "durand", fr: "J'ai bien reçu votre formulaire d'inscription, merci.", ja: "申込書を確かに受け取りました。ありがとうございます。" }
+  - { speaker: "durand", fr: "Mais votre date de naissance et votre signature ne sont pas sur le formulaire.", ja: "ただ、生年月日と署名が用紙にありません。" }
+  - { speaker: "durand", fr: "Est-ce que vous pouvez passer à l'école mardi, entre neuf heures et midi ?", ja: "火曜の 9 時から正午の間に、学校に寄っていただけますか？" }
+  - { speaker: "durand", fr: "Il faut aussi apporter votre passeport, s'il vous plaît.", ja: "パスポートもお持ちください。" }
+  - { speaker: "durand", fr: "Vous pouvez me rappeler au 01 42 56 30 18. Merci et bonne journée !", ja: "01 42 56 30 18 にお電話ください。よろしくお願いします。" }
+questions:
+  - q: "Qu'est-ce qui manque sur le formulaire ?"
+    q_ja: "用紙に足りないものは？"
+    choices: ["l'adresse et le numéro de téléphone", "la date de naissance et la signature", "le nom et le prénom"]
+    answer: 1
+  - q: "Quand est-ce que Kenji peut passer à l'école ?"
+    q_ja: "ケンジはいつ学校に行けばいい？"
+    choices: ["lundi matin", "mardi après-midi", "mardi entre neuf heures et midi"]
+    answer: 2
+  - q: "Qu'est-ce qu'il faut apporter ?"
+    q_ja: "何を持っていく必要がある？"
+    choices: ["une photo", "le passeport", "un timbre"]
+    answer: 1

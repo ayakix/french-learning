@@ -1,0 +1,158 @@
+# 単元 03 一日の生活 の 1 文リーディング（20 文、易しい順）
+# 使う文法は 03 までの範囲（être・avoir・-er 動詞の現在形・代名動詞・時刻・曜日・数字〜100）に限る。
+# 否定（04）や aller（05）を使わないのは、まだ習っていない形で読む手が止まらないようにするため。
+# 「いつも〜する」は le matin / le lundi のように定冠詞を付けて表す文を多めにしている（日課を言うときの基本の形のため）。
+unit: "03"
+title: "一日の生活"
+sentences:
+  - fr: "Le matin, je me lève tôt."
+    ja: "朝、私は早く起きます。"
+    grammar: "代名動詞 se lever"
+    words:
+      - { w: "le matin", ja: "朝に（毎朝）" }
+      - { w: "je me lève", ja: "私は起きる" }
+      - { w: "tôt", ja: "早く" }
+
+  - fr: "Paul se douche le soir."
+    ja: "ポールは夜にシャワーを浴びます。"
+    grammar: "代名動詞（3 人称 se）"
+    words:
+      - { w: "se doucher", ja: "シャワーを浴びる" }
+      - { w: "le soir", ja: "晩に（毎晩）" }
+
+  - fr: "D'habitude, je travaille à la maison."
+    ja: "ふだん、私は家で仕事をします。"
+    grammar: "-er 動詞 travailler"
+    words:
+      - { w: "d'habitude", ja: "ふだんは" }
+      - { w: "à la maison", ja: "家で" }
+
+  - fr: "Mon père rentre souvent en voiture."
+    ja: "父はよく車で帰ってきます。"
+    grammar: "-er 動詞 rentrer / en + 乗り物"
+    words:
+      - { w: "rentrer", ja: "帰る" }
+      - { w: "souvent", ja: "よく" }
+      - { w: "en voiture", ja: "車で" }
+
+  - fr: "Nous dînons toujours ensemble le soir."
+    ja: "私たちは夜、いつも一緒に夕食をとります。"
+    grammar: "-er 動詞（nous の活用 -ons）"
+    words:
+      - { w: "dîner", ja: "夕食をとる" }
+      - { w: "toujours", ja: "いつも" }
+      - { w: "ensemble", ja: "一緒に" }
+
+  - fr: "Mon réveil sonne à six heures quarante-cinq."
+    ja: "私の目覚まし時計は 6 時 45 分に鳴ります。"
+    grammar: "時刻（à + 時刻）"
+    words:
+      - { w: "un réveil", ja: "目覚まし時計" }
+      - { w: "sonner", ja: "鳴る" }
+      - { w: "quarante-cinq", ja: "45" }
+
+  - fr: "Je me réveille à sept heures et demie."
+    ja: "私は 7 時半に目を覚まします。"
+    grammar: "代名動詞 se réveiller / et demie"
+    words:
+      - { w: "se réveiller", ja: "目を覚ます" }
+      - { w: "et demie", ja: "〜時半" }
+
+  - fr: "Je commence le travail à neuf heures."
+    ja: "私は 9 時に仕事を始めます。"
+    grammar: "-er 動詞 commencer"
+    words:
+      - { w: "commencer", ja: "始める" }
+      - { w: "le travail", ja: "仕事" }
+      - { w: "neuf heures", ja: "9 時（f を v と読む）" }
+
+  - fr: "Ma sœur se maquille toujours dans le métro."
+    ja: "姉（妹）はいつも地下鉄の中で化粧をします。"
+    grammar: "代名動詞 se maquiller"
+    words:
+      - { w: "se maquiller", ja: "化粧をする" }
+      - { w: "dans le métro", ja: "地下鉄の中で" }
+
+  - fr: "Les enfants se brossent les dents après le dîner."
+    ja: "子どもたちは夕食のあとに歯を磨きます。"
+    grammar: "代名動詞（ils / elles の活用 -ent）"
+    words:
+      - { w: "se brossent", ja: "（自分の〜を）磨く。-ent は読まない" }
+      - { w: "les dents", ja: "歯" }
+      - { w: "après le dîner", ja: "夕食のあとに" }
+
+  - fr: "Mon fils arrive souvent en retard à l'école."
+    ja: "息子はよく学校に遅刻します。"
+    grammar: "-er 動詞 arriver"
+    words:
+      - { w: "arriver", ja: "着く" }
+      - { w: "en retard", ja: "遅れて" }
+
+  - fr: "D'abord je me lave, ensuite je m'habille."
+    ja: "まず体を洗って、それから服を着ます。"
+    grammar: "代名動詞（me → m' の省略）"
+    words:
+      - { w: "d'abord", ja: "まず" }
+      - { w: "ensuite", ja: "それから" }
+      - { w: "je m'habille", ja: "私は服を着る" }
+
+  - fr: "Tu te lèves à quelle heure le dimanche ?"
+    ja: "日曜日は何時に起きるの？"
+    grammar: "代名動詞（tu te）/ à quelle heure"
+    words:
+      - { w: "tu te lèves", ja: "君は起きる" }
+      - { w: "à quelle heure", ja: "何時に" }
+      - { w: "le dimanche", ja: "日曜日に（毎週）" }
+
+  - fr: "Mes collègues déjeunent ensemble à midi et demi."
+    ja: "同僚たちは 12 時半に一緒に昼食をとります。"
+    grammar: "-er 動詞 déjeuner / midi et demi"
+    words:
+      - { w: "des collègues", ja: "同僚たち" }
+      - { w: "déjeuner", ja: "昼食をとる" }
+      - { w: "midi et demi", ja: "12 時半（midi は男性名詞なので demi。demie と書く人もいる）" }
+
+  - fr: "Les cours commencent à huit heures et se terminent à seize heures."
+    ja: "授業は 8 時に始まり、16 時に終わります。"
+    grammar: "-er 動詞 / 代名動詞 se terminer"
+    words:
+      - { w: "les cours", ja: "授業" }
+      - { w: "se terminer", ja: "終わる" }
+      - { w: "seize heures", ja: "16 時" }
+
+  - fr: "Le lundi, Marie travaille jusqu'à dix-huit heures trente."
+    ja: "月曜日、マリーは 18 時 30 分まで働きます。"
+    grammar: "le + 曜日（毎週）/ jusqu'à"
+    words:
+      - { w: "le lundi", ja: "月曜日に（毎週）" }
+      - { w: "jusqu'à", ja: "〜まで" }
+      - { w: "dix-huit heures trente", ja: "18 時 30 分" }
+
+  - fr: "Le dimanche, je me repose et je téléphone à ma mère."
+    ja: "日曜日は、休んで母に電話をします。"
+    grammar: "代名動詞 se reposer / téléphoner à"
+    words:
+      - { w: "se reposer", ja: "休む" }
+      - { w: "téléphoner à", ja: "〜に電話する" }
+
+  - fr: "Elle travaille dans une entreprise et elle rentre tard le soir."
+    ja: "彼女は会社で働いていて、夜遅く帰ってきます。"
+    grammar: "-er 動詞 travailler / rentrer"
+    words:
+      - { w: "une entreprise", ja: "会社" }
+      - { w: "tard", ja: "遅く" }
+
+  - fr: "Je me dépêche parce que mon bus passe à huit heures dix."
+    ja: "私のバスは 8 時 10 分に来るので、急ぎます。"
+    grammar: "代名動詞 se dépêcher / parce que"
+    words:
+      - { w: "se dépêcher", ja: "急ぐ" }
+      - { w: "parce que", ja: "なぜなら〜だから" }
+      - { w: "passer", ja: "（バスが）通る・来る" }
+
+  - fr: "Le samedi, nous nous levons tard et nous déjeunons à quatorze heures."
+    ja: "土曜日、私たちは遅く起きて、14 時に昼食をとります。"
+    grammar: "代名動詞（nous nous）"
+    words:
+      - { w: "nous nous levons", ja: "私たちは起きる（nous が 2 回）" }
+      - { w: "quatorze heures", ja: "14 時" }

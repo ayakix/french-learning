@@ -18,6 +18,18 @@ npx astro dev stop            # 停止
 - 教材データは `materials/` の YAML を直接読み込む（`src/content.config.ts`）
 - 音声は `.cache/tts/` にあり、`public/audio` からシンボリックリンクで配信する（`npm run link-audio`。`npm run dev` の前に自動実行される）
 - 音声のファイル名は `hash(モデル|ボイス|テキスト)`。`scripts/say-fr` と `src/lib/audio.ts` で同じ規則を使う。設定は `config/tts.json`
+- 画面と教材の対応（教材の YAML を追加すると、画面とホームのリンクが自動で増える）
+
+| 画面 | 教材 |
+|---|---|
+| `/contrast/<slug>` | `*-contrast.yaml`（聞き比べ） |
+| `/rules/<slug>` | `*-rules.yaml`（読み方ルール） |
+| `/vocab/<単元>` | `*-vocab.yaml`（単語） |
+| `/reading/<単元>` | `*-reading.yaml`（1 文リーディング） |
+| `/listening/<単元>-<番号>` | `*-listening.yaml`（会話・DELF 形式の聞き取り） |
+| `/numbers` | `a1/common/numbers.yaml` |
+| `/verbs` | `a1/common/verbs.yaml` |
+| `/voices` | `config/tts.json` の声の聞き比べ |
 
 ## 今後（フェーズ 2）
 

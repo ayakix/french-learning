@@ -1,0 +1,124 @@
+# 単元 04 好きなこと・趣味 の必須単語（Web アプリの単語画面 /vocab/04 のデータ）
+# 名詞は不定冠詞 un / une を付けて読ませる。性（男性・女性）を音で一緒に覚えるため。
+# スポーツ・楽器・活動は un / une ではなく du / de la で書く。faire du tennis / jouer du piano の形でそのまま使うため。
+# jouer à（スポーツ・ゲーム）と jouer de（楽器）の区別は note に書き、単語と一緒に覚えられるようにしている。
+unit: "04"
+title: "好きなこと・趣味"
+groups:
+  - name: "好き・嫌い"
+    words:
+      - {fr: "aimer", ipa: "ɛme", ja: "好きだ・愛している", pos: "動詞", note: "後ろの名詞には定冠詞 le / la / les を付ける（J'aime le sport.）"}
+      - {fr: "aimer bien", ipa: "ɛme bjɛ̃", ja: "けっこう好きだ", pos: "表現", note: "bien を付けると aimer より弱くなる"}
+      - {fr: "adorer", ipa: "adɔʁe", ja: "大好きだ", pos: "動詞"}
+      - {fr: "détester", ipa: "detɛste", ja: "大嫌いだ", pos: "動詞"}
+      - {fr: "préférer", ipa: "pʁefeʁe", ja: "〜のほうが好きだ", pos: "動詞", note: "je préfère のように、活用で é が è に変わる"}
+      - {fr: "beaucoup", ipa: "boku", ja: "とても・たくさん", pos: "副詞"}
+      - {fr: "pas du tout", ipa: "pa dy tu", ja: "まったく〜ない", pos: "表現", tts: "Je n'aime pas du tout.", note: "ne と一緒に使う（Je n'aime pas du tout.）"}
+      - {fr: "ne ... pas", ipa: "nə pa", ja: "〜ない（否定）", pos: "副詞", tts: "Je n'aime pas.", note: "動詞を ne と pas ではさむ。母音の前では n' になる"}
+      - {fr: "mieux", ipa: "mjø", ja: "より良く", pos: "副詞", tts: "J'aime mieux.", note: "J'aime mieux 〜 = 〜のほうが好き"}
+      - {fr: "J'adore !", ipa: "ʒadɔʁ", ja: "大好き！", pos: "表現"}
+      - {fr: "J'aime ça.", ipa: "ʒɛm sa", ja: "それが好き。", pos: "表現"}
+      - {fr: "Moi aussi.", ipa: "mwa osi", ja: "私も。", pos: "表現"}
+      - {fr: "Moi non plus.", ipa: "mwa nɔ̃ ply", ja: "私も（〜ない）。", pos: "表現", note: "否定の文に「私も」と答えるときはこちら"}
+      - {fr: "préféré", ipa: "pʁefeʁe", ja: "いちばん好きな", pos: "形容詞", f: "préférée", f_ipa: "pʁefeʁe", tts: "préféré, préférée"}
+      - {fr: "favori", ipa: "favɔʁi", ja: "お気に入りの", pos: "形容詞", f: "favorite", f_ipa: "favɔʁit", tts: "favori, favorite"}
+      - {fr: "une passion", ipa: "yn pasjɔ̃", ja: "情熱・大好きなこと", pos: "名詞", g: "f"}
+  - name: "趣味と自由時間"
+    words:
+      - {fr: "un loisir", ipa: "œ̃ lwaziʁ", ja: "余暇の活動・趣味", pos: "名詞", g: "m", note: "複数形 les loisirs で「趣味・レジャー」の意味でよく使う"}
+      - {fr: "un passe-temps", ipa: "œ̃ pas tɑ̃", ja: "趣味・気晴らし", pos: "名詞", g: "m", pl: "des passe-temps"}
+      - {fr: "du temps libre", ipa: "dy tɑ̃ libʁ", ja: "自由な時間", pos: "名詞", g: "m"}
+      - {fr: "faire", ipa: "fɛʁ", ja: "する・作る", pos: "動詞", note: "faire du / de la + 活動（faire du sport）"}
+      - {fr: "jouer", ipa: "ʒwe", ja: "遊ぶ・（競技を）する・演奏する", pos: "動詞", note: "jouer à + スポーツ・ゲーム、jouer de + 楽器"}
+      - {fr: "cuisiner", ipa: "kɥizine", ja: "料理する", pos: "動詞"}
+      - {fr: "faire la cuisine", ipa: "fɛʁ la kɥizin", ja: "料理をする", pos: "表現"}
+      - {fr: "de la pâtisserie", ipa: "də la patisʁi", ja: "お菓子作り", pos: "名詞", g: "f", note: "faire de la pâtisserie"}
+      - {fr: "voyager", ipa: "vwajaʒe", ja: "旅行する", pos: "動詞"}
+      - {fr: "un voyage", ipa: "œ̃ vwajaʒ", ja: "旅行", pos: "名詞", g: "m"}
+      - {fr: "du jardinage", ipa: "dy ʒaʁdinaʒ", ja: "庭仕事・ガーデニング", pos: "名詞", g: "m", note: "faire du jardinage"}
+      - {fr: "se promener", ipa: "sə pʁɔmne", ja: "散歩する", pos: "動詞"}
+      - {fr: "une promenade", ipa: "yn pʁɔmnad", ja: "散歩", pos: "名詞", g: "f"}
+      - {fr: "des réseaux sociaux", ipa: "de ʁezo sɔsjo", ja: "SNS", pos: "名詞", g: "m"}
+      - {fr: "ensemble", ipa: "ɑ̃sɑ̃bl", ja: "一緒に", pos: "副詞"}
+      - {fr: "seul", ipa: "sœl", ja: "一人で・一人の", pos: "形容詞", f: "seule", f_ipa: "sœl", tts: "seul, seule"}
+      - {fr: "ne ... jamais", ipa: "nə ʒamɛ", ja: "一度も〜ない", pos: "副詞", tts: "Je ne joue jamais.", note: "ne ... pas の pas の位置に jamais を置く"}
+  - name: "スポーツ"
+    words:
+      - {fr: "du sport", ipa: "dy spɔʁ", ja: "スポーツ", pos: "名詞", g: "m", note: "faire du sport"}
+      - {fr: "du football", ipa: "dy futbol", ja: "サッカー", pos: "名詞", g: "m", note: "jouer au football（au = à + le）。話し言葉では le foot"}
+      - {fr: "du tennis", ipa: "dy tenis", ja: "テニス", pos: "名詞", g: "m", note: "jouer au tennis / faire du tennis"}
+      - {fr: "du basket", ipa: "dy baskɛt", ja: "バスケットボール", pos: "名詞", g: "m"}
+      - {fr: "du rugby", ipa: "dy ʁyɡbi", ja: "ラグビー", pos: "名詞", g: "m"}
+      - {fr: "de la natation", ipa: "də la natasjɔ̃", ja: "水泳", pos: "名詞", g: "f", note: "faire de la natation"}
+      - {fr: "nager", ipa: "naʒe", ja: "泳ぐ", pos: "動詞"}
+      - {fr: "courir", ipa: "kuʁiʁ", ja: "走る", pos: "動詞"}
+      - {fr: "du jogging", ipa: "dy dʒɔɡiŋ", ja: "ジョギング", pos: "名詞", g: "m"}
+      - {fr: "du vélo", ipa: "dy velo", ja: "自転車（に乗ること）", pos: "名詞", g: "m", note: "faire du vélo"}
+      - {fr: "du ski", ipa: "dy ski", ja: "スキー", pos: "名詞", g: "m"}
+      - {fr: "de la danse", ipa: "də la dɑ̃s", ja: "ダンス", pos: "名詞", g: "f"}
+      - {fr: "du yoga", ipa: "dy jɔɡa", ja: "ヨガ", pos: "名詞", g: "m"}
+      - {fr: "de la randonnée", ipa: "də la ʁɑ̃dɔne", ja: "ハイキング", pos: "名詞", g: "f"}
+      - {fr: "un match", ipa: "œ̃ matʃ", ja: "試合", pos: "名詞", g: "m"}
+      - {fr: "une équipe", ipa: "yn ekip", ja: "チーム", pos: "名詞", g: "f"}
+      - {fr: "un club", ipa: "œ̃ klœb", ja: "クラブ", pos: "名詞", g: "m"}
+      - {fr: "gagner", ipa: "ɡaɲe", ja: "勝つ", pos: "動詞"}
+  - name: "音楽と楽器"
+    words:
+      - {fr: "de la musique", ipa: "də la myzik", ja: "音楽", pos: "名詞", g: "f"}
+      - {fr: "écouter", ipa: "ekute", ja: "聞く", pos: "動詞", note: "écouter de la musique（à は付けない）"}
+      - {fr: "chanter", ipa: "ʃɑ̃te", ja: "歌う", pos: "動詞"}
+      - {fr: "danser", ipa: "dɑ̃se", ja: "踊る", pos: "動詞"}
+      - {fr: "une chanson", ipa: "yn ʃɑ̃sɔ̃", ja: "歌", pos: "名詞", g: "f"}
+      - {fr: "un chanteur", ipa: "œ̃ ʃɑ̃tœʁ", ja: "歌手（男性）", pos: "名詞", g: "m"}
+      - {fr: "une chanteuse", ipa: "yn ʃɑ̃tøz", ja: "歌手（女性）", pos: "名詞", g: "f"}
+      - {fr: "un groupe", ipa: "œ̃ ɡʁup", ja: "バンド・グループ", pos: "名詞", g: "m"}
+      - {fr: "un concert", ipa: "œ̃ kɔ̃sɛʁ", ja: "コンサート", pos: "名詞", g: "m"}
+      - {fr: "un instrument", ipa: "œ̃ nɛ̃stʁymɑ̃", ja: "楽器", pos: "名詞", g: "m"}
+      - {fr: "du piano", ipa: "dy pjano", ja: "ピアノ", pos: "名詞", g: "m", note: "jouer du piano（du = de + le）"}
+      - {fr: "de la guitare", ipa: "də la ɡitaʁ", ja: "ギター", pos: "名詞", g: "f", note: "jouer de la guitare"}
+      - {fr: "du violon", ipa: "dy vjɔlɔ̃", ja: "バイオリン", pos: "名詞", g: "m"}
+      - {fr: "de la batterie", ipa: "də la batʁi", ja: "ドラム", pos: "名詞", g: "f"}
+      - {fr: "du rock", ipa: "dy ʁɔk", ja: "ロック", pos: "名詞", g: "m"}
+      - {fr: "du jazz", ipa: "dy dʒaz", ja: "ジャズ", pos: "名詞", g: "m"}
+      - {fr: "de la musique classique", ipa: "də la myzik klasik", ja: "クラシック音楽", pos: "名詞", g: "f"}
+  - name: "読書・映画・ゲーム・アート"
+    words:
+      - {fr: "lire", ipa: "liʁ", ja: "読む", pos: "動詞"}
+      - {fr: "un livre", ipa: "œ̃ livʁ", ja: "本", pos: "名詞", g: "m"}
+      - {fr: "un roman", ipa: "œ̃ ʁɔmɑ̃", ja: "小説", pos: "名詞", g: "m"}
+      - {fr: "une BD", ipa: "yn bede", ja: "漫画（バンド・デシネ）", pos: "名詞", g: "f", note: "bande dessinée の略"}
+      - {fr: "un manga", ipa: "œ̃ mɑ̃ɡa", ja: "（日本の）漫画", pos: "名詞", g: "m"}
+      - {fr: "un magazine", ipa: "œ̃ maɡazin", ja: "雑誌", pos: "名詞", g: "m"}
+      - {fr: "regarder", ipa: "ʁəɡaʁde", ja: "見る", pos: "動詞"}
+      - {fr: "un film", ipa: "œ̃ film", ja: "映画（作品）", pos: "名詞", g: "m"}
+      - {fr: "un cinéma", ipa: "œ̃ sinema", ja: "映画館", pos: "名詞", g: "m", note: "J'aime le cinéma. では「映画（というもの）」"}
+      - {fr: "une série", ipa: "yn seʁi", ja: "ドラマ（連続もの）", pos: "名詞", g: "f"}
+      - {fr: "une télé", ipa: "yn tele", ja: "テレビ", pos: "名詞", g: "f", note: "regarder la télé"}
+      - {fr: "un jeu", ipa: "œ̃ ʒø", ja: "ゲーム・遊び", pos: "名詞", g: "m", pl: "des jeux"}
+      - {fr: "des jeux vidéo", ipa: "de ʒø video", ja: "テレビゲーム", pos: "名詞", g: "m", note: "jouer aux jeux vidéo（aux = à + les）"}
+      - {fr: "des échecs", ipa: "de zeʃɛk", ja: "チェス", pos: "名詞", g: "m", note: "jouer aux échecs。単数の un échec は「失敗」"}
+      - {fr: "des cartes", ipa: "de kaʁt", ja: "トランプ", pos: "名詞", g: "f", note: "jouer aux cartes"}
+      - {fr: "de la photo", ipa: "də la fɔto", ja: "写真（を撮ること）", pos: "名詞", g: "f", note: "faire de la photo"}
+      - {fr: "dessiner", ipa: "desine", ja: "絵を描く", pos: "動詞"}
+      - {fr: "du dessin", ipa: "dy desɛ̃", ja: "デッサン・絵", pos: "名詞", g: "m"}
+      - {fr: "de la peinture", ipa: "də la pɛ̃tyʁ", ja: "絵画・ペンキ", pos: "名詞", g: "f"}
+      - {fr: "une exposition", ipa: "yn ɛkspozisjɔ̃", ja: "展覧会", pos: "名詞", g: "f"}
+      - {fr: "du théâtre", ipa: "dy teatʁ", ja: "演劇", pos: "名詞", g: "m", note: "faire du théâtre"}
+  - name: "理由と感想"
+    words:
+      - {fr: "parce que", ipa: "paʁs kə", ja: "なぜなら〜だから", pos: "接続詞", note: "母音の前では parce qu'（parce qu'il ...）"}
+      - {fr: "intéressant", ipa: "ɛ̃teʁesɑ̃", ja: "おもしろい・興味深い", pos: "形容詞", f: "intéressante", f_ipa: "ɛ̃teʁesɑ̃t", tts: "intéressant, intéressante"}
+      - {fr: "ennuyeux", ipa: "ɑ̃nɥijø", ja: "退屈な", pos: "形容詞", f: "ennuyeuse", f_ipa: "ɑ̃nɥijøz", tts: "ennuyeux, ennuyeuse"}
+      - {fr: "amusant", ipa: "amyzɑ̃", ja: "楽しい", pos: "形容詞", f: "amusante", f_ipa: "amyzɑ̃t", tts: "amusant, amusante"}
+      - {fr: "passionnant", ipa: "pasjɔnɑ̃", ja: "夢中になる", pos: "形容詞", f: "passionnante", f_ipa: "pasjɔnɑ̃t", tts: "passionnant, passionnante"}
+      - {fr: "relaxant", ipa: "ʁəlaksɑ̃", ja: "リラックスできる", pos: "形容詞", f: "relaxante", f_ipa: "ʁəlaksɑ̃t", tts: "relaxant, relaxante"}
+      - {fr: "fatigant", ipa: "fatiɡɑ̃", ja: "疲れる", pos: "形容詞", f: "fatigante", f_ipa: "fatiɡɑ̃t", tts: "fatigant, fatigante"}
+      - {fr: "facile", ipa: "fasil", ja: "簡単な", pos: "形容詞"}
+      - {fr: "difficile", ipa: "difisil", ja: "難しい", pos: "形容詞"}
+      - {fr: "super", ipa: "sypɛʁ", ja: "すごくいい", pos: "形容詞", note: "女性形も複数形も同じ形"}
+      - {fr: "génial", ipa: "ʒenjal", ja: "最高の", pos: "形容詞", f: "géniale", f_ipa: "ʒenjal", tts: "génial, géniale"}
+      - {fr: "cool", ipa: "kul", ja: "いい感じの・クールな", pos: "形容詞", note: "話し言葉。形は変わらない"}
+      - {fr: "nul", ipa: "nyl", ja: "ひどい・最低の", pos: "形容詞", f: "nulle", f_ipa: "nyl", tts: "nul, nulle"}
+      - {fr: "bon pour la santé", ipa: "bɔ̃ puʁ la sɑ̃te", ja: "体にいい", pos: "表現"}
+      - {fr: "vraiment", ipa: "vʁɛmɑ̃", ja: "本当に", pos: "副詞"}
+      - {fr: "trop", ipa: "tʁo", ja: "〜すぎる", pos: "副詞"}

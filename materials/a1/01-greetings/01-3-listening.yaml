@@ -1,0 +1,29 @@
+# 単元 01 の聞き取り 3：新しい先生からの留守番電話（DELF A1 の「留守番電話のメッセージ」形式）
+# DELF A1 の聞き取りでは、留守番電話から人物・場所・数字を拾う問題がよく出る。
+# 1 人で話し続ける形なので、会話より情報を頭に溜めながら聞く練習になる。行を分けているのは、1 文ずつ聞き直せるようにするため。
+unit: "01"
+title: "先生からの留守番電話"
+type: "voicemail"
+situation: "ニースの語学学校に入学するユキの電話に、担当の先生が留守番電話を残した"
+speakers:
+  sophie: { name: "Sophie Martin", voice: "claire" }
+lines:
+  - { speaker: "sophie", voice: "claire", fr: "Bonjour, Yuki ! C'est Sophie Martin, de l'école de langues de Nice.", ja: "こんにちは、ユキ！ニースの語学学校のソフィー・マルタンです。" }
+  - { speaker: "sophie", voice: "claire", fr: "Je suis ta professeure de français. Bienvenue !", ja: "あなたのフランス語の先生です。ようこそ！" }
+  - { speaker: "sophie", voice: "claire", fr: "Ta classe est dans la salle seize.", ja: "あなたのクラスは 16 番教室です。" }
+  - { speaker: "sophie", voice: "claire", fr: "Tu es avec Pablo, un étudiant espagnol, et Anna, une étudiante allemande.", ja: "スペイン人の学生パブロと、ドイツ人の学生アナと一緒です。" }
+  - { speaker: "sophie", voice: "claire", fr: "Moi, je parle un peu japonais !", ja: "私は少し日本語を話しますよ！" }
+  - { speaker: "sophie", voice: "claire", fr: "À bientôt, Yuki !", ja: "またね、ユキ！" }
+questions:
+  - q: "Qui est Sophie Martin ?"
+    q_ja: "ソフィー・マルタンは誰？"
+    choices: ["la professeure de Yuki", "une étudiante espagnole", "une amie de Pablo"]
+    answer: 0
+  - q: "La classe est dans quelle salle ?"
+    q_ja: "クラスは何番教室？"
+    choices: ["6", "16", "13"]
+    answer: 1
+  - q: "Pablo est..."
+    q_ja: "パブロの国籍は？"
+    choices: ["italien", "allemand", "espagnol"]
+    answer: 2

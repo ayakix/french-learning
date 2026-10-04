@@ -1,0 +1,30 @@
+# 単元 04 聞き取り 1：会話（好きなスポーツと楽器）
+# DELF A1 の短い会話の形式。「何をするか（スポーツ・楽器）」「いつか（曜日）」を聞き取らせる。
+# jouer au / jouer du の違いが会話の中で自然に出るようにしている。
+unit: "04"
+title: "大学のカフェで趣味の話"
+type: "dialogue"
+situation: "大学のカフェで、トマとジュリーが週末の過ごし方について話す"
+speakers:
+  thomas: { name: "Thomas" }
+  julie: { name: "Julie", voice: "claire" }
+lines:
+  - { speaker: "thomas", fr: "Julie, tu fais du sport ?", ja: "ジュリー、スポーツはする？" }
+  - { speaker: "julie", voice: "claire", fr: "Oui, je joue au tennis le mercredi. Et toi ?", ja: "うん、毎週水曜日にテニスをしてるよ。あなたは？" }
+  - { speaker: "thomas", fr: "Moi, je n'aime pas le tennis. Je préfère le football. Je joue dans un club le samedi.", ja: "僕はテニスは好きじゃない。サッカーのほうが好き。毎週土曜日にクラブでやってる。" }
+  - { speaker: "julie", voice: "claire", fr: "Ah, cool ! Et tu joues d'un instrument ?", ja: "へえ、いいね！楽器は何か弾く？" }
+  - { speaker: "thomas", fr: "Oui, je joue de la guitare. J'adore le rock !", ja: "うん、ギターを弾くよ。ロックが大好きなんだ！" }
+  - { speaker: "julie", voice: "claire", fr: "Moi, je joue du piano, mais je préfère la musique classique.", ja: "私はピアノを弾くけど、クラシックのほうが好き。" }
+questions:
+  - q: "Quand est-ce que Julie joue au tennis ?"
+    q_ja: "ジュリーがテニスをするのはいつ？"
+    choices: ["le lundi", "le mercredi", "le samedi"]
+    answer: 1
+  - q: "Quel sport Thomas préfère ?"
+    q_ja: "トマが好きなスポーツは？"
+    choices: ["le tennis", "le basket", "le football"]
+    answer: 2
+  - q: "Thomas joue de quel instrument ?"
+    q_ja: "トマが弾く楽器は？"
+    choices: ["la guitare", "le piano", "le violon"]
+    answer: 0

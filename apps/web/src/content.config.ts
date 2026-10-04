@@ -75,4 +75,114 @@ const rules = defineCollection({
   }),
 });
 
-export const collections = { alphabet, accents, contrasts, rules };
+// 単元 01〜10 の教材（ElevenLabs v4 Turbo のキャンペーン中にまとめて作ったもの）。形式は単元をまたいで共通
+const unitMaterial = { unit: z.string(), title: z.string() };
+
+// 単語。名詞は un / une 付きで読ませる（性を音で覚えるため）。形容詞は女性形も持つ
+const vocab = defineCollection({
+  loader: glob({ pattern: '**/*-vocab.yaml', base: '../../materials' }),
+  schema: z.object({
+    ...unitMaterial,
+    groups: z.array(
+      z.object({
+        name: z.string(),
+        words: z.array(
+          z.object({
+            fr: z.string(),
+            ipa: z.string(),
+            ja: z.string(),
+            pos: z.string(),
+            g: z.enum(['m', 'f']).optional(),
+            f: z.string().optional(),
+            f_ipa: z.string().optional(),
+            pl: z.string().optional(),
+            tts: z.string().optional(),
+            note: z.string().optional(),
+          }),
+        ),
+      }),
+    ),
+  }),
+});
+
+// 1 文だけのリーディング
+const reading = defineCollection({
+  loader: glob({ pattern: '**/*-reading.yaml', base: '../../materials' }),
+  schema: z.object({
+    ...unitMaterial,
+    sentences: z.array(
+      z.object({
+        fr: z.string(),
+        ja: z.string(),
+        grammar: z.string().optional(),
+        words: z.array(z.object({ w: z.string(), ja: z.string() })).default([]),
+      }),
+    ),
+  }),
+});
+
+// 会話・DELF 形式の聞き取り。行ごとに音声を作り、画面で続けて再生する
+const listening = defineCollection({
+  loader: glob({ pattern: '**/*-listening.yaml', base: '../../materials' }),
+  schema: z.object({
+    ...unitMaterial,
+    type: z.string(),
+    situation: z.string(),
+    speakers: z.record(z.string(), z.object({ name: z.string(), voice: z.string().optional() })),
+    lines: z.array(
+      z.object({ speaker: z.string(), voice: z.string().optional(), fr: z.string(), ja: z.string() }),
+    ),
+    questions: z.array(
+      z.object({ q: z.string(), q_ja: z.string(), choices: z.array(z.string()), answer: z.number() }),
+    ),
+  }),
+});
+
+// 数字・日付・時刻・値段。show は画面の表記（数字）、fr は読ませる綴り
+const numbers = defineCollection({
+  loader: glob({ pattern: 'a1/common/numbers.yaml', base: '../../materials' }),
+  schema: z.object({
+    title: z.string(),
+    groups: z.array(
+      z.object({
+        slug: z.string(),
+        name: z.string(),
+        unit: z.string().optional(),
+        items: z.array(
+          z.object({
+            show: z.string(),
+            fr: z.string(),
+            ipa: z.string(),
+            ja: z.string().optional(),
+            note: z.string().optional(),
+          }),
+        ),
+      }),
+    ),
+  }),
+});
+
+const form = z.object({ fr: z.string(), ipa: z.string(), tts: z.string().optional(), note: z.string().optional() });
+
+// 動詞の現在形の活用と、複合過去の例
+const verbs = defineCollection({
+  loader: glob({ pattern: 'a1/common/verbs.yaml', base: '../../materials' }),
+  schema: z.object({
+    title: z.string(),
+    verbs: z.array(
+      z.object({
+        slug: z.string(),
+        inf: z.string(),
+        ipa: z.string(),
+        ja: z.string(),
+        unit: z.string().optional(),
+        type: z.string(),
+        infinitive: form,
+        present: z.array(form),
+        past: form.optional(),
+      }),
+    ),
+  }),
+});
+
+export const collections = { alphabet, accents, contrasts, rules, vocab, reading, listening, numbers, verbs };

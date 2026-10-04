@@ -1,0 +1,32 @@
+# 単元 08 聞き取り 1：週末の誘いと断り（DELF A1 の「短い会話」形式）
+# 誘う → 断る → 別の日を提案する → 天気で予定を変える、という A1 の典型的な流れを 1 本にまとめた。
+# 質問は DELF でよく問われる「理由・天気・時刻」を聞く。
+unit: "08"
+title: "週末の予定"
+type: "dialogue"
+situation: "金曜日の夕方、クレールがポールを週末のピクニックに誘う"
+speakers:
+  claire: { name: "Claire", voice: "claire" }
+  paul: { name: "Paul" }
+lines:
+  - { speaker: "claire", voice: "claire", fr: "Salut Paul ! Tu es libre samedi ?", ja: "やあ、ポール！土曜日は空いてる？" }
+  - { speaker: "paul", fr: "Samedi ? Désolé, je ne peux pas. Je vais aider mon frère. Pourquoi ?", ja: "土曜？ごめん、無理なんだ。兄を手伝うんだ。どうして？" }
+  - { speaker: "claire", voice: "claire", fr: "Je vais faire un pique-nique au parc avec des amis.", ja: "友達と公園でピクニックをするの。" }
+  - { speaker: "paul", fr: "Oh, c'est dommage ! Et dimanche ?", ja: "ああ、残念！日曜は？" }
+  - { speaker: "claire", voice: "claire", fr: "Dimanche, il va pleuvoir. Alors, on va au musée ?", ja: "日曜は雨が降るみたい。じゃあ、美術館に行く？" }
+  - { speaker: "paul", fr: "Avec plaisir ! À quelle heure ?", ja: "喜んで！何時に？" }
+  - { speaker: "claire", voice: "claire", fr: "À deux heures, devant le musée.", ja: "2 時に、美術館の前で。" }
+  - { speaker: "paul", fr: "D'accord. À dimanche !", ja: "わかった。じゃあ日曜に！" }
+questions:
+  - q: "Pourquoi Paul n'est pas libre samedi ?"
+    q_ja: "ポールが土曜日に空いていないのはなぜ？"
+    choices: ["Il va aider son frère.", "Il va travailler.", "Il va partir en vacances."]
+    answer: 0
+  - q: "Quel temps va-t-il faire dimanche ?"
+    q_ja: "日曜日の天気は？"
+    choices: ["Il va faire beau.", "Il va neiger.", "Il va pleuvoir."]
+    answer: 2
+  - q: "À quelle heure est le rendez-vous ?"
+    q_ja: "待ち合わせは何時？"
+    choices: ["À 12 h", "À 14 h", "À 16 h"]
+    answer: 1

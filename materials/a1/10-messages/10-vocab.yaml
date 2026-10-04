@@ -1,0 +1,89 @@
+# 単元 10 メッセージを書く の必須単語（Web アプリの単語画面 /vocab/10 のデータ）
+# 名詞は不定冠詞 un / une を付けて読ませる。性（男性・女性）を音で一緒に覚えるため。
+# DELF A1 の「書く」は、用紙の記入と短いメッセージ（招待・お礼・断り）の 2 問なので、
+# その 2 つと、聞き取りで出る留守番電話に必要な語に絞っている。
+unit: "10"
+title: "メッセージを書く"
+groups:
+  - name: "用紙の記入"
+    words:
+      - {fr: "un formulaire", ipa: "œ̃ fɔʁmylɛʁ", ja: "用紙・申込書", pos: "名詞", g: "m"}
+      - {fr: "un nom de famille", ipa: "œ̃ nɔ̃ də famij", ja: "姓（名字）", pos: "名詞", g: "m"}
+      - {fr: "un code postal", ipa: "œ̃ kɔd pɔstal", ja: "郵便番号", pos: "名詞", g: "m"}
+      - {fr: "une date de naissance", ipa: "yn dat də nɛsɑ̃s", ja: "生年月日", pos: "名詞", g: "f"}
+      - {fr: "un lieu de naissance", ipa: "œ̃ ljø də nɛsɑ̃s", ja: "出生地", pos: "名詞", g: "m"}
+      - {fr: "une signature", ipa: "yn siɲatyʁ", ja: "署名", pos: "名詞", g: "f"}
+      - {fr: "une inscription", ipa: "yn ɛ̃skʁipsjɔ̃", ja: "申し込み・登録", pos: "名詞", g: "f"}
+      - {fr: "une case", ipa: "yn kaz", ja: "（用紙の）四角い欄", pos: "名詞", g: "f"}
+      - {fr: "remplir", ipa: "ʁɑ̃pliʁ", ja: "（用紙に）記入する", pos: "動詞"}
+      - {fr: "signer", ipa: "siɲe", ja: "署名する", pos: "動詞"}
+      - {fr: "s'inscrire", ipa: "sɛ̃skʁiʁ", ja: "申し込む・登録する", pos: "動詞"}
+      - {fr: "cocher", ipa: "kɔʃe", ja: "（欄に）チェックを付ける", pos: "動詞"}
+      - {fr: "obligatoire", ipa: "ɔbliɡatwaʁ", ja: "必須の", pos: "形容詞"}
+      - {fr: "en majuscules", ipa: "ɑ̃ maʒyskyl", ja: "大文字で", pos: "表現"}
+  - name: "メール・手紙"
+    words:
+      - {fr: "un message", ipa: "œ̃ mesaʒ", ja: "メッセージ", pos: "名詞", g: "m"}
+      - {fr: "un courriel", ipa: "œ̃ kuʁjɛl", ja: "Eメール", pos: "名詞", g: "m", note: "e-mail のフランス語らしい言い方。公的な文書でよく使う"}
+      - {fr: "un e-mail", ipa: "œ̃ nimɛl", ja: "Eメール", pos: "名詞", g: "m"}
+      - {fr: "un texto", ipa: "œ̃ tɛksto", ja: "（携帯の）ショートメッセージ", pos: "名詞", g: "m"}
+      - {fr: "une lettre", ipa: "yn lɛtʁ", ja: "手紙", pos: "名詞", g: "f"}
+      - {fr: "une carte postale", ipa: "yn kaʁt pɔstal", ja: "絵はがき", pos: "名詞", g: "f"}
+      - {fr: "un objet", ipa: "œ̃ nɔbʒɛ", ja: "（メールの）件名", pos: "名詞", g: "m", note: "ふだんは「物」の意味"}
+      - {fr: "une pièce jointe", ipa: "yn pjɛs ʒwɛ̃t", ja: "添付ファイル", pos: "名詞", g: "f"}
+      - {fr: "des nouvelles", ipa: "de nuvɛl", ja: "便り・近況", pos: "名詞", g: "f", note: "この意味では複数形で使う"}
+      - {fr: "un timbre", ipa: "œ̃ tɛ̃bʁ", ja: "切手", pos: "名詞", g: "m"}
+      - {fr: "une enveloppe", ipa: "yn ɑ̃vlɔp", ja: "封筒", pos: "名詞", g: "f"}
+      - {fr: "une boîte aux lettres", ipa: "yn bwat o lɛtʁ", ja: "郵便受け・ポスト", pos: "名詞", g: "f"}
+  - name: "書き出しと結び"
+    words:
+      - {fr: "cher", ipa: "ʃɛʁ", ja: "親愛なる（手紙の書き出し）", pos: "形容詞", f: "chère", f_ipa: "ʃɛʁ", tts: "Cher, Chère", note: "相手の性で綴りが変わる。音は同じ。「（値段が）高い」も同じ語"}
+      - {fr: "Salut !", ipa: "saly", ja: "やあ（親しい人への書き出し）", pos: "表現"}
+      - {fr: "Coucou !", ipa: "kuku", ja: "やっほー（ごく親しい人へ）", pos: "表現"}
+      - {fr: "Madame, Monsieur,", ipa: "madam məsjø", ja: "拝啓（相手がわからない改まった書き出し）", pos: "表現"}
+      - {fr: "J'espère que tu vas bien.", ipa: "ʒɛspɛʁ kə ty va bjɛ̃", ja: "元気だといいな。", pos: "表現"}
+      - {fr: "Merci pour ton message.", ipa: "mɛʁsi puʁ tɔ̃ mesaʒ", ja: "メッセージありがとう。", pos: "表現"}
+      - {fr: "Bisous", ipa: "bizu", ja: "またね（キスを込めて。親しい人への結び）", pos: "表現"}
+      - {fr: "Grosses bises", ipa: "ɡʁos biz", ja: "たくさんのキスを（親しい人への結び）", pos: "表現"}
+      - {fr: "Je t'embrasse", ipa: "ʒə tɑ̃bʁas", ja: "愛を込めて（家族・親しい人への結び）", pos: "表現"}
+      - {fr: "Amitiés", ipa: "amitje", ja: "友情を込めて（友人への結び）", pos: "表現"}
+      - {fr: "Cordialement", ipa: "kɔʁdjalmɑ̃", ja: "よろしくお願いします（改まったメールの結び）", pos: "表現"}
+      - {fr: "Bien à vous", ipa: "bjɛ̃ na vu", ja: "敬具（改まった結び）", pos: "表現"}
+      - {fr: "À bientôt", ipa: "a bjɛ̃to", ja: "またね・近いうちに", pos: "表現"}
+      - {fr: "À très bientôt", ipa: "a tʁɛ bjɛ̃to", ja: "またすぐにね", pos: "表現"}
+  - name: "カードのお祝い"
+    words:
+      - {fr: "Joyeux anniversaire !", ipa: "ʒwajø zanivɛʁsɛʁ", ja: "誕生日おめでとう！", pos: "表現"}
+      - {fr: "Bonne année !", ipa: "bɔn ane", ja: "あけましておめでとう！", pos: "表現"}
+      - {fr: "Meilleurs vœux !", ipa: "mɛjœʁ vø", ja: "幸せを祈って（年賀状など）", pos: "表現"}
+      - {fr: "Félicitations !", ipa: "felisitasjɔ̃", ja: "おめでとう！", pos: "表現"}
+      - {fr: "Bonne fête !", ipa: "bɔn fɛt", ja: "おめでとう（自分の名前の聖人の日・祝いの日に）", pos: "表現"}
+      - {fr: "Bonnes vacances !", ipa: "bɔn vakɑ̃s", ja: "良い休暇を！", pos: "表現"}
+      - {fr: "Bon courage !", ipa: "bɔ̃ kuʁaʒ", ja: "がんばって！", pos: "表現"}
+      - {fr: "Bonne chance !", ipa: "bɔn ʃɑ̃s", ja: "幸運を！", pos: "表現"}
+  - name: "書く・送る・返事する"
+    words:
+      - {fr: "écrire", ipa: "ekʁiʁ", ja: "書く", pos: "動詞"}
+      - {fr: "envoyer", ipa: "ɑ̃vwaje", ja: "送る", pos: "動詞"}
+      - {fr: "remercier", ipa: "ʁəmɛʁsje", ja: "感謝する・お礼を言う", pos: "動詞"}
+      - {fr: "proposer", ipa: "pʁɔpoze", ja: "提案する", pos: "動詞"}
+      - {fr: "accepter", ipa: "aksɛpte", ja: "受け入れる・承諾する", pos: "動詞"}
+      - {fr: "refuser", ipa: "ʁəfyze", ja: "断る", pos: "動詞"}
+      - {fr: "annuler", ipa: "anyle", ja: "取り消す・キャンセルする", pos: "動詞"}
+      - {fr: "confirmer", ipa: "kɔ̃fiʁme", ja: "確認する・確定させる", pos: "動詞"}
+      - {fr: "s'excuser", ipa: "sɛkskyze", ja: "謝る", pos: "動詞"}
+      - {fr: "prévenir", ipa: "pʁevniʁ", ja: "前もって知らせる", pos: "動詞"}
+  - name: "電話"
+    words:
+      - {fr: "un téléphone", ipa: "œ̃ telefɔn", ja: "電話", pos: "名詞", g: "m"}
+      - {fr: "un numéro de téléphone", ipa: "œ̃ nymeʁo də telefɔn", ja: "電話番号", pos: "名詞", g: "m"}
+      - {fr: "un appel", ipa: "œ̃ napɛl", ja: "（電話の）呼び出し・通話", pos: "名詞", g: "m"}
+      - {fr: "un répondeur", ipa: "œ̃ ʁepɔ̃dœʁ", ja: "留守番電話", pos: "名詞", g: "m"}
+      - {fr: "appeler", ipa: "aple", ja: "電話をかける・呼ぶ", pos: "動詞"}
+      - {fr: "rappeler", ipa: "ʁaple", ja: "電話をかけ直す", pos: "動詞"}
+      - {fr: "joindre", ipa: "ʒwɛ̃dʁ", ja: "（電話で）連絡をつける", pos: "動詞"}
+      - {fr: "laisser un message", ipa: "lɛse œ̃ mesaʒ", ja: "伝言を残す", pos: "表現"}
+      - {fr: "Allô ?", ipa: "alo", ja: "もしもし", pos: "表現"}
+      - {fr: "C'est de la part de qui ?", ipa: "sɛ d la paʁ də ki", ja: "どちら様ですか？（電話で）", pos: "表現"}
+      - {fr: "Ne quittez pas.", ipa: "nə kite pa", ja: "（電話を切らずに）お待ちください。", pos: "表現"}
+      - {fr: "disponible", ipa: "dispɔnibl", ja: "手が空いている・都合がつく", pos: "形容詞"}

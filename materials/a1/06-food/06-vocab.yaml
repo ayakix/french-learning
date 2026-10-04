@@ -1,0 +1,161 @@
+# 単元 06 買い物と食事 の必須単語（Web アプリの単語画面 /vocab/06 のデータ）
+# 名詞は不定冠詞 un / une を付けて読ませる。性（男性・女性）を音で一緒に覚えるため。
+# 数えられない食べ物・飲み物は部分冠詞 du / de la / de l' で書く。注文や買い物では、この形でそのまま使うため。
+# 服とサイズも買い物の場面として含める（色は単元 02 で扱うので除く）。
+# 数字・値段の言い方は common で扱うのでここには入れない。店の建物のうち食べ物以外（pharmacie など）は単元 05 で扱う。
+unit: "06"
+title: "買い物と食事"
+groups:
+  - name: "食べ物（主食・肉・魚）"
+    words:
+      - {fr: "du pain", ipa: "dy pɛ̃", ja: "パン", pos: "名詞", g: "m"}
+      - {fr: "une baguette", ipa: "yn baɡɛt", ja: "バゲット", pos: "名詞", g: "f"}
+      - {fr: "un croissant", ipa: "œ̃ kʁwasɑ̃", ja: "クロワッサン", pos: "名詞", g: "m"}
+      - {fr: "du riz", ipa: "dy ʁi", ja: "米・ごはん", pos: "名詞", g: "m"}
+      - {fr: "des pâtes", ipa: "de pat", ja: "パスタ", pos: "名詞", g: "f", note: "パスタの意味では複数形で使う"}
+      - {fr: "de la viande", ipa: "də la vjɑ̃d", ja: "肉", pos: "名詞", g: "f"}
+      - {fr: "du poulet", ipa: "dy pulɛ", ja: "鶏肉", pos: "名詞", g: "m"}
+      - {fr: "du bœuf", ipa: "dy bœf", ja: "牛肉", pos: "名詞", g: "m"}
+      - {fr: "du porc", ipa: "dy pɔʁ", ja: "豚肉", pos: "名詞", g: "m", note: "語末の c は読まない"}
+      - {fr: "du jambon", ipa: "dy ʒɑ̃bɔ̃", ja: "ハム", pos: "名詞", g: "m"}
+      - {fr: "du poisson", ipa: "dy pwasɔ̃", ja: "魚", pos: "名詞", g: "m"}
+      - {fr: "un œuf", ipa: "œ̃ nœf", ja: "卵", pos: "名詞", g: "m", pl: "des œufs", note: "複数形 des œufs は [de zø]。f を読まなくなる"}
+      - {fr: "de la soupe", ipa: "də la sup", ja: "スープ", pos: "名詞", g: "f"}
+      - {fr: "de la salade", ipa: "də la salad", ja: "サラダ・レタス", pos: "名詞", g: "f"}
+      - {fr: "un sandwich", ipa: "œ̃ sɑ̃dwitʃ", ja: "サンドイッチ", pos: "名詞", g: "m"}
+  - name: "野菜・果物"
+    words:
+      - {fr: "un fruit", ipa: "œ̃ fʁɥi", ja: "果物", pos: "名詞", g: "m"}
+      - {fr: "un légume", ipa: "œ̃ leɡym", ja: "野菜", pos: "名詞", g: "m"}
+      - {fr: "une pomme", ipa: "yn pɔm", ja: "りんご", pos: "名詞", g: "f"}
+      - {fr: "une banane", ipa: "yn banan", ja: "バナナ", pos: "名詞", g: "f"}
+      - {fr: "une orange", ipa: "yn ɔʁɑ̃ʒ", ja: "オレンジ", pos: "名詞", g: "f"}
+      - {fr: "une fraise", ipa: "yn fʁɛz", ja: "いちご", pos: "名詞", g: "f"}
+      - {fr: "du raisin", ipa: "dy ʁɛzɛ̃", ja: "ぶどう", pos: "名詞", g: "m", note: "ぶどうは房ごと数えないので、ふつう単数の du raisin"}
+      - {fr: "un citron", ipa: "œ̃ sitʁɔ̃", ja: "レモン", pos: "名詞", g: "m"}
+      - {fr: "une tomate", ipa: "yn tɔmat", ja: "トマト", pos: "名詞", g: "f"}
+      - {fr: "une pomme de terre", ipa: "yn pɔm də tɛʁ", ja: "じゃがいも", pos: "名詞", g: "f", note: "直訳は「大地のりんご」"}
+      - {fr: "une carotte", ipa: "yn kaʁɔt", ja: "にんじん", pos: "名詞", g: "f"}
+      - {fr: "un oignon", ipa: "œ̃ nɔɲɔ̃", ja: "たまねぎ", pos: "名詞", g: "m", note: "oi を「オ」と読む例外"}
+  - name: "乳製品・甘いもの・調味料"
+    words:
+      - {fr: "du fromage", ipa: "dy fʁɔmaʒ", ja: "チーズ", pos: "名詞", g: "m"}
+      - {fr: "du beurre", ipa: "dy bœʁ", ja: "バター", pos: "名詞", g: "m"}
+      - {fr: "un yaourt", ipa: "œ̃ jauʁt", ja: "ヨーグルト", pos: "名詞", g: "m", note: "1 個ずつのカップで数えるので un。語末の t は読まない人もいる"}
+      - {fr: "du sucre", ipa: "dy sykʁ", ja: "砂糖", pos: "名詞", g: "m"}
+      - {fr: "du sel", ipa: "dy sɛl", ja: "塩", pos: "名詞", g: "m"}
+      - {fr: "du poivre", ipa: "dy pwavʁ", ja: "こしょう", pos: "名詞", g: "m"}
+      - {fr: "de la confiture", ipa: "də la kɔ̃fityʁ", ja: "ジャム", pos: "名詞", g: "f"}
+      - {fr: "du chocolat", ipa: "dy ʃɔkɔla", ja: "チョコレート", pos: "名詞", g: "m"}
+      - {fr: "un gâteau", ipa: "œ̃ ɡato", ja: "ケーキ", pos: "名詞", g: "m", pl: "des gâteaux"}
+      - {fr: "une tarte", ipa: "yn taʁt", ja: "タルト", pos: "名詞", g: "f"}
+      - {fr: "de la glace", ipa: "də la ɡlas", ja: "アイスクリーム", pos: "名詞", g: "f"}
+  - name: "飲み物"
+    words:
+      - {fr: "de l'eau", ipa: "də lo", ja: "水", pos: "名詞", g: "f", note: "母音で始まる語の前では de la / du ではなく de l'"}
+      - {fr: "de l'eau minérale", ipa: "də lo mineʁal", ja: "ミネラルウォーター", pos: "名詞", g: "f"}
+      - {fr: "du café", ipa: "dy kafe", ja: "コーヒー", pos: "名詞", g: "m", note: "カフェで 1 杯注文するときは un café"}
+      - {fr: "du thé", ipa: "dy te", ja: "紅茶・お茶", pos: "名詞", g: "m"}
+      - {fr: "du lait", ipa: "dy lɛ", ja: "牛乳", pos: "名詞", g: "m"}
+      - {fr: "du jus d'orange", ipa: "dy ʒy dɔʁɑ̃ʒ", ja: "オレンジジュース", pos: "名詞", g: "m"}
+      - {fr: "du vin", ipa: "dy vɛ̃", ja: "ワイン", pos: "名詞", g: "m"}
+      - {fr: "de la bière", ipa: "də la bjɛʁ", ja: "ビール", pos: "名詞", g: "f"}
+      - {fr: "un chocolat chaud", ipa: "œ̃ ʃɔkɔla ʃo", ja: "ホットチョコレート（ココア）", pos: "名詞", g: "m"}
+      - {fr: "une boisson", ipa: "yn bwasɔ̃", ja: "飲み物", pos: "名詞", g: "f"}
+  - name: "食事と味"
+    words:
+      - {fr: "un repas", ipa: "œ̃ ʁəpa", ja: "食事", pos: "名詞", g: "m"}
+      - {fr: "un plat", ipa: "œ̃ pla", ja: "料理・メインディッシュ", pos: "名詞", g: "m"}
+      - {fr: "un dessert", ipa: "œ̃ desɛʁ", ja: "デザート", pos: "名詞", g: "m", note: "ss は [s]。désert（砂漠）[dezɛʁ] と区別する"}
+      - {fr: "manger", ipa: "mɑ̃ʒe", ja: "食べる", pos: "動詞"}
+      - {fr: "boire", ipa: "bwaʁ", ja: "飲む", pos: "動詞"}
+      - {fr: "avoir faim", ipa: "avwaʁ fɛ̃", ja: "お腹がすいている", pos: "表現", note: "「空腹を持つ」と言う。être ではなく avoir"}
+      - {fr: "avoir soif", ipa: "avwaʁ swaf", ja: "のどが渇いている", pos: "表現"}
+      - {fr: "bon", ipa: "bɔ̃", ja: "おいしい・良い", pos: "形容詞", f: "bonne", f_ipa: "bɔn", tts: "bon, bonne"}
+      - {fr: "délicieux", ipa: "delisjø", ja: "とてもおいしい", pos: "形容詞", f: "délicieuse", f_ipa: "delisjøz", tts: "délicieux, délicieuse"}
+      - {fr: "chaud", ipa: "ʃo", ja: "熱い・温かい", pos: "形容詞", f: "chaude", f_ipa: "ʃod", tts: "chaud, chaude"}
+      - {fr: "froid", ipa: "fʁwa", ja: "冷たい", pos: "形容詞", f: "froide", f_ipa: "fʁwad", tts: "froid, froide"}
+  - name: "レストラン・カフェ"
+    words:
+      - {fr: "un restaurant", ipa: "œ̃ ʁɛstɔʁɑ̃", ja: "レストラン", pos: "名詞", g: "m"}
+      - {fr: "une terrasse", ipa: "yn tɛʁas", ja: "テラス席", pos: "名詞", g: "f"}
+      - {fr: "une carte", ipa: "yn kaʁt", ja: "メニュー（料理の一覧）", pos: "名詞", g: "f", note: "料理の一覧は la carte。カードの意味もある"}
+      - {fr: "un menu", ipa: "œ̃ məny", ja: "コース・定食", pos: "名詞", g: "m", note: "フランスでは「前菜＋メインなどのセット」のこと。一覧表は la carte"}
+      - {fr: "le plat du jour", ipa: "lə pla dy ʒuʁ", ja: "日替わり料理", pos: "表現"}
+      - {fr: "une serveuse", ipa: "yn sɛʁvøz", ja: "ウェイトレス", pos: "名詞", g: "f"}
+      - {fr: "une addition", ipa: "yn adisjɔ̃", ja: "お会計・勘定", pos: "名詞", g: "f"}
+      - {fr: "une assiette", ipa: "yn asjɛt", ja: "皿", pos: "名詞", g: "f"}
+      - {fr: "une fourchette", ipa: "yn fuʁʃɛt", ja: "フォーク", pos: "名詞", g: "f"}
+      - {fr: "un couteau", ipa: "œ̃ kuto", ja: "ナイフ", pos: "名詞", g: "m", pl: "des couteaux"}
+      - {fr: "une cuillère", ipa: "yn kɥijɛʁ", ja: "スプーン", pos: "名詞", g: "f"}
+      - {fr: "un pourboire", ipa: "œ̃ puʁbwaʁ", ja: "チップ", pos: "名詞", g: "m"}
+      - {fr: "commander", ipa: "kɔmɑ̃de", ja: "注文する", pos: "動詞"}
+      - {fr: "réserver", ipa: "ʁezɛʁve", ja: "予約する", pos: "動詞"}
+      - {fr: "Bon appétit !", ipa: "bɔ̃ napeti", ja: "召し上がれ・いただきます", pos: "表現", note: "bon の n が次の母音につながる"}
+      - {fr: "L'addition, s'il vous plaît.", ipa: "ladisjɔ̃ sil vu plɛ", ja: "お会計をお願いします。", pos: "表現"}
+      - {fr: "Sur place ou à emporter ?", ipa: "syʁ plas u a ɑ̃pɔʁte", ja: "店内でお召し上がりですか、お持ち帰りですか？", pos: "表現"}
+  - name: "店と買い物"
+    words:
+      - {fr: "une boulangerie", ipa: "yn bulɑ̃ʒʁi", ja: "パン屋", pos: "名詞", g: "f"}
+      - {fr: "une boucherie", ipa: "yn buʃʁi", ja: "肉屋", pos: "名詞", g: "f"}
+      - {fr: "une épicerie", ipa: "yn episʁi", ja: "食料品店", pos: "名詞", g: "f"}
+      - {fr: "un supermarché", ipa: "œ̃ sypɛʁmaʁʃe", ja: "スーパー", pos: "名詞", g: "m"}
+      - {fr: "un marché", ipa: "œ̃ maʁʃe", ja: "市場・マルシェ", pos: "名詞", g: "m"}
+      - {fr: "un magasin", ipa: "œ̃ maɡazɛ̃", ja: "店", pos: "名詞", g: "m"}
+      - {fr: "un client", ipa: "œ̃ klijɑ̃", ja: "客（男性）", pos: "名詞", g: "m"}
+      - {fr: "une cliente", ipa: "yn klijɑ̃t", ja: "客（女性）", pos: "名詞", g: "f"}
+      - {fr: "une vendeuse", ipa: "yn vɑ̃døz", ja: "店員（女性）", pos: "名詞", g: "f"}
+      - {fr: "un prix", ipa: "œ̃ pʁi", ja: "値段", pos: "名詞", g: "m", note: "語末の x は読まない"}
+      - {fr: "un euro", ipa: "œ̃ nøʁo", ja: "ユーロ", pos: "名詞", g: "m"}
+      - {fr: "un centime", ipa: "œ̃ sɑ̃tim", ja: "サンチーム（1/100 ユーロ）", pos: "名詞", g: "m"}
+      - {fr: "une carte bancaire", ipa: "yn kaʁt bɑ̃kɛʁ", ja: "キャッシュカード・クレジットカード", pos: "名詞", g: "f"}
+      - {fr: "de l'argent", ipa: "də laʁʒɑ̃", ja: "お金", pos: "名詞", g: "m"}
+      - {fr: "de la monnaie", ipa: "də la mɔnɛ", ja: "小銭・おつり", pos: "名詞", g: "f"}
+      - {fr: "une caisse", ipa: "yn kɛs", ja: "レジ", pos: "名詞", g: "f"}
+      - {fr: "acheter", ipa: "aʃte", ja: "買う", pos: "動詞"}
+      - {fr: "payer", ipa: "peje", ja: "払う", pos: "動詞"}
+      - {fr: "coûter", ipa: "kute", ja: "（値段が）〜する", pos: "動詞"}
+      - {fr: "cher", ipa: "ʃɛʁ", ja: "高い（値段が）", pos: "形容詞", f: "chère", f_ipa: "ʃɛʁ", tts: "cher, chère", note: "男性形も女性形も同じ発音"}
+      - {fr: "C'est combien ?", ipa: "sɛ kɔ̃bjɛ̃", ja: "いくらですか？", pos: "表現"}
+      - {fr: "Ça fait combien ?", ipa: "sa fɛ kɔ̃bjɛ̃", ja: "（合計で）いくらになりますか？", pos: "表現"}
+      - {fr: "Je peux payer par carte ?", ipa: "ʒə pø peje paʁ kaʁt", ja: "カードで払えますか？", pos: "表現"}
+  - name: "服とサイズ"
+    words:
+      - {fr: "un pantalon", ipa: "œ̃ pɑ̃talɔ̃", ja: "ズボン", pos: "名詞", g: "m", note: "1 本でも単数の un pantalon"}
+      - {fr: "un jean", ipa: "œ̃ dʒin", ja: "ジーンズ", pos: "名詞", g: "m", note: "英語から来た語で、[dʒin] と読む"}
+      - {fr: "une chemise", ipa: "yn ʃəmiz", ja: "シャツ", pos: "名詞", g: "f"}
+      - {fr: "un tee-shirt", ipa: "œ̃ tiʃœʁt", ja: "T シャツ", pos: "名詞", g: "m"}
+      - {fr: "un pull", ipa: "œ̃ pyl", ja: "セーター", pos: "名詞", g: "m"}
+      - {fr: "une robe", ipa: "yn ʁɔb", ja: "ワンピース・ドレス", pos: "名詞", g: "f"}
+      - {fr: "une jupe", ipa: "yn ʒyp", ja: "スカート", pos: "名詞", g: "f"}
+      - {fr: "une veste", ipa: "yn vɛst", ja: "ジャケット", pos: "名詞", g: "f"}
+      - {fr: "un manteau", ipa: "œ̃ mɑ̃to", ja: "コート", pos: "名詞", g: "m", pl: "des manteaux"}
+      - {fr: "des chaussures", ipa: "de ʃosyʁ", ja: "靴", pos: "名詞", g: "f", note: "ふつう 1 足を複数形で言う"}
+      - {fr: "une taille", ipa: "yn taj", ja: "（服の）サイズ", pos: "名詞", g: "f"}
+      - {fr: "une pointure", ipa: "yn pwɛ̃tyʁ", ja: "靴のサイズ", pos: "名詞", g: "f", note: "服は taille、靴は pointure と分ける"}
+      - {fr: "essayer", ipa: "eseje", ja: "試着する・試す", pos: "動詞"}
+      - {fr: "une cabine d'essayage", ipa: "yn kabin desɛjaʒ", ja: "試着室", pos: "名詞", g: "f"}
+      - {fr: "Je fais du 38.", ipa: "ʒə fɛ dy tʁɑ̃tɥit", ja: "サイズは 38 です。", pos: "表現", tts: "Je fais du trente-huit.", note: "サイズは faire du + 数字で言う。数字を読み間違えないよう tts は綴りで書く"}
+      - {fr: "C'est trop grand.", ipa: "sɛ tʁo ɡʁɑ̃", ja: "大きすぎます。", pos: "表現"}
+      - {fr: "C'est trop petit.", ipa: "sɛ tʁo pəti", ja: "小さすぎます。", pos: "表現"}
+  - name: "数量と注文の言い方"
+    words:
+      - {fr: "un kilo de", ipa: "œ̃ kilo də", ja: "1 キロの〜", pos: "名詞", g: "m", note: "数量のあとは du / de la ではなく de だけ（un kilo de pommes）"}
+      - {fr: "un litre de", ipa: "œ̃ litʁ də", ja: "1 リットルの〜", pos: "名詞", g: "m"}
+      - {fr: "une bouteille de", ipa: "yn butɛj də", ja: "1 本（瓶）の〜", pos: "名詞", g: "f"}
+      - {fr: "un verre de", ipa: "œ̃ vɛʁ də", ja: "グラス 1 杯の〜", pos: "名詞", g: "m"}
+      - {fr: "une tasse de", ipa: "yn tas də", ja: "カップ 1 杯の〜", pos: "名詞", g: "f"}
+      - {fr: "un morceau de", ipa: "œ̃ mɔʁso də", ja: "1 切れの〜", pos: "名詞", g: "m"}
+      - {fr: "une tranche de", ipa: "yn tʁɑ̃ʃ də", ja: "（薄切り）1 枚の〜", pos: "名詞", g: "f"}
+      - {fr: "un paquet de", ipa: "œ̃ pakɛ də", ja: "1 袋・1 箱の〜", pos: "名詞", g: "m"}
+      - {fr: "une boîte de", ipa: "yn bwat də", ja: "1 缶・1 箱の〜", pos: "名詞", g: "f"}
+      - {fr: "un peu de", ipa: "œ̃ pø də", ja: "少しの〜", pos: "表現"}
+      - {fr: "beaucoup de", ipa: "boku də", ja: "たくさんの〜", pos: "表現"}
+      - {fr: "assez de", ipa: "ase də", ja: "十分な〜", pos: "表現"}
+      - {fr: "trop de", ipa: "tʁo də", ja: "多すぎる〜", pos: "表現"}
+      - {fr: "vouloir", ipa: "vulwaʁ", ja: "欲しい・〜したい", pos: "動詞"}
+      - {fr: "pouvoir", ipa: "puvwaʁ", ja: "〜できる", pos: "動詞"}
+      - {fr: "je voudrais", ipa: "ʒə vudʁɛ", ja: "〜が欲しいのですが", pos: "表現", note: "je veux より丁寧。店ではこちらを使う"}
+      - {fr: "Vous désirez ?", ipa: "vu deziʁe", ja: "何になさいますか？", pos: "表現"}
+      - {fr: "Et avec ceci ?", ipa: "e avɛk səsi", ja: "ほかに何か？", pos: "表現"}
+      - {fr: "C'est tout.", ipa: "sɛ tu", ja: "以上です。", pos: "表現"}

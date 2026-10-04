@@ -1,0 +1,293 @@
+# 数字・曜日・月・日付・時刻・値段（単元をまたいで使う教材）
+# DELF A1 の聞き取りでは、数字・時刻・値段・日付がほぼ毎回問われる。単元ごとに散らばらないよう 1 ファイルにまとめた。
+#
+# show は画面に出す表記、fr は読ませるテキスト。fr は必ず綴りで書く（数字のまま TTS に渡すと読み方が保証されないため）。
+# unit はそのグループを最初に習う単元。
+# 数字は後ろの語とつながると音が変わる（six heures [si zœʁ]、neuf ans [nœ vɑ̃]）。
+# 単独の読み方だけ覚えると聞き取れないので、ipa はつながったときの実際の発音で書き、注意点を note に書いた。
+title: "数字・日付・時刻・値段"
+groups:
+  - slug: "0-20"
+    name: "数字 0〜20"
+    unit: "01"
+    items:
+      - {show: "0", fr: "zéro", ipa: "zeʁo"}
+      - {show: "1", fr: "un", ipa: "œ̃", note: "女性名詞の前では une [yn] になる"}
+      - {show: "2", fr: "deux", ipa: "dø"}
+      - {show: "3", fr: "trois", ipa: "tʁwa"}
+      - {show: "4", fr: "quatre", ipa: "katʁ"}
+      - {show: "5", fr: "cinq", ipa: "sɛ̃k", note: "単独では最後の q を読む [sɛ̃k]"}
+      - {show: "6", fr: "six", ipa: "sis", note: "単独では [sis]。子音の前では [si]、母音の前では [siz] と変わる"}
+      - {show: "7", fr: "sept", ipa: "sɛt"}
+      - {show: "8", fr: "huit", ipa: "ɥit", note: "単独では最後の t を読む [ɥit]。子音の前では [ɥi]"}
+      - {show: "9", fr: "neuf", ipa: "nœf", note: "ans / heures の前だけ f が [v] になる（neuf ans [nœ vɑ̃]）"}
+      - {show: "10", fr: "dix", ipa: "dis", note: "単独では [dis]。子音の前では [di]、母音の前では [diz] と変わる"}
+      - {show: "11", fr: "onze", ipa: "ɔ̃z"}
+      - {show: "12", fr: "douze", ipa: "duz"}
+      - {show: "13", fr: "treize", ipa: "tʁɛz"}
+      - {show: "14", fr: "quatorze", ipa: "katɔʁz"}
+      - {show: "15", fr: "quinze", ipa: "kɛ̃z"}
+      - {show: "16", fr: "seize", ipa: "sɛz"}
+      - {show: "17", fr: "dix-sept", ipa: "disɛt", note: "17〜19 は「10 ＋ 7」のように足し算で言う"}
+      - {show: "18", fr: "dix-huit", ipa: "dizɥit", note: "x を [z] と読む"}
+      - {show: "19", fr: "dix-neuf", ipa: "diznœf", note: "x を [z] と読む"}
+      - {show: "20", fr: "vingt", ipa: "vɛ̃", note: "単独では t を読まない。21〜29 では t を読む"}
+  - slug: "21-69"
+    name: "数字 21〜69"
+    unit: "03"
+    items:
+      - {show: "21", fr: "vingt et un", ipa: "vɛ̃ te œ̃", note: "1 のときだけ et が入る（31・41・51・61 も同じ）"}
+      - {show: "22", fr: "vingt-deux", ipa: "vɛ̃t dø", note: "vingt の t を読む"}
+      - {show: "23", fr: "vingt-trois", ipa: "vɛ̃t tʁwa"}
+      - {show: "24", fr: "vingt-quatre", ipa: "vɛ̃t katʁ"}
+      - {show: "25", fr: "vingt-cinq", ipa: "vɛ̃t sɛ̃k"}
+      - {show: "26", fr: "vingt-six", ipa: "vɛ̃t sis"}
+      - {show: "27", fr: "vingt-sept", ipa: "vɛ̃t sɛt"}
+      - {show: "28", fr: "vingt-huit", ipa: "vɛ̃t ɥit"}
+      - {show: "29", fr: "vingt-neuf", ipa: "vɛ̃t nœf"}
+      - {show: "30", fr: "trente", ipa: "tʁɑ̃t"}
+      - {show: "31", fr: "trente et un", ipa: "tʁɑ̃ te œ̃"}
+      - {show: "32", fr: "trente-deux", ipa: "tʁɑ̃t dø"}
+      - {show: "33", fr: "trente-trois", ipa: "tʁɑ̃t tʁwa"}
+      - {show: "34", fr: "trente-quatre", ipa: "tʁɑ̃t katʁ"}
+      - {show: "35", fr: "trente-cinq", ipa: "tʁɑ̃t sɛ̃k"}
+      - {show: "36", fr: "trente-six", ipa: "tʁɑ̃t sis"}
+      - {show: "37", fr: "trente-sept", ipa: "tʁɑ̃t sɛt"}
+      - {show: "38", fr: "trente-huit", ipa: "tʁɑ̃t ɥit"}
+      - {show: "39", fr: "trente-neuf", ipa: "tʁɑ̃t nœf"}
+      - {show: "40", fr: "quarante", ipa: "kaʁɑ̃t"}
+      - {show: "41", fr: "quarante et un", ipa: "kaʁɑ̃ te œ̃"}
+      - {show: "42", fr: "quarante-deux", ipa: "kaʁɑ̃t dø"}
+      - {show: "43", fr: "quarante-trois", ipa: "kaʁɑ̃t tʁwa"}
+      - {show: "44", fr: "quarante-quatre", ipa: "kaʁɑ̃t katʁ"}
+      - {show: "45", fr: "quarante-cinq", ipa: "kaʁɑ̃t sɛ̃k"}
+      - {show: "46", fr: "quarante-six", ipa: "kaʁɑ̃t sis"}
+      - {show: "47", fr: "quarante-sept", ipa: "kaʁɑ̃t sɛt"}
+      - {show: "48", fr: "quarante-huit", ipa: "kaʁɑ̃t ɥit"}
+      - {show: "49", fr: "quarante-neuf", ipa: "kaʁɑ̃t nœf"}
+      - {show: "50", fr: "cinquante", ipa: "sɛ̃kɑ̃t"}
+      - {show: "51", fr: "cinquante et un", ipa: "sɛ̃kɑ̃ te œ̃"}
+      - {show: "52", fr: "cinquante-deux", ipa: "sɛ̃kɑ̃t dø"}
+      - {show: "53", fr: "cinquante-trois", ipa: "sɛ̃kɑ̃t tʁwa"}
+      - {show: "54", fr: "cinquante-quatre", ipa: "sɛ̃kɑ̃t katʁ"}
+      - {show: "55", fr: "cinquante-cinq", ipa: "sɛ̃kɑ̃t sɛ̃k"}
+      - {show: "56", fr: "cinquante-six", ipa: "sɛ̃kɑ̃t sis"}
+      - {show: "57", fr: "cinquante-sept", ipa: "sɛ̃kɑ̃t sɛt"}
+      - {show: "58", fr: "cinquante-huit", ipa: "sɛ̃kɑ̃t ɥit"}
+      - {show: "59", fr: "cinquante-neuf", ipa: "sɛ̃kɑ̃t nœf"}
+      - {show: "60", fr: "soixante", ipa: "swasɑ̃t"}
+      - {show: "61", fr: "soixante et un", ipa: "swasɑ̃ te œ̃"}
+      - {show: "62", fr: "soixante-deux", ipa: "swasɑ̃t dø"}
+      - {show: "63", fr: "soixante-trois", ipa: "swasɑ̃t tʁwa"}
+      - {show: "64", fr: "soixante-quatre", ipa: "swasɑ̃t katʁ"}
+      - {show: "65", fr: "soixante-cinq", ipa: "swasɑ̃t sɛ̃k"}
+      - {show: "66", fr: "soixante-six", ipa: "swasɑ̃t sis"}
+      - {show: "67", fr: "soixante-sept", ipa: "swasɑ̃t sɛt"}
+      - {show: "68", fr: "soixante-huit", ipa: "swasɑ̃t ɥit"}
+      - {show: "69", fr: "soixante-neuf", ipa: "swasɑ̃t nœf"}
+  - slug: "70-100"
+    name: "数字 70〜100"
+    unit: "03"
+    items:
+      - {show: "70", fr: "soixante-dix", ipa: "swasɑ̃t dis", note: "「60 ＋ 10」と言う"}
+      - {show: "71", fr: "soixante et onze", ipa: "swasɑ̃ te ɔ̃z", note: "「60 ＋ 11」。et が入る"}
+      - {show: "72", fr: "soixante-douze", ipa: "swasɑ̃t duz"}
+      - {show: "73", fr: "soixante-treize", ipa: "swasɑ̃t tʁɛz"}
+      - {show: "74", fr: "soixante-quatorze", ipa: "swasɑ̃t katɔʁz"}
+      - {show: "75", fr: "soixante-quinze", ipa: "swasɑ̃t kɛ̃z"}
+      - {show: "76", fr: "soixante-seize", ipa: "swasɑ̃t sɛz"}
+      - {show: "77", fr: "soixante-dix-sept", ipa: "swasɑ̃t disɛt", note: "「60 ＋ 17」"}
+      - {show: "78", fr: "soixante-dix-huit", ipa: "swasɑ̃t dizɥit"}
+      - {show: "79", fr: "soixante-dix-neuf", ipa: "swasɑ̃t diznœf"}
+      - {show: "80", fr: "quatre-vingts", ipa: "katʁə vɛ̃", note: "「4 × 20」。vingts の s は 80 ちょうどのときだけ付く"}
+      - {show: "81", fr: "quatre-vingt-un", ipa: "katʁə vɛ̃ œ̃", note: "et が入らず、vingt の t も読まない"}
+      - {show: "82", fr: "quatre-vingt-deux", ipa: "katʁə vɛ̃ dø"}
+      - {show: "83", fr: "quatre-vingt-trois", ipa: "katʁə vɛ̃ tʁwa"}
+      - {show: "84", fr: "quatre-vingt-quatre", ipa: "katʁə vɛ̃ katʁ"}
+      - {show: "85", fr: "quatre-vingt-cinq", ipa: "katʁə vɛ̃ sɛ̃k"}
+      - {show: "86", fr: "quatre-vingt-six", ipa: "katʁə vɛ̃ sis"}
+      - {show: "87", fr: "quatre-vingt-sept", ipa: "katʁə vɛ̃ sɛt"}
+      - {show: "88", fr: "quatre-vingt-huit", ipa: "katʁə vɛ̃ ɥit"}
+      - {show: "89", fr: "quatre-vingt-neuf", ipa: "katʁə vɛ̃ nœf"}
+      - {show: "90", fr: "quatre-vingt-dix", ipa: "katʁə vɛ̃ dis", note: "「4 × 20 ＋ 10」"}
+      - {show: "91", fr: "quatre-vingt-onze", ipa: "katʁə vɛ̃ ɔ̃z", note: "「4 × 20 ＋ 11」。81 と同じく et は入らない"}
+      - {show: "92", fr: "quatre-vingt-douze", ipa: "katʁə vɛ̃ duz"}
+      - {show: "93", fr: "quatre-vingt-treize", ipa: "katʁə vɛ̃ tʁɛz"}
+      - {show: "94", fr: "quatre-vingt-quatorze", ipa: "katʁə vɛ̃ katɔʁz"}
+      - {show: "95", fr: "quatre-vingt-quinze", ipa: "katʁə vɛ̃ kɛ̃z"}
+      - {show: "96", fr: "quatre-vingt-seize", ipa: "katʁə vɛ̃ sɛz"}
+      - {show: "97", fr: "quatre-vingt-dix-sept", ipa: "katʁə vɛ̃ disɛt"}
+      - {show: "98", fr: "quatre-vingt-dix-huit", ipa: "katʁə vɛ̃ dizɥit"}
+      - {show: "99", fr: "quatre-vingt-dix-neuf", ipa: "katʁə vɛ̃ diznœf", note: "「4 × 20 ＋ 19」"}
+      - {show: "100", fr: "cent", ipa: "sɑ̃", note: "un を付けずに cent とだけ言う"}
+  - slug: "100-1000"
+    name: "100〜1000 と大きな数"
+    unit: "06"
+    items:
+      - {show: "100", fr: "cent", ipa: "sɑ̃"}
+      - {show: "101", fr: "cent un", ipa: "sɑ̃ œ̃", note: "et は入らない。cent の t も読まない"}
+      - {show: "110", fr: "cent dix", ipa: "sɑ̃ dis"}
+      - {show: "150", fr: "cent cinquante", ipa: "sɑ̃ sɛ̃kɑ̃t"}
+      - {show: "200", fr: "deux cents", ipa: "dø sɑ̃", note: "200 ちょうどなど、後ろに数が続かないときだけ cents に s が付く"}
+      - {show: "250", fr: "deux cent cinquante", ipa: "dø sɑ̃ sɛ̃kɑ̃t", note: "後ろに数が続くので cent に s は付かない"}
+      - {show: "300", fr: "trois cents", ipa: "tʁwa sɑ̃"}
+      - {show: "600", fr: "six cents", ipa: "si sɑ̃", note: "子音の前なので six は [si]"}
+      - {show: "800", fr: "huit cents", ipa: "ɥi sɑ̃", note: "子音の前なので huit は [ɥi]"}
+      - {show: "999", fr: "neuf cent quatre-vingt-dix-neuf", ipa: "nœf sɑ̃ katʁə vɛ̃ diznœf"}
+      - {show: "1000", fr: "mille", ipa: "mil", note: "un を付けない。複数でも s は付かない"}
+      - {show: "1200", fr: "mille deux cents", ipa: "mil dø sɑ̃"}
+      - {show: "2000", fr: "deux mille", ipa: "dø mil", note: "mille には s を付けない"}
+      - {show: "10 000", fr: "dix mille", ipa: "di mil", note: "子音の前なので dix は [di]"}
+      - {show: "100 000", fr: "cent mille", ipa: "sɑ̃ mil"}
+      - {show: "1 000 000", fr: "un million", ipa: "œ̃ miljɔ̃", note: "million は名詞なので un を付ける"}
+  - slug: "ordinal"
+    name: "序数（〜番目）"
+    unit: "08"
+    items:
+      - {show: "1er", fr: "premier", ipa: "pʁəmje", ja: "1 番目（男性形）", note: "1 番目だけ形が特別"}
+      - {show: "1re", fr: "première", ipa: "pʁəmjɛʁ", ja: "1 番目（女性形）"}
+      - {show: "2e", fr: "deuxième", ipa: "døzjɛm", ja: "2 番目", note: "基本は 数 ＋ -ième。x は [z]"}
+      - {show: "3e", fr: "troisième", ipa: "tʁwazjɛm", ja: "3 番目"}
+      - {show: "4e", fr: "quatrième", ipa: "katʁijɛm", ja: "4 番目", note: "e で終わる数は e を取って -ième"}
+      - {show: "5e", fr: "cinquième", ipa: "sɛ̃kjɛm", ja: "5 番目", note: "q のあとに u を足す"}
+      - {show: "6e", fr: "sixième", ipa: "sizjɛm", ja: "6 番目"}
+      - {show: "7e", fr: "septième", ipa: "sɛtjɛm", ja: "7 番目"}
+      - {show: "8e", fr: "huitième", ipa: "ɥitjɛm", ja: "8 番目"}
+      - {show: "9e", fr: "neuvième", ipa: "nœvjɛm", ja: "9 番目", note: "f が v に変わる"}
+      - {show: "10e", fr: "dixième", ipa: "dizjɛm", ja: "10 番目"}
+      - {show: "11e", fr: "onzième", ipa: "ɔ̃zjɛm", ja: "11 番目"}
+      - {show: "20e", fr: "vingtième", ipa: "vɛ̃tjɛm", ja: "20 番目"}
+      - {show: "21e", fr: "vingt et unième", ipa: "vɛ̃ te ynjɛm", ja: "21 番目", note: "21 以上の 1 は premier ではなく unième"}
+      - {show: "100e", fr: "centième", ipa: "sɑ̃tjɛm", ja: "100 番目"}
+  - slug: "days"
+    name: "曜日"
+    unit: "03"
+    items:
+      - {show: "月曜日", fr: "lundi", ipa: "lœ̃di"}
+      - {show: "火曜日", fr: "mardi", ipa: "maʁdi"}
+      - {show: "水曜日", fr: "mercredi", ipa: "mɛʁkʁədi"}
+      - {show: "木曜日", fr: "jeudi", ipa: "ʒødi"}
+      - {show: "金曜日", fr: "vendredi", ipa: "vɑ̃dʁədi"}
+      - {show: "土曜日", fr: "samedi", ipa: "samdi", note: "e を読まずに 2 音節"}
+      - {show: "日曜日", fr: "dimanche", ipa: "dimɑ̃ʃ"}
+      - {show: "毎週月曜日に", fr: "le lundi", ipa: "lə lœ̃di", note: "le を付けると「毎週〜曜日に」。付けないと「今度の〜曜日に」"}
+  - slug: "months"
+    name: "月"
+    unit: "08"
+    items:
+      - {show: "1 月", fr: "janvier", ipa: "ʒɑ̃vje"}
+      - {show: "2 月", fr: "février", ipa: "fevʁije"}
+      - {show: "3 月", fr: "mars", ipa: "maʁs", note: "s を読む"}
+      - {show: "4 月", fr: "avril", ipa: "avʁil"}
+      - {show: "5 月", fr: "mai", ipa: "mɛ"}
+      - {show: "6 月", fr: "juin", ipa: "ʒɥɛ̃", note: "juillet と聞き分ける"}
+      - {show: "7 月", fr: "juillet", ipa: "ʒɥijɛ"}
+      - {show: "8 月", fr: "août", ipa: "ut", note: "[u] とも発音する。a は読まない", tts: en août}
+      - {show: "9 月", fr: "septembre", ipa: "sɛptɑ̃bʁ", note: "p を読む"}
+      - {show: "10 月", fr: "octobre", ipa: "ɔktɔbʁ"}
+      - {show: "11 月", fr: "novembre", ipa: "nɔvɑ̃bʁ"}
+      - {show: "12 月", fr: "décembre", ipa: "desɑ̃bʁ"}
+      - {show: "5 月に", fr: "en mai", ipa: "ɑ̃ mɛ", note: "「〜月に」は en ＋ 月"}
+  - slug: "seasons"
+    name: "季節"
+    unit: "08"
+    items:
+      - {show: "春", fr: "le printemps", ipa: "lə pʁɛ̃tɑ̃"}
+      - {show: "夏", fr: "l'été", ipa: "lete"}
+      - {show: "秋", fr: "l'automne", ipa: "lotɔn", note: "m は読まない"}
+      - {show: "冬", fr: "l'hiver", ipa: "livɛʁ"}
+      - {show: "春に", fr: "au printemps", ipa: "o pʁɛ̃tɑ̃", note: "春だけ au。子音で始まるため"}
+      - {show: "夏に", fr: "en été", ipa: "ɑ̃ nete", note: "リエゾン。母音で始まる季節は en"}
+      - {show: "秋に", fr: "en automne", ipa: "ɑ̃ notɔn", note: "リエゾン"}
+      - {show: "冬に", fr: "en hiver", ipa: "ɑ̃ nivɛʁ", note: "h は読まないのでリエゾンする"}
+  - slug: "dates"
+    name: "日付"
+    unit: "08"
+    items:
+      - {show: "5 月 1 日", fr: "le premier mai", ipa: "lə pʁəmje mɛ", note: "1 日だけ序数 premier。ほかは普通の数"}
+      - {show: "1 月 2 日", fr: "le deux janvier", ipa: "lə dø ʒɑ̃vje"}
+      - {show: "3 月 3 日", fr: "le trois mars", ipa: "lə tʁwa maʁs"}
+      - {show: "2 月 6 日", fr: "le six février", ipa: "lə si fevʁije", note: "子音の前なので six は [si]"}
+      - {show: "4 月 8 日", fr: "le huit avril", ipa: "lə ɥi tavʁil", note: "huit の前では le を l' にしない。t は次の母音とつながる"}
+      - {show: "10 月 9 日", fr: "le neuf octobre", ipa: "lə nœ fɔktɔbʁ", note: "f は [v] にならない（[v] になるのは ans / heures の前だけ）"}
+      - {show: "11 月 11 日", fr: "le onze novembre", ipa: "lə ɔ̃z nɔvɑ̃bʁ", note: "onze の前では le を l' にしない"}
+      - {show: "7 月 14 日", fr: "le quatorze juillet", ipa: "lə katɔʁz ʒɥijɛ", note: "フランスの革命記念日"}
+      - {show: "8 月 15 日", fr: "le quinze août", ipa: "lə kɛ̃ zut"}
+      - {show: "9 月 17 日", fr: "le dix-sept septembre", ipa: "lə disɛt sɛptɑ̃bʁ"}
+      - {show: "4 月 20 日", fr: "le vingt avril", ipa: "lə vɛ̃ tavʁil", note: "リエゾンで vingt の t を読む"}
+      - {show: "6 月 21 日", fr: "le vingt et un juin", ipa: "lə vɛ̃ te œ̃ ʒɥɛ̃"}
+      - {show: "12 月 25 日", fr: "le vingt-cinq décembre", ipa: "lə vɛ̃t sɛ̃k desɑ̃bʁ"}
+      - {show: "12 月 31 日", fr: "le trente et un décembre", ipa: "lə tʁɑ̃ te œ̃ desɑ̃bʁ"}
+      - {show: "2027 年 1 月 1 日", fr: "le premier janvier deux mille vingt-sept", ipa: "lə pʁəmje ʒɑ̃vje dø mil vɛ̃t sɛt", note: "日 → 月 → 年 の順"}
+      - {show: "今日は 10 月 4 日", fr: "Aujourd'hui, c'est le quatre octobre.", ipa: "oʒuʁdɥi sɛ lə ka tʁɔktɔbʁ", ja: "今日は 10 月 4 日です。"}
+  - slug: "time"
+    name: "時刻"
+    unit: "03"
+    items:
+      - {show: "？", fr: "Quelle heure est-il ?", ipa: "kɛ lœ ʁɛ til", ja: "何時ですか？"}
+      - {show: "1:00", fr: "Il est une heure.", ipa: "il ɛ ty nœʁ", ja: "1 時です。", note: "heure は女性名詞なので une。est の t がリエゾン"}
+      - {show: "2:00", fr: "Il est deux heures.", ipa: "il ɛ dø zœʁ", ja: "2 時です。", note: "douze heures [du zœʁ]（12 時）と聞き分ける"}
+      - {show: "3:00", fr: "Il est trois heures.", ipa: "il ɛ tʁwa zœʁ", ja: "3 時です。"}
+      - {show: "4:00", fr: "Il est quatre heures.", ipa: "il ɛ ka tʁœʁ", ja: "4 時です。", note: "アンシェヌマン"}
+      - {show: "5:00", fr: "Il est cinq heures.", ipa: "il ɛ sɛ̃ kœʁ", ja: "5 時です。"}
+      - {show: "6:00", fr: "Il est six heures.", ipa: "il ɛ si zœʁ", ja: "6 時です。", note: "x を [z] と読んでつなげる"}
+      - {show: "7:00", fr: "Il est sept heures.", ipa: "il ɛ sɛ tœʁ", ja: "7 時です。"}
+      - {show: "8:00", fr: "Il est huit heures.", ipa: "il ɛ ɥi tœʁ", ja: "8 時です。"}
+      - {show: "9:00", fr: "Il est neuf heures.", ipa: "il ɛ nœ vœʁ", ja: "9 時です。", note: "f が [v] になる"}
+      - {show: "10:00", fr: "Il est dix heures.", ipa: "il ɛ di zœʁ", ja: "10 時です。"}
+      - {show: "11:00", fr: "Il est onze heures.", ipa: "il ɛ ɔ̃ zœʁ", ja: "11 時です。"}
+      - {show: "12:00", fr: "Il est midi.", ipa: "il ɛ midi", ja: "昼の 12 時です。", note: "昼の 12 時は douze heures より midi が普通"}
+      - {show: "0:00", fr: "Il est minuit.", ipa: "il ɛ minɥi", ja: "夜の 12 時です。"}
+      - {show: "8:30", fr: "Il est huit heures et demie.", ipa: "il ɛ ɥi tœʁ e dəmi", ja: "8 時半です。", note: "heure が女性名詞なので demie"}
+      - {show: "9:15", fr: "Il est neuf heures et quart.", ipa: "il ɛ nœ vœʁ e kaʁ", ja: "9 時 15 分です。"}
+      - {show: "10:45", fr: "Il est onze heures moins le quart.", ipa: "il ɛ ɔ̃ zœʁ mwɛ̃ lə kaʁ", ja: "10 時 45 分です。", note: "「11 時 − 15 分」と言う。10 時と聞き間違えない"}
+      - {show: "7:10", fr: "Il est sept heures dix.", ipa: "il ɛ sɛ tœʁ dis", ja: "7 時 10 分です。"}
+      - {show: "6:50", fr: "Il est sept heures moins dix.", ipa: "il ɛ sɛ tœʁ mwɛ̃ dis", ja: "6 時 50 分です。", note: "「7 時 − 10 分」と言う"}
+      - {show: "12:30", fr: "Il est midi et demi.", ipa: "il ɛ midi e dəmi", ja: "12 時半です。", note: "midi は男性名詞なので demi（e なし）"}
+      - {show: "0:30", fr: "Il est minuit et demi.", ipa: "il ɛ minɥi e dəmi", ja: "夜中の 0 時半です。"}
+      - {show: "13:05", fr: "Il est treize heures cinq.", ipa: "il ɛ tʁɛ zœʁ sɛ̃k", ja: "13 時 5 分です。", note: "駅・店・テレビなどの公式な時刻は 24 時間制"}
+      - {show: "14:30", fr: "Il est quatorze heures trente.", ipa: "il ɛ katɔʁ zœʁ tʁɑ̃t", ja: "14 時 30 分です。", note: "24 時間制では et demie ではなく trente"}
+      - {show: "18:45", fr: "Il est dix-huit heures quarante-cinq.", ipa: "il ɛ dizɥi tœʁ kaʁɑ̃t sɛ̃k", ja: "18 時 45 分です。", note: "24 時間制では moins le quart ではなく quarante-cinq"}
+      - {show: "20:00", fr: "Il est vingt heures.", ipa: "il ɛ vɛ̃ tœʁ", ja: "20 時です。", note: "リエゾンで vingt の t を読む"}
+      - {show: "21:15", fr: "Il est vingt et une heures quinze.", ipa: "il ɛ vɛ̃ te y nœʁ kɛ̃z", ja: "21 時 15 分です。", note: "heure が女性名詞なので une"}
+  - slug: "prices"
+    name: "値段"
+    unit: "06"
+    items:
+      - {show: "？", fr: "C'est combien ?", ipa: "sɛ kɔ̃bjɛ̃", ja: "いくらですか？"}
+      - {show: "1 €", fr: "un euro", ipa: "œ̃ nøʁo", note: "リエゾン"}
+      - {show: "2 €", fr: "deux euros", ipa: "dø zøʁo", note: "リエゾン。s は読まないが前の x を [z] でつなぐ"}
+      - {show: "3 €", fr: "trois euros", ipa: "tʁwa zøʁo", note: "リエゾン"}
+      - {show: "5 €", fr: "cinq euros", ipa: "sɛ̃ køʁo"}
+      - {show: "6 €", fr: "six euros", ipa: "si zøʁo"}
+      - {show: "8 €", fr: "huit euros", ipa: "ɥi tøʁo"}
+      - {show: "9 €", fr: "neuf euros", ipa: "nœ føʁo", note: "f は [v] にならない（[v] になるのは ans / heures の前だけ）"}
+      - {show: "10 €", fr: "dix euros", ipa: "di zøʁo"}
+      - {show: "20 €", fr: "vingt euros", ipa: "vɛ̃ tøʁo", note: "リエゾンで vingt の t を読む"}
+      - {show: "100 €", fr: "cent euros", ipa: "sɑ̃ tøʁo", note: "リエゾンで cent の t を読む"}
+      - {show: "0,50 €", fr: "cinquante centimes", ipa: "sɛ̃kɑ̃t sɑ̃tim", note: "1 ユーロ未満は centimes"}
+      - {show: "1,20 €", fr: "un euro vingt", ipa: "œ̃ nøʁo vɛ̃", note: "セントの centimes は省略するのが普通"}
+      - {show: "3,50 €", fr: "trois euros cinquante", ipa: "tʁwa zøʁo sɛ̃kɑ̃t"}
+      - {show: "12,80 €", fr: "douze euros quatre-vingts", ipa: "du zøʁo katʁə vɛ̃"}
+      - {show: "29,99 €", fr: "vingt-neuf euros quatre-vingt-dix-neuf", ipa: "vɛ̃t nœ føʁo katʁə vɛ̃ diznœf"}
+  - slug: "phone"
+    name: "電話番号"
+    unit: "03"
+    items:
+      - {show: "06 12 34 56 78", fr: "zéro six, douze, trente-quatre, cinquante-six, soixante-dix-huit", ipa: "zeʁo sis duz tʁɑ̃t katʁ sɛ̃kɑ̃t sis swasɑ̃t dizɥit", note: "2 桁ずつ区切って読む。06・07 で始まるのは携帯電話"}
+      - {show: "01 45 67 89 10", fr: "zéro un, quarante-cinq, soixante-sept, quatre-vingt-neuf, dix", ipa: "zeʁo œ̃ kaʁɑ̃t sɛ̃k swasɑ̃t sɛt katʁə vɛ̃ nœf dis", note: "01 はパリ周辺の固定電話"}
+      - {show: "07 21 80 93 05", fr: "zéro sept, vingt et un, quatre-vingts, quatre-vingt-treize, zéro cinq", ipa: "zeʁo sɛt vɛ̃ te œ̃ katʁə vɛ̃ katʁə vɛ̃ tʁɛz zeʁo sɛ̃k"}
+      - {show: "06 70 11 99 16", fr: "zéro six, soixante-dix, onze, quatre-vingt-dix-neuf, seize", ipa: "zeʁo sis swasɑ̃t dis ɔ̃z katʁə vɛ̃ diznœf sɛz", note: "soixante-dix（70）を 60 と 10 に分けて聞かない"}
+      - {show: "04 72 15 33 61", fr: "zéro quatre, soixante-douze, quinze, trente-trois, soixante et un", ipa: "zeʁo katʁ swasɑ̃t duz kɛ̃z tʁɑ̃t tʁwa swasɑ̃ te œ̃"}
+  - slug: "age-year"
+    name: "年齢・年"
+    unit: "01"
+    items:
+      - {show: "？", fr: "Tu as quel âge ?", ipa: "ty a kɛ lɑʒ", ja: "何歳？"}
+      - {show: "2 歳", fr: "J'ai deux ans.", ipa: "ʒe dø zɑ̃", ja: "2 歳です。", note: "リエゾン。年齢は avoir ＋ 数 ＋ ans（ans は省略しない）"}
+      - {show: "9 歳", fr: "J'ai neuf ans.", ipa: "ʒe nœ vɑ̃", ja: "9 歳です。", note: "f が [v] になる"}
+      - {show: "18 歳", fr: "J'ai dix-huit ans.", ipa: "ʒe dizɥi tɑ̃", ja: "18 歳です。"}
+      - {show: "20 歳", fr: "J'ai vingt ans.", ipa: "ʒe vɛ̃ tɑ̃", ja: "20 歳です。", note: "リエゾンで vingt の t を読む"}
+      - {show: "35 歳", fr: "J'ai trente-cinq ans.", ipa: "ʒe tʁɑ̃t sɛ̃ kɑ̃", ja: "35 歳です。"}
+      - {show: "2026 年に", fr: "en deux mille vingt-six", ipa: "ɑ̃ dø mil vɛ̃t sis", ja: "2026 年に", note: "年は普通の数と同じに読む。「〜年に」は en"}
+      - {show: "1998 年に", fr: "en mille neuf cent quatre-vingt-dix-huit", ipa: "ɑ̃ mil nœf sɑ̃ katʁə vɛ̃ dizɥit", ja: "1998 年に"}

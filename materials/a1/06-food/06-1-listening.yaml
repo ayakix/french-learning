@@ -1,0 +1,33 @@
+# 単元 06 聞き取り 1：パン屋での買い物（DELF A1 の「短い会話」形式）
+# 店での決まり文句（Vous désirez ? / Et avec ceci ? / C'est tout. / Ça fait combien ?）を、実際の流れの中で聞かせる。
+# DELF でよく問われる「買った物・値段・支払い方法」を質問にしている。
+unit: "06"
+title: "パン屋で買い物"
+type: "dialogue"
+situation: "朝のパン屋で、男性客が女性の店員に注文する"
+speakers:
+  client: { name: "le client" }
+  vendeuse: { name: "la vendeuse", voice: "claire" }
+lines:
+  - { speaker: "vendeuse", voice: "claire", fr: "Bonjour monsieur, vous désirez ?", ja: "いらっしゃいませ、何になさいますか？" }
+  - { speaker: "client", fr: "Bonjour ! Je voudrais une baguette et deux croissants, s'il vous plaît.", ja: "こんにちは！バゲット 1 本とクロワッサンを 2 つください。" }
+  - { speaker: "vendeuse", voice: "claire", fr: "Voilà. Et avec ceci ?", ja: "どうぞ。ほかに何か？" }
+  - { speaker: "client", fr: "Vous avez des tartes aux pommes ?", ja: "りんごのタルトはありますか？" }
+  - { speaker: "vendeuse", voice: "claire", fr: "Ah non, désolée, il n'y a pas de tartes aujourd'hui. Mais j'ai des gâteaux au chocolat.", ja: "あいにく、今日はタルトがないんです。でもチョコレートケーキならあります。" }
+  - { speaker: "client", fr: "Alors, un gâteau au chocolat. C'est tout. Ça fait combien ?", ja: "じゃあ、チョコレートケーキを 1 つ。以上です。いくらですか？" }
+  - { speaker: "vendeuse", voice: "claire", fr: "Ça fait six euros quarante.", ja: "6 ユーロ 40 セントです。" }
+  - { speaker: "client", fr: "Je peux payer par carte ?", ja: "カードで払えますか？" }
+  - { speaker: "vendeuse", voice: "claire", fr: "Oui, bien sûr. Merci et bonne journée !", ja: "はい、もちろん。ありがとうございます、良い一日を！" }
+questions:
+  - q: "Qu'est-ce que l'homme achète d'abord ?"
+    q_ja: "男性が最初に頼んだ物は？"
+    choices: ["Une baguette et deux croissants", "Deux baguettes et un croissant", "Une baguette et une tarte"]
+    answer: 0
+  - q: "Combien est-ce qu'il paie ?"
+    q_ja: "男性はいくら払う？"
+    choices: ["4,60 €", "6,40 €", "16,40 €"]
+    answer: 1
+  - q: "Comment est-ce qu'il paie ?"
+    q_ja: "男性はどうやって払う？"
+    choices: ["En espèces", "Par chèque", "Par carte"]
+    answer: 2

@@ -1,0 +1,28 @@
+# 単元 04 聞き取り 3：留守番電話のメッセージ（DELF A1 の定番形式）
+# 「何をするか・何曜日・何時・どこで・電話番号」を 1 本に詰めている。DELF の留守電問題で問われる情報がこの組み合わせのため。
+unit: "04"
+title: "テニスのお誘い"
+type: "voicemail"
+situation: "ユゴーが友達のサラの留守番電話に、土曜日のテニスの誘いを残す"
+speakers:
+  hugo: { name: "Hugo" }
+lines:
+  - { speaker: "hugo", fr: "Salut Sarah, c'est Hugo !", ja: "やあ、サラ。ユゴーだよ！" }
+  - { speaker: "hugo", fr: "Samedi, je joue au tennis avec Marc et Camille, au club de la rue Victor Hugo.", ja: "土曜日、マルクとカミーユと、ヴィクトル・ユゴー通りのクラブでテニスをするんだ。" }
+  - { speaker: "hugo", fr: "On commence à dix heures et demie.", ja: "10 時半に始めるよ。" }
+  - { speaker: "hugo", fr: "Tu aimes le tennis, non ? Tu joues avec nous ?", ja: "テニス好きだよね？一緒にやらない？" }
+  - { speaker: "hugo", fr: "Après le match, on mange ensemble. C'est sympa !", ja: "試合のあとはみんなで食事するんだ。楽しいよ！" }
+  - { speaker: "hugo", fr: "Mon numéro, c'est le zéro six, quarante-deux, dix-huit, soixante-quinze, trente. À samedi !", ja: "僕の番号は 06 42 18 75 30。じゃあ土曜日に！" }
+questions:
+  - q: "Hugo joue à quel sport samedi ?"
+    q_ja: "ユゴーは土曜日に何のスポーツをする？"
+    choices: ["au football", "au tennis", "au basket"]
+    answer: 1
+  - q: "Ça commence à quelle heure ?"
+    q_ja: "何時に始まる？"
+    choices: ["10 h", "10 h 30", "11 h 30"]
+    answer: 1
+  - q: "Quel est le numéro de Hugo ?"
+    q_ja: "ユゴーの電話番号は？"
+    choices: ["06 42 18 75 30", "06 42 18 65 30", "06 52 18 75 30"]
+    answer: 0

@@ -1,0 +1,144 @@
+# 単元 08 予定と天気 の 1 文リーディング（Web アプリのリーディング画面のデータ）
+# 天気の表現（il fait / il pleut）と近接未来（aller + 不定詞）を中心に、易しい順に並べている。
+# 週末の誘い・旅行の計画・天気予報・駅の掲示など、DELF A1 で読み聞きしそうな場面に寄せた。
+# 文法は単元 08 までの範囲（07 の est-ce que・疑問詞まで）だけを使う。
+unit: "08"
+title: "予定と天気"
+sentences:
+  - fr: "Aujourd'hui, il fait très beau."
+    ja: "今日はとてもいい天気です。"
+    grammar: "il fait + 形容詞（天気）"
+    words:
+      - { w: "aujourd'hui", ja: "今日" }
+      - { w: "il fait beau", ja: "天気がいい" }
+  - fr: "Il pleut, mais il fait doux."
+    ja: "雨が降っていますが、暖かいです。"
+    grammar: "il pleut / il fait + 形容詞"
+    words:
+      - { w: "il pleut", ja: "雨が降っている" }
+      - { w: "mais", ja: "でも" }
+      - { w: "il fait doux", ja: "暖かい・穏やかだ" }
+  - fr: "Tu es libre samedi soir ?"
+    ja: "土曜の夜、空いてる？"
+    grammar: "être libre（誘う前の確認）"
+    words:
+      - { w: "libre", ja: "空いている" }
+      - { w: "samedi soir", ja: "土曜の夜" }
+  - fr: "Demain, il va pleuvoir à Paris."
+    ja: "明日、パリは雨が降るでしょう。"
+    grammar: "近接未来 il va + 不定詞"
+    words:
+      - { w: "demain", ja: "明日" }
+      - { w: "il va pleuvoir", ja: "雨が降りそうだ（pleut の不定詞は pleuvoir）" }
+  - fr: "En hiver, il neige beaucoup à la montagne."
+    ja: "冬は山でたくさん雪が降ります。"
+    grammar: "en + 季節 / il neige"
+    words:
+      - { w: "en hiver", ja: "冬に" }
+      - { w: "il neige", ja: "雪が降る" }
+      - { w: "à la montagne", ja: "山で" }
+  - fr: "Le printemps, c'est ma saison préférée."
+    ja: "春は私のいちばん好きな季節です。"
+    grammar: "名詞, c'est ...（話題を前に出す）"
+    words:
+      - { w: "le printemps", ja: "春" }
+      - { w: "une saison", ja: "季節" }
+      - { w: "préférée", ja: "いちばん好きな（saison に合わせて女性形）" }
+  - fr: "Il fait quinze degrés à Lyon ce matin."
+    ja: "今朝、リヨンは 15 度です。"
+    grammar: "il fait + 数 + degrés（気温）"
+    words:
+      - { w: "quinze", ja: "15" }
+      - { w: "un degré", ja: "（温度の）度" }
+      - { w: "ce matin", ja: "今朝" }
+  - fr: "Qu'est-ce que tu vas faire ce week-end ?"
+    ja: "今週末は何をするの？"
+    grammar: "qu'est-ce que + 近接未来"
+    words:
+      - { w: "qu'est-ce que", ja: "何を" }
+      - { w: "tu vas faire", ja: "するつもり（aller + 不定詞）" }
+      - { w: "ce week-end", ja: "今週末" }
+  - fr: "Je vais partir en vacances la semaine prochaine."
+    ja: "来週、休暇に出かけます。"
+    grammar: "近接未来 je vais + 不定詞"
+    words:
+      - { w: "je vais partir", ja: "出かけるつもり" }
+      - { w: "en vacances", ja: "休暇に" }
+      - { w: "la semaine prochaine", ja: "来週" }
+  - fr: "Bonne idée, on va à la plage dimanche !"
+    ja: "いいね、日曜は浜辺に行こう！"
+    grammar: "on va à + 場所（誘いに乗る）"
+    words:
+      - { w: "bonne idée", ja: "いい考え・いいね" }
+      - { w: "on va", ja: "私たちは行く（on = nous の口語）" }
+      - { w: "une plage", ja: "浜辺" }
+  - fr: "Désolé, je ne peux pas, je suis occupé ce soir."
+    ja: "ごめん、行けないんだ。今晩は忙しくて。"
+    grammar: "ne ... pas + pouvoir（断る）"
+    words:
+      - { w: "désolé", ja: "ごめん（女性なら désolée）" }
+      - { w: "je ne peux pas", ja: "できない" }
+      - { w: "occupé", ja: "忙しい" }
+  - fr: "En automne, il y a souvent du vent et de la pluie."
+    ja: "秋はよく風が吹いて雨が降ります。"
+    grammar: "il y a + 部分冠詞（天気）"
+    words:
+      - { w: "en automne", ja: "秋に" }
+      - { w: "souvent", ja: "よく・しばしば" }
+      - { w: "du vent", ja: "風" }
+      - { w: "de la pluie", ja: "雨" }
+  - fr: "Cet été, je vais aller à la mer avec ma famille."
+    ja: "この夏は家族と海に行きます。"
+    grammar: "近接未来 je vais aller（行くつもり）"
+    words:
+      - { w: "cet été", ja: "この夏（母音の前なので cet）" }
+      - { w: "je vais aller", ja: "行くつもり（aller が 2 回続いてよい）" }
+      - { w: "à la mer", ja: "海へ" }
+  - fr: "Je vais acheter un billet d'avion pour Tokyo."
+    ja: "東京行きの航空券を買うつもりです。"
+    grammar: "近接未来 / pour + 行き先"
+    words:
+      - { w: "un billet d'avion", ja: "航空券" }
+      - { w: "pour", ja: "〜行きの" }
+  - fr: "Mes parents vont prendre le train pour Nice demain matin."
+    ja: "両親は明日の朝、ニース行きの電車に乗ります。"
+    grammar: "近接未来 ils vont + 不定詞"
+    words:
+      - { w: "vont", ja: "aller の ils / elles の形" }
+      - { w: "prendre le train", ja: "電車に乗る" }
+      - { w: "demain matin", ja: "明日の朝" }
+  - fr: "Il va pleuvoir, alors je vais prendre mon parapluie."
+    ja: "雨が降りそうだから、傘を持っていきます。"
+    grammar: "近接未来 + alors（だから）"
+    words:
+      - { w: "alors", ja: "だから" }
+      - { w: "prendre", ja: "持っていく" }
+      - { w: "un parapluie", ja: "傘" }
+  - fr: "Est-ce que tu vas partir à l'étranger cet été ?"
+    ja: "この夏は外国に行くの？"
+    grammar: "est-ce que + 近接未来"
+    words:
+      - { w: "est-ce que", ja: "〜か？（疑問文を作る）" }
+      - { w: "à l'étranger", ja: "外国へ" }
+  - fr: "Nous allons rester à la maison parce qu'il fait trop froid."
+    ja: "寒すぎるので、家にいるつもりです。"
+    grammar: "近接未来 nous allons + 不定詞 / parce que"
+    words:
+      - { w: "nous allons rester", ja: "とどまるつもり" }
+      - { w: "à la maison", ja: "家に" }
+      - { w: "parce qu'", ja: "なぜなら（母音の前で qu'）" }
+      - { w: "trop", ja: "〜すぎる" }
+  - fr: "Le train pour Marseille va partir dans cinq minutes, voie 3."
+    ja: "マルセイユ行きの電車は 5 分後に 3 番線から出発します。"
+    grammar: "近接未来 / dans + 時間（〜後に）"
+    words:
+      - { w: "dans cinq minutes", ja: "5 分後に" }
+      - { w: "une voie", ja: "〜番線" }
+  - fr: "Pendant les vacances de Noël, ils vont faire du ski en Suisse."
+    ja: "クリスマス休暇の間、彼らはスイスでスキーをします。"
+    grammar: "近接未来 / faire du + スポーツ"
+    words:
+      - { w: "pendant", ja: "〜の間" }
+      - { w: "les vacances de Noël", ja: "クリスマス休暇" }
+      - { w: "faire du ski", ja: "スキーをする" }
+      - { w: "en Suisse", ja: "スイスで（女性名詞の国は en）" }
