@@ -58,6 +58,7 @@ total_minutes: 0
   - まとめて生成する前に `scripts/gen-audio --dry-run <yaml>` で件数と消費クレジットを見積もる
   - 単元 01〜10 の単語・1 文リーディング・聞き取りと、`materials/a1/common/`（数字・動詞の活用）は 2026-10-04 にまとめて作成済み。形式は各 YAML の先頭のコメントを参照
   - 同日に、単語の例文（vocab の `ex`）、DELF 形式の読む文書（`*-document.yaml`、各単元 2 本）、DELF A1 の聞き取り模試 2 回分（`materials/a1/11-delf/`）も追加
+  - A2 は単語（`materials/a2/<単元>/`、927 語・例文付き）だけ作り置き済み。単元の番号は A1 の続きの 12〜23（Web の URL が単元の番号だけで決まるため）。会話・リーディングなどは A1 で形式を確かめてから作る
 - 聞き比べ（ミニマルペア）の練習は `*-contrast.yaml` を 1 つ追加するだけで、画面 `/contrast/<slug>` と CLI のクイズが増える（形式は `materials/a1/00-pronunciation/00-1-e-contrast.yaml` を参照）
 - Web の画面を作ったり変えたりしたら、ユーザーに渡す前に headless Chrome でスクリーンショットを撮って見た目を確認する
   - `"/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" --headless=new --window-size=800,900 --screenshot=<scratchpad>/x.png <URL>`

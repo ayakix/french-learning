@@ -1,0 +1,106 @@
+# 単元 16 健康と体 の単語（Web アプリの単語画面 /vocab/16 のデータ。A2）
+# 病院・薬局で症状を説明し、アドバイスをもらう・するのに必要な語を選んだ。DELF A2 の会話（ロールプレイ）でよく出る場面のため。
+# 体の部位は avoir mal à（au / à la / à l' / aux）の形で覚えると、そのまま症状を言えるので、例文の多くをこの形にした。
+# アドバイスは il faut / devoir + 不定詞・命令形を、症状の期間は depuis を例文で使い、単語と一緒にこの単元の文法に慣れるようにした。
+# 名詞は不定冠詞 un / une を付けて読ませる（性を音で一緒に覚えるため）。病名や数えられないものは定冠詞・部分冠詞にした。
+unit: "16"
+title: "健康と体"
+groups:
+  - name: "体の部位"
+    words:
+      - { fr: "un corps", ipa: "œ̃ kɔʁ", ja: "体", pos: "名詞", g: "m", note: "単数でも s で終わる。s は読まない", ex: { fr: "Il faut écouter son corps.", ja: "自分の体の声に耳を傾けなければいけません。" } }
+      - { fr: "une tête", ipa: "yn tɛt", ja: "頭", pos: "名詞", g: "f", ex: { fr: "J'ai mal à la tête depuis ce matin.", ja: "今朝から頭が痛いです。" } }
+      - { fr: "une oreille", ipa: "yn ɔʁɛj", ja: "耳", pos: "名詞", g: "f", note: "母音で始まるので à l'oreille", ex: { fr: "Mon fils a mal à l'oreille droite.", ja: "息子は右の耳が痛いです。" } }
+      - { fr: "une dent", ipa: "yn dɑ̃", ja: "歯", pos: "名詞", g: "f", note: "歯が痛いは複数で avoir mal aux dents", ex: { fr: "Elle a mal aux dents depuis deux jours.", ja: "彼女は 2 日前から歯が痛いです。" } }
+      - { fr: "une gorge", ipa: "yn ɡɔʁʒ", ja: "のど", pos: "名詞", g: "f", ex: { fr: "J'ai mal à la gorge, je ne peux pas parler.", ja: "のどが痛くて話せません。" } }
+      - { fr: "une épaule", ipa: "yn epol", ja: "肩", pos: "名詞", g: "f", ex: { fr: "Il a mal à l'épaule après le tennis.", ja: "彼はテニスのあと肩が痛いです。" } }
+      - { fr: "un bras", ipa: "œ̃ bʁa", ja: "腕", pos: "名詞", g: "m", note: "複数も des bras（もとから s で終わる）", ex: { fr: "Levez le bras gauche, s'il vous plaît.", ja: "左腕を上げてください。" } }
+      - { fr: "une main", ipa: "yn mɛ̃", ja: "手", pos: "名詞", g: "f", note: "自分の体の部分には所有形容詞でなく定冠詞を使う（se laver les mains）", ex: { fr: "Lave-toi les mains avant de manger.", ja: "食べる前に手を洗いなさい。" } }
+      - { fr: "un doigt", ipa: "œ̃ dwa", ja: "指", pos: "名詞", g: "m", note: "g も t も読まない", ex: { fr: "Montrez-moi votre doigt, s'il vous plaît.", ja: "指を見せてください。" } }
+      - { fr: "un dos", ipa: "œ̃ do", ja: "背中・腰", pos: "名詞", g: "m", note: "「腰が痛い」も ventre ではなく avoir mal au dos で言う", ex: { fr: "Mon père a souvent mal au dos.", ja: "父はよく腰が痛くなります。" } }
+      - { fr: "un ventre", ipa: "œ̃ vɑ̃tʁ", ja: "お腹", pos: "名詞", g: "m", ex: { fr: "Tu as mal au ventre ? Ne mange pas trop.", ja: "お腹が痛いの？ 食べすぎないでね。" } }
+      - { fr: "une jambe", ipa: "yn ʒɑ̃b", ja: "脚", pos: "名詞", g: "f", ex: { fr: "Après la course, j'ai mal aux jambes.", ja: "走ったあと、脚が痛いです。" } }
+      - { fr: "un genou", ipa: "œ̃ ʒənu", ja: "ひざ", pos: "名詞", g: "m", pl: "des genoux", note: "複数は x を付ける例外の語", ex: { fr: "Ma grand-mère a mal aux genoux quand il pleut.", ja: "祖母は雨が降るとひざが痛みます。" } }
+      - { fr: "un pied", ipa: "œ̃ pje", ja: "足（くるぶしから下）", pos: "名詞", g: "m", note: "d は読まない。脚全体は une jambe", ex: { fr: "J'ai marché trois heures, j'ai mal aux pieds.", ja: "3 時間歩いたので、足が痛いです。" } }
+      - { fr: "un cœur", ipa: "œ̃ kœʁ", ja: "心臓・心", pos: "名詞", g: "m", ex: { fr: "Mon grand-père doit faire attention à son cœur.", ja: "祖父は心臓に気をつけなければいけません。" } }
+  - name: "症状とけが"
+    words:
+      - { fr: "avoir mal à", ipa: "avwaʁ mal a", ja: "〜が痛い", pos: "表現", note: "à + le = au、à + les = aux（mal au ventre、mal aux pieds）", ex: { fr: "Quand je cours, j'ai mal au genou.", ja: "走るとひざが痛いです。" } }
+      - { fr: "un mal de tête", ipa: "œ̃ mal də tɛt", ja: "頭痛", pos: "名詞", g: "m", pl: "des maux de tête", note: "mal の複数は maux（-al → -aux）", ex: { fr: "Il a souvent des maux de tête le soir.", ja: "彼は夜によく頭痛がします。" } }
+      - { fr: "une douleur", ipa: "yn dulœʁ", ja: "痛み", pos: "名詞", g: "f", ex: { fr: "Prenez ce médicament si la douleur revient.", ja: "痛みがまた出たら、この薬を飲んでください。" } }
+      - { fr: "de la fièvre", ipa: "də la fjɛvʁ", ja: "熱", pos: "名詞", g: "f", note: "熱がある は avoir de la fièvre（数えられないので部分冠詞）", ex: { fr: "Mon fils a de la fièvre depuis hier soir.", ja: "息子は昨夜から熱があります。" } }
+      - { fr: "un rhume", ipa: "œ̃ ʁym", ja: "かぜ", pos: "名詞", g: "m", ex: { fr: "J'ai un rhume, je reste à la maison.", ja: "かぜをひいたので家にいます。" } }
+      - { fr: "la grippe", ipa: "la ɡʁip", ja: "インフルエンザ", pos: "名詞", g: "f", note: "病名は定冠詞で avoir la grippe", ex: { fr: "Il a la grippe, il doit rester couché.", ja: "彼はインフルエンザなので、寝ていなければいけません。" } }
+      - { fr: "une toux", ipa: "yn tu", ja: "せき", pos: "名詞", g: "f", note: "x は読まない", ex: { fr: "Ce sirop est bon pour la toux.", ja: "このシロップはせきに効きます。" } }
+      - { fr: "tousser", ipa: "tuse", ja: "せきをする", pos: "動詞", ex: { fr: "Elle tousse beaucoup depuis une semaine.", ja: "彼女は 1 週間前からせきがひどいです。" } }
+      - { fr: "avoir le nez qui coule", ipa: "avwaʁ lə ne ki kul", ja: "鼻水が出る", pos: "表現", note: "直訳は「流れる鼻を持っている」", ex: { fr: "J'ai le nez qui coule et mal à la tête.", ja: "鼻水が出て、頭が痛いです。" } }
+      - { fr: "avoir mal au cœur", ipa: "avwaʁ mal o kœʁ", ja: "吐き気がする", pos: "表現", note: "「心臓が痛い」ではない。cœur はここでは胃のあたりのこと", ex: { fr: "En voiture, j'ai souvent mal au cœur.", ja: "車の中ではよく気分が悪くなります。" } }
+      - { fr: "vomir", ipa: "vɔmiʁ", ja: "吐く", pos: "動詞", note: "finir と同じ活用（過去分詞 vomi）", ex: { fr: "Il a vomi deux fois cette nuit.", ja: "彼は昨夜 2 回吐きました。" } }
+      - { fr: "une allergie", ipa: "yn alɛʁʒi", ja: "アレルギー", pos: "名詞", g: "f", note: "〜のアレルギーは une allergie à", ex: { fr: "J'ai une allergie aux chats.", ja: "私は猫アレルギーです。" } }
+      - { fr: "se blesser", ipa: "sə blese", ja: "けがをする", pos: "動詞", note: "代名動詞なので複合過去は être", ex: { fr: "Il se blesse souvent au football.", ja: "彼はサッカーでよくけがをします。" } }
+      - { fr: "se casser", ipa: "sə kase", ja: "（骨を）折る", pos: "動詞", note: "se casser la jambe のように部位には定冠詞。複合過去は être", ex: { fr: "Attention, tu vas te casser le cou !", ja: "危ない、首の骨を折るよ！" } }
+  - name: "体調と気分"
+    words:
+      - { fr: "la santé", ipa: "la sɑ̃te", ja: "健康", pos: "名詞", g: "f", ex: { fr: "Le tabac est mauvais pour la santé.", ja: "たばこは健康に悪いです。" } }
+      - { fr: "malade", ipa: "malad", ja: "病気の", pos: "形容詞", note: "女性形も同じ。「病人・患者」の名詞にもなる（un malade）", ex: { fr: "Je suis malade, je ne vais pas au travail.", ja: "具合が悪いので、仕事に行きません。" } }
+      - { fr: "en forme", ipa: "ɑ̃ fɔʁm", ja: "元気な・調子がいい", pos: "表現", note: "絶好調は en pleine forme", ex: { fr: "Ce matin, je suis en pleine forme !", ja: "今朝は絶好調です！" } }
+      - { fr: "en bonne santé", ipa: "ɑ̃ bɔn sɑ̃te", ja: "健康な", pos: "表現", ex: { fr: "Mes grands-parents sont encore en bonne santé.", ja: "祖父母はまだ元気です。" } }
+      - { fr: "se sentir", ipa: "sə sɑ̃tiʁ", ja: "（自分が）〜と感じる", pos: "動詞", note: "je me sens / nous nous sentons。過去分詞 senti", ex: { fr: "Je me sens fatigué depuis quelques jours.", ja: "数日前から疲れを感じています。" } }
+      - { fr: "aller mieux", ipa: "ale mjø", ja: "（体調が）よくなる", pos: "表現", ex: { fr: "Merci, je vais beaucoup mieux aujourd'hui.", ja: "ありがとう、今日はずっとよくなりました。" } }
+      - { fr: "enrhumé", ipa: "ɑ̃ʁyme", ja: "かぜをひいた", pos: "形容詞", f: "enrhumée", f_ipa: "ɑ̃ʁyme", tts: "enrhumé, enrhumée", note: "un rhume（かぜ）から来た語。女性形も発音は同じ", ex: { fr: "Léa est enrhumée, elle tousse un peu.", ja: "レアはかぜをひいていて、少しせきをしています。" } }
+      - { fr: "stressé", ipa: "stʁese", ja: "ストレスがたまった", pos: "形容詞", f: "stressée", f_ipa: "stʁese", tts: "stressé, stressée", ex: { fr: "Il est stressé à cause de son travail.", ja: "彼は仕事のせいでストレスがたまっています。" } }
+      - { fr: "épuisé", ipa: "epɥize", ja: "疲れ切った", pos: "形容詞", f: "épuisée", f_ipa: "epɥize", tts: "épuisé, épuisée", note: "fatigué よりも強い", ex: { fr: "Après cette semaine, je suis épuisée.", ja: "今週が終わって、私はくたくたです。" } }
+      - { fr: "faible", ipa: "fɛbl", ja: "弱い・体力がない", pos: "形容詞", ex: { fr: "Elle est encore faible après la grippe.", ja: "彼女はインフルエンザのあと、まだ体力が戻っていません。" } }
+      - { fr: "grave", ipa: "ɡʁav", ja: "重い・深刻な", pos: "形容詞", ex: { fr: "Le docteur dit que ce n'est pas grave.", ja: "医者は大したことはないと言っています。" } }
+      - { fr: "avoir sommeil", ipa: "avwaʁ sɔmɛj", ja: "眠い", pos: "表現", note: "être ではなく avoir で言う（avoir faim と同じ形）", ex: { fr: "Je n'ai pas bien dormi, j'ai sommeil.", ja: "よく眠れなかったので眠いです。" } }
+      - { fr: "avoir mauvaise mine", ipa: "avwaʁ movɛz min", ja: "顔色が悪い", pos: "表現", note: "顔色がいいは avoir bonne mine", ex: { fr: "Tu as mauvaise mine, tu dois te reposer.", ja: "顔色が悪いよ、休まなきゃ。" } }
+  - name: "病院と薬"
+    words:
+      - { fr: "un docteur", ipa: "œ̃ dɔktœʁ", ja: "医者・先生", pos: "名詞", g: "m", note: "医者への呼びかけは docteur（un médecin は呼びかけに使わない）", ex: { fr: "Bonjour docteur, je tousse depuis trois jours.", ja: "先生、3 日前からせきが出ます。" } }
+      - { fr: "un dentiste", ipa: "œ̃ dɑ̃tist", ja: "歯医者", pos: "名詞", g: "m", note: "人のところへ行くときは chez（chez le dentiste）", ex: { fr: "Tu dois aller chez le dentiste.", ja: "歯医者に行かなきゃだめだよ。" } }
+      - { fr: "un pharmacien", ipa: "œ̃ faʁmasjɛ̃", ja: "薬剤師", pos: "名詞", g: "m", note: "女性は une pharmacienne", ex: { fr: "Demande conseil au pharmacien.", ja: "薬剤師に相談してごらん。" } }
+      - { fr: "un patient", ipa: "œ̃ pasjɑ̃", ja: "患者", pos: "名詞", g: "m", note: "女性は une patiente。ti は「スィ」と読む", ex: { fr: "Le médecin a beaucoup de patients le lundi.", ja: "その医者は月曜日に患者が多いです。" } }
+      - { fr: "un cabinet médical", ipa: "œ̃ kabinɛ medikal", ja: "診療所", pos: "名詞", g: "m", note: "フランスでは、まずかかりつけ医の診療所に行く", ex: { fr: "Le cabinet médical ouvre à huit heures.", ja: "診療所は 8 時に開きます。" } }
+      - { fr: "les urgences", ipa: "le zyʁʒɑ̃s", ja: "救急外来", pos: "名詞", g: "f", note: "この意味ではいつも複数形で定冠詞を付ける", ex: { fr: "Cette nuit, nous sommes allés aux urgences.", ja: "昨夜、私たちは救急外来に行きました。" } }
+      - { fr: "une ambulance", ipa: "yn ɑ̃bylɑ̃s", ja: "救急車", pos: "名詞", g: "f", ex: { fr: "Vite, appelez une ambulance !", ja: "早く、救急車を呼んでください！" } }
+      - { fr: "un médicament", ipa: "œ̃ medikamɑ̃", ja: "薬", pos: "名詞", g: "m", note: "薬を飲むは prendre un médicament（boire は使わない）", ex: { fr: "N'oublie pas de prendre tes médicaments.", ja: "薬を飲むのを忘れないでね。" } }
+      - { fr: "une ordonnance", ipa: "yn ɔʁdɔnɑ̃s", ja: "処方箋", pos: "名詞", g: "f", ex: { fr: "Vous avez une ordonnance pour ce médicament ?", ja: "この薬の処方箋はお持ちですか？" } }
+      - { fr: "un comprimé", ipa: "œ̃ kɔ̃pʁime", ja: "錠剤", pos: "名詞", g: "m", ex: { fr: "Prenez deux comprimés le matin et le soir.", ja: "朝と晩に 2 錠ずつ飲んでください。" } }
+      - { fr: "du sirop", ipa: "dy siʁo", ja: "シロップ（薬）", pos: "名詞", g: "m", note: "p は読まない", ex: { fr: "Mon fils n'aime pas le goût du sirop.", ja: "息子はシロップの味が嫌いです。" } }
+      - { fr: "un pansement", ipa: "œ̃ pɑ̃smɑ̃", ja: "ばんそうこう・包帯", pos: "名詞", g: "m", ex: { fr: "Mets un pansement sur ton doigt.", ja: "指にばんそうこうを貼りなさい。" } }
+      - { fr: "une piqûre", ipa: "yn pikyʁ", ja: "注射・（虫の）刺し傷", pos: "名詞", g: "f", ex: { fr: "Les enfants ont souvent peur des piqûres.", ja: "子どもはよく注射を怖がります。" } }
+      - { fr: "une carte Vitale", ipa: "yn kaʁt vital", ja: "健康保険証（フランス）", pos: "名詞", g: "f", note: "病院や薬局で出す、フランスの保険証のカード", ex: { fr: "N'oubliez pas votre carte Vitale, s'il vous plaît.", ja: "保険証を忘れないでください。" } }
+      - { fr: "soigner", ipa: "swaɲe", ja: "治療する・手当てする", pos: "動詞", ex: { fr: "Ce médecin soigne bien les enfants.", ja: "この医者は子どもの治療が上手です。" } }
+      - { fr: "guérir", ipa: "ɡeʁiʁ", ja: "治る・治す", pos: "動詞", note: "finir と同じ活用（過去分詞 guéri）", ex: { fr: "Avec du repos, tu vas vite guérir.", ja: "休めばすぐに治るよ。" } }
+  - name: "アドバイスと健康的な生活"
+    words:
+      - { fr: "il faut", ipa: "il fo", ja: "〜しなければならない", pos: "表現", note: "falloir の現在形。主語はいつも il。il faut + 不定詞で、一般的な助言を言う", ex: { fr: "Il faut boire beaucoup d'eau quand on a de la fièvre.", ja: "熱があるときは水をたくさん飲まないといけません。" } }
+      - { fr: "devoir", ipa: "dəvwaʁ", ja: "〜しなければならない", pos: "動詞", note: "je dois / nous devons。過去分詞 dû。devoir + 不定詞で、相手個人への助言になる", ex: { fr: "Vous devez rester au chaud pendant trois jours.", ja: "3 日間は暖かくしていなければいけません。" } }
+      - { fr: "un conseil", ipa: "œ̃ kɔ̃sɛj", ja: "アドバイス・助言", pos: "名詞", g: "m", ex: { fr: "Je peux vous donner un conseil ?", ja: "ひとつアドバイスしてもいいですか？" } }
+      - { fr: "conseiller", ipa: "kɔ̃seje", ja: "勧める・助言する", pos: "動詞", note: "conseiller à 人 de + 不定詞", ex: { fr: "Je te conseille de dormir un peu plus.", ja: "もう少し寝たほうがいいよ。" } }
+      - { fr: "éviter", ipa: "evite", ja: "避ける", pos: "動詞", note: "〜するのを避けるは éviter de + 不定詞", ex: { fr: "Évitez le sucre et le café le soir.", ja: "夜は砂糖とコーヒーを控えてください。" } }
+      - { fr: "arrêter de", ipa: "aʁete də", ja: "〜するのをやめる", pos: "表現", note: "後ろは不定詞", ex: { fr: "Mon père doit arrêter de fumer.", ja: "父はたばこをやめなければいけません。" } }
+      - { fr: "fumer", ipa: "fyme", ja: "たばこを吸う", pos: "動詞", ex: { fr: "Ne fumez pas ici, s'il vous plaît.", ja: "ここでたばこを吸わないでください。" } }
+      - { fr: "de l'alcool", ipa: "də lalkɔl", ja: "アルコール・お酒", pos: "名詞", g: "m", note: "否定では d'alcool になる", ex: { fr: "Il ne faut pas boire d'alcool avec ce médicament.", ja: "この薬を飲んでいるときはお酒を飲んではいけません。" } }
+      - { fr: "faire attention à", ipa: "fɛʁ atɑ̃sjɔ̃ a", ja: "〜に気をつける", pos: "表現", ex: { fr: "Fais attention à ta santé !", ja: "体に気をつけてね！" } }
+      - { fr: "bouger", ipa: "buʒe", ja: "体を動かす", pos: "動詞", note: "nous bougeons（g を「ジュ」の音のままにするため e を入れる）", ex: { fr: "Il faut bouger un peu tous les jours.", ja: "毎日少し体を動かさなければいけません。" } }
+      - { fr: "faire de l'exercice", ipa: "fɛʁ də lɛɡzɛʁsis", ja: "運動する", pos: "表現", ex: { fr: "Je fais de l'exercice trois fois par semaine.", ja: "週に 3 回運動しています。" } }
+      - { fr: "manger équilibré", ipa: "mɑ̃ʒe ekilibʁe", ja: "バランスよく食べる", pos: "表現", note: "équilibré は副詞のように使い、形は変わらない", ex: { fr: "Pour être en forme, mange équilibré !", ja: "元気でいるために、バランスよく食べてね！" } }
+      - { fr: "rester au lit", ipa: "ʁɛste o li", ja: "寝ている・床につく", pos: "表現", ex: { fr: "Reste au lit et bois du thé chaud.", ja: "寝ていて、温かいお茶を飲みなさい。" } }
+      - { fr: "le sommeil", ipa: "lə sɔmɛj", ja: "睡眠", pos: "名詞", g: "m", ex: { fr: "Le sommeil est très important pour la santé.", ja: "睡眠は健康にとってとても大切です。" } }
+      - { fr: "se détendre", ipa: "sə detɑ̃dʁ", ja: "リラックスする", pos: "動詞", note: "過去分詞 détendu。命令形は détends-toi", ex: { fr: "Détends-toi, prends un bain chaud.", ja: "リラックスして、温かいお風呂に入りなさい。" } }
+      - { fr: "le stress", ipa: "lə stʁɛs", ja: "ストレス", pos: "名詞", g: "m", ex: { fr: "Le yoga est bon contre le stress.", ja: "ヨガはストレスに効きます。" } }
+      - { fr: "prendre l'air", ipa: "pʁɑ̃dʁ lɛʁ", ja: "外の空気を吸う", pos: "表現", ex: { fr: "Sors un peu, va prendre l'air !", ja: "少し外に出て、外の空気を吸ってきなよ！" } }
+  - name: "病院・お見舞いの決まり文句"
+    words:
+      - { fr: "Qu'est-ce qui ne va pas ?", ipa: "kɛs ki nə va pa", ja: "どうしたの？・どこが悪いの？", pos: "表現", ex: { fr: "Tu es tout pâle, qu'est-ce qui ne va pas ?", ja: "顔が真っ青だよ、どうしたの？" } }
+      - { fr: "Où avez-vous mal ?", ipa: "u ave vu mal", ja: "どこが痛いですか？", pos: "表現", note: "医者がよく聞く。tu なら Tu as mal où ?", ex: { fr: "Bonjour madame, où avez-vous mal ?", ja: "こんにちは、どこが痛いですか？" } }
+      - { fr: "J'ai mal ici.", ipa: "ʒe mal isi", ja: "ここが痛いです。", pos: "表現", note: "部位の名前がわからないときに指をさして使える", ex: { fr: "Regardez, docteur, j'ai mal ici.", ja: "見てください、先生、ここが痛いんです。" } }
+      - { fr: "depuis", ipa: "dəpɥi", ja: "〜前から・〜以来", pos: "前置詞", note: "今も続いていることなので、動詞は現在形（Je tousse depuis lundi.）", ex: { fr: "Je suis malade depuis lundi.", ja: "月曜日から具合が悪いです。" } }
+      - { fr: "Depuis quand ?", ipa: "dəpɥi kɑ̃", ja: "いつから？", pos: "表現", ex: { fr: "Depuis quand avez-vous de la fièvre ?", ja: "いつから熱がありますか？" } }
+      - { fr: "Depuis combien de temps ?", ipa: "dəpɥi kɔ̃bjɛ̃ də tɑ̃", ja: "どのくらい前から？", pos: "表現", note: "答えは期間で言う（depuis trois jours）", ex: { fr: "Depuis combien de temps toussez-vous ?", ja: "どのくらい前からせきが出ていますか？" } }
+      - { fr: "Ça fait mal ?", ipa: "sa fɛ mal", ja: "痛いですか？", pos: "表現", note: "faire mal は「痛みを与える」。押したときなどに使う", ex: { fr: "Et là, quand j'appuie, ça fait mal ?", ja: "では、ここを押すと痛いですか？" } }
+      - { fr: "Je ne me sens pas bien.", ipa: "ʒə nə mə sɑ̃ pa bjɛ̃", ja: "気分がよくないです。", pos: "表現", ex: { fr: "Maman, je ne me sens pas bien ce matin.", ja: "ママ、今朝は気分がよくないの。" } }
+      - { fr: "Soigne-toi bien !", ipa: "swaɲ twa bjɛ̃", ja: "お大事に！", pos: "表現", note: "代名動詞 se soigner の命令形。vous なら Soignez-vous bien !", ex: { fr: "Tu as la grippe ? Soigne-toi bien !", ja: "インフルエンザなの？ お大事にね！" } }
+      - { fr: "Bon rétablissement !", ipa: "bɔ̃ ʁetablismɑ̃", ja: "早くよくなってね！", pos: "表現", note: "メッセージやカードにもよく書く", ex: { fr: "Bon rétablissement et à bientôt au bureau !", ja: "早くよくなってね、また会社で！" } }
+      - { fr: "À tes souhaits !", ipa: "a te swɛ", ja: "（くしゃみをした人に）お大事に！", pos: "表現", note: "vous なら À vos souhaits !", ex: { fr: "Tu as éternué ? À tes souhaits !", ja: "くしゃみしたね？ お大事に！" } }

@@ -1,0 +1,113 @@
+# 単元 12 経験を語る の単語（Web アプリの単語画面 /vocab/12 のデータ。A2）
+# A1 で既に出た語（voyage, d'abord, ensuite, rester など）は入れず、出来事を順序立てて話すのに足りない語を足している。
+# 動詞は「複合過去で être を使うもの」と「avoir を使い過去分詞が不規則なもの」に分けた。この単元の文法の中心が助動詞の使い分けのため。
+# 例文はほぼすべて複合過去にしている。過去分詞の一致（elle est entrée など）・否定・疑問を、単語と一緒に耳で覚えるため。
+unit: "12"
+title: "経験を語る"
+groups:
+  - name: "複合過去で être を使う動詞"
+    words:
+      - {fr: "entrer", ipa: "ɑ̃tʁe", ja: "入る", pos: "動詞", note: "複合過去は être", ex: {fr: "Elle est entrée dans le musée à dix heures.", ja: "彼女は 10 時に美術館に入りました。"}}
+      - {fr: "sortir", ipa: "sɔʁtiʁ", ja: "出る・出かける", pos: "動詞", note: "過去分詞 sorti。複合過去は être（「〜を出す」の意味なら avoir）", ex: {fr: "Samedi soir, nous sommes sortis avec des amis.", ja: "土曜の夜、私たちは友達と出かけました。"}}
+      - {fr: "monter", ipa: "mɔ̃te", ja: "上る・乗る", pos: "動詞", note: "複合過去は être（「〜を運び上げる」の意味なら avoir）", ex: {fr: "Nous sommes montés en haut de la tour Eiffel.", ja: "私たちはエッフェル塔の上まで上りました。"}}
+      - {fr: "descendre", ipa: "desɑ̃dʁ", ja: "降りる・下りる", pos: "動詞", note: "過去分詞 descendu。複合過去は être（「〜を下ろす」の意味なら avoir）", ex: {fr: "Elles sont descendues du train à Lyon.", ja: "彼女たちはリヨンで電車を降りました。"}}
+      - {fr: "tomber", ipa: "tɔ̃be", ja: "転ぶ・落ちる", pos: "動詞", note: "複合過去は être", ex: {fr: "Je suis tombé dans l'escalier de l'hôtel.", ja: "ホテルの階段で転びました。"}}
+      - {fr: "naître", ipa: "nɛtʁ", ja: "生まれる", pos: "動詞", note: "過去分詞 né。複合過去は être", ex: {fr: "Ma nièce est née en mai.", ja: "姪は 5 月に生まれました。"}}
+      - {fr: "mourir", ipa: "muʁiʁ", ja: "死ぬ", pos: "動詞", note: "過去分詞 mort。複合過去は être", ex: {fr: "Victor Hugo est mort à Paris.", ja: "ヴィクトル・ユゴーはパリで亡くなりました。"}}
+      - {fr: "retourner", ipa: "ʁətuʁne", ja: "（もう一度）行く・戻る", pos: "動詞", note: "複合過去は être", ex: {fr: "L'année dernière, je suis retourné à Nice.", ja: "去年、またニースへ行きました。"}}
+      - {fr: "revenir", ipa: "ʁəvəniʁ", ja: "戻ってくる", pos: "動詞", note: "venir と同じ活用。過去分詞 revenu。複合過去は être", ex: {fr: "Ils sont revenus de vacances dimanche.", ja: "彼らは日曜日に休暇から戻りました。"}}
+      - {fr: "devenir", ipa: "dəvəniʁ", ja: "〜になる", pos: "動詞", note: "venir と同じ活用。過去分詞 devenu。複合過去は être", ex: {fr: "Après ce voyage, elle est devenue guide.", ja: "この旅行の後、彼女はガイドになりました。"}}
+      - {fr: "passer par", ipa: "pase paʁ", ja: "〜を通る・経由する", pos: "動詞", note: "「通る・立ち寄る」の passer は複合過去で être（時間を「過ごす」なら avoir）", ex: {fr: "Nous sommes passés par Lyon pour aller à Nice.", ja: "私たちはニースに行くのにリヨンを経由しました。"}}
+  - name: "avoir を使う動詞（過去分詞に注意）"
+    words:
+      - {fr: "voir", ipa: "vwaʁ", ja: "見る・会う", pos: "動詞", note: "過去分詞 vu", ex: {fr: "Tu as vu la mer pendant tes vacances ?", ja: "休暇中に海を見た？"}}
+      - {fr: "mettre", ipa: "mɛtʁ", ja: "置く・入れる・着る", pos: "動詞", note: "過去分詞 mis", ex: {fr: "J'ai mis mon passeport dans mon sac.", ja: "パスポートをかばんに入れました。"}}
+      - {fr: "ouvrir", ipa: "uvʁiʁ", ja: "開ける・開く", pos: "動詞", note: "過去分詞 ouvert", ex: {fr: "Le musée n'a pas ouvert lundi.", ja: "美術館は月曜日に開きませんでした。"}}
+      - {fr: "offrir", ipa: "ɔfʁiʁ", ja: "贈る", pos: "動詞", note: "過去分詞 offert（ouvrir と同じ形の変化）", ex: {fr: "J'ai offert des chocolats à ma mère.", ja: "母にチョコレートを贈りました。"}}
+      - {fr: "découvrir", ipa: "dekuvʁiʁ", ja: "見つける・初めて知る", pos: "動詞", note: "過去分詞 découvert", ex: {fr: "Nous avons découvert un petit restaurant italien.", ja: "小さなイタリアンレストランを見つけました。"}}
+      - {fr: "apprendre", ipa: "apʁɑ̃dʁ", ja: "学ぶ・知る", pos: "動詞", note: "prendre と同じ活用。過去分詞 appris", ex: {fr: "J'ai appris quelques mots d'italien.", ja: "イタリア語の単語をいくつか覚えました。"}}
+      - {fr: "vivre", ipa: "vivʁ", ja: "暮らす・経験する", pos: "動詞", note: "過去分詞 vécu", ex: {fr: "Il a vécu deux ans au Canada.", ja: "彼はカナダで 2 年間暮らしました。"}}
+      - {fr: "choisir", ipa: "ʃwaziʁ", ja: "選ぶ", pos: "動詞", note: "finir と同じ活用。過去分詞 choisi", ex: {fr: "Nous avons choisi un hôtel près de la plage.", ja: "私たちはビーチの近くのホテルを選びました。"}}
+      - {fr: "réussir", ipa: "ʁeysiʁ", ja: "成功する・合格する", pos: "動詞", note: "finir と同じ活用。過去分詞 réussi", ex: {fr: "Il a réussi son examen en juin.", ja: "彼は 6 月に試験に合格しました。"}}
+      - {fr: "goûter", ipa: "ɡute", ja: "味見する・食べてみる", pos: "動詞", ex: {fr: "Tu as déjà goûté des escargots ?", ja: "エスカルゴを食べたことある？"}}
+      - {fr: "profiter de", ipa: "pʁɔfite də", ja: "〜を楽しむ・活用する", pos: "動詞", note: "de + le は du になる", ex: {fr: "On a bien profité du beau temps.", ja: "いい天気を存分に楽しみました。"}}
+      - {fr: "dépenser", ipa: "depɑ̃se", ja: "（お金を）使う", pos: "動詞", ex: {fr: "J'ai dépensé trop d'argent à Londres.", ja: "ロンドンでお金を使いすぎました。"}}
+      - {fr: "prendre des photos", ipa: "pʁɑ̃dʁ de fɔto", ja: "写真を撮る", pos: "表現", note: "過去分詞 pris", ex: {fr: "Tu as pris beaucoup de photos ?", ja: "写真をたくさん撮った？"}}
+      - {fr: "faire la connaissance de", ipa: "fɛʁ la kɔnɛsɑ̃s də", ja: "〜と知り合う", pos: "表現", ex: {fr: "J'ai fait la connaissance de Paul à Marseille.", ja: "マルセイユでポールと知り合いました。"}}
+  - name: "旅先で見たもの・したこと"
+    words:
+      - {fr: "un paysage", ipa: "œ̃ peizaʒ", ja: "景色・風景", pos: "名詞", g: "m", ex: {fr: "Nous avons admiré de beaux paysages.", ja: "美しい景色を眺めました。"}}
+      - {fr: "une vue", ipa: "yn vy", ja: "眺め", pos: "名詞", g: "f", ex: {fr: "Nous avons eu une très belle vue sur la mer.", ja: "海がとてもきれいに見えました。"}}
+      - {fr: "un château", ipa: "œ̃ ʃato", ja: "城", pos: "名詞", g: "m", pl: "des châteaux", ex: {fr: "Nous avons visité un château de la Loire.", ja: "ロワール川流域の城を見学しました。"}}
+      - {fr: "un monument", ipa: "œ̃ mɔnymɑ̃", ja: "名所・歴史的建造物", pos: "名詞", g: "m", ex: {fr: "Elle a vu tous les monuments de Rome.", ja: "彼女はローマの名所を全部見ました。"}}
+      - {fr: "une cathédrale", ipa: "yn katedʁal", ja: "大聖堂", pos: "名詞", g: "f", ex: {fr: "Ils sont entrés dans la cathédrale de Chartres.", ja: "彼らはシャルトルの大聖堂に入りました。"}}
+      - {fr: "un village", ipa: "œ̃ vilaʒ", ja: "村", pos: "名詞", g: "m", ex: {fr: "On a déjeuné dans un petit village.", ja: "小さな村で昼ごはんを食べました。"}}
+      - {fr: "un guide", ipa: "œ̃ ɡid", ja: "ガイド・ガイドブック", pos: "名詞", g: "m", note: "女性のガイドでも un guide と言うことが多い（une guide も使う）", ex: {fr: "Notre guide a été très sympa.", ja: "ガイドさんはとても感じがよかったです。"}}
+      - {fr: "une visite guidée", ipa: "yn vizit ɡide", ja: "ガイド付きツアー", pos: "名詞", g: "f", ex: {fr: "Nous avons fait une visite guidée du Louvre.", ja: "ルーヴル美術館のガイドツアーに参加しました。"}}
+      - {fr: "une excursion", ipa: "yn ɛkskyʁsjɔ̃", ja: "小旅行・日帰りの遠出", pos: "名詞", g: "f", ex: {fr: "Samedi, nous avons fait une excursion au Mont-Saint-Michel.", ja: "土曜日、モン・サン・ミシェルへ遠出しました。"}}
+      - {fr: "un touriste", ipa: "œ̃ tuʁist", ja: "観光客", pos: "名詞", g: "m", note: "女性は une touriste", ex: {fr: "Nous avons rencontré des touristes japonais.", ja: "日本人の観光客に会いました。"}}
+      - {fr: "un appareil photo", ipa: "œ̃ napaʁɛj fɔto", ja: "カメラ", pos: "名詞", g: "m", pl: "des appareils photo", note: "複数形で photo は変わらない", ex: {fr: "J'ai oublié mon appareil photo à l'hôtel.", ja: "ホテルにカメラを忘れました。"}}
+      - {fr: "un coucher de soleil", ipa: "œ̃ kuʃe də sɔlɛj", ja: "夕日・日没", pos: "名詞", g: "m", ex: {fr: "Nous avons regardé le coucher de soleil sur la plage.", ja: "ビーチで夕日を眺めました。"}}
+      - {fr: "un camping", ipa: "œ̃ kɑ̃piŋ", ja: "キャンプ場", pos: "名詞", g: "m", note: "英語の camping と違い、ふつうは「キャンプ場」という場所を指す", ex: {fr: "Cet été, on a dormi dans un camping.", ja: "今年の夏はキャンプ場に泊まりました。"}}
+      - {fr: "une auberge de jeunesse", ipa: "yn obɛʁʒ də ʒœnɛs", ja: "ユースホステル", pos: "名詞", g: "f", ex: {fr: "Nous sommes restés trois nuits dans une auberge de jeunesse.", ja: "ユースホステルに 3 泊しました。"}}
+  - name: "ハプニング"
+    words:
+      - {fr: "un problème", ipa: "œ̃ pʁɔblɛm", ja: "問題・トラブル", pos: "名詞", g: "m", ex: {fr: "Nous avons eu un problème avec la voiture.", ja: "車のトラブルがありました。"}}
+      - {fr: "une panne", ipa: "yn pan", ja: "故障", pos: "名詞", g: "f", note: "tomber en panne（故障する）は複合過去で être", ex: {fr: "Notre voiture est tombée en panne sur l'autoroute.", ja: "車が高速道路で故障しました。"}}
+      - {fr: "un accident", ipa: "œ̃ naksidɑ̃", ja: "事故", pos: "名詞", g: "m", ex: {fr: "Il a eu un petit accident de vélo.", ja: "彼はちょっとした自転車事故にあいました。"}}
+      - {fr: "une grève", ipa: "yn ɡʁɛv", ja: "ストライキ", pos: "名詞", g: "f", note: "フランスでは交通機関のストが多く、旅行の話によく出る", ex: {fr: "À cause de la grève, il n'y a pas eu de train.", ja: "ストのせいで電車がありませんでした。"}}
+      - {fr: "un retard", ipa: "œ̃ ʁətaʁ", ja: "遅れ", pos: "名詞", g: "m", note: "en retard（遅れて）は A1 で学習済み", ex: {fr: "Mon avion a eu deux heures de retard.", ja: "飛行機が 2 時間遅れました。"}}
+      - {fr: "une aventure", ipa: "yn avɑ̃tyʁ", ja: "冒険・思いがけない出来事", pos: "名詞", g: "f", ex: {fr: "Ce voyage a été une vraie aventure !", ja: "この旅行はまさに冒険でした！"}}
+      - {fr: "une surprise", ipa: "yn syʁpʁiz", ja: "驚き・サプライズ", pos: "名詞", g: "f", ex: {fr: "Ma sœur est arrivée sans prévenir : quelle surprise !", ja: "姉が知らせずにやって来て、びっくりしました！"}}
+      - {fr: "avoir de la chance", ipa: "avwaʁ də la ʃɑ̃s", ja: "運がいい", pos: "表現", ex: {fr: "On a eu de la chance : il a fait beau.", ja: "運がよくて、天気に恵まれました。"}}
+      - {fr: "casser", ipa: "kase", ja: "壊す・割る", pos: "動詞", ex: {fr: "J'ai cassé mes lunettes à la plage.", ja: "ビーチでめがねを壊してしまいました。"}}
+      - {fr: "voler", ipa: "vɔle", ja: "盗む", pos: "動詞", note: "「飛ぶ」の意味もある。on + 動詞で「〜された」を表せる", ex: {fr: "On a volé mon portefeuille dans le métro.", ja: "地下鉄で財布を盗まれました。"}}
+      - {fr: "heureusement", ipa: "œʁøzmɑ̃", ja: "幸いにも", pos: "副詞", ex: {fr: "Heureusement, j'ai retrouvé ma valise.", ja: "幸い、スーツケースが見つかりました。"}}
+      - {fr: "malheureusement", ipa: "malœʁøzmɑ̃", ja: "残念ながら", pos: "副詞", ex: {fr: "Malheureusement, il a plu tout le week-end.", ja: "残念ながら、週末はずっと雨でした。"}}
+      - {fr: "par hasard", ipa: "paʁ azaʁ", ja: "偶然", pos: "表現", note: "hasard の h は有音（le hasard とは言うが l'hasard とは言わない）", ex: {fr: "J'ai rencontré mon professeur par hasard.", ja: "偶然、先生に会いました。"}}
+  - name: "週末の過ごし方"
+    words:
+      - {fr: "une sortie", ipa: "yn sɔʁti", ja: "外出・お出かけ（出口の意味も）", pos: "名詞", g: "f", ex: {fr: "Cette sortie au cinéma a été très sympa.", ja: "映画を見に出かけたのはとても楽しかったです。"}}
+      - {fr: "une balade", ipa: "yn balad", ja: "散歩・ぶらぶら歩き", pos: "名詞", g: "f", note: "une promenade とほぼ同じ。会話でよく使う", ex: {fr: "Dimanche, on a fait une balade en forêt.", ja: "日曜日は森を散歩しました。"}}
+      - {fr: "un barbecue", ipa: "œ̃ baʁbəkju", ja: "バーベキュー", pos: "名詞", g: "m", ex: {fr: "Samedi, nous avons fait un barbecue chez Marc.", ja: "土曜日、マルクの家でバーベキューをしました。"}}
+      - {fr: "un festival", ipa: "œ̃ fɛstival", ja: "フェスティバル", pos: "名詞", g: "m", pl: "des festivals", note: "-al で終わるのに複数形は -aux にならない", ex: {fr: "Ils sont allés à un festival de musique.", ja: "彼らは音楽フェスに行きました。"}}
+      - {fr: "une pièce de théâtre", ipa: "yn pjɛs də teatʁ", ja: "演劇（の作品）", pos: "名詞", g: "f", ex: {fr: "Hier soir, nous avons vu une pièce de théâtre.", ja: "昨日の夜、お芝居を見ました。"}}
+      - {fr: "un feu d'artifice", ipa: "œ̃ fø daʁtifis", ja: "花火", pos: "名詞", g: "m", pl: "des feux d'artifice", ex: {fr: "Le quatorze juillet, nous avons regardé le feu d'artifice.", ja: "7 月 14 日、花火を見ました。"}}
+      - {fr: "un apéritif", ipa: "œ̃ napeʁitif", ja: "食前の一杯・アペロ", pos: "名詞", g: "m", note: "会話では un apéro。夕食前に軽く飲んでつまむ習慣", ex: {fr: "Vendredi soir, on a pris l'apéritif sur la terrasse.", ja: "金曜の夜、テラスでアペロをしました。"}}
+      - {fr: "faire la fête", ipa: "fɛʁ la fɛt", ja: "（パーティーで）騒いで楽しむ", pos: "表現", ex: {fr: "Samedi, on a fait la fête jusqu'à deux heures.", ja: "土曜日は 2 時まで盛り上がりました。"}}
+      - {fr: "faire la grasse matinée", ipa: "fɛʁ la ɡʁas matine", ja: "（休みの日に）朝ゆっくり寝る", pos: "表現", ex: {fr: "Dimanche, j'ai fait la grasse matinée.", ja: "日曜日は朝ゆっくり寝ていました。"}}
+      - {fr: "faire du shopping", ipa: "fɛʁ dy ʃɔpiŋ", ja: "ショッピングする", pos: "表現", ex: {fr: "Elle a fait du shopping avec sa cousine.", ja: "彼女はいとこと買い物をしました。"}}
+      - {fr: "faire la queue", ipa: "fɛʁ la kø", ja: "列に並ぶ", pos: "表現", ex: {fr: "Nous avons fait la queue pendant une heure.", ja: "私たちは 1 時間並びました。"}}
+      - {fr: "passer un bon moment", ipa: "pase œ̃ bɔ̃ mɔmɑ̃", ja: "楽しい時間を過ごす", pos: "表現", note: "時間を過ごす passer は複合過去で avoir", ex: {fr: "Merci, nous avons passé un très bon moment !", ja: "ありがとう、とても楽しい時間を過ごしました！"}}
+  - name: "順序・時の表現"
+    words:
+      - {fr: "tout d'abord", ipa: "tu dabɔʁ", ja: "まず最初に", pos: "表現", note: "d'abord を強めた言い方。書き言葉でよく使う", ex: {fr: "Tout d'abord, nous avons cherché notre hôtel.", ja: "まず最初に、ホテルを探しました。"}}
+      - {fr: "au début", ipa: "o deby", ja: "初めは", pos: "表現", ex: {fr: "Au début, le voyage a été difficile.", ja: "初めのうち、旅は大変でした。"}}
+      - {fr: "après ça", ipa: "apʁɛ sa", ja: "そのあと", pos: "表現", ex: {fr: "Après ça, nous sommes allés au restaurant.", ja: "そのあと、レストランに行きました。"}}
+      - {fr: "alors", ipa: "alɔʁ", ja: "それで・だから", pos: "副詞", ex: {fr: "Il a commencé à pleuvoir, alors nous sommes rentrés.", ja: "雨が降りはじめたので、私たちは帰りました。"}}
+      - {fr: "soudain", ipa: "sudɛ̃", ja: "突然", pos: "副詞", ex: {fr: "Soudain, mon téléphone a sonné.", ja: "突然、電話が鳴りました。"}}
+      - {fr: "tout à coup", ipa: "tu ta ku", ja: "急に", pos: "表現", note: "soudain とほぼ同じ。会話でよく使う", ex: {fr: "Tout à coup, il a commencé à neiger.", ja: "急に雪が降りはじめました。"}}
+      - {fr: "à la fin", ipa: "a la fɛ̃", ja: "最後に・終わりに", pos: "表現", ex: {fr: "À la fin de la soirée, nous avons dansé.", ja: "パーティーの最後に、みんなで踊りました。"}}
+      - {fr: "le lendemain", ipa: "lə lɑ̃dmɛ̃", ja: "（その）翌日", pos: "名詞", g: "m", note: "過去の話の中での「次の日」。今日から見た次の日は demain", ex: {fr: "Le lendemain, nous sommes partis pour Lyon.", ja: "翌日、私たちはリヨンへ出発しました。"}}
+      - {fr: "la veille", ipa: "la vɛj", ja: "（その）前日", pos: "名詞", g: "f", note: "過去の話の中での「前の日」。今日から見た前の日は hier", ex: {fr: "La veille du départ, j'ai fait ma valise.", ja: "出発の前日に、荷造りをしました。"}}
+      - {fr: "ce jour-là", ipa: "sə ʒuʁ la", ja: "その日", pos: "表現", ex: {fr: "Ce jour-là, il a fait très chaud.", ja: "その日はとても暑かったです。"}}
+      - {fr: "un jour", ipa: "œ̃ ʒuʁ", ja: "ある日・いつか", pos: "表現", note: "思い出話の始まりによく使う", ex: {fr: "Un jour, j'ai perdu mes clés à Tokyo.", ja: "ある日、東京で鍵をなくしました。"}}
+      - {fr: "une fois", ipa: "yn fwa", ja: "1 回・一度", pos: "名詞", g: "f", note: "deux fois, trois fois… と回数を数える", ex: {fr: "Je suis allé une fois en Espagne.", ja: "スペインには一度行ったことがあります。"}}
+      - {fr: "la première fois", ipa: "la pʁəmjɛʁ fwa", ja: "初めて（のとき）", pos: "表現", ex: {fr: "C'est la première fois que je visite Paris.", ja: "パリに来るのは初めてです。"}}
+      - {fr: "plusieurs fois", ipa: "plyzjœʁ fwa", ja: "何度か", pos: "表現", ex: {fr: "J'ai vu ce film plusieurs fois.", ja: "この映画は何度か見ました。"}}
+      - {fr: "récemment", ipa: "ʁesamɑ̃", ja: "最近", pos: "副詞", note: "-emment は「アマン」と読む", ex: {fr: "Récemment, je suis allé à Bordeaux.", ja: "最近、ボルドーに行きました。"}}
+  - name: "感想を言う"
+    words:
+      - {fr: "inoubliable", ipa: "inublijabl", ja: "忘れられない", pos: "形容詞", ex: {fr: "Ce voyage au Maroc a été inoubliable.", ja: "モロッコへの旅は忘れられないものになりました。"}}
+      - {fr: "incroyable", ipa: "ɛ̃kʁwajabl", ja: "信じられない・すごい", pos: "形容詞", ex: {fr: "On a vu un spectacle incroyable.", ja: "すごいショーを見ました。"}}
+      - {fr: "magnifique", ipa: "maɲifik", ja: "すばらしい・見事な", pos: "形容詞", ex: {fr: "Il a fait un temps magnifique.", ja: "すばらしい天気でした。"}}
+      - {fr: "merveilleux", ipa: "mɛʁvɛjø", ja: "すてきな・すばらしい", pos: "形容詞", f: "merveilleuse", f_ipa: "mɛʁvɛjøz", tts: "merveilleux, merveilleuse", ex: {fr: "Nous avons passé une semaine merveilleuse.", ja: "すてきな 1 週間を過ごしました。"}}
+      - {fr: "décevant", ipa: "desəvɑ̃", ja: "がっかりな", pos: "形容詞", f: "décevante", f_ipa: "desəvɑ̃t", tts: "décevant, décevante", ex: {fr: "Le repas a été un peu décevant.", ja: "食事は少しがっかりでした。"}}
+      - {fr: "horrible", ipa: "ɔʁibl", ja: "ひどい・最悪の", pos: "形容詞", ex: {fr: "Le voyage en bus a été horrible.", ja: "バスの移動は最悪でした。"}}
+      - {fr: "impressionnant", ipa: "ɛ̃pʁesjɔnɑ̃", ja: "迫力がある・印象的な", pos: "形容詞", f: "impressionnante", f_ipa: "ɛ̃pʁesjɔnɑ̃t", tts: "impressionnant, impressionnante", ex: {fr: "Le Mont-Saint-Michel est vraiment impressionnant.", ja: "モン・サン・ミシェルは本当に迫力があります。"}}
+      - {fr: "stressant", ipa: "stʁɛsɑ̃", ja: "ストレスのたまる", pos: "形容詞", f: "stressante", f_ipa: "stʁɛsɑ̃t", tts: "stressant, stressante", ex: {fr: "Le départ a été très stressant.", ja: "出発のときはとても気が気でなかったです。"}}
+      - {fr: "pas mal", ipa: "pa mal", ja: "悪くない・なかなかいい", pos: "表現", note: "控えめな言い方だが、ほめ言葉として使う", ex: {fr: "Alors, ce restaurant ? — Pas mal !", ja: "で、あのレストランは？ — なかなかよかったよ！"}}
+      - {fr: "Ça m'a plu.", ipa: "sa ma ply", ja: "気に入った。", pos: "表現", note: "plaire（気に入る）の複合過去。過去分詞 plu は pleuvoir と同じ形", ex: {fr: "Le musée d'Orsay ? Ça m'a beaucoup plu.", ja: "オルセー美術館？ すごく気に入ったよ。"}}
+      - {fr: "Ça s'est bien passé.", ipa: "sa sɛ bjɛ̃ pase", ja: "うまくいった。", pos: "表現", note: "Comment ça s'est passé ?（どうだった？）への答え", ex: {fr: "Le voyage ? Oui, ça s'est bien passé.", ja: "旅行？ うん、うまくいったよ。"}}
+      - {fr: "Comment c'était ?", ipa: "kɔmɑ̃ setɛ", ja: "どうだった？", pos: "表現", note: "c'était は c'est の過去（半過去）。感想を聞く決まり文句", ex: {fr: "Tu es allé à Rome ? Comment c'était ?", ja: "ローマに行ったの？ どうだった？"}}
+      - {fr: "Je me suis bien amusé.", ipa: "ʒə mə sɥi bjɛ̃ namyze", ja: "楽しかった。", pos: "表現", note: "s'amuser（楽しむ）の複合過去。代名動詞は être を使い、女性なら amusée", ex: {fr: "Merci pour la soirée, je me suis bien amusée !", ja: "今夜はありがとう、楽しかった！"}}

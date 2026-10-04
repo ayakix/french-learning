@@ -1,0 +1,101 @@
+# 単元 18 旅行と交通 の単語（Web アプリの単語画面 /vocab/18 のデータ。A2）
+# A1 で出た基本語（un train, un billet, une gare, une valise, réserver など）は入れず、予約・問い合わせ・トラブルの場面で要る語に絞る。
+# DELF A2 の「聞く」は駅や空港のアナウンス、「話す」のロールプレイは窓口での問い合わせが定番なので、そこで聞く・言う語を優先する。
+# 例文はこの単元の文法（単純未来、中性代名詞 y / en、si + 現在形 + 未来形）を多く使う。語と一緒に文法の形も耳に残すため。
+# 名詞は A1 と同じく不定冠詞を付けて読ませる。数えられない語・定冠詞で使う語（la douane など）はその形で読ませる。
+unit: "18"
+title: "旅行と交通"
+groups:
+  - name: "乗り物と道路"
+    words:
+      - {fr: "un car", ipa: "œ̃ kaʁ", ja: "長距離バス・観光バス", pos: "名詞", g: "m", note: "町の中を走る路線バスは un bus。町と町を結ぶのが un car", ex: {fr: "Nous prendrons le car pour aller à Lyon.", ja: "私たちはリヨンへ行くのに長距離バスに乗るつもりです。"}}
+      - {fr: "un TGV", ipa: "œ̃ teʒeve", ja: "TGV（フランスの高速鉄道）", pos: "名詞", g: "m", tts: "un T.G.V.", note: "Train à Grande Vitesse の頭文字。アルファベットのまま読む", ex: {fr: "Le TGV arrivera à Marseille à midi.", ja: "TGV は正午にマルセイユに着きます。"}}
+      - {fr: "un bateau", ipa: "œ̃ bato", ja: "船", pos: "名詞", g: "m", pl: "des bateaux", note: "-eau で終わる語の複数は -x", ex: {fr: "On ira sur l'île en bateau.", ja: "島へは船で行きます。"}}
+      - {fr: "un vol", ipa: "œ̃ vɔl", ja: "便・フライト", pos: "名詞", g: "m", ex: {fr: "Mon vol partira de Roissy demain matin.", ja: "私の便は明日の朝ロワシー（シャルル・ド・ゴール空港）から出ます。"}}
+      - {fr: "un passager", ipa: "œ̃ pasaʒe", ja: "乗客", pos: "名詞", g: "m", note: "女性は une passagère", ex: {fr: "Les passagers attendent sur le quai.", ja: "乗客たちはホームで待っています。"}}
+      - {fr: "une autoroute", ipa: "yn otoʁut", ja: "高速道路", pos: "名詞", g: "f", ex: {fr: "Si on prend l'autoroute, on arrivera plus vite.", ja: "高速道路を使えば、もっと早く着くでしょう。"}}
+      - {fr: "un embouteillage", ipa: "œ̃ nɑ̃butɛjaʒ", ja: "渋滞", pos: "名詞", g: "m", ex: {fr: "Il y aura des embouteillages samedi matin.", ja: "土曜の朝は渋滞があるでしょう。"}}
+      - {fr: "un permis de conduire", ipa: "œ̃ pɛʁmi də kɔ̃dɥiʁ", ja: "運転免許証", pos: "名詞", g: "m", ex: {fr: "N'oublie pas ton permis de conduire !", ja: "運転免許証を忘れないでね！"}}
+      - {fr: "une voiture de location", ipa: "yn vwatyʁ də lɔkasjɔ̃", ja: "レンタカー", pos: "名詞", g: "f", ex: {fr: "Nous louerons une voiture de location à l'aéroport.", ja: "空港でレンタカーを借ります。"}}
+      - {fr: "un parking", ipa: "œ̃ paʁkiŋ", ja: "駐車場", pos: "名詞", g: "m", ex: {fr: "Le parking de l'hôtel est gratuit.", ja: "ホテルの駐車場は無料です。"}}
+      - {fr: "à l'heure", ipa: "a lœʁ", ja: "時間どおりに", pos: "表現", note: "en avance（早めに）・en retard（遅れて）と組で覚える", ex: {fr: "Le train partira à l'heure.", ja: "列車は時間どおりに出発します。"}}
+  - name: "駅と切符"
+    words:
+      - {fr: "un guichet", ipa: "œ̃ ɡiʃɛ", ja: "窓口", pos: "名詞", g: "m", ex: {fr: "Tu achèteras les billets au guichet.", ja: "切符は窓口で買ってね。"}}
+      - {fr: "un quai", ipa: "œ̃ ke", ja: "（駅の）ホーム", pos: "名詞", g: "m", note: "番線は une voie。quai はホームそのもの", ex: {fr: "Je t'attendrai sur le quai.", ja: "ホームで待っているよ。"}}
+      - {fr: "une correspondance", ipa: "yn kɔʁɛspɔ̃dɑ̃s", ja: "乗り換え・接続便", pos: "名詞", g: "f", ex: {fr: "Vous aurez une correspondance à Paris.", ja: "パリで乗り換えがあります。"}}
+      - {fr: "changer de train", ipa: "ʃɑ̃ʒe də tʁɛ̃", ja: "列車を乗り換える", pos: "表現", note: "changer de + 無冠詞の名詞で「〜を替える」", ex: {fr: "Nous changerons de train à Lyon.", ja: "私たちはリヨンで列車を乗り換えます。"}}
+      - {fr: "un aller simple", ipa: "œ̃ nale sɛ̃pl", ja: "片道切符", pos: "名詞", g: "m", ex: {fr: "Un aller simple pour Bordeaux, s'il vous plaît.", ja: "ボルドーまで片道 1 枚お願いします。"}}
+      - {fr: "une réduction", ipa: "yn ʁedyksjɔ̃", ja: "割引", pos: "名詞", g: "f", ex: {fr: "Si vous avez moins de vingt-six ans, vous aurez une réduction.", ja: "26 歳未満なら割引があります。"}}
+      - {fr: "côté fenêtre", ipa: "kote fənɛtʁ", ja: "窓側", pos: "表現", ex: {fr: "Je voudrais une place côté fenêtre.", ja: "窓側の席をお願いします。"}}
+      - {fr: "côté couloir", ipa: "kote kulwaʁ", ja: "通路側", pos: "表現", ex: {fr: "Elle préfère être côté couloir.", ja: "彼女は通路側がいいそうです。"}}
+      - {fr: "en première classe", ipa: "ɑ̃ pʁəmjɛʁ klas", ja: "1 等で", pos: "表現", note: "2 等は en seconde classe（seconde の c は g の音）", ex: {fr: "Cette fois, on voyagera en première classe.", ja: "今回は 1 等で旅行しよう。"}}
+      - {fr: "une destination", ipa: "yn dɛstinasjɔ̃", ja: "行き先・目的地", pos: "名詞", g: "f", ex: {fr: "Le train à destination de Lille partira voie trois.", ja: "リール行きの列車は 3 番線から出発します。"}}
+      - {fr: "en provenance de", ipa: "ɑ̃ pʁɔvnɑ̃s də", ja: "〜発の・〜から来た", pos: "表現", note: "駅・空港のアナウンスの決まり文句。à destination de（〜行き）と対", ex: {fr: "Le vol en provenance de Tokyo est arrivé.", ja: "東京発の便が到着しました。"}}
+  - name: "空港と飛行機"
+    words:
+      - {fr: "un terminal", ipa: "œ̃ tɛʁminal", ja: "（空港の）ターミナル", pos: "名詞", g: "m", pl: "des terminaux", note: "-al で終わる語の複数は -aux", ex: {fr: "Notre vol partira du terminal deux.", ja: "私たちの便は第 2 ターミナルから出ます。"}}
+      - {fr: "une carte d'embarquement", ipa: "yn kaʁt dɑ̃baʁkəmɑ̃", ja: "搭乗券", pos: "名詞", g: "f", ex: {fr: "Gardez votre carte d'embarquement, s'il vous plaît.", ja: "搭乗券はお持ちになっていてください。"}}
+      - {fr: "une porte d'embarquement", ipa: "yn pɔʁt dɑ̃baʁkəmɑ̃", ja: "搭乗口", pos: "名詞", g: "f", ex: {fr: "La porte d'embarquement fermera à dix heures.", ja: "搭乗口は 10 時に閉まります。"}}
+      - {fr: "embarquer", ipa: "ɑ̃baʁke", ja: "搭乗する", pos: "動詞", ex: {fr: "Les passagers embarqueront dans vingt minutes.", ja: "乗客は 20 分後に搭乗します。"}}
+      - {fr: "enregistrer", ipa: "ɑ̃ʁəʒistʁe", ja: "（荷物を）預ける・チェックインする", pos: "動詞", note: "「録音する・保存する」の意味もある", ex: {fr: "Vous pourrez enregistrer vos bagages ici.", ja: "こちらで荷物を預けられます。"}}
+      - {fr: "un bagage", ipa: "œ̃ baɡaʒ", ja: "（旅行の）荷物", pos: "名詞", g: "m", note: "ふつうは複数形 des bagages で使う", ex: {fr: "J'ai seulement deux bagages.", ja: "荷物は 2 つだけです。"}}
+      - {fr: "la douane", ipa: "la dwan", ja: "税関", pos: "名詞", g: "f", ex: {fr: "Après la douane, on prendra un taxi.", ja: "税関を出たらタクシーに乗ろう。"}}
+      - {fr: "un visa", ipa: "œ̃ viza", ja: "ビザ", pos: "名詞", g: "m", ex: {fr: "Pour aller en Chine, tu auras besoin d'un visa.", ja: "中国へ行くにはビザが必要になるよ。"}}
+      - {fr: "décoller", ipa: "dekɔle", ja: "離陸する", pos: "動詞", ex: {fr: "L'avion décollera à quatorze heures.", ja: "飛行機は 14 時に離陸します。"}}
+      - {fr: "atterrir", ipa: "ateʁiʁ", ja: "着陸する", pos: "動詞", note: "finir と同じ活用（nous atterrissons）", ex: {fr: "Nous atterrirons à Nice vers midi.", ja: "私たちは正午ごろニースに着陸します。"}}
+      - {fr: "une escale", ipa: "yn ɛskal", ja: "乗り継ぎ・途中着陸", pos: "名詞", g: "f", ex: {fr: "Il y aura une escale à Dubaï.", ja: "ドバイで乗り継ぎがあります。"}}
+      - {fr: "un décalage horaire", ipa: "œ̃ dekalaʒ ɔʁɛʁ", ja: "時差", pos: "名詞", g: "m", ex: {fr: "Entre Paris et Tokyo, il y a sept heures de décalage horaire.", ja: "パリと東京の間には 7 時間の時差があります。"}}
+  - name: "泊まる"
+    words:
+      - {fr: "un hébergement", ipa: "œ̃ nebɛʁʒəmɑ̃", ja: "宿泊・宿", pos: "名詞", g: "m", ex: {fr: "On cherchera un hébergement près de la plage.", ja: "ビーチの近くに宿を探そう。"}}
+      - {fr: "une chambre simple", ipa: "yn ʃɑ̃bʁ sɛ̃pl", ja: "シングルルーム", pos: "名詞", g: "f", ex: {fr: "Une chambre simple coûte quatre-vingts euros.", ja: "シングルルームは 80 ユーロです。"}}
+      - {fr: "une chambre double", ipa: "yn ʃɑ̃bʁ dubl", ja: "ダブルルーム", pos: "名詞", g: "f", note: "ベッドが 2 台の部屋は une chambre à deux lits", ex: {fr: "Vous avez une chambre double pour ce soir ?", ja: "今夜ダブルルームは空いていますか？"}}
+      - {fr: "la réception", ipa: "la ʁesɛpsjɔ̃", ja: "（ホテルの）フロント", pos: "名詞", g: "f", ex: {fr: "Vous laisserez la clé à la réception.", ja: "鍵はフロントに預けてください。"}}
+      - {fr: "la demi-pension", ipa: "la dəmipɑ̃sjɔ̃", ja: "2 食付き（朝食と夕食）", pos: "名詞", g: "f", note: "3 食付きは la pension complète", ex: {fr: "Nous prendrons la demi-pension.", ja: "2 食付きにします。"}}
+      - {fr: "compris", ipa: "kɔ̃pʁi", ja: "含まれている", pos: "形容詞", f: "comprise", f_ipa: "kɔ̃pʁiz", tts: "compris, comprise", note: "comprendre の過去分詞から。le petit-déjeuner compris（朝食込み）の形でよく使う", ex: {fr: "Le petit-déjeuner est compris dans le prix.", ja: "朝食は料金に含まれています。"}}
+      - {fr: "complet", ipa: "kɔ̃plɛ", ja: "満室の・満席の", pos: "形容詞", f: "complète", f_ipa: "kɔ̃plɛt", tts: "complet, complète", ex: {fr: "Désolé, l'hôtel est complet ce week-end.", ja: "申し訳ありません、今週末ホテルは満室です。"}}
+      - {fr: "une vue sur la mer", ipa: "yn vy syʁ la mɛʁ", ja: "海の見える眺め・オーシャンビュー", pos: "名詞", g: "f", ex: {fr: "Je voudrais une chambre avec vue sur la mer.", ja: "海の見える部屋をお願いします。"}}
+      - {fr: "une annulation", ipa: "yn anylasjɔ̃", ja: "キャンセル", pos: "名詞", g: "f", ex: {fr: "L'annulation est gratuite jusqu'à vendredi.", ja: "金曜日まではキャンセル無料です。"}}
+      - {fr: "passer la nuit", ipa: "pase la nɥi", ja: "一晩過ごす・泊まる", pos: "表現", ex: {fr: "On passera la nuit à Avignon.", ja: "アヴィニョンで一泊しよう。"}}
+  - name: "旅の準備"
+    words:
+      - {fr: "une agence de voyages", ipa: "yn aʒɑ̃s də vwajaʒ", ja: "旅行代理店", pos: "名詞", g: "f", ex: {fr: "Nous irons à l'agence de voyages samedi.", ja: "土曜日に旅行代理店へ行きます。"}}
+      - {fr: "un itinéraire", ipa: "œ̃ nitineʁɛʁ", ja: "旅程・ルート", pos: "名詞", g: "m", ex: {fr: "Je t'enverrai notre itinéraire par e-mail.", ja: "私たちの旅程をメールで送るね。"}}
+      - {fr: "une assurance", ipa: "yn asyʁɑ̃s", ja: "保険", pos: "名詞", g: "f", ex: {fr: "Tu prendras une assurance pour le voyage ?", ja: "旅行保険には入る？"}}
+      - {fr: "un sac à dos", ipa: "œ̃ sak a do", ja: "リュックサック", pos: "名詞", g: "m", ex: {fr: "Je partirai seulement avec un sac à dos.", ja: "リュック 1 つだけで出かけます。"}}
+      - {fr: "de la crème solaire", ipa: "də la kʁɛm sɔlɛʁ", ja: "日焼け止め", pos: "名詞", g: "f", ex: {fr: "Il fera chaud, prends de la crème solaire.", ja: "暑くなるから日焼け止めを持っていって。"}}
+      - {fr: "un adaptateur", ipa: "œ̃ nadaptatœʁ", ja: "（電源の）変換プラグ", pos: "名詞", g: "m", ex: {fr: "Tu as un adaptateur ? J'en ai besoin.", ja: "変換プラグ持ってる？ 必要なんだ。"}}
+      - {fr: "faire sa valise", ipa: "fɛʁ sa valiz", ja: "スーツケースに荷物を詰める", pos: "表現", note: "sa は主語に合わせて変える（je fais ma valise）", ex: {fr: "Je ferai ma valise ce soir.", ja: "今夜スーツケースに荷物を詰めます。"}}
+      - {fr: "prévoir", ipa: "pʁevwaʁ", ja: "予定する・用意しておく", pos: "動詞", note: "過去分詞 prévu。未来形は je prévoirai（voir と違い verr- にならない）", ex: {fr: "Il faut prévoir deux jours pour visiter Paris.", ja: "パリ観光には 2 日見ておく必要があります。"}}
+      - {fr: "organiser", ipa: "ɔʁɡanize", ja: "計画する・準備する", pos: "動詞", ex: {fr: "C'est moi qui organiserai le voyage.", ja: "旅行の計画は私が立てます。"}}
+      - {fr: "se renseigner", ipa: "sə ʁɑ̃seɲe", ja: "問い合わせる・情報を集める", pos: "動詞", note: "un renseignement（情報）の動詞。複合過去は être", ex: {fr: "Je vais me renseigner à l'office de tourisme.", ja: "観光案内所で聞いてみます。"}}
+      - {fr: "emporter", ipa: "ɑ̃pɔʁte", ja: "持っていく", pos: "動詞", ex: {fr: "Qu'est-ce que tu emporteras pour le week-end ?", ja: "週末は何を持っていく？"}}
+  - name: "観光"
+    words:
+      - {fr: "touristique", ipa: "tuʁistik", ja: "観光の・観光客の多い", pos: "形容詞", ex: {fr: "Ce quartier est très touristique.", ja: "この地区はとても観光客が多いです。"}}
+      - {fr: "une région", ipa: "yn ʁeʒjɔ̃", ja: "地方", pos: "名詞", g: "f", ex: {fr: "Je découvrirai une nouvelle région chaque été.", ja: "毎年夏に新しい地方を知るつもりです。"}}
+      - {fr: "célèbre", ipa: "selɛbʁ", ja: "有名な", pos: "形容詞", ex: {fr: "Ce musée est célèbre dans le monde entier.", ja: "この美術館は世界中で有名です。"}}
+      - {fr: "Ça vaut la peine.", ipa: "sa vo la pɛn", ja: "それはやる価値がある。", pos: "表現", note: "valoir（価値がある）の 3 人称単数。未来形は ça vaudra la peine", ex: {fr: "Le musée est loin, mais ça vaut la peine.", ja: "その美術館は遠いけれど、行く価値があります。"}}
+  - name: "移動の動詞"
+    words:
+      - {fr: "se déplacer", ipa: "sə deplase", ja: "移動する", pos: "動詞", note: "nous nous déplaçons（c の音を保つため ç）。複合過去は être", ex: {fr: "À Paris, on se déplacera en métro.", ja: "パリでは地下鉄で移動しよう。"}}
+      - {fr: "repartir", ipa: "ʁəpaʁtiʁ", ja: "再び出発する・帰途につく", pos: "動詞", note: "過去分詞 reparti。複合過去は être", ex: {fr: "Nous repartirons dimanche soir.", ja: "日曜の夜に帰ります。"}}
+      - {fr: "s'arrêter", ipa: "saʁete", ja: "止まる・停車する", pos: "動詞", note: "複合過去は être", ex: {fr: "Ce train s'arrête à Dijon ?", ja: "この列車はディジョンに止まりますか？"}}
+      - {fr: "durer", ipa: "dyʁe", ja: "（時間が）かかる・続く", pos: "動詞", ex: {fr: "Le voyage durera trois heures.", ja: "移動は 3 時間かかります。"}}
+      - {fr: "se perdre", ipa: "sə pɛʁdʁ", ja: "道に迷う", pos: "動詞", note: "過去分詞 perdu。複合過去は être（je me suis perdu）", ex: {fr: "Si tu as un plan, tu ne te perdras pas.", ja: "地図があれば迷わないよ。"}}
+      - {fr: "prendre l'avion", ipa: "pʁɑ̃dʁ lavjɔ̃", ja: "飛行機に乗る", pos: "表現", note: "prendre le train / le bus と同じ形", ex: {fr: "Je n'aime pas prendre l'avion.", ja: "飛行機に乗るのが好きではありません。"}}
+      - {fr: "partir à l'étranger", ipa: "paʁtiʁ a letʁɑ̃ʒe", ja: "外国へ行く", pos: "表現", ex: {fr: "Si j'ai assez d'argent, je partirai à l'étranger.", ja: "お金が十分あれば外国へ行きます。"}}
+  - name: "問い合わせと決まり文句"
+    words:
+      - {fr: "À quelle heure part le prochain train ?", ipa: "a kɛl œʁ paʁ lə pʁɔʃɛ̃ tʁɛ̃", ja: "次の列車は何時に出ますか？", pos: "表現", ex: {fr: "Pardon, à quelle heure part le prochain train pour Rouen ?", ja: "すみません、ルーアン行きの次の列車は何時に出ますか？"}}
+      - {fr: "Il reste des places ?", ipa: "il ʁɛst de plas", ja: "まだ空席はありますか？", pos: "表現", note: "答えは Oui, il en reste.（en = des places）", ex: {fr: "Il reste des places pour samedi ? Oui, il en reste deux.", ja: "土曜日の席はまだありますか？ はい、2 席残っています。"}}
+      - {fr: "Le train a du retard.", ipa: "lə tʁɛ̃ a dy ʁətaʁ", ja: "列車が遅れています。", pos: "表現", ex: {fr: "Désolé, le train a du retard à cause de la neige.", ja: "すみません、雪のせいで列車が遅れています。"}}
+      - {fr: "Le vol est annulé.", ipa: "lə vɔl ɛ tanyle", ja: "便が欠航になりました。", pos: "表現", note: "est と annulé はリエゾンする", ex: {fr: "Le vol est annulé, nous partirons demain.", ja: "便が欠航になったので、明日出発します。"}}
+      - {fr: "Combien de temps dure le trajet ?", ipa: "kɔ̃bjɛ̃ də tɑ̃ dyʁ lə tʁaʒɛ", ja: "移動にどのくらいかかりますか？", pos: "表現", ex: {fr: "Combien de temps dure le trajet jusqu'à Genève ?", ja: "ジュネーヴまでどのくらいかかりますか？"}}
+      - {fr: "J'y vais en train.", ipa: "ʒi vɛ ɑ̃ tʁɛ̃", ja: "そこへは列車で行きます。", pos: "表現", note: "y は「そこへ」。à + 場所 を受けて、動詞の前に置く", ex: {fr: "Tu vas à Bordeaux ? Oui, j'y vais en train.", ja: "ボルドーへ行くの？ うん、列車で行くよ。"}}
+      - {fr: "J'y suis allé.", ipa: "ʒi sɥi zale", ja: "そこへ行ったことがあります。", pos: "表現", note: "複合過去では y を助動詞の前に置く", ex: {fr: "La Corse ? J'y suis allé il y a deux ans.", ja: "コルシカ？ 2 年前に行ったよ。"}}
+      - {fr: "On y va ensemble ?", ipa: "ɔ̃ ni va ɑ̃sɑ̃bl", ja: "一緒に行く？", pos: "表現", ex: {fr: "Le marché de Noël est ouvert. On y va ensemble ?", ja: "クリスマスマーケットが開いてるよ。一緒に行く？"}}
+      - {fr: "J'en reviens.", ipa: "ʒɑ̃ ʁəvjɛ̃", ja: "そこから戻ってきたところです。", pos: "表現", note: "en は de + 場所（〜から）を受ける", ex: {fr: "Tu connais Lisbonne ? J'en reviens !", ja: "リスボン知ってる？ 帰ってきたばかりだよ！"}}
+      - {fr: "Bon voyage !", ipa: "bɔ̃ vwajaʒ", ja: "よい旅を！", pos: "表現", ex: {fr: "Tu pars demain ? Bon voyage !", ja: "明日出発？ よい旅を！"}}
+      - {fr: "Bon séjour !", ipa: "bɔ̃ seʒuʁ", ja: "よい滞在を！", pos: "表現", note: "到着した人や滞在中の人に言う", ex: {fr: "Voici votre clé. Bon séjour !", ja: "こちらが鍵です。よい滞在を！"}}

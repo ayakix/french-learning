@@ -1,0 +1,108 @@
+# 単元 15 住まいと暮らし の単語（Web アプリの単語画面 /vocab/15 のデータ。A2）
+# 部屋の名前・基本の家具（chambre, salon, lit, armoire など）は A1 で済んでいるので、ここでは入れない。
+# A2 では「住まいを探す（広告・契約）」「家事を頼む」「故障を伝える」が求められるため、その場面で使う語を中心にした。
+# 例文には単元の文法（直接目的・間接目的の代名詞 le / la / les / lui / leur、命令形 + 代名詞）を多く使う。
+# 単語と一緒に「Je le mets... / Ferme-les !」の形を耳で覚え、会話でそのまま使えるようにするため。
+# 家事の多くは「faire le ménage」のような決まった組み合わせで使うので、動詞単独ではなく表現として載せた。
+unit: "15"
+title: "住まいと暮らし"
+groups:
+  - name: "住まいを探す"
+    words:
+      - {fr: "un logement", ipa: "œ̃ lɔʒmɑ̃", ja: "住まい・住居", pos: "名詞", g: "m", ex: {fr: "Je cherche un logement près de mon travail.", ja: "職場の近くに住まいを探しています。"}}
+      - {fr: "une annonce", ipa: "yn anɔ̃s", ja: "広告・告知", pos: "名詞", g: "f", note: "部屋探しでは「物件広告」の意味でよく使う", ex: {fr: "Cette annonce est intéressante, je la garde.", ja: "この広告は良さそうなので、取っておきます。"}}
+      - {fr: "une agence immobilière", ipa: "yn aʒɑ̃s imɔbiljɛʁ", ja: "不動産屋", pos: "名詞", g: "f", ex: {fr: "L'agence immobilière nous montre trois appartements.", ja: "不動産屋が私たちにアパートを3つ見せてくれます。"}}
+      - {fr: "un propriétaire", ipa: "œ̃ pʁɔpʁijetɛʁ", ja: "大家・持ち主", pos: "名詞", g: "m", note: "女性も une propriétaire（形は同じ）", ex: {fr: "Le propriétaire ? Je lui téléphone demain matin.", ja: "大家さん？明日の朝、彼に電話します。"}}
+      - {fr: "un locataire", ipa: "œ̃ lɔkatɛʁ", ja: "借り手・入居者", pos: "名詞", g: "m", note: "女性も une locataire。louer（借りる・貸す）の仲間", ex: {fr: "Les locataires paient le loyer au début du mois.", ja: "入居者は月の初めに家賃を払います。"}}
+      - {fr: "une colocation", ipa: "yn kɔlɔkasjɔ̃", ja: "ルームシェア", pos: "名詞", g: "f", note: "会話では短く la coloc", ex: {fr: "J'habite en colocation avec deux étudiantes.", ja: "私は女子学生2人とルームシェアをしています。"}}
+      - {fr: "un colocataire", ipa: "œ̃ kɔlɔkatɛʁ", ja: "ルームメイト", pos: "名詞", g: "m", note: "女性も une colocataire", ex: {fr: "Mon colocataire est espagnol, je lui parle en français.", ja: "ルームメイトはスペイン人で、彼とはフランス語で話します。"}}
+      - {fr: "un deux-pièces", ipa: "œ̃ døpjɛs", ja: "2 部屋のアパート", pos: "名詞", g: "m", note: "居間と寝室の数で数える。台所や浴室は数えない（日本の 1LDK に近い）", ex: {fr: "Nous cherchons un deux-pièces dans le centre-ville.", ja: "私たちは中心街で2部屋のアパートを探しています。"}}
+      - {fr: "des charges", ipa: "de ʃaʁʒ", ja: "管理費・共益費", pos: "名詞", g: "f", note: "charges comprises で「管理費込み」。物件広告によく出る", ex: {fr: "Le loyer est de six cents euros, charges comprises.", ja: "家賃は管理費込みで600ユーロです。"}}
+      - {fr: "une caution", ipa: "yn kosjɔ̃", ja: "敷金・保証金", pos: "名詞", g: "f", ex: {fr: "Il faut payer une caution d'un mois de loyer.", ja: "家賃1か月分の敷金を払う必要があります。"}}
+      - {fr: "un bail", ipa: "œ̃ baj", ja: "賃貸契約（書）", pos: "名詞", g: "m", pl: "des baux", ex: {fr: "Voici le bail : lisez-le et signez-le.", ja: "こちらが賃貸契約書です。読んで、署名してください。"}}
+      - {fr: "emménager", ipa: "ɑ̃menaʒe", ja: "入居する・越してくる", pos: "動詞", note: "新しい家に「入る」ほうの引っ越し。déménager と対になる", ex: {fr: "Ils ont emménagé dans leur appartement samedi dernier.", ja: "彼らは先週の土曜日にアパートに入居しました。"}}
+      - {fr: "un déménagement", ipa: "œ̃ demenaʒmɑ̃", ja: "引っ越し", pos: "名詞", g: "m", ex: {fr: "Mes amis m'aident pour le déménagement.", ja: "友だちが引っ越しを手伝ってくれます。"}}
+      - {fr: "un carton", ipa: "œ̃ kaʁtɔ̃", ja: "段ボール箱", pos: "名詞", g: "m", ex: {fr: "Ces cartons, on les met dans la chambre.", ja: "この段ボール箱は寝室に置こう。"}}
+      - {fr: "meublé", ipa: "mœble", ja: "家具付きの", pos: "形容詞", f: "meublée", f_ipa: "mœble", tts: "meublé, meublée", note: "女性形は e が付くが、発音は同じ", ex: {fr: "Je loue un studio meublé près de la gare.", ja: "駅の近くに家具付きのワンルームを借りています。"}}
+      - {fr: "lumineux", ipa: "lyminø", ja: "明るい（日当たりのよい）", pos: "形容詞", f: "lumineuse", f_ipa: "lyminøz", tts: "lumineux, lumineuse", ex: {fr: "Le salon est très lumineux le matin.", ja: "居間は朝とても明るいです。"}}
+      - {fr: "spacieux", ipa: "spasjø", ja: "広々とした", pos: "形容詞", f: "spacieuse", f_ipa: "spasjøz", tts: "spacieux, spacieuse", ex: {fr: "Leur cuisine est spacieuse et moderne.", ja: "彼らの台所は広々としていてモダンです。"}}
+      - {fr: "un mètre carré", ipa: "œ̃ mɛtʁ kaʁe", ja: "平方メートル", pos: "名詞", g: "m", note: "広告では m² と書く", ex: {fr: "L'appartement fait cinquante mètres carrés.", ja: "そのアパートは50平方メートルです。"}}
+  - name: "家のつくり"
+    words:
+      - {fr: "un mur", ipa: "œ̃ myʁ", ja: "壁", pos: "名詞", g: "m", ex: {fr: "Ce tableau, je le mets sur le mur du salon.", ja: "この絵は居間の壁に掛けます。"}}
+      - {fr: "un plafond", ipa: "œ̃ plafɔ̃", ja: "天井", pos: "名詞", g: "m", ex: {fr: "Le plafond de cette chambre est très haut.", ja: "この寝室の天井はとても高いです。"}}
+      - {fr: "un sol", ipa: "œ̃ sɔl", ja: "床・地面", pos: "名詞", g: "m", ex: {fr: "Tes chaussettes sont sur le sol, ramasse-les !", ja: "靴下が床に落ちてるよ、拾って！"}}
+      - {fr: "un toit", ipa: "œ̃ twa", ja: "屋根", pos: "名詞", g: "m", ex: {fr: "La maison de mes parents a un toit rouge.", ja: "両親の家は赤い屋根です。"}}
+      - {fr: "une cave", ipa: "yn kav", ja: "地下室・地下の物置", pos: "名詞", g: "f", note: "パリの集合住宅では各戸に地下の物置が付いていることが多い", ex: {fr: "Les vieux vélos ? On les met à la cave.", ja: "古い自転車？地下の物置に入れよう。"}}
+      - {fr: "un grenier", ipa: "œ̃ ɡʁənje", ja: "屋根裏（部屋）", pos: "名詞", g: "m", ex: {fr: "Mes jouets d'enfant, je les garde au grenier.", ja: "子どもの頃のおもちゃは屋根裏に取ってあります。"}}
+      - {fr: "un gardien", ipa: "œ̃ ɡaʁdjɛ̃", ja: "（建物の）管理人", pos: "名詞", g: "m", note: "女性は une gardienne。古い言い方では concierge", ex: {fr: "Le gardien de l'immeuble ? Je lui laisse mes clés.", ja: "建物の管理人さん？彼に鍵を預けておきます。"}}
+      - {fr: "un interphone", ipa: "œ̃ nɛ̃tɛʁfɔn", ja: "インターホン", pos: "名詞", g: "m", ex: {fr: "Appelle-moi à l'interphone quand tu arrives.", ja: "着いたらインターホンで呼んでね。"}}
+      - {fr: "un volet", ipa: "œ̃ vɔlɛ", ja: "よろい戸・雨戸", pos: "名詞", g: "m", note: "フランスの窓の外側に付いている戸。夜や暑い日に閉める", ex: {fr: "Les volets ? Ferme-les avant de partir.", ja: "雨戸？出かける前に閉めてね。"}}
+  - name: "家具とインテリア"
+    words:
+      - {fr: "un meuble", ipa: "œ̃ mœbl", ja: "家具（1 点）", pos: "名詞", g: "m", ex: {fr: "Nous achetons des meubles pour le salon.", ja: "居間用の家具を買います。"}}
+      - {fr: "un rideau", ipa: "œ̃ ʁido", ja: "カーテン", pos: "名詞", g: "m", pl: "des rideaux", ex: {fr: "Les rideaux ? Ouvre-les, il fait beau !", ja: "カーテン？開けて、いい天気だよ！"}}
+      - {fr: "un tapis", ipa: "œ̃ tapi", ja: "じゅうたん・ラグ", pos: "名詞", g: "m", note: "語末の s は読まない", ex: {fr: "Le chat dort toujours sur le tapis.", ja: "猫はいつもじゅうたんの上で寝ています。"}}
+      - {fr: "un miroir", ipa: "œ̃ miʁwaʁ", ja: "鏡", pos: "名詞", g: "m", ex: {fr: "Il y a un grand miroir dans l'entrée.", ja: "玄関に大きな鏡があります。"}}
+      - {fr: "un coussin", ipa: "œ̃ kusɛ̃", ja: "クッション", pos: "名詞", g: "m", ex: {fr: "Ces coussins sont jolis, je les achète.", ja: "このクッションはかわいいので、買います。"}}
+      - {fr: "un oreiller", ipa: "œ̃ nɔʁɛje", ja: "枕", pos: "名詞", g: "m", ex: {fr: "Je dors mal sans mon oreiller.", ja: "自分の枕がないとよく眠れません。"}}
+      - {fr: "un drap", ipa: "œ̃ dʁa", ja: "シーツ", pos: "名詞", g: "m", note: "語末の p は読まない", ex: {fr: "Je mets des draps propres sur le lit.", ja: "ベッドにきれいなシーツを敷きます。"}}
+      - {fr: "une table basse", ipa: "yn tabl bas", ja: "ローテーブル", pos: "名詞", g: "f", ex: {fr: "Pose tes clés sur la table basse.", ja: "鍵はローテーブルの上に置いて。"}}
+      - {fr: "un tiroir", ipa: "œ̃ tiʁwaʁ", ja: "引き出し", pos: "名詞", g: "m", ex: {fr: "Les fourchettes sont dans le premier tiroir.", ja: "フォークは一番上の引き出しにあります。"}}
+  - name: "設備と家電"
+    words:
+      - {fr: "le chauffage", ipa: "lə ʃofaʒ", ja: "暖房", pos: "名詞", g: "m", ex: {fr: "Le chauffage est compris dans les charges.", ja: "暖房費は管理費に含まれています。"}}
+      - {fr: "la climatisation", ipa: "la klimatizasjɔ̃", ja: "冷房・エアコン", pos: "名詞", g: "f", note: "会話では短く la clim。フランスの住宅には少ない", ex: {fr: "Il n'y a pas de climatisation dans l'appartement.", ja: "そのアパートにはエアコンがありません。"}}
+      - {fr: "une machine à laver", ipa: "yn maʃin a lave", ja: "洗濯機", pos: "名詞", g: "f", ex: {fr: "La machine à laver est dans la salle de bains.", ja: "洗濯機は浴室にあります。"}}
+      - {fr: "un lave-vaisselle", ipa: "œ̃ lavvɛsɛl", ja: "食洗機", pos: "名詞", g: "m", pl: "des lave-vaisselle", ex: {fr: "Le lave-vaisselle est plein, je le lance ?", ja: "食洗機がいっぱいだね、回そうか？"}}
+      - {fr: "un four", ipa: "œ̃ fuʁ", ja: "オーブン", pos: "名詞", g: "m", ex: {fr: "Mets le gâteau au four pendant trente minutes.", ja: "ケーキをオーブンに30分入れて。"}}
+      - {fr: "un micro-ondes", ipa: "œ̃ mikʁoɔ̃d", ja: "電子レンジ", pos: "名詞", g: "m", pl: "des micro-ondes", note: "単数でも s が付いた形。s は読まない", ex: {fr: "Je réchauffe la soupe au micro-ondes.", ja: "スープを電子レンジで温めます。"}}
+      - {fr: "une cuisinière", ipa: "yn kɥizinjɛʁ", ja: "（コンロ付きの）レンジ", pos: "名詞", g: "f", note: "「女性の料理人」の意味もある", ex: {fr: "Notre cuisinière est électrique.", ja: "うちのレンジは電気式です。"}}
+      - {fr: "un évier", ipa: "œ̃ nevje", ja: "（台所の）流し", pos: "名詞", g: "m", ex: {fr: "Ne laisse pas les assiettes dans l'évier !", ja: "お皿を流しに置きっぱなしにしないで！"}}
+      - {fr: "un lavabo", ipa: "œ̃ lavabo", ja: "洗面台", pos: "名詞", g: "m", note: "台所の流しは évier、洗面所は lavabo", ex: {fr: "Je me lave les mains au lavabo.", ja: "洗面台で手を洗います。"}}
+      - {fr: "une baignoire", ipa: "yn bɛɲwaʁ", ja: "浴槽", pos: "名詞", g: "f", ex: {fr: "Notre salle de bains a une baignoire et une douche.", ja: "うちの浴室には浴槽とシャワーがあります。"}}
+      - {fr: "un robinet", ipa: "œ̃ ʁɔbinɛ", ja: "蛇口", pos: "名詞", g: "m", ex: {fr: "Ferme bien le robinet, s'il te plaît.", ja: "蛇口をしっかり閉めてね。"}}
+      - {fr: "une prise", ipa: "yn pʁiz", ja: "コンセント", pos: "名詞", g: "f", ex: {fr: "Il n'y a pas de prise près du lit.", ja: "ベッドの近くにコンセントがありません。"}}
+      - {fr: "une ampoule", ipa: "yn ɑ̃pul", ja: "電球", pos: "名詞", g: "f", ex: {fr: "L'ampoule ne marche pas, change-la, s'il te plaît.", ja: "電球がつかないの、取り替えてくれる？"}}
+      - {fr: "la lumière", ipa: "la lymjɛʁ", ja: "明かり・光", pos: "名詞", g: "f", ex: {fr: "La lumière est allumée ? Éteins-la !", ja: "電気がついてる？消して！"}}
+  - name: "家事"
+    words:
+      - {fr: "les tâches ménagères", ipa: "le taʃ menaʒɛʁ", ja: "家事", pos: "名詞", g: "f", ex: {fr: "Nous partageons les tâches ménagères.", ja: "私たちは家事を分担しています。"}}
+      - {fr: "faire le ménage", ipa: "fɛʁ lə menaʒ", ja: "掃除をする", pos: "表現", note: "家全体の掃除・片付け。nettoyer は「（物を）きれいにする」", ex: {fr: "Le samedi, je fais le ménage avec mon mari.", ja: "土曜日は夫と一緒に掃除をします。"}}
+      - {fr: "faire la vaisselle", ipa: "fɛʁ la vɛsɛl", ja: "皿洗いをする", pos: "表現", ex: {fr: "Ce soir, c'est toi qui fais la vaisselle !", ja: "今夜はあなたが皿洗いをする番だよ！"}}
+      - {fr: "faire la lessive", ipa: "fɛʁ la lesiv", ja: "洗濯をする", pos: "表現", ex: {fr: "Je fais la lessive le dimanche matin.", ja: "日曜日の朝に洗濯をします。"}}
+      - {fr: "faire le lit", ipa: "fɛʁ lə li", ja: "ベッドを整える", pos: "表現", note: "自分のベッドなら faire son lit", ex: {fr: "Fais ton lit avant de partir à l'école !", ja: "学校に行く前にベッドを整えなさい！"}}
+      - {fr: "un aspirateur", ipa: "œ̃ naspiʁatœʁ", ja: "掃除機", pos: "名詞", g: "m", ex: {fr: "Mon aspirateur est vieux, mais il marche bien.", ja: "うちの掃除機は古いけど、よく動きます。"}}
+      - {fr: "passer l'aspirateur", ipa: "pase laspiʁatœʁ", ja: "掃除機をかける", pos: "表現", ex: {fr: "Tu peux passer l'aspirateur dans le salon ?", ja: "居間に掃除機をかけてくれる？"}}
+      - {fr: "repasser", ipa: "ʁəpase", ja: "アイロンをかける", pos: "動詞", ex: {fr: "Ta chemise ? Je la repasse ce soir.", ja: "あなたのシャツ？今夜アイロンをかけるね。"}}
+      - {fr: "une poubelle", ipa: "yn pubɛl", ja: "ごみ箱", pos: "名詞", g: "f", ex: {fr: "Jette ce papier à la poubelle.", ja: "この紙はごみ箱に捨てて。"}}
+      - {fr: "sortir la poubelle", ipa: "sɔʁtiʁ la pubɛl", ja: "ごみを出す", pos: "表現", note: "この sortir は「外に出す」の意味なので、複合過去は avoir", ex: {fr: "Mon fils sort la poubelle tous les mardis.", ja: "息子が毎週火曜日にごみを出します。"}}
+      - {fr: "arroser", ipa: "aʁoze", ja: "水をやる", pos: "動詞", ex: {fr: "Les plantes ? Arrose-les deux fois par semaine.", ja: "植物？週に2回水をやってね。"}}
+      - {fr: "mettre la table", ipa: "mɛtʁ la tabl", ja: "食卓の用意をする", pos: "表現", ex: {fr: "Mets la table, on mange dans cinq minutes !", ja: "食卓の用意をして、5分後に食べるよ！"}}
+      - {fr: "débarrasser la table", ipa: "debaʁase la tabl", ja: "食卓を片付ける", pos: "表現", ex: {fr: "Après le dîner, les enfants débarrassent la table.", ja: "夕食の後、子どもたちが食卓を片付けます。"}}
+      - {fr: "une éponge", ipa: "yn epɔ̃ʒ", ja: "スポンジ", pos: "名詞", g: "f", ex: {fr: "L'éponge est sous l'évier, prends-la.", ja: "スポンジは流しの下にあるよ、使って。"}}
+      - {fr: "du linge", ipa: "dy lɛ̃ʒ", ja: "洗濯物・（家庭の）布類", pos: "名詞", g: "m", ex: {fr: "Le linge est sec, je le range dans l'armoire.", ja: "洗濯物が乾いたので、たんすにしまいます。"}}
+      - {fr: "en désordre", ipa: "ɑ̃ dezɔʁdʁ", ja: "散らかった", pos: "表現", ex: {fr: "Ta chambre est encore en désordre !", ja: "あなたの部屋、また散らかってるよ！"}}
+  - name: "頼む・手伝う"
+    words:
+      - {fr: "prêter", ipa: "pʁete", ja: "貸す", pos: "動詞", note: "prêter quelque chose à quelqu'un。人は間接目的（lui / leur）", ex: {fr: "Mon voisin ? Je lui prête souvent mon aspirateur.", ja: "隣の人？よく掃除機を貸してあげます。"}}
+      - {fr: "emprunter", ipa: "ɑ̃pʁœ̃te", ja: "借りる", pos: "動詞", note: "「人から」借りるは emprunter à quelqu'un", ex: {fr: "Je peux emprunter ta voiture ce week-end ?", ja: "今週末、車を借りてもいい？"}}
+      - {fr: "rendre", ipa: "ʁɑ̃dʁ", ja: "返す", pos: "動詞", note: "過去分詞 rendu", ex: {fr: "Le propriétaire ? Je lui rends les clés vendredi.", ja: "大家さん？金曜日に鍵を返します。"}}
+      - {fr: "rendre service", ipa: "ʁɑ̃dʁ sɛʁvis", ja: "手助けをする・頼みを聞く", pos: "表現", note: "「誰に」は間接目的（me, te, lui...）", ex: {fr: "Tu peux me rendre service ?", ja: "ちょっと頼みを聞いてくれる？"}}
+      - {fr: "donner un coup de main", ipa: "dɔne œ̃ ku d mɛ̃", ja: "手を貸す", pos: "表現", note: "くだけた言い方。「誰に」は間接目的", ex: {fr: "Je te donne un coup de main pour le ménage ?", ja: "掃除、手伝おうか？"}}
+      - {fr: "Ça te dérange ?", ipa: "sa tə deʁɑ̃ʒ", ja: "迷惑じゃない？・いいかな？", pos: "表現", note: "丁寧に言うときは Ça vous dérange ?", ex: {fr: "Ça te dérange de fermer la fenêtre ?", ja: "窓を閉めてもらってもいいかな？"}}
+      - {fr: "Pas de problème.", ipa: "pa d pʁɔblɛm", ja: "問題ないよ・いいよ", pos: "表現", ex: {fr: "Pas de problème, je le fais ce soir.", ja: "いいよ、今夜やっておくね。"}}
+      - {fr: "allumer", ipa: "alyme", ja: "（明かり・電気を）つける", pos: "動詞", ex: {fr: "Il fait sombre, tu peux allumer la lampe ?", ja: "暗いね、電気スタンドをつけてくれる？"}}
+      - {fr: "éteindre", ipa: "etɛ̃dʁ", ja: "（明かり・電気を）消す", pos: "動詞", note: "過去分詞 éteint", ex: {fr: "Tu as éteint la télé avant de sortir ?", ja: "出かける前にテレビを消した？"}}
+      - {fr: "fermer", ipa: "fɛʁme", ja: "閉める", pos: "動詞", note: "fermer à clé で「鍵をかける」", ex: {fr: "Tu as bien fermé la porte à clé ?", ja: "ドアにちゃんと鍵をかけた？"}}
+  - name: "故障とトラブル"
+    words:
+      - {fr: "en panne", ipa: "ɑ̃ pan", ja: "故障中の", pos: "表現", note: "機械・車に使う。物が壊れて割れているなら cassé", ex: {fr: "La machine à laver est en panne.", ja: "洗濯機が故障しています。"}}
+      - {fr: "une fuite", ipa: "yn fɥit", ja: "（水・ガスの）漏れ", pos: "名詞", g: "f", ex: {fr: "Il y a une fuite d'eau dans la cuisine.", ja: "台所で水漏れがあります。"}}
+      - {fr: "cassé", ipa: "kase", ja: "壊れた・割れた", pos: "形容詞", f: "cassée", f_ipa: "kase", tts: "cassé, cassée", note: "女性形は e が付くが、発音は同じ", ex: {fr: "La fenêtre de ma chambre est cassée.", ja: "寝室の窓が割れています。"}}
+      - {fr: "bouché", ipa: "buʃe", ja: "詰まった", pos: "形容詞", f: "bouchée", f_ipa: "buʃe", tts: "bouché, bouchée", note: "女性形は e が付くが、発音は同じ", ex: {fr: "L'évier est bouché, appelle le plombier !", ja: "流しが詰まってる、配管工を呼んで！"}}
+      - {fr: "réparer", ipa: "ʁepaʁe", ja: "修理する", pos: "動詞", ex: {fr: "Le four ne marche pas, le propriétaire va le réparer.", ja: "オーブンが動かないので、大家さんが修理してくれます。"}}
+      - {fr: "un plombier", ipa: "œ̃ plɔ̃bje", ja: "配管工・水道屋", pos: "名詞", g: "m", note: "語末の -ier の r は読まない", ex: {fr: "Le plombier ? Je l'appelle tout de suite.", ja: "水道屋さん？すぐに電話するね。"}}
+      - {fr: "un électricien", ipa: "œ̃ nelɛktʁisjɛ̃", ja: "電気工事士", pos: "名詞", g: "m", ex: {fr: "L'électricien vient demain pour la prise de la cuisine.", ja: "台所のコンセントのことで、明日電気屋さんが来ます。"}}
+      - {fr: "du bruit", ipa: "dy bʁɥi", ja: "騒音・物音", pos: "名詞", g: "m", note: "faire du bruit で「うるさくする」", ex: {fr: "Le soir, il y a trop de bruit dans la rue.", ja: "夜は通りがうるさすぎます。"}}
+      - {fr: "humide", ipa: "ymid", ja: "湿った・じめじめした", pos: "形容詞", note: "h は読まない", ex: {fr: "La salle de bains est un peu humide.", ja: "浴室が少しじめじめしています。"}}

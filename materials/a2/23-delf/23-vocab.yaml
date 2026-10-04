@@ -1,0 +1,48 @@
+# 単元 23 DELF A2 対策 の単語（Web アプリの単語画面 /vocab/23 のデータ。A2）
+# 試験の指示文（consigne）でつまずかないよう、指示に出る動詞・名詞・決まり文句を先に覚える。本番で指示を読み違えると、分かる問題でも点を落とすため。
+# 「話す」のまとまった話と「書く」の作文で使う、順序・対比・理由・意見・時のつなぎ言葉も入れる。文と文をつなげられるかが A2 の採点で見られるため。
+# 他の単元より語数を少なく（約 30 語）している。話をつなぐ言葉の多くは、それを主に使う単元（12・21・22 など）に入れてあり、重複を除いたため。この単元は模試が中心で、新しい語より既習の語を使いこなす練習に時間を回すため。
+# A1 で出た語（cocher, lire, écouter, répondre, d'abord, ensuite, enfin, il y a, pendant など）は入れていない。
+unit: "23"
+title: "DELF A2 対策"
+groups:
+  - name: "指示文の動詞"
+    words:
+      - { fr: "compléter", ipa: "kɔ̃plete", ja: "（空欄を）埋める・完成させる", pos: "動詞", note: "je complète（語幹の é が è になる）", ex: { fr: "Complétez le tableau avec les informations du document.", ja: "文書の情報を使って表を埋めなさい。" } }
+      - { fr: "entourer", ipa: "ɑ̃tuʁe", ja: "丸で囲む", pos: "動詞", ex: { fr: "Entourez le nom de la bonne personne.", ja: "正しい人物の名前を丸で囲みなさい。" } }
+      - { fr: "relier", ipa: "ʁəlje", ja: "線で結ぶ・対応させる", pos: "動詞", ex: { fr: "Reliez chaque message à la bonne image.", ja: "それぞれのメッセージを正しい絵と結びなさい。" } }
+      - { fr: "rédiger", ipa: "ʁediʒe", ja: "（文章を）書く・作成する", pos: "動詞", note: "nous rédigeons（e を入れて g を「ジュ」の音に保つ）", ex: { fr: "Rédigez un message à votre ami français.", ja: "フランス人の友だちにメッセージを書きなさい。" } }
+      - { fr: "indiquer", ipa: "ɛ̃dike", ja: "示す・書き入れる", pos: "動詞", ex: { fr: "Indiquez le prix du billet de train.", ja: "電車の切符の値段を書きなさい。" } }
+      - { fr: "justifier", ipa: "ʒystifje", ja: "根拠を示す", pos: "動詞", note: "読解の「正誤」問題で、本文の根拠を書き写させる指示", ex: { fr: "Justifiez votre réponse avec une phrase du texte.", ja: "本文の 1 文を使って答えの根拠を示しなさい。" } }
+      - { fr: "souligner", ipa: "suliɲe", ja: "下線を引く", pos: "動詞", ex: { fr: "Soulignez les mots importants dans le texte.", ja: "本文の大事な語に下線を引きなさい。" } }
+      - { fr: "décrire", ipa: "dekʁiʁ", ja: "描写する・説明する", pos: "動詞", note: "écrire と同じ活用。過去分詞 décrit", ex: { fr: "Décrivez la photo en quelques phrases.", ja: "写真を数文で描写しなさい。" } }
+      - { fr: "présenter", ipa: "pʁezɑ̃te", ja: "紹介する・発表する", pos: "動詞", note: "se présenter（自己紹介する）とは別に、物や場所を紹介するときに使う", ex: { fr: "Présentez votre ville à un ami étranger.", ja: "外国の友だちにあなたの町を紹介しなさい。" } }
+  - name: "試験で出る名詞"
+    words:
+      - { fr: "une consigne", ipa: "yn kɔ̃siɲ", ja: "（問題の）指示文", pos: "名詞", g: "f", ex: { fr: "Lisez bien la consigne avant de commencer.", ja: "始める前に指示文をよく読みなさい。" } }
+      - { fr: "un document", ipa: "œ̃ dɔkymɑ̃", ja: "文書・資料（録音も含む）", pos: "名詞", g: "m", ex: { fr: "Vous allez entendre le document deux fois.", ja: "資料は 2 回流れます。" } }
+      - { fr: "un enregistrement", ipa: "œ̃ nɑ̃ʁəʒistʁəmɑ̃", ja: "録音", pos: "名詞", g: "m", note: "un と en がリエゾンして「アン・ナン」", ex: { fr: "L'enregistrement dure environ une minute.", ja: "録音はおよそ 1 分です。" } }
+      - { fr: "une épreuve", ipa: "yn epʁœv", ja: "（試験の）科目・パート", pos: "名詞", g: "f", ex: { fr: "L'épreuve écrite dure quarante-cinq minutes.", ja: "筆記試験は 45 分です。" } }
+      - { fr: "un examinateur", ipa: "œ̃ nɛɡzaminatœʁ", ja: "試験官", pos: "名詞", g: "m", note: "女性は une examinatrice", ex: { fr: "L'examinateur va vous poser quelques questions.", ja: "試験官がいくつか質問をします。" } }
+      - { fr: "un sujet", ipa: "œ̃ syʒɛ", ja: "テーマ・題", pos: "名詞", g: "m", ex: { fr: "Vous pouvez choisir entre deux sujets.", ja: "2 つのテーマから選べます。" } }
+      - { fr: "un texte", ipa: "œ̃ tɛkst", ja: "文章・本文", pos: "名詞", g: "m", ex: { fr: "Ce texte parle d'un festival de musique.", ja: "この文章は音楽祭について書かれています。" } }
+      - { fr: "une affirmation", ipa: "yn afiʁmasjɔ̃", ja: "（正誤を問う）文・記述", pos: "名詞", g: "f", ex: { fr: "Cette affirmation est-elle vraie ou fausse ?", ja: "この記述は正しいですか、誤りですか。" } }
+  - name: "指示文の決まり文句"
+    words:
+      - { fr: "la bonne réponse", ipa: "la bɔn ʁepɔ̃s", ja: "正しい答え", pos: "表現", ex: { fr: "Cochez la bonne réponse pour chaque question.", ja: "各問で正しい答えに印をつけなさい。" } }
+      - { fr: "environ", ipa: "ɑ̃viʁɔ̃", ja: "およそ・約", pos: "副詞", note: "「書く」の語数指定で出る（environ soixante mots）", ex: { fr: "Écrivez un texte d'environ soixante mots.", ja: "約 60 語の文章を書きなさい。" } }
+      - { fr: "au moins", ipa: "o mwɛ̃", ja: "少なくとも", pos: "表現", ex: { fr: "Votre texte doit faire au moins soixante mots.", ja: "文章は少なくとも 60 語にしなければなりません。" } }
+      - { fr: "Répondez aux questions.", ipa: "ʁepɔ̃de o kɛstjɔ̃", ja: "質問に答えなさい。", pos: "表現", ex: { fr: "Lisez le texte, puis répondez aux questions.", ja: "本文を読んでから質問に答えなさい。" } }
+      - { fr: "Écoutez le document.", ipa: "ekute lə dɔkymɑ̃", ja: "資料を聞きなさい。", pos: "表現", ex: { fr: "Écoutez le document et cochez la bonne case.", ja: "資料を聞いて、正しい欄に印をつけなさい。" } }
+      - { fr: "Lisez le document.", ipa: "lize lə dɔkymɑ̃", ja: "資料を読みなさい。", pos: "表現", ex: { fr: "Lisez le document, puis complétez le tableau.", ja: "資料を読んでから表を埋めなさい。" } }
+      - { fr: "Je n'ai pas compris la question.", ipa: "ʒə ne pa kɔ̃pʁi la kɛstjɔ̃", ja: "質問が分かりませんでした。", pos: "表現", note: "面接で聞き返すのは減点にならない。黙るより言うほうがよい", ex: { fr: "Pardon, je n'ai pas compris la question.", ja: "すみません、質問が分かりませんでした。" } }
+      - { fr: "Pouvez-vous répéter la question ?", ipa: "puve vu ʁepete la kɛstjɔ̃", ja: "質問をもう一度言っていただけますか。", pos: "表現", ex: { fr: "Excusez-moi, pouvez-vous répéter la question ?", ja: "すみません、質問をもう一度言っていただけますか。" } }
+  - name: "話をつなぐ言葉"
+    words:
+      - { fr: "en conclusion", ipa: "ɑ̃ kɔ̃klyzjɔ̃", ja: "結論として", pos: "表現", ex: { fr: "En conclusion, je préfère vivre à la campagne.", ja: "結論として、私は田舎に住むほうが好きです。" } }
+      - { fr: "même si", ipa: "mɛm si", ja: "たとえ〜でも", pos: "接続詞", note: "si + il は s'il になる", ex: { fr: "Je vais courir même s'il pleut.", ja: "たとえ雨が降っても走りに行きます。" } }
+      - { fr: "pour moi", ipa: "puʁ mwa", ja: "私にとっては", pos: "表現", ex: { fr: "Pour moi, la famille est très importante.", ja: "私にとって、家族はとても大切です。" } }
+      - { fr: "je pense que", ipa: "ʒə pɑ̃s kə", ja: "〜だと思う", pos: "表現", ex: { fr: "Je pense que c'est une bonne solution.", ja: "それはいい解決策だと思います。" } }
+      - { fr: "c'est vrai que", ipa: "sɛ vʁɛ kə", ja: "確かに〜だ", pos: "表現", note: "相手の意見を一度認めてから反論するときに使う", ex: { fr: "C'est vrai que la vie est chère à Paris.", ja: "確かにパリは物価が高いです。" } }
+      - { fr: "ça fait … que", ipa: "sa fɛ … kə", ja: "〜して（期間）になる", pos: "表現", tts: "Ça fait deux ans que j'habite ici.", note: "depuis と同じ意味。期間を文頭で強調できる", ex: { fr: "Ça fait trois mois que je cherche un travail.", ja: "仕事を探して 3 か月になります。" } }
+      - { fr: "à partir de", ipa: "a paʁtiʁ də", ja: "〜から（開始）", pos: "前置詞", ex: { fr: "À partir de lundi, je travaille le matin.", ja: "月曜日から、私は午前中に働きます。" } }

@@ -1,0 +1,101 @@
+# 単元 22 手紙・メールを書く の単語（Web アプリの単語画面 /vocab/22 のデータ。A2）
+# DELF A2 の「書く」は招待への返事・お礼・謝罪・近況報告の手紙なので、単語よりも決まり文句（表現）を多めに入れる。
+# 決まり文句はそのまま覚えて使えば減点されにくく、書く時間も短くなるため。
+# A1 で出た基本の書き出し・結び（Salut, Bisous, Cordialement, Je t'embrasse など）は入れず、その一歩先の表現と、文をつなぐ言葉を集めた。
+# 例文は複合過去・半過去・単純未来・条件法を混ぜる。この単元の文法が「時制をまぜて書く」ため。
+unit: "22"
+title: "手紙・メールを書く"
+groups:
+  - name: "書き出し"
+    words:
+      - {fr: "Cher Paul,", ipa: "ʃɛʁ pɔl", ja: "親愛なるポールへ（男性への書き出し）", pos: "表現", note: "親しい相手への手紙の書き出し。名前の後にコンマ", ex: {fr: "Cher Paul, merci pour ta longue lettre.", ja: "ポールへ。長い手紙をありがとう。"}}
+      - {fr: "Chère Julie,", ipa: "ʃɛʁ ʒyli", ja: "親愛なるジュリーへ（女性への書き出し）", pos: "表現", note: "女性には chère。発音は cher と同じ", ex: {fr: "Chère Julie, je t'écris de Lyon où il fait très beau.", ja: "ジュリーへ。とても天気のいいリヨンから書いています。"}}
+      - {fr: "Chers amis,", ipa: "ʃɛʁ zami", ja: "親愛なる友人たちへ", pos: "表現", note: "複数形。chers の s が amis とリエゾンする", ex: {fr: "Chers amis, je vous invite tous chez moi samedi.", ja: "友人のみんなへ。土曜日、みんなをうちに招待します。"}}
+      - {fr: "Comment vas-tu ?", ipa: "kɔmɑ̃ va ty", ja: "元気にしてる？", pos: "表現", note: "倒置の形。手紙では Ça va ? より少していねい", ex: {fr: "Comment vas-tu depuis ton retour de Paris ?", ja: "パリから帰ってから元気にしてる？"}}
+      - {fr: "Ça fait longtemps !", ipa: "sa fɛ lɔ̃tɑ̃", ja: "久しぶり！", pos: "表現", ex: {fr: "Ça fait longtemps que je ne t'ai pas écrit !", ja: "長いこと手紙を書いていなかったね！"}}
+      - {fr: "je t'écris pour", ipa: "ʒə tekʁi puʁ", ja: "〜するために書いています（手紙の目的）", pos: "表現", note: "最初の 1 文で手紙の目的を言うと、DELF で読みやすいと評価される", ex: {fr: "Je t'écris pour te raconter mon voyage en Bretagne.", ja: "ブルターニュ旅行の話をしたくて書いています。"}}
+      - {fr: "je vous écris pour", ipa: "ʒə vu zekʁi puʁ", ja: "〜のためにご連絡しています（改まった言い方）", pos: "表現", note: "vous の s が écris とリエゾンする", ex: {fr: "Je vous écris pour annuler ma réservation du douze mai.", ja: "5 月 12 日の予約を取り消したく、ご連絡しています。"}}
+      - {fr: "J'ai bien reçu ta lettre.", ipa: "ʒe bjɛ̃ ʁəsy ta lɛtʁ", ja: "手紙、確かに受け取りました", pos: "表現", note: "bien は「確かに」。メールでもよく使う", ex: {fr: "J'ai bien reçu ton invitation, merci beaucoup !", ja: "招待状、確かに受け取りました。どうもありがとう！"}}
+      - {fr: "Désolé de ne pas avoir écrit plus tôt.", ipa: "dezɔle də nə pa avwaʁ ekʁi ply to", ja: "もっと早く書かなくてごめんね", pos: "表現", note: "不定詞を否定するときは ne pas をまとめて前に置く", ex: {fr: "Désolée de ne pas avoir répondu plus tôt, j'étais malade.", ja: "もっと早く返事をしなくてごめんね、病気だったの。"}}
+      - {fr: "Je suis content d'avoir de tes nouvelles.", ipa: "ʒə sɥi kɔ̃tɑ̃ davwaʁ də te nuvɛl", ja: "近況がわかってうれしい", pos: "表現", ex: {fr: "Nous sommes contents d'avoir enfin de tes nouvelles !", ja: "やっと君の近況がわかってうれしいよ！"}}
+  - name: "結び"
+    words:
+      - {fr: "À plus !", ipa: "a plys", ja: "またね！（くだけた言い方）", pos: "表現", note: "s を読む。メールでは À+ と書くこともある", ex: {fr: "Passe un bon week-end et à plus !", ja: "いい週末を。じゃあまたね！"}}
+      - {fr: "À très vite !", ipa: "a tʁɛ vit", ja: "近いうちにね！", pos: "表現", ex: {fr: "On se voit samedi, à très vite !", ja: "土曜日に会おうね。じゃあ近いうちに！"}}
+      - {fr: "Bises", ipa: "biz", ja: "キスを（親しい人への結び）", pos: "表現", note: "Bisous より少し大人っぽい。家族・友人に使う", ex: {fr: "Bises à toute la famille !", ja: "家族のみんなによろしくね！"}}
+      - {fr: "Amicalement", ipa: "amikalmɑ̃", ja: "友情をこめて（友人・同僚への結び）", pos: "表現", note: "Bises ほど親しくない相手にも使える", ex: {fr: "Amicalement, ton ami de Tokyo, Kenji.", ja: "友情をこめて。東京の友だち、ケンジより。"}}
+      - {fr: "Bien cordialement", ipa: "bjɛ̃ kɔʁdjalmɑ̃", ja: "よろしくお願いいたします（ていねいな結び）", pos: "表現", note: "Cordialement より少し温かい。知らない相手へのメールにも使える", ex: {fr: "Pour écrire à mon professeur, je termine par « Bien cordialement ».", ja: "先生へのメールは「Bien cordialement」で締めくくります。"}}
+      - {fr: "Salutations distinguées", ipa: "salytasjɔ̃ distɛ̃ɡe", ja: "敬具（とても改まった結び）", pos: "表現", note: "役所や会社への手紙で使う。正式な形は Veuillez agréer mes salutations distinguées", ex: {fr: "Dans une lettre officielle, on écrit « Salutations distinguées ».", ja: "公式な手紙では「Salutations distinguées」と書きます。"}}
+      - {fr: "Écris-moi vite !", ipa: "ekʁi mwa vit", ja: "早く返事をちょうだい！", pos: "表現", note: "命令形のあとの代名詞は moi になる", ex: {fr: "Écris-moi vite pour me dire si tu viens !", ja: "来られるかどうか、早く返事をちょうだい！"}}
+      - {fr: "J'attends ta réponse.", ipa: "ʒatɑ̃ ta ʁepɔ̃s", ja: "返事を待っているね", pos: "表現", ex: {fr: "J'attends ta réponse avec impatience.", ja: "返事を楽しみに待っているね。"}}
+      - {fr: "Dans l'attente de votre réponse,", ipa: "dɑ̃ latɑ̃t də vɔtʁ ʁepɔ̃s", ja: "お返事をお待ちしております（改まった結び）", pos: "表現", note: "後ろに Bien cordialement などを続ける", ex: {fr: "Dans l'attente de votre réponse, je vous remercie.", ja: "お返事をお待ちしつつ、お礼申し上げます。"}}
+      - {fr: "Donne-moi de tes nouvelles !", ipa: "dɔn mwa də te nuvɛl", ja: "近況を知らせてね！", pos: "表現", ex: {fr: "Donne-moi de tes nouvelles après ton examen !", ja: "試験が終わったら近況を知らせてね！"}}
+      - {fr: "Dis bonjour à tes parents de ma part.", ipa: "di bɔ̃ʒuʁ a te paʁɑ̃ də ma paʁ", ja: "ご両親によろしく伝えてね", pos: "表現", note: "de ma part =「私から」", ex: {fr: "Dis bonjour à Marie de ma part, s'il te plaît.", ja: "マリーによろしく伝えてね。"}}
+      - {fr: "Prends soin de toi.", ipa: "pʁɑ̃ swɛ̃ də twa", ja: "体に気をつけてね", pos: "表現", ex: {fr: "Il fait froid à Paris, prends bien soin de toi.", ja: "パリは寒いから、体に十分気をつけてね。"}}
+  - name: "招待する・返事をする"
+    words:
+      - {fr: "Ça te dirait de venir ?", ipa: "sa tə diʁɛ də vəniʁ", ja: "来ない？（〜するのはどう？）", pos: "表現", note: "dire の条件法。気軽に誘う言い方", ex: {fr: "Ça te dirait de venir dîner samedi soir ?", ja: "土曜の夜、夕食に来ない？"}}
+      - {fr: "J'accepte avec plaisir.", ipa: "ʒaksɛpt avɛk plɛziʁ", ja: "喜んでお受けします", pos: "表現", ex: {fr: "J'accepte avec plaisir ton invitation pour samedi.", ja: "土曜日の招待、喜んでお受けします。"}}
+      - {fr: "Compte sur moi !", ipa: "kɔ̃t syʁ mwa", ja: "任せて！／必ず行くよ", pos: "表現", note: "compter sur =「〜を当てにする」の命令形", ex: {fr: "Pour ton déménagement, compte sur moi !", ja: "引っ越しのことは任せて！"}}
+      - {fr: "Je serai là.", ipa: "ʒə səʁe la", ja: "（その場に）行くよ", pos: "表現", note: "être の単純未来", ex: {fr: "Je serai là à huit heures, c'est promis.", ja: "8 時に行くよ、約束する。"}}
+      - {fr: "Je ne pourrai pas venir.", ipa: "ʒə nə puʁe pa vəniʁ", ja: "行けそうにありません", pos: "表現", note: "pouvoir の単純未来。未来のことを断るので未来形", ex: {fr: "Je suis désolé, je ne pourrai pas venir à ton mariage.", ja: "ごめんね、君の結婚式には行けそうにないんだ。"}}
+      - {fr: "J'ai déjà quelque chose de prévu.", ipa: "ʒe deʒa kɛlkə ʃoz də pʁevy", ja: "もう予定が入っている", pos: "表現", note: "quelque chose の後ろに形容詞を置くときは de が要る", ex: {fr: "Samedi, j'ai déjà quelque chose de prévu avec ma sœur.", ja: "土曜日は、もう姉と予定が入っています。"}}
+      - {fr: "C'est très gentil de ta part.", ipa: "sɛ tʁɛ ʒɑ̃ti də ta paʁ", ja: "ご親切にどうも", pos: "表現", note: "vous の相手には de votre part", ex: {fr: "Merci pour l'invitation, c'est très gentil de ta part.", ja: "招待してくれてありがとう、本当に親切だね。"}}
+      - {fr: "un invité", ipa: "œ̃ nɛ̃vite", ja: "招待客", pos: "名詞", g: "m", note: "女性は une invitée", ex: {fr: "Nous attendons une trentaine d'invités pour la soirée.", ja: "パーティーには 30 人ほどのお客さんが来る予定です。"}}
+      - {fr: "participer à", ipa: "paʁtisipe a", ja: "〜に参加する", pos: "動詞", ex: {fr: "Je voudrais participer à la soirée de vendredi.", ja: "金曜日のパーティーに参加したいです。"}}
+  - name: "お礼を言う"
+    words:
+      - {fr: "Merci mille fois !", ipa: "mɛʁsi mil fwa", ja: "本当にありがとう！", pos: "表現", note: "直訳は「千回ありがとう」", ex: {fr: "Merci mille fois pour ton aide avec le déménagement !", ja: "引っ越しを手伝ってくれて本当にありがとう！"}}
+      - {fr: "Un grand merci !", ipa: "œ̃ ɡʁɑ̃ mɛʁsi", ja: "どうもありがとう！", pos: "表現", note: "merci が名詞として使われている", ex: {fr: "Un grand merci pour ce magnifique cadeau !", ja: "すてきなプレゼントをどうもありがとう！"}}
+      - {fr: "Merci de m'avoir invité.", ipa: "mɛʁsi də mavwaʁ ɛ̃vite", ja: "招待してくれてありがとう", pos: "表現", note: "merci de + 不定詞の過去形（avoir + 過去分詞）。女性なら invitée", ex: {fr: "Merci de m'avoir invitée à ton mariage, c'était magnifique.", ja: "結婚式に招待してくれてありがとう、すばらしかったです。"}}
+      - {fr: "Ça m'a fait très plaisir.", ipa: "sa ma fɛ tʁɛ plɛziʁ", ja: "とてもうれしかった", pos: "表現", note: "faire plaisir à 人 =「人を喜ばせる」", ex: {fr: "Ta carte d'anniversaire m'a fait très plaisir.", ja: "君の誕生日カード、とてもうれしかったよ。"}}
+      - {fr: "J'ai passé un excellent moment.", ipa: "ʒe pase œ̃ nɛksɛlɑ̃ mɔmɑ̃", ja: "とても楽しい時間を過ごしました", pos: "表現", ex: {fr: "Grâce à vous, j'ai passé un excellent moment à Lyon.", ja: "おかげでリヨンではとても楽しい時間を過ごせました。"}}
+      - {fr: "la gentillesse", ipa: "la ʒɑ̃tijɛs", ja: "親切さ・優しさ", pos: "名詞", g: "f", note: "gentil の名詞形", ex: {fr: "Merci pour ta gentillesse et ta patience.", ja: "優しくしてくれて、辛抱強く付き合ってくれてありがとう。"}}
+      - {fr: "un accueil", ipa: "œ̃ nakœj", ja: "もてなし・歓迎", pos: "名詞", g: "m", note: "ueil は「ウイユ」ではなく œj と読む", ex: {fr: "Ils nous ont fait un accueil très chaleureux.", ja: "彼らはとても温かく迎えてくれました。"}}
+      - {fr: "chaleureux", ipa: "ʃaløʁø", ja: "温かい（人柄・歓迎が）", pos: "形容詞", f: "chaleureuse", f_ipa: "ʃaløʁøz", tts: "chaleureux, chaleureuse", note: "chaleur（熱）から。-eux の女性形は -euse", ex: {fr: "Tes parents sont des gens très chaleureux.", ja: "君のご両親はとても温かい人たちだね。"}}
+      - {fr: "touché", ipa: "tuʃe", ja: "（心を）動かされた・感激した", pos: "形容詞", f: "touchée", f_ipa: "tuʃe", tts: "touché, touchée", note: "toucher（触れる）の過去分詞から", ex: {fr: "J'ai été très touchée par ta lettre.", ja: "あなたの手紙にとても感激しました。"}}
+      - {fr: "Je ne sais pas comment te remercier.", ipa: "ʒə nə sɛ pa kɔmɑ̃ tə ʁəmɛʁsje", ja: "何とお礼を言えばいいか", pos: "表現", ex: {fr: "Tu m'as tellement aidé, je ne sais pas comment te remercier.", ja: "本当に助けてもらって、何とお礼を言えばいいか。"}}
+      - {fr: "Il ne fallait pas !", ipa: "il nə falɛ pa", ja: "気をつかわなくてよかったのに！", pos: "表現", note: "プレゼントをもらったときの決まり文句。falloir の半過去", ex: {fr: "Il ne fallait pas m'apporter un si beau cadeau !", ja: "こんなにすてきなプレゼント、気をつかわなくてよかったのに！"}}
+  - name: "謝る"
+    words:
+      - {fr: "une excuse", ipa: "yn ɛkskyz", ja: "言い訳・おわび", pos: "名詞", g: "f", note: "複数形 des excuses で「おわび」", ex: {fr: "Je te présente toutes mes excuses pour hier.", ja: "昨日のこと、心からおわびします。"}}
+      - {fr: "Excuse-moi !", ipa: "ɛkskyz mwa", ja: "ごめんね！", pos: "表現", note: "tu で話す相手に。vous なら Excusez-moi", ex: {fr: "Excuse-moi de répondre si tard.", ja: "返事がこんなに遅くなってごめんね。"}}
+      - {fr: "Je suis vraiment désolé.", ipa: "ʒə sɥi vʁɛmɑ̃ dezɔle", ja: "本当にごめんなさい", pos: "表現", note: "女性なら désolée（発音は同じ）", ex: {fr: "Je suis vraiment désolée pour hier soir.", ja: "昨日の夜のこと、本当にごめんなさい。"}}
+      - {fr: "Pardonne-moi.", ipa: "paʁdɔn mwa", ja: "許してね", pos: "表現", ex: {fr: "Pardonne-moi, j'ai complètement oublié ton anniversaire.", ja: "許してね、君の誕生日をすっかり忘れていたんだ。"}}
+      - {fr: "Ce n'est pas grave.", ipa: "sə nɛ pa ɡʁav", ja: "大丈夫だよ・気にしないで", pos: "表現", note: "謝られたときの返事", ex: {fr: "Ce n'est pas grave, on se verra la semaine prochaine.", ja: "気にしないで、来週会えるから。"}}
+      - {fr: "Ne t'inquiète pas.", ipa: "nə tɛ̃kjɛt pa", ja: "心配しないで", pos: "表現", note: "s'inquiéter の否定命令。vous なら Ne vous inquiétez pas", ex: {fr: "Ne t'inquiète pas, je vais bien maintenant.", ja: "心配しないで、もう元気だから。"}}
+      - {fr: "regretter", ipa: "ʁəɡʁete", ja: "残念に思う・後悔する", pos: "動詞", ex: {fr: "Je regrette de ne pas pouvoir venir.", ja: "行けなくて残念です。"}}
+      - {fr: "un empêchement", ipa: "œ̃ nɑ̃pɛʃmɑ̃", ja: "急な用事・差し支え", pos: "名詞", g: "m", note: "理由を詳しく言わずに断れる便利な語", ex: {fr: "J'ai eu un empêchement de dernière minute.", ja: "直前に急な用事ができてしまいました。"}}
+      - {fr: "un malentendu", ipa: "œ̃ malɑ̃tɑ̃dy", ja: "誤解・行き違い", pos: "名詞", g: "m", note: "mal（悪く）+ entendu（聞かれた）", ex: {fr: "Je crois qu'il y a eu un malentendu.", ja: "何か行き違いがあったんだと思う。"}}
+      - {fr: "exprès", ipa: "ɛkspʁɛ", ja: "わざと", pos: "副詞", note: "最後の s は読まない", ex: {fr: "Je ne l'ai pas fait exprès, je te le jure.", ja: "わざとやったんじゃないよ、本当に。"}}
+      - {fr: "se rattraper", ipa: "sə ʁatʁape", ja: "埋め合わせをする", pos: "動詞", note: "複合過去は être", ex: {fr: "On se rattrape le week-end prochain, d'accord ?", ja: "来週末に埋め合わせしよう、いい？"}}
+  - name: "近況を伝える"
+    words:
+      - {fr: "une nouvelle", ipa: "yn nuvɛl", ja: "知らせ・ニュース（1 つの）", pos: "名詞", g: "f", note: "複数の des nouvelles は「近況」", ex: {fr: "J'ai une grande nouvelle : je me marie en juin !", ja: "大ニュースがあるの。6 月に結婚します！"}}
+      - {fr: "en ce moment", ipa: "ɑ̃ sə mɔmɑ̃", ja: "今のところ・最近", pos: "表現", ex: {fr: "En ce moment, je prépare un examen important.", ja: "今、大事な試験の準備をしています。"}}
+      - {fr: "ces derniers temps", ipa: "se dɛʁnje tɑ̃", ja: "このところ", pos: "表現", ex: {fr: "Ces derniers temps, je sors beaucoup avec mes collègues.", ja: "このところ、同僚とよく出かけています。"}}
+      - {fr: "s'installer", ipa: "sɛ̃stale", ja: "（新しい住まいに）落ち着く・住みつく", pos: "動詞", note: "複合過去は être", ex: {fr: "Je me suis bien installé dans mon nouvel appartement.", ja: "新しいアパートにすっかり落ち着きました。"}}
+      - {fr: "un changement", ipa: "œ̃ ʃɑ̃ʒmɑ̃", ja: "変化", pos: "名詞", g: "m", ex: {fr: "Il y a eu beaucoup de changements dans ma vie.", ja: "私の生活にはたくさんの変化がありました。"}}
+      - {fr: "Tout se passe bien.", ipa: "tu sə pas bjɛ̃", ja: "すべて順調です", pos: "表現", ex: {fr: "Au travail, tout se passe bien pour le moment.", ja: "仕事は今のところすべて順調です。"}}
+      - {fr: "Le temps passe vite.", ipa: "lə tɑ̃ pas vit", ja: "時が経つのは早い", pos: "表現", ex: {fr: "Je suis en France depuis un an, le temps passe vite !", ja: "フランスに来てもう 1 年。時が経つのは早いね！"}}
+  - name: "文と文をつなぐ"
+    words:
+      - {fr: "cependant", ipa: "səpɑ̃dɑ̃", ja: "しかしながら", pos: "副詞", note: "mais より書き言葉的", ex: {fr: "Le voyage était long, cependant tout s'est bien passé.", ja: "旅は長かったけれど、すべてうまくいきました。"}}
+      - {fr: "en plus", ipa: "ɑ̃ plys", ja: "そのうえ", pos: "表現", note: "この意味では s を読む", ex: {fr: "Il faisait beau et en plus, la mer était chaude.", ja: "天気がよくて、そのうえ海も温かかった。"}}
+      - {fr: "en effet", ipa: "ɑ̃ nefɛ", ja: "実際・というのも", pos: "表現", note: "前の文の理由や説明を続ける", ex: {fr: "Je suis fatiguée, en effet je dors très mal.", ja: "疲れています。というのも、よく眠れていないのです。"}}
+      - {fr: "au fait", ipa: "o fɛt", ja: "ところで", pos: "表現", note: "この表現では t を読む", ex: {fr: "Au fait, tu as reçu mon colis ?", ja: "ところで、僕の小包は届いた？"}}
+      - {fr: "à part ça", ipa: "a paʁ sa", ja: "それ以外は", pos: "表現", ex: {fr: "J'ai un petit rhume, mais à part ça, je vais bien.", ja: "ちょっと風邪気味だけど、それ以外は元気です。"}}
+      - {fr: "quand même", ipa: "kɑ̃ mɛm", ja: "それでも", pos: "表現", ex: {fr: "Il pleuvait, mais nous avons quand même visité la ville.", ja: "雨だったけど、それでも街を見て回りました。"}}
+      - {fr: "pour finir", ipa: "puʁ finiʁ", ja: "最後に", pos: "表現", ex: {fr: "Pour finir, nous avons dîné au bord du lac.", ja: "最後に、湖のほとりで夕食をとりました。"}}
+  - name: "手紙・メールのやりとり"
+    words:
+      - {fr: "un destinataire", ipa: "œ̃ dɛstinatɛʁ", ja: "受取人・宛先", pos: "名詞", g: "m", ex: {fr: "Vérifie l'adresse du destinataire avant d'envoyer.", ja: "送る前に宛先のアドレスを確かめてね。"}}
+      - {fr: "un expéditeur", ipa: "œ̃ nɛkspeditœʁ", ja: "差出人", pos: "名詞", g: "m", ex: {fr: "Je ne connais pas l'expéditeur de ce message.", ja: "このメッセージの差出人を知りません。"}}
+      - {fr: "l'objet du message", ipa: "lɔbʒɛ dy mesaʒ", ja: "（メールの）件名", pos: "名詞", g: "m", note: "un objet は「物」。メールでは「件名」の意味になる", ex: {fr: "Écris « Invitation » dans l'objet du message.", ja: "件名に「Invitation」と書いてね。"}}
+      - {fr: "un petit mot", ipa: "œ̃ pəti mo", ja: "短い手紙・書き置き", pos: "名詞", g: "m", ex: {fr: "Je t'ai laissé un petit mot sur la table.", ja: "テーブルの上に書き置きを残しておいたよ。"}}
+      - {fr: "un faire-part", ipa: "œ̃ fɛʁpaʁ", ja: "（結婚・出産などの）通知状", pos: "名詞", g: "m", pl: "des faire-part", note: "複数形でも s を付けない", ex: {fr: "Nous avons reçu le faire-part de mariage de Claire.", ja: "クレールの結婚通知状が届きました。"}}
+      - {fr: "une carte de vœux", ipa: "yn kaʁt də vø", ja: "年賀状（新年のあいさつ状）", pos: "名詞", g: "f", note: "フランスでは 1 月中に送る", ex: {fr: "Chaque année, j'envoie des cartes de vœux à mes amis.", ja: "毎年、友だちに年賀状を送っています。"}}
+      - {fr: "transférer", ipa: "tʁɑ̃sfeʁe", ja: "転送する", pos: "動詞", note: "je transfère（アクサンの向きが変わる）", ex: {fr: "Peux-tu me transférer le message de Paul ?", ja: "ポールのメッセージを転送してくれる？"}}
+      - {fr: "un brouillon", ipa: "œ̃ bʁujɔ̃", ja: "下書き", pos: "名詞", g: "m", ex: {fr: "Pendant l'examen, j'ai d'abord écrit un brouillon.", ja: "試験中、まず下書きを書きました。"}}
+      - {fr: "relire", ipa: "ʁəliʁ", ja: "読み直す", pos: "動詞", note: "過去分詞 relu。DELF では最後に必ず読み直す", ex: {fr: "Relis ta lettre avant de l'envoyer.", ja: "送る前に手紙を読み直してね。"}}
+      - {fr: "une faute d'orthographe", ipa: "yn fot dɔʁtɔɡʁaf", ja: "綴りの間違い", pos: "名詞", g: "f", ex: {fr: "Il y a deux fautes d'orthographe dans ton message.", ja: "君のメッセージには綴りの間違いが 2 つあるよ。"}}

@@ -1,0 +1,98 @@
+# 単元 21 意見・感情・提案 の単語（Web アプリの単語画面 /vocab/21 のデータ。A2）
+# DELF A2 の「話す」（まとまった話・やり取り）と「書く」では、意見を理由と一緒に言うことが求められるので、
+# 意見の切り出し（à mon avis など）と、理由・結論をつなぐ語（donc, comme, par contre など）を厚めにした。
+# 条件法は活用表より先に、提案でそのまま使う形（on pourrait, tu devrais など）を「表現」として丸ごと覚える。よく使う形から耳に入れるため。
+# 感情の形容詞は男性形と女性形を続けて読ませる（A1 と同じ方針）。
+unit: "21"
+title: "意見・感情・提案"
+groups:
+  - name: "意見を言う"
+    words:
+      - { fr: "penser", ipa: "pɑ̃se", ja: "思う・考える", pos: "動詞", note: "penser que + 文 で「〜と思う」", ex: { fr: "Je pense que ce quartier est trop bruyant.", ja: "この地区はうるさすぎると思います。" } }
+      - { fr: "croire", ipa: "kʁwaʁ", ja: "信じる・（〜だと）思う", pos: "動詞", note: "過去分詞 cru。penser より少し自信がないときにも使う", ex: { fr: "Je crois que Marc a déjà mangé.", ja: "マルクはもう食べたと思います。" } }
+      - { fr: "je trouve que", ipa: "ʒə tʁuv kə", ja: "（実際に見て・試して）〜だと思う", pos: "表現", note: "trouver は「見つける」だが、que が続くと自分の感想を言う形になる", ex: { fr: "Je trouve que cette robe est trop chère.", ja: "このワンピースは高すぎると思います。" } }
+      - { fr: "un avis", ipa: "œ̃ navi", ja: "意見", pos: "名詞", g: "m", ex: { fr: "Quel est ton avis sur ce livre ?", ja: "この本についてどう思う？" } }
+      - { fr: "à mon avis", ipa: "a mɔ̃ navi", ja: "私の考えでは", pos: "表現", ex: { fr: "À mon avis, ce restaurant est trop cher.", ja: "私の考えでは、このレストランは高すぎます。" } }
+      - { fr: "une opinion", ipa: "yn ɔpinjɔ̃", ja: "意見・見解", pos: "名詞", g: "f", ex: { fr: "Chaque personne a son opinion.", ja: "人それぞれ意見があります。" } }
+      - { fr: "selon moi", ipa: "səlɔ̃ mwa", ja: "私によれば", pos: "表現", note: "selon は「〜によれば」。selon Marie なら「マリーによれば」", ex: { fr: "Selon moi, le train est plus pratique.", ja: "私に言わせれば、電車のほうが便利です。" } }
+      - { fr: "Qu'est-ce que tu en penses ?", ipa: "kɛs kə ty ɑ̃ pɑ̃s", ja: "それについてどう思う？", pos: "表現", note: "en は「それについて」（penser de 〜 の de 〜 を受ける）", ex: { fr: "J'aime cette veste. Qu'est-ce que tu en penses ?", ja: "このジャケットが好きなんだ。どう思う？" } }
+      - { fr: "avoir raison", ipa: "avwaʁ ʁɛzɔ̃", ja: "正しい・言うとおりだ", pos: "表現", note: "être ではなく avoir を使う", ex: { fr: "Tu as raison, ce film est trop long.", ja: "君の言うとおり、この映画は長すぎるね。" } }
+      - { fr: "avoir tort", ipa: "avwaʁ tɔʁ", ja: "間違っている", pos: "表現", ex: { fr: "Je pense que tu as tort.", ja: "君は間違っていると思うよ。" } }
+      - { fr: "un point de vue", ipa: "œ̃ pwɛ̃ d vy", ja: "観点・見方", pos: "名詞", g: "m", ex: { fr: "Je comprends ton point de vue, mais je ne suis pas d'accord.", ja: "君の考えはわかるけど、賛成はできない。" } }
+      - { fr: "sûr", ipa: "syʁ", ja: "確かな・確信している", pos: "形容詞", f: "sûre", f_ipa: "syʁ", tts: "sûr, sûre", note: "女性形も発音は同じ。^ がない sur（〜の上に）と区別する", ex: { fr: "Je suis sûr que tu vas aimer ce livre.", ja: "君はきっとこの本を気に入るよ。" } }
+      - { fr: "franchement", ipa: "fʁɑ̃ʃmɑ̃", ja: "正直に言って", pos: "副詞", ex: { fr: "Franchement, ce spectacle était ennuyeux.", ja: "正直、あのショーは退屈だった。" } }
+      - { fr: "en fait", ipa: "ɑ̃ fɛt", ja: "実は・実際は", pos: "表現", note: "fait の t を読む", ex: { fr: "En fait, je n'aime pas beaucoup le café.", ja: "実は、コーヒーはあまり好きじゃないんです。" } }
+  - name: "理由と結論をつなぐ"
+    words:
+      - { fr: "donc", ipa: "dɔ̃k", ja: "だから・それで", pos: "接続詞", note: "c を読むことが多い", ex: { fr: "Il pleut, donc je prends le bus.", ja: "雨が降っているので、バスに乗ります。" } }
+      - { fr: "mais", ipa: "mɛ", ja: "でも・しかし", pos: "接続詞", ex: { fr: "C'est cher, mais c'est très bon.", ja: "高いけど、とてもおいしい。" } }
+      - { fr: "car", tts: "car il pleut", ipa: "kaʁ", ja: "というのは〜だから", pos: "接続詞", note: "書き言葉でよく使う。parce que と違い、文頭には置かない", ex: { fr: "Je ne viens pas ce soir, car je suis fatigué.", ja: "今夜は行きません、疲れているので。" } }
+      - { fr: "pourtant", ipa: "puʁtɑ̃", ja: "それなのに", pos: "副詞", ex: { fr: "Il travaille beaucoup, pourtant il n'est jamais fatigué.", ja: "彼はよく働くのに、決して疲れない。" } }
+      - { fr: "par contre", ipa: "paʁ kɔ̃tʁ", ja: "その一方で", pos: "表現", ex: { fr: "L'hôtel est petit. Par contre, il est très calme.", ja: "ホテルは小さい。その一方で、とても静かだ。" } }
+      - { fr: "surtout", ipa: "syʁtu", ja: "とくに", pos: "副詞", ex: { fr: "J'aime le sport, surtout le tennis.", ja: "スポーツが好きで、とくにテニスが好きです。" } }
+      - { fr: "par exemple", ipa: "paʁ ɛɡzɑ̃pl", ja: "たとえば", pos: "表現", ex: { fr: "J'aime les fruits, par exemple les fraises.", ja: "果物が好きです、たとえばいちご。" } }
+      - { fr: "c'est pour ça que", ipa: "sɛ puʁ sa kə", ja: "だから〜なのです", pos: "表現", ex: { fr: "J'adore Paris, c'est pour ça que j'apprends le français.", ja: "パリが大好きで、だからフランス語を勉強しています。" } }
+      - { fr: "grâce à", ipa: "ɡʁɑs a", ja: "〜のおかげで", pos: "前置詞", note: "よい結果に使う。悪い結果なら à cause de", ex: { fr: "J'ai trouvé un appartement grâce à toi.", ja: "君のおかげでアパートが見つかったよ。" } }
+      - { fr: "à cause de", ipa: "a koz də", ja: "〜のせいで", pos: "前置詞", note: "de + le は du になる（à cause du bruit）", ex: { fr: "Le train est en retard à cause de la neige.", ja: "雪のせいで電車が遅れています。" } }
+      - { fr: "une raison", ipa: "yn ʁɛzɔ̃", ja: "理由", pos: "名詞", g: "f", ex: { fr: "Pour quelle raison tu ne viens pas ?", ja: "どんな理由で来ないの？" } }
+  - name: "賛成・反対"
+    words:
+      - { fr: "être d'accord avec", ipa: "ɛtʁ dakɔʁ avɛk", ja: "〜に賛成だ・〜と同じ意見だ", pos: "表現", ex: { fr: "Je ne suis pas d'accord avec lui.", ja: "私は彼と意見が違います。" } }
+      - { fr: "Tout à fait.", ipa: "tu ta fɛ", ja: "まったくそのとおり。", pos: "表現", note: "tout の t が次の à とつながる", ex: { fr: "Tout à fait, c'est une très bonne solution.", ja: "まったくそのとおり、とてもいい解決策です。" } }
+      - { fr: "C'est vrai.", ipa: "sɛ vʁɛ", ja: "本当だ・確かに。", pos: "表現", ex: { fr: "C'est vrai, ce quartier est très calme.", ja: "確かに、この地区はとても静かだね。" } }
+      - { fr: "Pas vraiment.", ipa: "pa vʁɛmɑ̃", ja: "そうでもない。", pos: "表現", ex: { fr: "Pas vraiment, je préfère le thé.", ja: "そうでもないな、紅茶のほうが好き。" } }
+      - { fr: "Je ne crois pas.", ipa: "ʒə nə kʁwa pa", ja: "そうは思わない。", pos: "表現", ex: { fr: "Il va venir ? Non, je ne crois pas.", ja: "彼は来るかな？いや、来ないと思う。" } }
+      - { fr: "Au contraire.", ipa: "o kɔ̃tʁɛʁ", ja: "それどころか・反対に。", pos: "表現", ex: { fr: "Au contraire, ce livre est passionnant !", ja: "それどころか、この本は夢中になるほど面白いよ！" } }
+      - { fr: "possible", ipa: "pɔsibl", ja: "ありうる・可能な", pos: "形容詞", note: "反対は impossible", ex: { fr: "C'est possible, mais je ne suis pas sûre.", ja: "ありうるけど、確かではないわ。" } }
+      - { fr: "Ça m'est égal.", ipa: "sa mɛ teɡal", ja: "どちらでもいい。", pos: "表現", note: "m'est égal の t がつながって「メテガル」", ex: { fr: "Le cinéma ou le théâtre ? Ça m'est égal.", ja: "映画か演劇？どっちでもいいよ。" } }
+      - { fr: "discuter", ipa: "diskyte", ja: "話し合う・議論する", pos: "動詞", ex: { fr: "Nous avons discuté du projet hier soir.", ja: "私たちは昨晩その計画について話し合いました。" } }
+      - { fr: "une discussion", ipa: "yn diskysjɔ̃", ja: "話し合い・議論", pos: "名詞", g: "f", ex: { fr: "On a eu une longue discussion avec nos voisins.", ja: "隣人たちと長い話し合いをしました。" } }
+      - { fr: "être pour", ipa: "ɛtʁ puʁ", ja: "賛成だ", pos: "表現", ex: { fr: "Moi, je suis pour ce projet.", ja: "私はこの計画に賛成です。" } }
+      - { fr: "être contre", ipa: "ɛtʁ kɔ̃tʁ", ja: "反対だ", pos: "表現", ex: { fr: "Mes parents sont contre cette idée.", ja: "両親はその考えに反対です。" } }
+  - name: "気持ち・感情"
+    words:
+      - { fr: "content", ipa: "kɔ̃tɑ̃", ja: "うれしい・満足した", pos: "形容詞", f: "contente", f_ipa: "kɔ̃tɑ̃t", tts: "content, contente", note: "content de + 名詞・不定詞 で「〜がうれしい」", ex: { fr: "Je suis content de te voir.", ja: "君に会えてうれしいよ。" } }
+      - { fr: "en colère", ipa: "ɑ̃ kɔlɛʁ", ja: "怒っている", pos: "表現", ex: { fr: "Mon père est en colère contre moi.", ja: "父は私に怒っている。" } }
+      - { fr: "surpris", ipa: "syʁpʁi", ja: "驚いた", pos: "形容詞", f: "surprise", f_ipa: "syʁpʁiz", tts: "surpris, surprise", note: "surprendre（驚かせる）の過去分詞から", ex: { fr: "Elle est très surprise de le voir ici.", ja: "彼女はここで彼に会ってとても驚いている。" } }
+      - { fr: "inquiet", ipa: "ɛ̃kjɛ", ja: "心配な", pos: "形容詞", f: "inquiète", f_ipa: "ɛ̃kjɛt", tts: "inquiet, inquiète", ex: { fr: "Ma mère est inquiète quand je rentre tard.", ja: "私が遅く帰ると、母は心配する。" } }
+      - { fr: "fier", ipa: "fjɛʁ", ja: "誇りに思う", pos: "形容詞", f: "fière", f_ipa: "fjɛʁ", tts: "fier, fière", note: "r を読む珍しい -er。女性形も発音は同じ", ex: { fr: "Je suis fière de mon fils.", ja: "私は息子を誇りに思っています。" } }
+      - { fr: "ravi", ipa: "ʁavi", ja: "とてもうれしい", pos: "形容詞", f: "ravie", f_ipa: "ʁavi", tts: "ravi, ravie", note: "content より強い。手紙やメールでもよく使う", ex: { fr: "Je suis ravie de venir à ta fête.", ja: "あなたのパーティーに行けてとてもうれしい。" } }
+      - { fr: "avoir peur", ipa: "avwaʁ pœʁ", ja: "怖い", pos: "表現", note: "avoir peur de 〜 で「〜が怖い」", ex: { fr: "Ma fille a peur des chiens.", ja: "娘は犬を怖がります。" } }
+      - { fr: "avoir envie de", ipa: "avwaʁ ɑ̃vi də", ja: "〜したい・〜がほしい", pos: "表現", ex: { fr: "J'ai envie d'aller à la plage.", ja: "ビーチに行きたいな。" } }
+      - { fr: "avoir hâte de", ipa: "avwaʁ at də", ja: "〜が待ち遠しい", pos: "表現", note: "hâte の h は有音なので、j'ai hâte はつなげない", ex: { fr: "J'ai hâte de partir en vacances.", ja: "休暇に出かけるのが待ち遠しい。" } }
+      - { fr: "un sentiment", ipa: "œ̃ sɑ̃timɑ̃", ja: "気持ち・感情", pos: "名詞", g: "m", ex: { fr: "C'est difficile de parler de ses sentiments.", ja: "自分の気持ちを話すのは難しい。" } }
+      - { fr: "s'inquiéter", ipa: "sɛ̃kjete", ja: "心配する", pos: "動詞", note: "複合過去は être（代名動詞）", ex: { fr: "Ne t'inquiète pas, tout va bien.", ja: "心配しないで、大丈夫だから。" } }
+  - name: "物事を評価する"
+    words:
+      - { fr: "important", ipa: "ɛ̃pɔʁtɑ̃", ja: "大切な", pos: "形容詞", f: "importante", f_ipa: "ɛ̃pɔʁtɑ̃t", tts: "important, importante", ex: { fr: "C'est important de bien dormir.", ja: "よく眠ることは大切です。" } }
+      - { fr: "agréable", ipa: "aɡʁeabl", ja: "心地よい・感じのいい", pos: "形容詞", ex: { fr: "C'est un quartier très agréable.", ja: "とても感じのいい地区です。" } }
+      - { fr: "formidable", ipa: "fɔʁmidabl", ja: "すばらしい", pos: "形容詞", ex: { fr: "On a passé une soirée formidable !", ja: "すばらしい夜を過ごしました！" } }
+      - { fr: "excellent", ipa: "ɛksɛlɑ̃", ja: "とてもおいしい・優れた", pos: "形容詞", f: "excellente", f_ipa: "ɛksɛlɑ̃t", tts: "excellent, excellente", ex: { fr: "Ce gâteau au chocolat est excellent.", ja: "このチョコレートケーキはとてもおいしい。" } }
+      - { fr: "bizarre", ipa: "bizaʁ", ja: "変な", pos: "形容詞", ex: { fr: "Je trouve ce film un peu bizarre.", ja: "この映画はちょっと変だと思う。" } }
+      - { fr: "normal", ipa: "nɔʁmal", ja: "普通の・当然の", pos: "形容詞", f: "normale", f_ipa: "nɔʁmal", tts: "normal, normale", note: "男性複数は normaux（-al → -aux）", ex: { fr: "C'est normal d'être fatigué après le voyage.", ja: "旅行の後に疲れているのは当然です。" } }
+      - { fr: "compliqué", ipa: "kɔ̃plike", ja: "複雑な・ややこしい", pos: "形容詞", f: "compliquée", f_ipa: "kɔ̃plike", tts: "compliqué, compliquée", ex: { fr: "Ce jeu est trop compliqué pour moi.", ja: "このゲームは私には複雑すぎる。" } }
+      - { fr: "ça vaut la peine", ipa: "sa vo la pɛn", ja: "その価値がある", pos: "表現", note: "vaut は valoir（価値がある）の活用", ex: { fr: "Va voir ce film, ça vaut la peine !", ja: "この映画を見に行きなよ、見る価値があるよ！" } }
+  - name: "提案する・誘う"
+    words:
+      - { fr: "on pourrait", ipa: "ɔ̃ puʁɛ", ja: "〜しようか・〜できるかも", pos: "表現", note: "pouvoir の条件法。命令せずにやわらかく提案する", ex: { fr: "On pourrait aller au cinéma ce soir.", ja: "今夜、映画に行こうか。" } }
+      - { fr: "j'aimerais", ipa: "ʒɛmʁɛ", ja: "〜したいのですが", pos: "表現", note: "aimer の条件法。je voudrais と同じく、ていねいに希望を言う", ex: { fr: "J'aimerais visiter le Mont-Saint-Michel.", ja: "モン・サン・ミシェルを訪れてみたいです。" } }
+      - { fr: "tu devrais", ipa: "ty dəvʁɛ", ja: "〜したほうがいい", pos: "表現", note: "devoir の条件法。アドバイスに使う", ex: { fr: "Tu devrais te reposer un peu.", ja: "少し休んだほうがいいよ。" } }
+      - { fr: "ce serait", ipa: "sə səʁɛ", ja: "〜だろうな", pos: "表現", note: "être の条件法。c'est をやわらげた形", ex: { fr: "Ce serait sympa de partir ensemble.", ja: "一緒に出かけられたらいいね。" } }
+      - { fr: "je préférerais", ipa: "ʒə pʁefeʁəʁɛ", ja: "どちらかというと〜したい", pos: "表現", note: "préférer の条件法。提案をやんわり断るときに便利", ex: { fr: "Je préférerais rester à la maison ce soir.", ja: "今夜はどちらかというと家にいたいな。" } }
+      - { fr: "il vaudrait mieux", ipa: "il vodʁɛ mjø", ja: "〜したほうがいいだろう", pos: "表現", note: "il vaut mieux（〜するほうがよい）の条件法", ex: { fr: "Il vaudrait mieux partir tôt demain matin.", ja: "明日の朝は早く出たほうがいいだろう。" } }
+      - { fr: "Ça te dit de venir ?", ipa: "sa t di d vəniʁ", ja: "来る気ある？", pos: "表現", note: "Ça te dit de + 不定詞 ? で「〜する気はある？」と気軽に誘う", ex: { fr: "Ça te dit de faire un pique-nique dimanche ?", ja: "日曜日にピクニックしない？" } }
+      - { fr: "Et si on allait au parc ?", ipa: "e si ɔ̃ nalɛ o paʁk", ja: "公園に行くのはどう？", pos: "表現", note: "Et si + 半過去 ? で「〜するのはどう？」と提案する", ex: { fr: "Il fait beau. Et si on allait à la plage ?", ja: "天気がいいね。ビーチに行くのはどう？" } }
+      - { fr: "une proposition", ipa: "yn pʁɔpozisjɔ̃", ja: "提案", pos: "名詞", g: "f", ex: { fr: "Merci pour ta proposition, mais je suis occupé.", ja: "提案ありがとう、でも忙しいんだ。" } }
+      - { fr: "une idée", ipa: "yn ide", ja: "考え・アイデア", pos: "名詞", g: "f", ex: { fr: "J'ai une idée pour le week-end.", ja: "週末のためのアイデアがあるよ。" } }
+      - { fr: "suggérer", ipa: "syɡʒeʁe", ja: "提案する・勧める", pos: "動詞", note: "je suggère のように、活用で é が è に変わる", ex: { fr: "Je vous suggère de prendre le train.", ja: "電車で行くことをお勧めします。" } }
+      - { fr: "Volontiers !", ipa: "vɔlɔ̃tje", ja: "喜んで！", pos: "表現", ex: { fr: "Un café ? Oui, volontiers, merci !", ja: "コーヒー？ええ、喜んで、ありがとう！" } }
+      - { fr: "Ça marche !", ipa: "sa maʁʃ", ja: "オーケー！・それでいこう！", pos: "表現", note: "くだけた言い方。d'accord の代わりに使う", ex: { fr: "Rendez-vous à huit heures ? Ça marche !", ja: "8 時に待ち合わせ？オーケー！" } }
+  - name: "好み・興味"
+    words:
+      - { fr: "un goût", ipa: "œ̃ ɡu", ja: "好み・味", pos: "名詞", g: "m", ex: { fr: "Nous n'avons pas les mêmes goûts.", ja: "私たちは好みが違います。" } }
+      - { fr: "passionné", ipa: "pasjɔne", ja: "夢中な・熱中している", pos: "形容詞", f: "passionnée", f_ipa: "pasjɔne", tts: "passionné, passionnée", note: "passionné de + 名詞 で「〜に夢中」", ex: { fr: "Mon frère est passionné de cuisine.", ja: "兄は料理に夢中です。" } }
+      - { fr: "plaire", ipa: "plɛʁ", ja: "気に入る", pos: "動詞", note: "過去分詞 plu。主語は「気に入られる物」（Ce livre me plaît. = 私はこの本が気に入っている）", ex: { fr: "Ce cadeau me plaît beaucoup.", ja: "このプレゼント、とても気に入りました。" } }
+      - { fr: "apprécier", ipa: "apʁesje", ja: "高く評価する・ありがたく思う", pos: "動詞", ex: { fr: "J'apprécie beaucoup ton aide.", ja: "君の助けにとても感謝しているよ。" } }
+      - { fr: "avoir horreur de", ipa: "avwaʁ ɔʁœʁ də", ja: "〜が大嫌いだ", pos: "表現", note: "horreur の h は無音なので、j'ai horreur とつなげて読む", ex: { fr: "J'ai horreur de me lever tôt.", ja: "早起きが大嫌いです。" } }
+      - { fr: "supporter", ipa: "sypɔʁte", ja: "我慢する・耐える", pos: "動詞", note: "英語の support（支える）とは意味が違う。否定でよく使う", ex: { fr: "Je ne supporte pas le bruit.", ja: "騒音には耐えられません。" } }
+      - { fr: "tellement", ipa: "tɛlmɑ̃", ja: "とても・それほど", pos: "副詞", ex: { fr: "Ce gâteau est tellement bon !", ja: "このケーキ、本当においしい！" } }

@@ -1,0 +1,103 @@
+# 単元 13 子どもの頃・昔のこと の単語（Web アプリの単語画面 /vocab/13 のデータ。A2）
+# この単元の文法は半過去（背景・習慣）と複合過去（出来事）の使い分けなので、例文はなるべく半過去で書き、
+# 「背景と出来事をつなぐ語」では 1 文の中に半過去と複合過去が並ぶ形にした。読むだけで使い分けの型が耳に残るようにするため。
+# 名詞は A1 と同じく不定冠詞付き。人生の段階（l'enfance など）や la rentrée は定冠詞で使うのが自然なので定冠詞にした。
+# 形容詞は男性形と女性形を続けて読ませる。子どもの頃の自分を語るとき、話し手の性で形が変わるため。
+unit: "13"
+title: "子どもの頃・昔のこと"
+groups:
+  - name: "成長と人生の段階"
+    words:
+      - {fr: "l'enfance", ipa: "lɑ̃fɑ̃s", ja: "子ども時代", pos: "名詞", g: "f", ex: {fr: "J'ai passé mon enfance à Osaka.", ja: "私は子ども時代を大阪で過ごしました。"}}
+      - {fr: "la jeunesse", ipa: "la ʒœnɛs", ja: "若い頃・青春", pos: "名詞", g: "f", ex: {fr: "Dans sa jeunesse, mon père jouait au football.", ja: "若い頃、父はサッカーをしていました。"}}
+      - {fr: "l'adolescence", ipa: "ladɔlesɑ̃s", ja: "思春期・10 代", pos: "名詞", g: "f", ex: {fr: "Pendant l'adolescence, je parlais très peu.", ja: "10 代の頃、私はとても口数が少なかった。"}}
+      - {fr: "un adolescent", ipa: "œ̃ nadɔlesɑ̃", ja: "10 代の若者", pos: "名詞", g: "m", note: "女性は une adolescente。話し言葉では un ado / une ado", ex: {fr: "Quand j'étais adolescent, je lisais beaucoup de mangas.", ja: "10 代の頃、私は漫画をたくさん読んでいました。"}}
+      - {fr: "une naissance", ipa: "yn nɛsɑ̃s", ja: "誕生", pos: "名詞", g: "f", ex: {fr: "À ma naissance, mes parents habitaient à Kobe.", ja: "私が生まれたとき、両親は神戸に住んでいました。"}}
+      - {fr: "grandir", ipa: "ɡʁɑ̃diʁ", ja: "育つ・大きくなる", pos: "動詞", note: "finir と同じ活用（nous grandissons）", ex: {fr: "J'ai grandi à la campagne.", ja: "私は田舎で育ちました。"}}
+      - {fr: "déménager", ipa: "demenaʒe", ja: "引っ越す", pos: "動詞", note: "nous の現在形・半過去 je déménageais は g の後に e が入る（ジュの音を保つため）", ex: {fr: "Nous avons déménagé quand j'avais huit ans.", ja: "私が 8 歳のとき、私たちは引っ越しました。"}}
+  - name: "遊びと友だち"
+    words:
+      - {fr: "un jouet", ipa: "œ̃ ʒwɛ", ja: "おもちゃ", pos: "名詞", g: "m", ex: {fr: "Mon jouet préféré était un petit train.", ja: "いちばん好きなおもちゃは小さな電車でした。"}}
+      - {fr: "une poupée", ipa: "yn pupe", ja: "人形", pos: "名詞", g: "f", ex: {fr: "Ma sœur jouait à la poupée avec sa voisine.", ja: "姉は近所の女の子と人形遊びをしていました。"}}
+      - {fr: "un ballon", ipa: "œ̃ balɔ̃", ja: "ボール", pos: "名詞", g: "m", note: "大きく膨らんだボール。テニスボールなど小さいものは une balle", ex: {fr: "Nous jouions au ballon dans le parc.", ja: "私たちは公園でボール遊びをしていました。"}}
+      - {fr: "des billes", ipa: "de bij", ja: "ビー玉", pos: "名詞", g: "f", ex: {fr: "À la récré, on jouait aux billes.", ja: "休み時間にはビー玉で遊んでいました。"}}
+      - {fr: "jouer à cache-cache", ipa: "ʒwe a kaʃkaʃ", ja: "かくれんぼをする", pos: "表現", ex: {fr: "Les enfants jouaient à cache-cache dans le jardin.", ja: "子どもたちは庭でかくれんぼをしていました。"}}
+      - {fr: "une balançoire", ipa: "yn balɑ̃swaʁ", ja: "ブランコ", pos: "名詞", g: "f", ex: {fr: "Il y avait une balançoire derrière notre maison.", ja: "家の裏にブランコがありました。"}}
+      - {fr: "un dessin animé", ipa: "œ̃ desɛ̃ anime", ja: "アニメ", pos: "名詞", g: "m", pl: "des dessins animés", ex: {fr: "Le samedi matin, je regardais des dessins animés.", ja: "土曜の朝はアニメを見ていました。"}}
+      - {fr: "une histoire", ipa: "yn istwaʁ", ja: "話・物語・歴史", pos: "名詞", g: "f", note: "h は読まない", ex: {fr: "Mon grand-père racontait des histoires drôles.", ja: "祖父はおもしろい話をしてくれました。"}}
+      - {fr: "s'amuser", ipa: "samyze", ja: "楽しむ・遊ぶ", pos: "動詞", ex: {fr: "Nous nous amusions bien chez nos cousins.", ja: "いとこの家ではとても楽しく遊びました。"}}
+      - {fr: "un copain", ipa: "œ̃ kɔpɛ̃", ja: "友だち（男）", pos: "名詞", g: "m", note: "女性は une copine。un ami よりくだけた言い方", ex: {fr: "Mon copain Taro habitait à côté de chez moi.", ja: "友だちのタロウはうちの隣に住んでいました。"}}
+      - {fr: "un meilleur ami", ipa: "œ̃ mɛjœʁ ami", ja: "親友", pos: "名詞", g: "m", note: "女性は une meilleure amie（発音は同じ）", ex: {fr: "Mon meilleur ami s'appelait Kenta.", ja: "親友の名前はケンタでした。"}}
+      - {fr: "un camarade de classe", ipa: "œ̃ kamaʁad də klas", ja: "クラスメート", pos: "名詞", g: "m", ex: {fr: "Mes camarades de classe étaient très sympas.", ja: "クラスメートはとても感じがよかった。"}}
+  - name: "学校の思い出"
+    words:
+      - {fr: "une école maternelle", ipa: "yn ekɔl matɛʁnɛl", ja: "幼稚園（3〜5 歳の学校）", pos: "名詞", g: "f", ex: {fr: "Mon petit frère allait à l'école maternelle.", ja: "弟は幼稚園に通っていました。"}}
+      - {fr: "une école primaire", ipa: "yn ekɔl pʁimɛʁ", ja: "小学校", pos: "名詞", g: "f", ex: {fr: "Mon école primaire était près de la gare.", ja: "私の小学校は駅の近くにありました。"}}
+      - {fr: "un collège", ipa: "œ̃ kɔlɛʒ", ja: "中学校", pos: "名詞", g: "m", note: "英語の college（大学）とは違う", ex: {fr: "Au collège, j'étais dans l'équipe de basket.", ja: "中学ではバスケのチームに入っていました。"}}
+      - {fr: "un lycée", ipa: "œ̃ lise", ja: "高校", pos: "名詞", g: "m", note: "-ée で終わるが男性名詞", ex: {fr: "Mon lycée était loin de la maison.", ja: "私の高校は家から遠かった。"}}
+      - {fr: "un instituteur", ipa: "œ̃ nɛ̃stitytœʁ", ja: "小学校の先生（男）", pos: "名詞", g: "m", note: "女性は une institutrice。子どもは le maître / la maîtresse と呼ぶ", ex: {fr: "Notre instituteur était très patient.", ja: "担任の先生はとても辛抱強かった。"}}
+      - {fr: "un élève", ipa: "œ̃ nelɛv", ja: "生徒・児童", pos: "名詞", g: "m", note: "女性も同じ形で une élève", ex: {fr: "Il y avait vingt élèves dans ma classe.", ja: "私のクラスには生徒が 20 人いました。"}}
+      - {fr: "une récréation", ipa: "yn ʁekʁeasjɔ̃", ja: "（学校の）休み時間", pos: "名詞", g: "f", note: "話し言葉では la récré", ex: {fr: "Pendant la récréation, nous courions partout.", ja: "休み時間には、私たちはあちこち走り回っていました。"}}
+      - {fr: "une cour", ipa: "yn kuʁ", ja: "校庭・中庭", pos: "名詞", g: "f", ex: {fr: "La cour de l'école était très grande.", ja: "学校の校庭はとても広かった。"}}
+      - {fr: "un cartable", ipa: "œ̃ kaʁtabl", ja: "ランドセル・通学かばん", pos: "名詞", g: "m", ex: {fr: "Mon cartable était toujours trop lourd.", ja: "私のランドセルはいつも重すぎました。"}}
+      - {fr: "une matière", ipa: "yn matjɛʁ", ja: "教科", pos: "名詞", g: "f", ex: {fr: "Ma matière préférée était le dessin.", ja: "いちばん好きな教科は図工でした。"}}
+      - {fr: "la rentrée", ipa: "la ʁɑ̃tʁe", ja: "新学期（9 月の始業）", pos: "名詞", g: "f", note: "フランスの学校は 9 月始まり", ex: {fr: "À la rentrée, j'étais toujours un peu stressé.", ja: "新学期はいつも少し緊張していました。"}}
+  - name: "昔の暮らし・習慣"
+    words:
+      - {fr: "avoir l'habitude de", ipa: "avwaʁ labityd də", ja: "〜するのが習慣だ", pos: "表現", note: "後ろは不定詞。昔の習慣は半過去で j'avais l'habitude de", ex: {fr: "J'avais l'habitude de me lever très tôt.", ja: "私はとても早く起きるのが習慣でした。"}}
+      - {fr: "un goûter", ipa: "œ̃ ɡute", ja: "（子どもの）おやつ", pos: "名詞", g: "m", note: "夕方 4 時ごろに食べる", ex: {fr: "Après l'école, je prenais un goûter avec ma sœur.", ja: "放課後は姉と一緒におやつを食べていました。"}}
+      - {fr: "une colonie de vacances", ipa: "yn kɔlɔni də vakɑ̃s", ja: "林間学校・サマーキャンプ", pos: "名詞", g: "f", note: "話し言葉では la colo", ex: {fr: "En juillet, j'allais en colonie de vacances.", ja: "7 月にはサマーキャンプに行っていました。"}}
+      - {fr: "une ferme", ipa: "yn fɛʁm", ja: "農場", pos: "名詞", g: "f", ex: {fr: "Mon oncle avait une ferme près de Sendai.", ja: "おじは仙台の近くに農場を持っていました。"}}
+      - {fr: "un arbre", ipa: "œ̃ naʁbʁ", ja: "木", pos: "名詞", g: "m", ex: {fr: "Il y avait un grand arbre devant l'école.", ja: "学校の前に大きな木がありました。"}}
+      - {fr: "une rivière", ipa: "yn ʁivjɛʁ", ja: "川", pos: "名詞", g: "f", ex: {fr: "L'été, nous nous baignions dans la rivière.", ja: "夏には川で泳いでいました。"}}
+      - {fr: "une cabane", ipa: "yn kaban", ja: "小屋・秘密基地", pos: "名詞", g: "f", ex: {fr: "Nous avions une cabane dans la forêt.", ja: "私たちは森に秘密基地を持っていました。"}}
+      - {fr: "garder", ipa: "ɡaʁde", ja: "（子どもを）預かる・取っておく", pos: "動詞", ex: {fr: "Ma grand-mère gardait mon petit frère le mercredi.", ja: "水曜日は祖母が弟の面倒を見ていました。"}}
+      - {fr: "s'occuper de", ipa: "sɔkype də", ja: "〜の世話をする", pos: "動詞", ex: {fr: "Ma sœur s'occupait du chien.", ja: "姉が犬の世話をしていました。"}}
+      - {fr: "aider", ipa: "ɛde", ja: "手伝う・助ける", pos: "動詞", ex: {fr: "J'aidais souvent mon père dans le jardin.", ja: "私はよく庭で父を手伝っていました。"}}
+  - name: "子どもの性格・様子"
+    words:
+      - {fr: "sage", ipa: "saʒ", ja: "（子どもが）おとなしい・いい子の", pos: "形容詞", ex: {fr: "J'étais un enfant sage.", ja: "私はおとなしい子どもでした。"}}
+      - {fr: "obéissant", ipa: "ɔbeisɑ̃", ja: "言うことをよく聞く", pos: "形容詞", f: "obéissante", f_ipa: "ɔbeisɑ̃t", tts: "obéissant, obéissante", ex: {fr: "Mon frère n'était pas très obéissant.", ja: "兄はあまり言うことを聞かなかった。"}}
+      - {fr: "turbulent", ipa: "tyʁbylɑ̃", ja: "やんちゃな・騒がしい", pos: "形容詞", f: "turbulente", f_ipa: "tyʁbylɑ̃t", tts: "turbulent, turbulente", ex: {fr: "Les garçons de ma classe étaient turbulents.", ja: "クラスの男の子たちはやんちゃでした。"}}
+      - {fr: "gâté", ipa: "ɡate", ja: "甘やかされた", pos: "形容詞", f: "gâtée", f_ipa: "ɡate", tts: "gâté, gâtée", ex: {fr: "Ma petite sœur était un peu gâtée.", ja: "妹は少し甘やかされていました。"}}
+      - {fr: "mignon", ipa: "miɲɔ̃", ja: "かわいい", pos: "形容詞", f: "mignonne", f_ipa: "miɲɔn", tts: "mignon, mignonne", note: "女性形は n を重ねる", ex: {fr: "Sur cette photo, tu étais très mignon.", ja: "この写真の君はとてもかわいかったね。"}}
+      - {fr: "têtu", ipa: "tety", ja: "頑固な", pos: "形容詞", f: "têtue", f_ipa: "tety", tts: "têtu, têtue", ex: {fr: "Petit, mon fils était très têtu.", ja: "小さい頃、息子はとても頑固でした。"}}
+      - {fr: "insupportable", ipa: "ɛ̃sypɔʁtabl", ja: "手に負えない・耐えられない", pos: "形容詞", ex: {fr: "À six ans, mon cousin était insupportable.", ja: "6 歳のとき、いとこ（男）は手に負えませんでした。"}}
+      - {fr: "peureux", ipa: "pøʁø", ja: "怖がりの", pos: "形容詞", f: "peureuse", f_ipa: "pøʁøz", tts: "peureux, peureuse", ex: {fr: "Petite, j'étais très peureuse.", ja: "小さい頃、私（女）はとても怖がりでした。"}}
+      - {fr: "rêveur", ipa: "ʁɛvœʁ", ja: "夢見がちな", pos: "形容詞", f: "rêveuse", f_ipa: "ʁɛvøz", tts: "rêveur, rêveuse", ex: {fr: "C'était un enfant rêveur et calme.", ja: "夢見がちで物静かな子どもでした。"}}
+      - {fr: "triste", ipa: "tʁist", ja: "悲しい", pos: "形容詞", ex: {fr: "Le dernier jour des vacances, j'étais toujours triste.", ja: "休みの最後の日は、いつも悲しかった。"}}
+  - name: "子どもの頃にしたこと"
+    words:
+      - {fr: "pleurer", ipa: "plœʁe", ja: "泣く", pos: "動詞", ex: {fr: "Le premier jour d'école, j'ai beaucoup pleuré.", ja: "学校の初日、私はたくさん泣きました。"}}
+      - {fr: "rire", ipa: "ʁiʁ", ja: "笑う", pos: "動詞", note: "過去分詞 ri。半過去 nous riions は i が 2 つ続く", ex: {fr: "Avec mes cousins, nous riions tout le temps.", ja: "いとこたちとはいつも笑っていました。"}}
+      - {fr: "se disputer", ipa: "sə dispyte", ja: "けんかする・言い争う", pos: "動詞", ex: {fr: "Je me disputais souvent avec mon frère.", ja: "私はよく兄とけんかしていました。"}}
+      - {fr: "avoir peur de", ipa: "avwaʁ pœʁ də", ja: "〜が怖い", pos: "表現", ex: {fr: "Quand j'étais petit, j'avais peur du noir.", ja: "小さい頃、暗闇が怖かった。"}}
+      - {fr: "faire des bêtises", ipa: "fɛʁ de betiz", ja: "いたずらをする・ばかなことをする", pos: "表現", ex: {fr: "Mon frère et moi faisions souvent des bêtises.", ja: "兄と私はよくいたずらをしていました。"}}
+      - {fr: "gronder", ipa: "ɡʁɔ̃de", ja: "叱る", pos: "動詞", ex: {fr: "Ma mère nous grondait quand nous rentrions tard.", ja: "帰りが遅いと、母は私たちを叱りました。"}}
+      - {fr: "obéir à", ipa: "ɔbeiʁ a", ja: "〜の言うことを聞く・従う", pos: "動詞", note: "finir と同じ活用（j'obéissais）", ex: {fr: "Je n'obéissais pas toujours à mes parents.", ja: "私はいつも親の言うことを聞くわけではなかった。"}}
+      - {fr: "punir", ipa: "pyniʁ", ja: "罰する", pos: "動詞", note: "finir と同じ活用（il punissait）", ex: {fr: "Le maître punissait les élèves bavards.", ja: "先生はおしゃべりな生徒を罰していました。"}}
+      - {fr: "sauter", ipa: "sote", ja: "跳ぶ・ジャンプする", pos: "動詞", ex: {fr: "Les enfants sautaient sur le lit.", ja: "子どもたちはベッドの上で跳びはねていました。"}}
+      - {fr: "se cacher", ipa: "sə kaʃe", ja: "隠れる", pos: "動詞", ex: {fr: "Je me cachais toujours sous la table.", ja: "私はいつもテーブルの下に隠れていました。"}}
+      - {fr: "grimper", ipa: "ɡʁɛ̃pe", ja: "よじ登る", pos: "動詞", ex: {fr: "Nous grimpions aux arbres du parc.", ja: "私たちは公園の木に登っていました。"}}
+      - {fr: "collectionner", ipa: "kɔlɛksjɔne", ja: "集める・収集する", pos: "動詞", ex: {fr: "Mon père collectionnait les timbres.", ja: "父は切手を集めていました。"}}
+  - name: "思い出・昔と今"
+    words:
+      - {fr: "se souvenir de", ipa: "sə suvniʁ də", ja: "〜を覚えている・思い出す", pos: "動詞", note: "venir と同じ活用（je me souviens）", ex: {fr: "Je me souviens bien de ma première maison.", ja: "最初に住んだ家のことはよく覚えています。"}}
+      - {fr: "se rappeler", ipa: "sə ʁaple", ja: "〜を覚えている・思い出す", pos: "動詞", note: "de は付けない（se rappeler quelque chose）。je me rappelle は l を重ねる", ex: {fr: "Tu te rappelles notre professeur de piano ?", ja: "ピアノの先生のこと、覚えてる？"}}
+      - {fr: "manquer à", ipa: "mɑ̃ke a", ja: "（人にとって）〜が恋しい", pos: "動詞", note: "恋しいものが主語になる。Mon village me manque. =「私は村が恋しい」", ex: {fr: "Mon village me manque beaucoup.", ja: "故郷の村がとても恋しい。"}}
+      - {fr: "nostalgique", ipa: "nɔstalʒik", ja: "懐かしく思う・郷愁を感じる", pos: "形容詞", ex: {fr: "Ma mère est nostalgique de son enfance.", ja: "母は子どもの頃を懐かしがっています。"}}
+      - {fr: "un rêve", ipa: "œ̃ ʁɛv", ja: "夢", pos: "名詞", g: "m", ex: {fr: "Mon rêve était de devenir pilote.", ja: "私の夢はパイロットになることでした。"}}
+      - {fr: "rêver de", ipa: "ʁɛve də", ja: "〜を夢見る", pos: "動詞", ex: {fr: "Je rêvais d'aller à Paris.", ja: "パリに行くことを夢見ていました。"}}
+      - {fr: "une époque", ipa: "yn epɔk", ja: "時代・時期", pos: "名詞", g: "f", ex: {fr: "À cette époque, il n'y avait pas de portable.", ja: "その頃は携帯電話がありませんでした。"}}
+      - {fr: "à l'époque", ipa: "a lepɔk", ja: "当時は", pos: "表現", ex: {fr: "À l'époque, mon père travaillait à Tokyo.", ja: "当時、父は東京で働いていました。"}}
+      - {fr: "autrefois", ipa: "otʁəfwa", ja: "昔は", pos: "副詞", ex: {fr: "Autrefois, les enfants jouaient dans la rue.", ja: "昔は子どもたちが通りで遊んでいました。"}}
+      - {fr: "de nos jours", ipa: "də no ʒuʁ", ja: "今日では・近頃は", pos: "表現", ex: {fr: "De nos jours, les enfants ont des tablettes.", ja: "近頃の子どもはタブレットを持っています。"}}
+      - {fr: "maintenant", ipa: "mɛ̃tnɑ̃", ja: "今は", pos: "副詞", ex: {fr: "Avant, j'habitais à la campagne, maintenant j'habite en ville.", ja: "前は田舎に住んでいたが、今は都会に住んでいる。"}}
+      - {fr: "quand j'étais petit", ipa: "kɑ̃ ʒetɛ pəti", ja: "小さい頃", pos: "表現", note: "女性なら quand j'étais petite（pətit）", ex: {fr: "Quand j'étais petit, j'adorais les dinosaures.", ja: "小さい頃、恐竜が大好きでした。"}}
+  - name: "背景と出来事をつなぐ語"
+    words:
+      - {fr: "à ce moment-là", ipa: "a sə mɔmɑ̃ la", ja: "そのとき", pos: "表現", ex: {fr: "À ce moment-là, ma mère est entrée dans ma chambre.", ja: "そのとき、母が私の部屋に入ってきました。"}}
+      - {fr: "pendant que", ipa: "pɑ̃dɑ̃ kə", ja: "〜している間に", pos: "接続詞", ex: {fr: "Pendant que je lisais, mon frère jouait dehors.", ja: "私が本を読んでいる間、兄は外で遊んでいました。"}}
+      - {fr: "lorsque", ipa: "lɔʁskə", ja: "〜のとき（quand の書き言葉的な言い方）", pos: "接続詞", ex: {fr: "Lorsque j'avais dix ans, je faisais du judo.", ja: "10 歳のとき、私は柔道をしていました。"}}
+      - {fr: "comme", ipa: "kɔm", ja: "〜なので（文頭で理由）", pos: "接続詞", note: "理由を文頭で言うときは parce que ではなく comme", ex: {fr: "Comme il faisait beau, nous sommes allés à la plage.", ja: "天気がよかったので、私たちは海に行きました。"}}
+      - {fr: "chaque été", ipa: "ʃak ete", ja: "毎年夏に", pos: "表現", note: "繰り返しの習慣を表すので、過去なら半過去と一緒に使う", ex: {fr: "Chaque été, nous allions chez mes grands-parents.", ja: "毎年夏、私たちは祖父母の家に行っていました。"}}

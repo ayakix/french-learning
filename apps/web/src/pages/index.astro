@@ -14,6 +14,12 @@ const units = [...new Set([...vocab, ...reading, ...listening, ...documents].map
 const extraTitles: Record<string, string> = { '11': 'DELF 対策（模試）' };
 const unitTitle = (unit: string) =>
   [...vocab, ...reading].find((e) => e.data.unit === unit)?.data.title ?? extraTitles[unit] ?? '';
+// レベル（A1 / A2）は教材の置き場所（materials/<レベル>/）から取る。単元の番号はレベルをまたいで通し番号
+const unitLevel = (unit: string) =>
+  [...vocab, ...reading, ...listening, ...documents]
+    .find((e) => e.data.unit === unit)!
+    .id.split('/')[0]
+    .toUpperCase();
 ---
 
 <Base title="ホーム">
@@ -43,7 +49,7 @@ const unitTitle = (unit: string) =>
       units.map((unit) => (
         <section>
           <h2>
-            A1 / 単元 {unit}：{unitTitle(unit)}
+            {unitLevel(unit)} / 単元 {unit}：{unitTitle(unit)}
           </h2>
           <ul>
             {vocab.some((e) => e.data.unit === unit) && (

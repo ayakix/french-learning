@@ -1,0 +1,103 @@
+# 単元 19 食事・買い物・サービス の単語（Web アプリの単語画面 /vocab/19 のデータ。A2）
+# A1 の単元 06（買い物と食事）で基本の店・食べ物・注文の言い方は覚えたので、ここでは「細かい要望を伝える」「苦情を言う」ための語に絞る。
+# 量の表現は、この単元の文法（en・pas de）と一緒に使えるよう、例文で « J'en voudrais... » « pas de... » の形を多く使う。
+# 丁寧な依頼（pourriez-vous など）は「...」の部分に何でも入るため、音声は tts で具体的な 1 文にして読ませる。
+# 銀行・郵便・修理などのサービスの場面も、DELF A2 の聞き取り・会話でよく出るので含める。
+unit: "19"
+title: "食事・買い物・サービス"
+groups:
+  - name: "レストランで"
+    words:
+      - { fr: "un plat principal", ipa: "œ̃ pla pʁɛ̃sipal", ja: "メインディッシュ", pos: "名詞", g: "m", pl: "des plats principaux", ex: { fr: "Comme plat principal, je vais prendre le poisson.", ja: "メインには魚にします。" } }
+      - { fr: "une carafe d'eau", ipa: "yn kaʁaf do", ja: "水差しの水（無料の水道水）", pos: "名詞", g: "f", note: "フランスのレストランでは無料で頼める", ex: { fr: "On peut avoir une carafe d'eau, s'il vous plaît ?", ja: "お水（無料の）をいただけますか？" } }
+      - { fr: "une formule", ipa: "yn fɔʁmyl", ja: "セットメニュー", pos: "名詞", g: "f", ex: { fr: "La formule comprend une entrée et un plat.", ja: "セットには前菜とメインが付いています。" } }
+      - { fr: "saignant", ipa: "sɛɲɑ̃", ja: "（肉が）レアの", pos: "形容詞", f: "saignante", f_ipa: "sɛɲɑ̃t", tts: "saignant, saignante", note: "saigner（血が出る）から", ex: { fr: "Je voudrais mon steak saignant, s'il vous plaît.", ja: "ステーキはレアでお願いします。" } }
+      - { fr: "à point", ipa: "a pwɛ̃", ja: "（肉が）ミディアムで", pos: "表現", ex: { fr: "Votre viande, vous la voulez à point ?", ja: "お肉はミディアムでよろしいですか？" } }
+      - { fr: "bien cuit", ipa: "bjɛ̃ kɥi", ja: "（肉が）よく焼けた・ウェルダンで", pos: "表現", ex: { fr: "Pour moi, le steak bien cuit, s'il vous plaît.", ja: "私はステーキをウェルダンでお願いします。" } }
+      - { fr: "végétarien", ipa: "veʒetaʁjɛ̃", ja: "ベジタリアンの", pos: "形容詞", f: "végétarienne", f_ipa: "veʒetaʁjɛn", tts: "végétarien, végétarienne", note: "-ien → -ienne で鼻母音が消える", ex: { fr: "Vous avez un plat végétarien ?", ja: "ベジタリアン向けの料理はありますか？" } }
+      - { fr: "allergique", ipa: "alɛʁʒik", ja: "アレルギーがある", pos: "形容詞", note: "allergique à + 物（à le → au）", ex: { fr: "Mon fils est allergique au lait.", ja: "息子は牛乳アレルギーです。" } }
+      - { fr: "épicé", ipa: "epise", ja: "辛い・スパイスの効いた", pos: "形容詞", f: "épicée", f_ipa: "epise", tts: "épicé, épicée", ex: { fr: "Ce plat est un peu trop épicé pour moi.", ja: "この料理は私には少し辛すぎます。" } }
+      - { fr: "salé", ipa: "sale", ja: "塩辛い・塩味の", pos: "形容詞", f: "salée", f_ipa: "sale", tts: "salé, salée", ex: { fr: "La soupe est beaucoup trop salée.", ja: "スープがしょっぱすぎます。" } }
+      - { fr: "sucré", ipa: "sykʁe", ja: "甘い・砂糖の入った", pos: "形容詞", f: "sucrée", f_ipa: "sykʁe", tts: "sucré, sucrée", ex: { fr: "Je n'aime pas les boissons trop sucrées.", ja: "甘すぎる飲み物は好きではありません。" } }
+      - { fr: "apporter", ipa: "apɔʁte", ja: "持ってくる", pos: "動詞", ex: { fr: "Pourriez-vous m'apporter le sel, s'il vous plaît ?", ja: "塩を持ってきていただけますか？" } }
+      - { fr: "une table pour deux", ipa: "yn tabl puʁ dø", ja: "2 人用の席", pos: "表現", ex: { fr: "Bonsoir, une table pour deux, s'il vous plaît.", ja: "こんばんは、2 人ですがお願いします。" } }
+      - { fr: "Qu'est-ce que vous me conseillez ?", ipa: "kɛs kə vu mə kɔ̃seje", ja: "何がおすすめですか？", pos: "表現", note: "conseiller ＝勧める", ex: { fr: "Qu'est-ce que vous me conseillez comme dessert ?", ja: "デザートは何がおすすめですか？" } }
+      - { fr: "C'est à quel nom ?", ipa: "sɛ ta kɛl nɔ̃", ja: "どなたのお名前で（予約）ですか？", pos: "表現", ex: { fr: "Vous avez réservé ? C'est à quel nom ?", ja: "ご予約ですか？ お名前は？" } }
+
+  - name: "量の表現と en"
+    words:
+      - { fr: "une douzaine de", ipa: "yn duzɛn də", ja: "1 ダースの〜・12 個の〜", pos: "名詞", g: "f", note: "数量のあとは de だけ。母音の前は d'", ex: { fr: "J'ai acheté une douzaine d'œufs au marché.", ja: "市場で卵を 12 個買いました。" } }
+      - { fr: "un demi-kilo de", ipa: "œ̃ dəmikilo də", ja: "500 グラムの〜", pos: "名詞", g: "m", ex: { fr: "Je voudrais un demi-kilo de tomates.", ja: "トマトを 500 グラムください。" } }
+      - { fr: "un pot de", ipa: "œ̃ po də", ja: "1 瓶の〜・1 パックの〜", pos: "名詞", g: "m", note: "ジャムやヨーグルトなどの容器", ex: { fr: "Je prends un pot de confiture de fraises.", ja: "いちごジャムを 1 瓶ください。" } }
+      - { fr: "un sachet de", ipa: "œ̃ saʃɛ də", ja: "1 袋の〜", pos: "名詞", g: "m", ex: { fr: "Il me reste un sachet de thé vert.", ja: "緑茶のティーバッグが 1 つ残っています。" } }
+      - { fr: "une part de", ipa: "yn paʁ də", ja: "1 切れの〜（ケーキなど）", pos: "名詞", g: "f", ex: { fr: "Je vais prendre une part de tarte aux pommes.", ja: "アップルパイを 1 切れいただきます。" } }
+      - { fr: "une barquette de", ipa: "yn baʁkɛt də", ja: "1 パックの〜（果物など）", pos: "名詞", g: "f", ex: { fr: "Une barquette de fraises coûte trois euros.", ja: "いちご 1 パックは 3 ユーロです。" } }
+      - { fr: "la moitié", ipa: "la mwatje", ja: "半分", pos: "名詞", g: "f", ex: { fr: "Il a mangé la moitié du gâteau.", ja: "彼はケーキを半分食べました。" } }
+      - { fr: "quelques", ipa: "kɛlk", ja: "いくつかの", pos: "形容詞", note: "複数名詞の前に置く。数は少なめ", ex: { fr: "J'ai acheté quelques pommes pour la tarte.", ja: "タルト用にりんごをいくつか買いました。" } }
+      - { fr: "plusieurs", ipa: "plyzjœʁ", ja: "いくつもの・複数の", pos: "形容詞", note: "quelques より「多い」感じ。女性名詞にも同じ形", ex: { fr: "Ce magasin a plusieurs rayons de vêtements.", ja: "この店には服の売り場がいくつもあります。" } }
+      - { fr: "J'en voudrais deux.", ipa: "ʒɑ̃ vudʁɛ dø", ja: "それを 2 つください", pos: "表現", note: "en が「それ（を）」を表し、数だけを後ろに残す", ex: { fr: "Des baguettes ? Oui, j'en voudrais deux.", ja: "バゲットですか？ はい、2 本ください。" } }
+      - { fr: "Vous en avez ?", ipa: "vu zɑ̃ nave", ja: "（それは）ありますか？", pos: "表現", note: "vous en avez はリエゾンが 2 回続く", ex: { fr: "Du pain complet, vous en avez encore ?", ja: "全粒粉パンはまだありますか？" } }
+      - { fr: "Il n'y en a plus.", ipa: "il njɑ̃ na ply", ja: "もうありません", pos: "表現", note: "il y a + en の否定。ne ... plus ＝もう〜ない", ex: { fr: "Désolé, des croissants, il n'y en a plus.", ja: "すみません、クロワッサンはもうありません。" } }
+      - { fr: "Je n'en veux pas.", ipa: "ʒə nɑ̃ vø pa", ja: "（それは）要りません", pos: "表現", note: "en は ne のすぐ後ろ、動詞の前に置く", ex: { fr: "Du dessert ? Merci, je n'en veux pas.", ja: "デザートですか？ いえ、結構です。" } }
+      - { fr: "sans", ipa: "sɑ̃", ja: "〜なしで", pos: "前置詞", note: "sans のあとは冠詞を付けないことが多い", ex: { fr: "Un café sans sucre, s'il vous plaît.", ja: "砂糖なしのコーヒーをお願いします。" } }
+      - { fr: "un peu plus de", ipa: "œ̃ pø ply də", ja: "もう少し多くの〜", pos: "表現", ex: { fr: "Vous pouvez mettre un peu plus de fromage ?", ja: "チーズをもう少し多めに入れてもらえますか？" } }
+
+  - name: "店で買う"
+    words:
+      - { fr: "faire les courses", ipa: "fɛʁ le kuʁs", ja: "（日用品・食料の）買い物をする", pos: "表現", note: "faire du shopping は服などを見て回る買い物", ex: { fr: "Je fais les courses le samedi matin.", ja: "土曜の朝に買い物をします。" } }
+      - { fr: "une poissonnerie", ipa: "yn pwasɔnʁi", ja: "魚屋", pos: "名詞", g: "f", ex: { fr: "On trouve du poisson très frais à la poissonnerie.", ja: "魚屋ではとても新鮮な魚が手に入ります。" } }
+      - { fr: "une fromagerie", ipa: "yn fʁɔmaʒʁi", ja: "チーズ屋", pos: "名詞", g: "f", ex: { fr: "Cette fromagerie vend plus de cent fromages.", ja: "このチーズ屋は 100 種類以上のチーズを売っています。" } }
+      - { fr: "un rayon", ipa: "œ̃ ʁɛjɔ̃", ja: "売り場", pos: "名詞", g: "m", ex: { fr: "Où est le rayon des produits laitiers ?", ja: "乳製品売り場はどこですか？" } }
+      - { fr: "bio", ipa: "bjo", ja: "オーガニックの", pos: "形容詞", note: "biologique の略。女性形・複数形でも形が変わらない", ex: { fr: "Elle achète seulement des légumes bio.", ja: "彼女はオーガニックの野菜しか買いません。" } }
+      - { fr: "frais", ipa: "fʁɛ", ja: "新鮮な", pos: "形容詞", f: "fraîche", f_ipa: "fʁɛʃ", tts: "frais, fraîche", note: "女性形は不規則（fraîche）", ex: { fr: "Ces œufs ne sont pas frais.", ja: "この卵は新鮮ではありません。" } }
+      - { fr: "un panier", ipa: "œ̃ panje", ja: "かご", pos: "名詞", g: "m", ex: { fr: "Prenez un panier à l'entrée du magasin.", ja: "店の入り口でかごを取ってください。" } }
+      - { fr: "des soldes", ipa: "de sɔld", ja: "バーゲンセール", pos: "名詞", g: "m", note: "ふつう複数形で使う。フランスでは 1 月と 7 月に法律で決まった期間がある", ex: { fr: "Les soldes commencent en janvier.", ja: "バーゲンは 1 月に始まります。" } }
+      - { fr: "une promotion", ipa: "yn pʁɔmɔsjɔ̃", ja: "特売", pos: "名詞", g: "f", note: "en promotion ＝特売中", ex: { fr: "Les yaourts sont en promotion cette semaine.", ja: "今週はヨーグルトが特売です。" } }
+      - { fr: "gratuit", ipa: "ɡʁatɥi", ja: "無料の", pos: "形容詞", f: "gratuite", f_ipa: "ɡʁatɥit", tts: "gratuit, gratuite", ex: { fr: "Le sac est gratuit avec vos achats.", ja: "お買い上げの方には袋は無料です。" } }
+      - { fr: "en espèces", ipa: "ɑ̃ nɛspɛs", ja: "現金で", pos: "表現", note: "par carte（カードで）と対で使う", ex: { fr: "Vous payez en espèces ou par carte ?", ja: "お支払いは現金ですか、カードですか？" } }
+      - { fr: "un ticket de caisse", ipa: "œ̃ tikɛ də kɛs", ja: "レシート", pos: "名詞", g: "m", ex: { fr: "Gardez bien votre ticket de caisse.", ja: "レシートは大切に保管してください。" } }
+      - { fr: "vendre", ipa: "vɑ̃dʁ", ja: "売る", pos: "動詞", note: "過去分詞 vendu", ex: { fr: "Ce magasin vend des vêtements d'occasion.", ja: "この店は古着を売っています。" } }
+      - { fr: "C'est pour offrir ?", ipa: "sɛ puʁ ɔfʁiʁ", ja: "プレゼント用ですか？", pos: "表現", note: "店員が包装するか聞くときの決まり文句", ex: { fr: "Bonjour, ce livre, c'est pour offrir ?", ja: "いらっしゃいませ、この本はプレゼント用ですか？" } }
+
+  - name: "サービス・手続き"
+    words:
+      - { fr: "se faire couper les cheveux", ipa: "sə fɛʁ kupe le ʃəvø", ja: "髪を切ってもらう", pos: "表現", note: "複合過去は être。fait は性数一致しない", ex: { fr: "Je me suis fait couper les cheveux hier.", ja: "昨日、髪を切ってもらいました。" } }
+      - { fr: "un pressing", ipa: "œ̃ pʁɛsiŋ", ja: "クリーニング店", pos: "名詞", g: "m", ex: { fr: "J'apporte ma veste au pressing.", ja: "ジャケットをクリーニングに出します。" } }
+      - { fr: "un colis", ipa: "œ̃ kɔli", ja: "小包", pos: "名詞", g: "m", ex: { fr: "J'ai envoyé un colis à ma sœur.", ja: "姉に小包を送りました。" } }
+      - { fr: "une livraison", ipa: "yn livʁɛzɔ̃", ja: "配達", pos: "名詞", g: "f", ex: { fr: "La livraison est gratuite à partir de cinquante euros.", ja: "50 ユーロ以上で配送料は無料です。" } }
+      - { fr: "livrer", ipa: "livʁe", ja: "配達する", pos: "動詞", ex: { fr: "Vous pouvez livrer le canapé samedi ?", ja: "ソファを土曜日に配達してもらえますか？" } }
+      - { fr: "un distributeur", ipa: "œ̃ distʁibytœʁ", ja: "ATM・自動販売機", pos: "名詞", g: "m", ex: { fr: "Il y a un distributeur près de la gare ?", ja: "駅の近くに ATM はありますか？" } }
+      - { fr: "retirer de l'argent", ipa: "ʁətiʁe də laʁʒɑ̃", ja: "お金を引き出す", pos: "表現", ex: { fr: "Je dois retirer de l'argent avant le marché.", ja: "市場の前にお金を下ろさないといけません。" } }
+      - { fr: "ouvert", ipa: "uvɛʁ", ja: "開いている", pos: "形容詞", f: "ouverte", f_ipa: "uvɛʁt", tts: "ouvert, ouverte", note: "ouvrir（開ける）の過去分詞から", ex: { fr: "La pharmacie est ouverte jusqu'à vingt heures.", ja: "薬局は 20 時まで開いています。" } }
+      - { fr: "fermé", ipa: "fɛʁme", ja: "閉まっている", pos: "形容詞", f: "fermée", f_ipa: "fɛʁme", tts: "fermé, fermée", ex: { fr: "Le magasin est fermé le lundi.", ja: "その店は月曜日が定休日です。" } }
+      - { fr: "le service client", ipa: "lə sɛʁvis klijɑ̃", ja: "カスタマーサービス", pos: "名詞", g: "m", ex: { fr: "J'ai appelé le service client ce matin.", ja: "今朝、カスタマーサービスに電話しました。" } }
+      - { fr: "une file d'attente", ipa: "yn fil datɑ̃t", ja: "（順番待ちの）列", pos: "名詞", g: "f", ex: { fr: "Il y a une longue file d'attente à la poste.", ja: "郵便局に長い列ができています。" } }
+
+  - name: "苦情・トラブル"
+    words:
+      - { fr: "se plaindre", ipa: "sə plɛ̃dʁ", ja: "苦情を言う・不平を言う", pos: "動詞", note: "過去分詞 plaint。複合過去は être。se plaindre de ＋ 物", ex: { fr: "Il s'est plaint du service.", ja: "彼は接客について苦情を言いました。" } }
+      - { fr: "une réclamation", ipa: "yn ʁeklamasjɔ̃", ja: "クレーム・苦情の申し立て", pos: "名詞", g: "f", note: "faire une réclamation ＝苦情を申し立てる", ex: { fr: "Je voudrais faire une réclamation.", ja: "苦情を申し立てたいのですが。" } }
+      - { fr: "rembourser", ipa: "ʁɑ̃buʁse", ja: "払い戻す・返金する", pos: "動詞", ex: { fr: "Le magasin m'a remboursé la robe.", ja: "店はワンピースの代金を返金してくれました。" } }
+      - { fr: "échanger", ipa: "eʃɑ̃ʒe", ja: "交換する", pos: "動詞", ex: { fr: "Je peux échanger ce pull contre une taille plus grande ?", ja: "このセーターを大きいサイズと交換できますか？" } }
+      - { fr: "abîmé", ipa: "abime", ja: "傷んだ・傷のついた", pos: "形容詞", f: "abîmée", f_ipa: "abime", tts: "abîmé, abîmée", ex: { fr: "Ce livre est abîmé, je ne le prends pas.", ja: "この本は傷んでいるので要りません。" } }
+      - { fr: "une commande", ipa: "yn kɔmɑ̃d", ja: "注文（品）", pos: "名詞", g: "f", ex: { fr: "Ma commande n'est pas encore arrivée.", ja: "注文した品がまだ届いていません。" } }
+      - { fr: "une garantie", ipa: "yn ɡaʁɑ̃ti", ja: "保証", pos: "名詞", g: "f", note: "sous garantie ＝保証期間中", ex: { fr: "Cet ordinateur est encore sous garantie.", ja: "このパソコンはまだ保証期間中です。" } }
+      - { fr: "un responsable", ipa: "œ̃ ʁɛspɔ̃sabl", ja: "責任者", pos: "名詞", g: "m", ex: { fr: "Je voudrais parler au responsable, s'il vous plaît.", ja: "責任者の方と話したいのですが。" } }
+      - { fr: "déçu", ipa: "desy", ja: "がっかりした", pos: "形容詞", f: "déçue", f_ipa: "desy", tts: "déçu, déçue", note: "décevoir（がっかりさせる）の過去分詞から", ex: { fr: "Nous sommes très déçus par ce repas.", ja: "私たちはこの食事にとてもがっかりしました。" } }
+      - { fr: "Ce n'est pas ce que j'ai commandé.", ipa: "sə nɛ pa sə kə ʒe kɔmɑ̃de", ja: "これは注文したものと違います", pos: "表現", ex: { fr: "Excusez-moi, ce n'est pas ce que j'ai commandé.", ja: "すみません、これは注文したものと違います。" } }
+      - { fr: "se tromper", ipa: "sə tʁɔ̃pe", ja: "間違える", pos: "動詞", note: "複合過去は être", ex: { fr: "Je crois que vous vous êtes trompé dans l'addition.", ja: "お会計が間違っていると思うのですが。" } }
+
+  - name: "丁寧な依頼と返事"
+    words:
+      - { fr: "Pourriez-vous ... ?", ipa: "puʁje vu ...", ja: "…していただけますか？", pos: "表現", tts: "Pourriez-vous m'aider ?", note: "pouvoir の条件法。vous pouvez より丁寧。音声は m'aider（手伝う）で読ませている", ex: { fr: "Pourriez-vous parler un peu moins fort ?", ja: "もう少し小さな声で話していただけますか？" } }
+      - { fr: "Est-ce que je pourrais ... ?", ipa: "ɛs kə ʒə puʁɛ ...", ja: "…してもよろしいでしょうか？", pos: "表現", tts: "Est-ce que je pourrais avoir de l'eau ?", note: "je peux より丁寧。音声は avoir de l'eau（水をもらう）で読ませている", ex: { fr: "Est-ce que je pourrais voir la carte des desserts ?", ja: "デザートのメニューを見せていただけますか？" } }
+      - { fr: "Auriez-vous ... ?", ipa: "oʁje vu ...", ja: "…はありますか？（丁寧）", pos: "表現", tts: "Auriez-vous du pain ?", note: "avoir の条件法。vous avez より丁寧。音声は du pain（パン）で読ませている", ex: { fr: "Auriez-vous cette chemise en bleu ?", ja: "このシャツの青はありますか？" } }
+      - { fr: "Ça vous dérange si ... ?", ipa: "sa vu deʁɑ̃ʒ si ...", ja: "…してもかまいませんか？", pos: "表現", tts: "Ça vous dérange si je m'assois ici ?", note: "音声は je m'assois ici（ここに座る）で読ませている", ex: { fr: "Ça vous dérange si j'ouvre la fenêtre ?", ja: "窓を開けてもかまいませんか？" } }
+      - { fr: "Excusez-moi de vous déranger.", ipa: "ɛkskyze mwa də vu deʁɑ̃ʒe", ja: "お邪魔してすみません", pos: "表現", ex: { fr: "Excusez-moi de vous déranger, où sont les toilettes ?", ja: "お邪魔してすみません、トイレはどこですか？" } }
+      - { fr: "Je vous remercie.", ipa: "ʒə vu ʁəmɛʁsi", ja: "ありがとうございます（丁寧）", pos: "表現", note: "merci より改まった言い方", ex: { fr: "Je vous remercie pour votre aide.", ja: "ご協力ありがとうございます。" } }
+      - { fr: "Gardez la monnaie.", ipa: "ɡaʁde la mɔnɛ", ja: "おつりは取っておいてください", pos: "表現", ex: { fr: "Voilà vingt euros, gardez la monnaie.", ja: "はい 20 ユーロです、おつりは結構です。" } }
+      - { fr: "Il me faudrait ...", ipa: "il mə fodʁɛ ...", ja: "…が必要なのですが", pos: "表現", tts: "Il me faudrait un sac.", note: "il faut の条件法で、やわらかく頼む。音声は un sac（袋）で読ませている", ex: { fr: "Il me faudrait une boîte plus grande.", ja: "もっと大きい箱が必要なのですが。" } }
+      - { fr: "Ce serait possible de ... ?", ipa: "sə sʁɛ pɔsibl də ...", ja: "…することはできますか？", pos: "表現", tts: "Ce serait possible de payer plus tard ?", note: "音声は payer plus tard（後で払う）で読ませている", ex: { fr: "Ce serait possible de changer de table ?", ja: "席を替えてもらうことはできますか？" } }
+      - { fr: "volontiers", ipa: "vɔlɔ̃tje", ja: "喜んで", pos: "副詞", ex: { fr: "Un autre café ? Oui, volontiers !", ja: "コーヒーをもう 1 杯？ ええ、喜んで！" } }
+      - { fr: "tout de suite", ipa: "tut sɥit", ja: "すぐに", pos: "副詞", note: "de の e は落ちて「トゥットゥスュイット」に近い", ex: { fr: "Le serveur arrive tout de suite.", ja: "ウェイターがすぐに参ります。" } }
+      - { fr: "pressé", ipa: "pʁese", ja: "急いでいる", pos: "形容詞", f: "pressée", f_ipa: "pʁese", tts: "pressé, pressée", ex: { fr: "Je suis pressée, l'addition, s'il vous plaît.", ja: "急いでいるので、お会計をお願いします。" } }

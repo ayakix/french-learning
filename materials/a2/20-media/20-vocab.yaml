@@ -1,0 +1,105 @@
+# 単元 20 メディアとテクノロジー の単語（Web アプリの単語画面 /vocab/20 のデータ。A2）
+# ニュースや SNS の内容を短く伝えるのに要る語を、媒体（ニュース・テレビ・機器・ネット・SNS）ごとに分けた。
+# A1 で出た ordinateur / portable / e-mail / réseaux sociaux などは入れず、その先の「操作する・投稿する・伝える」語を選んだ。
+# 例文はこの単元の文法（ne ... plus / rien / personne、代名動詞の複合過去）をなるべく使う。A2 の「聞く・読む」で否定と時制を聞き分ける練習を兼ねるため。
+# 否定の ne ... plus などは「...」をそのまま読ませると不自然なので、tts で ne と後半だけを読ませる。
+unit: "20"
+title: "メディアとテクノロジー"
+groups:
+  - name: "ニュースと報道"
+    words:
+      - {fr: "l'actualité", ipa: "laktɥalite", ja: "ニュース・時事", pos: "名詞", g: "f", note: "世の中の出来事全体を指すので、ふつう定冠詞で使う", ex: {fr: "Je ne suis plus l'actualité depuis un mois.", ja: "1 か月前からニュースを追っていません。"}}
+      - {fr: "une info", ipa: "yn ɛ̃fo", ja: "情報・ニュース（口語）", pos: "名詞", g: "f", note: "information の略。les infos で「ニュース番組」", ex: {fr: "J'ai vu cette info sur mon portable.", ja: "そのニュースはスマホで見ました。"}}
+      - {fr: "un journal", ipa: "œ̃ ʒuʁnal", ja: "新聞", pos: "名詞", g: "m", pl: "des journaux", note: "-al の複数形は -aux", ex: {fr: "Mon père ne lit plus le journal.", ja: "父はもう新聞を読みません。"}}
+      - {fr: "un article", ipa: "œ̃ naʁtikl", ja: "記事", pos: "名詞", g: "m", ex: {fr: "J'ai lu un article sur le climat.", ja: "気候についての記事を読みました。"}}
+      - {fr: "un reportage", ipa: "œ̃ ʁəpɔʁtaʒ", ja: "ルポ・取材記事", pos: "名詞", g: "m", ex: {fr: "Ce reportage sur le Japon était passionnant.", ja: "日本についてのそのルポはとても面白かったです。"}}
+      - {fr: "une interview", ipa: "yn ɛ̃tɛʁvju", ja: "インタビュー", pos: "名詞", g: "f", note: "英語から来た語。英語に近い発音で読む", ex: {fr: "L'acteur a donné une interview à la radio.", ja: "その俳優はラジオでインタビューに答えました。"}}
+      - {fr: "un événement", ipa: "œ̃ nevɛnmɑ̃", ja: "出来事・イベント", pos: "名詞", g: "m", note: "2 つ目の é は「エ」と広く読む（évènement とも綴る）", ex: {fr: "C'est le grand événement de la semaine.", ja: "それが今週の大きな出来事です。"}}
+      - {fr: "une fausse nouvelle", ipa: "yn fos nuvɛl", ja: "フェイクニュース・デマ", pos: "名詞", g: "f", note: "英語の fake news もよく使う", ex: {fr: "Cette photo est une fausse nouvelle.", ja: "この写真はデマです。"}}
+      - {fr: "se passer", ipa: "sə pase", ja: "（出来事が）起こる", pos: "動詞", note: "代名動詞なので複合過去は être", ex: {fr: "Qu'est-ce qui s'est passé hier soir ?", ja: "昨日の夜、何があったのですか。"}}
+      - {fr: "annoncer", ipa: "anɔ̃se", ja: "発表する・知らせる", pos: "動詞", note: "nous annonçons は c → ç（「ス」の音を保つため）", ex: {fr: "La radio a annoncé une grève demain.", ja: "ラジオが明日のストを伝えました。"}}
+      - {fr: "publier", ipa: "pyblije", ja: "掲載する・公開する", pos: "動詞", ex: {fr: "Le journal a publié mon courrier.", ja: "新聞が私の投書を載せました。"}}
+      - {fr: "vrai", ipa: "vʁɛ", ja: "本当の", pos: "形容詞", f: "vraie", f_ipa: "vʁɛ", tts: "vrai, vraie", note: "男性形と女性形は同じ発音", ex: {fr: "Cette histoire n'est pas vraie.", ja: "その話は本当ではありません。"}}
+      - {fr: "faux", ipa: "fo", ja: "うその・間違った", pos: "形容詞", f: "fausse", f_ipa: "fos", tts: "faux, fausse", ex: {fr: "Ce chiffre est complètement faux.", ja: "この数字はまったくのでたらめです。"}}
+  - name: "テレビ・ラジオ・動画"
+    words:
+      - {fr: "la radio", ipa: "la ʁadjo", ja: "ラジオ", pos: "名詞", g: "f", ex: {fr: "J'écoute la radio dans la voiture.", ja: "車の中でラジオを聞きます。"}}
+      - {fr: "une émission", ipa: "yn emisjɔ̃", ja: "番組", pos: "名詞", g: "f", ex: {fr: "Cette émission ne passe plus le samedi.", ja: "その番組はもう土曜日には放送されていません。"}}
+      - {fr: "une chaîne", ipa: "yn ʃɛn", ja: "チャンネル", pos: "名詞", g: "f", ex: {fr: "Il y a un bon film sur quelle chaîne ?", ja: "どのチャンネルでいい映画をやっていますか。"}}
+      - {fr: "un épisode", ipa: "œ̃ nepizɔd", ja: "（連続ものの）1 話", pos: "名詞", g: "m", ex: {fr: "J'ai regardé trois épisodes hier soir.", ja: "昨夜は 3 話見ました。"}}
+      - {fr: "un documentaire", ipa: "œ̃ dɔkymɑ̃tɛʁ", ja: "ドキュメンタリー", pos: "名詞", g: "m", ex: {fr: "On a vu un documentaire sur les océans.", ja: "海についてのドキュメンタリーを見ました。"}}
+      - {fr: "une publicité", ipa: "yn pyblisite", ja: "広告・CM", pos: "名詞", g: "f", note: "口語では une pub", ex: {fr: "Il y a trop de publicités à la télé.", ja: "テレビは CM が多すぎます。"}}
+      - {fr: "une vidéo", ipa: "yn video", ja: "動画", pos: "名詞", g: "f", ex: {fr: "Personne n'a regardé ma vidéo.", ja: "誰も私の動画を見てくれませんでした。"}}
+      - {fr: "un podcast", ipa: "œ̃ pɔdkast", ja: "ポッドキャスト", pos: "名詞", g: "m", ex: {fr: "J'écoute un podcast en français chaque matin.", ja: "毎朝フランス語のポッドキャストを聞いています。"}}
+      - {fr: "un abonnement", ipa: "œ̃ nabɔnmɑ̃", ja: "定期購読・サブスク", pos: "名詞", g: "m", ex: {fr: "Mon abonnement coûte dix euros par mois.", ja: "私のサブスクは月 10 ユーロです。"}}
+      - {fr: "s'abonner à", ipa: "sabɔne a", ja: "〜を購読する・フォローする", pos: "動詞", note: "代名動詞なので複合過去は être", ex: {fr: "Je me suis abonnée à cette chaîne.", ja: "（女性が）そのチャンネルを登録しました。"}}
+      - {fr: "en direct", ipa: "ɑ̃ diʁɛkt", ja: "生放送で・ライブで", pos: "表現", note: "direct の t は読む", ex: {fr: "On a regardé le match en direct.", ja: "試合を生中継で見ました。"}}
+  - name: "機器を使う"
+    words:
+      - {fr: "un écran", ipa: "œ̃ nekʁɑ̃", ja: "画面", pos: "名詞", g: "m", ex: {fr: "L'écran de mon portable est cassé.", ja: "スマホの画面が割れています。"}}
+      - {fr: "un clavier", ipa: "œ̃ klavje", ja: "キーボード", pos: "名詞", g: "m", ex: {fr: "Le clavier français n'est pas pratique.", ja: "フランス語のキーボードは使いにくいです。"}}
+      - {fr: "une souris", ipa: "yn suʁi", ja: "マウス・ネズミ", pos: "名詞", g: "f", note: "語末の s は読まない。複数形も同じ形", ex: {fr: "Ma souris ne marche plus.", ja: "マウスがもう動きません。"}}
+      - {fr: "une tablette", ipa: "yn tablɛt", ja: "タブレット", pos: "名詞", g: "f", ex: {fr: "Je lis le journal sur ma tablette.", ja: "新聞はタブレットで読んでいます。"}}
+      - {fr: "un chargeur", ipa: "œ̃ ʃaʁʒœʁ", ja: "充電器", pos: "名詞", g: "m", ex: {fr: "Tu peux me prêter ton chargeur ?", ja: "充電器を貸してくれる？"}}
+      - {fr: "une batterie", ipa: "yn batʁi", ja: "バッテリー", pos: "名詞", g: "f", note: "e は読まず「バトリ」に近い", ex: {fr: "Je n'ai plus de batterie.", ja: "もう充電が残っていません。"}}
+      - {fr: "des écouteurs", ipa: "de zekutœʁ", ja: "イヤホン", pos: "名詞", g: "m", note: "écouter（聞く）から。ふつう複数形で使う", ex: {fr: "J'ai oublié mes écouteurs à la maison.", ja: "イヤホンを家に忘れました。"}}
+      - {fr: "charger", ipa: "ʃaʁʒe", ja: "充電する", pos: "動詞", note: "nous chargeons は e を入れる（g を「ジュ」の音に保つため）", ex: {fr: "Je charge mon portable la nuit.", ja: "夜にスマホを充電します。"}}
+      - {fr: "fonctionner", ipa: "fɔ̃ksjɔne", ja: "（機械が）動く・作動する", pos: "動詞", note: "口語では marcher もよく使う", ex: {fr: "Cette application ne fonctionne plus.", ja: "このアプリはもう動きません。"}}
+      - {fr: "tomber en panne", ipa: "tɔ̃be ɑ̃ pan", ja: "故障する", pos: "表現", note: "tomber なので複合過去は être", ex: {fr: "Mon ordinateur est tombé en panne hier.", ja: "昨日パソコンが壊れました。"}}
+  - name: "インターネット"
+    words:
+      - {fr: "Internet", ipa: "ɛ̃tɛʁnɛt", ja: "インターネット", pos: "名詞", g: "m", note: "ふつう冠詞なしで sur Internet（ネットで）と言う", ex: {fr: "J'ai trouvé cette recette sur Internet.", ja: "このレシピはネットで見つけました。"}}
+      - {fr: "un site", ipa: "œ̃ sit", ja: "（ウェブ）サイト", pos: "名詞", g: "m", ex: {fr: "Ce site n'est pas très clair.", ja: "このサイトはあまり分かりやすくありません。"}}
+      - {fr: "une application", ipa: "yn aplikasjɔ̃", ja: "アプリ", pos: "名詞", g: "f", note: "口語では une appli", ex: {fr: "J'ai une application pour apprendre le français.", ja: "フランス語を学ぶアプリを持っています。"}}
+      - {fr: "un lien", ipa: "œ̃ ljɛ̃", ja: "リンク", pos: "名詞", g: "m", ex: {fr: "Je t'envoie le lien tout de suite.", ja: "すぐにリンクを送るね。"}}
+      - {fr: "un compte", ipa: "œ̃ kɔ̃t", ja: "アカウント・口座", pos: "名詞", g: "m", note: "p は読まない", ex: {fr: "J'ai créé un compte sur ce site.", ja: "このサイトでアカウントを作りました。"}}
+      - {fr: "un mot de passe", ipa: "œ̃ mo d pas", ja: "パスワード", pos: "名詞", g: "m", ex: {fr: "Je ne me souviens plus de mon mot de passe.", ja: "パスワードをもう思い出せません。"}}
+      - {fr: "un fichier", ipa: "œ̃ fiʃje", ja: "ファイル", pos: "名詞", g: "m", ex: {fr: "Je n'arrive pas à ouvrir ce fichier.", ja: "このファイルが開けません。"}}
+      - {fr: "le wifi", ipa: "lə wifi", ja: "Wi-Fi", pos: "名詞", g: "m", ex: {fr: "Il n'y a pas de wifi dans cet hôtel.", ja: "このホテルには Wi-Fi がありません。"}}
+      - {fr: "une recherche", ipa: "yn ʁəʃɛʁʃ", ja: "検索・調べもの", pos: "名詞", g: "f", ex: {fr: "J'ai fait une recherche sur ce restaurant.", ja: "そのレストランについて調べました。"}}
+      - {fr: "une mise à jour", ipa: "yn mi za ʒuʁ", ja: "アップデート・更新", pos: "名詞", g: "f", ex: {fr: "Mon téléphone a fait une mise à jour cette nuit.", ja: "夜のうちに電話がアップデートしました。"}}
+      - {fr: "en ligne", ipa: "ɑ̃ liɲ", ja: "オンラインで", pos: "表現", ex: {fr: "J'ai acheté mes billets en ligne.", ja: "チケットはオンラインで買いました。"}}
+      - {fr: "télécharger", ipa: "teleʃaʁʒe", ja: "ダウンロードする", pos: "動詞", ex: {fr: "Tu as téléchargé la nouvelle application ?", ja: "新しいアプリをダウンロードした？"}}
+      - {fr: "se connecter", ipa: "sə kɔnɛkte", ja: "ログインする・接続する", pos: "動詞", note: "代名動詞なので複合過去は être", ex: {fr: "Elle s'est connectée à son compte.", ja: "彼女は自分のアカウントにログインしました。"}}
+      - {fr: "supprimer", ipa: "sypʁime", ja: "削除する", pos: "動詞", ex: {fr: "J'ai supprimé toutes mes vieilles photos.", ja: "古い写真を全部削除しました。"}}
+  - name: "SNS とメッセージ"
+    words:
+      - {fr: "une publication", ipa: "yn pyblikasjɔ̃", ja: "投稿", pos: "名詞", g: "f", ex: {fr: "Sa dernière publication a eu beaucoup de succès.", ja: "彼の最新の投稿は大反響でした。"}}
+      - {fr: "un commentaire", ipa: "œ̃ kɔmɑ̃tɛʁ", ja: "コメント", pos: "名詞", g: "m", ex: {fr: "Personne n'a laissé de commentaire.", ja: "誰もコメントを残しませんでした。"}}
+      - {fr: "un abonné", ipa: "œ̃ nabɔne", ja: "フォロワー・購読者", pos: "名詞", g: "m", note: "女性は une abonnée（発音は同じ）", ex: {fr: "Cette chanteuse a deux millions d'abonnés.", ja: "その歌手はフォロワーが 200 万人います。"}}
+      - {fr: "un profil", ipa: "œ̃ pʁɔfil", ja: "プロフィール", pos: "名詞", g: "m", note: "語末の l は読む", ex: {fr: "J'ai changé la photo de mon profil.", ja: "プロフィール写真を変えました。"}}
+      - {fr: "un influenceur", ipa: "œ̃ nɛ̃flyɑ̃sœʁ", ja: "インフルエンサー", pos: "名詞", g: "m", note: "女性は une influenceuse", ex: {fr: "Cet influenceur parle de cuisine japonaise.", ja: "そのインフルエンサーは和食について話しています。"}}
+      - {fr: "la vie privée", ipa: "la vi pʁive", ja: "プライバシー・私生活", pos: "名詞", g: "f", ex: {fr: "Il ne parle jamais de sa vie privée.", ja: "彼は私生活のことを決して話しません。"}}
+      - {fr: "poster", ipa: "pɔste", ja: "投稿する", pos: "動詞", ex: {fr: "Elle a posté des photos de ses vacances.", ja: "彼女はバカンスの写真を投稿しました。"}}
+      - {fr: "partager", ipa: "paʁtaʒe", ja: "シェアする・分け合う", pos: "動詞", note: "nous partageons は e を入れる", ex: {fr: "Ne partage pas cette fausse information !", ja: "そのデマをシェアしないで！"}}
+      - {fr: "liker", ipa: "lajke", ja: "いいねする", pos: "動詞", note: "英語の like から。口語", ex: {fr: "Mon frère a liké toutes mes photos.", ja: "兄は私の写真全部にいいねしました。"}}
+      - {fr: "suivre", ipa: "sɥivʁ", ja: "フォローする・（ニュースを）追う", pos: "動詞", note: "過去分詞 suivi", ex: {fr: "Tu suis des influenceurs sur Instagram ?", ja: "インスタでインフルエンサーをフォローしてる？"}}
+      - {fr: "se méfier de", ipa: "sə mefje də", ja: "〜に用心する・疑ってかかる", pos: "動詞", ex: {fr: "Méfie-toi des messages trop beaux.", ja: "うますぎるメッセージには気をつけて。"}}
+  - name: "否定の表現"
+    words:
+      - {fr: "ne ... plus", ipa: "nə ply", ja: "もう〜ない", pos: "副詞", tts: "ne plus", note: "否定の plus は s を読まない", ex: {fr: "Je ne regarde plus la télé.", ja: "もうテレビは見ません。"}}
+      - {fr: "ne ... rien", ipa: "nə ʁjɛ̃", ja: "何も〜ない", pos: "代名詞", tts: "ne rien", note: "複合過去では rien は過去分詞の前（je n'ai rien vu）", ex: {fr: "Je n'ai rien compris à cet article.", ja: "この記事は何も分かりませんでした。"}}
+      - {fr: "ne ... personne", ipa: "nə pɛʁsɔn", ja: "誰も〜ない", pos: "代名詞", tts: "ne personne", note: "複合過去では personne は過去分詞の後（je n'ai vu personne）", ex: {fr: "Je n'ai vu personne au bureau.", ja: "会社では誰にも会いませんでした。"}}
+      - {fr: "ne ... que", ipa: "nə kə", ja: "〜しか…ない", pos: "副詞", tts: "ne que", note: "意味は否定ではなく「だけ」（= seulement）", ex: {fr: "Je ne lis que les titres.", ja: "見出ししか読みません。"}}
+      - {fr: "rien ne", ipa: "ʁjɛ̃ nə", ja: "何も〜ない（主語）", pos: "代名詞", note: "主語になるときは rien が先、pas は付けない", ex: {fr: "Rien ne marche sur cet ordinateur.", ja: "このパソコンは何も動きません。"}}
+      - {fr: "personne ne", ipa: "pɛʁsɔn nə", ja: "誰も〜ない（主語）", pos: "代名詞", note: "主語になるときは personne が先。動詞は単数", ex: {fr: "Personne ne lit mon blog.", ja: "誰も私のブログを読みません。"}}
+      - {fr: "quelqu'un", ipa: "kɛlkœ̃", ja: "誰か", pos: "代名詞", note: "否定文では personne になる", ex: {fr: "Quelqu'un a appelé pendant ton absence.", ja: "君の留守中に誰かから電話があったよ。"}}
+      - {fr: "quelque chose", ipa: "kɛlkə ʃoz", ja: "何か", pos: "代名詞", note: "否定文では rien になる", ex: {fr: "Tu as vu quelque chose d'intéressant ?", ja: "何か面白いものを見た？"}}
+      - {fr: "nulle part", ipa: "nyl paʁ", ja: "どこにも〜ない", pos: "副詞", note: "ne と一緒に使う", ex: {fr: "Je ne trouve mon chargeur nulle part.", ja: "充電器がどこにも見つかりません。"}}
+      - {fr: "plus jamais", ipa: "ply ʒamɛ", ja: "二度と〜ない", pos: "副詞", note: "ne と一緒に使う。plus の s は読まない", ex: {fr: "Je n'achèterai plus jamais ce magazine.", ja: "この雑誌はもう二度と買いません。"}}
+  - name: "代名動詞（情報と気持ち）"
+    words:
+      - {fr: "s'informer", ipa: "sɛ̃fɔʁme", ja: "情報を得る", pos: "動詞", note: "代名動詞なので複合過去は être", ex: {fr: "Je m'informe surtout à la radio.", ja: "情報はおもにラジオで得ています。"}}
+      - {fr: "s'intéresser à", ipa: "sɛ̃teʁese a", ja: "〜に興味を持つ", pos: "動詞", note: "複合過去は être", ex: {fr: "Elle s'est toujours intéressée à la politique.", ja: "彼女はずっと政治に興味を持ってきました。"}}
+      - {fr: "se servir de", ipa: "sə sɛʁviʁ də", ja: "〜を使う", pos: "動詞", note: "過去分詞 servi。複合過去は être", ex: {fr: "Je ne me sers plus de mon imprimante.", ja: "もうプリンターは使っていません。"}}
+      - {fr: "s'habituer à", ipa: "sabitɥe a", ja: "〜に慣れる", pos: "動詞", note: "複合過去は être", ex: {fr: "Je me suis vite habitué à ce clavier.", ja: "このキーボードにはすぐ慣れました。"}}
+      - {fr: "s'ennuyer", ipa: "sɑ̃nɥije", ja: "退屈する", pos: "動詞", note: "nous nous ennuyons 以外の現在形は y → i（je m'ennuie）。複合過去は être", ex: {fr: "Sans Internet, les enfants se sont ennuyés.", ja: "ネットがなくて、子どもたちは退屈しました。"}}
+      - {fr: "se déconnecter", ipa: "sə dekɔnɛkte", ja: "ログアウトする・ネットから離れる", pos: "動詞", note: "複合過去は être", ex: {fr: "Je me suis déconnecté tout le week-end.", ja: "週末はずっとネットから離れていました。"}}
+  - name: "評価する・変化を言う"
+    words:
+      - {fr: "utile", ipa: "ytil", ja: "役に立つ", pos: "形容詞", ex: {fr: "Cette vidéo m'a été très utile.", ja: "この動画はとても役に立ちました。"}}
+      - {fr: "connu", ipa: "kɔny", ja: "知られた・有名な", pos: "形容詞", f: "connue", f_ipa: "kɔny", tts: "connu, connue", note: "connaître の過去分詞から", ex: {fr: "Ce journaliste est très connu en France.", ja: "その記者はフランスでとても有名です。"}}
+      - {fr: "récent", ipa: "ʁesɑ̃", ja: "最近の", pos: "形容詞", f: "récente", f_ipa: "ʁesɑ̃t", tts: "récent, récente", ex: {fr: "Mon ordinateur n'est pas très récent.", ja: "私のパソコンはあまり新しくありません。"}}
+      - {fr: "dangereux", ipa: "dɑ̃ʒʁø", ja: "危険な", pos: "形容詞", f: "dangereuse", f_ipa: "dɑ̃ʒʁøz", tts: "dangereux, dangereuse", ex: {fr: "Le téléphone au volant est dangereux.", ja: "運転中の電話は危険です。"}}
+      - {fr: "de plus en plus", ipa: "də ply zɑ̃ ply", ja: "ますます", pos: "表現", note: "plus と en の間はリエゾンして z", ex: {fr: "Les jeunes regardent de plus en plus de vidéos.", ja: "若者はますます動画を見るようになっています。"}}
+      - {fr: "de moins en moins", ipa: "də mwɛ̃ zɑ̃ mwɛ̃", ja: "だんだん少なく", pos: "表現", ex: {fr: "On lit de moins en moins le journal.", ja: "新聞を読む人はだんだん減っています。"}}

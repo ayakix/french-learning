@@ -1,0 +1,108 @@
+# 単元 14 人と物を描写し、比べる の単語（Web アプリの単語画面 /vocab/14 のデータ。A2）
+# 外見・性格・色・素材・形の語を、比較の表現（plus / moins / aussi ... que、meilleur / mieux）と一緒に覚える。
+# 例文は比較級・最上級を多めに使う。単語だけでなく「比べて言う」型ごと耳に残すため。
+# A1 で出た基本の形容詞（grand, petit, gentil, 基本の色など）は入れず、それを比べたり細かく言ったりする語を選んだ。
+# 形容詞は男性形と女性形を続けて読ませる（形容詞の一致を耳で覚えるため）。
+# plus ... que のように間に語が入る表現は、単独だと読みにくいので tts で短い文にして読ませる。
+unit: "14"
+title: "人と物を描写し、比べる"
+groups:
+  - name: "外見"
+    words:
+      - {fr: "un visage", ipa: "œ̃ vizaʒ", ja: "顔", pos: "名詞", g: "m", ex: {fr: "Elle a un visage rond et souriant.", ja: "彼女は丸くてにこやかな顔をしています。"}}
+      - {fr: "un nez", ipa: "œ̃ ne", ja: "鼻", pos: "名詞", g: "m", note: "z は読まない", ex: {fr: "Mon frère a un nez plus long que moi.", ja: "兄は私より鼻が長いです。"}}
+      - {fr: "une bouche", ipa: "yn buʃ", ja: "口", pos: "名詞", g: "f", ex: {fr: "Le bébé a une toute petite bouche.", ja: "その赤ちゃんはとても小さな口をしています。"}}
+      - {fr: "un sourire", ipa: "œ̃ suʁiʁ", ja: "笑顔・ほほえみ", pos: "名詞", g: "m", ex: {fr: "Ta sœur a un très joli sourire.", ja: "あなたのお姉さんはとてもすてきな笑顔をしています。"}}
+      - {fr: "une moustache", ipa: "yn mustaʃ", ja: "口ひげ", pos: "名詞", g: "f", note: "あごひげは une barbe", ex: {fr: "Mon grand-père porte une moustache blanche.", ja: "祖父は白い口ひげを生やしています。"}}
+      - {fr: "raide", ipa: "ʁɛd", ja: "（髪が）まっすぐな", pos: "形容詞", note: "男女同じ形。ストレートヘアは les cheveux raides", ex: {fr: "Léa a les cheveux longs et raides.", ja: "レアは長いストレートヘアです。"}}
+      - {fr: "chauve", ipa: "ʃov", ja: "はげた", pos: "形容詞", ex: {fr: "Mon oncle est chauve depuis longtemps.", ja: "おじはずっと前からはげています。"}}
+      - {fr: "maigre", ipa: "mɛɡʁ", ja: "やせた（やせすぎの）", pos: "形容詞", note: "mince はほめ言葉、maigre は「やせすぎ」の響き", ex: {fr: "Ce chat est trop maigre.", ja: "この猫はやせすぎです。"}}
+      - {fr: "laid", ipa: "lɛ", ja: "醜い・不格好な", pos: "形容詞", f: "laide", f_ipa: "lɛd", tts: "laid, laide", note: "会話では moche もよく使う", ex: {fr: "Cette lampe est encore plus laide que l'autre.", ja: "このランプはもう一つのよりさらに不格好です。"}}
+      - {fr: "élégant", ipa: "eleɡɑ̃", ja: "上品な・おしゃれな", pos: "形容詞", f: "élégante", f_ipa: "eleɡɑ̃t", tts: "élégant, élégante", ex: {fr: "Claire est la plus élégante de la classe.", ja: "クレールはクラスでいちばんおしゃれです。"}}
+      - {fr: "de taille moyenne", ipa: "də taj mwajɛn", ja: "中くらいの背の", pos: "表現", ex: {fr: "Il est de taille moyenne, avec les yeux bleus.", ja: "彼は中背で、目は青いです。"}}
+      - {fr: "avoir l'air", ipa: "avwaʁ lɛʁ", ja: "〜のように見える", pos: "表現", note: "avoir l'air + 形容詞。見た目からの印象を言う", ex: {fr: "Ton nouveau voisin a l'air sympa.", ja: "君の新しいお隣さんは感じがよさそうだね。"}}
+      - {fr: "mesurer", ipa: "məzyʁe", ja: "（身長・長さが）〜ある", pos: "動詞", ex: {fr: "Je mesure un mètre soixante-dix.", ja: "私の身長は 1 メートル 70 です。"}}
+  - name: "性格"
+    words:
+      - {fr: "un caractère", ipa: "œ̃ kaʁaktɛʁ", ja: "性格", pos: "名詞", g: "m", note: "ch を「k」と読む", ex: {fr: "Ma sœur et moi, nous avons des caractères différents.", ja: "姉と私は性格が違います。"}}
+      - {fr: "une qualité", ipa: "yn kalite", ja: "長所・品質", pos: "名詞", g: "f", ex: {fr: "Sa plus grande qualité, c'est la patience.", ja: "彼のいちばんの長所は忍耐強さです。"}}
+      - {fr: "un défaut", ipa: "œ̃ defo", ja: "短所・欠点", pos: "名詞", g: "m", ex: {fr: "Tout le monde a des défauts.", ja: "誰にでも欠点はあります。"}}
+      - {fr: "poli", ipa: "pɔli", ja: "礼儀正しい", pos: "形容詞", f: "polie", f_ipa: "pɔli", tts: "poli, polie", note: "反対は impoli（失礼な）", ex: {fr: "Ces enfants sont très polis avec les voisins.", ja: "この子たちは近所の人にとても礼儀正しいです。"}}
+      - {fr: "honnête", ipa: "ɔnɛt", ja: "正直な・誠実な", pos: "形容詞", note: "h は読まない", ex: {fr: "Paul est plus honnête que son frère.", ja: "ポールは兄より正直です。"}}
+      - {fr: "sensible", ipa: "sɑ̃sibl", ja: "繊細な・感じやすい", pos: "形容詞", note: "英語の sensible（分別のある）とは意味が違う", ex: {fr: "Mon fils est très sensible, il pleure souvent.", ja: "息子はとても繊細で、よく泣きます。"}}
+      - {fr: "courageux", ipa: "kuʁaʒø", ja: "勇気のある", pos: "形容詞", f: "courageuse", f_ipa: "kuʁaʒøz", tts: "courageux, courageuse", ex: {fr: "Elle est aussi courageuse que sa mère.", ja: "彼女は母親と同じくらい勇気があります。"}}
+      - {fr: "égoïste", ipa: "eɡɔist", ja: "自分勝手な", pos: "形容詞", note: "ï は前の o と分けて「オ・イ」と読む印", ex: {fr: "Je trouve ton cousin un peu égoïste.", ja: "君のいとこはちょっと自分勝手だと思う。"}}
+      - {fr: "jaloux", ipa: "ʒalu", ja: "嫉妬深い・うらやむ", pos: "形容詞", f: "jalouse", f_ipa: "ʒaluz", tts: "jaloux, jalouse", ex: {fr: "Le petit frère est jaloux du bébé.", ja: "下の男の子は赤ちゃんにやきもちを焼いています。"}}
+      - {fr: "optimiste", ipa: "ɔptimist", ja: "楽観的な", pos: "形容詞", ex: {fr: "Ma femme est plus optimiste que moi.", ja: "妻は私より楽観的です。"}}
+      - {fr: "pessimiste", ipa: "pesimist", ja: "悲観的な", pos: "形容詞", ex: {fr: "Ne sois pas si pessimiste !", ja: "そんなに悲観的にならないで！"}}
+      - {fr: "de bonne humeur", ipa: "də bɔn ymœʁ", ja: "機嫌がいい", pos: "表現", ex: {fr: "Ce matin, le patron est de bonne humeur.", ja: "今朝、社長は機嫌がいいです。"}}
+      - {fr: "de mauvaise humeur", ipa: "də movɛz ymœʁ", ja: "機嫌が悪い", pos: "表現", ex: {fr: "Pourquoi es-tu de mauvaise humeur aujourd'hui ?", ja: "今日はどうして機嫌が悪いの？"}}
+  - name: "比べる"
+    words:
+      - {fr: "plus ... que", ipa: "ply kə", ja: "〜より…だ（優等比較）", pos: "表現", tts: "Il est plus grand que moi.", note: "形容詞・副詞を plus と que ではさむ。que の後の人は moi, toi, lui など", ex: {fr: "Paris est plus grand que Lyon.", ja: "パリはリヨンより大きいです。"}}
+      - {fr: "moins ... que", ipa: "mwɛ̃ kə", ja: "〜ほど…でない（劣等比較）", pos: "表現", tts: "Elle est moins grande que lui.", ex: {fr: "Le train est moins cher que l'avion.", ja: "電車は飛行機ほど高くありません。"}}
+      - {fr: "aussi ... que", ipa: "osi kə", ja: "〜と同じくらい…だ（同等比較）", pos: "表現", tts: "Il est aussi grand que toi.", ex: {fr: "Ce sac est aussi joli que l'autre.", ja: "このバッグはもう一つと同じくらいかわいいです。"}}
+      - {fr: "autant que", ipa: "otɑ̃ kə", ja: "〜と同じくらい（動詞を比べる）", pos: "表現", note: "形容詞は aussi、動詞は autant。量は autant de + 名詞", ex: {fr: "Je travaille autant que mon collègue.", ja: "私は同僚と同じくらい働いています。"}}
+      - {fr: "meilleur", ipa: "mɛjœʁ", ja: "より良い（bon の比較級）", pos: "形容詞", f: "meilleure", f_ipa: "mɛjœʁ", tts: "meilleur, meilleure", note: "plus bon とは言わない。副詞 bien の比較級は mieux", ex: {fr: "Ce gâteau est meilleur que la tarte.", ja: "このケーキはタルトよりおいしいです。"}}
+      - {fr: "le meilleur", ipa: "lə mɛjœʁ", ja: "いちばん良い（bon の最上級）", pos: "表現", tts: "le meilleur, la meilleure", ex: {fr: "C'est la meilleure boulangerie du quartier.", ja: "ここは界隈でいちばんおいしいパン屋です。"}}
+      - {fr: "pire", ipa: "piʁ", ja: "より悪い", pos: "形容詞", note: "mauvais の比較級。plus mauvais とも言える", ex: {fr: "Le film est pire que le livre.", ja: "映画は本よりひどいです。"}}
+      - {fr: "le plus", ipa: "lə ply", ja: "いちばん〜（最上級）", pos: "表現", tts: "le plus grand", note: "「〜の中で」は de。le / la / les は名詞に合わせる", ex: {fr: "C'est la plus belle ville de France.", ja: "フランスでいちばん美しい町です。"}}
+      - {fr: "le moins", ipa: "lə mwɛ̃", ja: "いちばん〜でない", pos: "表現", tts: "le moins cher", ex: {fr: "Je prends le moins cher des trois.", ja: "三つの中でいちばん安いのにします。"}}
+      - {fr: "le mieux", ipa: "lə mjø", ja: "いちばん上手に・いちばん良く", pos: "表現", note: "副詞 bien の最上級。性数で変わらず、いつも le", ex: {fr: "C'est Marie qui chante le mieux.", ja: "いちばん歌が上手なのはマリーです。"}}
+      - {fr: "comparer", ipa: "kɔ̃paʁe", ja: "比べる", pos: "動詞", ex: {fr: "Je compare toujours les prix avant d'acheter.", ja: "私は買う前にいつも値段を比べます。"}}
+      - {fr: "une différence", ipa: "yn difeʁɑ̃s", ja: "違い", pos: "名詞", g: "f", ex: {fr: "Quelle est la différence entre ces deux robes ?", ja: "この二着のワンピースはどこが違いますか？"}}
+      - {fr: "différent", ipa: "difeʁɑ̃", ja: "違う・異なる", pos: "形容詞", f: "différente", f_ipa: "difeʁɑ̃t", tts: "différent, différente", note: "「〜と違う」は différent de", ex: {fr: "La vie à Paris est très différente de la vie à Tokyo.", ja: "パリの生活は東京の生活とずいぶん違います。"}}
+      - {fr: "plutôt", ipa: "plyto", ja: "どちらかといえば・むしろ", pos: "副詞", ex: {fr: "Il est plutôt timide, mais très gentil.", ja: "彼はどちらかといえば内気ですが、とても優しいです。"}}
+      - {fr: "par rapport à", ipa: "paʁ ʁapɔʁ a", ja: "〜と比べて", pos: "表現", ex: {fr: "Par rapport à Tokyo, Paris est petit.", ja: "東京と比べると、パリは小さいです。"}}
+  - name: "色と柄"
+    words:
+      - {fr: "beige", ipa: "bɛʒ", ja: "ベージュの", pos: "形容詞", ex: {fr: "Je cherche un manteau beige pour l'hiver.", ja: "冬用のベージュのコートを探しています。"}}
+      - {fr: "bleu marine", ipa: "blø maʁin", ja: "紺色の", pos: "形容詞", note: "2 語の色は形が変わらない（une veste bleu marine）", ex: {fr: "Il porte toujours une veste bleu marine.", ja: "彼はいつも紺色のジャケットを着ています。"}}
+      - {fr: "bleu clair", ipa: "blø klɛʁ", ja: "水色の・明るい青の", pos: "形容詞", note: "色 + clair / foncé も形が変わらない", ex: {fr: "Elle a acheté une chemise bleu clair.", ja: "彼女は水色のシャツを買いました。"}}
+      - {fr: "foncé", ipa: "fɔ̃se", ja: "（色が）濃い・暗い", pos: "形容詞", f: "foncée", f_ipa: "fɔ̃se", tts: "foncé, foncée", note: "反対は clair（薄い・明るい）", ex: {fr: "Je préfère le vert foncé au vert clair.", ja: "私は明るい緑より濃い緑が好きです。"}}
+      - {fr: "doré", ipa: "dɔʁe", ja: "金色の", pos: "形容詞", f: "dorée", f_ipa: "dɔʁe", tts: "doré, dorée", note: "or（金）から", ex: {fr: "C'est une montre dorée très élégante.", ja: "とても上品な金色の腕時計です。"}}
+      - {fr: "argenté", ipa: "aʁʒɑ̃te", ja: "銀色の", pos: "形容詞", f: "argentée", f_ipa: "aʁʒɑ̃te", tts: "argenté, argentée", note: "argent（銀）から", ex: {fr: "Ma voiture est argentée, pas grise.", ja: "私の車は灰色じゃなくて銀色です。"}}
+      - {fr: "uni", ipa: "yni", ja: "無地の", pos: "形容詞", f: "unie", f_ipa: "yni", tts: "uni, unie", ex: {fr: "Je préfère les cravates unies.", ja: "私は無地のネクタイのほうが好きです。"}}
+      - {fr: "à rayures", ipa: "a ʁajyʁ", ja: "しま模様の・ストライプの", pos: "表現", ex: {fr: "Il porte un pull à rayures bleues et blanches.", ja: "彼は青と白のしま模様のセーターを着ています。"}}
+      - {fr: "à carreaux", ipa: "a kaʁo", ja: "チェック柄の", pos: "表現", ex: {fr: "Tu aimes ma nouvelle chemise à carreaux ?", ja: "僕の新しいチェックのシャツ、どう？"}}
+      - {fr: "à fleurs", ipa: "a flœʁ", ja: "花柄の", pos: "表現", ex: {fr: "Pour l'été, elle a une robe à fleurs.", ja: "夏用に、彼女は花柄のワンピースを持っています。"}}
+      - {fr: "à pois", ipa: "a pwa", ja: "水玉模様の", pos: "表現", ex: {fr: "La petite fille porte une jupe rouge à pois.", ja: "女の子は赤い水玉のスカートをはいています。"}}
+      - {fr: "un motif", ipa: "œ̃ mɔtif", ja: "柄・模様", pos: "名詞", g: "m", ex: {fr: "J'adore le motif de ce tissu.", ja: "この布の柄が大好きです。"}}
+  - name: "素材"
+    words:
+      - {fr: "un tissu", ipa: "œ̃ tisy", ja: "布・生地", pos: "名詞", g: "m", ex: {fr: "Ce tissu est plus doux que le coton.", ja: "この生地は綿よりやわらかいです。"}}
+      - {fr: "du coton", ipa: "dy kɔtɔ̃", ja: "綿・コットン", pos: "名詞", g: "m", note: "素材は en で言う（un tee-shirt en coton）", ex: {fr: "Ce tee-shirt est en coton.", ja: "このTシャツは綿です。"}}
+      - {fr: "de la laine", ipa: "də la lɛn", ja: "ウール・羊毛", pos: "名詞", g: "f", ex: {fr: "Un pull en laine est plus chaud.", ja: "ウールのセーターのほうが暖かいです。"}}
+      - {fr: "du cuir", ipa: "dy kɥiʁ", ja: "革", pos: "名詞", g: "m", ex: {fr: "Elle a acheté des chaussures en cuir noir.", ja: "彼女は黒い革靴を買いました。"}}
+      - {fr: "de la soie", ipa: "də la swa", ja: "絹・シルク", pos: "名詞", g: "f", ex: {fr: "La soie est plus chère que le coton.", ja: "シルクは綿より高いです。"}}
+      - {fr: "du bois", ipa: "dy bwa", ja: "木・木材", pos: "名詞", g: "m", note: "s は読まない", ex: {fr: "Nous avons une grande table en bois.", ja: "うちには大きな木のテーブルがあります。"}}
+      - {fr: "du métal", ipa: "dy metal", ja: "金属", pos: "名詞", g: "m", pl: "des métaux", ex: {fr: "Cette chaise en métal est très solide.", ja: "この金属の椅子はとても丈夫です。"}}
+      - {fr: "du plastique", ipa: "dy plastik", ja: "プラスチック", pos: "名詞", g: "m", ex: {fr: "Le plastique est plus léger que le verre.", ja: "プラスチックはガラスより軽いです。"}}
+      - {fr: "du verre", ipa: "dy vɛʁ", ja: "ガラス", pos: "名詞", g: "m", note: "un verre は「コップ」、素材は du verre", ex: {fr: "Attention, ce vase est en verre !", ja: "気をつけて、この花びんはガラスだよ！"}}
+      - {fr: "du papier", ipa: "dy papje", ja: "紙", pos: "名詞", g: "m", ex: {fr: "Tu as un morceau de papier pour moi ?", ja: "紙を一枚もらえる？"}}
+      - {fr: "de l'or", ipa: "də lɔʁ", ja: "金（きん）", pos: "名詞", g: "m", ex: {fr: "Sa bague est en or blanc.", ja: "彼女の指輪はホワイトゴールドです。"}}
+  - name: "形と状態"
+    words:
+      - {fr: "une forme", ipa: "yn fɔʁm", ja: "形", pos: "名詞", g: "f", ex: {fr: "Ce fromage a une forme bizarre.", ja: "このチーズは変わった形をしています。"}}
+      - {fr: "rond", ipa: "ʁɔ̃", ja: "丸い", pos: "形容詞", f: "ronde", f_ipa: "ʁɔ̃d", tts: "rond, ronde", ex: {fr: "Nous voulons une table ronde pour la cuisine.", ja: "台所用に丸いテーブルがほしいです。"}}
+      - {fr: "carré", ipa: "kaʁe", ja: "四角い・正方形の", pos: "形容詞", f: "carrée", f_ipa: "kaʁe", tts: "carré, carrée", ex: {fr: "La boîte est carrée et assez petite.", ja: "その箱は四角くて、わりと小さいです。"}}
+      - {fr: "léger", ipa: "leʒe", ja: "軽い", pos: "形容詞", f: "légère", f_ipa: "leʒɛʁ", tts: "léger, légère", note: "女性形は -er → -ère（cher / chère と同じ）", ex: {fr: "Cette valise est plus légère que mon sac.", ja: "このスーツケースは私のかばんより軽いです。"}}
+      - {fr: "lourd", ipa: "luʁ", ja: "重い", pos: "形容詞", f: "lourde", f_ipa: "luʁd", tts: "lourd, lourde", ex: {fr: "Ton sac est vraiment trop lourd !", ja: "君のかばん、本当に重すぎるよ！"}}
+      - {fr: "large", ipa: "laʁʒ", ja: "幅の広い・（服が）ゆったりした", pos: "形容詞", note: "英語の large（大きい）とは違い「幅が広い」", ex: {fr: "Ce pantalon est un peu trop large.", ja: "このズボンは少しゆったりしすぎです。"}}
+      - {fr: "étroit", ipa: "etʁwa", ja: "狭い・（服が）きつい", pos: "形容詞", f: "étroite", f_ipa: "etʁwat", tts: "étroit, étroite", ex: {fr: "Les rues de ce quartier sont très étroites.", ja: "この界隈の通りはとても狭いです。"}}
+      - {fr: "épais", ipa: "epɛ", ja: "厚い", pos: "形容詞", f: "épaisse", f_ipa: "epɛs", tts: "épais, épaisse", note: "女性形は s を重ねて e", ex: {fr: "Ce livre est plus épais que le dictionnaire.", ja: "この本は辞書より厚いです。"}}
+      - {fr: "dur", ipa: "dyʁ", ja: "硬い・難しい", pos: "形容詞", f: "dure", f_ipa: "dyʁ", tts: "dur, dure", ex: {fr: "Ce lit est trop dur pour moi.", ja: "このベッドは私には硬すぎます。"}}
+      - {fr: "solide", ipa: "sɔlid", ja: "丈夫な", pos: "形容詞", ex: {fr: "Ces chaussures sont les plus solides du magasin.", ja: "この靴は店でいちばん丈夫です。"}}
+      - {fr: "fragile", ipa: "fʁaʒil", ja: "壊れやすい", pos: "形容詞", ex: {fr: "Attention, ces tasses sont fragiles.", ja: "気をつけて、このカップは割れやすいよ。"}}
+      - {fr: "neuf", ipa: "nœf", ja: "新品の", pos: "形容詞", f: "neuve", f_ipa: "nœv", tts: "neuf, neuve", note: "nouveau は「新しく手に入れた」、neuf は「新品の」。neuf は名詞の後に置く", ex: {fr: "Il a acheté une voiture neuve.", ja: "彼は新車を買いました。"}}
+      - {fr: "propre", ipa: "pʁɔpʁ", ja: "清潔な・きれいな", pos: "形容詞", note: "名詞の前に置くと「自分自身の」（ma propre chambre）", ex: {fr: "Ta chambre est plus propre que la chambre de ton frère.", ja: "君の部屋はお兄さんの部屋よりきれいだね。"}}
+      - {fr: "sale", ipa: "sal", ja: "汚い", pos: "形容詞", ex: {fr: "Ton jean est sale, mets un autre pantalon.", ja: "ジーンズが汚れてるから、別のズボンをはいて。"}}
+  - name: "見た目の評価"
+    words:
+      - {fr: "original", ipa: "ɔʁiʒinal", ja: "独創的な・変わった", pos: "形容詞", f: "originale", f_ipa: "ɔʁiʒinal", tts: "original, originale", note: "男性複数は originaux", ex: {fr: "J'aime beaucoup tes boucles d'oreilles, elles sont originales.", ja: "君のイヤリング、とても好き。個性的だね。"}}
+      - {fr: "à la mode", ipa: "a la mɔd", ja: "流行の", pos: "表現", ex: {fr: "Cette couleur est très à la mode cette année.", ja: "この色は今年とても流行っています。"}}
+      - {fr: "démodé", ipa: "demɔde", ja: "流行遅れの", pos: "形容詞", f: "démodée", f_ipa: "demɔde", tts: "démodé, démodée", ex: {fr: "Ce manteau est un peu démodé maintenant.", ja: "このコートは今ではちょっと流行遅れです。"}}
+      - {fr: "chic", ipa: "ʃik", ja: "シックな・上品な", pos: "形容詞", note: "女性形も同じ形", ex: {fr: "Tu es très chic avec cette robe noire.", ja: "その黒いワンピース、とても素敵だね。"}}
+      - {fr: "pratique", ipa: "pʁatik", ja: "便利な・使いやすい", pos: "形容詞", ex: {fr: "Ce petit sac est plus pratique pour voyager.", ja: "この小さなバッグのほうが旅行には便利です。"}}
+      - {fr: "confortable", ipa: "kɔ̃fɔʁtabl", ja: "快適な・着心地のいい", pos: "形容詞", ex: {fr: "C'est le fauteuil le plus confortable de la maison.", ja: "これは家でいちばん座り心地のいいひじ掛け椅子です。"}}
+      - {fr: "bon marché", ipa: "bɔ̃ maʁʃe", ja: "安い", pos: "形容詞", note: "形が変わらない（des chaussures bon marché）", ex: {fr: "Ces lunettes sont jolies et bon marché.", ja: "このメガネはかわいくて安いです。"}}

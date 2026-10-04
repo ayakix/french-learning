@@ -10,3 +10,4 @@
 各レベルの目次は、CEFR / DELF の公式な能力記述をもとに AI で生成して `curriculum/<level>/` に置く。
 
 - [A1](a1/README.md)
+- [A2](a2/README.md)

@@ -1,0 +1,98 @@
+# 単元 17 仕事と学び の単語（Web アプリの単語画面 /vocab/17 のデータ。A2）
+# métier / travail / bureau / collègue / étudiant など基本の語は A1 で出たので、ここでは経歴・就職・学歴を語るのに要る語にしぼる。
+# 職業名は男性形を見出しにし、女性形が変わるものは note に書く。音で性を覚えるため冠詞付きで読ませる。
+# 例文はこの単元の文法（関係代名詞 qui / que / où、depuis / pendant / il y a + 期間）を多く使う。DELF A2 の「話す」の自己紹介で経歴をそのまま言えるようにするため。
+unit: "17"
+title: "仕事と学び"
+groups:
+  - name: "職業"
+    words:
+      - { fr: "un architecte", ipa: "œ̃ naʁʃitɛkt", ja: "建築家", pos: "名詞", g: "m", note: "女性も une architecte（形は同じ）", ex: { fr: "C'est l'architecte qui a dessiné cette maison.", ja: "この家を設計したのはその建築家です。" } }
+      - { fr: "un comptable", ipa: "œ̃ kɔ̃tabl", ja: "会計士・経理担当", pos: "名詞", g: "m", note: "p は読まない", ex: { fr: "Mon père est comptable depuis vingt ans.", ja: "父は 20 年前から会計士をしています。" } }
+      - { fr: "un coiffeur", ipa: "œ̃ kwafœʁ", ja: "美容師・理容師", pos: "名詞", g: "m", note: "女性は une coiffeuse", ex: { fr: "Le coiffeur que je préfère travaille ici.", ja: "私の好きな美容師はここで働いています。" } }
+      - { fr: "un policier", ipa: "œ̃ pɔlisje", ja: "警察官", pos: "名詞", g: "m", note: "女性は une policière", ex: { fr: "Mon cousin est devenu policier l'année dernière.", ja: "いとこは去年警察官になりました。" } }
+      - { fr: "un pompier", ipa: "œ̃ pɔ̃pje", ja: "消防士", pos: "名詞", g: "m", ex: { fr: "Enfant, je voulais être pompier.", ja: "子どもの頃、消防士になりたかったです。" } }
+      - { fr: "un agriculteur", ipa: "œ̃ naɡʁikyltœʁ", ja: "農業従事者", pos: "名詞", g: "m", note: "女性は une agricultrice", ex: { fr: "Mes grands-parents étaient agriculteurs à la campagne.", ja: "祖父母は田舎で農業をしていました。" } }
+      - { fr: "un ouvrier", ipa: "œ̃ nuvʁije", ja: "工員・作業員", pos: "名詞", g: "m", note: "女性は une ouvrière", ex: { fr: "Les ouvriers commencent à six heures du matin.", ja: "工員たちは朝 6 時に仕事を始めます。" } }
+      - { fr: "un chauffeur", ipa: "œ̃ ʃofœʁ", ja: "運転手", pos: "名詞", g: "m", ex: { fr: "Il est chauffeur de bus à Lyon.", ja: "彼はリヨンでバスの運転手をしています。" } }
+      - { fr: "un secrétaire", ipa: "œ̃ səkʁetɛʁ", ja: "秘書・事務員", pos: "名詞", g: "m", note: "女性は une secrétaire（形は同じ）", ex: { fr: "La secrétaire répond au téléphone toute la journée.", ja: "秘書は一日中電話に出ています。" } }
+      - { fr: "un fonctionnaire", ipa: "œ̃ fɔ̃ksjɔnɛʁ", ja: "公務員", pos: "名詞", g: "m", ex: { fr: "Ma mère est fonctionnaire à la mairie.", ja: "母は市役所の公務員です。" } }
+      - { fr: "un traducteur", ipa: "œ̃ tʁadyktœʁ", ja: "翻訳家", pos: "名詞", g: "m", note: "女性は une traductrice", ex: { fr: "Je voudrais devenir traducteur de mangas.", ja: "漫画の翻訳家になりたいです。" } }
+      - { fr: "un acteur", ipa: "œ̃ naktœʁ", ja: "俳優", pos: "名詞", g: "m", note: "女性は une actrice", ex: { fr: "C'est un acteur que tout le monde connaît.", ja: "誰もが知っている俳優です。" } }
+      - { fr: "un musicien", ipa: "œ̃ myzisjɛ̃", ja: "音楽家・ミュージシャン", pos: "名詞", g: "m", note: "女性は une musicienne", ex: { fr: "Il joue dans un groupe de musiciens japonais.", ja: "彼は日本人のミュージシャンのバンドで演奏しています。" } }
+  - name: "職場"
+    words:
+      - { fr: "un patron", ipa: "œ̃ patʁɔ̃", ja: "経営者・ボス", pos: "名詞", g: "m", note: "女性は une patronne。くだけた言い方", ex: { fr: "Mon patron est quelqu'un qui écoute bien.", ja: "うちのボスは話をよく聞いてくれる人です。" } }
+      - { fr: "un directeur", ipa: "œ̃ diʁɛktœʁ", ja: "部長・所長・校長", pos: "名詞", g: "m", note: "女性は une directrice", ex: { fr: "La directrice veut nous voir cet après-midi.", ja: "部長（女性）が今日の午後、私たちに会いたがっています。" } }
+      - { fr: "un chef", ipa: "œ̃ ʃɛf", ja: "上司・リーダー", pos: "名詞", g: "m", note: "女性の上司にも ma chef と言う", ex: { fr: "Mon chef est en vacances pendant deux semaines.", ja: "上司は 2 週間休暇中です。" } }
+      - { fr: "un salarié", ipa: "œ̃ salaʁje", ja: "会社員・従業員", pos: "名詞", g: "m", note: "女性は une salariée（発音は同じ）", ex: { fr: "Cette entreprise a cinquante salariés.", ja: "この会社には従業員が 50 人います。" } }
+      - { fr: "un stagiaire", ipa: "œ̃ staʒjɛʁ", ja: "研修生・インターン", pos: "名詞", g: "m", ex: { fr: "Le stagiaire qui est arrivé lundi est très motivé.", ja: "月曜に来たインターンはとてもやる気があります。" } }
+      - { fr: "une société", ipa: "yn sɔsjete", ja: "会社・社会", pos: "名詞", g: "f", note: "entreprise とほぼ同じ意味で使う", ex: { fr: "Je travaille dans une société d'informatique.", ja: "私は IT の会社で働いています。" } }
+      - { fr: "une usine", ipa: "yn yzin", ja: "工場", pos: "名詞", g: "f", ex: { fr: "C'est l'usine où mon grand-père travaillait.", ja: "ここは祖父が働いていた工場です。" } }
+      - { fr: "un service", ipa: "œ̃ sɛʁvis", ja: "部署・サービス", pos: "名詞", g: "m", ex: { fr: "Elle travaille au service des ventes.", ja: "彼女は営業部で働いています。" } }
+      - { fr: "un poste", ipa: "œ̃ pɔst", ja: "職・ポスト", pos: "名詞", g: "m", note: "女性名詞の la poste は「郵便局」", ex: { fr: "J'ai un nouveau poste depuis janvier.", ja: "一月から新しいポストに就いています。" } }
+      - { fr: "un salaire", ipa: "œ̃ salɛʁ", ja: "給料", pos: "名詞", g: "m", ex: { fr: "Le salaire est payé à la fin du mois.", ja: "給料は月末に支払われます。" } }
+      - { fr: "un contrat", ipa: "œ̃ kɔ̃tʁa", ja: "契約", pos: "名詞", g: "m", note: "最後の t は読まない", ex: { fr: "J'ai signé un contrat de six mois.", ja: "6 か月の契約に署名しました。" } }
+      - { fr: "un dossier", ipa: "œ̃ dosje", ja: "書類一式・ファイル・案件", pos: "名詞", g: "m", ex: { fr: "Voici le dossier que vous avez demandé.", ja: "こちらがご依頼の書類です。" } }
+      - { fr: "une tâche", ipa: "yn taʃ", ja: "作業・任務", pos: "名詞", g: "f", note: "アクセントのない une tache は「しみ」", ex: { fr: "Quelles sont vos tâches au bureau ?", ja: "職場でのあなたの仕事内容は何ですか。" } }
+      - { fr: "un horaire", ipa: "œ̃ nɔʁɛʁ", ja: "勤務時間・時刻表", pos: "名詞", g: "m", note: "h は読まないので un とリエゾンする", ex: { fr: "Mes horaires sont de neuf heures à dix-sept heures.", ja: "私の勤務時間は 9 時から 17 時です。" } }
+      - { fr: "une profession", ipa: "yn pʁɔfɛsjɔ̃", ja: "職業", pos: "名詞", g: "f", note: "書類では métier より profession を使う", ex: { fr: "Écrivez votre profession sur le formulaire.", ja: "用紙にご職業を書いてください。" } }
+  - name: "仕事を探す"
+    words:
+      - { fr: "un emploi", ipa: "œ̃ nɑ̃plwa", ja: "職・雇用", pos: "名詞", g: "m", ex: { fr: "Il a trouvé un emploi il y a trois mois.", ja: "彼は 3 か月前に職を見つけました。" } }
+      - { fr: "une offre d'emploi", ipa: "yn ɔfʁ dɑ̃plwa", ja: "求人", pos: "名詞", g: "f", ex: { fr: "J'ai lu une offre d'emploi intéressante sur Internet.", ja: "ネットでおもしろい求人を読みました。" } }
+      - { fr: "un CV", ipa: "œ̃ seve", ja: "履歴書", pos: "名詞", g: "m", note: "curriculum vitae の略。アルファベットで「セヴェ」と読む", ex: { fr: "N'oubliez pas d'envoyer votre CV.", ja: "履歴書を送るのを忘れないでください。" } }
+      - { fr: "une lettre de motivation", ipa: "yn lɛtʁ də mɔtivasjɔ̃", ja: "志望動機書", pos: "名詞", g: "f", ex: { fr: "J'écris une lettre de motivation pour ce poste.", ja: "このポストのために志望動機書を書いています。" } }
+      - { fr: "un entretien", ipa: "œ̃ nɑ̃tʁətjɛ̃", ja: "面接", pos: "名詞", g: "m", ex: { fr: "J'ai un entretien d'embauche demain matin.", ja: "明日の朝、採用面接があります。" } }
+      - { fr: "un candidat", ipa: "œ̃ kɑ̃dida", ja: "候補者・応募者", pos: "名詞", g: "m", note: "女性は une candidate（t を読む）", ex: { fr: "C'est le candidat qui parle trois langues.", ja: "3 か国語を話すのはその応募者です。" } }
+      - { fr: "une candidature", ipa: "yn kɑ̃didatyʁ", ja: "応募", pos: "名詞", g: "f", ex: { fr: "Merci pour votre candidature.", ja: "ご応募ありがとうございます。" } }
+      - { fr: "postuler", ipa: "pɔstyle", ja: "応募する", pos: "動詞", note: "postuler à + 求人・ポスト", ex: { fr: "J'ai postulé à trois offres cette semaine.", ja: "今週 3 つの求人に応募しました。" } }
+      - { fr: "embaucher", ipa: "ɑ̃boʃe", ja: "雇う・採用する", pos: "動詞", ex: { fr: "Le restaurant embauche des serveurs pour l'été.", ja: "そのレストランは夏の間ウェイターを雇います。" } }
+      - { fr: "être au chômage", ipa: "ɛtʁ o ʃomaʒ", ja: "失業している", pos: "表現", note: "le chômage は「失業」", ex: { fr: "Mon voisin est au chômage depuis six mois.", ja: "隣の人は半年前から失業しています。" } }
+      - { fr: "chercher du travail", ipa: "ʃɛʁʃe dy tʁavaj", ja: "仕事を探す", pos: "表現", note: "「仕事」全般なので部分冠詞 du", ex: { fr: "Elle cherche du travail à Paris.", ja: "彼女はパリで仕事を探しています。" } }
+      - { fr: "démissionner", ipa: "demisjɔne", ja: "辞職する", pos: "動詞", ex: { fr: "Il a démissionné parce qu'il était trop fatigué.", ja: "疲れすぎていたので彼は辞職しました。" } }
+      - { fr: "une expérience", ipa: "yn ɛkspeʁjɑ̃s", ja: "経験", pos: "名詞", g: "f", ex: { fr: "J'ai deux ans d'expérience dans la vente.", ja: "販売の経験が 2 年あります。" } }
+      - { fr: "une compétence", ipa: "yn kɔ̃petɑ̃s", ja: "能力・スキル", pos: "名詞", g: "f", ex: { fr: "Quelles sont vos compétences principales ?", ja: "あなたの主なスキルは何ですか。" } }
+  - name: "働き方"
+    words:
+      - { fr: "à temps plein", ipa: "a tɑ̃ plɛ̃", ja: "フルタイムで", pos: "表現", ex: { fr: "Je travaille à temps plein depuis l'année dernière.", ja: "去年からフルタイムで働いています。" } }
+      - { fr: "à temps partiel", ipa: "a tɑ̃ paʁsjɛl", ja: "パートタイムで", pos: "表現", note: "ti は「スィ」と読む", ex: { fr: "Pendant mes études, je travaillais à temps partiel.", ja: "学生時代はパートタイムで働いていました。" } }
+      - { fr: "le télétravail", ipa: "lə teletʁavaj", ja: "テレワーク・在宅勤務", pos: "名詞", g: "m", ex: { fr: "Je fais du télétravail deux jours par semaine.", ja: "週に 2 日テレワークをしています。" } }
+      - { fr: "un stage", ipa: "œ̃ staʒ", ja: "研修・インターンシップ", pos: "名詞", g: "m", ex: { fr: "J'ai fait un stage de deux mois à Bordeaux.", ja: "ボルドーで 2 か月の研修をしました。" } }
+      - { fr: "des congés", ipa: "de kɔ̃ʒe", ja: "休暇", pos: "名詞", g: "m", note: "un congé は「休み（1 回分）」。有給休暇は des congés payés", ex: { fr: "Je prends mes congés en août.", ja: "八月に休暇を取ります。" } }
+      - { fr: "des heures supplémentaires", ipa: "de zœʁ syplemɑ̃tɛʁ", ja: "残業", pos: "名詞", g: "f", ex: { fr: "Hier, j'ai fait trois heures supplémentaires.", ja: "昨日は 3 時間残業しました。" } }
+      - { fr: "un retraité", ipa: "œ̃ ʁətʁɛte", ja: "退職者・年金生活者", pos: "名詞", g: "m", note: "女性は une retraitée（発音は同じ）", ex: { fr: "Les retraités qui habitent ici sont très actifs.", ja: "ここに住む年金生活者たちはとても活動的です。" } }
+      - { fr: "prendre sa retraite", ipa: "pʁɑ̃dʁ sa ʁətʁɛt", ja: "退職する（定年で）", pos: "表現", note: "過去分詞 pris", ex: { fr: "Ma tante a pris sa retraite il y a deux ans.", ja: "おばは 2 年前に定年退職しました。" } }
+      - { fr: "gagner sa vie", ipa: "ɡaɲe sa vi", ja: "生計を立てる", pos: "表現", ex: { fr: "Il gagne sa vie comme photographe.", ja: "彼は写真家として生計を立てています。" } }
+      - { fr: "diriger", ipa: "diʁiʒe", ja: "率いる・経営する", pos: "動詞", note: "nous dirigeons（g を「ジュ」の音に保つため e が入る）", ex: { fr: "Elle dirige une équipe de dix personnes.", ja: "彼女は 10 人のチームを率いています。" } }
+      - { fr: "gérer", ipa: "ʒeʁe", ja: "管理する・やりくりする", pos: "動詞", note: "je gère（活用でアクセントが è に変わる）", ex: { fr: "Je gère les clients étrangers.", ja: "私は海外の顧客を担当しています。" } }
+      - { fr: "être responsable de", ipa: "ɛtʁ ʁɛspɔ̃sabl də", ja: "〜の責任者である", pos: "表現", ex: { fr: "Je suis responsable de la communication.", ja: "私は広報の責任者です。" } }
+      - { fr: "professionnel", ipa: "pʁɔfɛsjɔnɛl", ja: "職業の・プロの", pos: "形容詞", f: "professionnelle", f_ipa: "pʁɔfɛsjɔnɛl", tts: "professionnel, professionnelle", note: "女性形は l を重ねるが、発音は同じ", ex: { fr: "Parlez-moi de votre expérience professionnelle.", ja: "あなたの職歴について話してください。" } }
+  - name: "学校と勉強"
+    words:
+      - { fr: "une école", ipa: "yn ekɔl", ja: "学校・小学校", pos: "名詞", g: "f", ex: { fr: "Voici l'école où j'ai appris à lire.", ja: "ここは私が字を読むのを習った学校です。" } }
+      - { fr: "un enseignant", ipa: "œ̃ nɑ̃sɛɲɑ̃", ja: "教員", pos: "名詞", g: "m", note: "女性は une enseignante", ex: { fr: "Ma sœur est enseignante dans une école primaire.", ja: "姉は小学校の教員です。" } }
+      - { fr: "une note", ipa: "yn nɔt", ja: "成績・点数・メモ", pos: "名詞", g: "f", note: "フランスの成績は 20 点満点", ex: { fr: "J'ai eu une bonne note en maths.", ja: "数学でいい点を取りました。" } }
+      - { fr: "un diplôme", ipa: "œ̃ diplom", ja: "卒業証書・資格", pos: "名詞", g: "m", note: "ô は口をすぼめた「オ」", ex: { fr: "Quel diplôme avez-vous obtenu ?", ja: "どんな学位を取りましたか。" } }
+      - { fr: "le bac", ipa: "lə bak", ja: "バカロレア（高校卒業資格）", pos: "名詞", g: "m", note: "le baccalauréat の略", ex: { fr: "J'ai passé le bac il y a dix ans.", ja: "10 年前にバカロレアを受けました。" } }
+      - { fr: "une licence", ipa: "yn lisɑ̃s", ja: "学士号", pos: "名詞", g: "f", note: "大学 3 年で取る。その上が master", ex: { fr: "Elle a une licence de droit.", ja: "彼女は法学の学士号を持っています。" } }
+      - { fr: "un master", ipa: "œ̃ mastɛʁ", ja: "修士号", pos: "名詞", g: "m", ex: { fr: "Il prépare un master à Toulouse.", ja: "彼はトゥールーズで修士課程にいます。" } }
+      - { fr: "une formation", ipa: "yn fɔʁmasjɔ̃", ja: "職業訓練・研修・学歴", pos: "名詞", g: "f", ex: { fr: "Je fais une formation de cuisinier le soir.", ja: "夜に料理人の訓練を受けています。" } }
+      - { fr: "des études", ipa: "de zetyd", ja: "学業・（大学での）勉強", pos: "名詞", g: "f", note: "「学業」の意味では複数形で使う", ex: { fr: "J'ai fait mes études à Osaka.", ja: "大阪で大学に通いました。" } }
+      - { fr: "un exercice", ipa: "œ̃ nɛɡzɛʁsis", ja: "練習問題", pos: "名詞", g: "m", note: "ex は「エグズ」と濁る", ex: { fr: "Faites l'exercice que je vous ai donné.", ja: "私が出した練習問題をやってください。" } }
+      - { fr: "un niveau", ipa: "œ̃ nivo", ja: "レベル", pos: "名詞", g: "m", pl: "des niveaux", ex: { fr: "Quel est votre niveau de français ?", ja: "あなたのフランス語のレベルはどのくらいですか。" } }
+  - name: "学ぶ・経歴を語る"
+    words:
+      - { fr: "enseigner", ipa: "ɑ̃seɲe", ja: "教える", pos: "動詞", ex: { fr: "Elle enseigne le japonais à des adultes.", ja: "彼女は大人に日本語を教えています。" } }
+      - { fr: "réviser", ipa: "ʁevize", ja: "復習する・試験勉強をする", pos: "動詞", ex: { fr: "Je dois réviser pour l'examen de vendredi.", ja: "金曜の試験に向けて復習しなければなりません。" } }
+      - { fr: "passer un examen", ipa: "pase œ̃ nɛɡzamɛ̃", ja: "試験を受ける", pos: "表現", note: "「合格する」ではない。合格は réussir", ex: { fr: "Je vais passer un examen en mars.", ja: "三月に試験を受けます。" } }
+      - { fr: "échouer", ipa: "eʃwe", ja: "失敗する・不合格になる", pos: "動詞", note: "échouer à un examen", ex: { fr: "Il a échoué au permis de conduire.", ja: "彼は運転免許の試験に落ちました。" } }
+      - { fr: "obtenir", ipa: "ɔptəniʁ", ja: "取得する・得る", pos: "動詞", note: "過去分詞 obtenu（venir と同じ活用だが複合過去は avoir）", ex: { fr: "J'ai obtenu mon diplôme en deux mille vingt.", ja: "二〇二〇年に学位を取りました。" } }
+      - { fr: "changer de travail", ipa: "ʃɑ̃ʒe də tʁavaj", ja: "転職する", pos: "表現", note: "changer de + 無冠詞の名詞", ex: { fr: "J'ai changé de travail il y a un an.", ja: "1 年前に転職しました。" } }
+      - { fr: "depuis combien de temps", ipa: "dəpɥi kɔ̃bjɛ̃ də tɑ̃", ja: "いつから・どのくらい前から", pos: "表現", ex: { fr: "Depuis combien de temps tu habites ici ?", ja: "いつからここに住んでいるの？" } }
+      - { fr: "pendant combien de temps", ipa: "pɑ̃dɑ̃ kɔ̃bjɛ̃ də tɑ̃", ja: "どのくらいの間", pos: "表現", note: "終わったことの期間は pendant", ex: { fr: "Pendant combien de temps avez-vous vécu en France ?", ja: "フランスにどのくらいの間住んでいましたか。" } }
+      - { fr: "il y a combien de temps", ipa: "il ja kɔ̃bjɛ̃ də tɑ̃", ja: "どのくらい前に", pos: "表現", note: "il y a + 期間 は「〜前に」。過去の一点を指す", ex: { fr: "Tu es arrivé il y a combien de temps ?", ja: "着いたのはどのくらい前？" } }
+      - { fr: "ça fait ... que", ipa: "sa fɛ ... kə", ja: "〜前から…している", pos: "表現", tts: "Ça fait deux ans que", note: "depuis と同じ意味。話し言葉でよく使う", ex: { fr: "Ça fait deux ans que j'apprends le piano.", ja: "ピアノを習って 2 年になります。" } }
+      - { fr: "un parcours", ipa: "œ̃ paʁkuʁ", ja: "経歴・歩み", pos: "名詞", g: "m", note: "最後の s は読まない", ex: { fr: "Racontez-nous votre parcours en quelques mots.", ja: "あなたの経歴を手短に話してください。" } }
+      - { fr: "motivé", ipa: "mɔtive", ja: "やる気のある", pos: "形容詞", f: "motivée", f_ipa: "mɔtive", tts: "motivé, motivée", ex: { fr: "Je cherche des personnes motivées et sérieuses.", ja: "やる気があってまじめな人を探しています。" } }
+      - { fr: "doué", ipa: "dwe", ja: "才能のある・得意な", pos: "形容詞", f: "douée", f_ipa: "dwe", tts: "doué, douée", note: "doué en + 科目 / doué pour + 活動", ex: { fr: "Elle est très douée en langues.", ja: "彼女は語学の才能があります。" } }
