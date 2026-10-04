@@ -1,0 +1,40 @@
+# 単元 03 の文書 2：語学学校の夏期講座の予定表（DELF A1 の「読む」の形式）
+# DELF A1 の読解では、予定表・時刻表から曜日と時刻を探す問題がよく出る。
+# 単元 03 の時刻・曜日・時間帯（le matin / l'après-midi）をそのまま使って読めるよう、1 週間の予定表にした。
+# 1 行ずつ音声も付けているのは、読んだ後に音で確かめ、シャドーイングにも使えるようにするため。
+# 掲示物で書き手がいないため、声は標準（男性）のまま voice を付けない。
+# 時刻は音声で読み間違えないよう、fr では綴りで書き、選択肢（音声にしない）だけ数字にしている。
+unit: "03"
+title: "夏期講座の予定表"
+type: "program"
+situation: "ニースの語学学校の掲示板に、夏期講座の 1 週間の予定表が貼ってある"
+header:
+  - "École Soleil – Nice"
+  - "Stage d'été de français : emploi du temps"
+lines:
+  - { fr: "Du lundi au vendredi, cours de français de 9 h à midi.", tts: "Du lundi au vendredi, cours de français de neuf heures à midi.", ja: "月曜日から金曜日まで、9 時から 12 時までフランス語の授業。" }
+  - { fr: "Pause de 10 h 30 à 10 h 45.", tts: "Pause de dix heures trente à dix heures quarante-cinq.", ja: "10 時 30 分から 10 時 45 分まで休憩。" }
+  - { fr: "Déjeuner à la cantine de l'école, de midi à 13 h 30.", tts: "Déjeuner à la cantine de l'école, de midi à treize heures trente.", ja: "学校の食堂で昼食、12 時から 13 時 30 分まで。" }
+  - { fr: "L'après-midi, de 14 h à 16 h : activités en groupe.", tts: "L'après-midi, de quatorze heures à seize heures : activités en groupe.", ja: "午後は 14 時から 16 時まで、グループ活動。" }
+  - { fr: "Le mercredi après-midi : visite du vieux Nice à pied.", ja: "水曜日の午後：歩いてニース旧市街を見学。" }
+  - { fr: "Le vendredi matin : examen de la semaine.", ja: "金曜日の午前：1 週間のまとめの試験。" }
+  - { fr: "Le samedi et le dimanche : week-end libre !", ja: "土曜日と日曜日：自由な週末！" }
+  - { fr: "Pour arriver à l'école, prenez le bus numéro 12.", tts: "Pour arriver à l'école, prenez le bus numéro douze.", ja: "学校へは 12 番のバスに乗ってください。" }
+  - { fr: "Le secrétariat ferme à 17 h.", tts: "Le secrétariat ferme à dix-sept heures.", ja: "事務室は 17 時に閉まります。" }
+questions:
+  - q: "Les cours commencent à quelle heure ?"
+    q_ja: "授業は何時に始まりますか？"
+    choices: ["8 h", "9 h", "14 h"]
+    answer: 1
+  - q: "Quel jour est la visite du vieux Nice ?"
+    q_ja: "ニース旧市街の見学は何曜日ですか？"
+    choices: ["le mercredi", "le lundi", "le vendredi"]
+    answer: 0
+  - q: "Qu'est-ce qu'il y a le vendredi matin ?"
+    q_ja: "金曜日の午前には何がありますか？"
+    choices: ["une visite", "une pause", "un examen"]
+    answer: 2
+  - q: "Les étudiants prennent quel bus ?"
+    q_ja: "学生は何番のバスに乗りますか？"
+    choices: ["le bus 2", "le bus 12", "le bus 20"]
+    answer: 1

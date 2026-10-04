@@ -1,0 +1,41 @@
+# 単元 01 の文書 1：語学学校からのメール（DELF A1 の「読む」の形式）
+# DELF A1 の読解は、短い実用文書から人・場所・職業・言語などの情報を探す問題。
+# 単元 01 の範囲（être・s'appeler・habiter・parler・国籍・職業）だけで読めるように、入学前に先生やクラスを紹介するメールにした。
+# 1 行ずつ音声も付けているのは、読んだ後に音で確かめ、シャドーイングにも使えるようにするため。
+# 書き手（ソフィー）が女性なので、本文の各行に voice: "lucie" を付けている。
+unit: "01"
+title: "語学学校からのメール"
+type: "email"
+situation: "ニースの語学学校から、入学するユキにメールが届いた"
+header:
+  - "De : Sophie Martin"
+  - "À : Yuki Tanaka"
+  - "Objet : Bienvenue à l'école !"
+lines:
+  - { voice: "lucie", fr: "Bonjour Yuki,", ja: "ユキさん、こんにちは。" }
+  - { voice: "lucie", fr: "Bienvenue à l'école de langues de Nice !", ja: "ニースの語学学校へようこそ！" }
+  - { voice: "lucie", fr: "Je m'appelle Sophie Martin et je suis secrétaire à l'école.", ja: "私はソフィー・マルタンで、学校の事務をしています。" }
+  - { voice: "lucie", fr: "Le professeur de français s'appelle Marc Dubois.", ja: "フランス語の先生はマルク・デュボワです。" }
+  - { voice: "lucie", fr: "Il est belge, mais il habite à Nice.", ja: "彼はベルギー人ですが、ニースに住んでいます。" }
+  - { voice: "lucie", fr: "Il parle français, anglais et un peu japonais.", ja: "彼はフランス語、英語、それに少し日本語を話します。" }
+  - { voice: "lucie", fr: "Dans la classe, les étudiants sont italiens, allemands et coréens.", ja: "クラスの学生は、イタリア人、ドイツ人、韓国人です。" }
+  - { voice: "lucie", fr: "Vous êtes la seule étudiante japonaise !", ja: "日本人の学生はあなただけです！" }
+  - { voice: "lucie", fr: "À bientôt à Nice !", ja: "ニースでお会いしましょう！" }
+  - { voice: "lucie", fr: "Cordialement, Sophie Martin", ja: "よろしくお願いします。ソフィー・マルタン" }
+questions:
+  - q: "Qui écrit à Yuki ?"
+    q_ja: "ユキにメールを書いたのは誰？"
+    choices: ["la secrétaire de l'école", "le professeur de français", "une étudiante italienne"]
+    answer: 0
+  - q: "Comment s'appelle le professeur ?"
+    q_ja: "先生の名前は？"
+    choices: ["Sophie Martin", "Marc Dubois", "Yuki Tanaka"]
+    answer: 1
+  - q: "Le professeur est..."
+    q_ja: "先生の国籍は？"
+    choices: ["français", "japonais", "belge"]
+    answer: 2
+  - q: "Quelles langues parle le professeur ?"
+    q_ja: "先生が話す言語は？"
+    choices: ["français, anglais et un peu japonais", "français, italien et un peu allemand", "français et coréen"]
+    answer: 0

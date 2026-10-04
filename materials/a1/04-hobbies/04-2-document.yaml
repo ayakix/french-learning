@@ -1,0 +1,39 @@
+# 単元 04 の文書 2：文化センターの活動のお知らせ（DELF A1 の「読む」の形式）
+# DELF A1 の読解でよく出る掲示・案内の形。曜日・時刻・値段・必要な物を探して読む練習にする。
+# 時刻と値段は音声で正しく読ませるため、本文では綴りで書いている（選択肢は画面で見るだけなので数字）。
+# 書き手がいない掲示なので、音声は標準の男性の声にしている。
+unit: "04"
+title: "文化センターの活動のお知らせ"
+type: "notice"   # email（メール）/ message（SMS・SNS）/ notice（掲示・お知らせ）/ ad（広告）/ program（予定表・時刻表）/ menu（メニュー・値段表）
+situation: "町の文化センター（MJC）の入口に、大人向けの活動の案内が貼ってある"
+header:
+  - "MJC du Centre"
+  - "Activités pour les adultes"
+lines:
+  - { fr: "Vous aimez le sport, la musique ou le dessin ?", ja: "スポーツ、音楽、絵は好きですか？" }
+  - { fr: "La MJC propose des activités pour les adultes.", ja: "MJC では大人向けの活動を行っています。" }
+  - { fr: "Yoga : le lundi, de 18 h à 19 h.", tts: "Yoga : le lundi, de dix-huit heures à dix-neuf heures.", ja: "ヨガ：毎週月曜日、18 時から 19 時。" }
+  - { fr: "Guitare : le mercredi, à 20 h, avec Marc.", tts: "Guitare : le mercredi, à vingt heures, avec Marc.", ja: "ギター：毎週水曜日、20 時、マルク先生と。" }
+  - { fr: "Pour le cours de guitare, vous avez besoin d'une guitare.", ja: "ギターの授業には、ギターが必要です。" }
+  - { fr: "Théâtre : le jeudi, de 19 h à 21 h.", tts: "Théâtre : le jeudi, de dix-neuf heures à vingt et une heures.", ja: "演劇：毎週木曜日、19 時から 21 時。" }
+  - { fr: "Randonnée : le dimanche, à 9 h.", tts: "Randonnée : le dimanche, à neuf heures.", ja: "ハイキング：毎週日曜日、9 時。" }
+  - { fr: "Prix : 25 € par mois pour une activité.", tts: "Prix : vingt-cinq euros par mois pour une activité.", ja: "料金：1 つの活動につき月 25 ユーロ。" }
+  - { fr: "Le premier cours est gratuit !", ja: "初回の授業は無料です！" }
+  - { fr: "Inscriptions à l'accueil, du lundi au vendredi.", ja: "申し込みは受付で、月曜日から金曜日まで。" }
+questions:
+  - q: "Le cours de yoga est quel jour ?"
+    q_ja: "ヨガの授業は何曜日？"
+    choices: ["Le lundi", "Le mercredi", "Le jeudi"]
+    answer: 0
+  - q: "Pour le cours de guitare, on a besoin de quoi ?"
+    q_ja: "ギターの授業に必要なものは？"
+    choices: ["D'un livre", "D'une guitare", "D'un ordinateur"]
+    answer: 1
+  - q: "Une activité coûte combien par mois ?"
+    q_ja: "1 つの活動は月にいくら？"
+    choices: ["15 €", "20 €", "25 €"]
+    answer: 2
+  - q: "Comment est le premier cours ?"
+    q_ja: "初回の授業はどうなっている？"
+    choices: ["Il est gratuit.", "Il est le dimanche.", "Il est à vingt heures."]
+    answer: 0

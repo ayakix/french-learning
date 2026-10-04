@@ -7,119 +7,119 @@ title: "住まいと街"
 groups:
   - name: "住まい"
     words:
-      - {fr: "une maison", ipa: "yn mɛzɔ̃", ja: "家（一軒家）", pos: "名詞", g: "f"}
-      - {fr: "un appartement", ipa: "œ̃ napaʁtəmɑ̃", ja: "アパート・マンション（の 1 戸）", pos: "名詞", g: "m"}
-      - {fr: "un studio", ipa: "œ̃ stydjo", ja: "ワンルーム", pos: "名詞", g: "m"}
-      - {fr: "un immeuble", ipa: "œ̃ nimœbl", ja: "建物（集合住宅・ビル）", pos: "名詞", g: "m"}
-      - {fr: "un étage", ipa: "œ̃ netaʒ", ja: "階", pos: "名詞", g: "m", note: "1er étage は日本の 2 階。地上階は数えないため"}
-      - {fr: "un rez-de-chaussée", ipa: "œ̃ ʁedʃose", ja: "1 階（地上階）", pos: "名詞", g: "m"}
-      - {fr: "un ascenseur", ipa: "œ̃ nasɑ̃sœʁ", ja: "エレベーター", pos: "名詞", g: "m"}
-      - {fr: "un escalier", ipa: "œ̃ nɛskalje", ja: "階段", pos: "名詞", g: "m"}
-      - {fr: "une porte", ipa: "yn pɔʁt", ja: "ドア", pos: "名詞", g: "f"}
-      - {fr: "une fenêtre", ipa: "yn fənɛtʁ", ja: "窓", pos: "名詞", g: "f"}
-      - {fr: "un jardin", ipa: "œ̃ ʒaʁdɛ̃", ja: "庭", pos: "名詞", g: "m"}
-      - {fr: "un balcon", ipa: "œ̃ balkɔ̃", ja: "バルコニー", pos: "名詞", g: "m"}
-      - {fr: "une adresse", ipa: "yn adʁɛs", ja: "住所", pos: "名詞", g: "f"}
-      - {fr: "un loyer", ipa: "œ̃ lwaje", ja: "家賃", pos: "名詞", g: "m"}
-      - {fr: "louer", ipa: "lwe", ja: "（部屋を）借りる・貸す", pos: "動詞"}
+      - {fr: "une maison", ipa: "yn mɛzɔ̃", ja: "家（一軒家）", pos: "名詞", g: "f", ex: {fr: "Mes parents habitent dans une grande maison.", ja: "両親は大きな家に住んでいます。"}}
+      - {fr: "un appartement", ipa: "œ̃ napaʁtəmɑ̃", ja: "アパート・マンション（の 1 戸）", pos: "名詞", g: "m", ex: {fr: "J'habite dans un appartement à Paris.", ja: "私はパリのアパートに住んでいます。"}}
+      - {fr: "un studio", ipa: "œ̃ stydjo", ja: "ワンルーム", pos: "名詞", g: "m", ex: {fr: "Mon studio est petit mais moderne.", ja: "私のワンルームは狭いけれど現代的です。"}}
+      - {fr: "un immeuble", ipa: "œ̃ nimœbl", ja: "建物（集合住宅・ビル）", pos: "名詞", g: "m", ex: {fr: "Mon immeuble est très ancien.", ja: "私の住む建物はとても古いです。"}}
+      - {fr: "un étage", ipa: "œ̃ netaʒ", ja: "階", pos: "名詞", g: "m", note: "1er étage は日本の 2 階。地上階は数えないため", ex: {fr: "J'habite au troisième étage.", ja: "私は 4 階（フランス式の 3 階）に住んでいます。"}}
+      - {fr: "un rez-de-chaussée", ipa: "œ̃ ʁedʃose", ja: "1 階（地上階）", pos: "名詞", g: "m", ex: {fr: "Le salon est au rez-de-chaussée.", ja: "リビングは 1 階にあります。"}}
+      - {fr: "un ascenseur", ipa: "œ̃ nasɑ̃sœʁ", ja: "エレベーター", pos: "名詞", g: "m", ex: {fr: "Il n'y a pas d'ascenseur dans l'immeuble.", ja: "建物にエレベーターはありません。"}}
+      - {fr: "un escalier", ipa: "œ̃ nɛskalje", ja: "階段", pos: "名詞", g: "m", ex: {fr: "L'escalier est à droite de l'entrée.", ja: "階段は玄関の右にあります。"}}
+      - {fr: "une porte", ipa: "yn pɔʁt", ja: "ドア", pos: "名詞", g: "f", ex: {fr: "La porte de la cuisine est bleue.", ja: "台所のドアは青いです。"}}
+      - {fr: "une fenêtre", ipa: "yn fənɛtʁ", ja: "窓", pos: "名詞", g: "f", ex: {fr: "Ma chambre a deux fenêtres.", ja: "私の寝室には窓が 2 つあります。"}}
+      - {fr: "un jardin", ipa: "œ̃ ʒaʁdɛ̃", ja: "庭", pos: "名詞", g: "m", ex: {fr: "Ma maison a un petit jardin.", ja: "私の家には小さな庭があります。"}}
+      - {fr: "un balcon", ipa: "œ̃ balkɔ̃", ja: "バルコニー", pos: "名詞", g: "m", ex: {fr: "Nous avons un grand balcon.", ja: "うちには大きなバルコニーがあります。"}}
+      - {fr: "une adresse", ipa: "yn adʁɛs", ja: "住所", pos: "名詞", g: "f", ex: {fr: "Mon adresse, c'est cinq rue de la Paix.", ja: "私の住所はラ・ペ通り 5 番地です。"}}
+      - {fr: "un loyer", ipa: "œ̃ lwaje", ja: "家賃", pos: "名詞", g: "m", ex: {fr: "Le loyer est cher à Paris.", ja: "パリは家賃が高いです。"}}
+      - {fr: "louer", ipa: "lwe", ja: "（部屋を）借りる・貸す", pos: "動詞", ex: {fr: "Je loue un studio près de la gare.", ja: "私は駅の近くにワンルームを借りています。"}}
   - name: "部屋"
     words:
-      - {fr: "une pièce", ipa: "yn pjɛs", ja: "部屋（間取りの 1 室）", pos: "名詞", g: "f", note: "un deux-pièces（2 部屋の住まい）のように間取りを数えるときに使う"}
-      - {fr: "une chambre", ipa: "yn ʃɑ̃bʁ", ja: "寝室", pos: "名詞", g: "f"}
-      - {fr: "un salon", ipa: "œ̃ salɔ̃", ja: "リビング", pos: "名詞", g: "m"}
-      - {fr: "une cuisine", ipa: "yn kɥizin", ja: "台所", pos: "名詞", g: "f"}
-      - {fr: "une salle de bains", ipa: "yn sal də bɛ̃", ja: "浴室", pos: "名詞", g: "f"}
-      - {fr: "des toilettes", ipa: "de twalɛt", ja: "トイレ", pos: "名詞", g: "f", note: "トイレの意味ではいつも複数形"}
-      - {fr: "une salle à manger", ipa: "yn sal a mɑ̃ʒe", ja: "ダイニング", pos: "名詞", g: "f"}
-      - {fr: "une entrée", ipa: "yn ɑ̃tʁe", ja: "玄関・入口", pos: "名詞", g: "f"}
-      - {fr: "un couloir", ipa: "œ̃ kulwaʁ", ja: "廊下", pos: "名詞", g: "m"}
+      - {fr: "une pièce", ipa: "yn pjɛs", ja: "部屋（間取りの 1 室）", pos: "名詞", g: "f", note: "un deux-pièces（2 部屋の住まい）のように間取りを数えるときに使う", ex: {fr: "C'est un appartement de trois pièces.", ja: "3 部屋のアパートです。"}}
+      - {fr: "une chambre", ipa: "yn ʃɑ̃bʁ", ja: "寝室", pos: "名詞", g: "f", ex: {fr: "Ma chambre est petite mais claire.", ja: "私の寝室は狭いけれど明るいです。"}}
+      - {fr: "un salon", ipa: "œ̃ salɔ̃", ja: "リビング", pos: "名詞", g: "m", ex: {fr: "On regarde la télé dans le salon.", ja: "私たちはリビングでテレビを見ます。"}}
+      - {fr: "une cuisine", ipa: "yn kɥizin", ja: "台所", pos: "名詞", g: "f", ex: {fr: "La cuisine est en bas.", ja: "台所は下の階にあります。"}}
+      - {fr: "une salle de bains", ipa: "yn sal də bɛ̃", ja: "浴室", pos: "名詞", g: "f", ex: {fr: "La salle de bains est à côté de ma chambre.", ja: "浴室は私の寝室の隣です。"}}
+      - {fr: "des toilettes", ipa: "de twalɛt", ja: "トイレ", pos: "名詞", g: "f", note: "トイレの意味ではいつも複数形", ex: {fr: "Où sont les toilettes, s'il vous plaît ?", ja: "トイレはどこですか？"}}
+      - {fr: "une salle à manger", ipa: "yn sal a mɑ̃ʒe", ja: "ダイニング", pos: "名詞", g: "f", ex: {fr: "Nous dînons dans la salle à manger.", ja: "私たちはダイニングで夕食をとります。"}}
+      - {fr: "une entrée", ipa: "yn ɑ̃tʁe", ja: "玄関・入口", pos: "名詞", g: "f", ex: {fr: "Mes chaussures sont dans l'entrée.", ja: "私の靴は玄関にあります。"}}
+      - {fr: "un couloir", ipa: "œ̃ kulwaʁ", ja: "廊下", pos: "名詞", g: "m", ex: {fr: "Il y a un placard dans le couloir.", ja: "廊下に戸棚があります。"}}
   - name: "家具・家の中のもの"
     words:
-      - {fr: "un lit", ipa: "œ̃ li", ja: "ベッド", pos: "名詞", g: "m"}
-      - {fr: "une table", ipa: "yn tabl", ja: "テーブル", pos: "名詞", g: "f"}
-      - {fr: "une chaise", ipa: "yn ʃɛz", ja: "いす", pos: "名詞", g: "f"}
-      - {fr: "un canapé", ipa: "œ̃ kanape", ja: "ソファ", pos: "名詞", g: "m"}
-      - {fr: "un fauteuil", ipa: "œ̃ fotœj", ja: "ひじ掛けいす", pos: "名詞", g: "m"}
-      - {fr: "une armoire", ipa: "yn aʁmwaʁ", ja: "洋服だんす", pos: "名詞", g: "f"}
-      - {fr: "un placard", ipa: "œ̃ plakaʁ", ja: "作り付けの戸棚・クローゼット", pos: "名詞", g: "m"}
-      - {fr: "une étagère", ipa: "yn etaʒɛʁ", ja: "棚", pos: "名詞", g: "f"}
-      - {fr: "une lampe", ipa: "yn lɑ̃p", ja: "電気スタンド・ランプ", pos: "名詞", g: "f"}
-      - {fr: "un tableau", ipa: "œ̃ tablo", ja: "絵（額に入った絵）", pos: "名詞", g: "m", pl: "des tableaux"}
-      - {fr: "une plante", ipa: "yn plɑ̃t", ja: "植物（観葉植物）", pos: "名詞", g: "f"}
-      - {fr: "un frigo", ipa: "œ̃ fʁiɡo", ja: "冷蔵庫", pos: "名詞", g: "m"}
+      - {fr: "un lit", ipa: "œ̃ li", ja: "ベッド", pos: "名詞", g: "m", ex: {fr: "Il y a un grand lit dans la chambre.", ja: "寝室に大きなベッドがあります。"}}
+      - {fr: "une table", ipa: "yn tabl", ja: "テーブル", pos: "名詞", g: "f", ex: {fr: "La table de la salle à manger est grande.", ja: "ダイニングのテーブルは大きいです。"}}
+      - {fr: "une chaise", ipa: "yn ʃɛz", ja: "いす", pos: "名詞", g: "f", ex: {fr: "Je cherche une chaise pour Paul.", ja: "ポールのためにいすを探しています。"}}
+      - {fr: "un canapé", ipa: "œ̃ kanape", ja: "ソファ", pos: "名詞", g: "m", ex: {fr: "Je regarde un film sur le canapé.", ja: "私はソファで映画を見ます。"}}
+      - {fr: "un fauteuil", ipa: "œ̃ fotœj", ja: "ひじ掛けいす", pos: "名詞", g: "m", ex: {fr: "Le chat aime le fauteuil du salon.", ja: "猫はリビングのひじ掛けいすが好きです。"}}
+      - {fr: "une armoire", ipa: "yn aʁmwaʁ", ja: "洋服だんす", pos: "名詞", g: "f", ex: {fr: "Il y a une grande armoire dans ma chambre.", ja: "私の寝室には大きな洋服だんすがあります。"}}
+      - {fr: "un placard", ipa: "œ̃ plakaʁ", ja: "作り付けの戸棚・クローゼット", pos: "名詞", g: "m", ex: {fr: "Mes vêtements sont dans le placard.", ja: "私の服はクローゼットの中です。"}}
+      - {fr: "une étagère", ipa: "yn etaʒɛʁ", ja: "棚", pos: "名詞", g: "f", ex: {fr: "Mes livres sont sur l'étagère.", ja: "私の本は棚の上にあります。"}}
+      - {fr: "une lampe", ipa: "yn lɑ̃p", ja: "電気スタンド・ランプ", pos: "名詞", g: "f", ex: {fr: "J'ai une lampe à côté de mon lit.", ja: "ベッドの横に電気スタンドがあります。"}}
+      - {fr: "un tableau", ipa: "œ̃ tablo", ja: "絵（額に入った絵）", pos: "名詞", g: "m", pl: "des tableaux", ex: {fr: "Il y a un beau tableau dans le salon.", ja: "リビングにきれいな絵があります。"}}
+      - {fr: "une plante", ipa: "yn plɑ̃t", ja: "植物（観葉植物）", pos: "名詞", g: "f", ex: {fr: "Il y a des plantes sur le balcon.", ja: "バルコニーに植物があります。"}}
+      - {fr: "un frigo", ipa: "œ̃ fʁiɡo", ja: "冷蔵庫", pos: "名詞", g: "m", ex: {fr: "Le lait est dans le frigo.", ja: "牛乳は冷蔵庫の中です。"}}
   - name: "家や街の様子"
     words:
-      - {fr: "clair", ipa: "klɛʁ", ja: "明るい", pos: "形容詞", f: "claire", f_ipa: "klɛʁ", tts: "clair, claire", note: "女性形も発音は同じ"}
-      - {fr: "sombre", ipa: "sɔ̃bʁ", ja: "暗い", pos: "形容詞"}
-      - {fr: "bruyant", ipa: "bʁɥijɑ̃", ja: "うるさい", pos: "形容詞", f: "bruyante", f_ipa: "bʁɥijɑ̃t", tts: "bruyant, bruyante"}
-      - {fr: "moderne", ipa: "mɔdɛʁn", ja: "現代的な", pos: "形容詞"}
-      - {fr: "ancien", ipa: "ɑ̃sjɛ̃", ja: "古い（歴史のある）", pos: "形容詞", f: "ancienne", f_ipa: "ɑ̃sjɛn", tts: "ancien, ancienne"}
-      - {fr: "animé", ipa: "anime", ja: "にぎやかな", pos: "形容詞", f: "animée", f_ipa: "anime", tts: "animé, animée", note: "女性形も発音は同じ"}
+      - {fr: "clair", ipa: "klɛʁ", ja: "明るい", pos: "形容詞", f: "claire", f_ipa: "klɛʁ", tts: "clair, claire", note: "女性形も発音は同じ", ex: {fr: "Mon appartement est très clair.", ja: "私のアパートはとても明るいです。"}}
+      - {fr: "sombre", ipa: "sɔ̃bʁ", ja: "暗い", pos: "形容詞", ex: {fr: "Le couloir est un peu sombre.", ja: "廊下は少し暗いです。"}}
+      - {fr: "bruyant", ipa: "bʁɥijɑ̃", ja: "うるさい", pos: "形容詞", f: "bruyante", f_ipa: "bʁɥijɑ̃t", tts: "bruyant, bruyante", ex: {fr: "Ma rue est bruyante le soir.", ja: "私の住む通りは夜うるさいです。"}}
+      - {fr: "moderne", ipa: "mɔdɛʁn", ja: "現代的な", pos: "形容詞", ex: {fr: "C'est un immeuble moderne.", ja: "現代的な建物です。"}}
+      - {fr: "ancien", ipa: "ɑ̃sjɛ̃", ja: "古い（歴史のある）", pos: "形容詞", f: "ancienne", f_ipa: "ɑ̃sjɛn", tts: "ancien, ancienne", ex: {fr: "C'est une église très ancienne.", ja: "とても古い教会です。"}}
+      - {fr: "animé", ipa: "anime", ja: "にぎやかな", pos: "形容詞", f: "animée", f_ipa: "anime", tts: "animé, animée", note: "女性形も発音は同じ", ex: {fr: "Le centre-ville est très animé.", ja: "町の中心部はとてもにぎやかです。"}}
   - name: "街の施設"
     words:
-      - {fr: "un quartier", ipa: "œ̃ kaʁtje", ja: "地区・界隈", pos: "名詞", g: "m"}
-      - {fr: "une gare", ipa: "yn ɡaʁ", ja: "（鉄道の）駅", pos: "名詞", g: "f"}
-      - {fr: "la poste", ipa: "la pɔst", ja: "郵便局", pos: "名詞", g: "f", note: "ふつうは定冠詞を付けて la poste と言う"}
-      - {fr: "une pharmacie", ipa: "yn faʁmasi", ja: "薬局", pos: "名詞", g: "f"}
-      - {fr: "une banque", ipa: "yn bɑ̃k", ja: "銀行", pos: "名詞", g: "f"}
-      - {fr: "un musée", ipa: "œ̃ myze", ja: "美術館・博物館", pos: "名詞", g: "m"}
-      - {fr: "un hôpital", ipa: "œ̃ nɔpital", ja: "病院", pos: "名詞", g: "m", pl: "des hôpitaux"}
-      - {fr: "une église", ipa: "yn eɡliz", ja: "教会", pos: "名詞", g: "f"}
-      - {fr: "une mairie", ipa: "yn mɛʁi", ja: "市役所・区役所", pos: "名詞", g: "f"}
-      - {fr: "une bibliothèque", ipa: "yn biblijɔtɛk", ja: "図書館", pos: "名詞", g: "f"}
-      - {fr: "un parc", ipa: "œ̃ paʁk", ja: "公園", pos: "名詞", g: "m"}
-      - {fr: "un hôtel", ipa: "œ̃ nɔtɛl", ja: "ホテル", pos: "名詞", g: "m"}
-      - {fr: "un commissariat", ipa: "œ̃ kɔmisaʁja", ja: "警察署", pos: "名詞", g: "m"}
-      - {fr: "un office de tourisme", ipa: "œ̃ nɔfis də tuʁism", ja: "観光案内所", pos: "名詞", g: "m"}
-      - {fr: "un centre commercial", ipa: "œ̃ sɑ̃tʁ kɔmɛʁsjal", ja: "ショッピングセンター", pos: "名詞", g: "m"}
-      - {fr: "le centre-ville", ipa: "lə sɑ̃tʁəvil", ja: "町の中心部", pos: "名詞", g: "m", note: "ふつうは au centre-ville（中心部で）の形で使う"}
+      - {fr: "un quartier", ipa: "œ̃ kaʁtje", ja: "地区・界隈", pos: "名詞", g: "m", ex: {fr: "J'aime bien mon quartier.", ja: "私は自分の住む地区が気に入っています。"}}
+      - {fr: "une gare", ipa: "yn ɡaʁ", ja: "（鉄道の）駅", pos: "名詞", g: "f", ex: {fr: "La gare est à dix minutes à pied.", ja: "駅は歩いて 10 分です。"}}
+      - {fr: "la poste", ipa: "la pɔst", ja: "郵便局", pos: "名詞", g: "f", note: "ふつうは定冠詞を付けて la poste と言う", ex: {fr: "Je vais à la poste.", ja: "私は郵便局へ行きます。"}}
+      - {fr: "une pharmacie", ipa: "yn faʁmasi", ja: "薬局", pos: "名詞", g: "f", ex: {fr: "La pharmacie est ouverte le dimanche ?", ja: "薬局は日曜日に開いていますか？"}}
+      - {fr: "une banque", ipa: "yn bɑ̃k", ja: "銀行", pos: "名詞", g: "f", ex: {fr: "La banque est fermée le samedi.", ja: "銀行は土曜日は閉まっています。"}}
+      - {fr: "un musée", ipa: "œ̃ myze", ja: "美術館・博物館", pos: "名詞", g: "m", ex: {fr: "J'aime visiter les musées.", ja: "私は美術館を訪ねるのが好きです。"}}
+      - {fr: "un hôpital", ipa: "œ̃ nɔpital", ja: "病院", pos: "名詞", g: "m", pl: "des hôpitaux", ex: {fr: "L'hôpital est à dix minutes en bus.", ja: "病院はバスで 10 分です。"}}
+      - {fr: "une église", ipa: "yn eɡliz", ja: "教会", pos: "名詞", g: "f", ex: {fr: "Il y a une église sur la place.", ja: "広場に教会があります。"}}
+      - {fr: "une mairie", ipa: "yn mɛʁi", ja: "市役所・区役所", pos: "名詞", g: "f", ex: {fr: "La mairie est en face de l'église.", ja: "市役所は教会の向かいです。"}}
+      - {fr: "une bibliothèque", ipa: "yn biblijɔtɛk", ja: "図書館", pos: "名詞", g: "f", ex: {fr: "J'étudie à la bibliothèque le samedi.", ja: "私は土曜日に図書館で勉強します。"}}
+      - {fr: "un parc", ipa: "œ̃ paʁk", ja: "公園", pos: "名詞", g: "m", ex: {fr: "Les enfants jouent au parc.", ja: "子どもたちは公園で遊びます。"}}
+      - {fr: "un hôtel", ipa: "œ̃ nɔtɛl", ja: "ホテル", pos: "名詞", g: "m", ex: {fr: "Notre hôtel est en face de la gare.", ja: "私たちのホテルは駅の向かいです。"}}
+      - {fr: "un commissariat", ipa: "œ̃ kɔmisaʁja", ja: "警察署", pos: "名詞", g: "m", ex: {fr: "Excusez-moi, où est le commissariat ?", ja: "すみません、警察署はどこですか？"}}
+      - {fr: "un office de tourisme", ipa: "œ̃ nɔfis də tuʁism", ja: "観光案内所", pos: "名詞", g: "m", ex: {fr: "On trouve des plans à l'office de tourisme.", ja: "観光案内所で地図がもらえます。"}}
+      - {fr: "un centre commercial", ipa: "œ̃ sɑ̃tʁ kɔmɛʁsjal", ja: "ショッピングセンター", pos: "名詞", g: "m", ex: {fr: "Le centre commercial est à côté de la gare.", ja: "ショッピングセンターは駅の隣にあります。"}}
+      - {fr: "le centre-ville", ipa: "lə sɑ̃tʁəvil", ja: "町の中心部", pos: "名詞", g: "m", note: "ふつうは au centre-ville（中心部で）の形で使う", ex: {fr: "J'habite au centre-ville.", ja: "私は町の中心部に住んでいます。"}}
   - name: "通り・道"
     words:
-      - {fr: "une rue", ipa: "yn ʁy", ja: "通り", pos: "名詞", g: "f"}
-      - {fr: "une avenue", ipa: "yn avny", ja: "大通り（並木のある）", pos: "名詞", g: "f"}
-      - {fr: "un boulevard", ipa: "œ̃ bulvaʁ", ja: "大通り（環状の）", pos: "名詞", g: "m"}
-      - {fr: "une place", ipa: "yn plas", ja: "広場", pos: "名詞", g: "f"}
-      - {fr: "un carrefour", ipa: "œ̃ kaʁfuʁ", ja: "交差点", pos: "名詞", g: "m"}
-      - {fr: "un feu", ipa: "œ̃ fø", ja: "信号", pos: "名詞", g: "m", pl: "des feux", note: "もとは「火」。道案内では信号の意味"}
-      - {fr: "un pont", ipa: "œ̃ pɔ̃", ja: "橋", pos: "名詞", g: "m"}
-      - {fr: "un coin", ipa: "œ̃ kwɛ̃", ja: "角", pos: "名詞", g: "m"}
-      - {fr: "un plan", ipa: "œ̃ plɑ̃", ja: "（街の）地図", pos: "名詞", g: "m"}
+      - {fr: "une rue", ipa: "yn ʁy", ja: "通り", pos: "名詞", g: "f", ex: {fr: "La rue est très calme le dimanche.", ja: "日曜日は通りがとても静かです。"}}
+      - {fr: "une avenue", ipa: "yn avny", ja: "大通り（並木のある）", pos: "名詞", g: "f", ex: {fr: "Nous marchons sur l'avenue des Champs-Élysées.", ja: "私たちはシャンゼリゼ大通りを歩きます。"}}
+      - {fr: "un boulevard", ipa: "œ̃ bulvaʁ", ja: "大通り（環状の）", pos: "名詞", g: "m", ex: {fr: "Le boulevard est très bruyant.", ja: "その大通りはとてもうるさいです。"}}
+      - {fr: "une place", ipa: "yn plas", ja: "広場", pos: "名詞", g: "f", ex: {fr: "On se retrouve sur la place ?", ja: "広場で待ち合わせる？"}}
+      - {fr: "un carrefour", ipa: "œ̃ kaʁfuʁ", ja: "交差点", pos: "名詞", g: "m", ex: {fr: "Au carrefour, vous tournez à droite.", ja: "交差点で右に曲がってください。"}}
+      - {fr: "un feu", ipa: "œ̃ fø", ja: "信号", pos: "名詞", g: "m", pl: "des feux", note: "もとは「火」。道案内では信号の意味", ex: {fr: "Vous traversez la rue au feu.", ja: "信号のところで通りを渡ってください。"}}
+      - {fr: "un pont", ipa: "œ̃ pɔ̃", ja: "橋", pos: "名詞", g: "m", ex: {fr: "Il y a un joli pont sur la Seine.", ja: "セーヌ川にきれいな橋があります。"}}
+      - {fr: "un coin", ipa: "œ̃ kwɛ̃", ja: "角", pos: "名詞", g: "m", ex: {fr: "Il y a un café au coin.", ja: "角にカフェがあります。"}}
+      - {fr: "un plan", ipa: "œ̃ plɑ̃", ja: "（街の）地図", pos: "名詞", g: "m", ex: {fr: "Vous avez un plan de la ville ?", ja: "街の地図はありますか？"}}
   - name: "場所の言い方"
     words:
-      - {fr: "il y a", ipa: "ilja", ja: "〜がある・いる", pos: "表現", note: "後ろの名詞が単数でも複数でも il y a のまま"}
-      - {fr: "il n'y a pas de", ipa: "il ni a pa də", ja: "〜がない", pos: "表現", note: "否定では un / une / des が de になる"}
-      - {fr: "dans", ipa: "dɑ̃", ja: "〜の中に", pos: "前置詞"}
-      - {fr: "sur", ipa: "syʁ", ja: "〜の上に", pos: "前置詞"}
-      - {fr: "sous", ipa: "su", ja: "〜の下に", pos: "前置詞"}
-      - {fr: "devant", ipa: "dəvɑ̃", ja: "〜の前に", pos: "前置詞"}
-      - {fr: "derrière", ipa: "dɛʁjɛʁ", ja: "〜の後ろに", pos: "前置詞"}
-      - {fr: "entre", ipa: "ɑ̃tʁ", ja: "〜の間に", pos: "前置詞"}
-      - {fr: "chez", ipa: "ʃe", ja: "〜の家に", pos: "前置詞"}
-      - {fr: "à côté de", ipa: "a kote də", ja: "〜の隣に", pos: "前置詞"}
-      - {fr: "en face de", ipa: "ɑ̃ fas də", ja: "〜の向かいに", pos: "前置詞"}
-      - {fr: "près de", ipa: "pʁɛ də", ja: "〜の近くに", pos: "前置詞"}
-      - {fr: "loin de", ipa: "lwɛ̃ də", ja: "〜から遠くに", pos: "前置詞"}
-      - {fr: "au coin de", ipa: "o kwɛ̃ də", ja: "〜の角に", pos: "前置詞"}
-      - {fr: "au bout de", ipa: "o bu də", ja: "〜の突き当たりに", pos: "前置詞"}
-      - {fr: "aux", ipa: "o", ja: "〜に・〜へ（à + les）", pos: "前置詞", tts: "aux toilettes", note: "à les とは言わず aux にまとめる"}
-      - {fr: "ici", ipa: "isi", ja: "ここに", pos: "副詞"}
-      - {fr: "là-bas", ipa: "laba", ja: "あそこに", pos: "副詞"}
-      - {fr: "en haut", ipa: "ɑ̃ o", ja: "上に・上の階に", pos: "副詞", note: "haut の h は読まないが、リエゾンもしない"}
-      - {fr: "en bas", ipa: "ɑ̃ ba", ja: "下に・下の階に", pos: "副詞"}
+      - {fr: "il y a", ipa: "ilja", ja: "〜がある・いる", pos: "表現", note: "後ろの名詞が単数でも複数でも il y a のまま", ex: {fr: "Il y a un parc près de chez moi.", ja: "家の近くに公園があります。"}}
+      - {fr: "il n'y a pas de", ipa: "il nja pa də", ja: "〜がない", pos: "表現", note: "否定では un / une / des が de になる", ex: {fr: "Il n'y a pas de métro dans ma ville.", ja: "私の町には地下鉄がありません。"}}
+      - {fr: "dans", ipa: "dɑ̃", ja: "〜の中に", pos: "前置詞", ex: {fr: "Le chat est dans la cuisine.", ja: "猫は台所にいます。"}}
+      - {fr: "sur", ipa: "syʁ", ja: "〜の上に", pos: "前置詞", ex: {fr: "Les clés sont sur la table.", ja: "鍵はテーブルの上にあります。"}}
+      - {fr: "sous", ipa: "su", ja: "〜の下に", pos: "前置詞", ex: {fr: "Le chat est sous le lit.", ja: "猫はベッドの下にいます。"}}
+      - {fr: "devant", ipa: "dəvɑ̃", ja: "〜の前に", pos: "前置詞", ex: {fr: "Paul est devant le musée.", ja: "ポールは美術館の前にいます。"}}
+      - {fr: "derrière", ipa: "dɛʁjɛʁ", ja: "〜の後ろに", pos: "前置詞", ex: {fr: "Le jardin est derrière la maison.", ja: "庭は家の後ろにあります。"}}
+      - {fr: "entre", ipa: "ɑ̃tʁ", ja: "〜の間に", pos: "前置詞", ex: {fr: "La banque est entre la poste et la pharmacie.", ja: "銀行は郵便局と薬局の間にあります。"}}
+      - {fr: "chez", ipa: "ʃe", ja: "〜の家に", pos: "前置詞", ex: {fr: "On dîne chez mes parents dimanche.", ja: "日曜日は両親の家で夕食をとります。"}}
+      - {fr: "à côté de", ipa: "a kote də", ja: "〜の隣に", pos: "前置詞", ex: {fr: "J'habite à côté de la gare.", ja: "私は駅の隣に住んでいます。"}}
+      - {fr: "en face de", ipa: "ɑ̃ fas də", ja: "〜の向かいに", pos: "前置詞", ex: {fr: "Le café est en face de la mairie.", ja: "カフェは市役所の向かいです。"}}
+      - {fr: "près de", ipa: "pʁɛ də", ja: "〜の近くに", pos: "前置詞", ex: {fr: "L'hôtel est près de la mer.", ja: "そのホテルは海の近くです。"}}
+      - {fr: "loin de", ipa: "lwɛ̃ də", ja: "〜から遠くに", pos: "前置詞", ex: {fr: "Mon bureau est loin de la gare.", ja: "私の会社は駅から遠いです。"}}
+      - {fr: "au coin de", ipa: "o kwɛ̃ də", ja: "〜の角に", pos: "前置詞", ex: {fr: "La pharmacie est au coin de la rue.", ja: "薬局は通りの角にあります。"}}
+      - {fr: "au bout de", ipa: "o bu də", ja: "〜の突き当たりに", pos: "前置詞", ex: {fr: "Les toilettes sont au bout du couloir.", ja: "トイレは廊下の突き当たりです。"}}
+      - {fr: "aux", ipa: "o", ja: "〜に・〜へ（à + les）", pos: "前置詞", tts: "aux toilettes", note: "à les とは言わず aux にまとめる", ex: {fr: "Je vais aux toilettes.", ja: "トイレに行ってきます。"}}
+      - {fr: "ici", ipa: "isi", ja: "ここに", pos: "副詞", ex: {fr: "J'habite ici, au deuxième étage.", ja: "私はここの 3 階（フランス式の 2 階）に住んでいます。"}}
+      - {fr: "là-bas", ipa: "laba", ja: "あそこに", pos: "副詞", ex: {fr: "La poste ? Elle est là-bas.", ja: "郵便局？あそこですよ。"}}
+      - {fr: "en haut", ipa: "ɑ̃ o", ja: "上に・上の階に", pos: "副詞", note: "haut の h は読まないが、リエゾンもしない", ex: {fr: "Les chambres sont en haut.", ja: "寝室は上の階にあります。"}}
+      - {fr: "en bas", ipa: "ɑ̃ ba", ja: "下に・下の階に", pos: "副詞", ex: {fr: "La boîte aux lettres est en bas.", ja: "郵便受けは下の階にあります。"}}
   - name: "道案内"
     words:
-      - {fr: "aller", ipa: "ale", ja: "行く", pos: "動詞"}
-      - {fr: "tourner", ipa: "tuʁne", ja: "曲がる", pos: "動詞"}
-      - {fr: "continuer", ipa: "kɔ̃tinɥe", ja: "まっすぐ進み続ける", pos: "動詞"}
-      - {fr: "traverser", ipa: "tʁavɛʁse", ja: "渡る・横切る", pos: "動詞"}
-      - {fr: "chercher", ipa: "ʃɛʁʃe", ja: "探す", pos: "動詞"}
-      - {fr: "se trouver", ipa: "sə tʁuve", ja: "（〜に）ある・位置する", pos: "動詞"}
-      - {fr: "tout droit", ipa: "tu dʁwa", ja: "まっすぐ", pos: "副詞"}
-      - {fr: "à gauche", ipa: "a ɡoʃ", ja: "左に", pos: "表現"}
-      - {fr: "à droite", ipa: "a dʁwat", ja: "右に", pos: "表現"}
-      - {fr: "la première rue à droite", ipa: "la pʁəmjɛʁ ʁy a dʁwat", ja: "1 本目の通りを右に", pos: "表現"}
-      - {fr: "Où est la gare ?", ipa: "u ɛ la ɡaʁ", ja: "駅はどこですか？", pos: "表現"}
-      - {fr: "Pour aller à la poste, s'il vous plaît ?", ipa: "puʁ ale a la pɔst sil vu plɛ", ja: "郵便局へはどう行けばいいですか？", pos: "表現"}
-      - {fr: "C'est loin ?", ipa: "sɛ lwɛ̃", ja: "遠いですか？", pos: "表現"}
-      - {fr: "C'est tout près.", ipa: "sɛ tu pʁɛ", ja: "すぐ近くです。", pos: "表現"}
-      - {fr: "Je suis perdu.", ipa: "ʒə sɥi pɛʁdy", ja: "道に迷いました。", pos: "表現", note: "女性は perdue（発音は同じ）"}
+      - {fr: "aller", ipa: "ale", ja: "行く", pos: "動詞", ex: {fr: "Nous allons au parc le dimanche.", ja: "私たちは日曜日に公園へ行きます。"}}
+      - {fr: "tourner", ipa: "tuʁne", ja: "曲がる", pos: "動詞", ex: {fr: "Vous tournez à gauche après la banque.", ja: "銀行を過ぎたら左に曲がってください。"}}
+      - {fr: "continuer", ipa: "kɔ̃tinɥe", ja: "まっすぐ進み続ける", pos: "動詞", ex: {fr: "Vous continuez jusqu'à la place.", ja: "広場までまっすぐ進んでください。"}}
+      - {fr: "traverser", ipa: "tʁavɛʁse", ja: "渡る・横切る", pos: "動詞", ex: {fr: "Vous traversez le pont.", ja: "橋を渡ってください。"}}
+      - {fr: "chercher", ipa: "ʃɛʁʃe", ja: "探す", pos: "動詞", ex: {fr: "Je cherche la rue Victor Hugo.", ja: "ヴィクトル・ユゴー通りを探しています。"}}
+      - {fr: "se trouver", ipa: "sə tʁuve", ja: "（〜に）ある・位置する", pos: "動詞", ex: {fr: "Le musée se trouve en face du parc.", ja: "美術館は公園の向かいにあります。"}}
+      - {fr: "tout droit", ipa: "tu dʁwa", ja: "まっすぐ", pos: "副詞", ex: {fr: "Vous allez tout droit jusqu'au pont.", ja: "橋までまっすぐ行ってください。"}}
+      - {fr: "à gauche", ipa: "a ɡoʃ", ja: "左に", pos: "表現", ex: {fr: "La gare est à gauche.", ja: "駅は左です。"}}
+      - {fr: "à droite", ipa: "a dʁwat", ja: "右に", pos: "表現", ex: {fr: "La pharmacie est à droite de la banque.", ja: "薬局は銀行の右にあります。"}}
+      - {fr: "la première rue à droite", ipa: "la pʁəmjɛʁ ʁy a dʁwat", ja: "1 本目の通りを右に", pos: "表現", ex: {fr: "Vous prenez la première rue à droite.", ja: "1 本目の通りを右に曲がってください。"}}
+      - {fr: "Où est la gare ?", ipa: "u ɛ la ɡaʁ", ja: "駅はどこですか？", pos: "表現", ex: {fr: "Pardon, madame, où est la gare ?", ja: "すみません、駅はどこですか？"}}
+      - {fr: "Pour aller à la poste, s'il vous plaît ?", ipa: "puʁ ale a la pɔst sil vu plɛ", ja: "郵便局へはどう行けばいいですか？", pos: "表現", ex: {fr: "Pardon, pour aller à la poste, s'il vous plaît ?", ja: "すみません、郵便局へはどう行けばいいですか？"}}
+      - {fr: "C'est loin ?", ipa: "sɛ lwɛ̃", ja: "遠いですか？", pos: "表現", ex: {fr: "Le centre commercial, c'est loin ?", ja: "ショッピングセンターは遠いですか？"}}
+      - {fr: "C'est tout près.", ipa: "sɛ tu pʁɛ", ja: "すぐ近くです。", pos: "表現", ex: {fr: "La banque ? C'est tout près.", ja: "銀行？すぐ近くですよ。"}}
+      - {fr: "Je suis perdu.", ipa: "ʒə sɥi pɛʁdy", ja: "道に迷いました。", pos: "表現", note: "女性は perdue（発音は同じ）", ex: {fr: "Excusez-moi, je suis perdu.", ja: "すみません、道に迷いました。"}}

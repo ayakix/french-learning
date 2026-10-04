@@ -5,3 +5,8 @@ import type { CollectionEntry } from 'astro:content';
 export function listeningId(entry: CollectionEntry<'listening'>): string {
   return entry.id.split('/').pop()!.replace(/-listening$/, '');
 }
+
+// 読む文書の URL に使う id。ファイル名（例：01-1-document.yaml）から「01-1」を取り出す
+export function documentId(entry: CollectionEntry<'documents'>): string {
+  return entry.id.split('/').pop()!.replace(/-document$/, '');
+}

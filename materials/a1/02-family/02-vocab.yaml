@@ -7,125 +7,125 @@ title: "家族と人"
 groups:
   - name: "家族"
     words:
-      - {fr: "une famille", ipa: "yn famij", ja: "家族", pos: "名詞", g: "f"}
-      - {fr: "un père", ipa: "œ̃ pɛʁ", ja: "父", pos: "名詞", g: "m"}
-      - {fr: "une mère", ipa: "yn mɛʁ", ja: "母", pos: "名詞", g: "f"}
-      - {fr: "des parents", ipa: "de paʁɑ̃", ja: "両親", pos: "名詞", g: "m", note: "un parent は「親（の片方）」や「親戚」"}
-      - {fr: "un frère", ipa: "œ̃ fʁɛʁ", ja: "兄・弟", pos: "名詞", g: "m"}
-      - {fr: "une sœur", ipa: "yn sœʁ", ja: "姉・妹", pos: "名詞", g: "f"}
-      - {fr: "un fils", ipa: "œ̃ fis", ja: "息子", pos: "名詞", g: "m", note: "l は読まず、s は読む（例外的な語）"}
-      - {fr: "une fille", ipa: "yn fij", ja: "娘・女の子", pos: "名詞", g: "f", note: "ill は「イユ」の音。fils と混同しやすい"}
-      - {fr: "un mari", ipa: "œ̃ maʁi", ja: "夫", pos: "名詞", g: "m"}
-      - {fr: "une femme", ipa: "yn fam", ja: "妻・女性", pos: "名詞", g: "f", note: "emm は例外的に「アム」と読む"}
-      - {fr: "un grand-père", ipa: "œ̃ ɡʁɑ̃pɛʁ", ja: "祖父", pos: "名詞", g: "m"}
-      - {fr: "une grand-mère", ipa: "yn ɡʁɑ̃mɛʁ", ja: "祖母", pos: "名詞", g: "f", note: "女性名詞でも grand は grande にならない"}
-      - {fr: "des grands-parents", ipa: "de ɡʁɑ̃paʁɑ̃", ja: "祖父母", pos: "名詞", g: "m"}
-      - {fr: "un petit-fils", ipa: "œ̃ pətifis", ja: "孫（男）", pos: "名詞", g: "m"}
-      - {fr: "une petite-fille", ipa: "yn pətitfij", ja: "孫（女）", pos: "名詞", g: "f"}
-      - {fr: "un oncle", ipa: "œ̃ nɔ̃kl", ja: "おじ", pos: "名詞", g: "m"}
-      - {fr: "une tante", ipa: "yn tɑ̃t", ja: "おば", pos: "名詞", g: "f"}
-      - {fr: "un cousin", ipa: "œ̃ kuzɛ̃", ja: "いとこ（男）", pos: "名詞", g: "m"}
-      - {fr: "une cousine", ipa: "yn kuzin", ja: "いとこ（女）", pos: "名詞", g: "f"}
-      - {fr: "un neveu", ipa: "œ̃ nəvø", ja: "甥", pos: "名詞", g: "m", pl: "des neveux"}
-      - {fr: "une nièce", ipa: "yn njɛs", ja: "姪", pos: "名詞", g: "f"}
-      - {fr: "marié", ipa: "maʁje", ja: "結婚している", pos: "形容詞", f: "mariée", f_ipa: "maʁje", tts: "marié, mariée", note: "女性形は e が付くが、発音は同じ"}
-      - {fr: "célibataire", ipa: "selibatɛʁ", ja: "独身の", pos: "形容詞"}
-      - {fr: "unique", ipa: "ynik", ja: "ひとりっ子の（fils unique / fille unique）", pos: "形容詞"}
+      - {fr: "une famille", ipa: "yn famij", ja: "家族", pos: "名詞", g: "f", ex: {fr: "J'ai une petite famille.", ja: "私の家族は少人数です。"}}
+      - {fr: "un père", ipa: "œ̃ pɛʁ", ja: "父", pos: "名詞", g: "m", ex: {fr: "Mon père est professeur.", ja: "父は教師です。"}}
+      - {fr: "une mère", ipa: "yn mɛʁ", ja: "母", pos: "名詞", g: "f", ex: {fr: "Ma mère est japonaise.", ja: "母は日本人です。"}}
+      - {fr: "des parents", ipa: "de paʁɑ̃", ja: "両親", pos: "名詞", g: "m", note: "un parent は「親（の片方）」や「親戚」", ex: {fr: "Mes parents sont très gentils.", ja: "両親はとても優しいです。"}}
+      - {fr: "un frère", ipa: "œ̃ fʁɛʁ", ja: "兄・弟", pos: "名詞", g: "m", ex: {fr: "Mon frère a dix-huit ans.", ja: "兄は 18 歳です。"}}
+      - {fr: "une sœur", ipa: "yn sœʁ", ja: "姉・妹", pos: "名詞", g: "f", ex: {fr: "Ma sœur est étudiante.", ja: "姉は学生です。"}}
+      - {fr: "un fils", ipa: "œ̃ fis", ja: "息子", pos: "名詞", g: "m", note: "l は読まず、s は読む（例外的な語）", ex: {fr: "Mon fils a cinq ans.", ja: "息子は 5 歳です。"}}
+      - {fr: "une fille", ipa: "yn fij", ja: "娘・女の子", pos: "名詞", g: "f", note: "ill は「イユ」の音。fils と混同しやすい", ex: {fr: "Sa fille s'appelle Léa.", ja: "彼の娘の名前はレアです。"}}
+      - {fr: "un mari", ipa: "œ̃ maʁi", ja: "夫", pos: "名詞", g: "m", ex: {fr: "Son mari est médecin.", ja: "彼女の夫は医者です。"}}
+      - {fr: "une femme", ipa: "yn fam", ja: "妻・女性", pos: "名詞", g: "f", note: "emm は例外的に「アム」と読む", ex: {fr: "Ma femme est française.", ja: "妻はフランス人です。"}}
+      - {fr: "un grand-père", ipa: "œ̃ ɡʁɑ̃pɛʁ", ja: "祖父", pos: "名詞", g: "m", ex: {fr: "Mon grand-père s'appelle Hiroshi.", ja: "祖父の名前はヒロシです。"}}
+      - {fr: "une grand-mère", ipa: "yn ɡʁɑ̃mɛʁ", ja: "祖母", pos: "名詞", g: "f", note: "女性名詞でも grand は grande にならない", ex: {fr: "Ma grand-mère s'appelle Yoko.", ja: "祖母の名前はヨウコです。"}}
+      - {fr: "des grands-parents", ipa: "de ɡʁɑ̃paʁɑ̃", ja: "祖父母", pos: "名詞", g: "m", ex: {fr: "Mes grands-parents sont à Kyoto.", ja: "祖父母は京都にいます。"}}
+      - {fr: "un petit-fils", ipa: "œ̃ pətifis", ja: "孫（男）", pos: "名詞", g: "m", ex: {fr: "Le petit-fils de Marie a trois ans.", ja: "マリーの孫は 3 歳です。"}}
+      - {fr: "une petite-fille", ipa: "yn pətitfij", ja: "孫（女）", pos: "名詞", g: "f", ex: {fr: "C'est ma petite-fille, Chloé.", ja: "これは孫のクロエです。"}}
+      - {fr: "un oncle", ipa: "œ̃ nɔ̃kl", ja: "おじ", pos: "名詞", g: "m", ex: {fr: "Mon oncle a deux enfants.", ja: "おじには子どもが 2 人います。"}}
+      - {fr: "une tante", ipa: "yn tɑ̃t", ja: "おば", pos: "名詞", g: "f", ex: {fr: "Ma tante a une voiture violette.", ja: "おばは紫の車を持っています。"}}
+      - {fr: "un cousin", ipa: "œ̃ kuzɛ̃", ja: "いとこ（男）", pos: "名詞", g: "m", ex: {fr: "Mon cousin a douze ans.", ja: "いとこ（男）は 12 歳です。"}}
+      - {fr: "une cousine", ipa: "yn kuzin", ja: "いとこ（女）", pos: "名詞", g: "f", ex: {fr: "Ma cousine a seize ans.", ja: "いとこ（女）は 16 歳です。"}}
+      - {fr: "un neveu", ipa: "œ̃ nəvø", ja: "甥", pos: "名詞", g: "m", pl: "des neveux", ex: {fr: "Mon neveu a sept ans.", ja: "甥は 7 歳です。"}}
+      - {fr: "une nièce", ipa: "yn njɛs", ja: "姪", pos: "名詞", g: "f", ex: {fr: "Ma nièce a quatre ans.", ja: "姪は 4 歳です。"}}
+      - {fr: "marié", ipa: "maʁje", ja: "結婚している", pos: "形容詞", f: "mariée", f_ipa: "maʁje", tts: "marié, mariée", note: "女性形は e が付くが、発音は同じ", ex: {fr: "Ma sœur est mariée.", ja: "姉は結婚しています。"}}
+      - {fr: "célibataire", ipa: "selibatɛʁ", ja: "独身の", pos: "形容詞", ex: {fr: "Je suis célibataire.", ja: "私は独身です。"}}
+      - {fr: "unique", ipa: "ynik", ja: "ひとりっ子の（fils unique / fille unique）", pos: "形容詞", ex: {fr: "Elle est fille unique.", ja: "彼女はひとりっ子です。"}}
   - name: "人"
     words:
-      - {fr: "une personne", ipa: "yn pɛʁsɔn", ja: "人", pos: "名詞", g: "f", note: "男性を指すときも une personne"}
-      - {fr: "un homme", ipa: "œ̃ nɔm", ja: "男の人", pos: "名詞", g: "m", note: "h は読まないので un とリエゾンする"}
-      - {fr: "un enfant", ipa: "œ̃ nɑ̃fɑ̃", ja: "子ども", pos: "名詞", g: "m", note: "女の子なら une enfant"}
-      - {fr: "un garçon", ipa: "œ̃ ɡaʁsɔ̃", ja: "男の子", pos: "名詞", g: "m"}
-      - {fr: "un bébé", ipa: "œ̃ bebe", ja: "赤ちゃん", pos: "名詞", g: "m", note: "女の子の赤ちゃんでも un bébé"}
-      - {fr: "un monsieur", ipa: "œ̃ məsjø", ja: "男性（丁寧）", pos: "名詞", g: "m", pl: "des messieurs"}
-      - {fr: "une dame", ipa: "yn dam", ja: "女性（丁寧）", pos: "名詞", g: "f"}
-      - {fr: "des gens", ipa: "de ʒɑ̃", ja: "人々", pos: "名詞", g: "m"}
-      - {fr: "un voisin", ipa: "œ̃ vwazɛ̃", ja: "隣人（男）", pos: "名詞", g: "m"}
-      - {fr: "une voisine", ipa: "yn vwazin", ja: "隣人（女）", pos: "名詞", g: "f"}
-      - {fr: "jeune", ipa: "ʒœn", ja: "若い", pos: "形容詞"}
-      - {fr: "vieux", ipa: "vjø", ja: "年をとった・古い", pos: "形容詞", f: "vieille", f_ipa: "vjɛj", tts: "vieux, vieille"}
-      - {fr: "âgé", ipa: "aʒe", ja: "高齢の", pos: "形容詞", f: "âgée", f_ipa: "aʒe", tts: "âgé, âgée"}
+      - {fr: "une personne", ipa: "yn pɛʁsɔn", ja: "人", pos: "名詞", g: "f", note: "男性を指すときも une personne", ex: {fr: "C'est une personne très sympa.", ja: "とても感じのいい人です。"}}
+      - {fr: "un homme", ipa: "œ̃ nɔm", ja: "男の人", pos: "名詞", g: "m", note: "h は読まないので un とリエゾンする", ex: {fr: "C'est un homme très grand.", ja: "とても背の高い男の人です。"}}
+      - {fr: "un enfant", ipa: "œ̃ nɑ̃fɑ̃", ja: "子ども", pos: "名詞", g: "m", note: "女の子なら une enfant", ex: {fr: "Ils ont deux enfants.", ja: "彼らには子どもが 2 人います。"}}
+      - {fr: "un garçon", ipa: "œ̃ ɡaʁsɔ̃", ja: "男の子", pos: "名詞", g: "m", ex: {fr: "Le garçon s'appelle Hugo.", ja: "その男の子の名前はユゴーです。"}}
+      - {fr: "un bébé", ipa: "œ̃ bebe", ja: "赤ちゃん", pos: "名詞", g: "m", note: "女の子の赤ちゃんでも un bébé", ex: {fr: "Ma sœur a un bébé.", ja: "姉には赤ちゃんがいます。"}}
+      - {fr: "un monsieur", ipa: "œ̃ məsjø", ja: "男性（丁寧）", pos: "名詞", g: "m", pl: "des messieurs", ex: {fr: "Le monsieur est mon voisin.", ja: "その男性は私の隣人です。"}}
+      - {fr: "une dame", ipa: "yn dam", ja: "女性（丁寧）", pos: "名詞", g: "f", ex: {fr: "La dame aux cheveux gris est sympa.", ja: "白髪まじりの女性は感じがいいです。"}}
+      - {fr: "des gens", ipa: "de ʒɑ̃", ja: "人々", pos: "名詞", g: "m", ex: {fr: "Les gens sont sympas ici.", ja: "ここの人たちは感じがいいです。"}}
+      - {fr: "un voisin", ipa: "œ̃ vwazɛ̃", ja: "隣人（男）", pos: "名詞", g: "m", ex: {fr: "Mon voisin a un gros chien.", ja: "隣の人は大きな犬を飼っています。"}}
+      - {fr: "une voisine", ipa: "yn vwazin", ja: "隣人（女）", pos: "名詞", g: "f", ex: {fr: "Ma voisine s'appelle Claire.", ja: "隣の女性の名前はクレールです。"}}
+      - {fr: "jeune", ipa: "ʒœn", ja: "若い", pos: "形容詞", ex: {fr: "Ton père est jeune !", ja: "君のお父さん、若いね！"}}
+      - {fr: "vieux", ipa: "vjø", ja: "年をとった・古い", pos: "形容詞", f: "vieille", f_ipa: "vjɛj", tts: "vieux, vieille", ex: {fr: "C'est un vieux chat.", ja: "年をとった猫です。"}}
+      - {fr: "âgé", ipa: "aʒe", ja: "高齢の", pos: "形容詞", f: "âgée", f_ipa: "aʒe", tts: "âgé, âgée", ex: {fr: "Mon grand-père est âgé.", ja: "祖父は高齢です。"}}
   - name: "ペット"
     words:
-      - {fr: "un animal", ipa: "œ̃ nanimal", ja: "動物", pos: "名詞", g: "m", pl: "des animaux"}
-      - {fr: "un chien", ipa: "œ̃ ʃjɛ̃", ja: "犬", pos: "名詞", g: "m"}
-      - {fr: "un chat", ipa: "œ̃ ʃa", ja: "猫", pos: "名詞", g: "m"}
-      - {fr: "un oiseau", ipa: "œ̃ nwazo", ja: "鳥", pos: "名詞", g: "m", pl: "des oiseaux"}
-      - {fr: "un poisson rouge", ipa: "œ̃ pwasɔ̃ ʁuʒ", ja: "金魚", pos: "名詞", g: "m"}
-      - {fr: "un lapin", ipa: "œ̃ lapɛ̃", ja: "うさぎ", pos: "名詞", g: "m"}
-      - {fr: "un hamster", ipa: "œ̃ amstɛʁ", ja: "ハムスター", pos: "名詞", g: "m", note: "h が「有音の h」なので un とリエゾンしない"}
-      - {fr: "une tortue", ipa: "yn tɔʁty", ja: "カメ", pos: "名詞", g: "f"}
-      - {fr: "un cheval", ipa: "œ̃ ʃəval", ja: "馬", pos: "名詞", g: "m", pl: "des chevaux"}
+      - {fr: "un animal", ipa: "œ̃ nanimal", ja: "動物", pos: "名詞", g: "m", pl: "des animaux", ex: {fr: "Tu as un animal ?", ja: "ペットを飼ってる？"}}
+      - {fr: "un chien", ipa: "œ̃ ʃjɛ̃", ja: "犬", pos: "名詞", g: "m", ex: {fr: "Mon chien s'appelle Max.", ja: "私の犬の名前はマックスです。"}}
+      - {fr: "un chat", ipa: "œ̃ ʃa", ja: "猫", pos: "名詞", g: "m", ex: {fr: "J'ai deux chats.", ja: "猫を 2 匹飼っています。"}}
+      - {fr: "un oiseau", ipa: "œ̃ nwazo", ja: "鳥", pos: "名詞", g: "m", pl: "des oiseaux", ex: {fr: "Mon grand-père a un oiseau.", ja: "祖父は鳥を飼っています。"}}
+      - {fr: "un poisson rouge", ipa: "œ̃ pwasɔ̃ ʁuʒ", ja: "金魚", pos: "名詞", g: "m", ex: {fr: "Les enfants ont un poisson rouge.", ja: "子どもたちは金魚を飼っています。"}}
+      - {fr: "un lapin", ipa: "œ̃ lapɛ̃", ja: "うさぎ", pos: "名詞", g: "m", ex: {fr: "C'est un petit lapin blanc.", ja: "小さな白いうさぎです。"}}
+      - {fr: "un hamster", ipa: "œ̃ amstɛʁ", ja: "ハムスター", pos: "名詞", g: "m", note: "h が「有音の h」なので un とリエゾンしない", ex: {fr: "Mon fils a un hamster.", ja: "息子はハムスターを飼っています。"}}
+      - {fr: "une tortue", ipa: "yn tɔʁty", ja: "カメ", pos: "名詞", g: "f", ex: {fr: "Ma tortue a vingt ans !", ja: "私のカメは 20 歳です！"}}
+      - {fr: "un cheval", ipa: "œ̃ ʃəval", ja: "馬", pos: "名詞", g: "m", pl: "des chevaux", ex: {fr: "Mon oncle a un cheval blanc.", ja: "おじは白い馬を持っています。"}}
   - name: "外見"
     words:
-      - {fr: "des cheveux", ipa: "de ʃəvø", ja: "髪", pos: "名詞", g: "m", note: "髪全体は複数形で言う（les cheveux）"}
-      - {fr: "un œil", ipa: "œ̃ nœj", ja: "目", pos: "名詞", g: "m", pl: "des yeux", note: "複数形は形がまったく変わる。des yeux はリエゾンして de zjø"}
-      - {fr: "une barbe", ipa: "yn baʁb", ja: "あごひげ", pos: "名詞", g: "f"}
-      - {fr: "des lunettes", ipa: "de lynɛt", ja: "めがね", pos: "名詞", g: "f", note: "めがね 1 つでも複数形"}
-      - {fr: "grand", ipa: "ɡʁɑ̃", ja: "背が高い・大きい", pos: "形容詞", f: "grande", f_ipa: "ɡʁɑ̃d", tts: "grand, grande"}
-      - {fr: "petit", ipa: "pəti", ja: "背が低い・小さい", pos: "形容詞", f: "petite", f_ipa: "pətit", tts: "petit, petite"}
-      - {fr: "mince", ipa: "mɛ̃s", ja: "やせている", pos: "形容詞"}
-      - {fr: "gros", ipa: "ɡʁo", ja: "太っている", pos: "形容詞", f: "grosse", f_ipa: "ɡʁos", tts: "gros, grosse"}
-      - {fr: "beau", ipa: "bo", ja: "美しい・かっこいい", pos: "形容詞", f: "belle", f_ipa: "bɛl", tts: "beau, belle"}
-      - {fr: "joli", ipa: "ʒɔli", ja: "かわいい・きれいな", pos: "形容詞", f: "jolie", f_ipa: "ʒɔli", tts: "joli, jolie"}
-      - {fr: "blond", ipa: "blɔ̃", ja: "金髪の", pos: "形容詞", f: "blonde", f_ipa: "blɔ̃d", tts: "blond, blonde"}
-      - {fr: "brun", ipa: "bʁœ̃", ja: "茶色の髪の・黒っぽい髪の", pos: "形容詞", f: "brune", f_ipa: "bʁyn", tts: "brun, brune"}
-      - {fr: "châtain", ipa: "ʃatɛ̃", ja: "（髪が）栗色の", pos: "形容詞", note: "女性の人にも châtain をそのまま使うことが多い"}
-      - {fr: "roux", ipa: "ʁu", ja: "赤毛の", pos: "形容詞", f: "rousse", f_ipa: "ʁus", tts: "roux, rousse"}
-      - {fr: "long", ipa: "lɔ̃", ja: "長い", pos: "形容詞", f: "longue", f_ipa: "lɔ̃ɡ", tts: "long, longue"}
-      - {fr: "court", ipa: "kuʁ", ja: "短い", pos: "形容詞", f: "courte", f_ipa: "kuʁt", tts: "court, courte"}
-      - {fr: "frisé", ipa: "fʁize", ja: "（髪が）巻き毛の", pos: "形容詞", f: "frisée", f_ipa: "fʁize", tts: "frisé, frisée"}
+      - {fr: "des cheveux", ipa: "de ʃəvø", ja: "髪", pos: "名詞", g: "m", note: "髪全体は複数形で言う（les cheveux）", ex: {fr: "Mes cheveux sont noirs.", ja: "私の髪は黒いです。"}}
+      - {fr: "un œil", ipa: "œ̃ nœj", ja: "目", pos: "名詞", g: "m", pl: "des yeux", note: "複数形は形がまったく変わる。des yeux はリエゾンして de zjø", ex: {fr: "Il a les yeux verts.", ja: "彼は目が緑色です。"}}
+      - {fr: "une barbe", ipa: "yn baʁb", ja: "あごひげ", pos: "名詞", g: "f", ex: {fr: "Paul a une petite barbe.", ja: "ポールは短いあごひげを生やしています。"}}
+      - {fr: "des lunettes", ipa: "de lynɛt", ja: "めがね", pos: "名詞", g: "f", note: "めがね 1 つでも複数形", ex: {fr: "Mon grand-père a des lunettes.", ja: "祖父はめがねをかけています。"}}
+      - {fr: "grand", ipa: "ɡʁɑ̃", ja: "背が高い・大きい", pos: "形容詞", f: "grande", f_ipa: "ɡʁɑ̃d", tts: "grand, grande", ex: {fr: "Ton frère est très grand !", ja: "君のお兄さん、すごく背が高いね！"}}
+      - {fr: "petit", ipa: "pəti", ja: "背が低い・小さい", pos: "形容詞", f: "petite", f_ipa: "pətit", tts: "petit, petite", ex: {fr: "Ma sœur est petite et blonde.", ja: "姉は背が低くて金髪です。"}}
+      - {fr: "mince", ipa: "mɛ̃s", ja: "やせている", pos: "形容詞", ex: {fr: "Elle est grande et mince.", ja: "彼女は背が高くてやせています。"}}
+      - {fr: "gros", ipa: "ɡʁo", ja: "太っている", pos: "形容詞", f: "grosse", f_ipa: "ɡʁos", tts: "gros, grosse", ex: {fr: "Ton chat est gros !", ja: "君の猫、太ってるね！"}}
+      - {fr: "beau", ipa: "bo", ja: "美しい・かっこいい", pos: "形容詞", f: "belle", f_ipa: "bɛl", tts: "beau, belle", ex: {fr: "Ton cousin est beau !", ja: "君のいとこ、かっこいいね！"}}
+      - {fr: "joli", ipa: "ʒɔli", ja: "かわいい・きれいな", pos: "形容詞", f: "jolie", f_ipa: "ʒɔli", tts: "joli, jolie", ex: {fr: "Ta fille est très jolie.", ja: "あなたの娘さんはとてもかわいいですね。"}}
+      - {fr: "blond", ipa: "blɔ̃", ja: "金髪の", pos: "形容詞", f: "blonde", f_ipa: "blɔ̃d", tts: "blond, blonde", ex: {fr: "Mon fils est blond.", ja: "息子は金髪です。"}}
+      - {fr: "brun", ipa: "bʁœ̃", ja: "茶色の髪の・黒っぽい髪の", pos: "形容詞", f: "brune", f_ipa: "bʁyn", tts: "brun, brune", ex: {fr: "Thomas est grand et brun.", ja: "トマは背が高くて髪が黒っぽいです。"}}
+      - {fr: "châtain", ipa: "ʃatɛ̃", ja: "（髪が）栗色の", pos: "形容詞", note: "女性の人にも châtain をそのまま使うことが多い", ex: {fr: "Ma mère a les cheveux châtains.", ja: "母の髪は栗色です。"}}
+      - {fr: "roux", ipa: "ʁu", ja: "赤毛の", pos: "形容詞", f: "rousse", f_ipa: "ʁus", tts: "roux, rousse", ex: {fr: "Mon neveu est roux.", ja: "甥は赤毛です。"}}
+      - {fr: "long", ipa: "lɔ̃", ja: "長い", pos: "形容詞", f: "longue", f_ipa: "lɔ̃ɡ", tts: "long, longue", ex: {fr: "Ma sœur a les cheveux longs.", ja: "姉は髪が長いです。"}}
+      - {fr: "court", ipa: "kuʁ", ja: "短い", pos: "形容詞", f: "courte", f_ipa: "kuʁt", tts: "court, courte", ex: {fr: "Mon frère a les cheveux courts.", ja: "兄は髪が短いです。"}}
+      - {fr: "frisé", ipa: "fʁize", ja: "（髪が）巻き毛の", pos: "形容詞", f: "frisée", f_ipa: "fʁize", tts: "frisé, frisée", ex: {fr: "Léa a les cheveux frisés.", ja: "レアは巻き毛です。"}}
   - name: "性格"
     words:
-      - {fr: "gentil", ipa: "ʒɑ̃ti", ja: "親切な・優しい", pos: "形容詞", f: "gentille", f_ipa: "ʒɑ̃tij", tts: "gentil, gentille", note: "男性形の l は読まない"}
-      - {fr: "sympa", ipa: "sɛ̃pa", ja: "感じがいい", pos: "形容詞", note: "sympathique の短縮形。話し言葉でよく使う"}
-      - {fr: "drôle", ipa: "dʁol", ja: "おもしろい", pos: "形容詞"}
-      - {fr: "sérieux", ipa: "seʁjø", ja: "まじめな", pos: "形容詞", f: "sérieuse", f_ipa: "seʁjøz", tts: "sérieux, sérieuse"}
-      - {fr: "timide", ipa: "timid", ja: "内気な", pos: "形容詞"}
-      - {fr: "calme", ipa: "kalm", ja: "落ち着いた", pos: "形容詞"}
-      - {fr: "sportif", ipa: "spɔʁtif", ja: "スポーツ好きな", pos: "形容詞", f: "sportive", f_ipa: "spɔʁtiv", tts: "sportif, sportive"}
-      - {fr: "intelligent", ipa: "ɛ̃teliʒɑ̃", ja: "頭がいい", pos: "形容詞", f: "intelligente", f_ipa: "ɛ̃teliʒɑ̃t", tts: "intelligent, intelligente"}
-      - {fr: "curieux", ipa: "kyʁjø", ja: "好奇心が強い", pos: "形容詞", f: "curieuse", f_ipa: "kyʁjøz", tts: "curieux, curieuse"}
-      - {fr: "généreux", ipa: "ʒeneʁø", ja: "気前がいい", pos: "形容詞", f: "généreuse", f_ipa: "ʒeneʁøz", tts: "généreux, généreuse"}
-      - {fr: "bavard", ipa: "bavaʁ", ja: "おしゃべりな", pos: "形容詞", f: "bavarde", f_ipa: "bavaʁd", tts: "bavard, bavarde"}
-      - {fr: "patient", ipa: "pasjɑ̃", ja: "辛抱強い", pos: "形容詞", f: "patiente", f_ipa: "pasjɑ̃t", tts: "patient, patiente", note: "ti は「スィ」の音"}
-      - {fr: "méchant", ipa: "meʃɑ̃", ja: "意地悪な", pos: "形容詞", f: "méchante", f_ipa: "meʃɑ̃t", tts: "méchant, méchante"}
-      - {fr: "heureux", ipa: "øʁø", ja: "幸せな", pos: "形容詞", f: "heureuse", f_ipa: "øʁøz", tts: "heureux, heureuse"}
-      - {fr: "paresseux", ipa: "paʁesø", ja: "怠け者の", pos: "形容詞", f: "paresseuse", f_ipa: "paʁesøz", tts: "paresseux, paresseuse"}
-      - {fr: "sociable", ipa: "sɔsjabl", ja: "人付き合いのいい", pos: "形容詞"}
-      - {fr: "travailleur", ipa: "tʁavajœʁ", ja: "働き者の", pos: "形容詞", f: "travailleuse", f_ipa: "tʁavajøz", tts: "travailleur, travailleuse"}
+      - {fr: "gentil", ipa: "ʒɑ̃ti", ja: "親切な・優しい", pos: "形容詞", f: "gentille", f_ipa: "ʒɑ̃tij", tts: "gentil, gentille", note: "男性形の l は読まない", ex: {fr: "Ta mère est très gentille.", ja: "君のお母さんはとても優しいね。"}}
+      - {fr: "sympa", ipa: "sɛ̃pa", ja: "感じがいい", pos: "形容詞", note: "sympathique の短縮形。話し言葉でよく使う", ex: {fr: "Tes amis sont sympas.", ja: "君の友達は感じがいいね。"}}
+      - {fr: "drôle", ipa: "dʁol", ja: "おもしろい", pos: "形容詞", ex: {fr: "Mon grand-père est très drôle.", ja: "祖父はとてもおもしろいです。"}}
+      - {fr: "sérieux", ipa: "seʁjø", ja: "まじめな", pos: "形容詞", f: "sérieuse", f_ipa: "seʁjøz", tts: "sérieux, sérieuse", ex: {fr: "Ma fille est sérieuse.", ja: "娘はまじめです。"}}
+      - {fr: "timide", ipa: "timid", ja: "内気な", pos: "形容詞", ex: {fr: "Je suis un peu timide.", ja: "私は少し内気です。"}}
+      - {fr: "calme", ipa: "kalm", ja: "落ち着いた", pos: "形容詞", ex: {fr: "Notre chien est très calme.", ja: "うちの犬はとても落ち着いています。"}}
+      - {fr: "sportif", ipa: "spɔʁtif", ja: "スポーツ好きな", pos: "形容詞", f: "sportive", f_ipa: "spɔʁtiv", tts: "sportif, sportive", ex: {fr: "Mon père est très sportif.", ja: "父はとてもスポーツ好きです。"}}
+      - {fr: "intelligent", ipa: "ɛ̃teliʒɑ̃", ja: "頭がいい", pos: "形容詞", f: "intelligente", f_ipa: "ɛ̃teliʒɑ̃t", tts: "intelligent, intelligente", ex: {fr: "Ton chien est intelligent !", ja: "君の犬は頭がいいね！"}}
+      - {fr: "curieux", ipa: "kyʁjø", ja: "好奇心が強い", pos: "形容詞", f: "curieuse", f_ipa: "kyʁjøz", tts: "curieux, curieuse", ex: {fr: "Les enfants sont curieux.", ja: "子どもたちは好奇心が強いです。"}}
+      - {fr: "généreux", ipa: "ʒeneʁø", ja: "気前がいい", pos: "形容詞", f: "généreuse", f_ipa: "ʒeneʁøz", tts: "généreux, généreuse", ex: {fr: "Mon oncle est généreux.", ja: "おじは気前がいいです。"}}
+      - {fr: "bavard", ipa: "bavaʁ", ja: "おしゃべりな", pos: "形容詞", f: "bavarde", f_ipa: "bavaʁd", tts: "bavard, bavarde", ex: {fr: "Ta sœur est bavarde !", ja: "君の妹はおしゃべりだね！"}}
+      - {fr: "patient", ipa: "pasjɑ̃", ja: "辛抱強い", pos: "形容詞", f: "patiente", f_ipa: "pasjɑ̃t", tts: "patient, patiente", note: "ti は「スィ」の音", ex: {fr: "Ma grand-mère est patiente.", ja: "祖母は辛抱強いです。"}}
+      - {fr: "méchant", ipa: "meʃɑ̃", ja: "意地悪な", pos: "形容詞", f: "méchante", f_ipa: "meʃɑ̃t", tts: "méchant, méchante", ex: {fr: "Attention, le chien est méchant !", ja: "注意、犬がかみつきます！"}}
+      - {fr: "heureux", ipa: "øʁø", ja: "幸せな", pos: "形容詞", f: "heureuse", f_ipa: "øʁøz", tts: "heureux, heureuse", ex: {fr: "Nous sommes très heureux.", ja: "私たちはとても幸せです。"}}
+      - {fr: "paresseux", ipa: "paʁesø", ja: "怠け者の", pos: "形容詞", f: "paresseuse", f_ipa: "paʁesøz", tts: "paresseux, paresseuse", ex: {fr: "Mon chat est paresseux.", ja: "私の猫は怠け者です。"}}
+      - {fr: "sociable", ipa: "sɔsjabl", ja: "人付き合いのいい", pos: "形容詞", ex: {fr: "Ma cousine est très sociable.", ja: "いとこ（女）はとても社交的です。"}}
+      - {fr: "travailleur", ipa: "tʁavajœʁ", ja: "働き者の", pos: "形容詞", f: "travailleuse", f_ipa: "tʁavajøz", tts: "travailleur, travailleuse", ex: {fr: "Mon mari est travailleur.", ja: "夫は働き者です。"}}
   - name: "色"
     words:
-      - {fr: "une couleur", ipa: "yn kulœʁ", ja: "色", pos: "名詞", g: "f"}
-      - {fr: "blanc", ipa: "blɑ̃", ja: "白い", pos: "形容詞", f: "blanche", f_ipa: "blɑ̃ʃ", tts: "blanc, blanche", note: "男性形の c は読まない"}
-      - {fr: "noir", ipa: "nwaʁ", ja: "黒い", pos: "形容詞", f: "noire", f_ipa: "nwaʁ", tts: "noir, noire"}
-      - {fr: "rouge", ipa: "ʁuʒ", ja: "赤い", pos: "形容詞"}
-      - {fr: "bleu", ipa: "blø", ja: "青い", pos: "形容詞", f: "bleue", f_ipa: "blø", tts: "bleu, bleue"}
-      - {fr: "vert", ipa: "vɛʁ", ja: "緑の", pos: "形容詞", f: "verte", f_ipa: "vɛʁt", tts: "vert, verte"}
-      - {fr: "jaune", ipa: "ʒon", ja: "黄色い", pos: "形容詞"}
-      - {fr: "gris", ipa: "ɡʁi", ja: "灰色の", pos: "形容詞", f: "grise", f_ipa: "ɡʁiz", tts: "gris, grise"}
-      - {fr: "marron", ipa: "maʁɔ̃", ja: "茶色の", pos: "形容詞", note: "女性形・複数形でも形が変わらない（des yeux marron）"}
-      - {fr: "rose", ipa: "ʁoz", ja: "ピンクの", pos: "形容詞"}
-      - {fr: "orange", ipa: "ɔʁɑ̃ʒ", ja: "オレンジ色の", pos: "形容詞", note: "女性形・複数形でも形が変わらない"}
-      - {fr: "violet", ipa: "vjɔlɛ", ja: "紫の", pos: "形容詞", f: "violette", f_ipa: "vjɔlɛt", tts: "violet, violette"}
+      - {fr: "une couleur", ipa: "yn kulœʁ", ja: "色", pos: "名詞", g: "f", ex: {fr: "C'est une jolie couleur.", ja: "きれいな色ですね。"}}
+      - {fr: "blanc", ipa: "blɑ̃", ja: "白い", pos: "形容詞", f: "blanche", f_ipa: "blɑ̃ʃ", tts: "blanc, blanche", note: "男性形の c は読まない", ex: {fr: "Ma grand-mère a les cheveux blancs.", ja: "祖母は白髪です。"}}
+      - {fr: "noir", ipa: "nwaʁ", ja: "黒い", pos: "形容詞", f: "noire", f_ipa: "nwaʁ", tts: "noir, noire", ex: {fr: "Le chat de Julie est noir.", ja: "ジュリーの猫は黒いです。"}}
+      - {fr: "rouge", ipa: "ʁuʒ", ja: "赤い", pos: "形容詞", ex: {fr: "Ma voiture est rouge.", ja: "私の車は赤いです。"}}
+      - {fr: "bleu", ipa: "blø", ja: "青い", pos: "形容詞", f: "bleue", f_ipa: "blø", tts: "bleu, bleue", ex: {fr: "Elle a les yeux bleus.", ja: "彼女は目が青いです。"}}
+      - {fr: "vert", ipa: "vɛʁ", ja: "緑の", pos: "形容詞", f: "verte", f_ipa: "vɛʁt", tts: "vert, verte", ex: {fr: "J'ai un sac vert.", ja: "私は緑のかばんを持っています。"}}
+      - {fr: "jaune", ipa: "ʒon", ja: "黄色い", pos: "形容詞", ex: {fr: "Le citron est jaune.", ja: "レモンは黄色です。"}}
+      - {fr: "gris", ipa: "ɡʁi", ja: "灰色の", pos: "形容詞", f: "grise", f_ipa: "ɡʁiz", tts: "gris, grise", ex: {fr: "Le ciel est gris.", ja: "空は灰色です。"}}
+      - {fr: "marron", ipa: "maʁɔ̃", ja: "茶色の", pos: "形容詞", note: "女性形・複数形でも形が変わらない（des yeux marron）", ex: {fr: "Mon frère a les yeux marron.", ja: "兄は目が茶色です。"}}
+      - {fr: "rose", ipa: "ʁoz", ja: "ピンクの", pos: "形容詞", ex: {fr: "La chambre de ma fille est rose.", ja: "娘の部屋はピンクです。"}}
+      - {fr: "orange", ipa: "ɔʁɑ̃ʒ", ja: "オレンジ色の", pos: "形容詞", note: "女性形・複数形でも形が変わらない", ex: {fr: "Mon poisson rouge est orange !", ja: "私の金魚はオレンジ色です！"}}
+      - {fr: "violet", ipa: "vjɔlɛ", ja: "紫の", pos: "形容詞", f: "violette", f_ipa: "vjɔlɛt", tts: "violet, violette", ex: {fr: "Les fleurs sont violettes.", ja: "花は紫色です。"}}
   - name: "所有形容詞と avoir"
     words:
-      - {fr: "ressembler à", ipa: "ʁəsɑ̃ble a", ja: "〜に似ている", pos: "動詞"}
-      - {fr: "mon", ipa: "mɔ̃", ja: "私の（男性単数）", pos: "形容詞", tts: "mon frère", note: "母音で始まる女性名詞にも mon（mon amie）"}
-      - {fr: "ma", ipa: "ma", ja: "私の（女性単数）", pos: "形容詞", tts: "ma sœur"}
-      - {fr: "mes", ipa: "me", ja: "私の（複数）", pos: "形容詞", tts: "mes parents"}
-      - {fr: "ton", ipa: "tɔ̃", ja: "君の（男性単数）", pos: "形容詞", tts: "ton père"}
-      - {fr: "ta", ipa: "ta", ja: "君の（女性単数）", pos: "形容詞", tts: "ta mère"}
-      - {fr: "tes", ipa: "te", ja: "君の（複数）", pos: "形容詞", tts: "tes cousins"}
-      - {fr: "son", ipa: "sɔ̃", ja: "彼の・彼女の（男性単数）", pos: "形容詞", tts: "son chien", note: "持ち主ではなく、後ろの名詞の性で決まる"}
-      - {fr: "sa", ipa: "sa", ja: "彼の・彼女の（女性単数）", pos: "形容詞", tts: "sa fille"}
-      - {fr: "ses", ipa: "se", ja: "彼の・彼女の（複数）", pos: "形容詞", tts: "ses enfants"}
-      - {fr: "notre", ipa: "nɔtʁ", ja: "私たちの（単数）", pos: "形容詞", tts: "notre chat"}
-      - {fr: "votre", ipa: "vɔtʁ", ja: "あなた（たち）の（単数）", pos: "形容詞", tts: "votre famille"}
-      - {fr: "leur", ipa: "lœʁ", ja: "彼らの（単数）", pos: "形容詞", tts: "leur fils"}
-      - {fr: "nos", ipa: "no", ja: "私たちの（複数）", pos: "形容詞", tts: "nos enfants"}
-      - {fr: "vos", ipa: "vo", ja: "あなた（たち）の（複数）", pos: "形容詞", tts: "vos parents"}
-      - {fr: "leurs", ipa: "lœʁ", ja: "彼らの（複数）", pos: "形容詞", tts: "leurs enfants", note: "leur と同じ発音。母音の前ではリエゾンする（leurs enfants）"}
-      - {fr: "Tu as des frères et sœurs ?", ipa: "ty a de fʁɛʁ e sœʁ", ja: "きょうだいはいる？", pos: "表現"}
-      - {fr: "Je suis fils unique.", ipa: "ʒə sɥi fis ynik", ja: "私はひとりっ子です（男性）", pos: "表現", note: "女性なら Je suis fille unique."}
+      - {fr: "ressembler à", ipa: "ʁəsɑ̃ble a", ja: "〜に似ている", pos: "動詞", ex: {fr: "Tu ressembles à ta mère.", ja: "君はお母さんに似ているね。"}}
+      - {fr: "mon", ipa: "mɔ̃", ja: "私の（男性単数）", pos: "形容詞", tts: "mon frère", note: "母音で始まる女性名詞にも mon（mon amie）", ex: {fr: "C'est mon ami Paul.", ja: "友達のポールです。"}}
+      - {fr: "ma", ipa: "ma", ja: "私の（女性単数）", pos: "形容詞", tts: "ma sœur", ex: {fr: "Ma sœur s'appelle Emma.", ja: "姉の名前はエマです。"}}
+      - {fr: "mes", ipa: "me", ja: "私の（複数）", pos: "形容詞", tts: "mes parents", ex: {fr: "Ce sont mes parents.", ja: "これは私の両親です。"}}
+      - {fr: "ton", ipa: "tɔ̃", ja: "君の（男性単数）", pos: "形容詞", tts: "ton père", ex: {fr: "C'est ton chien ?", ja: "これは君の犬？"}}
+      - {fr: "ta", ipa: "ta", ja: "君の（女性単数）", pos: "形容詞", tts: "ta mère", ex: {fr: "Comment s'appelle ta mère ?", ja: "君のお母さんの名前は？"}}
+      - {fr: "tes", ipa: "te", ja: "君の（複数）", pos: "形容詞", tts: "tes cousins", ex: {fr: "Tes cousins sont drôles.", ja: "君のいとこたちはおもしろいね。"}}
+      - {fr: "son", ipa: "sɔ̃", ja: "彼の・彼女の（男性単数）", pos: "形容詞", tts: "son chien", note: "持ち主ではなく、後ろの名詞の性で決まる", ex: {fr: "Son père est italien.", ja: "彼の父親はイタリア人です。"}}
+      - {fr: "sa", ipa: "sa", ja: "彼の・彼女の（女性単数）", pos: "形容詞", tts: "sa fille", ex: {fr: "Sa sœur a vingt ans.", ja: "彼女の姉は 20 歳です。"}}
+      - {fr: "ses", ipa: "se", ja: "彼の・彼女の（複数）", pos: "形容詞", tts: "ses enfants", ex: {fr: "Ses enfants sont blonds.", ja: "彼の子どもたちは金髪です。"}}
+      - {fr: "notre", ipa: "nɔtʁ", ja: "私たちの（単数）", pos: "形容詞", tts: "notre chat", ex: {fr: "Notre maison est petite.", ja: "私たちの家は小さいです。"}}
+      - {fr: "votre", ipa: "vɔtʁ", ja: "あなた（たち）の（単数）", pos: "形容詞", tts: "votre famille", ex: {fr: "Votre fils a quel âge ?", ja: "息子さんは何歳ですか？"}}
+      - {fr: "leur", ipa: "lœʁ", ja: "彼らの（単数）", pos: "形容詞", tts: "leur fils", ex: {fr: "Leur fille a dix ans.", ja: "彼らの娘は 10 歳です。"}}
+      - {fr: "nos", ipa: "no", ja: "私たちの（複数）", pos: "形容詞", tts: "nos enfants", ex: {fr: "Nos voisins sont sympas.", ja: "うちの近所の人たちは感じがいいです。"}}
+      - {fr: "vos", ipa: "vo", ja: "あなた（たち）の（複数）", pos: "形容詞", tts: "vos parents", ex: {fr: "Vos parents sont japonais ?", ja: "ご両親は日本人ですか？"}}
+      - {fr: "leurs", ipa: "lœʁ", ja: "彼らの（複数）", pos: "形容詞", tts: "leurs enfants", note: "leur と同じ発音。母音の前ではリエゾンする（leurs enfants）", ex: {fr: "Leurs grands-parents sont français.", ja: "彼らの祖父母はフランス人です。"}}
+      - {fr: "Tu as des frères et sœurs ?", ipa: "ty a de fʁɛʁ e sœʁ", ja: "きょうだいはいる？", pos: "表現", ex: {fr: "Léa, tu as des frères et sœurs ?", ja: "レア、きょうだいはいる？"}}
+      - {fr: "Je suis fils unique.", ipa: "ʒə sɥi fis ynik", ja: "私はひとりっ子です（男性）", pos: "表現", note: "女性なら Je suis fille unique.", ex: {fr: "Moi, je suis fils unique.", ja: "僕はひとりっ子だよ。"}}

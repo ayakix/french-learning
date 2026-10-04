@@ -1,0 +1,42 @@
+# 単元 06 の文書 1：カフェの昼のメニュー（DELF A1 の「読む」の形式）
+# DELF A1 の読解は、短い実用文書から人・場所・日時・値段などの情報を探す問題。
+# メニューは単元 06（買い物と食事）の語彙と値段の読み取りをそのまま練習できるので選んだ。
+# 値段は TTS が読み間違えないよう fr では綴りで書く。単品の合計とコースの値段を比べさせる質問も入れている。
+# 1 行ずつ音声も付けているのは、読んだ後に音で確かめ、シャドーイングにも使えるようにするため。
+# 掲示物で書き手がいないので、声は標準（男性）にしている。
+unit: "06"
+title: "カフェの昼のメニュー"
+type: "menu"
+situation: "パリのカフェの入り口に、昼のメニューが出ている"
+header:
+  - "Café de la Place"
+  - "La carte du midi (12 h - 14 h 30)"
+lines:
+  - { fr: "Café de la Place : la carte du midi.", ja: "カフェ・ド・ラ・プラス：昼のメニュー" }
+  - { fr: "Entrée : soupe de légumes, 5 €.", tts: "Entrée : soupe de légumes, cinq euros.", ja: "前菜：野菜スープ、5 ユーロ" }
+  - { fr: "Entrée : salade de tomates, 6 €.", tts: "Entrée : salade de tomates, six euros.", ja: "前菜：トマトサラダ、6 ユーロ" }
+  - { fr: "Plat du jour : poulet et pommes de terre, 12 €.", tts: "Plat du jour : poulet et pommes de terre, douze euros.", ja: "日替わり料理：鶏肉とじゃがいも、12 ユーロ" }
+  - { fr: "Plat : poisson et riz, 14 €.", tts: "Plat : poisson et riz, quatorze euros.", ja: "メイン：魚とごはん、14 ユーロ" }
+  - { fr: "Dessert : tarte aux pommes ou glace, 5 €.", tts: "Dessert : tarte aux pommes ou glace, cinq euros.", ja: "デザート：りんごのタルトかアイス、5 ユーロ" }
+  - { fr: "Menu entrée, plat et dessert : 20 €.", tts: "Menu entrée, plat et dessert : vingt euros.", ja: "コース（前菜・メイン・デザート）：20 ユーロ" }
+  - { fr: "Café ou thé : 2 €.", tts: "Café ou thé : deux euros.", ja: "コーヒーか紅茶：2 ユーロ" }
+  - { fr: "Verre de vin : 4,50 €.", tts: "Verre de vin : quatre euros cinquante.", ja: "グラスワイン：4 ユーロ 50" }
+  - { fr: "Le café est fermé le lundi.", ja: "当店は月曜日が定休日です。" }
+  - { fr: "Paiement par carte à partir de 10 €.", tts: "Paiement par carte à partir de dix euros.", ja: "カードでのお支払いは 10 ユーロからです。" }
+questions:
+  - q: "Combien coûte le plat du jour ?"
+    q_ja: "日替わり料理はいくら？"
+    choices: ["cinq euros", "douze euros", "quatorze euros"]
+    answer: 1
+  - q: "Avec le poisson, il y a :"
+    q_ja: "魚料理に付いてくるのは？"
+    choices: ["du riz", "des pommes de terre", "de la salade"]
+    answer: 0
+  - q: "Le café est fermé quel jour ?"
+    q_ja: "カフェが休みなのは何曜日？"
+    choices: ["le dimanche", "le lundi", "le samedi"]
+    answer: 1
+  - q: "Vous voulez une entrée, un plat et un dessert. Vous payez combien ?"
+    q_ja: "前菜・メイン・デザートを食べたい。いくら払う？"
+    choices: ["vingt euros", "vingt-deux euros", "vingt-cinq euros"]
+    answer: 0

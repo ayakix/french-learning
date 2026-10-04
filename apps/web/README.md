@@ -27,6 +27,7 @@ npx astro dev stop            # 停止
 | `/vocab/<単元>` | `*-vocab.yaml`（単語） |
 | `/reading/<単元>` | `*-reading.yaml`（1 文リーディング） |
 | `/listening/<単元>-<番号>` | `*-listening.yaml`（会話・DELF 形式の聞き取り） |
+| `/document/<単元>-<番号>` | `*-document.yaml`（DELF 形式の読む文書：メール・掲示・広告など） |
 | `/numbers` | `a1/common/numbers.yaml` |
 | `/verbs` | `a1/common/verbs.yaml` |
 | `/voices` | `config/tts.json` の声の聞き比べ |

@@ -1,0 +1,38 @@
+# DELF A1 聞き取り模試 1・大問 4：4 つの短い会話
+# 本番の大問 4 は、4 つの短い会話を聞き、6 枚の画像から各会話の場面を選ぶ形式（4 問・各 2 点で配点が最も大きい）。
+# 画像は作れないので、各会話について「どんな場面か」を短いフランス語の 3 択にした。
+# 本番どおり、場面を表す決め手の語（une baguette, un billet など）を 1 つ聞き取れれば答えられるようにしている。
+unit: "11"
+title: "模試 1・大問 4：短い会話"
+type: "dialogue"
+situation: "4 つの短い会話を聞きます。それぞれの会話がどんな場面か選びます（4 問・2 回聞く。本番では 6 枚の画像から選ぶ）"
+speakers:
+  homme: { name: "Homme" }
+  femme: { name: "Femme", voice: "lucie" }
+lines:
+  - { speaker: "femme", voice: "lucie", fr: "Bonjour monsieur, je voudrais une baguette et deux croissants.", ja: "【会話 1】こんにちは、バゲット 1 本とクロワッサン 2 つください。" }
+  - { speaker: "homme", fr: "Voilà, madame. Ça fait trois euros vingt.", ja: "どうぞ。3 ユーロ 20 です。" }
+  - { speaker: "homme", fr: "Excusez-moi, madame, où est le musée, s'il vous plaît ?", ja: "【会話 2】すみません、美術館はどこですか？" }
+  - { speaker: "femme", voice: "lucie", fr: "Allez tout droit, puis tournez à droite. C'est en face de la poste.", ja: "まっすぐ行って、右に曲がってください。郵便局の向かいです。" }
+  - { speaker: "femme", voice: "lucie", fr: "Un billet pour Lyon, s'il vous plaît.", ja: "【会話 3】リヨンまでの切符を 1 枚お願いします。" }
+  - { speaker: "homme", fr: "Aller simple ou aller-retour ?", ja: "片道ですか、往復ですか？" }
+  - { speaker: "femme", voice: "lucie", fr: "Aller-retour, s'il vous plaît.", ja: "往復でお願いします。" }
+  - { speaker: "homme", fr: "Tu veux jouer au tennis dimanche ?", ja: "【会話 4】日曜日にテニスしない？" }
+  - { speaker: "femme", voice: "lucie", fr: "Oui, bonne idée ! On va au parc à dix heures ?", ja: "うん、いいね！10 時に公園に行く？" }
+questions:
+  - q: "Dialogue 1 : où sont les personnes ?"
+    q_ja: "会話 1：2 人はどこにいる？"
+    choices: ["À la boulangerie.", "Au restaurant.", "À la pharmacie."]
+    answer: 0
+  - q: "Dialogue 2 : l'homme..."
+    q_ja: "会話 2：男性は何をしている？"
+    choices: ["achète un billet.", "demande son chemin.", "visite un appartement."]
+    answer: 1
+  - q: "Dialogue 3 : où sont les personnes ?"
+    q_ja: "会話 3：2 人はどこにいる？"
+    choices: ["À l'hôtel.", "À la poste.", "À la gare."]
+    answer: 2
+  - q: "Dialogue 4 : ils parlent de quoi ?"
+    q_ja: "会話 4：2 人は何について話している？"
+    choices: ["D'un match de football.", "D'une activité sportive.", "D'un film au cinéma."]
+    answer: 1

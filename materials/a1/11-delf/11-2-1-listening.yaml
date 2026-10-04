@@ -1,0 +1,33 @@
+# DELF A1 聞き取り模試 2・大問 1：友達からの留守番電話
+# 本番の大問 1 は「留守番電話のメッセージ」を聞いて 4 問に答える形式（公式見本問題 SUJET_DÉMO_A1TP に合わせた）。
+# 模試 1 の誕生日パーティーとは場面を変え、食事の誘い（曜日・待ち合わせ場所・時刻・するべきこと）にした。
+unit: "11"
+title: "模試 2・大問 1：留守番電話"
+type: "voicemail"
+situation: "留守番電話のメッセージを聞いて、質問に答えます（4 問・2 回聞く）。友達のユゴーから電話があった"
+speakers:
+  hugo: { name: "Hugo" }
+lines:
+  - { speaker: "hugo", fr: "Salut, c'est Hugo ! Tu vas bien ?", ja: "やあ、ユゴーだよ！元気？" }
+  - { speaker: "hugo", fr: "Vendredi soir, je vais au restaurant italien avec Emma et Léo.", ja: "金曜日の夜、エマとレオとイタリアンレストランに行くんだ。" }
+  - { speaker: "hugo", fr: "Tu veux venir avec nous ?", ja: "一緒に来ない？" }
+  - { speaker: "hugo", fr: "On a rendez-vous devant la pharmacie, place de la Mairie, à huit heures.", ja: "市役所広場の薬局の前で、8 時に待ち合わせだよ。" }
+  - { speaker: "hugo", fr: "Le restaurant n'est pas cher : une pizza, c'est douze euros.", ja: "レストランは高くないよ。ピザ 1 枚 12 ユーロ。" }
+  - { speaker: "hugo", fr: "Envoie-moi un message avant jeudi, s'il te plaît. Salut !", ja: "木曜日までにメッセージを送ってね。じゃあ！" }
+questions:
+  - q: "Hugo vous invite..."
+    q_ja: "ユゴーはあなたをどこに誘っている？"
+    choices: ["au cinéma.", "au restaurant.", "chez lui."]
+    answer: 1
+  - q: "Le rendez-vous est où ?"
+    q_ja: "待ち合わせはどこ？"
+    choices: ["Devant la pharmacie.", "Devant la gare.", "Devant le restaurant."]
+    answer: 0
+  - q: "Le rendez-vous est à quelle heure ?"
+    q_ja: "待ち合わせは何時？"
+    choices: ["À 18 h.", "À 19 h.", "À 20 h."]
+    answer: 2
+  - q: "Qu'est-ce que Hugo demande ?"
+    q_ja: "ユゴーは何を頼んでいる？"
+    choices: ["De réserver une table.", "D'envoyer un message.", "D'appeler Emma."]
+    answer: 1

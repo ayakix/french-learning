@@ -1,0 +1,93 @@
+---
+// 3 択の質問。聞き取りと読む文書（DELF 形式）で共通に使う
+type Question = { q: string; q_ja: string; choices: string[]; answer: number };
+
+const { questions } = Astro.props as { questions: Question[] };
+---
+
+<ol class="questions">
+  {
+    questions.map((q) => (
+      <li class="question" data-answer={q.answer}>
+        <p class="q">
+          {q.q}
+          <small>{q.q_ja}</small>
+        </p>
+        <div class="choices">
+          {q.choices.map((c, i) => (
+            <button type="button" class="choice" data-index={i}>
+              {c}
+            </button>
+          ))}
+        </div>
+        <p class="result" aria-live="polite" />
+      </li>
+    ))
+  }
+</ol>
+
+<script>
+  document.querySelectorAll<HTMLElement>('.question').forEach((q) => {
+    const answer = Number(q.dataset.answer);
+    const result = q.querySelector<HTMLElement>('.result')!;
+    const choices = [...q.querySelectorAll<HTMLButtonElement>('.choice')];
+    choices.forEach((button) =>
+      button.addEventListener('click', () => {
+        const ok = Number(button.dataset.index) === answer;
+        choices.forEach((c) => (c.disabled = true));
+        button.classList.add(ok ? 'ok' : 'ng');
+        choices[answer].classList.add('ok');
+        result.className = `result ${ok ? 'ok' : 'ng'}`;
+        result.textContent = ok ? '正解！' : `残念… 正解は「${choices[answer].textContent!.trim()}」`;
+      }),
+    );
+  });
+</script>
+
+<style>
+  .questions {
+    padding-left: 1.2em;
+    margin: 8px 0 0;
+  }
+  .question {
+    margin-bottom: 14px;
+  }
+  .q {
+    margin: 0 0 6px;
+    font-weight: 600;
+  }
+  .q small {
+    display: block;
+    font-weight: 400;
+    color: var(--muted);
+  }
+  .choices {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+  .choice {
+    padding: 8px 14px;
+    border: 2px solid var(--border);
+    border-radius: 10px;
+    background: var(--bg);
+  }
+  .choice:not(:disabled):hover {
+    border-color: var(--accent);
+  }
+  .choice:disabled {
+    cursor: default;
+  }
+  .choice.ok {
+    border-color: var(--accent);
+    background: var(--accent-soft);
+  }
+  .choice.ng {
+    border-color: var(--caution);
+    background: var(--caution-soft);
+  }
+  .result {
+    margin: 4px 0 0;
+    min-height: 1.4em;
+  }
+</style>

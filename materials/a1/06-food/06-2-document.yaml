@@ -1,0 +1,42 @@
+# 単元 06 の文書 2：買い物を頼むメッセージ（DELF A1 の「読む」の形式）
+# DELF A1 の読解は、短い実用文書から人・場所・日時・持ち物などの情報を探す問題。
+# 1 本目のメニュー（掲示）と形式を変え、家族間の SMS にした。買い物リストは数量表現（deux kilos de / une bouteille de / un litre）と
+# 部分冠詞・否定の de（pas de lait / pas de vin）を自然に何度も読ませられるため。
+# 「誰が・何を・どれだけ・なぜ」を探させる質問にしている。
+# 1 行ずつ音声も付けているのは、読んだ後に音で確かめ、シャドーイングにも使えるようにするため。
+# 書き手が女性（クレール）なので、本文はすべて lucie の声で読む。
+unit: "06"
+title: "買い物を頼むメッセージ"
+type: "message"
+situation: "夕方、クレールが夫のポールに買い物を頼む SMS を送った"
+header:
+  - "De : Claire"
+  - "À : Paul"
+lines:
+  - { voice: "lucie", fr: "Salut Paul !", ja: "ポール、やあ！" }
+  - { voice: "lucie", fr: "Ce soir, on mange à la maison avec Marc et Julie.", ja: "今夜はマルクとジュリーと一緒に家で食べるよ。" }
+  - { voice: "lucie", fr: "Tu peux aller au supermarché après le travail ?", ja: "仕事のあとスーパーに行ってくれる？" }
+  - { voice: "lucie", fr: "On a besoin de deux kilos de pommes de terre et d'un poulet.", ja: "じゃがいも 2 キロと鶏肉 1 羽が必要なの。" }
+  - { voice: "lucie", fr: "Je voudrais aussi une bouteille de vin rouge et du fromage.", ja: "赤ワインを 1 本とチーズもお願い。" }
+  - { voice: "lucie", fr: "Il n'y a pas de lait à la maison : un litre, s'il te plaît.", ja: "家に牛乳がないから、1 リットルお願い。" }
+  - { voice: "lucie", fr: "Julie ne boit pas de vin : tu peux prendre du jus d'orange ?", ja: "ジュリーはワインを飲まないから、オレンジジュースも買ってくれる？" }
+  - { voice: "lucie", fr: "Moi, je vais à la boulangerie pour le dessert.", ja: "私はデザートを買いにパン屋に行くね。" }
+  - { voice: "lucie", fr: "Merci et à ce soir !", ja: "ありがとう、じゃあ今夜ね！" }
+  - { voice: "lucie", fr: "Bisous, Claire", ja: "じゃあね、クレール" }
+questions:
+  - q: "Qui mange avec Claire et Paul ce soir ?"
+    q_ja: "今夜クレールとポールと一緒に食べるのは誰？"
+    choices: ["Marc et Julie", "Marc et Léa", "Julie et sa mère"]
+    answer: 0
+  - q: "Paul achète combien de pommes de terre ?"
+    q_ja: "ポールはじゃがいもをどれだけ買う？"
+    choices: ["un kilo", "deux kilos", "trois kilos"]
+    answer: 1
+  - q: "Qui va à la boulangerie ?"
+    q_ja: "パン屋に行くのは誰？"
+    choices: ["Paul", "Claire", "Julie"]
+    answer: 1
+  - q: "Pourquoi Paul achète du jus d'orange ?"
+    q_ja: "ポールがオレンジジュースを買うのはなぜ？"
+    choices: ["Julie ne boit pas de vin.", "Marc aime le jus d'orange.", "Il n'y a pas de lait."]
+    answer: 0

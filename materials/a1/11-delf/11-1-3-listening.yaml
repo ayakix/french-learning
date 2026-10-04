@@ -1,0 +1,33 @@
+# DELF A1 聞き取り模試 1・大問 3：語学学校からの留守番電話
+# 本番の大問 3 は、大問 1 と同じ「留守番電話」だが、仕事や学校など少しあらたまった場面が多い（4 問）。
+# 予定の変更（曜日・時刻・教室）は聞き違えると実生活でも困るので、変わったこと・理由・するべきことを問う。
+unit: "11"
+title: "模試 1・大問 3：学校からの留守番電話"
+type: "voicemail"
+situation: "あなたはフランスの語学学校の学生です。学校の事務の人が、留守番電話にメッセージを残しました。メッセージを聞いて、質問に答えます（4 問・2 回聞く）"
+speakers:
+  martin: { name: "Monsieur Martin" }
+lines:
+  - { speaker: "martin", fr: "Bonjour, c'est Monsieur Martin, de l'école de langues Alliance.", ja: "こんにちは、語学学校アリアンスのマルタンです。" }
+  - { speaker: "martin", fr: "Votre professeure, Madame Petit, est malade cette semaine.", ja: "あなたの先生のプティ先生は、今週病気です。" }
+  - { speaker: "martin", fr: "Alors, il n'y a pas de cours mardi. Le cours est jeudi, à quatorze heures.", ja: "それで、火曜日は授業がありません。授業は木曜日の 14 時です。" }
+  - { speaker: "martin", fr: "Le cours est dans la salle vingt-deux, au premier étage.", ja: "授業は 2 階の 22 番教室です。" }
+  - { speaker: "martin", fr: "N'oubliez pas votre livre et votre cahier, s'il vous plaît.", ja: "教科書とノートを忘れないでください。" }
+  - { speaker: "martin", fr: "Merci et bonne journée !", ja: "ありがとうございます。よい一日を！" }
+questions:
+  - q: "Pourquoi le cours change ?"
+    q_ja: "なぜ授業が変わる？"
+    choices: ["La professeure est malade.", "La professeure est en vacances.", "L'école est fermée."]
+    answer: 0
+  - q: "Le cours est quel jour ?"
+    q_ja: "授業は何曜日？"
+    choices: ["Mardi.", "Mercredi.", "Jeudi."]
+    answer: 2
+  - q: "Le cours est dans quelle salle ?"
+    q_ja: "授業は何番教室？"
+    choices: ["Salle 2.", "Salle 12.", "Salle 22."]
+    answer: 2
+  - q: "Qu'est-ce que vous devez apporter ?"
+    q_ja: "何を持っていかなければならない？"
+    choices: ["Un dictionnaire.", "Un livre et un cahier.", "Une photo."]
+    answer: 1

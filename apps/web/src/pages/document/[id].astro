@@ -3,26 +3,28 @@ import { getCollection, type CollectionEntry } from 'astro:content';
 import Base from '../../layouts/Base.astro';
 import Questions from '../../components/Questions.astro';
 import { audioUrl } from '../../lib/audio';
-import { listeningId } from '../../lib/materials';
+import { documentId } from '../../lib/materials';
 import '../../styles/material.css';
 
 export async function getStaticPaths() {
-  const entries = await getCollection('listening');
-  return entries.map((entry) => ({ params: { id: listeningId(entry) }, props: { entry } }));
+  const entries = await getCollection('documents');
+  return entries.map((entry) => ({ params: { id: documentId(entry) }, props: { entry } }));
 }
 
-const { entry } = Astro.props as { entry: CollectionEntry<'listening'> };
-const { unit, title, type, situation, speakers, lines, questions } = entry.data;
+const { entry } = Astro.props as { entry: CollectionEntry<'documents'> };
+const { unit, title, type, situation, header, lines, questions } = entry.data;
 
 const typeNames: Record<string, string> = {
-  dialogue: '会話',
-  voicemail: '留守番電話',
-  announcement: 'アナウンス',
-  monologue: '1 人の話',
+  email: 'メール',
+  message: 'メッセージ',
+  notice: '掲示・お知らせ',
+  ad: '広告',
+  program: '予定表・時刻表',
+  menu: 'メニュー・値段表',
 };
 ---
 
-<Base title={`${unit} 聞き取り：${title}`}>
+<Base title={`${unit} 文書：${title}`}>
   <main>
     <header>
       <a href="/" class="back">← ホーム</a>
@@ -34,11 +36,17 @@ const typeNames: Record<string, string> = {
     </header>
 
     <section class="card">
-      <div class="section-head">
-        <h2>1. 聞く</h2>
-        <button type="button" class="pill primary" id="play-all">▶ 通して再生</button>
-      </div>
-      <p class="sub">DELF の本番と同じく、最初はスクリプトを見ずに聞きます。何度聞いても構いません。</p>
+      <h2>1. 読む</h2>
+      <p class="sub">DELF の「読む」と同じく、知らない単語があっても、質問に必要な情報だけを探します。</p>
+      <!-- 本番は紙の文書なので、ここでは訳も音声も出さずに読む -->
+      <article class="doc">
+        {header.length > 0 && (
+          <div class="doc-header">
+            {header.map((h) => <p>{h}</p>)}
+          </div>
+        )}
+        {lines.map((l) => <p>{l.fr}</p>)}
+      </article>
     </section>
 
     <section class="card">
@@ -48,13 +56,13 @@ const typeNames: Record<string, string> = {
 
     <section class="card">
       <details>
-        <summary>3. スクリプトで確かめる（行をクリックで、その行だけ再生）</summary>
+        <summary>3. 訳と音声で確かめる（行をクリックで、その行だけ再生）</summary>
+        <button type="button" class="pill" id="play-all">▶ 通して再生</button>
         <ol class="script">
           {
             lines.map((l) => (
               <li>
-                <button type="button" class="tile play line" data-src={audioUrl(l.fr, l.voice)}>
-                  <span class="speaker">{speakers[l.speaker]?.name ?? l.speaker}</span>
+                <button type="button" class="tile play line" data-src={audioUrl(l.tts ?? l.fr, l.voice)}>
                   <span class="fr">{l.fr}</span>
                   <span class="ja">{l.ja}</span>
                 </button>
@@ -74,7 +82,6 @@ const typeNames: Record<string, string> = {
 
   const lines = [...document.querySelectorAll<HTMLElement>('.line')];
   document.querySelector('#play-all')!.addEventListener('click', () =>
-    // スクリプトを開いていなくても、行の要素から音声を取り出して続けて再生する
     playAll(lines.map((el) => ({ src: el.dataset.src!, el })), 400),
   );
 </script>
@@ -89,6 +96,28 @@ const typeNames: Record<string, string> = {
     background: var(--accent-soft);
     color: var(--accent);
   }
+  .doc {
+    margin-top: 12px;
+    padding: 16px 20px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background: var(--bg);
+    font-size: 1.05rem;
+    line-height: 1.6;
+  }
+  .doc p {
+    margin: 0 0 4px;
+  }
+  .doc-header {
+    margin-bottom: 12px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--border);
+    color: var(--muted);
+    font-size: 0.9rem;
+  }
+  #play-all {
+    margin-top: 12px;
+  }
   .script {
     list-style: none;
     padding: 0;
@@ -98,10 +127,6 @@ const typeNames: Record<string, string> = {
   }
   .line {
     width: 100%;
-  }
-  .speaker {
-    font-size: 0.75rem;
-    color: var(--muted);
   }
   .ja {
     font-size: 0.88rem;

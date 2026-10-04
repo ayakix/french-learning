@@ -1,0 +1,40 @@
+# 単元 05 の文書 2：ワンルームの賃貸広告（DELF A1 の「読む」の形式）
+# DELF A1 の読解では、広告から値段・場所・条件・連絡方法を探す問題がよく出る。
+# 単元 05 の「部屋・家具・街の施設」の語彙と il y a / 場所の前置詞を、住まい探しという実用的な場面で読ませる。
+# 書き手のいない広告なので、音声は標準の男性の声（voice なし）にしている。
+unit: "05"
+title: "ワンルームの賃貸広告"
+type: "ad"
+situation: "パリで部屋を探しているユキが、不動産サイトでワンルームの広告を見つけた"
+header:
+  - "À LOUER"
+  - "Studio – Paris, près de la gare de l'Est"
+  - "Contact : M. Bernard"
+lines:
+  - { fr: "À louer : un studio dans un quartier animé de Paris.", ja: "貸します：パリのにぎやかな地区のワンルーム。" }
+  - { fr: "Le studio est au 5e étage, avec ascenseur.", tts: "Le studio est au cinquième étage, avec ascenseur.", ja: "部屋は 6 階（フランス式の 5 階）で、エレベーター付き。" }
+  - { fr: "Il y a une pièce, une petite cuisine et une salle de bains avec toilettes.", ja: "1 部屋に、小さな台所と、トイレ付きの浴室があります。" }
+  - { fr: "Dans la pièce, il y a un lit, une table, 2 chaises et une grande armoire.", tts: "Dans la pièce, il y a un lit, une table, deux chaises et une grande armoire.", ja: "部屋には、ベッド、テーブル、いす 2 脚、大きな洋服だんすがあります。" }
+  - { fr: "Il est calme et très clair, avec 2 grandes fenêtres.", tts: "Il est calme et très clair, avec deux grandes fenêtres.", ja: "静かでとても明るく、大きな窓が 2 つあります。" }
+  - { fr: "Le loyer est de 600 € par mois.", tts: "Le loyer est de six cents euros par mois.", ja: "家賃は月 600 ユーロです。" }
+  - { fr: "L'immeuble se trouve près de la gare de l'Est, à 2 minutes du métro.", tts: "L'immeuble se trouve près de la gare de l'Est, à deux minutes du métro.", ja: "建物は東駅の近くで、地下鉄から 2 分です。" }
+  - { fr: "En bas de l'immeuble, il y a un supermarché et une pharmacie.", ja: "建物の下には、スーパーと薬局があります。" }
+  - { fr: "Pas d'animaux, s'il vous plaît.", ja: "ペットは不可です。" }
+  - { fr: "Pour visiter, appelez monsieur Bernard le soir, après 18 h.", tts: "Pour visiter, appelez monsieur Bernard le soir, après dix-huit heures.", ja: "内見したい方は、夜 18 時以降にベルナールさんへ電話してください。" }
+questions:
+  - q: "Le studio est à quel étage ?"
+    q_ja: "ワンルームは何階（フランス式）にある？"
+    choices: ["Au rez-de-chaussée", "Au premier étage", "Au cinquième étage"]
+    answer: 2
+  - q: "Le loyer, c'est combien ?"
+    q_ja: "家賃はいくら？"
+    choices: ["500 € par mois", "600 € par mois", "700 € par mois"]
+    answer: 1
+  - q: "Il y a quoi en bas de l'immeuble ?"
+    q_ja: "建物の下には何がある？"
+    choices: ["Une banque et une poste", "Un supermarché et une pharmacie", "Un parc et un musée"]
+    answer: 1
+  - q: "Pour visiter, on appelle quand ?"
+    q_ja: "内見するには、いつ電話する？"
+    choices: ["Le matin", "À midi", "Le soir"]
+    answer: 2

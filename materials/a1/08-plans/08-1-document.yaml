@@ -1,0 +1,41 @@
+# 単元 08 の文書 1：友達からの週末の誘いのメール（DELF A1 の「読む」の形式）
+# DELF A1 の読解は、短い実用文書から人・場所・日時・持ち物などの情報を探す問題。
+# 単元 08 の「誘う」「近接未来」「天気」をまとめて使える場面として、海への日帰り旅行の誘いにした。
+# 1 行ずつ音声も付けているのは、読んだ後に音で確かめ、シャドーイングにも使えるようにするため。
+unit: "08"
+title: "週末の海への誘い"
+type: "email"
+situation: "友達のクレールから、ユキに週末の予定についてメールが届いた"
+header:
+  - "De : Claire Dubois"
+  - "À : Yuki Tanaka"
+  - "Objet : Ce week-end à la mer ?"
+lines:
+  - { voice: "lucie", fr: "Salut Yuki,", ja: "ユキ、こんにちは。" }
+  - { voice: "lucie", fr: "Tu es libre ce week-end ?", ja: "今週末は空いてる？" }
+  - { voice: "lucie", fr: "Samedi, je vais aller à Deauville, au bord de la mer, avec mon frère Paul.", ja: "土曜日、兄のポールと海辺のドーヴィルに行くの。" }
+  - { voice: "lucie", fr: "La météo est bonne : il va faire beau et chaud, avec 25 degrés !", tts: "La météo est bonne : il va faire beau et chaud, avec vingt-cinq degrés !", ja: "天気予報はいいよ。晴れて暑くなって、25 度だって！" }
+  - { voice: "lucie", fr: "On va prendre le train à la gare Saint-Lazare à 8 h 30.", tts: "On va prendre le train à la gare Saint-Lazare à huit heures et demie.", ja: "サン・ラザール駅で 8 時半の電車に乗るよ。" }
+  - { voice: "lucie", fr: "Un aller-retour coûte 40 €.", tts: "Un aller-retour coûte quarante euros.", ja: "往復で 40 ユーロだよ。" }
+  - { voice: "lucie", fr: "L'après-midi, on va se baigner et manger une glace sur la plage.", ja: "午後は泳いで、ビーチでアイスを食べるつもり。" }
+  - { voice: "lucie", fr: "Dimanche, il va pleuvoir, alors on va rentrer samedi soir.", ja: "日曜日は雨になるから、土曜の夜に帰ってくるよ。" }
+  - { voice: "lucie", fr: "N'oublie pas ton maillot de bain et tes lunettes de soleil !", ja: "水着とサングラスを忘れないでね！" }
+  - { voice: "lucie", fr: "Tu veux venir avec nous ? Réponds-moi avant jeudi, s'il te plaît.", ja: "一緒に来ない？木曜日までに返事をちょうだい。" }
+  - { voice: "lucie", fr: "Bises, Claire", ja: "じゃあね、クレール" }
+questions:
+  - q: "Où va Claire samedi ?"
+    q_ja: "クレールは土曜日にどこへ行く？"
+    choices: ["À la montagne", "À la mer, à Deauville", "À la campagne"]
+    answer: 1
+  - q: "Quel temps va-t-il faire samedi ?"
+    q_ja: "土曜日はどんな天気になる？"
+    choices: ["Il va pleuvoir.", "Il va faire froid.", "Il va faire beau et chaud."]
+    answer: 2
+  - q: "À quelle heure part le train ?"
+    q_ja: "電車は何時に出る？"
+    choices: ["À huit heures", "À huit heures et demie", "À dix heures et demie"]
+    answer: 1
+  - q: "Qu'est-ce que Yuki ne doit pas oublier ?"
+    q_ja: "ユキが忘れてはいけないものは？"
+    choices: ["Son maillot de bain et ses lunettes de soleil", "Son passeport et sa valise", "Un parapluie et un manteau"]
+    answer: 0

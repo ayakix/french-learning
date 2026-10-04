@@ -1,0 +1,40 @@
+# 単元 09 の文書 2：なくし物を探す貼り紙（DELF A1 の「読む」の形式）
+# DELF A1 の読解には、掲示板の貼り紙・お知らせから「いつ・どこで・何を・どうすればいいか」を探す問題がよく出る。
+# なくし物の貼り紙は「いつ・どこでなくしたか」を複合過去で順に説明するので、この単元の文法の練習になる。
+# 1 本目（メール）と type を変えて、違う形の文書に慣れるようにしている。
+# 書き手は男性（マルコ）なので、voice は付けない（標準の Nicolas）。
+unit: "09"
+title: "なくし物の貼り紙"
+type: "notice"
+situation: "語学学校の掲示板に、なくしたかばんを探す貼り紙があった"
+header:
+  - "PERDU : sac à dos bleu"
+lines:
+  - { fr: "Bonjour à tous,", ja: "皆さん、こんにちは。" }
+  - { fr: "Lundi dernier, j'ai perdu mon sac à dos bleu à l'école.", ja: "この前の月曜日、学校で青いリュックをなくしました。" }
+  - { fr: "Ce jour-là, je suis arrivé à 10 h et je suis allé dans la salle 12.", tts: "Ce jour-là, je suis arrivé à dix heures et je suis allé dans la salle douze.", ja: "その日、私は 10 時に着いて、12 番教室に行きました。" }
+  - { fr: "Après le cours, j'ai mangé à la cafétéria avec des amis.", ja: "授業の後、友達とカフェテリアで食べました。" }
+  - { fr: "J'ai oublié mon sac sous une table.", ja: "かばんをテーブルの下に忘れてしまいました。" }
+  - { fr: "Je suis retourné à la cafétéria à midi, mais je n'ai pas trouvé mon sac.", ja: "12 時にカフェテリアに戻りましたが、かばんは見つかりませんでした。" }
+  - { fr: "Dans le sac, il y a un livre de français, un cahier et mes clés.", ja: "かばんの中には、フランス語の本、ノート、そして鍵が入っています。" }
+  - { fr: "Le sac n'est pas cher, mais les clés sont très importantes !", ja: "かばんは高くありませんが、鍵がとても大事なんです！" }
+  - { fr: "Vous avez trouvé ce sac ? Merci de le donner à l'accueil de l'école.", ja: "このかばんを見つけましたか？学校の受付に届けてください。" }
+  - { fr: "Merci beaucoup !", ja: "どうもありがとうございます！" }
+  - { fr: "Marco, étudiant en classe A1", ja: "マルコ（A1 クラスの学生）" }
+questions:
+  - q: "Quand est-ce que Marco a perdu son sac ?"
+    q_ja: "マルコはいつかばんをなくした？"
+    choices: ["Lundi dernier", "Samedi dernier", "Hier soir"]
+    answer: 0
+  - q: "Où est-ce que Marco a oublié son sac ?"
+    q_ja: "マルコはどこにかばんを忘れた？"
+    choices: ["Dans la salle douze", "À la cafétéria", "À l'accueil"]
+    answer: 1
+  - q: "Qu'est-ce qu'il y a dans le sac ?"
+    q_ja: "かばんの中には何が入っている？"
+    choices: ["Un téléphone et de l'argent", "Un livre, un cahier et des clés", "Un ordinateur et des photos"]
+    answer: 1
+  - q: "Vous avez trouvé le sac. Où est-ce que vous allez ?"
+    q_ja: "かばんを見つけたら、どこへ行く？"
+    choices: ["À la cafétéria", "Dans la salle douze", "À l'accueil de l'école"]
+    answer: 2

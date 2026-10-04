@@ -1,0 +1,37 @@
+# DELF A1 聞き取り模試 2・大問 4：4 つの短い会話
+# 本番の大問 4 は、4 つの短い会話を聞き、6 枚の画像から各会話の場面を選ぶ形式（4 問・各 2 点で配点が最も大きい）。
+# 画像は作れないので、各会話について「どんな場面か」を短いフランス語の 3 択にした。
+# 模試 1（パン屋・道案内・駅・テニス）とは場面を変えている。
+unit: "11"
+title: "模試 2・大問 4：短い会話"
+type: "dialogue"
+situation: "4 つの短い会話を聞きます。それぞれの会話がどんな場面か選びます（4 問・2 回聞く。本番では 6 枚の画像から選ぶ）"
+speakers:
+  homme: { name: "Homme" }
+  femme: { name: "Femme", voice: "lucie" }
+lines:
+  - { speaker: "homme", fr: "Bonsoir, j'ai une réservation au nom de Tanaka.", ja: "【会話 1】こんばんは、田中の名前で予約しています。" }
+  - { speaker: "femme", voice: "lucie", fr: "Oui, une chambre pour deux nuits. Voici votre clé, chambre cinquante.", ja: "はい、2 泊で 1 部屋ですね。こちらが鍵です、50 号室です。" }
+  - { speaker: "femme", voice: "lucie", fr: "Bonjour, j'ai mal à la tête.", ja: "【会話 2】こんにちは、頭が痛いんです。" }
+  - { speaker: "homme", fr: "Prenez ces médicaments, deux fois par jour.", ja: "この薬を 1 日 2 回飲んでください。" }
+  - { speaker: "homme", fr: "Qu'est-ce que vous prenez ?", ja: "【会話 3】何になさいますか？" }
+  - { speaker: "femme", voice: "lucie", fr: "Un café et un jus d'orange, s'il vous plaît.", ja: "コーヒーとオレンジジュースをお願いします。" }
+  - { speaker: "femme", voice: "lucie", fr: "Il fait beau demain. On va à la plage ?", ja: "【会話 4】明日は晴れるね。海に行かない？" }
+  - { speaker: "homme", fr: "Oui ! On va nager et manger une glace.", ja: "うん！泳いで、アイスを食べよう。" }
+questions:
+  - q: "Dialogue 1 : où sont les personnes ?"
+    q_ja: "会話 1：2 人はどこにいる？"
+    choices: ["À la gare.", "À l'hôtel.", "À l'école."]
+    answer: 1
+  - q: "Dialogue 2 : où sont les personnes ?"
+    q_ja: "会話 2：2 人はどこにいる？"
+    choices: ["À la pharmacie.", "Au supermarché.", "À la banque."]
+    answer: 0
+  - q: "Dialogue 3 : la femme..."
+    q_ja: "会話 3：女性は何をしている？"
+    choices: ["achète des vêtements.", "commande des boissons.", "réserve une table."]
+    answer: 1
+  - q: "Dialogue 4 : demain, ils vont..."
+    q_ja: "会話 4：明日、2 人は何をする？"
+    choices: ["aller à la montagne.", "faire du ski.", "aller à la mer."]
+    answer: 2

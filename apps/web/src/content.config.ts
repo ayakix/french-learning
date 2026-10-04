@@ -98,6 +98,8 @@ const vocab = defineCollection({
             pl: z.string().optional(),
             tts: z.string().optional(),
             note: z.string().optional(),
+            // 例文。単語だけでは使い方が分からないため、その単元までの文法で作った 1 文を添える
+            ex: z.object({ fr: z.string(), ja: z.string() }).optional(),
           }),
         ),
       }),
@@ -121,6 +123,9 @@ const reading = defineCollection({
   }),
 });
 
+// 3 択の質問（聞き取りと読む文書で共通）。answer は 0 始まり
+const question = z.object({ q: z.string(), q_ja: z.string(), choices: z.array(z.string()), answer: z.number() });
+
 // 会話・DELF 形式の聞き取り。行ごとに音声を作り、画面で続けて再生する
 const listening = defineCollection({
   loader: glob({ pattern: '**/*-listening.yaml', base: '../../materials' }),
@@ -132,9 +137,22 @@ const listening = defineCollection({
     lines: z.array(
       z.object({ speaker: z.string(), voice: z.string().optional(), fr: z.string(), ja: z.string() }),
     ),
-    questions: z.array(
-      z.object({ q: z.string(), q_ja: z.string(), choices: z.array(z.string()), answer: z.number() }),
-    ),
+    questions: z.array(question),
+  }),
+});
+
+// DELF 形式の読む文書（メール・掲示・広告など）。1 文リーディングでは練習できない「文書から情報を探す」練習用。
+// header（差出人・件名など）は音声にしないので、fr ではなく文字列の配列にしている
+const documents = defineCollection({
+  loader: glob({ pattern: '**/*-document.yaml', base: '../../materials' }),
+  schema: z.object({
+    ...unitMaterial,
+    type: z.string(),
+    situation: z.string(),
+    header: z.array(z.string()).default([]),
+    // 文書は数字で書く（12 €、14 h 30）が、数字のままだと TTS が読み間違えることがあるので、読ませる文は tts に綴りで書く
+    lines: z.array(z.object({ voice: z.string().optional(), fr: z.string(), tts: z.string().optional(), ja: z.string() })),
+    questions: z.array(question),
   }),
 });
 
@@ -185,4 +203,4 @@ const verbs = defineCollection({
   }),
 });
 
-export const collections = { alphabet, accents, contrasts, rules, vocab, reading, listening, numbers, verbs };
+export const collections = { alphabet, accents, contrasts, rules, vocab, reading, listening, documents, numbers, verbs };

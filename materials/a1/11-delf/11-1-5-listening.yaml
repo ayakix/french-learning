@@ -1,0 +1,38 @@
+# DELF A1 聞き取り模試 1・大問 5：持ち物を伝えるメッセージ
+# 本番の大問 5 は、メッセージを聞いて「画像の物が言われたかどうか」を oui / non で 5 問答える形式。
+# 画像は作れないので、各問を「メッセージに出てきた物はどれ？」の 3 択にした（正解は 1 つだけ、残り 2 つは出てこない物）。
+# 物の名前を次々に聞き取る練習なので、出てこない選択肢も同じ場面でありそうな物にしている。
+unit: "11"
+title: "模試 1・大問 5：遠足の持ち物"
+type: "voicemail"
+situation: "メッセージを聞きます。メッセージに出てくる物を選びます（5 問・2 回聞く）。語学学校の先生が、土曜日の遠足の持ち物を伝えている"
+speakers:
+  claire: { name: "Claire", voice: "lucie" }
+lines:
+  - { speaker: "claire", voice: "lucie", fr: "Bonjour à tous, c'est Claire, votre professeure.", ja: "皆さん、こんにちは。先生のクレールです。" }
+  - { speaker: "claire", voice: "lucie", fr: "Samedi, on va à la montagne. Voici la liste pour la sortie.", ja: "土曜日は山に行きます。遠足の持ち物リストです。" }
+  - { speaker: "claire", voice: "lucie", fr: "Prenez un sac à dos et une bouteille d'eau.", ja: "リュックと水のボトルを持ってきてください。" }
+  - { speaker: "claire", voice: "lucie", fr: "Il fait froid en montagne : apportez un pull et un bonnet.", ja: "山は寒いので、セーターと帽子を持ってきてください。" }
+  - { speaker: "claire", voice: "lucie", fr: "On mange à midi : prenez aussi un sandwich et des fruits.", ja: "お昼に食べるので、サンドイッチと果物も持ってきてください。" }
+  - { speaker: "claire", voice: "lucie", fr: "Et n'oubliez pas votre appareil photo ! À samedi !", ja: "それからカメラを忘れずに！では土曜日に！" }
+questions:
+  - q: "Quel objet est dans le message ?"
+    q_ja: "メッセージに出てくる物は？（1）"
+    choices: ["Un parapluie.", "Un sac à dos.", "Une valise."]
+    answer: 1
+  - q: "Quel objet est dans le message ?"
+    q_ja: "メッセージに出てくる物は？（2）"
+    choices: ["Une bouteille d'eau.", "Une tasse de café.", "Un jus d'orange."]
+    answer: 0
+  - q: "Quel vêtement est dans le message ?"
+    q_ja: "メッセージに出てくる服は？"
+    choices: ["Une robe.", "Un manteau.", "Un pull."]
+    answer: 2
+  - q: "Qu'est-ce qu'on mange à midi ?"
+    q_ja: "お昼に何を食べる？"
+    choices: ["Une pizza.", "Un sandwich.", "Une salade."]
+    answer: 1
+  - q: "Quel objet est dans le message ?"
+    q_ja: "メッセージに出てくる物は？（3）"
+    choices: ["Un téléphone.", "Un livre.", "Un appareil photo."]
+    answer: 2

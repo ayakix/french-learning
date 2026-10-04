@@ -1,0 +1,38 @@
+# 単元 02 の文書 2：迷い猫の貼り紙（DELF A1 の「読む」の形式）
+# DELF A1 の読解は、短い実用文書から人・場所・日時・持ち物などの情報を探す問題。
+# 文書 1 のメールと形式を変え、掲示を選んだ。動物の名前・色・年齢・性格という、この単元の語彙と形容詞の一致がそのまま問われるため。
+# 貼り紙には書き手の声がないので、標準の男性の声で読む。
+# 1 行ずつ音声も付けているのは、読んだ後に音で確かめ、シャドーイングにも使えるようにするため。
+unit: "02"
+title: "迷い猫の貼り紙"
+type: "notice"
+situation: "アパートの入り口に、迷い猫を探す貼り紙がある"
+header:
+  - "CHAT PERDU"
+lines:
+  - { fr: "Chat perdu !", ja: "猫を探しています！" }
+  - { fr: "Notre chat s'appelle Caramel.", ja: "うちの猫の名前はカラメルです。" }
+  - { fr: "C'est un gros chat roux avec les yeux verts.", ja: "緑の目をした、太った茶トラの猫です。" }
+  - { fr: "Il a 7 ans.", tts: "Il a sept ans.", ja: "7 歳です。" }
+  - { fr: "Il est très gentil, mais un peu timide.", ja: "とてもおとなしいですが、少し人見知りです。" }
+  - { fr: "Il a un collier bleu.", ja: "青い首輪をしています。" }
+  - { fr: "C'est le chat de la famille Petit, au numéro 12, rue Victor-Hugo.", tts: "C'est le chat de la famille Petit, au numéro douze, rue Victor-Hugo.", ja: "ヴィクトル・ユゴー通り 12 番地のプティ家の猫です。" }
+  - { fr: "Nos enfants, Léo et Manon, sont très tristes.", ja: "うちの子どもたち、レオとマノンはとても悲しんでいます。" }
+  - { fr: "Merci beaucoup !", ja: "どうぞよろしくお願いします！" }
+questions:
+  - q: "Comment s'appelle le chat ?"
+    q_ja: "猫の名前は？"
+    choices: ["Caramel", "Léo", "Victor"]
+    answer: 0
+  - q: "Le chat est de quelle couleur ?"
+    q_ja: "猫は何色？"
+    choices: ["noir et blanc", "roux", "gris"]
+    answer: 1
+  - q: "Le chat a quel âge ?"
+    q_ja: "猫は何歳？"
+    choices: ["deux ans", "sept ans", "douze ans"]
+    answer: 1
+  - q: "Le collier de Caramel est de quelle couleur ?"
+    q_ja: "カラメルの首輪は何色？"
+    choices: ["rouge", "bleu", "vert"]
+    answer: 1

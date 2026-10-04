@@ -1,0 +1,38 @@
+# 単元 08 の文書 2：観光案内所の週末のプログラム（DELF A1 の「読む」の形式）
+# 予定表は DELF A1 の読解によく出る文書で、曜日・時刻・場所・値段を表から探す練習になる。
+# 文書 1（メール）と type を変え、書き手のいない案内なので男性の声（voice なし）で読む。
+# 時刻・値段は音声で読み間違えないよう、fr では綴りで書いている。
+unit: "08"
+title: "アヌシーの週末のプログラム"
+type: "program"
+situation: "アヌシーの観光案内所に、週末のイベントの予定表が貼ってある"
+header:
+  - "Office de tourisme d'Annecy"
+  - "Programme du week-end"
+lines:
+  - { fr: "Ce week-end, il va faire beau à Annecy !", ja: "今週末のアヌシーはいい天気になります！" }
+  - { fr: "Samedi matin, de 9 h à midi : promenade en bateau sur le lac.", tts: "Samedi matin, de neuf heures à midi : promenade en bateau sur le lac.", ja: "土曜日の午前、9 時から 12 時：湖の遊覧船。" }
+  - { fr: "Prix : 15 € par personne, gratuit pour les enfants.", tts: "Prix : quinze euros par personne, gratuit pour les enfants.", ja: "料金：1 人 15 ユーロ、子どもは無料。" }
+  - { fr: "Samedi après-midi, à 14 h 30 : visite du château avec un guide.", tts: "Samedi après-midi, à quatorze heures trente : visite du château avec un guide.", ja: "土曜日の午後、14 時半：ガイド付きのお城見学。" }
+  - { fr: "Samedi soir, à partir de 20 h : concert gratuit au bord du lac.", tts: "Samedi soir, à partir de vingt heures : concert gratuit au bord du lac.", ja: "土曜日の夜、20 時から：湖のほとりで無料コンサート。" }
+  - { fr: "Dimanche matin, de 8 h à 13 h : marché de la vieille ville.", tts: "Dimanche matin, de huit heures à treize heures : marché de la vieille ville.", ja: "日曜日の午前、8 時から 13 時：旧市街の市場。" }
+  - { fr: "Dimanche après-midi : randonnée à la montagne, départ à 14 h devant l'office de tourisme.", tts: "Dimanche après-midi : randonnée à la montagne, départ à quatorze heures devant l'office de tourisme.", ja: "日曜日の午後：山のハイキング。14 時に観光案内所の前から出発。" }
+  - { fr: "En cas de pluie, pas de randonnée.", ja: "雨の場合、ハイキングは中止です。" }
+  - { fr: "Réservation obligatoire pour le bateau et la randonnée.", ja: "遊覧船とハイキングは予約が必要です。" }
+questions:
+  - q: "Où est la promenade en bateau ?"
+    q_ja: "遊覧船はどこで乗る？"
+    choices: ["Sur la mer", "Sur le lac", "Sur la rivière"]
+    answer: 1
+  - q: "Combien coûte la promenade en bateau pour un adulte ?"
+    q_ja: "大人 1 人の遊覧船の料金はいくら？"
+    choices: ["Cinq euros", "Quinze euros", "C'est gratuit."]
+    answer: 1
+  - q: "Quand est le concert ?"
+    q_ja: "コンサートはいつ？"
+    choices: ["Samedi soir", "Dimanche matin", "Dimanche après-midi"]
+    answer: 0
+  - q: "S'il pleut dimanche, qu'est-ce qu'il n'y a pas ?"
+    q_ja: "日曜日に雨が降ったら、何がなくなる？"
+    choices: ["Le marché", "Le concert", "La randonnée"]
+    answer: 2

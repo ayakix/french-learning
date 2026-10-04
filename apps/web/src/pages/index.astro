@@ -1,16 +1,19 @@
 ---
 import { getCollection } from 'astro:content';
 import Base from '../layouts/Base.astro';
-import { listeningId } from '../lib/materials';
+import { documentId, listeningId } from '../lib/materials';
 
 // 単元 01 以降は教材の YAML から一覧を作る（教材を足すとリンクも自動で増える）
 const vocab = await getCollection('vocab');
 const reading = await getCollection('reading');
 const listening = await getCollection('listening');
+const documents = await getCollection('documents');
 
-const units = [...new Set([...vocab, ...reading, ...listening].map((e) => e.data.unit))].sort();
+const units = [...new Set([...vocab, ...reading, ...listening, ...documents].map((e) => e.data.unit))].sort();
+// 単元 11（DELF 対策）は単語やリーディングがなく、模試のタイトルは単元名にならないため、名前をここに書く
+const extraTitles: Record<string, string> = { '11': 'DELF 対策（模試）' };
 const unitTitle = (unit: string) =>
-  [...vocab, ...reading].find((e) => e.data.unit === unit)?.data.title ?? '';
+  [...vocab, ...reading].find((e) => e.data.unit === unit)?.data.title ?? extraTitles[unit] ?? '';
 ---
 
 <Base title="ホーム">
@@ -59,6 +62,14 @@ const unitTitle = (unit: string) =>
               .map((e) => (
                 <li>
                   <a href={`/listening/${listeningId(e)}`}>聞き取り：{e.data.title}</a>
+                </li>
+              ))}
+            {documents
+              .filter((e) => e.data.unit === unit)
+              .sort((a, b) => documentId(a).localeCompare(documentId(b)))
+              .map((e) => (
+                <li>
+                  <a href={`/document/${documentId(e)}`}>読む（DELF 形式）：{e.data.title}</a>
                 </li>
               ))}
           </ul>

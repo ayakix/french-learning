@@ -1,0 +1,41 @@
+# 単元 02 の文書 1：ホームステイ先の家族からのメール（DELF A1 の「読む」の形式）
+# DELF A1 の読解は、短い実用文書から人・場所・日時・持ち物などの情報を探す問題。
+# この単元の avoir・所有形容詞・形容詞の一致で、家族の人数・名前・年齢・外見・性格を読み取る練習にしている。
+# 1 行ずつ音声も付けているのは、読んだ後に音で確かめ、シャドーイングにも使えるようにするため。
+unit: "02"
+title: "ホームステイ先の家族からのメール"
+type: "email"
+situation: "リヨンでホームステイをするケンジに、受け入れ先の家族のカミーユからメールが届いた"
+header:
+  - "De : Camille Moreau"
+  - "À : Kenji Sato"
+  - "Objet : Ta famille à Lyon"
+lines:
+  - { voice: "lucie", fr: "Bonjour Kenji,", ja: "ケンジさん、こんにちは。" }
+  - { voice: "lucie", fr: "Je m'appelle Camille Moreau. Je suis ta famille d'accueil à Lyon !", ja: "カミーユ・モローです。リヨンでのあなたのホストファミリーです！" }
+  - { voice: "lucie", fr: "Nous sommes cinq dans la famille.", ja: "私たちは 5 人家族です。" }
+  - { voice: "lucie", fr: "Mon mari s'appelle Marc. Il est grand, brun et très drôle.", ja: "夫の名前はマルク。背が高くて髪が黒っぽく、とてもおもしろい人です。" }
+  - { voice: "lucie", fr: "Nous avons deux enfants : Lucas a quinze ans et Inès a dix ans.", ja: "子どもは 2 人。リュカは 15 歳、イネスは 10 歳です。" }
+  - { voice: "lucie", fr: "Lucas est sportif et un peu timide. Inès est très bavarde !", ja: "リュカはスポーツ好きで、少し内気です。イネスはとてもおしゃべりです！" }
+  - { voice: "lucie", fr: "Ma mère, Hélène, est aussi avec nous. Elle est âgée et très gentille.", ja: "私の母のエレーヌも一緒です。高齢で、とても優しい人です。" }
+  - { voice: "lucie", fr: "Nous avons aussi un chien, Filou. Il est petit et blanc.", ja: "犬のフィルーもいます。小さくて白い犬です。" }
+  - { voice: "lucie", fr: "Et toi, tu as des frères et sœurs ? Tu as un animal ?", ja: "あなたは？きょうだいはいる？ペットは飼ってる？" }
+  - { voice: "lucie", fr: "À bientôt !", ja: "またね！" }
+  - { voice: "lucie", fr: "Camille", ja: "カミーユ" }
+questions:
+  - q: "Camille a combien d'enfants ?"
+    q_ja: "カミーユには子どもが何人いる？"
+    choices: ["un", "deux", "trois"]
+    answer: 1
+  - q: "Qui est Hélène ?"
+    q_ja: "エレーヌは誰？"
+    choices: ["la sœur de Camille", "la mère de Camille", "la fille de Camille"]
+    answer: 1
+  - q: "Comment est Lucas ?"
+    q_ja: "リュカはどんな人？"
+    choices: ["sportif et timide", "bavard et drôle", "grand et brun"]
+    answer: 0
+  - q: "Filou, c'est quel animal ?"
+    q_ja: "フィルーはどんな動物？"
+    choices: ["un chat noir", "un petit chien blanc", "un grand chien brun"]
+    answer: 1

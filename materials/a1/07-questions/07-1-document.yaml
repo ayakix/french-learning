@@ -1,0 +1,42 @@
+# 単元 07 の文書 1：友達からの質問だらけのメール（DELF A1 の「読む」の形式）
+# DELF A1 の読解は、短い実用文書から人・場所・日時・持ち物などの情報を探す問題。
+# 単元 07 は「質問する」なので、書き手が est-ce que や疑問詞で質問を並べるメールにした。
+# 質問の形を読み取れるか（何を聞かれているか）と、文中の情報（場所・交通手段・人）の両方を問う。
+# 1 行ずつ音声も付けているのは、読んだ後に音で確かめ、シャドーイングにも使えるようにするため。
+unit: "07"
+title: "友達からのメール"
+type: "email"
+situation: "リヨンに住むカミーユから、週末に遊びに来るケンにメールが届いた"
+header:
+  - "De : Camille Petit"
+  - "À : Ken Sato"
+  - "Objet : Ta visite à Lyon"
+lines:
+  - { voice: "lucie", fr: "Salut Ken,", ja: "ケン、こんにちは。" }
+  - { voice: "lucie", fr: "Merci pour ton message ! Je suis très contente de ta visite à Lyon.", ja: "メッセージありがとう！ リヨンに来てくれるの、とてもうれしい。" }
+  - { voice: "lucie", fr: "J'ai quelques questions pour toi.", ja: "いくつか聞きたいことがあるの。" }
+  - { voice: "lucie", fr: "Quand est-ce que tu arrives ? Samedi ou dimanche ?", ja: "いつ着くの？ 土曜日？ 日曜日？" }
+  - { voice: "lucie", fr: "Tu arrives à quelle heure à la gare ?", ja: "駅には何時に着く？" }
+  - { voice: "lucie", fr: "Est-ce que tu manges de la viande ? Ma mère prépare le dîner.", ja: "お肉は食べる？ 母が夕食を作るの。" }
+  - { voice: "lucie", fr: "Ma maison est à dix minutes de la gare en bus.", ja: "うちは駅からバスで 10 分よ。" }
+  - { voice: "lucie", fr: "C'est le bus numéro 32.", tts: "C'est le bus numéro trente-deux.", ja: "32 番のバスね。" }
+  - { voice: "lucie", fr: "Tu as un dictionnaire ? Ma mère ne parle pas anglais !", ja: "辞書は持ってる？ 母は英語を話さないの！" }
+  - { voice: "lucie", fr: "Réponds-moi vite, s'il te plaît.", ja: "早めに返事をちょうだいね。" }
+  - { voice: "lucie", fr: "Bisous, Camille", ja: "またね、カミーユ" }
+questions:
+  - q: "Où habite Camille ?"
+    q_ja: "カミーユはどこに住んでいる？"
+    choices: ["à Paris", "à Lyon", "à Nice"]
+    answer: 1
+  - q: "Qu'est-ce que Camille demande à Ken ?"
+    q_ja: "カミーユはケンに何を尋ねている？"
+    choices: ["son heure d'arrivée", "son numéro de téléphone", "son adresse"]
+    answer: 0
+  - q: "Comment est-ce que Ken va chez Camille ?"
+    q_ja: "ケンはどうやってカミーユの家に行く？"
+    choices: ["à pied", "en taxi", "en bus"]
+    answer: 2
+  - q: "Qui prépare le dîner ?"
+    q_ja: "夕食を作るのは誰？"
+    choices: ["Camille", "la mère de Camille", "Ken"]
+    answer: 1

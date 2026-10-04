@@ -9,89 +9,89 @@ title: "過去の出来事（入門）"
 groups:
   - name: "過去の時の表現"
     words:
-      - {fr: "hier", ipa: "ijɛʁ", ja: "昨日", pos: "副詞"}
-      - {fr: "avant-hier", ipa: "avɑ̃tjɛʁ", ja: "おととい", pos: "副詞"}
-      - {fr: "hier matin", ipa: "ijɛʁ matɛ̃", ja: "昨日の朝", pos: "表現"}
-      - {fr: "hier soir", ipa: "ijɛʁ swaʁ", ja: "昨日の夜", pos: "表現"}
-      - {fr: "tout à l'heure", ipa: "tu ta lœʁ", ja: "さっき", pos: "表現", note: "未来の「あとで」の意味もある。複合過去と一緒なら「さっき」"}
-      - {fr: "dernier", ipa: "dɛʁnje", ja: "この前の・最後の", pos: "形容詞", f: "dernière", f_ipa: "dɛʁnjɛʁ", tts: "dernier, dernière"}
-      - {fr: "la semaine dernière", ipa: "la səmɛn dɛʁnjɛʁ", ja: "先週", pos: "表現"}
-      - {fr: "le week-end dernier", ipa: "lə wikɛnd dɛʁnje", ja: "先週末", pos: "表現"}
-      - {fr: "le mois dernier", ipa: "lə mwa dɛʁnje", ja: "先月", pos: "表現"}
-      - {fr: "l'année dernière", ipa: "lane dɛʁnjɛʁ", ja: "去年", pos: "表現"}
-      - {fr: "il y a deux jours", ipa: "il ja dø ʒuʁ", ja: "2 日前", pos: "表現", note: "il y a + 期間 で「〜前」"}
-      - {fr: "il y a longtemps", ipa: "il ja lɔ̃tɑ̃", ja: "ずっと前に", pos: "表現"}
-      - {fr: "la dernière fois", ipa: "la dɛʁnjɛʁ fwa", ja: "この前・前回", pos: "表現"}
-      - {fr: "déjà", ipa: "deʒa", ja: "もう・すでに", pos: "副詞"}
-      - {fr: "pas encore", ipa: "pa zɑ̃kɔʁ", ja: "まだ〜ない", pos: "副詞", note: "Je n'ai pas encore mangé.（まだ食べていない）"}
-      - {fr: "jamais", ipa: "ʒamɛ", ja: "一度も〜ない（ne ... jamais）", pos: "副詞"}
+      - {fr: "hier", ipa: "ijɛʁ", ja: "昨日", pos: "副詞", ex: {fr: "Hier, j'ai travaillé à la maison.", ja: "昨日は家で仕事をしました。"}}
+      - {fr: "avant-hier", ipa: "avɑ̃tjɛʁ", ja: "おととい", pos: "副詞", ex: {fr: "Avant-hier, nous sommes allés au cinéma.", ja: "おととい、私たちは映画館に行きました。"}}
+      - {fr: "hier matin", ipa: "ijɛʁ matɛ̃", ja: "昨日の朝", pos: "表現", ex: {fr: "Hier matin, j'ai pris le métro.", ja: "昨日の朝、地下鉄に乗りました。"}}
+      - {fr: "hier soir", ipa: "ijɛʁ swaʁ", ja: "昨日の夜", pos: "表現", ex: {fr: "Hier soir, j'ai dîné avec Paul.", ja: "昨日の夜、ポールと夕食を食べました。"}}
+      - {fr: "tout à l'heure", ipa: "tu ta lœʁ", ja: "さっき", pos: "表現", note: "未来の「あとで」の意味もある。複合過去と一緒なら「さっき」", ex: {fr: "J'ai vu Marie tout à l'heure.", ja: "さっきマリーに会いました。"}}
+      - {fr: "dernier", ipa: "dɛʁnje", ja: "この前の・最後の", pos: "形容詞", f: "dernière", f_ipa: "dɛʁnjɛʁ", tts: "dernier, dernière", ex: {fr: "Samedi dernier, j'ai joué au tennis.", ja: "この前の土曜日、テニスをしました。"}}
+      - {fr: "la semaine dernière", ipa: "la səmɛn dɛʁnjɛʁ", ja: "先週", pos: "表現", ex: {fr: "La semaine dernière, j'ai visité Lyon.", ja: "先週、リヨンを訪れました。"}}
+      - {fr: "le week-end dernier", ipa: "lə wikɛnd dɛʁnje", ja: "先週末", pos: "表現", ex: {fr: "Le week-end dernier, j'ai fait du vélo.", ja: "先週末、自転車に乗りました。"}}
+      - {fr: "le mois dernier", ipa: "lə mwa dɛʁnje", ja: "先月", pos: "表現", ex: {fr: "Le mois dernier, ma sœur est venue à Paris.", ja: "先月、姉がパリに来ました。"}}
+      - {fr: "l'année dernière", ipa: "lane dɛʁnjɛʁ", ja: "去年", pos: "表現", ex: {fr: "L'année dernière, nous sommes allés en Italie.", ja: "去年、私たちはイタリアに行きました。"}}
+      - {fr: "il y a deux jours", ipa: "il ja dø ʒuʁ", ja: "2 日前", pos: "表現", note: "il y a + 期間 で「〜前」", ex: {fr: "Je suis arrivé à Paris il y a deux jours.", ja: "2 日前にパリに着きました。"}}
+      - {fr: "il y a longtemps", ipa: "il ja lɔ̃tɑ̃", ja: "ずっと前に", pos: "表現", ex: {fr: "J'ai lu ce livre il y a longtemps.", ja: "ずっと前にこの本を読みました。"}}
+      - {fr: "la dernière fois", ipa: "la dɛʁnjɛʁ fwa", ja: "この前・前回", pos: "表現", ex: {fr: "La dernière fois, nous avons mangé ici.", ja: "前回は、ここで食べました。"}}
+      - {fr: "déjà", ipa: "deʒa", ja: "もう・すでに", pos: "副詞", ex: {fr: "Tu as déjà mangé ?", ja: "もう食べた？"}}
+      - {fr: "pas encore", ipa: "pa zɑ̃kɔʁ", ja: "まだ〜ない", pos: "副詞", note: "Je n'ai pas encore mangé.（まだ食べていない）", ex: {fr: "Je n'ai pas encore fini mes devoirs.", ja: "まだ宿題が終わっていません。"}}
+      - {fr: "jamais", ipa: "ʒamɛ", ja: "一度も〜ない（ne ... jamais）", pos: "副詞", ex: {fr: "Je ne suis jamais allé à Marseille.", ja: "マルセイユには一度も行ったことがありません。"}}
   - name: "avoir を使う過去分詞"
     words:
-      - {fr: "fait", ipa: "fɛ", ja: "した・作った（faire の過去分詞）", pos: "動詞"}
-      - {fr: "pris", ipa: "pʁi", ja: "取った（prendre の過去分詞）", pos: "動詞"}
-      - {fr: "vu", ipa: "vy", ja: "見た（voir の過去分詞）", pos: "動詞", tts: "j'ai vu"}
-      - {fr: "lu", ipa: "ly", ja: "読んだ（lire の過去分詞）", pos: "動詞", tts: "j'ai lu"}
-      - {fr: "bu", ipa: "by", ja: "飲んだ（boire の過去分詞）", pos: "動詞", tts: "j'ai bu"}
-      - {fr: "eu", ipa: "y", ja: "持った（avoir の過去分詞）", pos: "動詞", tts: "j'ai eu", note: "綴りは eu だが発音は [y]"}
-      - {fr: "été", ipa: "ete", ja: "〜だった（être の過去分詞）", pos: "動詞", note: "être の複合過去は j'ai été（avoir を使う）"}
-      - {fr: "mangé", ipa: "mɑ̃ʒe", ja: "食べた（manger の過去分詞）", pos: "動詞"}
-      - {fr: "acheté", ipa: "aʃte", ja: "買った（acheter の過去分詞）", pos: "動詞"}
-      - {fr: "dit", ipa: "di", ja: "言った（dire の過去分詞）", pos: "動詞"}
-      - {fr: "écrit", ipa: "ekʁi", ja: "書いた（écrire の過去分詞）", pos: "動詞"}
-      - {fr: "mis", ipa: "mi", ja: "置いた・着た（mettre の過去分詞）", pos: "動詞"}
-      - {fr: "fini", ipa: "fini", ja: "終えた（finir の過去分詞）", pos: "動詞"}
-      - {fr: "dormi", ipa: "dɔʁmi", ja: "眠った（dormir の過去分詞）", pos: "動詞"}
-      - {fr: "attendu", ipa: "atɑ̃dy", ja: "待った（attendre の過去分詞）", pos: "動詞"}
-      - {fr: "perdu", ipa: "pɛʁdy", ja: "なくした（perdre の過去分詞）", pos: "動詞"}
-      - {fr: "reçu", ipa: "ʁəsy", ja: "受け取った（recevoir の過去分詞）", pos: "動詞"}
-      - {fr: "pu", ipa: "py", ja: "できた（pouvoir の過去分詞）", pos: "動詞", tts: "j'ai pu"}
+      - {fr: "fait", ipa: "fɛ", ja: "した・作った（faire の過去分詞）", pos: "動詞", ex: {fr: "J'ai fait les courses ce matin.", ja: "今朝、買い物をしました。"}}
+      - {fr: "pris", ipa: "pʁi", ja: "取った（prendre の過去分詞）", pos: "動詞", ex: {fr: "Nous avons pris le train pour Bordeaux.", ja: "私たちはボルドー行きの電車に乗りました。"}}
+      - {fr: "vu", ipa: "vy", ja: "見た（voir の過去分詞）", pos: "動詞", tts: "j'ai vu", ex: {fr: "J'ai vu un film au cinéma.", ja: "映画館で映画を見ました。"}}
+      - {fr: "lu", ipa: "ly", ja: "読んだ（lire の過去分詞）", pos: "動詞", tts: "j'ai lu", ex: {fr: "Elle a lu le journal dans le métro.", ja: "彼女は地下鉄で新聞を読みました。"}}
+      - {fr: "bu", ipa: "by", ja: "飲んだ（boire の過去分詞）", pos: "動詞", tts: "j'ai bu", ex: {fr: "Nous avons bu un café ensemble.", ja: "私たちは一緒にコーヒーを飲みました。"}}
+      - {fr: "eu", ipa: "y", ja: "持った（avoir の過去分詞）", pos: "動詞", tts: "j'ai eu", note: "綴りは eu だが発音は [y]", ex: {fr: "J'ai eu un examen ce matin.", ja: "今朝、試験がありました。"}}
+      - {fr: "été", ipa: "ete", ja: "〜だった（être の過去分詞）", pos: "動詞", note: "être の複合過去は j'ai été（avoir を使う）", ex: {fr: "J'ai été malade la semaine dernière.", ja: "先週は病気でした。"}}
+      - {fr: "mangé", ipa: "mɑ̃ʒe", ja: "食べた（manger の過去分詞）", pos: "動詞", ex: {fr: "Nous avons mangé au restaurant.", ja: "私たちはレストランで食べました。"}}
+      - {fr: "acheté", ipa: "aʃte", ja: "買った（acheter の過去分詞）", pos: "動詞", ex: {fr: "J'ai acheté du pain et du fromage.", ja: "パンとチーズを買いました。"}}
+      - {fr: "dit", ipa: "di", ja: "言った（dire の過去分詞）", pos: "動詞", ex: {fr: "Qu'est-ce qu'il a dit ?", ja: "彼は何て言ったの？"}}
+      - {fr: "écrit", ipa: "ekʁi", ja: "書いた（écrire の過去分詞）", pos: "動詞", ex: {fr: "J'ai écrit une lettre à ma mère.", ja: "母に手紙を書きました。"}}
+      - {fr: "mis", ipa: "mi", ja: "置いた・着た（mettre の過去分詞）", pos: "動詞", ex: {fr: "Elle a mis une robe rouge.", ja: "彼女は赤いワンピースを着ました。"}}
+      - {fr: "fini", ipa: "fini", ja: "終えた（finir の過去分詞）", pos: "動詞", ex: {fr: "J'ai fini mon travail à six heures.", ja: "6 時に仕事を終えました。"}}
+      - {fr: "dormi", ipa: "dɔʁmi", ja: "眠った（dormir の過去分詞）", pos: "動詞", ex: {fr: "Tu as bien dormi ?", ja: "よく眠れた？"}}
+      - {fr: "attendu", ipa: "atɑ̃dy", ja: "待った（attendre の過去分詞）", pos: "動詞", ex: {fr: "J'ai attendu le bus pendant vingt minutes.", ja: "20 分間バスを待ちました。"}}
+      - {fr: "perdu", ipa: "pɛʁdy", ja: "なくした（perdre の過去分詞）", pos: "動詞", ex: {fr: "J'ai perdu mes clés.", ja: "鍵をなくしました。"}}
+      - {fr: "reçu", ipa: "ʁəsy", ja: "受け取った（recevoir の過去分詞）", pos: "動詞", ex: {fr: "J'ai reçu un message de Léa.", ja: "レアからメッセージが届きました。"}}
+      - {fr: "pu", ipa: "py", ja: "できた（pouvoir の過去分詞）", pos: "動詞", tts: "j'ai pu", ex: {fr: "Désolé, je n'ai pas pu venir.", ja: "ごめん、来られなかった。"}}
   - name: "être を使う過去分詞"
     words:
-      - {fr: "allé", ipa: "ale", ja: "行った（aller の過去分詞）", pos: "動詞", note: "être を使う動詞は主語に性数一致する（elle est allée）"}
-      - {fr: "venu", ipa: "vəny", ja: "来た（venir の過去分詞）", pos: "動詞"}
-      - {fr: "parti", ipa: "paʁti", ja: "出発した（partir の過去分詞）", pos: "動詞"}
-      - {fr: "arrivé", ipa: "aʁive", ja: "着いた（arriver の過去分詞）", pos: "動詞"}
-      - {fr: "rentré", ipa: "ʁɑ̃tʁe", ja: "帰った（rentrer の過去分詞）", pos: "動詞"}
-      - {fr: "resté", ipa: "ʁɛste", ja: "とどまった（rester の過去分詞）", pos: "動詞"}
-      - {fr: "né", ipa: "ne", ja: "生まれた（naître の過去分詞）", pos: "動詞", tts: "je suis né", note: "Je suis né(e) à Tokyo.（東京で生まれました）"}
-      - {fr: "mort", ipa: "mɔʁ", ja: "死んだ（mourir の過去分詞）", pos: "動詞"}
-      - {fr: "sorti", ipa: "sɔʁti", ja: "出かけた（sortir の過去分詞）", pos: "動詞"}
-      - {fr: "entré", ipa: "ɑ̃tʁe", ja: "入った（entrer の過去分詞）", pos: "動詞"}
-      - {fr: "monté", ipa: "mɔ̃te", ja: "上った・乗った（monter の過去分詞）", pos: "動詞"}
-      - {fr: "descendu", ipa: "desɑ̃dy", ja: "降りた（descendre の過去分詞）", pos: "動詞"}
-      - {fr: "tombé", ipa: "tɔ̃be", ja: "転んだ・落ちた（tomber の過去分詞）", pos: "動詞"}
-      - {fr: "retourné", ipa: "ʁətuʁne", ja: "（また）行った・戻った（retourner の過去分詞）", pos: "動詞"}
+      - {fr: "allé", ipa: "ale", ja: "行った（aller の過去分詞）", pos: "動詞", note: "être を使う動詞は主語に性数一致する（elle est allée）", ex: {fr: "Il est allé à la plage.", ja: "彼はビーチに行きました。"}}
+      - {fr: "venu", ipa: "vəny", ja: "来た（venir の過去分詞）", pos: "動詞", ex: {fr: "Ils sont venus chez moi samedi.", ja: "彼らは土曜日に私の家に来ました。"}}
+      - {fr: "parti", ipa: "paʁti", ja: "出発した（partir の過去分詞）", pos: "動詞", ex: {fr: "Le train est déjà parti !", ja: "電車はもう出発しちゃった！"}}
+      - {fr: "arrivé", ipa: "aʁive", ja: "着いた（arriver の過去分詞）", pos: "動詞", ex: {fr: "Nous sommes arrivés à la gare à midi.", ja: "私たちは正午に駅に着きました。"}}
+      - {fr: "rentré", ipa: "ʁɑ̃tʁe", ja: "帰った（rentrer の過去分詞）", pos: "動詞", ex: {fr: "Je suis rentré tard hier soir.", ja: "昨日の夜は遅く帰りました。"}}
+      - {fr: "resté", ipa: "ʁɛste", ja: "とどまった（rester の過去分詞）", pos: "動詞", ex: {fr: "Dimanche, elle est restée à la maison.", ja: "日曜日、彼女は家にいました。"}}
+      - {fr: "né", ipa: "ne", ja: "生まれた（naître の過去分詞）", pos: "動詞", tts: "je suis né", note: "Je suis né(e) à Tokyo.（東京で生まれました）", ex: {fr: "Je suis né à Osaka.", ja: "大阪で生まれました。"}}
+      - {fr: "mort", ipa: "mɔʁ", ja: "死んだ（mourir の過去分詞）", pos: "動詞", ex: {fr: "Mon grand-père est mort il y a longtemps.", ja: "祖父はずっと前に亡くなりました。"}}
+      - {fr: "sorti", ipa: "sɔʁti", ja: "出かけた（sortir の過去分詞）", pos: "動詞", ex: {fr: "Samedi soir, nous sommes sortis avec des amis.", ja: "土曜の夜、友達と出かけました。"}}
+      - {fr: "entré", ipa: "ɑ̃tʁe", ja: "入った（entrer の過去分詞）", pos: "動詞", ex: {fr: "Elle est entrée dans le magasin.", ja: "彼女は店に入りました。"}}
+      - {fr: "monté", ipa: "mɔ̃te", ja: "上った・乗った（monter の過去分詞）", pos: "動詞", ex: {fr: "Nous sommes montés dans le bus.", ja: "私たちはバスに乗りました。"}}
+      - {fr: "descendu", ipa: "desɑ̃dy", ja: "降りた（descendre の過去分詞）", pos: "動詞", ex: {fr: "Je suis descendu du train à Nice.", ja: "ニースで電車を降りました。"}}
+      - {fr: "tombé", ipa: "tɔ̃be", ja: "転んだ・落ちた（tomber の過去分詞）", pos: "動詞", ex: {fr: "Il est tombé dans la rue.", ja: "彼は道で転びました。"}}
+      - {fr: "retourné", ipa: "ʁətuʁne", ja: "（また）行った・戻った（retourner の過去分詞）", pos: "動詞", ex: {fr: "Je suis retourné au musée dimanche.", ja: "日曜日にまた美術館に行きました。"}}
   - name: "週末・旅行の出来事"
     words:
-      - {fr: "un anniversaire", ipa: "œ̃ nanivɛʁsɛʁ", ja: "誕生日", pos: "名詞", g: "m"}
-      - {fr: "une soirée", ipa: "yn swaʁe", ja: "夜の集まり・夜", pos: "名詞", g: "f"}
-      - {fr: "un mariage", ipa: "œ̃ maʁjaʒ", ja: "結婚式", pos: "名詞", g: "m"}
-      - {fr: "un cadeau", ipa: "œ̃ kado", ja: "プレゼント", pos: "名詞", g: "m", pl: "des cadeaux"}
-      - {fr: "un séjour", ipa: "œ̃ seʒuʁ", ja: "滞在", pos: "名詞", g: "m"}
-      - {fr: "un spectacle", ipa: "œ̃ spɛktakl", ja: "ショー・公演", pos: "名詞", g: "m"}
-      - {fr: "une randonnée", ipa: "yn ʁɑ̃dɔne", ja: "ハイキング", pos: "名詞", g: "f"}
-      - {fr: "un pique-nique", ipa: "œ̃ piknik", ja: "ピクニック", pos: "名詞", g: "m"}
-      - {fr: "une photo", ipa: "yn fɔto", ja: "写真", pos: "名詞", g: "f"}
-      - {fr: "un souvenir", ipa: "œ̃ suvniʁ", ja: "思い出・お土産", pos: "名詞", g: "m"}
+      - {fr: "un anniversaire", ipa: "œ̃ nanivɛʁsɛʁ", ja: "誕生日", pos: "名詞", g: "m", ex: {fr: "Samedi, je suis allé à l'anniversaire de Paul.", ja: "土曜日、ポールの誕生日会に行きました。"}}
+      - {fr: "une soirée", ipa: "yn swaʁe", ja: "夜の集まり・夜", pos: "名詞", g: "f", ex: {fr: "Nous avons dansé toute la soirée.", ja: "私たちは一晩中踊りました。"}}
+      - {fr: "un mariage", ipa: "œ̃ maʁjaʒ", ja: "結婚式", pos: "名詞", g: "m", ex: {fr: "Le mois dernier, nous sommes allés à un mariage.", ja: "先月、結婚式に行きました。"}}
+      - {fr: "un cadeau", ipa: "œ̃ kado", ja: "プレゼント", pos: "名詞", g: "m", pl: "des cadeaux", ex: {fr: "J'ai reçu un beau cadeau de ma sœur.", ja: "姉から素敵なプレゼントをもらいました。"}}
+      - {fr: "un séjour", ipa: "œ̃ seʒuʁ", ja: "滞在", pos: "名詞", g: "m", ex: {fr: "Mon séjour à Paris a été super.", ja: "パリでの滞在は最高でした。"}}
+      - {fr: "un spectacle", ipa: "œ̃ spɛktakl", ja: "ショー・公演", pos: "名詞", g: "m", ex: {fr: "Nous avons vu un spectacle au théâtre.", ja: "私たちは劇場でショーを見ました。"}}
+      - {fr: "une randonnée", ipa: "yn ʁɑ̃dɔne", ja: "ハイキング", pos: "名詞", g: "f", ex: {fr: "Dimanche, nous avons fait une randonnée.", ja: "日曜日、私たちはハイキングをしました。"}}
+      - {fr: "un pique-nique", ipa: "œ̃ piknik", ja: "ピクニック", pos: "名詞", g: "m", ex: {fr: "Samedi, on a fait un pique-nique au parc.", ja: "土曜日、公園でピクニックをしました。"}}
+      - {fr: "une photo", ipa: "yn fɔto", ja: "写真", pos: "名詞", g: "f", ex: {fr: "J'ai pris beaucoup de photos.", ja: "写真をたくさん撮りました。"}}
+      - {fr: "un souvenir", ipa: "œ̃ suvniʁ", ja: "思い出・お土産", pos: "名詞", g: "m", ex: {fr: "J'ai acheté des souvenirs pour ma famille.", ja: "家族にお土産を買いました。"}}
   - name: "出来事の動詞"
     words:
-      - {fr: "rencontrer", ipa: "ʁɑ̃kɔ̃tʁe", ja: "（人に）出会う", pos: "動詞"}
-      - {fr: "retrouver", ipa: "ʁətʁuve", ja: "（約束して）落ち合う・見つけ出す", pos: "動詞"}
-      - {fr: "oublier", ipa: "ublije", ja: "忘れる", pos: "動詞"}
-      - {fr: "perdre", ipa: "pɛʁdʁ", ja: "なくす・負ける", pos: "動詞"}
-      - {fr: "trouver", ipa: "tʁuve", ja: "見つける", pos: "動詞"}
-      - {fr: "passer", ipa: "pase", ja: "（時間を）過ごす・立ち寄る", pos: "動詞"}
-      - {fr: "fêter", ipa: "fɛte", ja: "祝う", pos: "動詞"}
-      - {fr: "recevoir", ipa: "ʁəsəvwaʁ", ja: "受け取る", pos: "動詞"}
-      - {fr: "raconter", ipa: "ʁakɔ̃te", ja: "話して聞かせる", pos: "動詞"}
-      - {fr: "rater", ipa: "ʁate", ja: "（電車などに）乗り遅れる", pos: "動詞"}
+      - {fr: "rencontrer", ipa: "ʁɑ̃kɔ̃tʁe", ja: "（人に）出会う", pos: "動詞", ex: {fr: "J'ai rencontré Julie à l'université.", ja: "ジュリーとは大学で出会いました。"}}
+      - {fr: "retrouver", ipa: "ʁətʁuve", ja: "（約束して）落ち合う・見つけ出す", pos: "動詞", ex: {fr: "J'ai retrouvé mes amis au café.", ja: "カフェで友達と落ち合いました。"}}
+      - {fr: "oublier", ipa: "ublije", ja: "忘れる", pos: "動詞", ex: {fr: "Zut, j'ai oublié mon parapluie !", ja: "しまった、傘を忘れた！"}}
+      - {fr: "perdre", ipa: "pɛʁdʁ", ja: "なくす・負ける", pos: "動詞", ex: {fr: "Notre équipe a perdu le match.", ja: "私たちのチームは試合に負けました。"}}
+      - {fr: "trouver", ipa: "tʁuve", ja: "見つける", pos: "動詞", ex: {fr: "J'ai trouvé un bon restaurant.", ja: "いいレストランを見つけました。"}}
+      - {fr: "passer", ipa: "pase", ja: "（時間を）過ごす・立ち寄る", pos: "動詞", ex: {fr: "Nous avons passé trois jours à Bordeaux.", ja: "私たちはボルドーで 3 日間過ごしました。"}}
+      - {fr: "fêter", ipa: "fɛte", ja: "祝う", pos: "動詞", ex: {fr: "Nous avons fêté Noël en famille.", ja: "家族でクリスマスを祝いました。"}}
+      - {fr: "recevoir", ipa: "ʁəsəvwaʁ", ja: "受け取る", pos: "動詞", ex: {fr: "Tu as reçu mon message ?", ja: "私のメッセージ、届いた？"}}
+      - {fr: "raconter", ipa: "ʁakɔ̃te", ja: "話して聞かせる", pos: "動詞", ex: {fr: "Léa a raconté son voyage en Espagne.", ja: "レアはスペイン旅行の話をしました。"}}
+      - {fr: "rater", ipa: "ʁate", ja: "（電車などに）乗り遅れる", pos: "動詞", ex: {fr: "J'ai raté le train de huit heures.", ja: "8 時の電車に乗り遅れました。"}}
   - name: "過去について話す表現"
     words:
-      - {fr: "Qu'est-ce que tu as fait ?", ipa: "kɛs kə ty a fɛ", ja: "何をしたの？", pos: "表現"}
-      - {fr: "Tu as passé un bon week-end ?", ipa: "ty a pase œ̃ bɔ̃ wikɛnd", ja: "いい週末だった？", pos: "表現"}
-      - {fr: "Comment ça s'est passé ?", ipa: "kɔmɑ̃ sa sɛ pase", ja: "どうだった？", pos: "表現"}
-      - {fr: "Qu'est-ce qui s'est passé ?", ipa: "kɛs ki sɛ pase", ja: "何があったの？", pos: "表現"}
-      - {fr: "C'était super !", ipa: "setɛ sypɛʁ", ja: "最高だった！", pos: "表現", note: "c'était は半過去。今は決まり文句として覚える"}
-      - {fr: "C'était bien.", ipa: "setɛ bjɛ̃", ja: "よかった。", pos: "表現"}
-      - {fr: "C'était nul.", ipa: "setɛ nyl", ja: "最悪だった。", pos: "表現"}
-      - {fr: "J'ai passé une bonne soirée.", ipa: "ʒe pase yn bɔn swaʁe", ja: "楽しい夜だった。", pos: "表現"}
+      - {fr: "Qu'est-ce que tu as fait ?", ipa: "kɛs kə ty a fɛ", ja: "何をしたの？", pos: "表現", ex: {fr: "Qu'est-ce que tu as fait dimanche ?", ja: "日曜日は何をしたの？"}}
+      - {fr: "Tu as passé un bon week-end ?", ipa: "ty a pase œ̃ bɔ̃ wikɛnd", ja: "いい週末だった？", pos: "表現", ex: {fr: "Salut ! Tu as passé un bon week-end ?", ja: "やあ！いい週末だった？"}}
+      - {fr: "Comment ça s'est passé ?", ipa: "kɔmɑ̃ sa sɛ pase", ja: "どうだった？", pos: "表現", ex: {fr: "Ton examen ? Comment ça s'est passé ?", ja: "試験は？どうだった？"}}
+      - {fr: "Qu'est-ce qui s'est passé ?", ipa: "kɛs ki sɛ pase", ja: "何があったの？", pos: "表現", ex: {fr: "Tu es en retard ! Qu'est-ce qui s'est passé ?", ja: "遅刻だね！何があったの？"}}
+      - {fr: "C'était super !", ipa: "setɛ sypɛʁ", ja: "最高だった！", pos: "表現", note: "c'était は半過去。今は決まり文句として覚える", ex: {fr: "Le concert ? C'était super !", ja: "コンサート？最高だった！"}}
+      - {fr: "C'était bien.", ipa: "setɛ bjɛ̃", ja: "よかった。", pos: "表現", ex: {fr: "Le cours de français, c'était bien.", ja: "フランス語の授業、よかったよ。"}}
+      - {fr: "C'était nul.", ipa: "setɛ nyl", ja: "最悪だった。", pos: "表現", ex: {fr: "Le match d'hier ? C'était nul.", ja: "昨日の試合？最悪だった。"}}
+      - {fr: "J'ai passé une bonne soirée.", ipa: "ʒe pase yn bɔn swaʁe", ja: "楽しい夜だった。", pos: "表現", ex: {fr: "Merci, j'ai passé une bonne soirée !", ja: "ありがとう、楽しい夜でした！"}}

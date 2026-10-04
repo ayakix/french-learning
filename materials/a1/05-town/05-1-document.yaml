@@ -1,0 +1,40 @@
+# 単元 05 の文書 1：友達からの引っ越し報告と道案内のメール（DELF A1 の「読む」の形式）
+# DELF A1 の読解は、短い実用文書から人・場所・日時・するべきことなどの情報を探す問題。
+# 単元 05 の「場所を説明する（il y a / 前置詞）」と「道案内（tourner / tout droit）」を、友達のメールという自然な場面で読ませる。
+# 1 行ずつ音声も付けているのは、読んだ後に音で確かめ、シャドーイングにも使えるようにするため。
+unit: "05"
+title: "友達からの新しい住まいのメール"
+type: "email"
+situation: "リヨンに引っ越した友達のエマから、ユキに夕食の誘いと家までの道順を書いたメールが届いた"
+header:
+  - "De : Emma Leroy"
+  - "À : Yuki Tanaka"
+  - "Objet : Mon appartement à Lyon"
+lines:
+  - { voice: "lucie", fr: "Salut Yuki,", ja: "ユキ、こんにちは。" }
+  - { voice: "lucie", fr: "Maintenant, j'habite dans un appartement à Lyon, rue de la République.", ja: "今はリヨンのレピュブリック通りのアパートに住んでいるよ。" }
+  - { voice: "lucie", fr: "C'est un deux-pièces au troisième étage, mais il n'y a pas d'ascenseur.", ja: "4 階（フランス式の 3 階）の 2 部屋の住まいだけど、エレベーターはないの。" }
+  - { voice: "lucie", fr: "Il y a un salon, une chambre, une petite cuisine et une salle de bains.", ja: "リビング、寝室、小さな台所、浴室があるよ。" }
+  - { voice: "lucie", fr: "L'appartement est très clair et il y a un balcon avec des plantes.", ja: "部屋はとても明るくて、植物のあるバルコニーもあるよ。" }
+  - { voice: "lucie", fr: "Samedi soir, je fais un dîner chez moi. Tu es libre ?", ja: "土曜日の夜、うちで夕食会をするの。空いてる？" }
+  - { voice: "lucie", fr: "Pour venir, tu prends le métro jusqu'à la place Bellecour.", ja: "来るときは、ベルクール広場まで地下鉄に乗ってね。" }
+  - { voice: "lucie", fr: "Après, tu tournes à droite et tu continues tout droit.", ja: "そこから右に曲がって、まっすぐ進んで。" }
+  - { voice: "lucie", fr: "Mon immeuble est en face de la poste, à côté d'une banque.", ja: "私の建物は郵便局の向かいで、銀行の隣だよ。" }
+  - { voice: "lucie", fr: "À samedi ! Bises, Emma", ja: "土曜日にね！ またね、エマ" }
+questions:
+  - q: "Où habite Emma ?"
+    q_ja: "エマはどこに住んでいる？"
+    choices: ["Dans une maison avec un jardin", "Dans un appartement au troisième étage", "Dans un studio au rez-de-chaussée"]
+    answer: 1
+  - q: "Quand est le dîner ?"
+    q_ja: "夕食会はいつ？"
+    choices: ["Vendredi soir", "Samedi soir", "Dimanche midi"]
+    answer: 1
+  - q: "À la place Bellecour, Yuki tourne où ?"
+    q_ja: "ベルクール広場で、ユキはどちらに曲がる？"
+    choices: ["À gauche", "À droite", "Au carrefour"]
+    answer: 1
+  - q: "L'immeuble d'Emma est en face de quoi ?"
+    q_ja: "エマの建物は何の向かいにある？"
+    choices: ["La banque", "La poste", "La gare"]
+    answer: 1

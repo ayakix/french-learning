@@ -1,0 +1,38 @@
+# DELF A1 聞き取り模試 2・大問 5：持ち物を伝えるメッセージ
+# 本番の大問 5 は、メッセージを聞いて「画像の物が言われたかどうか」を oui / non で 5 問答える形式。
+# 画像は作れないので、各問を「メッセージに出てきた物はどれ？」の 3 択にした（正解は 1 つだけ、残り 2 つは出てこない物）。
+# 模試 1 の山の遠足とは場面を変え、海辺の週末の持ち物にした。
+unit: "11"
+title: "模試 2・大問 5：海辺の週末の持ち物"
+type: "voicemail"
+situation: "メッセージを聞きます。メッセージに出てくる物を選びます（5 問・2 回聞く）。友達のマノンが、週末の旅行の持ち物を伝えている"
+speakers:
+  manon: { name: "Manon", voice: "lucie" }
+lines:
+  - { speaker: "manon", voice: "lucie", fr: "Salut, c'est Manon ! Ce week-end, on va chez ma tante, à Biarritz.", ja: "やあ、マノンだよ！今週末は、ビアリッツのおばさんの家に行くよ。" }
+  - { speaker: "manon", voice: "lucie", fr: "La maison est près de la mer. Prends ton maillot de bain et une serviette.", ja: "家は海の近くなの。水着とタオルを持ってきてね。" }
+  - { speaker: "manon", voice: "lucie", fr: "Il fait chaud : n'oublie pas tes lunettes de soleil.", ja: "暑いから、サングラスを忘れないでね。" }
+  - { speaker: "manon", voice: "lucie", fr: "Le soir, on va jouer aux cartes. Apporte ton jeu de cartes !", ja: "夜はトランプをするよ。トランプを持ってきて！" }
+  - { speaker: "manon", voice: "lucie", fr: "Ma tante a des vélos, alors prends aussi des baskets.", ja: "おばさんは自転車を持っているから、スニーカーも持ってきてね。" }
+  - { speaker: "manon", voice: "lucie", fr: "On part samedi matin. À bientôt !", ja: "土曜日の朝に出発するよ。またね！" }
+questions:
+  - q: "Quel objet est dans le message ?"
+    q_ja: "メッセージに出てくる物は？（1）"
+    choices: ["Un sac de sport.", "Un maillot de bain.", "Un parapluie."]
+    answer: 1
+  - q: "Quel objet est dans le message ?"
+    q_ja: "メッセージに出てくる物は？（2）"
+    choices: ["Une serviette.", "Un pull.", "Un livre."]
+    answer: 0
+  - q: "Quel objet est dans le message ?"
+    q_ja: "メッセージに出てくる物は？（3）"
+    choices: ["Un chapeau.", "Une montre.", "Des lunettes de soleil."]
+    answer: 2
+  - q: "Quel jeu est dans le message ?"
+    q_ja: "メッセージに出てくる遊び道具は？"
+    choices: ["Un ballon.", "Un jeu de cartes.", "Une guitare."]
+    answer: 1
+  - q: "Quelles chaussures sont dans le message ?"
+    q_ja: "メッセージに出てくる靴は？"
+    choices: ["Des sandales.", "Des bottes.", "Des baskets."]
+    answer: 2

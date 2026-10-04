@@ -1,0 +1,40 @@
+# 単元 10 の文書 2：語学学校の掲示「美術館への遠足」（DELF A1 の「読む」の形式）
+# DELF A1 の読解は、短い実用文書から人・場所・日時・値段・持ち物などの情報を探す問題。
+# 掲示は「申し込み方（用紙の記入・署名・締め切り）」まで書かれていることが多いので、単元 10 の用紙の語彙と結び付けた。
+# 掲示の指示は vous の命令形で書かれるのが普通なので、命令形は「決まった形」として読むだけにしている。
+# 1 行ずつ音声も付けているのは、読んだ後に音で確かめ、シャドーイングにも使えるようにするため。
+unit: "10"
+title: "語学学校の掲示：美術館への遠足"
+type: "notice"
+situation: "パリの語学学校の入り口に、オルセー美術館への遠足のお知らせが貼ってある"
+header:
+  - "École de langues Paris Centre"
+  - "INFORMATION : SORTIE AU MUSÉE"
+lines:
+  - { fr: "Sortie au musée d'Orsay le samedi 14 novembre.", tts: "Sortie au musée d'Orsay le samedi quatorze novembre.", ja: "11 月 14 日（土）にオルセー美術館へ遠足に行きます。" }
+  - { fr: "Rendez-vous à 9 h 30 devant l'école.", tts: "Rendez-vous à neuf heures et demie devant l'école.", ja: "9 時半に学校の前に集合です。" }
+  - { fr: "Nous allons au musée en métro.", ja: "美術館へは地下鉄で行きます。" }
+  - { fr: "Le prix : 15 €, avec le billet du musée et le déjeuner.", tts: "Le prix : quinze euros, avec le billet du musée et le déjeuner.", ja: "料金：15 ユーロ（美術館の入場券と昼食込み）。" }
+  - { fr: "Pour vous inscrire, remplissez le formulaire à l'accueil.", ja: "申し込みは、受付で申込書に記入してください。" }
+  - { fr: "N'oubliez pas de signer le formulaire.", ja: "申込書への署名を忘れないでください。" }
+  - { fr: "Inscription avant le mardi 10 novembre.", tts: "Inscription avant le mardi dix novembre.", ja: "申し込みは 11 月 10 日（火）まで。" }
+  - { fr: "Le jour de la sortie, apportez votre carte d'étudiant.", ja: "遠足の日は、学生証を持ってきてください。" }
+  - { fr: "Attention : 20 places seulement !", tts: "Attention : vingt places seulement !", ja: "注意：定員は 20 名だけです！" }
+  - { fr: "Des questions ? Écrivez un courriel à l'accueil.", ja: "質問は受付にメールで。" }
+questions:
+  - q: "Où va la sortie ?"
+    q_ja: "遠足はどこへ行く？"
+    choices: ["Au musée d'Orsay", "Au cinéma", "À la tour Eiffel"]
+    answer: 0
+  - q: "À quelle heure est le rendez-vous ?"
+    q_ja: "集合は何時？"
+    choices: ["9 h", "9 h 30", "10 h 30"]
+    answer: 1
+  - q: "Combien coûte la sortie ?"
+    q_ja: "遠足の料金はいくら？"
+    choices: ["5 €", "15 €", "50 €"]
+    answer: 1
+  - q: "Qu'est-ce que les étudiants apportent le jour de la sortie ?"
+    q_ja: "遠足の日、学生は何を持っていく？"
+    choices: ["Le formulaire", "Un billet de métro", "La carte d'étudiant"]
+    answer: 2

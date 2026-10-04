@@ -1,0 +1,44 @@
+# 単元 03 の文書 1：ホームステイ先からのメール（DELF A1 の「読む」の形式）
+# DELF A1 の読解は、短い実用文書から人・場所・日時・持ち物などの情報を探す問題。
+# 単元 03 の日課（起きる・食事・通学の時刻と手段）を、ホストファミリーが説明するメールにしたのは、
+# 留学先で実際に読む場面で、時刻・乗り物・持ち物という DELF の頻出情報がまとめて出せるため。
+# 1 行ずつ音声も付けているのは、読んだ後に音で確かめ、シャドーイングにも使えるようにするため。
+# 書き手（クレール）が女性なので、本文の各行に voice: "lucie" を付ける。
+unit: "03"
+title: "ホームステイ先からのメール"
+type: "email"
+situation: "リヨンのホストファミリーのクレールから、ホームステイを始めるケンジにメールが届いた"
+header:
+  - "De : Claire Dubois"
+  - "À : Kenji Sato"
+  - "Objet : La vie à la maison"
+lines:
+  - { voice: "lucie", fr: "Bonjour Kenji,", ja: "ケンジさん、こんにちは。" }
+  - { voice: "lucie", fr: "Je suis Claire Dubois, ta famille d'accueil à Lyon.", ja: "リヨンのホストファミリーのクレール・デュボワです。" }
+  - { voice: "lucie", fr: "Voici notre routine de la semaine.", ja: "私たちの平日の過ごし方を書きますね。" }
+  - { voice: "lucie", fr: "Le matin, nous prenons le petit-déjeuner à 7 h.", tts: "Le matin, nous prenons le petit-déjeuner à sept heures.", ja: "朝は 7 時に朝食をとります。" }
+  - { voice: "lucie", fr: "Mon mari quitte la maison à 7 h 30, en voiture.", tts: "Mon mari quitte la maison à sept heures et demie, en voiture.", ja: "夫は 7 時半に車で家を出ます。" }
+  - { voice: "lucie", fr: "Tes cours commencent à 9 h, à l'école Lumière.", tts: "Tes cours commencent à neuf heures, à l'école Lumière.", ja: "あなたの授業は 9 時から、リュミエール校で始まります。" }
+  - { voice: "lucie", fr: "L'école est à vingt minutes à pied.", ja: "学校までは歩いて 20 分です。" }
+  - { voice: "lucie", fr: "Le soir, nous dînons ensemble à 19 h 30.", tts: "Le soir, nous dînons ensemble à dix-neuf heures trente.", ja: "夜は 19 時 30 分にみんなで夕食をとります。" }
+  - { voice: "lucie", fr: "Le dimanche, nous nous levons tard !", ja: "日曜日は遅く起きます！" }
+  - { voice: "lucie", fr: "Merci d'apporter ta serviette et ton shampoing.", ja: "タオルとシャンプーは持ってきてくださいね。" }
+  - { voice: "lucie", fr: "À bientôt !", ja: "では、また近いうちに！" }
+  - { voice: "lucie", fr: "Claire", ja: "クレール" }
+questions:
+  - q: "À quelle heure est le petit-déjeuner ?"
+    q_ja: "朝食は何時ですか？"
+    choices: ["7 h", "7 h 30", "9 h"]
+    answer: 0
+  - q: "Comment Kenji arrive-t-il à l'école ?"
+    q_ja: "ケンジはどうやって学校に行きますか？"
+    choices: ["en voiture", "à pied", "en bus"]
+    answer: 1
+  - q: "Quel jour la famille se lève-t-elle tard ?"
+    q_ja: "家族が遅く起きるのは何曜日ですか？"
+    choices: ["le samedi", "le lundi", "le dimanche"]
+    answer: 2
+  - q: "Qu'est-ce que Kenji apporte ?"
+    q_ja: "ケンジは何を持っていきますか？"
+    choices: ["un réveil et un sac", "une serviette et du shampoing", "un parapluie et une clé"]
+    answer: 1

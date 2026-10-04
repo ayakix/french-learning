@@ -1,0 +1,41 @@
+# 単元 04 の文書 1：文通相手からのメール（DELF A1 の「読む」の形式）
+# DELF A1 の読解は、短い実用文書から人・場所・日時・持ち物などの情報を探す問題。
+# 単元 04 の目標「好き嫌いと理由を言える」に合わせ、趣味・曜日・好き嫌いを読み取る内容にしている。
+# 1 行ずつ音声も付けているのは、読んだ後に音で確かめ、シャドーイングにも使えるようにするため。
+unit: "04"
+title: "文通相手からのメール"
+type: "email"   # email（メール）/ message（SMS・SNS）/ notice（掲示・お知らせ）/ ad（広告）/ program（予定表・時刻表）/ menu（メニュー・値段表）
+situation: "語学交換サイトで知り合ったカミーユから、ユキに自己紹介のメールが届いた"
+header:
+  - "De : Camille Durand"
+  - "À : Yuki Tanaka"
+  - "Objet : Mes loisirs"
+lines:
+  - { voice: "lucie", fr: "Salut Yuki !", ja: "ユキ、こんにちは！" }
+  - { voice: "lucie", fr: "Merci pour ton message, je suis très contente.", ja: "メッセージをありがとう。とてもうれしい。" }
+  - { voice: "lucie", fr: "Je m'appelle Camille, j'ai vingt-deux ans et j'habite à Lyon.", ja: "私はカミーユ、22 歳でリヨンに住んでいます。" }
+  - { voice: "lucie", fr: "Je suis étudiante et j'adore le sport.", ja: "学生で、スポーツが大好きです。" }
+  - { voice: "lucie", fr: "Je fais de la natation le mardi et du yoga le samedi matin.", ja: "毎週火曜日に水泳を、土曜日の朝にヨガをしています。" }
+  - { voice: "lucie", fr: "Je joue aussi de la guitare, mais je ne chante pas bien !", ja: "ギターも弾くけど、歌は上手じゃないの！" }
+  - { voice: "lucie", fr: "J'aime beaucoup la musique japonaise et les mangas.", ja: "日本の音楽と漫画がとても好きです。" }
+  - { voice: "lucie", fr: "Mais je n'aime pas du tout les jeux vidéo, parce que c'est ennuyeux pour moi.", ja: "でも、テレビゲームはまったく好きじゃない。私には退屈だから。" }
+  - { voice: "lucie", fr: "Mon film préféré, c'est Le Voyage de Chihiro.", ja: "いちばん好きな映画は『千と千尋の神隠し』です。" }
+  - { voice: "lucie", fr: "Et toi, tu aimes le sport ? Tu joues d'un instrument ?", ja: "あなたは？スポーツは好き？何か楽器を弾く？" }
+  - { voice: "lucie", fr: "Bises, Camille", ja: "またね、カミーユ" }
+questions:
+  - q: "Où habite Camille ?"
+    q_ja: "カミーユはどこに住んでいる？"
+    choices: ["À Lyon", "À Paris", "À Nice"]
+    answer: 0
+  - q: "Camille fait du yoga quel jour ?"
+    q_ja: "カミーユがヨガをするのは何曜日？"
+    choices: ["Le mardi", "Le samedi matin", "Le dimanche"]
+    answer: 1
+  - q: "Camille joue de quel instrument ?"
+    q_ja: "カミーユが弾く楽器は？"
+    choices: ["Du piano", "Du violon", "De la guitare"]
+    answer: 2
+  - q: "Qu'est-ce que Camille n'aime pas ?"
+    q_ja: "カミーユが好きではないものは？"
+    choices: ["Les mangas", "Les jeux vidéo", "La musique japonaise"]
+    answer: 1

@@ -1,0 +1,34 @@
+# DELF A1 聞き取り模試 1・大問 2：駅のアナウンス
+# 本番の大問 2 は「公共の場所のアナウンス」（駅・空港・店など）を聞いて 4 問に答える形式。
+# アナウンスは遅れ・番線・時刻など数字が多く、1 回目で数字、2 回目で指示を拾う練習になる。
+# 画像の選択肢（天気・買える物など）は、短いフランス語の 3 択に置き換えている。
+unit: "11"
+title: "模試 1・大問 2：駅のアナウンス"
+type: "announcement"
+situation: "フランスの駅で、このアナウンスを聞きます。アナウンスを聞いて、質問に答えます（4 問・2 回聞く）"
+speakers:
+  annonce: { name: "Annonce", voice: "lucie" }
+lines:
+  - { speaker: "annonce", voice: "lucie", fr: "Mesdames et messieurs, votre attention, s'il vous plaît.", ja: "皆さま、お知らせいたします。" }
+  - { speaker: "annonce", voice: "lucie", fr: "Le train pour Marseille de dix heures quinze a un retard de quarante minutes.", ja: "10 時 15 分発マルセイユ行きの列車は、40 分遅れています。" }
+  - { speaker: "annonce", voice: "lucie", fr: "Il part de la voie huit, et pas de la voie trois.", ja: "3 番線ではなく、8 番線から発車します。" }
+  - { speaker: "annonce", voice: "lucie", fr: "Il pleut beaucoup aujourd'hui : restez dans la salle d'attente, s'il vous plaît.", ja: "今日は雨が強く降っています。待合室でお待ちください。" }
+  - { speaker: "annonce", voice: "lucie", fr: "Au café de la gare, il y a des sandwichs et des boissons chaudes.", ja: "駅のカフェでは、サンドイッチと温かい飲み物があります。" }
+  - { speaker: "annonce", voice: "lucie", fr: "Merci de votre compréhension.", ja: "ご理解のほどよろしくお願いいたします。" }
+questions:
+  - q: "Le train a un retard de..."
+    q_ja: "列車の遅れは？"
+    choices: ["14 minutes.", "40 minutes.", "50 minutes."]
+    answer: 1
+  - q: "Le train part de quelle voie ?"
+    q_ja: "列車は何番線から出る？"
+    choices: ["Voie 3.", "Voie 8.", "Voie 10."]
+    answer: 1
+  - q: "Quel temps fait-il ?"
+    q_ja: "天気はどう？"
+    choices: ["Il fait beau.", "Il neige.", "Il pleut."]
+    answer: 2
+  - q: "Au café de la gare, on peut acheter..."
+    q_ja: "駅のカフェで買えるのは？"
+    choices: ["des journaux.", "des sandwichs.", "des fleurs."]
+    answer: 1

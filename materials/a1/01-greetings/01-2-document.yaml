@@ -1,0 +1,39 @@
+# 単元 01 の文書 2：大学の掲示板に貼られた「言語交換の相手募集」（DELF A1 の「読む」の形式）
+# DELF A1 の読解では、掲示やお知らせから「誰が・何を求めているか」を読み取る問題が出る。
+# 自己紹介（名前・年齢・国籍・住んでいる町・学業・話す言語）がそのまま情報になるので、単元 01 の文法だけで作れる。
+# 選択肢に本文中の他の情報（espagnol、Paris など）を混ぜているのは、見つけた語をただ選ぶのではなく、何についての情報かまで読み分ける練習にするため。
+# 書き手（リュカ）が男性なので voice は付けない（標準の Nicolas）。
+unit: "01"
+title: "言語交換の相手募集"
+type: "notice"
+situation: "リヨンの大学の掲示板に、フランス人の学生が貼り紙を出している"
+header:
+  - "Échange de langues : français – japonais"
+lines:
+  - { fr: "Bonjour à tous !", ja: "みなさん、こんにちは！" }
+  - { fr: "Je m'appelle Lucas Bernard et j'ai 19 ans.", tts: "Je m'appelle Lucas Bernard et j'ai dix-neuf ans.", ja: "僕はリュカ・ベルナール、19 歳です。" }
+  - { fr: "Je suis français et j'habite à Lyon.", ja: "フランス人で、リヨンに住んでいます。" }
+  - { fr: "Je suis étudiant à l'université de Lyon.", ja: "リヨンの大学の学生です。" }
+  - { fr: "Je parle français, anglais et un peu espagnol.", ja: "フランス語、英語、それに少しスペイン語を話します。" }
+  - { fr: "J'étudie le japonais à l'université.", ja: "大学で日本語を勉強しています。" }
+  - { fr: "Vous êtes japonais ou japonaise ? Vous habitez à Lyon ?", ja: "あなたは日本人ですか？リヨンに住んでいますか？" }
+  - { fr: "Moi, je parle français avec vous, et vous, vous parlez japonais avec moi !", ja: "僕はあなたとフランス語で話し、あなたは僕と日本語で話す、という交換です！" }
+  - { fr: "Merci et à bientôt !", ja: "よろしくお願いします、ではまた！" }
+  - { fr: "Lucas", ja: "リュカ" }
+questions:
+  - q: "Lucas a quel âge ?"
+    q_ja: "リュカは何歳？"
+    choices: ["dix-sept ans", "dix-neuf ans", "vingt ans"]
+    answer: 1
+  - q: "Où habite Lucas ?"
+    q_ja: "リュカはどこに住んでいる？"
+    choices: ["à Paris", "à Nice", "à Lyon"]
+    answer: 2
+  - q: "Quelle langue étudie Lucas ?"
+    q_ja: "リュカが勉強している言語は？"
+    choices: ["le japonais", "l'espagnol", "l'anglais"]
+    answer: 0
+  - q: "Lucas veut parler avec..."
+    q_ja: "リュカが話したい相手は？"
+    choices: ["un professeur d'anglais", "une personne japonaise", "un étudiant espagnol"]
+    answer: 1

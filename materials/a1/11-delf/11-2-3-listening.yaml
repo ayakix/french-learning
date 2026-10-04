@@ -1,0 +1,33 @@
+# DELF A1 聞き取り模試 2・大問 3：不動産屋からの留守番電話
+# 本番の大問 3 は、大問 1 と同じ「留守番電話」だが、仕事・手続きなど少しあらたまった場面が多い（4 問）。
+# 模試 1 の学校とは場面を変え、部屋探しの内見の連絡にした。日時・住所・部屋の様子・持ち物を問う。
+unit: "11"
+title: "模試 2・大問 3：不動産屋からの留守番電話"
+type: "voicemail"
+situation: "あなたはフランスでアパートを探しています。不動産屋の人が、留守番電話にメッセージを残しました。メッセージを聞いて、質問に答えます（4 問・2 回聞く）"
+speakers:
+  durand: { name: "Madame Durand", voice: "lucie" }
+lines:
+  - { speaker: "durand", voice: "lucie", fr: "Bonjour, c'est Madame Durand, de l'agence Immo Plus.", ja: "こんにちは、不動産屋イモ・プリュスのデュランです。" }
+  - { speaker: "durand", voice: "lucie", fr: "J'ai un appartement pour vous, près du parc.", ja: "公園の近くに、あなたにぴったりのアパートがあります。" }
+  - { speaker: "durand", voice: "lucie", fr: "Il y a deux chambres et une grande cuisine, mais il n'y a pas de balcon.", ja: "寝室が 2 つと広い台所がありますが、バルコニーはありません。" }
+  - { speaker: "durand", voice: "lucie", fr: "On peut visiter mercredi, à dix heures et demie.", ja: "水曜日の 10 時半に内見できます。" }
+  - { speaker: "durand", voice: "lucie", fr: "L'adresse, c'est le quinze, avenue Victor Hugo.", ja: "住所はヴィクトル・ユゴー大通り 15 番地です。" }
+  - { speaker: "durand", voice: "lucie", fr: "Apportez votre passeport, s'il vous plaît. Au revoir !", ja: "パスポートを持ってきてください。さようなら！" }
+questions:
+  - q: "Dans l'appartement, il n'y a pas..."
+    q_ja: "アパートにないものは？"
+    choices: ["de cuisine.", "de chambre.", "de balcon."]
+    answer: 2
+  - q: "La visite est quel jour ?"
+    q_ja: "内見は何曜日？"
+    choices: ["Lundi.", "Mercredi.", "Vendredi."]
+    answer: 1
+  - q: "La visite est à quelle heure ?"
+    q_ja: "内見は何時？"
+    choices: ["À 10 h.", "À 10 h 30.", "À 12 h 30."]
+    answer: 1
+  - q: "Qu'est-ce que vous devez apporter ?"
+    q_ja: "何を持っていかなければならない？"
+    choices: ["Votre passeport.", "Une photo.", "De l'argent."]
+    answer: 0

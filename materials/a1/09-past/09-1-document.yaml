@@ -1,0 +1,43 @@
+# 単元 09 の文書 1：友達からの週末の報告メール（DELF A1 の「読む」の形式）
+# DELF A1 の読解は、短い実用文書から人・場所・日時・持ち物などの情報を探す問題。
+# 「週末に何をしたか」を報告するメールは、複合過去（avoir / être）がまとまって出てくる身近な場面なので選んだ。
+# 書き手が女性なので、être を使う動詞の性数一致（allée / partis / restés）も文の中で確かめられる。
+# 1 行ずつ音声も付けているのは、読んだ後に音で確かめ、シャドーイングにも使えるようにするため。
+unit: "09"
+title: "週末の報告メール"
+type: "email"
+situation: "友達のカミーユから、ユキに週末のボルドー旅行についてのメールが届いた"
+header:
+  - "De : Camille Durand"
+  - "À : Yuki Tanaka"
+  - "Objet : Mon week-end à Bordeaux"
+lines:
+  - { voice: "lucie", fr: "Bonjour Yuki,", ja: "ユキ、こんにちは。" }
+  - { voice: "lucie", fr: "Comment vas-tu ? Moi, je vais très bien !", ja: "元気？私はとても元気だよ！" }
+  - { voice: "lucie", fr: "Le week-end dernier, je suis allée à Bordeaux avec mon frère Hugo.", ja: "先週末、弟のユゴーとボルドーに行ったの。" }
+  - { voice: "lucie", fr: "Nous sommes partis samedi matin en train, à 8 h.", tts: "Nous sommes partis samedi matin en train, à huit heures.", ja: "土曜日の朝 8 時に、電車で出発したよ。" }
+  - { voice: "lucie", fr: "Samedi, nous avons visité la vieille ville et nous avons mangé dans un petit restaurant.", ja: "土曜日は旧市街を見て回って、小さなレストランで食事をしたよ。" }
+  - { voice: "lucie", fr: "Le soir, nous avons vu un spectacle de danse. C'était super !", ja: "夜はダンスのショーを見たの。最高だった！" }
+  - { voice: "lucie", fr: "Dimanche, il a plu, alors nous sommes restés à l'hôtel.", ja: "日曜日は雨が降ったから、ホテルにいたよ。" }
+  - { voice: "lucie", fr: "J'ai acheté un souvenir pour toi : une bouteille de vin !", ja: "あなたにお土産を買ったよ。ワインを 1 本！" }
+  - { voice: "lucie", fr: "Nous sommes rentrés à Paris dimanche soir.", ja: "日曜日の夜にパリに帰ってきたよ。" }
+  - { voice: "lucie", fr: "Et toi, qu'est-ce que tu as fait ce week-end ?", ja: "あなたは、この週末に何をしたの？" }
+  - { voice: "lucie", fr: "À bientôt,", ja: "またね。" }
+  - { voice: "lucie", fr: "Camille", ja: "カミーユ" }
+questions:
+  - q: "Avec qui est-ce que Camille est allée à Bordeaux ?"
+    q_ja: "カミーユは誰とボルドーに行った？"
+    choices: ["Avec son frère", "Avec Yuki", "Avec sa mère"]
+    answer: 0
+  - q: "Comment est-ce que Camille est allée à Bordeaux ?"
+    q_ja: "カミーユは何でボルドーに行った？"
+    choices: ["En voiture", "En train", "En avion"]
+    answer: 1
+  - q: "Qu'est-ce qu'ils ont fait samedi soir ?"
+    q_ja: "2 人は土曜日の夜に何をした？"
+    choices: ["Ils ont vu un spectacle.", "Ils sont restés à l'hôtel.", "Ils ont fait une randonnée."]
+    answer: 0
+  - q: "Qu'est-ce que Camille a acheté pour Yuki ?"
+    q_ja: "カミーユはユキに何を買った？"
+    choices: ["Un livre", "Une photo", "Une bouteille de vin"]
+    answer: 2

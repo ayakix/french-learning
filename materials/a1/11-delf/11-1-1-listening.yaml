@@ -1,0 +1,34 @@
+# DELF A1 聞き取り模試 1・大問 1：友達からの留守番電話
+# 本番の大問 1 は「留守番電話のメッセージ」を聞いて 4 問に答える形式（公式見本問題 SUJET_DÉMO_A1TP に合わせた）。
+# 本番では選択肢が画像の問題もあるが、画像は作れないので短いフランス語の 3 択にしている。
+# 誘い（いつ・どこで・何を持っていくか）は留守番電話の定番なので、日時・場所・持ち物を問う。
+unit: "11"
+title: "模試 1・大問 1：留守番電話"
+type: "voicemail"
+situation: "留守番電話のメッセージを聞いて、質問に答えます（4 問・2 回聞く）。フランス人の友達カミーユから電話があった"
+speakers:
+  camille: { name: "Camille", voice: "lucie" }
+lines:
+  - { speaker: "camille", voice: "lucie", fr: "Salut, c'est Camille !", ja: "やあ、カミーユだよ！" }
+  - { speaker: "camille", voice: "lucie", fr: "Samedi, c'est l'anniversaire de mon frère Lucas. Il a vingt ans !", ja: "土曜日は弟のリュカの誕生日なの。20 歳になるんだ！" }
+  - { speaker: "camille", voice: "lucie", fr: "On fait une petite fête chez moi, à sept heures et demie.", ja: "うちで小さなパーティーをするよ、7 時半から。" }
+  - { speaker: "camille", voice: "lucie", fr: "J'habite au douze, rue de la Gare, au troisième étage.", ja: "私の家は駅通り 12 番地の 4 階だよ。" }
+  - { speaker: "camille", voice: "lucie", fr: "Tu peux apporter un dessert ? Un gâteau au chocolat, par exemple.", ja: "デザートを持ってきてくれる？たとえばチョコレートケーキとか。" }
+  - { speaker: "camille", voice: "lucie", fr: "Rappelle-moi ce soir, s'il te plaît. Bisous !", ja: "今晩、折り返し電話してね。じゃあね！" }
+questions:
+  - q: "La fête, c'est pour qui ?"
+    q_ja: "パーティーは誰のため？"
+    choices: ["Pour Camille.", "Pour le frère de Camille.", "Pour la mère de Camille."]
+    answer: 1
+  - q: "La fête commence à..."
+    q_ja: "パーティーは何時に始まる？"
+    choices: ["17 h 30.", "19 h.", "19 h 30."]
+    answer: 2
+  - q: "Qu'est-ce que vous apportez ?"
+    q_ja: "あなたは何を持っていく？"
+    choices: ["Un gâteau.", "Des boissons.", "Des fleurs."]
+    answer: 0
+  - q: "Qu'est-ce que Camille demande ?"
+    q_ja: "カミーユは何を頼んでいる？"
+    choices: ["D'envoyer un message.", "De venir à la gare.", "De rappeler ce soir."]
+    answer: 2

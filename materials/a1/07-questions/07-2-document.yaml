@@ -1,0 +1,39 @@
+# 単元 07 の文書 2：観光案内所の「よくある質問」の掲示（DELF A1 の「読む」の形式）
+# DELF A1 の読解は、短い実用文書から人・場所・日時・値段などの情報を探す問題。
+# 単元 07 は「質問する」なので、質問と答えが並ぶ FAQ の形にした。疑問詞（où, quand, combien, qu'est-ce que）と
+# est-ce que がそのまま見出しになり、質問の形と答えの情報を対応させる練習になるため。
+# 掲示で書き手がいないため、音声は標準の男性の声。
+# 1 行ずつ音声も付けているのは、読んだ後に音で確かめ、シャドーイングにも使えるようにするため。
+unit: "07"
+title: "観光案内所のよくある質問"
+type: "notice"
+situation: "ニースの観光案内所の入口に、よくある質問と答えが貼ってある"
+header:
+  - "OFFICE DE TOURISME DE NICE"
+  - "Vos questions, nos réponses"
+lines:
+  - { fr: "Où est l'office de tourisme ? Place Masséna, en face de la poste.", ja: "観光案内所はどこ？ マセナ広場、郵便局の向かいです。" }
+  - { fr: "Quand est-ce que l'office est ouvert ? Du lundi au samedi, de 9 h à 18 h.", tts: "Quand est-ce que l'office est ouvert ? Du lundi au samedi, de neuf heures à dix-huit heures.", ja: "開いているのはいつ？ 月曜日から土曜日、9 時から 18 時までです。" }
+  - { fr: "Est-ce qu'il est ouvert le dimanche ? Non, il est fermé le dimanche.", ja: "日曜日は開いている？ いいえ、日曜日は閉まっています。" }
+  - { fr: "Le plan de la ville, c'est combien ? Il est gratuit !", ja: "町の地図はいくら？ 無料です！" }
+  - { fr: "Qu'est-ce qu'on peut visiter ? Le musée Matisse, le vieux Nice et la plage.", ja: "何を見に行ける？ マティス美術館、旧市街、海岸です。" }
+  - { fr: "Est-ce que vous parlez anglais ? Oui, nous parlons anglais, italien et japonais.", ja: "英語は話せる？ はい、英語・イタリア語・日本語を話します。" }
+  - { fr: "Vous avez une autre question ? Demandez un renseignement à l'accueil.", ja: "ほかに質問がありますか？ 受付でお尋ねください。" }
+  - { fr: "Vous pouvez aussi poser vos questions par e-mail.", ja: "メールで質問することもできます。" }
+questions:
+  - q: "Où est l'office de tourisme ?"
+    q_ja: "観光案内所はどこにある？"
+    choices: ["à côté de la gare", "en face de la poste", "dans le musée Matisse"]
+    answer: 1
+  - q: "Quel jour est-ce que l'office est fermé ?"
+    q_ja: "観光案内所が閉まっているのは何曜日？"
+    choices: ["le lundi", "le samedi", "le dimanche"]
+    answer: 2
+  - q: "Le plan de la ville coûte combien ?"
+    q_ja: "町の地図はいくら？"
+    choices: ["Il est gratuit.", "deux euros", "cinq euros"]
+    answer: 0
+  - q: "Quelles langues est-ce qu'on parle à l'office ?"
+    q_ja: "観光案内所で話されている言語は？"
+    choices: ["anglais, espagnol et chinois", "anglais, italien et japonais", "allemand, italien et japonais"]
+    answer: 1

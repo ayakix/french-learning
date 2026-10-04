@@ -1,0 +1,41 @@
+# 単元 10 の文書 1：友達からの誕生日ピクニックの招待メール（DELF A1 の「読む」の形式）
+# DELF A1 の読解は、短い実用文書から人・場所・日時・持ち物などの情報を探す問題。
+# 単元 10 は「書く」の単元なので、DELF A1 の「書く」で出る招待メールそのものを読ませ、返事（承諾・断り）を書く題材にも使えるようにした。
+# 1 行ずつ音声も付けているのは、読んだ後に音で確かめ、シャドーイングにも使えるようにするため。
+unit: "10"
+title: "誕生日ピクニックの招待メール"
+type: "email"
+situation: "リヨンに住むカミーユから、友達のケンジに誕生日ピクニックの招待メールが届いた"
+header:
+  - "De : Camille Petit"
+  - "À : Kenji Sato"
+  - "Objet : Mon anniversaire !"
+lines:
+  - { voice: "lucie", fr: "Salut Kenji,", ja: "やあ、ケンジ。" }
+  - { voice: "lucie", fr: "J'espère que tu vas bien.", ja: "元気だといいな。" }
+  - { voice: "lucie", fr: "Dimanche prochain, c'est mon anniversaire !", ja: "今度の日曜日は私の誕生日なの！" }
+  - { voice: "lucie", fr: "Je fais un pique-nique au parc de la Tête d'Or, à midi.", ja: "テット・ドール公園で、お昼の 12 時にピクニックをするよ。" }
+  - { voice: "lucie", fr: "On se retrouve devant la grande porte du parc.", ja: "公園の大きな門の前で待ち合わせね。" }
+  - { voice: "lucie", fr: "S'il fait beau, on va jouer au foot après le repas.", ja: "晴れたら、食事のあとにサッカーをするつもり。" }
+  - { voice: "lucie", fr: "Moi, je prépare les sandwichs et le gâteau.", ja: "私はサンドイッチとケーキを用意するね。" }
+  - { voice: "lucie", fr: "Est-ce que tu peux apporter une boisson ?", ja: "飲み物を持ってきてくれる？" }
+  - { voice: "lucie", fr: "Tu peux me répondre avant vendredi ?", ja: "金曜日までに返事をくれる？" }
+  - { voice: "lucie", fr: "Bisous,", ja: "またね。" }
+  - { voice: "lucie", fr: "Camille", ja: "カミーユより" }
+questions:
+  - q: "Pourquoi Camille écrit à Kenji ?"
+    q_ja: "カミーユがケンジにメールを書いたのはなぜ？"
+    choices: ["Pour l'inviter à son anniversaire", "Pour annuler un rendez-vous", "Pour le remercier d'un cadeau"]
+    answer: 0
+  - q: "Le pique-nique, c'est quand ?"
+    q_ja: "ピクニックはいつ？"
+    choices: ["Samedi à midi", "Dimanche à midi", "Dimanche soir"]
+    answer: 1
+  - q: "Où est-ce qu'ils se retrouvent ?"
+    q_ja: "どこで待ち合わせる？"
+    choices: ["Chez Camille", "Devant la porte du parc", "À la gare"]
+    answer: 1
+  - q: "Qu'est-ce que Kenji apporte ?"
+    q_ja: "ケンジは何を持っていく？"
+    choices: ["Un gâteau", "Des sandwichs", "Une boisson"]
+    answer: 2

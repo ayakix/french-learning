@@ -1,0 +1,33 @@
+# DELF A1 聞き取り模試 2・大問 2：スーパーのアナウンス
+# 本番の大問 2 は「公共の場所のアナウンス」（駅・空港・店など）を聞いて 4 問に答える形式。
+# 模試 1 の駅とは場面を変え、店内放送にした。閉店時刻・特売の品と値段・売り場の場所は、店のアナウンスで必ず出る情報。
+unit: "11"
+title: "模試 2・大問 2：スーパーのアナウンス"
+type: "announcement"
+situation: "フランスのスーパーマーケットで、このアナウンスを聞きます。アナウンスを聞いて、質問に答えます（4 問・2 回聞く）"
+speakers:
+  annonce: { name: "Annonce" }
+lines:
+  - { speaker: "annonce", fr: "Chers clients, bonjour et bienvenue au supermarché Bon Prix !", ja: "お客さま、こんにちは。スーパー・ボンプリへようこそ！" }
+  - { speaker: "annonce", fr: "Aujourd'hui, les fraises sont à deux euros le kilo.", ja: "本日、イチゴは 1 キロ 2 ユーロです。" }
+  - { speaker: "annonce", fr: "Les fraises sont au rayon fruits et légumes, à côté de l'entrée.", ja: "イチゴは入り口の隣の青果売り場にあります。" }
+  - { speaker: "annonce", fr: "Pour un fromage acheté, le deuxième fromage est gratuit.", ja: "チーズを 1 つお買い上げで、2 つ目は無料です。" }
+  - { speaker: "annonce", fr: "Attention : ce soir, le magasin ferme à dix-neuf heures, et pas à vingt et une heures.", ja: "ご注意ください。今晩は 21 時ではなく、19 時に閉店します。" }
+  - { speaker: "annonce", fr: "Merci et bonnes courses !", ja: "ありがとうございます。よいお買い物を！" }
+questions:
+  - q: "Les fraises coûtent..."
+    q_ja: "イチゴの値段は？"
+    choices: ["2 euros le kilo.", "3 euros le kilo.", "12 euros le kilo."]
+    answer: 0
+  - q: "Où sont les fraises ?"
+    q_ja: "イチゴはどこにある？"
+    choices: ["À côté de la caisse.", "À côté de l'entrée.", "En face de la boulangerie."]
+    answer: 1
+  - q: "Qu'est-ce qui est gratuit ?"
+    q_ja: "無料になるのは何？"
+    choices: ["Le deuxième fromage.", "Le pain.", "Les boissons."]
+    answer: 0
+  - q: "Ce soir, le magasin ferme à..."
+    q_ja: "今晩、店は何時に閉まる？"
+    choices: ["17 h.", "19 h.", "21 h."]
+    answer: 1
