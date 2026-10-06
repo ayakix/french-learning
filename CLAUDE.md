@@ -9,13 +9,15 @@ README.md も参照すること。
 
 | 合図 | 受け付ける入力 | Claude の動作 |
 |---|---|---|
-| 開始 | `Bonjour` / `bonjour` / `開始` | `date` で現在時刻を取得し、当日の journal に新しいセッションの start を記録する |
-| 終了 | `À bientôt` / `a bientot` / `終了` | `date` で現在時刻を取得して end を記録し、journal を最終版に仕上げる |
+| 開始 | `Bonjour` / `bonjour` / `開始` | `date` で現在時刻を取得し、当日の journal に新しいセッションの start を記録する。Web の開発サーバーを起動する |
+| 終了 | `À bientôt` / `a bientot` / `終了` | `date` で現在時刻を取得して end を記録し、journal を最終版に仕上げる。Web の開発サーバーを止める |
 
 - アクセント記号の有無・大文字小文字は問わない（ユーザーはまだフランス語の入力に慣れていないため）
 - その日最初のセッションは、合言葉がなくても会話開始時点を学習開始として扱う
   - `.claude/hooks/session-start.sh`（SessionStart hook）が journal を作成し、開始時刻を記録する
 - 時刻は必ず `date` コマンドで取得する。推測で書かない
+- 開発サーバーは `apps/web` で `npm run dev -- --background` で起動し、`npx astro dev stop` で止める（既に起動していたら二重に起動しない）
+  - 学習は Web の画面で行うので、学習の開始と終了に合わせて起動・停止する
 
 ### 記録の対象
 
@@ -53,6 +55,7 @@ total_minutes: 0
 - 「終了」の合図で `scripts/results` を実行し、画面ごとの結果を journal に、間違えた問題を `mistakes/` に転記する。ユーザーに結果を聞き直さない
 - 復習は Web の `/review`（間違えた後に 2 回続けて正解するまで出題される）。CLI の `scripts/quiz` の結果は自動では残らないので、間違いを手で `results/` に追記する
 - 新しい内容は Web の画面で学ぶ。画面がまだない回は、先に画面を作ってから学習に入る
+- 学習で画面を使うときは、URL を伝えるだけでなく `open -a "Google Chrome" <URL>` でユーザーの Chrome に開く（1 つ終わったら次の画面を開く）
 
 ## 教材
 

@@ -1,0 +1,62 @@
+# 00-6 リエゾンするかどうか（Web アプリの読み方ルール画面 /rules/liaison のデータ）
+# 形式は 00-2-e-rules.yaml と同じ
+#
+# show の {‿} は、判断してほしい単語の切れ目。‿ はリエゾンを表す記号で、空白を強調するより見やすいので使っている。
+# 音声は fr（普通の綴り）で読ませる。答えた後に流れる音で、つながっているかを耳でも確かめられる。
+# ルール表の例とクイズの単語は分けている。例を見て覚えた単語ではなく、ルールで判断できるかを確かめるため。
+slug: liaison
+title: "リエゾンするかどうか"
+lead: "普段は読まない語末の子音（s・x・t・d・n）が、次の単語が母音や読まない h で始まるときに読まれるのがリエゾンです。s・x は [z]、d は [t] の音でつながります。"
+choices:
+  - { id: link, name: "つなげる", hint: "語末の子音を読んで次とつなぐ" }
+  - { id: nolink, name: "つなげない", hint: "語末の子音は読まない" }
+rules:
+  - where: "冠詞・数詞 ＋ 名詞"
+    answer: link
+    examples:
+      - { fr: "les amis", ipa: "le.za.mi", ja: "友だちたち" }
+      - { fr: "un ami", ipa: "œ̃.na.mi", ja: "1 人の友だち" }
+      - { fr: "deux heures", ipa: "dø.zœʁ", ja: "2 時" }
+  - where: "代名詞 ＋ 動詞"
+    answer: link
+    note: "ils sont [il.sɔ̃]（彼らは〜だ）と ils ont [il.zɔ̃]（彼らは持っている）は、[s] か [z] かだけで動詞が変わる"
+    examples:
+      - { fr: "vous avez", ipa: "vu.za.ve", ja: "あなたは持っている" }
+      - { fr: "ils ont", ipa: "il.zɔ̃", ja: "彼らは持っている" }
+  - where: "名詞の前の形容詞 ＋ 名詞、c'est の後"
+    answer: link
+    examples:
+      - { fr: "petit ami", ipa: "pə.ti.ta.mi", ja: "恋人（男性）" }
+      - { fr: "c'est un ami", ipa: "sɛ.tœ̃.na.mi", ja: "友だちだ" }
+  - where: "et の後"
+    answer: nolink
+    examples:
+      - { fr: "un garçon et une fille", ipa: "œ̃ ɡaʁ.sɔ̃ e yn fij", ja: "男の子と女の子" }
+  - where: "単数の名詞の後"
+    answer: nolink
+    examples:
+      - { fr: "un étudiant anglais", ipa: "œ̃.ne.ty.djɑ̃ ɑ̃.ɡlɛ", ja: "イギリス人の学生" }
+  - where: "h aspiré（有音の h）の前"
+    answer: nolink
+    note: "読まない点は普通の h と同じだが、つながりを止める（l' にもならない）。綴りでは判断できないので、A1 でよく出るこの 5 語を覚える。それ以外の h（hôtel・homme・heure など）は普通の h で、つなげる"
+    # h aspiré は綴りで判断できないため、ここだけはクイズに出す単語（haricot）も例に載せている。
+    # 載せないと、クイズで「覚えていない単語」を当てずっぽうで答えることになる（2026-10-05 に実際に起きた）
+    examples:
+      - { fr: "les héros", ipa: "le e.ʁo", ja: "英雄たち" }
+      - { fr: "le haricot", ipa: "lə a.ʁi.ko", ja: "インゲン豆" }
+      - { fr: "le hamburger", ipa: "lə ɑ̃.bœʁ.ɡœʁ", ja: "ハンバーガー" }
+      - { fr: "en haut", ipa: "ɑ̃ o", ja: "上に" }
+      - { fr: "les huit jours", ipa: "le ɥi ʒuʁ", ja: "その 8 日間" }
+quiz:
+  - { fr: "les enfants", show: "les{‿}enfants", answer: link, ipa: "le.zɑ̃.fɑ̃", ja: "子どもたち" }
+  - { fr: "nous avons", show: "nous{‿}avons", answer: link, ipa: "nu.za.vɔ̃", ja: "私たちは持っている" }
+  - { fr: "trois enfants", show: "trois{‿}enfants", answer: link, ipa: "tʁwa.zɑ̃.fɑ̃", ja: "3 人の子ども" }
+  - { fr: "un hôtel", show: "un{‿}hôtel", answer: link, ipa: "œ̃.no.tɛl", ja: "1 軒のホテル" }
+  - { fr: "elles aiment", show: "elles{‿}aiment", answer: link, ipa: "ɛl.zɛm", ja: "彼女たちは好きだ" }
+  - { fr: "les écoles", show: "les{‿}écoles", answer: link, ipa: "le.ze.kɔl", ja: "学校（複数）" }
+  - { fr: "c'est intéressant", show: "c'est{‿}intéressant", answer: link, ipa: "sɛ.tɛ̃.te.ʁɛ.sɑ̃", ja: "それは面白い" }
+  - { fr: "grand homme", show: "grand{‿}homme", answer: link, ipa: "ɡʁɑ̃.tɔm", ja: "偉人" }
+  - { fr: "du pain et un café", show: "du pain et{‿}un café", answer: nolink, ipa: "dy pɛ̃ e œ̃ ka.fe", ja: "パンとコーヒー" }
+  - { fr: "un restaurant italien", show: "un restaurant{‿}italien", answer: nolink, ipa: "œ̃ ʁɛs.tɔ.ʁɑ̃ i.ta.ljɛ̃", ja: "イタリア料理店" }
+  - { fr: "les haricots", show: "les{‿}haricots", answer: nolink, ipa: "le a.ʁi.ko", ja: "インゲン豆" }
+  - { fr: "le train arrive", show: "le train{‿}arrive", answer: nolink, ipa: "lə tʁɛ̃ a.ʁiv", ja: "電車が着く" }

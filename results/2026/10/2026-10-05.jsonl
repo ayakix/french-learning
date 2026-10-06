@@ -1,0 +1,74 @@
+{"date":"2026-10-05","time":"22:52:16","page":"/review","type":"contrast","key":"contrast:u:tout","word":"tout","chosen":"u [y]","answer":"ou [u]","ok":false}
+{"date":"2026-10-05","time":"22:52:27","page":"/review","type":"contrast","key":"contrast:nasal:sain","word":"sain","chosen":"[ɑ̃] an","answer":"[ɛ̃] in","ok":false}
+{"date":"2026-10-05","time":"22:52:44","page":"/review","type":"contrast","key":"contrast:nasal:lent","word":"lent","chosen":"[ɑ̃] an","answer":"[ɑ̃] an","ok":true}
+{"date":"2026-10-05","time":"22:52:49","page":"/review","type":"contrast","key":"contrast:u:tout","word":"tout","chosen":"ou [u]","answer":"ou [u]","ok":true}
+{"date":"2026-10-05","time":"22:52:54","page":"/review","type":"contrast","key":"contrast:nasal:sain","word":"sain","chosen":"[ɛ̃] in","answer":"[ɛ̃] in","ok":true}
+{"date":"2026-10-05","time":"22:53:09","page":"/review","type":"contrast","key":"contrast:u:tout","word":"tout","chosen":"ou [u]","answer":"ou [u]","ok":true}
+{"date":"2026-10-05","time":"22:53:16","page":"/review","type":"contrast","key":"contrast:nasal:lent","word":"lent","chosen":"[ɛ̃] in","answer":"[ɑ̃] an","ok":false}
+{"date":"2026-10-05","time":"22:53:25","page":"/review","type":"contrast","key":"contrast:nasal:sain","word":"sain","chosen":"[ɛ̃] in","answer":"[ɛ̃] in","ok":true}
+{"date":"2026-10-05","time":"22:53:32","page":"/review","type":"contrast","key":"contrast:nasal:lent","word":"lent","chosen":"[ɑ̃] an","answer":"[ɑ̃] an","ok":true}
+{"date":"2026-10-05","time":"22:53:42","page":"/review","type":"contrast","key":"contrast:nasal:lent","word":"lent","chosen":"[ɛ̃] in","answer":"[ɑ̃] an","ok":false}
+{"date":"2026-10-05","time":"22:53:47","page":"/review","type":"contrast","key":"contrast:nasal:lent","word":"lent","chosen":"[ɑ̃] an","answer":"[ɑ̃] an","ok":true}
+{"date":"2026-10-05","time":"22:53:59","page":"/review","type":"contrast","key":"contrast:nasal:lent","word":"lent","chosen":"[ɑ̃] an","answer":"[ɑ̃] an","ok":true}
+{"date":"2026-10-05","time":"22:56:47","page":"/contrast/nasal","type":"contrast","key":"contrast:nasal:ton","word":"ton","chosen":"[ɔ̃] on","answer":"[ɔ̃] on","ok":true}
+{"date":"2026-10-05","time":"22:56:57","page":"/contrast/nasal","type":"contrast","key":"contrast:nasal:vent","word":"vent","chosen":"[ɑ̃] an","answer":"[ɑ̃] an","ok":true}
+{"date":"2026-10-05","time":"22:57:02","page":"/contrast/nasal","type":"contrast","key":"contrast:nasal:lin","word":"lin","chosen":"[ɛ̃] in","answer":"[ɛ̃] in","ok":true}
+{"date":"2026-10-05","time":"22:57:05","page":"/contrast/nasal","type":"contrast","key":"contrast:nasal:long","word":"long","chosen":"[ɔ̃] on","answer":"[ɔ̃] on","ok":true}
+{"date":"2026-10-05","time":"22:57:14","page":"/contrast/nasal","type":"contrast","key":"contrast:nasal:sans","word":"sans","chosen":"[ɛ̃] in","answer":"[ɑ̃] an","ok":false}
+{"date":"2026-10-05","time":"22:57:37","page":"/contrast/nasal","type":"contrast","key":"contrast:nasal:son","word":"son","chosen":"[ɔ̃] on","answer":"[ɔ̃] on","ok":true}
+{"date":"2026-10-05","time":"22:57:44","page":"/contrast/nasal","type":"contrast","key":"contrast:nasal:lin","word":"lin","chosen":"[ɛ̃] in","answer":"[ɛ̃] in","ok":true}
+{"date":"2026-10-05","time":"22:57:46","page":"/contrast/nasal","type":"contrast","key":"contrast:nasal:son","word":"son","chosen":"[ɔ̃] on","answer":"[ɔ̃] on","ok":true}
+{"date":"2026-10-05","time":"22:57:56","page":"/contrast/nasal","type":"contrast","key":"contrast:nasal:temps","word":"temps","chosen":"[ɑ̃] an","answer":"[ɑ̃] an","ok":true}
+{"date":"2026-10-05","time":"22:58:00","page":"/contrast/nasal","type":"contrast","key":"contrast:nasal:long","word":"long","chosen":"[ɔ̃] on","answer":"[ɔ̃] on","ok":true}
+{"date":"2026-10-05","time":"22:59:34","page":"/contrast/u","type":"contrast","key":"contrast:u:dessous","word":"dessous","chosen":"ou [u]","answer":"ou [u]","ok":true}
+{"date":"2026-10-05","time":"22:59:41","page":"/contrast/u","type":"contrast","key":"contrast:u:dessus","word":"dessus","chosen":"u [y]","answer":"u [y]","ok":true}
+{"date":"2026-10-05","time":"23:00:03","page":"/contrast/u","type":"contrast","key":"contrast:u:vu","word":"vu","chosen":"u [y]","answer":"u [y]","ok":true}
+{"date":"2026-10-05","time":"23:00:09","page":"/contrast/u","type":"contrast","key":"contrast:u:roue","word":"roue","chosen":"ou [u]","answer":"ou [u]","ok":true}
+{"date":"2026-10-05","time":"23:00:18","page":"/contrast/u","type":"contrast","key":"contrast:u:dessus","word":"dessus","chosen":"u [y]","answer":"u [y]","ok":true}
+{"date":"2026-10-05","time":"23:00:21","page":"/contrast/u","type":"contrast","key":"contrast:u:roue","word":"roue","chosen":"ou [u]","answer":"ou [u]","ok":true}
+{"date":"2026-10-05","time":"23:00:30","page":"/contrast/u","type":"contrast","key":"contrast:u:dessous","word":"dessous","chosen":"ou [u]","answer":"ou [u]","ok":true}
+{"date":"2026-10-05","time":"23:00:32","page":"/contrast/u","type":"contrast","key":"contrast:u:dessus","word":"dessus","chosen":"u [y]","answer":"u [y]","ok":true}
+{"date":"2026-10-05","time":"23:00:41","page":"/contrast/u","type":"contrast","key":"contrast:u:tout","word":"tout","chosen":"u [y]","answer":"ou [u]","ok":false}
+{"date":"2026-10-05","time":"23:00:51","page":"/contrast/u","type":"contrast","key":"contrast:u:vu","word":"vu","chosen":"u [y]","answer":"u [y]","ok":true}
+{"date":"2026-10-05","time":"23:01:57","page":"/contrast/r","type":"contrast","key":"contrast:r:lien","word":"lien","chosen":"[l] l","answer":"[l] l","ok":true}
+{"date":"2026-10-05","time":"23:02:00","page":"/contrast/r","type":"contrast","key":"contrast:r:rien","word":"rien","chosen":"[ʁ] r","answer":"[ʁ] r","ok":true}
+{"date":"2026-10-05","time":"23:02:19","page":"/contrast/r","type":"contrast","key":"contrast:r:lit","word":"lit","chosen":"[l] l","answer":"[l] l","ok":true}
+{"date":"2026-10-05","time":"23:02:25","page":"/contrast/r","type":"contrast","key":"contrast:r:riz","word":"riz","chosen":"[ʁ] r","answer":"[ʁ] r","ok":true}
+{"date":"2026-10-05","time":"23:02:38","page":"/contrast/r","type":"contrast","key":"contrast:r:long","word":"long","chosen":"[l] l","answer":"[l] l","ok":true}
+{"date":"2026-10-05","time":"23:02:56","page":"/contrast/r","type":"contrast","key":"contrast:r:riz","word":"riz","chosen":"[ʁ] r","answer":"[ʁ] r","ok":true}
+{"date":"2026-10-05","time":"23:03:15","page":"/contrast/r","type":"contrast","key":"contrast:r:rien","word":"rien","chosen":"[ʁ] r","answer":"[ʁ] r","ok":true}
+{"date":"2026-10-05","time":"23:03:24","page":"/contrast/r","type":"contrast","key":"contrast:r:loue","word":"loue","chosen":"[l] l","answer":"[l] l","ok":true}
+{"date":"2026-10-05","time":"23:03:31","page":"/contrast/r","type":"contrast","key":"contrast:r:long","word":"long","chosen":"[ʁ] r","answer":"[l] l","ok":false}
+{"date":"2026-10-05","time":"23:03:51","page":"/contrast/r","type":"contrast","key":"contrast:r:lien","word":"lien","chosen":"[ʁ] r","answer":"[l] l","ok":false}
+{"date":"2026-10-05","time":"23:04:00","page":"/contrast/r","type":"contrast","key":"contrast:r:loue","word":"loue","chosen":"[ʁ] r","answer":"[l] l","ok":false}
+{"date":"2026-10-05","time":"23:06:03","page":"/rules/liaison","type":"rules","key":"rules:liaison:du pain et{‿}un café","word":"du pain et{‿}un café","chosen":"つなげる","answer":"つなげない","ok":false}
+{"date":"2026-10-05","time":"23:06:24","page":"/rules/liaison","type":"rules","key":"rules:liaison:les{‿}haricots","word":"les{‿}haricots","chosen":"つなげる","answer":"つなげない","ok":false}
+{"date":"2026-10-05","time":"23:06:46","page":"/rules/liaison","type":"rules","key":"rules:liaison:grand{‿}homme","word":"grand{‿}homme","chosen":"つなげる","answer":"つなげる","ok":true}
+{"date":"2026-10-05","time":"23:06:57","page":"/rules/liaison","type":"rules","key":"rules:liaison:le train{‿}arrive","word":"le train{‿}arrive","chosen":"つなげない","answer":"つなげない","ok":true}
+{"date":"2026-10-05","time":"23:07:10","page":"/rules/liaison","type":"rules","key":"rules:liaison:les{‿}enfants","word":"les{‿}enfants","chosen":"つなげない","answer":"つなげる","ok":false}
+{"date":"2026-10-05","time":"23:07:16","page":"/rules/liaison","type":"rules","key":"rules:liaison:les{‿}enfants","word":"les{‿}enfants","chosen":"つなげる","answer":"つなげる","ok":true}
+{"date":"2026-10-05","time":"23:07:22","page":"/rules/liaison","type":"rules","key":"rules:liaison:les{‿}écoles","word":"les{‿}écoles","chosen":"つなげる","answer":"つなげる","ok":true}
+{"date":"2026-10-05","time":"23:07:33","page":"/rules/liaison","type":"rules","key":"rules:liaison:les{‿}haricots","word":"les{‿}haricots","chosen":"つなげる","answer":"つなげない","ok":false}
+{"date":"2026-10-05","time":"23:07:46","page":"/rules/liaison","type":"rules","key":"rules:liaison:trois{‿}enfants","word":"trois{‿}enfants","chosen":"つなげる","answer":"つなげる","ok":true}
+{"date":"2026-10-05","time":"23:07:53","page":"/rules/liaison","type":"rules","key":"rules:liaison:un{‿}hôtel","word":"un{‿}hôtel","chosen":"つなげない","answer":"つなげる","ok":false}
+{"date":"2026-10-05","time":"23:08:17","page":"/rules/liaison","type":"rules","key":"rules:liaison:c'est{‿}intéressant","word":"c'est{‿}intéressant","chosen":"つなげる","answer":"つなげる","ok":true}
+{"date":"2026-10-05","time":"23:10:40","page":"/contrast/s","type":"contrast","key":"contrast:s:coussin","word":"coussin","chosen":"[s] ss","answer":"[s] ss","ok":true}
+{"date":"2026-10-05","time":"23:10:42","page":"/contrast/s","type":"contrast","key":"contrast:s:basse","word":"basse","chosen":"[s] ss","answer":"[s] ss","ok":true}
+{"date":"2026-10-05","time":"23:10:48","page":"/contrast/s","type":"contrast","key":"contrast:s:poison","word":"poison","chosen":"[z] s","answer":"[z] s","ok":true}
+{"date":"2026-10-05","time":"23:10:53","page":"/contrast/s","type":"contrast","key":"contrast:s:basse","word":"basse","chosen":"[s] ss","answer":"[s] ss","ok":true}
+{"date":"2026-10-05","time":"23:10:56","page":"/contrast/s","type":"contrast","key":"contrast:s:désert","word":"désert","chosen":"[z] s","answer":"[z] s","ok":true}
+{"date":"2026-10-05","time":"23:10:59","page":"/contrast/s","type":"contrast","key":"contrast:s:poison","word":"poison","chosen":"[z] s","answer":"[z] s","ok":true}
+{"date":"2026-10-05","time":"23:11:02","page":"/contrast/s","type":"contrast","key":"contrast:s:dessert","word":"dessert","chosen":"[s] ss","answer":"[s] ss","ok":true}
+{"date":"2026-10-05","time":"23:11:05","page":"/contrast/s","type":"contrast","key":"contrast:s:désert","word":"désert","chosen":"[z] s","answer":"[z] s","ok":true}
+{"date":"2026-10-05","time":"23:11:10","page":"/contrast/s","type":"contrast","key":"contrast:s:base","word":"base","chosen":"[z] s","answer":"[z] s","ok":true}
+{"date":"2026-10-05","time":"23:11:12","page":"/contrast/s","type":"contrast","key":"contrast:s:cousin","word":"cousin","chosen":"[z] s","answer":"[z] s","ok":true}
+{"date":"2026-10-05","time":"23:12:31","page":"/contrast/sz","type":"contrast","key":"contrast:sz:ils ont","word":"ils ont","chosen":"[z]","answer":"[z]","ok":true}
+{"date":"2026-10-05","time":"23:12:35","page":"/contrast/sz","type":"contrast","key":"contrast:sz:nous savons","word":"nous savons","chosen":"[s]","answer":"[s]","ok":true}
+{"date":"2026-10-05","time":"23:12:39","page":"/contrast/sz","type":"contrast","key":"contrast:sz:elles sont","word":"elles sont","chosen":"[z]","answer":"[s]","ok":false}
+{"date":"2026-10-05","time":"23:12:48","page":"/contrast/sz","type":"contrast","key":"contrast:sz:nous avons","word":"nous avons","chosen":"[z]","answer":"[z]","ok":true}
+{"date":"2026-10-05","time":"23:12:51","page":"/contrast/sz","type":"contrast","key":"contrast:sz:ils sont","word":"ils sont","chosen":"[s]","answer":"[s]","ok":true}
+{"date":"2026-10-05","time":"23:12:55","page":"/contrast/sz","type":"contrast","key":"contrast:sz:nous savons","word":"nous savons","chosen":"[s]","answer":"[s]","ok":true}
+{"date":"2026-10-05","time":"23:12:58","page":"/contrast/sz","type":"contrast","key":"contrast:sz:ils ont","word":"ils ont","chosen":"[z]","answer":"[z]","ok":true}
+{"date":"2026-10-05","time":"23:13:00","page":"/contrast/sz","type":"contrast","key":"contrast:sz:nous avons","word":"nous avons","chosen":"[z]","answer":"[z]","ok":true}
+{"date":"2026-10-05","time":"23:13:03","page":"/contrast/sz","type":"contrast","key":"contrast:sz:elles ont","word":"elles ont","chosen":"[z]","answer":"[z]","ok":true}
+{"date":"2026-10-05","time":"23:13:06","page":"/contrast/sz","type":"contrast","key":"contrast:sz:elles sont","word":"elles sont","chosen":"[s]","answer":"[s]","ok":true}
