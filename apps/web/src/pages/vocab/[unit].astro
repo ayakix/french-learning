@@ -32,6 +32,7 @@ const total = groups.reduce((n, g) => n + g.words.length, 0);
       <div class="hide-buttons">
         <button type="button" class="pill" data-hide="ja" aria-pressed="false">意味を隠す</button>
         <button type="button" class="pill" data-hide="fr" aria-pressed="false">フランス語を隠す</button>
+        <a class="pill primary quiz-link" href={`/vocab/${unit}/quiz`}>クイズで確かめる →</a>
       </div>
       <nav class="jump" aria-label="グループ">
         {groups.map((g, i) => <a href={`#g-${i}`}>{g.name}</a>)}
@@ -120,6 +121,10 @@ const total = groups.reduce((n, g) => n + g.words.length, 0);
     display: flex;
     gap: 8px;
     flex-wrap: wrap;
+  }
+  .quiz-link {
+    margin-left: auto;
+    text-decoration: none;
   }
   .jump {
     display: flex;

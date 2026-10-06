@@ -101,11 +101,11 @@ const items = [
 </Base>
 
 <script>
-  import { loadResults, saveResult, type SavedResult } from '../scripts/results';
+  import { loadResults, saveResult, type ReviewItem, type SavedResult } from '../scripts/results';
 
   type Choice = { id: string; name: string; hint: string };
   type Item = {
-    type: 'contrast' | 'rules' | 'spelling';
+    type: 'contrast' | 'rules' | 'spelling' | 'vocab';
     key: string;
     title: string;
     href: string;
@@ -115,6 +115,7 @@ const items = [
     src: string;
     answer: string;
     choices: Choice[];
+    prompt?: string;
     before?: string;
     target?: string;
     after?: string;
@@ -180,9 +181,11 @@ const items = [
     nextButton.textContent = '▶ 次の問題';
     // どの練習の問題かを出す（選択肢の意味がわかるように）。答えのヒントにはならない
     titleLabel.textContent = current.title;
-    answers.style.gridTemplateColumns = `repeat(${current.choices.length}, 1fr)`;
-    // 綴りを選ぶ問題は選択肢が綴りそのものなので、位置で答えがわからないよう毎回混ぜる
-    const choices = current.type === 'spelling' ? [...current.choices].sort(() => Math.random() - 0.5) : current.choices;
+    // 綴り選びと単語は選択肢が答えそのものなので、位置で答えがわからないよう毎回混ぜる
+    const shuffled = current.type === 'spelling' || current.type === 'vocab';
+    const choices = shuffled ? [...current.choices].sort(() => Math.random() - 0.5) : current.choices;
+    // 単語の選択肢（意味・フランス語）は長いので 2 列にする
+    answers.style.gridTemplateColumns = `repeat(${current.type === 'vocab' ? 2 : current.choices.length}, 1fr)`;
     answers.replaceChildren(
       ...choices.map((c) => {
         const b = Object.assign(document.createElement('button'), { type: 'button', className: 'answer' });
@@ -191,8 +194,12 @@ const items = [
         return b;
       }),
     );
-    if (current.type !== 'rules') {
-      // 聞き比べと綴り選びは音だけで答える
+    if (current.prompt) {
+      // 単語の「見て意味を選ぶ」「意味からフランス語を選ぶ」は、文字だけで出題する
+      wordLabel.textContent = current.prompt;
+      replayButton.hidden = true;
+    } else if (current.type !== 'rules') {
+      // 聞き比べ・綴り選び・単語の「聞いて意味を選ぶ」は音だけで答える
       wordLabel.textContent = '🔊';
       replayButton.hidden = false;
       play(current.src);
@@ -204,6 +211,11 @@ const items = [
     }
   }
 
+  function toReviewItem(item: Item): ReviewItem {
+    const { title, href, fr, ipa, ja, src, prompt, answer, choices } = item;
+    return { title, href, fr, ipa, ja, src, prompt, answer, choices };
+  }
+
   function answer(choice: Choice) {
     if (!current) return;
     const item = current;
@@ -212,7 +224,16 @@ const items = [
     total++;
     if (ok) correct++;
     push(item.key, ok);
-    saveResult({ type: item.type, key: item.key, word: item.type === 'rules' ? `${item.before}{${item.target}}${item.after}` : item.fr, chosen: choice.name, answer: correctName, ok });
+    saveResult({
+      type: item.type,
+      key: item.key,
+      word: item.type === 'rules' ? `${item.before}{${item.target}}${item.after}` : item.fr,
+      chosen: choice.name,
+      answer: correctName,
+      ok,
+      // 単語は復習画面に問題が埋め込まれていないので、次の復習でも出せるよう中身も保存する
+      ...(item.type === 'vocab' && { item: toReviewItem(item) }),
+    });
     answers.querySelectorAll('button').forEach((b) => (b.disabled = true));
     resultLabel.className = `result ${ok ? 'ok' : 'ng'}`;
     resultLabel.textContent = `${ok ? '正解！' : '残念…'} 答えは「${correctName}」：${item.fr} [${item.ipa}]（${item.ja}）`;
@@ -245,6 +266,10 @@ const items = [
     status.textContent = '結果を読み込めませんでした。結果の保存と復習は、開発サーバー（npm run dev）でだけ動きます。';
   } else {
     for (const r of results) push(r.key, r.ok);
+    // 単語の問題は、結果に保存した中身（最後に答えたときのもの）から作る
+    const vocab = new Map<string, Item>();
+    for (const r of results) if (r.type === 'vocab' && r.item) vocab.set(r.key, { type: 'vocab', key: r.key, ...r.item });
+    items.push(...vocab.values());
     showQuestions(results);
     const left = items.filter((i) => isWeak(i.key)).length;
     if (left === 0) {

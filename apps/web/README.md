@@ -25,6 +25,7 @@ npx astro dev stop            # 停止
 | `/contrast/<slug>` | `*-contrast.yaml`（聞き比べ） |
 | `/rules/<slug>` | `*-rules.yaml`（読み方ルール） |
 | `/vocab/<単元>` | `*-vocab.yaml`（単語） |
+| `/vocab/<単元>/quiz` | `*-vocab.yaml`（単語クイズ：聞いて意味・見て意味・意味からフランス語の 3 形式、4 択） |
 | `/reading/<単元>` | `*-reading.yaml`（1 文リーディング） |
 | `/listening/<単元>-<番号>` | `*-listening.yaml`（会話・DELF 形式の聞き取り） |
 | `/document/<単元>-<番号>` | `*-document.yaml`（DELF 形式の読む文書：メール・掲示・広告など） |
