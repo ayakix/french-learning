@@ -2,7 +2,7 @@
 // 静的に書き出したサイトには API がないので、失敗しても画面の動きは止めない。
 
 export type Result = {
-  type: 'contrast' | 'rules' | 'question'; // どの形式のクイズか
+  type: 'contrast' | 'rules' | 'spelling' | 'question' | 'dictation'; // どの形式のクイズか
   key: string; // 同じ問題かどうかの判定に使う（復習画面で問題を引き当てる）
   page: string; // 答えた画面
   word: string; // 問題の単語・質問（記録を人が読むため）
@@ -35,3 +35,5 @@ export const contrastKey = (slug: string, fr: string) => `contrast:${slug}:${fr}
 // 同じ単語でも判断する箇所が違えば別の問題（bell{e} と b{e}lle）なので、show（強調の位置）で区別する
 export const rulesKey = (slug: string, show: string) => `rules:${slug}:${show}`;
 export const questionKey = (page: string, index: number) => `question:${page}:${index}`;
+export const spellingKey = (slug: string, fr: string) => `spelling:${slug}:${fr}`;
+export const dictationKey = (slug: string, fr: string) => `dictation:${slug}:${fr}`;

@@ -78,7 +78,7 @@ const quizItems = quiz.map((q) => ({ ...q, ...splitShow(q.show), src: audioUrl(q
       <p class="sub">色の付いた部分をどう読むか選ぶ。答えると発音が流れる。</p>
       <div class="quiz-controls">
         <button type="button" id="quiz-next" class="pill primary">▶ 出題する</button>
-        <span id="quiz-score" class="score">0 / 0</span>
+        <span id="quiz-score" class="score">0 / 0（全 20 問）</span>
       </div>
       <p id="quiz-word" class="quiz-word" aria-live="polite">&nbsp;</p>
       <div class="answers" style={`grid-template-columns: repeat(${choices.length}, 1fr)`}>
@@ -100,6 +100,7 @@ const quizItems = quiz.map((q) => ({ ...q, ...splitShow(q.show), src: audioUrl(q
 <script>
   import { createMistakeList } from '../../scripts/mistakes';
   import { rulesKey, saveResult } from '../../scripts/results';
+  import { ROUND_SIZE, createDeck } from '../../scripts/round';
 
   type QuizItem = {
     fr: string;
@@ -142,6 +143,7 @@ const quizItems = quiz.map((q) => ({ ...q, ...splitShow(q.show), src: audioUrl(q
   let current: QuizItem | null = null;
   let correct = 0;
   let total = 0;
+  const nextItem = createDeck(items);
 
   // innerHTML ではなく要素として組み立てる（データに < などが含まれても表示が崩れないように）
   function highlighted(item: QuizItem) {
@@ -151,9 +153,13 @@ const quizItems = quiz.map((q) => ({ ...q, ...splitShow(q.show), src: audioUrl(q
   }
 
   function ask() {
-    // 同じ問題が連続しないよう、直前と違うものを選ぶ
-    const candidates = items.filter((i) => i !== current);
-    current = candidates[Math.floor(Math.random() * candidates.length)];
+    // 20 問終わった後に押されたら、点数を 0 に戻して次の 20 問を始める（間違えた問題の一覧は残す）
+    if (total >= ROUND_SIZE) {
+      correct = 0;
+      total = 0;
+      scoreLabel.textContent = `0 / 0（全 ${ROUND_SIZE} 問）`;
+    }
+    current = nextItem();
     wordLabel.replaceChildren(highlighted(current));
     resultLabel.textContent = '';
     resultLabel.className = 'result';
@@ -166,11 +172,15 @@ const quizItems = quiz.map((q) => ({ ...q, ...splitShow(q.show), src: audioUrl(q
     total++;
     const ok = choice === current.answer;
     if (ok) correct++;
-    scoreLabel.textContent = `${correct} / ${total}`;
+    scoreLabel.textContent = `${correct} / ${total}（全 ${ROUND_SIZE} 問）`;
     resultLabel.className = `result ${ok ? 'ok' : 'ng'}`;
     resultLabel.textContent = `${ok ? '正解！' : '残念…'} 答えは「${choiceName[current.answer]}」：${current.fr} [${current.ipa}]（${current.ja}）`;
     answerButtons.forEach((b) => (b.disabled = true));
     play(current.src);
+    if (total >= ROUND_SIZE) {
+      resultLabel.textContent += `　── ${ROUND_SIZE} 問終わり：${correct} / ${ROUND_SIZE}`;
+      nextButton.textContent = `▶ もう一度 ${ROUND_SIZE} 問`;
+    }
     saveResult({
       type: 'rules',
       key: rulesKey(quiz.dataset.slug!, current.show),

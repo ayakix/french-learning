@@ -1,0 +1,216 @@
+---
+import { getCollection, type CollectionEntry } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import { audioUrl } from '../../lib/audio';
+import '../../styles/material.css';
+
+export async function getStaticPaths() {
+  const entries = await getCollection('dictations');
+  return entries.map((entry) => ({ params: { slug: entry.id }, props: { entry } }));
+}
+
+const { entry } = Astro.props as { entry: CollectionEntry<'dictations'> };
+const { title, lead, parts } = entry.data;
+---
+
+<Base title={title}>
+  <main data-slug={entry.id}>
+    <header>
+      <a href="/" class="back">← ホーム</a>
+      <h1>{title}</h1>
+      <p class="lead">{lead}</p>
+    </header>
+
+    <!-- アクセント記号はキーボードでの入れ方に慣れるまで時間がかかるので、押すだけで入力できるようにする -->
+    <div class="keys" aria-label="アクセント記号の入力">
+      {['é', 'è', 'ê', 'à', 'â', 'ç', 'ù', 'û', 'ô', 'î', 'ï', 'ë', 'œ', "'"].map((k) => (
+        <button type="button" class="key" data-key={k}>
+          {k}
+        </button>
+      ))}
+    </div>
+
+    {
+      parts.map((part) => (
+        <section class="card part">
+          <div class="section-head">
+            <h2>{part.name}</h2>
+            <span class="score" />
+          </div>
+          <p class="sub">▶ で聞いて入力し、Enter（または「答え合わせ」）。大文字・小文字と句読点は区別しません。アクセント記号は上のボタンで入力できます。</p>
+          <ol class="items">
+            {part.items.map((item) => (
+              <li class="item" data-fr={item.fr} data-ipa={item.ipa} data-ja={item.ja}>
+                <div class="row">
+                  <button type="button" class="pill play" data-src={audioUrl(item.fr)}>
+                    ▶
+                  </button>
+                  <input type="text" autocomplete="off" autocapitalize="off" spellcheck="false" lang="fr" />
+                  <button type="button" class="pill check">
+                    答え合わせ
+                  </button>
+                </div>
+                {item.hint && <p class="hint">ヒント：{item.hint}</p>}
+                <p class="result" aria-live="polite" />
+              </li>
+            ))}
+          </ol>
+        </section>
+      ))
+    }
+  </main>
+</Base>
+
+<script>
+  import { bindPlayButtons } from '../../scripts/player';
+  import { dictationKey, saveResult } from '../../scripts/results';
+
+  bindPlayButtons();
+
+  const slug = document.querySelector<HTMLElement>('main')!.dataset.slug!;
+
+  // 最後に使っていた入力欄に、アクセント記号を差し込む
+  let lastInput: HTMLInputElement | null = null;
+  document.querySelectorAll<HTMLInputElement>('.item input').forEach((input) =>
+    input.addEventListener('focus', () => (lastInput = input)),
+  );
+  document.querySelectorAll<HTMLButtonElement>('.key').forEach((key) => {
+    // クリックで入力欄からフォーカスが外れないようにする（カーソル位置を保つため）
+    key.addEventListener('mousedown', (e) => e.preventDefault());
+    key.addEventListener('click', () => {
+      if (!lastInput || lastInput.disabled) return;
+      lastInput.setRangeText(key.dataset.key!, lastInput.selectionStart ?? lastInput.value.length, lastInput.selectionEnd ?? lastInput.value.length, 'end');
+      lastInput.focus();
+    });
+  });
+
+  // 大文字・小文字、句読点、空白の違いは綴りの理解と関係ないので無視する。
+  // アポストロフィは入力方法で ' と ’ が混ざるのでそろえる
+  function normalize(s: string) {
+    return s
+      .toLowerCase()
+      .replace(/[’`]/g, "'")
+      .replace(/[.,!?;:]/g, ' ')
+      .replace(/\s+/g, ' ')
+      .trim();
+  }
+
+  // アクセント記号（ç のセディーユを含む）を外した形。「アクセント記号だけの違い」を見分けるため
+  function stripAccents(s: string) {
+    return s.normalize('NFD').replace(/[̀-ͯ]/g, '');
+  }
+
+  function judge(input: string, answer: string): 'ok' | 'near' | 'ng' {
+    const a = normalize(input);
+    const b = normalize(answer);
+    if (a === b) return 'ok';
+    if (stripAccents(a) === stripAccents(b)) return 'near';
+    return 'ng';
+  }
+
+  document.querySelectorAll<HTMLElement>('.part').forEach((part) => {
+    const items = [...part.querySelectorAll<HTMLElement>('.item')];
+    const score = part.querySelector<HTMLElement>('.score')!;
+    let ok = 0;
+    let near = 0;
+    let done = 0;
+
+    items.forEach((item) => {
+      const input = item.querySelector('input')!;
+      const checkButton = item.querySelector<HTMLButtonElement>('.check')!;
+      const result = item.querySelector<HTMLElement>('.result')!;
+      const { fr, ipa, ja } = item.dataset as { fr: string; ipa: string; ja: string };
+
+      function check() {
+        if (input.disabled || input.value.trim() === '') return;
+        const verdict = judge(input.value, fr);
+        input.disabled = true;
+        checkButton.disabled = true;
+        done++;
+        if (verdict === 'ok') ok++;
+        if (verdict === 'near') near++;
+        score.textContent = `${ok} / ${done}${near ? `（惜しい ${near}）` : ''}　全 ${items.length} 問`;
+        const mark = { ok: '⭕ 正解', near: '△ 惜しい（アクセント記号だけ違う）', ng: '❌' }[verdict];
+        result.className = `result ${verdict === 'ok' ? 'ok' : 'ng'}`;
+        result.textContent = `${mark}　${fr} [${ipa}]（${ja}）`;
+        saveResult({ type: 'dictation', key: dictationKey(slug, fr), word: fr, chosen: input.value.trim(), answer: fr, ok: verdict === 'ok' });
+        // 次の問題へ進みやすいように、次の入力欄へ移る
+        items[items.indexOf(item) + 1]?.querySelector('input')?.focus();
+      }
+
+      checkButton.addEventListener('click', check);
+      input.addEventListener('keydown', (e) => {
+        if (e.key === 'Enter' && !e.isComposing) check();
+      });
+    });
+  });
+</script>
+
+<style>
+  .keys {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    padding: 8px 0;
+    margin-bottom: 8px;
+    background: var(--bg);
+  }
+  .key {
+    min-width: 2.4em;
+    padding: 6px 8px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background: var(--surface);
+    font: inherit;
+    font-size: 1.1rem;
+    color: inherit;
+  }
+  .key:hover {
+    border-color: var(--accent);
+  }
+  .score {
+    font-weight: 600;
+  }
+  .items {
+    padding-left: 1.6em;
+    margin: 0;
+    display: grid;
+    gap: 10px;
+  }
+  .row {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+  }
+  input {
+    flex: 1;
+    min-width: 0;
+    padding: 8px 12px;
+    border: 2px solid var(--border);
+    border-radius: 10px;
+    background: var(--bg);
+    font: inherit;
+    font-size: 1.1rem;
+    color: inherit;
+  }
+  input:focus {
+    outline: none;
+    border-color: var(--accent);
+  }
+  .hint {
+    margin: 4px 0 0;
+    font-size: 0.8rem;
+    color: var(--muted);
+  }
+  .result {
+    margin: 4px 0 0;
+    font-size: 0.95rem;
+    min-height: 0;
+  }
+  .result:empty {
+    display: none;
+  }
+</style>

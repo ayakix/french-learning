@@ -88,7 +88,7 @@ const quizItems = pairs.flatMap((p) => sides.map((side) => ({ ...p[side], answer
       <div class="quiz-controls">
         <button type="button" id="quiz-next" class="pill primary">▶ 出題する</button>
         <button type="button" id="quiz-replay" class="pill" disabled>もう一度聞く</button>
-        <span id="quiz-score" class="score">0 / 0</span>
+        <span id="quiz-score" class="score">0 / 0（全 20 問）</span>
       </div>
       <div class="answers" style={`--columns: ${sides.length}`}>
         {
@@ -109,6 +109,7 @@ const quizItems = pairs.flatMap((p) => sides.map((side) => ({ ...p[side], answer
 <script>
   import { createMistakeList } from '../../scripts/mistakes';
   import { contrastKey, saveResult } from '../../scripts/results';
+  import { ROUND_SIZE, createDeck } from '../../scripts/round';
 
   // 選択肢のキー（a, b, c…）
   type Side = string;
@@ -144,11 +145,16 @@ const quizItems = pairs.flatMap((p) => sides.map((side) => ({ ...p[side], answer
   let current: QuizItem | null = null;
   let correct = 0;
   let total = 0;
+  const nextItem = createDeck(items);
 
   function ask() {
-    // 同じ単語が連続すると答えを推測できてしまうので、直前と違うものを選ぶ
-    const candidates = items.filter((i) => i !== current);
-    current = candidates[Math.floor(Math.random() * candidates.length)];
+    // 20 問終わった後に押されたら、点数を 0 に戻して次の 20 問を始める（間違えた問題の一覧は残す）
+    if (total >= ROUND_SIZE) {
+      correct = 0;
+      total = 0;
+      scoreLabel.textContent = `0 / 0（全 ${ROUND_SIZE} 問）`;
+    }
+    current = nextItem();
     resultLabel.textContent = '';
     resultLabel.className = 'result';
     answerButtons.forEach((b) => (b.disabled = false));
@@ -162,12 +168,16 @@ const quizItems = pairs.flatMap((p) => sides.map((side) => ({ ...p[side], answer
     total++;
     const ok = choice === current.answer;
     if (ok) correct++;
-    scoreLabel.textContent = `${correct} / ${total}`;
+    scoreLabel.textContent = `${correct} / ${total}（全 ${ROUND_SIZE} 問）`;
     resultLabel.className = `result ${ok ? 'ok' : 'ng'}`;
     resultLabel.textContent = `${ok ? '正解！' : '残念…'} ${current.fr} [${current.ipa}]（${current.ja}）は ${
       labels[current.answer].name
     }`;
     answerButtons.forEach((b) => (b.disabled = true));
+    if (total >= ROUND_SIZE) {
+      resultLabel.textContent += `　── ${ROUND_SIZE} 問終わり：${correct} / ${ROUND_SIZE}`;
+      nextButton.textContent = `▶ もう一度 ${ROUND_SIZE} 問`;
+    }
     saveResult({
       type: 'contrast',
       key: contrastKey(quiz.dataset.slug!, current.fr),

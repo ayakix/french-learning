@@ -1,0 +1,118 @@
+{"date":"2026-10-06","time":"15:22:25","page":"/review","type":"contrast","key":"contrast:u:tout","word":"tout","chosen":"u [y]","answer":"ou [u]","ok":false}
+{"date":"2026-10-06","time":"15:22:41","page":"/review","type":"rules","key":"rules:liaison:du pain et{‿}un café","word":"du pain et{‿}un café","chosen":"つなげる","answer":"つなげない","ok":false}
+{"date":"2026-10-06","time":"15:22:48","page":"/review","type":"contrast","key":"contrast:nasal:sans","word":"sans","chosen":"[ɑ̃] an","answer":"[ɑ̃] an","ok":true}
+{"date":"2026-10-06","time":"15:24:27","page":"/review","type":"contrast","key":"contrast:r:long","word":"long","chosen":"[l] l","answer":"[l] l","ok":true}
+{"date":"2026-10-06","time":"15:24:38","page":"/review","type":"contrast","key":"contrast:r:lien","word":"lien","chosen":"[l] l","answer":"[l] l","ok":true}
+{"date":"2026-10-06","time":"15:24:45","page":"/review","type":"contrast","key":"contrast:sz:elles sont","word":"elles sont","chosen":"[s]","answer":"[s]","ok":true}
+{"date":"2026-10-06","time":"15:24:49","page":"/review","type":"contrast","key":"contrast:nasal:sans","word":"sans","chosen":"[ɑ̃] an","answer":"[ɑ̃] an","ok":true}
+{"date":"2026-10-06","time":"15:24:56","page":"/review","type":"rules","key":"rules:liaison:les{‿}haricots","word":"les{‿}haricots","chosen":"つなげる","answer":"つなげない","ok":false}
+{"date":"2026-10-06","time":"15:25:08","page":"/review","type":"rules","key":"rules:liaison:du pain et{‿}un café","word":"du pain et{‿}un café","chosen":"つなげる","answer":"つなげない","ok":false}
+{"date":"2026-10-06","time":"15:25:17","page":"/review","type":"contrast","key":"contrast:r:loue","word":"loue","chosen":"[ʁ] r","answer":"[l] l","ok":false}
+{"date":"2026-10-06","time":"15:25:23","page":"/review","type":"rules","key":"rules:liaison:un{‿}hôtel","word":"un{‿}hôtel","chosen":"つなげる","answer":"つなげる","ok":true}
+{"date":"2026-10-06","time":"15:25:28","page":"/review","type":"contrast","key":"contrast:u:tout","word":"tout","chosen":"ou [u]","answer":"ou [u]","ok":true}
+{"date":"2026-10-06","time":"15:25:33","page":"/review","type":"rules","key":"rules:liaison:les{‿}enfants","word":"les{‿}enfants","chosen":"つなげない","answer":"つなげる","ok":false}
+{"date":"2026-10-06","time":"15:25:39","page":"/review","type":"rules","key":"rules:liaison:les{‿}haricots","word":"les{‿}haricots","chosen":"つなげる","answer":"つなげない","ok":false}
+{"date":"2026-10-06","time":"15:25:46","page":"/review","type":"rules","key":"rules:liaison:du pain et{‿}un café","word":"du pain et{‿}un café","chosen":"つなげる","answer":"つなげない","ok":false}
+{"date":"2026-10-06","time":"15:25:49","page":"/review","type":"contrast","key":"contrast:r:loue","word":"loue","chosen":"[l] l","answer":"[l] l","ok":true}
+{"date":"2026-10-06","time":"15:25:54","page":"/review","type":"rules","key":"rules:liaison:les{‿}enfants","word":"les{‿}enfants","chosen":"つなげる","answer":"つなげる","ok":true}
+{"date":"2026-10-06","time":"15:25:57","page":"/review","type":"rules","key":"rules:liaison:les{‿}haricots","word":"les{‿}haricots","chosen":"つなげない","answer":"つなげない","ok":true}
+{"date":"2026-10-06","time":"15:26:02","page":"/review","type":"rules","key":"rules:liaison:du pain et{‿}un café","word":"du pain et{‿}un café","chosen":"つなげない","answer":"つなげない","ok":true}
+{"date":"2026-10-06","time":"15:26:09","page":"/review","type":"contrast","key":"contrast:r:lien","word":"lien","chosen":"[l] l","answer":"[l] l","ok":true}
+{"date":"2026-10-06","time":"15:26:12","page":"/review","type":"rules","key":"rules:liaison:du pain et{‿}un café","word":"du pain et{‿}un café","chosen":"つなげない","answer":"つなげない","ok":true}
+{"date":"2026-10-06","time":"15:26:17","page":"/review","type":"contrast","key":"contrast:r:long","word":"long","chosen":"[ʁ] r","answer":"[l] l","ok":false}
+{"date":"2026-10-06","time":"15:26:21","page":"/review","type":"rules","key":"rules:liaison:les{‿}haricots","word":"les{‿}haricots","chosen":"つなげる","answer":"つなげない","ok":false}
+{"date":"2026-10-06","time":"15:26:27","page":"/review","type":"rules","key":"rules:liaison:les{‿}enfants","word":"les{‿}enfants","chosen":"つなげない","answer":"つなげる","ok":false}
+{"date":"2026-10-06","time":"15:26:30","page":"/review","type":"contrast","key":"contrast:r:loue","word":"loue","chosen":"[l] l","answer":"[l] l","ok":true}
+{"date":"2026-10-06","time":"15:26:33","page":"/review","type":"rules","key":"rules:liaison:un{‿}hôtel","word":"un{‿}hôtel","chosen":"つなげる","answer":"つなげる","ok":true}
+{"date":"2026-10-06","time":"15:26:37","page":"/review","type":"contrast","key":"contrast:u:tout","word":"tout","chosen":"ou [u]","answer":"ou [u]","ok":true}
+{"date":"2026-10-06","time":"15:26:40","page":"/review","type":"contrast","key":"contrast:r:long","word":"long","chosen":"[l] l","answer":"[l] l","ok":true}
+{"date":"2026-10-06","time":"15:26:46","page":"/review","type":"rules","key":"rules:liaison:les{‿}haricots","word":"les{‿}haricots","chosen":"つなげない","answer":"つなげない","ok":true}
+{"date":"2026-10-06","time":"15:26:50","page":"/review","type":"rules","key":"rules:liaison:les{‿}enfants","word":"les{‿}enfants","chosen":"つなげない","answer":"つなげる","ok":false}
+{"date":"2026-10-06","time":"15:26:54","page":"/review","type":"rules","key":"rules:liaison:les{‿}enfants","word":"les{‿}enfants","chosen":"つなげる","answer":"つなげる","ok":true}
+{"date":"2026-10-06","time":"15:26:56","page":"/review","type":"rules","key":"rules:liaison:les{‿}enfants","word":"les{‿}enfants","chosen":"つなげる","answer":"つなげる","ok":true}
+{"date":"2026-10-06","time":"15:26:59","page":"/review","type":"contrast","key":"contrast:r:long","word":"long","chosen":"[l] l","answer":"[l] l","ok":true}
+{"date":"2026-10-06","time":"15:27:02","page":"/review","type":"rules","key":"rules:liaison:les{‿}haricots","word":"les{‿}haricots","chosen":"つなげる","answer":"つなげない","ok":false}
+{"date":"2026-10-06","time":"15:27:04","page":"/review","type":"rules","key":"rules:liaison:les{‿}haricots","word":"les{‿}haricots","chosen":"つなげない","answer":"つなげない","ok":true}
+{"date":"2026-10-06","time":"15:27:07","page":"/review","type":"rules","key":"rules:liaison:les{‿}haricots","word":"les{‿}haricots","chosen":"つなげない","answer":"つなげない","ok":true}
+{"date":"2026-10-06","time":"15:30:15","page":"/rules/liaison","type":"rules","key":"rules:liaison:nous{‿}avons","word":"nous{‿}avons","chosen":"つなげない","answer":"つなげる","ok":false}
+{"date":"2026-10-06","time":"15:30:34","page":"/rules/liaison","type":"rules","key":"rules:liaison:elles{‿}aiment","word":"elles{‿}aiment","chosen":"つなげない","answer":"つなげる","ok":false}
+{"date":"2026-10-06","time":"15:30:41","page":"/rules/liaison","type":"rules","key":"rules:liaison:un restaurant{‿}italien","word":"un restaurant{‿}italien","chosen":"つなげない","answer":"つなげない","ok":true}
+{"date":"2026-10-06","time":"15:30:44","page":"/rules/liaison","type":"rules","key":"rules:liaison:elles{‿}aiment","word":"elles{‿}aiment","chosen":"つなげる","answer":"つなげる","ok":true}
+{"date":"2026-10-06","time":"15:30:50","page":"/rules/liaison","type":"rules","key":"rules:liaison:un{‿}hôtel","word":"un{‿}hôtel","chosen":"つなげる","answer":"つなげる","ok":true}
+{"date":"2026-10-06","time":"15:30:54","page":"/rules/liaison","type":"rules","key":"rules:liaison:le train{‿}arrive","word":"le train{‿}arrive","chosen":"つなげる","answer":"つなげない","ok":false}
+{"date":"2026-10-06","time":"15:31:00","page":"/rules/liaison","type":"rules","key":"rules:liaison:un{‿}hôtel","word":"un{‿}hôtel","chosen":"つなげる","answer":"つなげる","ok":true}
+{"date":"2026-10-06","time":"15:31:02","page":"/rules/liaison","type":"rules","key":"rules:liaison:un restaurant{‿}italien","word":"un restaurant{‿}italien","chosen":"つなげない","answer":"つなげない","ok":true}
+{"date":"2026-10-06","time":"15:31:07","page":"/rules/liaison","type":"rules","key":"rules:liaison:les{‿}enfants","word":"les{‿}enfants","chosen":"つなげる","answer":"つなげる","ok":true}
+{"date":"2026-10-06","time":"15:31:10","page":"/rules/liaison","type":"rules","key":"rules:liaison:les{‿}haricots","word":"les{‿}haricots","chosen":"つなげない","answer":"つなげない","ok":true}
+{"date":"2026-10-06","time":"15:31:12","page":"/rules/liaison","type":"rules","key":"rules:liaison:nous{‿}avons","word":"nous{‿}avons","chosen":"つなげる","answer":"つなげる","ok":true}
+{"date":"2026-10-06","time":"15:33:42","page":"/rules/elision","type":"rules","key":"rules:elision:{le} hamburger","word":"{le} hamburger","chosen":"縮めない","answer":"縮めない","ok":true}
+{"date":"2026-10-06","time":"15:33:50","page":"/rules/elision","type":"rules","key":"rules:elision:{le} hôpital","word":"{le} hôpital","chosen":"縮める","answer":"縮める","ok":true}
+{"date":"2026-10-06","time":"15:33:58","page":"/rules/elision","type":"rules","key":"rules:elision:un verre {de} eau","word":"un verre {de} eau","chosen":"縮める","answer":"縮める","ok":true}
+{"date":"2026-10-06","time":"15:34:01","page":"/rules/elision","type":"rules","key":"rules:elision:{que} est-ce que","word":"{que} est-ce que","chosen":"縮める","answer":"縮める","ok":true}
+{"date":"2026-10-06","time":"15:34:04","page":"/rules/elision","type":"rules","key":"rules:elision:{le} enfant","word":"{le} enfant","chosen":"縮める","answer":"縮める","ok":true}
+{"date":"2026-10-06","time":"15:34:10","page":"/rules/elision","type":"rules","key":"rules:elision:un verre {de} eau","word":"un verre {de} eau","chosen":"縮める","answer":"縮める","ok":true}
+{"date":"2026-10-06","time":"15:34:12","page":"/rules/elision","type":"rules","key":"rules:elision:{le} hamburger","word":"{le} hamburger","chosen":"縮めない","answer":"縮めない","ok":true}
+{"date":"2026-10-06","time":"15:34:14","page":"/rules/elision","type":"rules","key":"rules:elision:{le} hôpital","word":"{le} hôpital","chosen":"縮める","answer":"縮める","ok":true}
+{"date":"2026-10-06","time":"15:34:16","page":"/rules/elision","type":"rules","key":"rules:elision:{le} hamburger","word":"{le} hamburger","chosen":"縮めない","answer":"縮めない","ok":true}
+{"date":"2026-10-06","time":"15:34:21","page":"/rules/elision","type":"rules","key":"rules:elision:{la} heure","word":"{la} heure","chosen":"縮める","answer":"縮める","ok":true}
+{"date":"2026-10-06","time":"15:37:18","page":"/rules/linking","type":"rules","key":"rules:linking:elle{‿}arrive","word":"elle{‿}arrive","chosen":"アンシェヌマン","answer":"アンシェヌマン","ok":true}
+{"date":"2026-10-06","time":"15:37:22","page":"/rules/linking","type":"rules","key":"rules:linking:deux{‿}ans","word":"deux{‿}ans","chosen":"リエゾン","answer":"リエゾン","ok":true}
+{"date":"2026-10-06","time":"15:37:27","page":"/rules/linking","type":"rules","key":"rules:linking:très{‿}intéressant","word":"très{‿}intéressant","chosen":"リエゾン","answer":"リエゾン","ok":true}
+{"date":"2026-10-06","time":"15:37:39","page":"/rules/linking","type":"rules","key":"rules:linking:petit{‿}enfant","word":"petit{‿}enfant","chosen":"リエゾン","answer":"リエゾン","ok":true}
+{"date":"2026-10-06","time":"15:37:46","page":"/rules/linking","type":"rules","key":"rules:linking:il{‿}habite","word":"il{‿}habite","chosen":"アンシェヌマン","answer":"アンシェヌマン","ok":true}
+{"date":"2026-10-06","time":"15:37:50","page":"/rules/linking","type":"rules","key":"rules:linking:nous{‿}aimons","word":"nous{‿}aimons","chosen":"リエゾン","answer":"リエゾン","ok":true}
+{"date":"2026-10-06","time":"15:37:53","page":"/rules/linking","type":"rules","key":"rules:linking:pour{‿}elle","word":"pour{‿}elle","chosen":"アンシェヌマン","answer":"アンシェヌマン","ok":true}
+{"date":"2026-10-06","time":"15:37:55","page":"/rules/linking","type":"rules","key":"rules:linking:quel{‿}âge","word":"quel{‿}âge","chosen":"アンシェヌマン","answer":"アンシェヌマン","ok":true}
+{"date":"2026-10-06","time":"15:37:59","page":"/rules/linking","type":"rules","key":"rules:linking:une{‿}amie","word":"une{‿}amie","chosen":"リエゾン","answer":"アンシェヌマン","ok":false}
+{"date":"2026-10-06","time":"15:38:05","page":"/rules/linking","type":"rules","key":"rules:linking:petit{‿}enfant","word":"petit{‿}enfant","chosen":"リエゾン","answer":"リエゾン","ok":true}
+{"date":"2026-10-06","time":"15:38:08","page":"/rules/linking","type":"rules","key":"rules:linking:pour{‿}elle","word":"pour{‿}elle","chosen":"アンシェヌマン","answer":"アンシェヌマン","ok":true}
+{"date":"2026-10-06","time":"15:38:29","page":"/dictation/review00","type":"dictation","key":"dictation:review00:bateau","word":"bateau","chosen":"beateau","answer":"bateau","ok":false}
+{"date":"2026-10-06","time":"16:04:48","page":"/dictation/review00","type":"dictation","key":"dictation:review00:maison","word":"maison","chosen":"maison","answer":"maison","ok":true}
+{"date":"2026-10-06","time":"16:04:58","page":"/dictation/review00","type":"dictation","key":"dictation:review00:enfant","word":"enfant","chosen":"en offer","answer":"enfant","ok":false}
+{"date":"2026-10-06","time":"16:05:09","page":"/dictation/review00","type":"dictation","key":"dictation:review00:rouge","word":"rouge","chosen":"vouge","answer":"rouge","ok":false}
+{"date":"2026-10-06","time":"16:05:28","page":"/dictation/review00","type":"dictation","key":"dictation:review00:voiture","word":"voiture","chosen":"vetuha","answer":"voiture","ok":false}
+{"date":"2026-10-06","time":"16:05:46","page":"/dictation/review00","type":"dictation","key":"dictation:review00:jambon","word":"jambon","chosen":"jampo","answer":"jambon","ok":false}
+{"date":"2026-10-06","time":"16:05:53","page":"/dictation/review00","type":"dictation","key":"dictation:review00:fromage","word":"fromage","chosen":"trage","answer":"fromage","ok":false}
+{"date":"2026-10-06","time":"16:06:04","page":"/dictation/review00","type":"dictation","key":"dictation:review00:chocolat","word":"chocolat","chosen":"chocolat","answer":"chocolat","ok":true}
+{"date":"2026-10-06","time":"16:06:14","page":"/dictation/review00","type":"dictation","key":"dictation:review00:montagne","word":"montagne","chosen":"montagnia","answer":"montagne","ok":false}
+{"date":"2026-10-06","time":"16:06:27","page":"/dictation/review00","type":"dictation","key":"dictation:review00:famille","word":"famille","chosen":"fmaill","answer":"famille","ok":false}
+{"date":"2026-10-06","time":"16:06:48","page":"/dictation/review00","type":"dictation","key":"dictation:review00:poisson","word":"poisson","chosen":"poeson","answer":"poisson","ok":false}
+{"date":"2026-10-06","time":"16:07:05","page":"/dictation/review00","type":"dictation","key":"dictation:review00:lundi","word":"lundi","chosen":"lange","answer":"lundi","ok":false}
+{"date":"2026-10-06","time":"16:07:15","page":"/dictation/review00","type":"dictation","key":"dictation:review00:heure","word":"heure","chosen":"hea","answer":"heure","ok":false}
+{"date":"2026-10-06","time":"16:07:28","page":"/dictation/review00","type":"dictation","key":"dictation:review00:cinéma","word":"cinéma","chosen":"cinema","answer":"cinéma","ok":false}
+{"date":"2026-10-06","time":"16:07:35","page":"/dictation/review00","type":"dictation","key":"dictation:review00:bleu","word":"bleu","chosen":"blu","answer":"bleu","ok":false}
+{"date":"2026-10-06","time":"16:07:43","page":"/dictation/review00","type":"dictation","key":"dictation:review00:garçon","word":"garçon","chosen":"gaison","answer":"garçon","ok":false}
+{"date":"2026-10-06","time":"16:07:51","page":"/dictation/review00","type":"dictation","key":"dictation:review00:pain","word":"pain","chosen":"paign","answer":"pain","ok":false}
+{"date":"2026-10-06","time":"16:07:57","page":"/dictation/review00","type":"dictation","key":"dictation:review00:école","word":"école","chosen":"ecole","answer":"école","ok":false}
+{"date":"2026-10-06","time":"16:08:08","page":"/dictation/review00","type":"dictation","key":"dictation:review00:fenêtre","word":"fenêtre","chosen":"fuunega","answer":"fenêtre","ok":false}
+{"date":"2026-10-06","time":"16:08:17","page":"/dictation/review00","type":"dictation","key":"dictation:review00:question","word":"question","chosen":"estime","answer":"question","ok":false}
+{"date":"2026-10-06","time":"16:08:38","page":"/dictation/review00","type":"dictation","key":"dictation:review00:Bonjour, je m'appelle Paul.","word":"Bonjour, je m'appelle Paul.","chosen":"Bonjour","answer":"Bonjour, je m'appelle Paul.","ok":false}
+{"date":"2026-10-06","time":"16:08:55","page":"/dictation/review00","type":"dictation","key":"dictation:review00:J'habite à Tokyo.","word":"J'habite à Tokyo.","chosen":"Ja","answer":"J'habite à Tokyo.","ok":false}
+{"date":"2026-10-06","time":"16:09:08","page":"/dictation/review00","type":"dictation","key":"dictation:review00:Les enfants aiment le chocolat.","word":"Les enfants aiment le chocolat.","chosen":"Re en chocolat","answer":"Les enfants aiment le chocolat.","ok":false}
+{"date":"2026-10-06","time":"16:09:27","page":"/dictation/review00","type":"dictation","key":"dictation:review00:C'est un petit hôtel.","word":"C'est un petit hôtel.","chosen":"petit","answer":"C'est un petit hôtel.","ok":false}
+{"date":"2026-10-06","time":"16:09:39","page":"/dictation/review00","type":"dictation","key":"dictation:review00:Il fait beau aujourd'hui.","word":"Il fait beau aujourd'hui.","chosen":"r","answer":"Il fait beau aujourd'hui.","ok":false}
+{"date":"2026-10-06","time":"16:27:04","page":"/spelling/review00","type":"spelling","key":"spelling:review00:chocolat","word":"chocolat","chosen":"chocolat","answer":"chocolat","ok":true}
+{"date":"2026-10-06","time":"16:27:08","page":"/spelling/review00","type":"spelling","key":"spelling:review00:fromage","word":"fromage","chosen":"fromage","answer":"fromage","ok":true}
+{"date":"2026-10-06","time":"16:27:12","page":"/spelling/review00","type":"spelling","key":"spelling:review00:enfant","word":"enfant","chosen":"enfant","answer":"enfant","ok":true}
+{"date":"2026-10-06","time":"16:27:19","page":"/spelling/review00","type":"spelling","key":"spelling:review00:question","word":"question","chosen":"question","answer":"question","ok":true}
+{"date":"2026-10-06","time":"16:27:24","page":"/spelling/review00","type":"spelling","key":"spelling:review00:heure","word":"heure","chosen":"houre","answer":"heure","ok":false}
+{"date":"2026-10-06","time":"16:27:30","page":"/spelling/review00","type":"spelling","key":"spelling:review00:rouge","word":"rouge","chosen":"rouge","answer":"rouge","ok":true}
+{"date":"2026-10-06","time":"16:27:33","page":"/spelling/review00","type":"spelling","key":"spelling:review00:famille","word":"famille","chosen":"famille","answer":"famille","ok":true}
+{"date":"2026-10-06","time":"16:27:38","page":"/spelling/review00","type":"spelling","key":"spelling:review00:voiture","word":"voiture","chosen":"vouture","answer":"voiture","ok":false}
+{"date":"2026-10-06","time":"16:27:44","page":"/spelling/review00","type":"spelling","key":"spelling:review00:heure","word":"heure","chosen":"heure","answer":"heure","ok":true}
+{"date":"2026-10-06","time":"16:27:48","page":"/spelling/review00","type":"spelling","key":"spelling:review00:question","word":"question","chosen":"question","answer":"question","ok":true}
+{"date":"2026-10-06","time":"16:27:51","page":"/spelling/review00","type":"spelling","key":"spelling:review00:garçon","word":"garçon","chosen":"garçon","answer":"garçon","ok":true}
+{"date":"2026-10-06","time":"16:27:56","page":"/spelling/review00","type":"spelling","key":"spelling:review00:chocolat","word":"chocolat","chosen":"chocolat","answer":"chocolat","ok":true}
+{"date":"2026-10-06","time":"16:28:01","page":"/spelling/review00","type":"spelling","key":"spelling:review00:bateau","word":"bateau","chosen":"bateau","answer":"bateau","ok":true}
+{"date":"2026-10-06","time":"16:28:09","page":"/spelling/review00","type":"spelling","key":"spelling:review00:poisson","word":"poisson","chosen":"poisson","answer":"poisson","ok":true}
+{"date":"2026-10-06","time":"16:28:17","page":"/spelling/review00","type":"spelling","key":"spelling:review00:fenêtre","word":"fenêtre","chosen":"fenêtre","answer":"fenêtre","ok":true}
+{"date":"2026-10-06","time":"16:28:21","page":"/spelling/review00","type":"spelling","key":"spelling:review00:école","word":"école","chosen":"école","answer":"école","ok":true}
+{"date":"2026-10-06","time":"16:28:24","page":"/spelling/review00","type":"spelling","key":"spelling:review00:heure","word":"heure","chosen":"heure","answer":"heure","ok":true}
+{"date":"2026-10-06","time":"16:28:26","page":"/spelling/review00","type":"spelling","key":"spelling:review00:enfant","word":"enfant","chosen":"enfant","answer":"enfant","ok":true}
+{"date":"2026-10-06","time":"16:28:29","page":"/spelling/review00","type":"spelling","key":"spelling:review00:poisson","word":"poisson","chosen":"poisson","answer":"poisson","ok":true}
+{"date":"2026-10-06","time":"16:28:32","page":"/spelling/review00","type":"spelling","key":"spelling:review00:maison","word":"maison","chosen":"maison","answer":"maison","ok":true}
+{"date":"2026-10-06","time":"16:28:41","page":"/spelling/review00","type":"spelling","key":"spelling:review00:famille","word":"famille","chosen":"famille","answer":"famille","ok":true}
+{"date":"2026-10-06","time":"16:28:50","page":"/spelling/review00","type":"spelling","key":"spelling:review00:école","word":"école","chosen":"école","answer":"école","ok":true}
+{"date":"2026-10-06","time":"16:28:53","page":"/spelling/review00","type":"spelling","key":"spelling:review00:rouge","word":"rouge","chosen":"rouge","answer":"rouge","ok":true}
+{"date":"2026-10-06","time":"16:28:56","page":"/spelling/review00","type":"spelling","key":"spelling:review00:heure","word":"heure","chosen":"heure","answer":"heure","ok":true}
+{"date":"2026-10-06","time":"16:28:58","page":"/spelling/review00","type":"spelling","key":"spelling:review00:rouge","word":"rouge","chosen":"rouge","answer":"rouge","ok":true}

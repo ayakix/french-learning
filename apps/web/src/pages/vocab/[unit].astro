@@ -26,14 +26,21 @@ const total = groups.reduce((n, g) => n + g.words.length, 0);
     </header>
 
     <!-- 暗記の練習用。隠した側は、カードをクリックするとそのカードだけ表示される -->
-    <div class="toolbar">
-      <button type="button" class="pill" data-hide="ja" aria-pressed="false">意味を隠す</button>
-      <button type="button" class="pill" data-hide="fr" aria-pressed="false">フランス語を隠す</button>
+    <!-- 下のグループを練習しているときに、ボタンを押すため上まで戻らなくて済むよう、画面の上に固定する。
+         グループへのリンクも置き、長いページでも目的のグループへすぐ移れるようにする -->
+    <div class="toolbar sticky">
+      <div class="hide-buttons">
+        <button type="button" class="pill" data-hide="ja" aria-pressed="false">意味を隠す</button>
+        <button type="button" class="pill" data-hide="fr" aria-pressed="false">フランス語を隠す</button>
+      </div>
+      <nav class="jump" aria-label="グループ">
+        {groups.map((g, i) => <a href={`#g-${i}`}>{g.name}</a>)}
+      </nav>
     </div>
 
     {
-      groups.map((g) => (
-        <section class="card group">
+      groups.map((g, i) => (
+        <section class="card group" id={`g-${i}`}>
           <div class="section-head">
             <h2>
               {g.name} <small class="count">{g.words.length} 語</small>
@@ -99,6 +106,34 @@ const total = groups.reduce((n, g) => n + g.words.length, 0);
 </script>
 
 <style>
+  .sticky {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    flex-direction: column;
+    gap: 6px;
+    padding: 8px 0;
+    background: var(--bg);
+    border-bottom: 1px solid var(--border);
+  }
+  .hide-buttons {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+  .jump {
+    display: flex;
+    gap: 4px 12px;
+    flex-wrap: wrap;
+    font-size: 0.85rem;
+  }
+  .jump a {
+    text-decoration: none;
+  }
+  /* リンクで移ったとき、グループの見出しが固定したツールバーに隠れないようにする */
+  .group {
+    scroll-margin-top: 110px;
+  }
   .count {
     font-weight: 400;
     color: var(--muted);

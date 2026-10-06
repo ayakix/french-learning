@@ -31,6 +31,8 @@ npx astro dev stop            # 停止
 | `/numbers` | `a1/common/numbers.yaml` |
 | `/verbs` | `a1/common/verbs.yaml` |
 | `/voices` | `config/tts.json` の声の聞き比べ |
+| `/spelling/<slug>` | `*-spelling.yaml`（聞いて綴りを 3 択で選ぶ） |
+| `/dictation/<slug>` | `*-dictation.yaml`（聞いて綴りを書き取る。アクセント記号の入力ボタン付き） |
 | `/review` | `results/` のクイズの結果から、克服していない問題を出題する |
 
 ## クイズの結果

@@ -1,0 +1,52 @@
+# 00-6 エリジオンするかどうか（Web アプリの読み方ルール画面 /rules/elision のデータ）
+# 形式は 00-2-e-rules.yaml と同じ
+#
+# show は縮める前の形で出し、{} の短い単語が l' / j' などに縮むかを判断する。
+# 音声（fr）は正しい形（l'ami / le haricot）で読ませるので、答えた後に正解の形を耳でも確かめられる。
+# h aspiré（haricot など）はリエゾンと同じくエリジオンも止めるので、/rules/liaison で覚えた 5 語をここでも出す。
+slug: elision
+title: "エリジオンするかどうか"
+lead: "le・la・je・de・ne・que・ce などの短い単語は、次の単語が母音や読まない h で始まると、母音を落としてアポストロフィ（'）になります。綴りも変わります。"
+choices:
+  - { id: elide, name: "縮める", hint: "l' / j' / d' などにする" }
+  - { id: keep, name: "縮めない", hint: "そのまま書いて読む" }
+rules:
+  - where: "le / la ＋ 母音"
+    answer: elide
+    examples:
+      - { fr: "l'ami", ipa: "la.mi", ja: "その友だち" }
+      - { fr: "l'école", ipa: "le.kɔl", ja: "その学校" }
+  - where: "je / de / ne / que / ce ＋ 母音"
+    answer: elide
+    examples:
+      - { fr: "j'aime", ipa: "ʒɛm", ja: "私は好きだ" }
+      - { fr: "d'accord", ipa: "da.kɔʁ", ja: "わかった" }
+      - { fr: "c'est", ipa: "sɛ", ja: "それは〜だ" }
+  - where: "普通の h の前"
+    answer: elide
+    examples:
+      - { fr: "l'homme", ipa: "lɔm", ja: "その男の人" }
+      - { fr: "j'habite", ipa: "ʒa.bit", ja: "私は住んでいる" }
+  - where: "子音の前"
+    answer: keep
+    examples:
+      - { fr: "le livre", ipa: "lə livʁ", ja: "その本" }
+      - { fr: "je parle", ipa: "ʒə paʁl", ja: "私は話す" }
+  - where: "h aspiré の前"
+    answer: keep
+    note: "リエゾンと同じく、héros・haricot・hamburger・haut・huit の前では縮めない"
+    examples:
+      - { fr: "le héros", ipa: "lə e.ʁo", ja: "その英雄" }
+quiz:
+  - { fr: "l'enfant", show: "{le} enfant", answer: elide, ipa: "lɑ̃.fɑ̃", ja: "その子ども" }
+  - { fr: "j'arrive", show: "{je} arrive", answer: elide, ipa: "ʒa.ʁiv", ja: "今行きます" }
+  - { fr: "l'heure", show: "{la} heure", answer: elide, ipa: "lœʁ", ja: "時刻" }
+  - { fr: "je n'aime pas", show: "je {ne} aime pas", answer: elide, ipa: "ʒə nɛm pa", ja: "私は好きではない" }
+  - { fr: "qu'est-ce que", show: "{que} est-ce que", answer: elide, ipa: "kɛs.kə", ja: "何を〜か" }
+  - { fr: "un verre d'eau", show: "un verre {de} eau", answer: elide, ipa: "œ̃ vɛʁ do", ja: "コップ 1 杯の水" }
+  - { fr: "l'hôpital", show: "{le} hôpital", answer: elide, ipa: "lo.pi.tal", ja: "その病院" }
+  - { fr: "la table", show: "{la} table", answer: keep, ipa: "la tabl", ja: "そのテーブル" }
+  - { fr: "le haricot", show: "{le} haricot", answer: keep, ipa: "lə a.ʁi.ko", ja: "そのインゲン豆" }
+  - { fr: "je mange", show: "{je} mange", answer: keep, ipa: "ʒə mɑ̃ʒ", ja: "私は食べる" }
+  - { fr: "le hamburger", show: "{le} hamburger", answer: keep, ipa: "lə ɑ̃.bœʁ.ɡœʁ", ja: "そのハンバーガー" }
+  - { fr: "de Paris", show: "{de} Paris", answer: keep, ipa: "də pa.ʁi", ja: "パリの・パリから" }

@@ -75,6 +75,33 @@ const rules = defineCollection({
   }),
 });
 
+// ディクテーション（聞いて綴りを書き取る）。1 つの練習 = 1 ファイル（*-dictation.yaml）で、画面は /dictation/<slug>
+// 知らない単語でも、発音と綴りのルールから綴りを推測できるかを確かめる（単元 00 のまとめ）
+const dictations = defineCollection({
+  loader: glob({ pattern: '**/*-dictation.yaml', base: '../../materials' }),
+  schema: z.object({
+    title: z.string(),
+    lead: z.string(),
+    parts: z.array(
+      z.object({
+        name: z.string(),
+        items: z.array(word.extend({ hint: z.string().optional() })),
+      }),
+    ),
+  }),
+});
+
+// 聞いて正しい綴りを選ぶ（*-spelling.yaml、画面は /spelling/<slug>）。rules（綴り → 音）と dictation（音 → 白紙に書く）の間の段階。
+// 誤りの選択肢（wrong）は、正解と発音が違う綴りにする（ルールで判断できるように）
+const spellings = defineCollection({
+  loader: glob({ pattern: '**/*-spelling.yaml', base: '../../materials' }),
+  schema: z.object({
+    title: z.string(),
+    lead: z.string(),
+    items: z.array(word.extend({ wrong: z.array(z.string()) })),
+  }),
+});
+
 // 単元 01〜10 の教材（ElevenLabs v4 Turbo のキャンペーン中にまとめて作ったもの）。形式は単元をまたいで共通
 const unitMaterial = { unit: z.string(), title: z.string() };
 
@@ -205,4 +232,4 @@ const verbs = defineCollection({
   }),
 });
 
-export const collections = { alphabet, accents, contrasts, rules, vocab, reading, listening, documents, numbers, verbs };
+export const collections = { alphabet, accents, contrasts, rules, dictations, spellings, vocab, reading, listening, documents, numbers, verbs };

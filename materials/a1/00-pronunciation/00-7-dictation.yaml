@@ -1,0 +1,34 @@
+# 00-7 単元 00 のまとめのディクテーション（Web アプリの書き取り画面 /dictation/review00 のデータ）
+# 単語は 00-7-review.md と同じ。合格の目安も同じ（16 / 20 以上）
+# 00-7-review.md の短い文（5 問）は入れていない。je m'appelle・aujourd'hui など単元 01 以降の表現を知らないと
+# 書けないため（2026-10-06 に 0 / 5）。単元 01・02 の後に、文のディクテーションとして別に作る。
+# 白紙から書く前に、/spelling/review00（聞いて綴りを 3 択で選ぶ）で段階を踏む。
+#
+# 意味を知らなくても、00-1〜00-6 の発音と綴りのルールから綴りを推測できる単語を選んでいる。
+# 答え合わせでは、アクセント記号だけの違いを「惜しい」として分けて出す（綴りのルールの理解とは別の問題のため）。
+slug: review00
+title: "単元 00 のまとめ：ディクテーション"
+lead: "音声を聞いて、綴りを書き取ります。意味はわからなくて大丈夫。発音と綴りのルールから綴りを推測するのが目的です。何度聞き直してもかまいません。"
+parts:
+  - name: "単語（20 問）"
+    items:
+      - { fr: "bateau", ipa: "ba.to", ja: "船" }
+      - { fr: "maison", ipa: "mɛ.zɔ̃", ja: "家" }
+      - { fr: "enfant", ipa: "ɑ̃.fɑ̃", ja: "子ども" }
+      - { fr: "rouge", ipa: "ʁuʒ", ja: "赤い" }
+      - { fr: "voiture", ipa: "vwa.tyʁ", ja: "車" }
+      - { fr: "jambon", ipa: "ʒɑ̃.bɔ̃", ja: "ハム" }
+      - { fr: "fromage", ipa: "fʁɔ.maʒ", ja: "チーズ" }
+      - { fr: "chocolat", ipa: "ʃɔ.kɔ.la", ja: "チョコレート" }
+      - { fr: "montagne", ipa: "mɔ̃.taɲ", ja: "山" }
+      - { fr: "famille", ipa: "fa.mij", ja: "家族" }
+      - { fr: "poisson", ipa: "pwa.sɔ̃", ja: "魚" }
+      - { fr: "lundi", ipa: "lɛ̃.di", ja: "月曜日" }
+      - { fr: "heure", ipa: "œʁ", ja: "時間", hint: "h で始まる" }
+      - { fr: "cinéma", ipa: "si.ne.ma", ja: "映画館" }
+      - { fr: "bleu", ipa: "blø", ja: "青い" }
+      - { fr: "garçon", ipa: "ɡaʁ.sɔ̃", ja: "男の子" }
+      - { fr: "pain", ipa: "pɛ̃", ja: "パン" }
+      - { fr: "école", ipa: "e.kɔl", ja: "学校" }
+      - { fr: "fenêtre", ipa: "fə.nɛtʁ", ja: "窓" }
+      - { fr: "question", ipa: "kɛs.tjɔ̃", ja: "質問" }

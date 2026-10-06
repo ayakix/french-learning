@@ -5,11 +5,12 @@
 import { getCollection } from 'astro:content';
 import Base from '../layouts/Base.astro';
 import { audioUrl } from '../lib/audio';
-import { contrastKey, rulesKey } from '../scripts/results';
+import { contrastKey, rulesKey, spellingKey } from '../scripts/results';
 import '../styles/material.css';
 
 const contrasts = await getCollection('contrasts');
 const rules = await getCollection('rules');
+const spellings = await getCollection('spellings');
 
 const items = [
   ...contrasts.flatMap((c) => {
@@ -49,6 +50,21 @@ const items = [
       };
     }),
   ),
+  ...spellings.flatMap((sp) =>
+    sp.data.items.map((i) => ({
+      type: 'spelling',
+      key: spellingKey(sp.id, i.fr),
+      title: sp.data.title,
+      href: `/spelling/${sp.id}`,
+      fr: i.fr,
+      ipa: i.ipa,
+      ja: i.ja,
+      src: audioUrl(i.fr),
+      answer: i.fr,
+      // 綴りそのものが選択肢。順番は出題のたびにブラウザ側で混ぜる
+      choices: [i.fr, ...i.wrong].map((w) => ({ id: w, name: w, hint: '' })),
+    })),
+  ),
 ];
 ---
 
@@ -77,8 +93,8 @@ const items = [
     </section>
 
     <section class="card" id="questions" hidden>
-      <h2>聞き取り・読む文書で間違えた質問</h2>
-      <p class="sub">文章を読み直さないと答えられないので、画面へのリンクだけ出します。</p>
+      <h2>聞き取り・読む文書・ディクテーションで間違えた問題</h2>
+      <p class="sub">文章を読み直したり書き取ったりする問題なので、画面へのリンクだけ出します。</p>
       <ul></ul>
     </section>
   </main>
@@ -89,7 +105,7 @@ const items = [
 
   type Choice = { id: string; name: string; hint: string };
   type Item = {
-    type: 'contrast' | 'rules';
+    type: 'contrast' | 'rules' | 'spelling';
     key: string;
     title: string;
     href: string;
@@ -165,16 +181,18 @@ const items = [
     // どの練習の問題かを出す（選択肢の意味がわかるように）。答えのヒントにはならない
     titleLabel.textContent = current.title;
     answers.style.gridTemplateColumns = `repeat(${current.choices.length}, 1fr)`;
+    // 綴りを選ぶ問題は選択肢が綴りそのものなので、位置で答えがわからないよう毎回混ぜる
+    const choices = current.type === 'spelling' ? [...current.choices].sort(() => Math.random() - 0.5) : current.choices;
     answers.replaceChildren(
-      ...current.choices.map((c) => {
+      ...choices.map((c) => {
         const b = Object.assign(document.createElement('button'), { type: 'button', className: 'answer' });
         b.append(c.name, Object.assign(document.createElement('small'), { textContent: c.hint }));
         b.addEventListener('click', () => answer(c));
         return b;
       }),
     );
-    if (current.type === 'contrast') {
-      // 聞き比べは音だけで答える
+    if (current.type !== 'rules') {
+      // 聞き比べと綴り選びは音だけで答える
       wordLabel.textContent = '🔊';
       replayButton.hidden = false;
       play(current.src);
@@ -198,7 +216,7 @@ const items = [
     answers.querySelectorAll('button').forEach((b) => (b.disabled = true));
     resultLabel.className = `result ${ok ? 'ok' : 'ng'}`;
     resultLabel.textContent = `${ok ? '正解！' : '残念…'} 答えは「${correctName}」：${item.fr} [${item.ipa}]（${item.ja}）`;
-    if (item.type === 'contrast') wordLabel.textContent = item.fr;
+    if (item.type !== 'rules') wordLabel.textContent = item.fr;
     play(item.src);
     // 間違えたら、この周の最後にもう一度出す（その場で覚え直せるように）
     if (!ok) round.push(item);
@@ -206,9 +224,9 @@ const items = [
   }
 
   function showQuestions(results: SavedResult[]) {
-    // 質問ごとの最後の結果が不正解のものだけ出す
+    // 問題ごとの最後の結果が不正解のものだけ出す
     const last = new Map<string, SavedResult>();
-    for (const r of results) if (r.type === 'question') last.set(r.key, r);
+    for (const r of results) if (r.type === 'question' || r.type === 'dictation') last.set(r.key, r);
     const wrong = [...last.values()].filter((r) => !r.ok);
     if (wrong.length === 0) return;
     const section = document.querySelector<HTMLElement>('#questions')!;

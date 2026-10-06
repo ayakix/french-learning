@@ -1,0 +1,41 @@
+# 00-6 アンシェヌマンとリエゾンの区別（Web アプリの読み方ルール画面 /rules/linking のデータ）
+# 形式は 00-2-e-rules.yaml と同じ
+#
+# どちらも「語末の子音が次の母音とつながる」ので、聞くだけでは同じに聞こえる。
+# 違いは、その子音を単独でも読むかどうか（00-5 の語末の子音・CaReFuL）。
+# 区別できると、リエゾンのルール（つなげてはいけない場合）を当てはめる場面がわかる。
+# show の {‿} はつながる切れ目（/rules/liaison と同じ書き方）。
+slug: linking
+title: "アンシェヌマンとリエゾン"
+lead: "語末の子音が次の母音とつながるのは同じです。もともと読む子音ならアンシェヌマン（いつもつながる）、普段は読まない子音ならリエゾン（ルールがある）です。"
+choices:
+  - { id: enchainement, name: "アンシェヌマン", hint: "単独でも読む子音がつながる" }
+  - { id: liaison, name: "リエゾン", hint: "普段は読まない子音がつながる" }
+rules:
+  - where: "単独でも読む語末の子音"
+    answer: enchainement
+    note: "c / r / f / l（CaReFuL）や、語末の e の前の子音"
+    examples:
+      - { fr: "il est", ipa: "i.lɛ", ja: "彼は〜だ" }
+      - { fr: "elle aime", ipa: "ɛ.lɛm", ja: "彼女は好きだ" }
+      - { fr: "avec elle", ipa: "a.vɛ.kɛl", ja: "彼女と一緒に" }
+  - where: "普段は読まない語末の子音"
+    answer: liaison
+    note: "s / x / t / d / n"
+    examples:
+      - { fr: "les amis", ipa: "le.za.mi", ja: "友だちたち" }
+      - { fr: "vous avez", ipa: "vu.za.ve", ja: "あなたは持っている" }
+      - { fr: "un ami", ipa: "œ̃.na.mi", ja: "1 人の友だち" }
+quiz:
+  - { fr: "pour elle", show: "pour{‿}elle", answer: enchainement, ipa: "pu.ʁɛl", ja: "彼女のために" }
+  - { fr: "quel âge", show: "quel{‿}âge", answer: enchainement, ipa: "kɛ.lɑʒ", ja: "何歳" }
+  - { fr: "une amie", show: "une{‿}amie", answer: enchainement, ipa: "y.na.mi", ja: "1 人の友だち（女性）" }
+  - { fr: "elle arrive", show: "elle{‿}arrive", answer: enchainement, ipa: "ɛ.la.ʁiv", ja: "彼女が着く" }
+  - { fr: "sept heures", show: "sept{‿}heures", answer: enchainement, ipa: "sɛ.tœʁ", ja: "7 時" }
+  - { fr: "il habite", show: "il{‿}habite", answer: enchainement, ipa: "i.la.bit", ja: "彼は住んでいる" }
+  - { fr: "nous aimons", show: "nous{‿}aimons", answer: liaison, ipa: "nu.zɛ.mɔ̃", ja: "私たちは好きだ" }
+  - { fr: "deux ans", show: "deux{‿}ans", answer: liaison, ipa: "dø.zɑ̃", ja: "2 年・2 歳" }
+  - { fr: "ils arrivent", show: "ils{‿}arrivent", answer: liaison, ipa: "il.za.ʁiv", ja: "彼らが着く" }
+  - { fr: "mon ami", show: "mon{‿}ami", answer: liaison, ipa: "mɔ̃.na.mi", ja: "私の友だち" }
+  - { fr: "très intéressant", show: "très{‿}intéressant", answer: liaison, ipa: "tʁɛ.zɛ̃.te.ʁɛ.sɑ̃", ja: "とても面白い" }
+  - { fr: "petit enfant", show: "petit{‿}enfant", answer: liaison, ipa: "pə.ti.tɑ̃.fɑ̃", ja: "小さな子ども" }
