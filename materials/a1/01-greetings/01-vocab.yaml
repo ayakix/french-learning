@@ -4,6 +4,7 @@
 # 例外として、国名と言語は定冠詞（le / la / l'）を付ける。「un Japon」とは言わず、実際に使う形で覚えるため。
 # 職業は男性形・女性形の両方を言えることが自己紹介に必要なので、形容詞と同じく女性形を f / f_ipa に書き、tts で両方を読ませる。
 # 国籍は形容詞として書く（Je suis japonais. のように冠詞なしで使うため）。
+# 自己紹介の動詞の note には、例文の動詞がどの主語の形かを書く（例文には原形が出てこず、どれがその動詞かわからなかったため。2026-10-07）
 # 数字（年齢に使う 0〜20）は common で扱うので、ここには入れない。
 unit: "01"
 title: "あいさつ・自己紹介"
@@ -63,15 +64,15 @@ groups:
 
   - name: "自己紹介の動詞"
     words:
-      - { fr: "être", ipa: "ɛtʁ", ja: "〜である", pos: "動詞", ex: { fr: "Nous sommes japonais.", ja: "私たちは日本人です。" } }
-      - { fr: "s'appeler", ipa: "saple", ja: "〜という名前である", pos: "動詞", ex: { fr: "Elle s'appelle Marie.", ja: "彼女の名前はマリーです。" } }
-      - { fr: "habiter", ipa: "abite", ja: "住む", pos: "動詞", note: "h は読まないので j'habite とエリジオンする", ex: { fr: "J'habite à Paris.", ja: "パリに住んでいます。" } }
-      - { fr: "parler", ipa: "paʁle", ja: "話す", pos: "動詞", ex: { fr: "Je parle japonais et anglais.", ja: "日本語と英語を話します。" } }
-      - { fr: "venir", ipa: "vəniʁ", ja: "来る・〜出身である", pos: "動詞", note: "Je viens de Tokyo.（東京出身です）", ex: { fr: "Il vient de Lyon.", ja: "彼はリヨン出身です。" } }
-      - { fr: "travailler", ipa: "tʁavaje", ja: "働く", pos: "動詞", ex: { fr: "Je travaille à Tokyo.", ja: "東京で働いています。" } }
-      - { fr: "étudier", ipa: "etydje", ja: "勉強する", pos: "動詞", ex: { fr: "Tu étudies à Paris ?", ja: "パリで勉強しているの？" } }
-      - { fr: "avoir", ipa: "avwaʁ", ja: "持つ・（年齢が）〜歳である", pos: "動詞", note: "年齢は avoir で言う：J'ai vingt ans.（être は使わない）", ex: { fr: "Elle a seize ans.", ja: "彼女は 16 歳です。" } }
-      - { fr: "se présenter", ipa: "sə pʁezɑ̃te", ja: "自己紹介する", pos: "動詞", ex: { fr: "Bonjour, je me présente : Yuki Tanaka.", ja: "こんにちは、自己紹介します。田中ユキです。" } }
+      - { fr: "être", ipa: "ɛtʁ", ja: "〜である", pos: "動詞", note: "例文の sommes は être の nous の形（活用）", ex: { fr: "Nous sommes japonais.", ja: "私たちは日本人です。" } }
+      - { fr: "s'appeler", ipa: "saple", ja: "〜という名前である", pos: "動詞", note: "例文の s'appelle は s'appeler の elle の形（活用）", ex: { fr: "Elle s'appelle Marie.", ja: "彼女の名前はマリーです。" } }
+      - { fr: "habiter", ipa: "abite", ja: "住む", pos: "動詞", note: "h は読まないので j'habite とエリジオンする。例文の habite は habiter の je の形", ex: { fr: "J'habite à Paris.", ja: "パリに住んでいます。" } }
+      - { fr: "parler", ipa: "paʁle", ja: "話す", pos: "動詞", note: "例文の parle は parler の je の形（活用）", ex: { fr: "Je parle japonais et anglais.", ja: "日本語と英語を話します。" } }
+      - { fr: "venir", ipa: "vəniʁ", ja: "来る・〜出身である", pos: "動詞", note: "Je viens de Tokyo.（東京出身です）。例文の vient は venir の il の形", ex: { fr: "Il vient de Lyon.", ja: "彼はリヨン出身です。" } }
+      - { fr: "travailler", ipa: "tʁavaje", ja: "働く", pos: "動詞", note: "例文の travaille は travailler の je の形（活用）", ex: { fr: "Je travaille à Tokyo.", ja: "東京で働いています。" } }
+      - { fr: "étudier", ipa: "etydje", ja: "勉強する", pos: "動詞", note: "例文の étudies は étudier の tu の形（活用）", ex: { fr: "Tu étudies à Paris ?", ja: "パリで勉強しているの？" } }
+      - { fr: "avoir", ipa: "avwaʁ", ja: "持つ・（年齢が）〜歳である", pos: "動詞", note: "年齢は avoir で言う：J'ai vingt ans.（être は使わない）。例文の a は avoir の elle の形", ex: { fr: "Elle a seize ans.", ja: "彼女は 16 歳です。" } }
+      - { fr: "se présenter", ipa: "sə pʁezɑ̃te", ja: "自己紹介する", pos: "動詞", note: "例文の me présente は se présenter の je の形（活用）", ex: { fr: "Bonjour, je me présente : Yuki Tanaka.", ja: "こんにちは、自己紹介します。田中ユキです。" } }
 
   - name: "自己紹介の言葉とフレーズ"
     words:

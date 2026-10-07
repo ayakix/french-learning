@@ -5,7 +5,7 @@
 # 音声は fr（普通の綴り）で読ませる。答えた後に流れる音で、つながっているかを耳でも確かめられる。
 # ルール表の例とクイズの単語は分けている。例を見て覚えた単語ではなく、ルールで判断できるかを確かめるため。
 # lead の「かたまり」の説明は 2026-10-06 に追加。個別のルールの表だけでは「どういうときにつなげるのか」の
-# 基本がつかめず、同じ問題を何度も逆に答えていたため。
+# 基本がつかめず、同じ問題を何度も逆に答えていたため。# 各問題の why は答えた後に出す理由（2026-10-07 に追加。正解だけでは、どのルールで判断したのかがわからなかったため）
 slug: liaison
 title: "リエゾンするかどうか"
 lead: "基本は「1 つのかたまり（冠詞＋名詞、主語の代名詞＋動詞）の中ではつなげる。かたまりの切れ目（et の後、名詞の後）ではつなげない」です。les・un・vous のような小さな単語は、後ろの単語にくっついて 1 語のように読むと考えます。つながるのは普段読まない語末の子音（s・x は [z]、t・d は [t]、n は [n]）です。"
@@ -50,15 +50,15 @@ rules:
       - { fr: "en haut", ipa: "ɑ̃ o", ja: "上に" }
       - { fr: "les huit jours", ipa: "le ɥi ʒuʁ", ja: "その 8 日間" }
 quiz:
-  - { fr: "les enfants", show: "les{‿}enfants", answer: link, ipa: "le.zɑ̃.fɑ̃", ja: "子どもたち" }
-  - { fr: "nous avons", show: "nous{‿}avons", answer: link, ipa: "nu.za.vɔ̃", ja: "私たちは持っている" }
-  - { fr: "trois enfants", show: "trois{‿}enfants", answer: link, ipa: "tʁwa.zɑ̃.fɑ̃", ja: "3 人の子ども" }
-  - { fr: "un hôtel", show: "un{‿}hôtel", answer: link, ipa: "œ̃.no.tɛl", ja: "1 軒のホテル" }
-  - { fr: "elles aiment", show: "elles{‿}aiment", answer: link, ipa: "ɛl.zɛm", ja: "彼女たちは好きだ" }
-  - { fr: "les écoles", show: "les{‿}écoles", answer: link, ipa: "le.ze.kɔl", ja: "学校（複数）" }
-  - { fr: "c'est intéressant", show: "c'est{‿}intéressant", answer: link, ipa: "sɛ.tɛ̃.te.ʁɛ.sɑ̃", ja: "それは面白い" }
-  - { fr: "grand homme", show: "grand{‿}homme", answer: link, ipa: "ɡʁɑ̃.tɔm", ja: "偉人" }
-  - { fr: "du pain et un café", show: "du pain et{‿}un café", answer: nolink, ipa: "dy pɛ̃ e œ̃ ka.fe", ja: "パンとコーヒー" }
-  - { fr: "un restaurant italien", show: "un restaurant{‿}italien", answer: nolink, ipa: "œ̃ ʁɛs.tɔ.ʁɑ̃ i.ta.ljɛ̃", ja: "イタリア料理店" }
-  - { fr: "les haricots", show: "les{‿}haricots", answer: nolink, ipa: "le a.ʁi.ko", ja: "インゲン豆" }
-  - { fr: "le train arrive", show: "le train{‿}arrive", answer: nolink, ipa: "lə tʁɛ̃ a.ʁiv", ja: "電車が着く" }
+  - { fr: "les enfants", show: "les{‿}enfants", answer: link, ipa: "le.zɑ̃.fɑ̃", ja: "子どもたち", why: "冠詞 les ＋ 名詞で 1 つのかたまり。les の s を [z] で読んでつなげる" }
+  - { fr: "nous avons", show: "nous{‿}avons", answer: link, ipa: "nu.za.vɔ̃", ja: "私たちは持っている", why: "主語の代名詞 nous ＋ 動詞で 1 つのかたまり。nous の s を [z] で読んでつなげる" }
+  - { fr: "trois enfants", show: "trois{‿}enfants", answer: link, ipa: "tʁwa.zɑ̃.fɑ̃", ja: "3 人の子ども", why: "数詞 trois ＋ 名詞で 1 つのかたまり。trois の s を [z] で読んでつなげる" }
+  - { fr: "un hôtel", show: "un{‿}hôtel", answer: link, ipa: "œ̃.no.tɛl", ja: "1 軒のホテル", why: "冠詞 un ＋ 名詞で 1 つのかたまり。hôtel の h は普通の h（h aspiré の 5 語ではない）なので、母音で始まる語と同じ。un の n を [n] で読んでつなげる" }
+  - { fr: "elles aiment", show: "elles{‿}aiment", answer: link, ipa: "ɛl.zɛm", ja: "彼女たちは好きだ", why: "主語の代名詞 elles ＋ 動詞で 1 つのかたまり。elles の最後の s を [z] で読んでつなげる" }
+  - { fr: "les écoles", show: "les{‿}écoles", answer: link, ipa: "le.ze.kɔl", ja: "学校（複数）", why: "冠詞 les ＋ 名詞で 1 つのかたまり。les の s を [z] で読んでつなげる" }
+  - { fr: "c'est intéressant", show: "c'est{‿}intéressant", answer: link, ipa: "sɛ.tɛ̃.te.ʁɛ.sɑ̃", ja: "それは面白い", why: "c'est の後はつなげる。est の t を [t] で読む" }
+  - { fr: "grand homme", show: "grand{‿}homme", answer: link, ipa: "ɡʁɑ̃.tɔm", ja: "偉人", why: "名詞の前の形容詞 grand ＋ 名詞で 1 つのかたまり。d は [t] の音でつなげる。homme の h は普通の h" }
+  - { fr: "du pain et un café", show: "du pain et{‿}un café", answer: nolink, ipa: "dy pɛ̃ e œ̃ ka.fe", ja: "パンとコーヒー", why: "et の後はかたまりの切れ目なので、つなげない（et の t はどんなときも読まない）" }
+  - { fr: "un restaurant italien", show: "un restaurant{‿}italien", answer: nolink, ipa: "œ̃ ʁɛs.tɔ.ʁɑ̃ i.ta.ljɛ̃", ja: "イタリア料理店", why: "単数の名詞 restaurant の後はかたまりの切れ目。後ろの形容詞 italien とはつなげない" }
+  - { fr: "les haricots", show: "les{‿}haricots", answer: nolink, ipa: "le a.ʁi.ko", ja: "インゲン豆", why: "haricot は h aspiré（覚える 5 語の 1 つ）。冠詞＋名詞でも、h aspiré がつながりを止める" }
+  - { fr: "le train arrive", show: "le train{‿}arrive", answer: nolink, ipa: "lə tʁɛ̃ a.ʁiv", ja: "電車が着く", why: "主語が名詞（le train）のときは、名詞の後で切れ目になるのでつなげない。つなげるのは主語が代名詞（il・ils など）のとき" }

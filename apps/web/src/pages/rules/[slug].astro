@@ -108,6 +108,7 @@ const quizItems = quiz.map((q) => ({ ...q, ...splitShow(q.show), src: audioUrl(q
     ipa: string;
     ja: string;
     answer: string;
+    why?: string;
     before: string;
     target: string;
     after: string;
@@ -174,7 +175,7 @@ const quizItems = quiz.map((q) => ({ ...q, ...splitShow(q.show), src: audioUrl(q
     if (ok) correct++;
     scoreLabel.textContent = `${correct} / ${total}（全 ${ROUND_SIZE} 問）`;
     resultLabel.className = `result ${ok ? 'ok' : 'ng'}`;
-    resultLabel.textContent = `${ok ? '正解！' : '残念…'} 答えは「${choiceName[current.answer]}」：${current.fr} [${current.ipa}]（${current.ja}）`;
+    resultLabel.textContent = `${ok ? '正解！' : '残念…'} 答えは「${choiceName[current.answer]}」：${current.fr} [${current.ipa}]（${current.ja}）${current.why ? `\n理由：${current.why}` : ''}`;
     answerButtons.forEach((b) => (b.disabled = true));
     play(current.src);
     if (total >= ROUND_SIZE) {
@@ -374,6 +375,8 @@ const quizItems = quiz.map((q) => ({ ...q, ...splitShow(q.show), src: audioUrl(q
     min-height: 1.6em;
     margin: 12px 0 0;
     font-weight: 600;
+    /* 理由は改行して別の行に出す */
+    white-space: pre-line;
   }
   .result.ok {
     color: var(--accent);

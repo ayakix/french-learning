@@ -71,7 +71,8 @@ const rules = defineCollection({
         examples: z.array(word),
       }),
     ),
-    quiz: z.array(word.extend({ show: z.string(), answer: z.string() })),
+    // why は答えた後に出す理由。正解だけでは、どのルールで判断するのかがわからない問題（リエゾンなど）に書く
+    quiz: z.array(word.extend({ show: z.string(), answer: z.string(), why: z.string().optional() })),
   }),
 });
 

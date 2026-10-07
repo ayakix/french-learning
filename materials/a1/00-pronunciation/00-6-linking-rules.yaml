@@ -4,7 +4,7 @@
 # どちらも「語末の子音が次の母音とつながる」ので、聞くだけでは同じに聞こえる。
 # 違いは、その子音を単独でも読むかどうか（00-5 の語末の子音・CaReFuL）。
 # 区別できると、リエゾンのルール（つなげてはいけない場合）を当てはめる場面がわかる。
-# show の {‿} はつながる切れ目（/rules/liaison と同じ書き方）。
+# show の {‿} はつながる切れ目（/rules/liaison と同じ書き方）。# 各問題の why は答えた後に出す理由（2026-10-07 に追加。正解だけでは、どのルールで判断したのかがわからなかったため）
 slug: linking
 title: "アンシェヌマンとリエゾン"
 lead: "語末の子音が次の母音とつながるのは同じです。もともと読む子音ならアンシェヌマン（いつもつながる）、普段は読まない子音ならリエゾン（ルールがある）です。"
@@ -27,15 +27,15 @@ rules:
       - { fr: "vous avez", ipa: "vu.za.ve", ja: "あなたは持っている" }
       - { fr: "un ami", ipa: "œ̃.na.mi", ja: "1 人の友だち" }
 quiz:
-  - { fr: "pour elle", show: "pour{‿}elle", answer: enchainement, ipa: "pu.ʁɛl", ja: "彼女のために" }
-  - { fr: "quel âge", show: "quel{‿}âge", answer: enchainement, ipa: "kɛ.lɑʒ", ja: "何歳" }
-  - { fr: "une amie", show: "une{‿}amie", answer: enchainement, ipa: "y.na.mi", ja: "1 人の友だち（女性）" }
-  - { fr: "elle arrive", show: "elle{‿}arrive", answer: enchainement, ipa: "ɛ.la.ʁiv", ja: "彼女が着く" }
-  - { fr: "sept heures", show: "sept{‿}heures", answer: enchainement, ipa: "sɛ.tœʁ", ja: "7 時" }
-  - { fr: "il habite", show: "il{‿}habite", answer: enchainement, ipa: "i.la.bit", ja: "彼は住んでいる" }
-  - { fr: "nous aimons", show: "nous{‿}aimons", answer: liaison, ipa: "nu.zɛ.mɔ̃", ja: "私たちは好きだ" }
-  - { fr: "deux ans", show: "deux{‿}ans", answer: liaison, ipa: "dø.zɑ̃", ja: "2 年・2 歳" }
-  - { fr: "ils arrivent", show: "ils{‿}arrivent", answer: liaison, ipa: "il.za.ʁiv", ja: "彼らが着く" }
-  - { fr: "mon ami", show: "mon{‿}ami", answer: liaison, ipa: "mɔ̃.na.mi", ja: "私の友だち" }
-  - { fr: "très intéressant", show: "très{‿}intéressant", answer: liaison, ipa: "tʁɛ.zɛ̃.te.ʁɛ.sɑ̃", ja: "とても面白い" }
-  - { fr: "petit enfant", show: "petit{‿}enfant", answer: liaison, ipa: "pə.ti.tɑ̃.fɑ̃", ja: "小さな子ども" }
+  - { fr: "pour elle", show: "pour{‿}elle", answer: enchainement, ipa: "pu.ʁɛl", ja: "彼女のために", why: "pour は単独でも r を読む [puʁ]（CaReFuL の r）。読む子音がつながるのでアンシェヌマン" }
+  - { fr: "quel âge", show: "quel{‿}âge", answer: enchainement, ipa: "kɛ.lɑʒ", ja: "何歳", why: "quel は単独でも l を読む [kɛl]（CaReFuL の l）。読む子音がつながるのでアンシェヌマン" }
+  - { fr: "une amie", show: "une{‿}amie", answer: enchainement, ipa: "y.na.mi", ja: "1 人の友だち（女性）", why: "une は語末の e の前の n を読む [yn]。読む子音がつながるのでアンシェヌマン" }
+  - { fr: "elle arrive", show: "elle{‿}arrive", answer: enchainement, ipa: "ɛ.la.ʁiv", ja: "彼女が着く", why: "elle は語末の e の前の l を読む [ɛl]。読む子音がつながるのでアンシェヌマン" }
+  - { fr: "sept heures", show: "sept{‿}heures", answer: enchainement, ipa: "sɛ.tœʁ", ja: "7 時", why: "sept は単独でも t を読む [sɛt]（数字の例外）。読む子音がつながるのでアンシェヌマン。heures の h は普通の h" }
+  - { fr: "il habite", show: "il{‿}habite", answer: enchainement, ipa: "i.la.bit", ja: "彼は住んでいる", why: "il は単独でも l を読む [il]（CaReFuL の l）。読む子音がつながるのでアンシェヌマン。habite の h は普通の h" }
+  - { fr: "nous aimons", show: "nous{‿}aimons", answer: liaison, ipa: "nu.zɛ.mɔ̃", ja: "私たちは好きだ", why: "nous は単独では s を読まない [nu]。普段読まない s が [z] で出てくるのでリエゾン" }
+  - { fr: "deux ans", show: "deux{‿}ans", answer: liaison, ipa: "dø.zɑ̃", ja: "2 年・2 歳", why: "deux は単独では x を読まない [dø]。普段読まない x が [z] で出てくるのでリエゾン" }
+  - { fr: "ils arrivent", show: "ils{‿}arrivent", answer: liaison, ipa: "il.za.ʁiv", ja: "彼らが着く", why: "ils は単独では s を読まない [il]。普段読まない s が [z] で出てくるのでリエゾン" }
+  - { fr: "mon ami", show: "mon{‿}ami", answer: liaison, ipa: "mɔ̃.na.mi", ja: "私の友だち", why: "mon は単独では n を読まない鼻母音 [mɔ̃]。普段読まない n が [n] で出てくるのでリエゾン" }
+  - { fr: "très intéressant", show: "très{‿}intéressant", answer: liaison, ipa: "tʁɛ.zɛ̃.te.ʁɛ.sɑ̃", ja: "とても面白い", why: "très は単独では s を読まない [tʁɛ]。普段読まない s が [z] で出てくるのでリエゾン" }
+  - { fr: "petit enfant", show: "petit{‿}enfant", answer: liaison, ipa: "pə.ti.tɑ̃.fɑ̃", ja: "小さな子ども", why: "petit は単独では t を読まない [pəti]。普段読まない t が [t] で出てくるのでリエゾン" }

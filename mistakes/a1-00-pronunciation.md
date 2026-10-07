@@ -26,3 +26,5 @@
 | 2026-10-06 | 00-6 | アンシェヌマンかリエゾンか（une amie） | リエゾン | アンシェヌマン | une の n は単独でも読む（une [yn]）。un ami の n（普段は読まない）と区別する |
 | 2026-10-06 | 00-7 | ディクテーション（単語 2 / 20、文 0 / 5） | — | — | 白紙から書くのは段差が大きすぎた。聞いて綴りを選ぶ（3 択）では 23 / 25。文は単元 01 の表現を知らないと書けない |
 | 2026-10-06 | 00-7 | 聞いて綴りを選ぶ（heure → houre、voiture → vouture） | houre / vouture | heure [œʁ] / voiture [vwa.tyʁ] | eu は [œ]、oi は [wa]。ou [u] と取り違えた |
+| 2026-10-07 | 00-7 | 聞いて綴りを選ぶ（lundi・fenêtre・maison・voiture・famille） | landi / fanêtre / maisson / vouture / fameille | 正しい綴り | 15 / 20。un [ɛ̃] と an [ɑ̃]、[ə] は e、母音の間の s 1 つは [z]、oi [wa] と ou [u]、ille [ij] と eille [ɛj]。/review でも voiture・famille を繰り返し間違えた |
+| 2026-10-07 | 00-6 | リエゾンするか（le train arrive・nous avons） | 逆 | 名詞の主語 ＋ 動詞はつなげない、代名詞 ＋ 動詞はつなげる | 理由が出ないと判断の筋道がわからないため、画面に理由を表示するようにした |

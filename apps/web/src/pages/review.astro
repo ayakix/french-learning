@@ -43,6 +43,7 @@ const items = [
         ja: q.ja,
         src: audioUrl(q.fr),
         answer: q.answer,
+        why: q.why,
         choices: r.data.choices,
         before: m[1],
         target: m[2],
@@ -116,6 +117,7 @@ const items = [
     answer: string;
     choices: Choice[];
     prompt?: string;
+    why?: string;
     before?: string;
     target?: string;
     after?: string;
@@ -236,7 +238,7 @@ const items = [
     });
     answers.querySelectorAll('button').forEach((b) => (b.disabled = true));
     resultLabel.className = `result ${ok ? 'ok' : 'ng'}`;
-    resultLabel.textContent = `${ok ? '正解！' : '残念…'} 答えは「${correctName}」：${item.fr} [${item.ipa}]（${item.ja}）`;
+    resultLabel.textContent = `${ok ? '正解！' : '残念…'} 答えは「${correctName}」：${item.fr} [${item.ipa}]（${item.ja}）${item.why ? `\n理由：${item.why}` : ''}`;
     if (item.type !== 'rules') wordLabel.textContent = item.fr;
     play(item.src);
     // 間違えたら、この周の最後にもう一度出す（その場で覚え直せるように）
@@ -344,6 +346,8 @@ const items = [
     min-height: 1.6em;
     margin: 12px 0 0;
     font-weight: 600;
+    /* 理由は改行して別の行に出す */
+    white-space: pre-line;
   }
   #questions ul {
     padding-left: 1.2em;
