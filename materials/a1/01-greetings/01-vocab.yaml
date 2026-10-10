@@ -5,6 +5,7 @@
 # 職業は男性形・女性形の両方を言えることが自己紹介に必要なので、形容詞と同じく女性形を f / f_ipa に書き、tts で両方を読ませる。
 # 国籍は形容詞として書く（Je suis japonais. のように冠詞なしで使うため）。
 # 自己紹介の動詞の note には、例文の動詞がどの主語の形かを書く（例文には原形が出てこず、どれがその動詞かわからなかったため。2026-10-07）
+# note には英語と比べた補足（同じ点・違う点）も書く。英語を足場にすると理解が早いため（2026-10-10）。英語と同じで当たり前の語には付けない
 # 数字（年齢に使う 0〜20）は common で扱うので、ここには入れない。
 unit: "01"
 title: "あいさつ・自己紹介"
@@ -19,99 +20,99 @@ groups:
       - { fr: "à demain", ipa: "a dəmɛ̃", ja: "また明日", pos: "表現", ex: { fr: "Au revoir, Paul, à demain !", ja: "さようなら、ポール、また明日！" } }
       - { fr: "bonne journée", ipa: "bɔn ʒuʁne", ja: "よい一日を", pos: "表現", ex: { fr: "Au revoir et bonne journée !", ja: "さようなら、よい一日を！" } }
       - { fr: "bonne nuit", ipa: "bɔn nɥi", ja: "おやすみなさい", pos: "表現", ex: { fr: "Bonne nuit, Léo, à demain !", ja: "おやすみ、レオ、また明日！" } }
-      - { fr: "Bonjour, madame.", ipa: "bɔ̃ʒuʁ madam", ja: "こんにちは（女性に）", pos: "表現", note: "フランスではあいさつに madame / monsieur を添えるのが礼儀", ex: { fr: "Bonjour, madame. Je suis Kenji Sato.", ja: "こんにちは。佐藤ケンジです。" } }
+      - { fr: "Bonjour, madame.", ipa: "bɔ̃ʒuʁ madam", ja: "こんにちは（女性に）", pos: "表現", note: "フランスではあいさつに madame / monsieur を添えるのが礼儀。英語の Hello, ma'am. より日常的で、店に入るときなども使う", ex: { fr: "Bonjour, madame. Je suis Kenji Sato.", ja: "こんにちは。佐藤ケンジです。" } }
       - { fr: "Bonjour, monsieur.", ipa: "bɔ̃ʒuʁ məsjø", ja: "こんにちは（男性に）", pos: "表現", note: "monsieur の on は鼻母音ではなく [ə] と読む例外", ex: { fr: "Bonjour, monsieur. Vous êtes monsieur Dupont ?", ja: "こんにちは。デュポンさんですか？" } }
-      - { fr: "Ça va ?", ipa: "sa va", ja: "元気？", pos: "表現", ex: { fr: "Bonjour, Thomas, ça va ?", ja: "こんにちは、トマ、元気？" } }
+      - { fr: "Ça va ?", ipa: "sa va", ja: "元気？", pos: "表現", note: "英語の How's it going? にあたる。va は aller（英語の go）の il の形", ex: { fr: "Bonjour, Thomas, ça va ?", ja: "こんにちは、トマ、元気？" } }
       - { fr: "Ça va bien.", ipa: "sa va bjɛ̃", ja: "元気だよ", pos: "表現", ex: { fr: "Ça va bien, merci. Et toi ?", ja: "元気だよ、ありがとう。君は？" } }
-      - { fr: "Comment allez-vous ?", ipa: "kɔmɑ̃ tale vu", ja: "お元気ですか（丁寧）", pos: "表現", note: "comment の t が allez とリエゾンする", ex: { fr: "Bonjour, madame Martin. Comment allez-vous ?", ja: "こんにちは、マルタンさん。お元気ですか？" } }
+      - { fr: "Comment allez-vous ?", ipa: "kɔmɑ̃ tale vu", ja: "お元気ですか（丁寧）", pos: "表現", note: "comment の t が allez とリエゾンする。英語の How are you? 直訳は「どのように行っていますか」（aller = go）", ex: { fr: "Bonjour, madame Martin. Comment allez-vous ?", ja: "こんにちは、マルタンさん。お元気ですか？" } }
       - { fr: "Très bien, merci.", ipa: "tʁɛ bjɛ̃ mɛʁsi", ja: "とても元気です、ありがとう", pos: "表現", ex: { fr: "Très bien, merci. Et vous, monsieur ?", ja: "とても元気です、ありがとう。あなたは？" } }
-      - { fr: "Et vous ?", ipa: "e vu", ja: "あなたは？（丁寧）", pos: "表現", ex: { fr: "Je suis japonais. Et vous ?", ja: "私は日本人です。あなたは？" } }
+      - { fr: "Et vous ?", ipa: "e vu", ja: "あなたは？（丁寧）", pos: "表現", note: "英語の And you? 英語の you は 1 つだが、相手によって vous / toi を使い分ける", ex: { fr: "Je suis japonais. Et vous ?", ja: "私は日本人です。あなたは？" } }
       - { fr: "Et toi ?", ipa: "e twa", ja: "君は？", pos: "表現", ex: { fr: "Moi, j'ai dix-neuf ans. Et toi ?", ja: "僕は 19 歳。君は？" } }
-      - { fr: "Enchanté.", ipa: "ɑ̃ʃɑ̃te", ja: "はじめまして", pos: "表現", note: "女性が言うときは Enchantée と書く（発音は同じ）", ex: { fr: "Enchanté, Sophie ! Moi, c'est Kenji.", ja: "はじめまして、ソフィー！僕はケンジ。" } }
-      - { fr: "Bienvenue !", ipa: "bjɛ̃vny", ja: "ようこそ", pos: "表現", ex: { fr: "Bienvenue à Paris, Yuki !", ja: "パリへようこそ、ユキ！" } }
+      - { fr: "Enchanté.", ipa: "ɑ̃ʃɑ̃te", ja: "はじめまして", pos: "表現", note: "女性が言うときは Enchantée と書く（発音は同じ）。英語の Nice to meet you.（英語の enchanted と同じ語源）", ex: { fr: "Enchanté, Sophie ! Moi, c'est Kenji.", ja: "はじめまして、ソフィー！僕はケンジ。" } }
+      - { fr: "Bienvenue !", ipa: "bjɛ̃vny", ja: "ようこそ", pos: "表現", note: "英語の Welcome! bien（よく）＋ venu（来た）で、英語の well + come と同じ作り", ex: { fr: "Bienvenue à Paris, Yuki !", ja: "パリへようこそ、ユキ！" } }
 
   - name: "礼儀の表現"
     words:
       - { fr: "merci", ipa: "mɛʁsi", ja: "ありがとう", pos: "表現", ex: { fr: "Ah, merci, Paul ! À demain !", ja: "あ、ありがとう、ポール！また明日！" } }
       - { fr: "merci beaucoup", ipa: "mɛʁsi boku", ja: "どうもありがとう", pos: "表現", ex: { fr: "Merci beaucoup, madame, au revoir !", ja: "どうもありがとうございました、さようなら！" } }
-      - { fr: "de rien", ipa: "də ʁjɛ̃", ja: "どういたしまして", pos: "表現", ex: { fr: "De rien, Paul, à bientôt !", ja: "どういたしまして、ポール、またね！" } }
+      - { fr: "de rien", ipa: "də ʁjɛ̃", ja: "どういたしまして", pos: "表現", note: "英語の You're welcome. 直訳は「何でもない」（it's nothing）", ex: { fr: "De rien, Paul, à bientôt !", ja: "どういたしまして、ポール、またね！" } }
       - { fr: "je vous en prie", ipa: "ʒə vu zɑ̃ pʁi", ja: "どういたしまして（丁寧）", pos: "表現", note: "vous と en がリエゾンして [z] になる", ex: { fr: "Je vous en prie, monsieur.", ja: "どういたしまして。" } }
-      - { fr: "s'il vous plaît", ipa: "sil vu plɛ", ja: "お願いします（丁寧）", pos: "表現", ex: { fr: "Vous vous appelez comment, s'il vous plaît ?", ja: "お名前は何とおっしゃいますか？" } }
-      - { fr: "s'il te plaît", ipa: "sil tə plɛ", ja: "お願い（親しい人に）", pos: "表現", ex: { fr: "Paul, répète, s'il te plaît !", ja: "ポール、もう一回言って！" } }
-      - { fr: "pardon", ipa: "paʁdɔ̃", ja: "すみません・ごめんなさい", pos: "表現", ex: { fr: "Pardon, vous êtes madame Martin ?", ja: "すみません、マルタンさんですか？" } }
-      - { fr: "excusez-moi", ipa: "ɛkskyze mwa", ja: "すみません（呼びかけ・謝罪）", pos: "表現", ex: { fr: "Excusez-moi, vous parlez anglais ?", ja: "すみません、英語を話されますか？" } }
+      - { fr: "s'il vous plaît", ipa: "sil vu plɛ", ja: "お願いします（丁寧）", pos: "表現", note: "英語の please。直訳は「もしあなたの気に入るなら」（if it pleases you）", ex: { fr: "Vous vous appelez comment, s'il vous plaît ?", ja: "お名前は何とおっしゃいますか？" } }
+      - { fr: "s'il te plaît", ipa: "sil tə plɛ", ja: "お願い（親しい人に）", pos: "表現", note: "英語の please。英語は 1 つだが、親しい相手には te、丁寧な相手には vous を使う", ex: { fr: "Paul, répète, s'il te plaît !", ja: "ポール、もう一回言って！" } }
+      - { fr: "pardon", ipa: "paʁdɔ̃", ja: "すみません・ごめんなさい", pos: "表現", note: "英語の Pardon? と同じく、聞き返すときにも使う", ex: { fr: "Pardon, vous êtes madame Martin ?", ja: "すみません、マルタンさんですか？" } }
+      - { fr: "excusez-moi", ipa: "ɛkskyze mwa", ja: "すみません（呼びかけ・謝罪）", pos: "表現", note: "英語の Excuse me. と同じ", ex: { fr: "Excusez-moi, vous parlez anglais ?", ja: "すみません、英語を話されますか？" } }
       - { fr: "désolé", ipa: "dezɔle", ja: "ごめんなさい・残念です", pos: "形容詞", f: "désolée", f_ipa: "dezɔle", tts: "désolé, désolée", note: "女性形も発音は同じ", ex: { fr: "Oh, pardon, je suis désolé !", ja: "あっ、すみません、ごめんなさい！" } }
       - { fr: "oui", ipa: "wi", ja: "はい", pos: "表現", ex: { fr: "Oui, je parle anglais.", ja: "はい、英語を話します。" } }
       - { fr: "non", ipa: "nɔ̃", ja: "いいえ", pos: "表現", ex: { fr: "Non, je suis canadien.", ja: "いいえ、カナダ人です。" } }
-      - { fr: "d'accord", ipa: "dakɔʁ", ja: "わかりました・OK", pos: "表現", ex: { fr: "D'accord, merci, à bientôt !", ja: "わかりました、ありがとう、またね！" } }
-      - { fr: "Je ne comprends pas.", ipa: "ʒə nə kɔ̃pʁɑ̃ pa", ja: "わかりません", pos: "表現", note: "否定（ne...pas）は単元 04 で学ぶが、困ったときに使えるよう決まり文句として先に覚える", ex: { fr: "Désolé, je ne comprends pas.", ja: "すみません、わかりません。" } }
-      - { fr: "Répétez, s'il vous plaît.", ipa: "ʁepete sil vu plɛ", ja: "もう一度言ってください", pos: "表現", ex: { fr: "Pardon ? Répétez, s'il vous plaît.", ja: "え？もう一度言ってください。" } }
+      - { fr: "d'accord", ipa: "dakɔʁ", ja: "わかりました・OK", pos: "表現", note: "英語の OK / all right", ex: { fr: "D'accord, merci, à bientôt !", ja: "わかりました、ありがとう、またね！" } }
+      - { fr: "Je ne comprends pas.", ipa: "ʒə nə kɔ̃pʁɑ̃ pa", ja: "わかりません", pos: "表現", note: "否定（ne...pas）は単元 04 で学ぶが、困ったときに使えるよう決まり文句として先に覚える。英語の I don't understand. ne...pas が英語の don't にあたる", ex: { fr: "Désolé, je ne comprends pas.", ja: "すみません、わかりません。" } }
+      - { fr: "Répétez, s'il vous plaît.", ipa: "ʁepete sil vu plɛ", ja: "もう一度言ってください", pos: "表現", note: "英語の Repeat, please.（同じ語源）", ex: { fr: "Pardon ? Répétez, s'il vous plaît.", ja: "え？もう一度言ってください。" } }
 
   - name: "主語代名詞"
     words:
-      - { fr: "je", ipa: "ʒə", ja: "私は", pos: "代名詞", note: "母音の前では j' になる（j'habite）", ex: { fr: "Je m'appelle Yuki Tanaka.", ja: "私の名前は田中ユキです。" } }
-      - { fr: "tu", ipa: "ty", ja: "君は（親しい相手 1 人）", pos: "代名詞", ex: { fr: "Tu es étudiant ?", ja: "君は学生？" } }
-      - { fr: "il", ipa: "il", ja: "彼は・それは", pos: "代名詞", ex: { fr: "Il s'appelle Marc, il est médecin.", ja: "彼の名前はマルクで、医者です。" } }
-      - { fr: "elle", ipa: "ɛl", ja: "彼女は・それは", pos: "代名詞", ex: { fr: "Elle est italienne et elle parle français.", ja: "彼女はイタリア人で、フランス語を話します。" } }
-      - { fr: "on", ipa: "ɔ̃", ja: "私たちは（話し言葉）・人は", pos: "代名詞", note: "意味は複数でも動詞は il と同じ形", ex: { fr: "On est étudiants à Nice.", ja: "私たちはニースの学生です。" } }
+      - { fr: "je", ipa: "ʒə", ja: "私は", pos: "代名詞", note: "母音の前では j' になる（j'habite）。英語の I。ただし英語と違い、文の途中では小文字で書く", ex: { fr: "Je m'appelle Yuki Tanaka.", ja: "私の名前は田中ユキです。" } }
+      - { fr: "tu", ipa: "ty", ja: "君は（親しい相手 1 人）", pos: "代名詞", note: "英語の you。英語の you は 1 つだが、フランス語は親しい相手 1 人なら tu、それ以外は vous", ex: { fr: "Tu es étudiant ?", ja: "君は学生？" } }
+      - { fr: "il", ipa: "il", ja: "彼は・それは", pos: "代名詞", note: "英語の he。物にも使う（英語の it はなく、男性名詞の物は il）", ex: { fr: "Il s'appelle Marc, il est médecin.", ja: "彼の名前はマルクで、医者です。" } }
+      - { fr: "elle", ipa: "ɛl", ja: "彼女は・それは", pos: "代名詞", note: "英語の she。女性名詞の物にも使う（英語なら it）", ex: { fr: "Elle est italienne et elle parle français.", ja: "彼女はイタリア人で、フランス語を話します。" } }
+      - { fr: "on", ipa: "ɔ̃", ja: "私たちは（話し言葉）・人は", pos: "代名詞", note: "意味は複数でも動詞は il と同じ形。英語の we（話し言葉）や people / one（一般の人）にあたる", ex: { fr: "On est étudiants à Nice.", ja: "私たちはニースの学生です。" } }
       - { fr: "nous", ipa: "nu", ja: "私たちは", pos: "代名詞", ex: { fr: "Nous habitons à Tokyo.", ja: "私たちは東京に住んでいます。" } }
-      - { fr: "vous", ipa: "vu", ja: "あなたは（丁寧）・あなたたちは", pos: "代名詞", note: "初対面や目上の人には 1 人でも vous を使う", ex: { fr: "Vous êtes français, monsieur ?", ja: "フランスの方ですか？" } }
-      - { fr: "ils", ipa: "il", ja: "彼らは（男性を含む）", pos: "代名詞", note: "女性が 1 人でも男性が混ざれば ils", ex: { fr: "Ils s'appellent Paul et Marc.", ja: "彼らの名前はポールとマルクです。" } }
-      - { fr: "elles", ipa: "ɛl", ja: "彼女らは（全員女性）", pos: "代名詞", ex: { fr: "Elles sont étudiantes à Lyon.", ja: "彼女たちはリヨンの学生です。" } }
-      - { fr: "moi", ipa: "mwa", ja: "私（強調）", pos: "代名詞", note: "Moi, je suis japonais. のように主語を強めるときに使う", ex: { fr: "Moi, je viens de Kyoto.", ja: "私は京都出身です。" } }
+      - { fr: "vous", ipa: "vu", ja: "あなたは（丁寧）・あなたたちは", pos: "代名詞", note: "初対面や目上の人には 1 人でも vous を使う。英語ではどちらも you", ex: { fr: "Vous êtes français, monsieur ?", ja: "フランスの方ですか？" } }
+      - { fr: "ils", ipa: "il", ja: "彼らは（男性を含む）", pos: "代名詞", note: "女性が 1 人でも男性が混ざれば ils。英語の they。英語は 1 つだが、フランス語は男女で ils / elles を分ける", ex: { fr: "Ils s'appellent Paul et Marc.", ja: "彼らの名前はポールとマルクです。" } }
+      - { fr: "elles", ipa: "ɛl", ja: "彼女らは（全員女性）", pos: "代名詞", note: "英語の they（全員女性のとき）", ex: { fr: "Elles sont étudiantes à Lyon.", ja: "彼女たちはリヨンの学生です。" } }
+      - { fr: "moi", ipa: "mwa", ja: "私（強調）", pos: "代名詞", note: "Moi, je suis japonais. のように主語を強めるときに使う。英語の Me, I'm Japanese. のような言い方に近い", ex: { fr: "Moi, je viens de Kyoto.", ja: "私は京都出身です。" } }
       - { fr: "toi", ipa: "twa", ja: "君（強調）", pos: "代名詞", ex: { fr: "Et toi, tu es d'où ?", ja: "で、君はどこの出身？" } }
-      - { fr: "c'est", ipa: "sɛ", ja: "これは〜です・〜です", pos: "表現", note: "Moi, c'est Paul.（僕はポール）のように名乗るときにも使う", ex: { fr: "Bonjour, c'est Sophie Martin.", ja: "こんにちは、ソフィー・マルタンです。" } }
+      - { fr: "c'est", ipa: "sɛ", ja: "これは〜です・〜です", pos: "表現", note: "Moi, c'est Paul.（僕はポール）のように名乗るときにも使う。英語の it is / this is", ex: { fr: "Bonjour, c'est Sophie Martin.", ja: "こんにちは、ソフィー・マルタンです。" } }
 
   - name: "自己紹介の動詞"
     words:
-      - { fr: "être", ipa: "ɛtʁ", ja: "〜である", pos: "動詞", note: "例文の sommes は être の nous の形（活用）", ex: { fr: "Nous sommes japonais.", ja: "私たちは日本人です。" } }
-      - { fr: "s'appeler", ipa: "saple", ja: "〜という名前である", pos: "動詞", note: "例文の s'appelle は s'appeler の elle の形（活用）", ex: { fr: "Elle s'appelle Marie.", ja: "彼女の名前はマリーです。" } }
-      - { fr: "habiter", ipa: "abite", ja: "住む", pos: "動詞", note: "h は読まないので j'habite とエリジオンする。例文の habite は habiter の je の形", ex: { fr: "J'habite à Paris.", ja: "パリに住んでいます。" } }
-      - { fr: "parler", ipa: "paʁle", ja: "話す", pos: "動詞", note: "例文の parle は parler の je の形（活用）", ex: { fr: "Je parle japonais et anglais.", ja: "日本語と英語を話します。" } }
-      - { fr: "venir", ipa: "vəniʁ", ja: "来る・〜出身である", pos: "動詞", note: "Je viens de Tokyo.（東京出身です）。例文の vient は venir の il の形", ex: { fr: "Il vient de Lyon.", ja: "彼はリヨン出身です。" } }
-      - { fr: "travailler", ipa: "tʁavaje", ja: "働く", pos: "動詞", note: "例文の travaille は travailler の je の形（活用）", ex: { fr: "Je travaille à Tokyo.", ja: "東京で働いています。" } }
-      - { fr: "étudier", ipa: "etydje", ja: "勉強する", pos: "動詞", note: "例文の étudies は étudier の tu の形（活用）", ex: { fr: "Tu étudies à Paris ?", ja: "パリで勉強しているの？" } }
-      - { fr: "avoir", ipa: "avwaʁ", ja: "持つ・（年齢が）〜歳である", pos: "動詞", note: "年齢は avoir で言う：J'ai vingt ans.（être は使わない）。例文の a は avoir の elle の形", ex: { fr: "Elle a seize ans.", ja: "彼女は 16 歳です。" } }
-      - { fr: "se présenter", ipa: "sə pʁezɑ̃te", ja: "自己紹介する", pos: "動詞", note: "例文の me présente は se présenter の je の形（活用）", ex: { fr: "Bonjour, je me présente : Yuki Tanaka.", ja: "こんにちは、自己紹介します。田中ユキです。" } }
+      - { fr: "être", ipa: "ɛtʁ", ja: "〜である", pos: "動詞", note: "例文の sommes は être の nous の形（活用）。英語の be", ex: { fr: "Nous sommes japonais.", ja: "私たちは日本人です。" } }
+      - { fr: "s'appeler", ipa: "saple", ja: "〜という名前である", pos: "動詞", note: "例文の s'appelle は s'appeler の elle の形（活用）。英語の be called（直訳は「自分を〜と呼ぶ」）", ex: { fr: "Elle s'appelle Marie.", ja: "彼女の名前はマリーです。" } }
+      - { fr: "habiter", ipa: "abite", ja: "住む", pos: "動詞", note: "h は読まないので j'habite とエリジオンする。例文の habite は habiter の je の形。英語の live（住む）", ex: { fr: "J'habite à Paris.", ja: "パリに住んでいます。" } }
+      - { fr: "parler", ipa: "paʁle", ja: "話す", pos: "動詞", note: "例文の parle は parler の je の形（活用）。英語の speak / talk", ex: { fr: "Je parle japonais et anglais.", ja: "日本語と英語を話します。" } }
+      - { fr: "venir", ipa: "vəniʁ", ja: "来る・〜出身である", pos: "動詞", note: "Je viens de Tokyo.（東京出身です）。例文の vient は venir の il の形。英語の come。出身は I come from... と同じく venir de", ex: { fr: "Il vient de Lyon.", ja: "彼はリヨン出身です。" } }
+      - { fr: "travailler", ipa: "tʁavaje", ja: "働く", pos: "動詞", note: "例文の travaille は travailler の je の形（活用）。英語の work", ex: { fr: "Je travaille à Tokyo.", ja: "東京で働いています。" } }
+      - { fr: "étudier", ipa: "etydje", ja: "勉強する", pos: "動詞", note: "例文の étudies は étudier の tu の形（活用）。英語の study（同じ語源）", ex: { fr: "Tu étudies à Paris ?", ja: "パリで勉強しているの？" } }
+      - { fr: "avoir", ipa: "avwaʁ", ja: "持つ・（年齢が）〜歳である", pos: "動詞", note: "年齢は avoir で言う：J'ai vingt ans.（être は使わない）。例文の a は avoir の elle の形。英語の have。英語では I am 20. と be を使うところ", ex: { fr: "Elle a seize ans.", ja: "彼女は 16 歳です。" } }
+      - { fr: "se présenter", ipa: "sə pʁezɑ̃te", ja: "自己紹介する", pos: "動詞", note: "例文の me présente は se présenter の je の形（活用）。英語の introduce oneself（直訳は「自分を紹介する」、英語の present と同じ語源）", ex: { fr: "Bonjour, je me présente : Yuki Tanaka.", ja: "こんにちは、自己紹介します。田中ユキです。" } }
 
   - name: "自己紹介の言葉とフレーズ"
     words:
       - { fr: "un nom", ipa: "œ̃ nɔ̃", ja: "名字・名前", pos: "名詞", g: "m", ex: { fr: "Dupont, c'est un nom français.", ja: "デュポンはフランスの名字です。" } }
       - { fr: "un prénom", ipa: "œ̃ pʁenɔ̃", ja: "（姓に対する）名前", pos: "名詞", g: "m", ex: { fr: "Yuki, c'est un prénom japonais.", ja: "ユキは日本の名前です。" } }
-      - { fr: "un âge", ipa: "œ̃ naʒ", ja: "年齢", pos: "名詞", g: "m", ex: { fr: "Vous avez quel âge, madame ?", ja: "おいくつですか？" } }
-      - { fr: "un an", ipa: "œ̃ nɑ̃", ja: "年・〜歳", pos: "名詞", g: "m", ex: { fr: "Paul a quinze ans.", ja: "ポールは 15 歳です。" } }
+      - { fr: "un âge", ipa: "œ̃ naʒ", ja: "年齢", pos: "名詞", g: "m", note: "英語の age（つづりが似ている）", ex: { fr: "Vous avez quel âge, madame ?", ja: "おいくつですか？" } }
+      - { fr: "un an", ipa: "œ̃ nɑ̃", ja: "年・〜歳", pos: "名詞", g: "m", note: "英語の year。年齢は J'ai vingt ans.（I have 20 years）。英語の I'm 20. と違い、ans は省略しない", ex: { fr: "Paul a quinze ans.", ja: "ポールは 15 歳です。" } }
       - { fr: "un pays", ipa: "œ̃ pei", ja: "国", pos: "名詞", g: "m", ex: { fr: "Tu viens de quel pays ?", ja: "どこの国から来たの？" } }
       - { fr: "une ville", ipa: "yn vil", ja: "町・都市", pos: "名詞", g: "f", ex: { fr: "Lyon est une ville française.", ja: "リヨンはフランスの都市です。" } }
-      - { fr: "une nationalité", ipa: "yn nasjɔnalite", ja: "国籍", pos: "名詞", g: "f", ex: { fr: "Vous êtes de quelle nationalité ?", ja: "国籍はどちらですか？" } }
-      - { fr: "une langue", ipa: "yn lɑ̃ɡ", ja: "言語", pos: "名詞", g: "f", ex: { fr: "Tu parles quelles langues ?", ja: "何語を話すの？" } }
+      - { fr: "une nationalité", ipa: "yn nasjɔnalite", ja: "国籍", pos: "名詞", g: "f", note: "英語の nationality（同じ語源）", ex: { fr: "Vous êtes de quelle nationalité ?", ja: "国籍はどちらですか？" } }
+      - { fr: "une langue", ipa: "yn lɑ̃ɡ", ja: "言語", pos: "名詞", g: "f", note: "英語の language（同じ語源）", ex: { fr: "Tu parles quelles langues ?", ja: "何語を話すの？" } }
       - { fr: "un métier", ipa: "œ̃ metje", ja: "職業", pos: "名詞", g: "m", ex: { fr: "Quel est le métier de Paul ?", ja: "ポールの職業は何ですか？" } }
       - { fr: "et", ipa: "e", ja: "そして・〜と", pos: "接続詞", note: "et の t は読まず、リエゾンもしない", ex: { fr: "Paul et Léa sont français.", ja: "ポールとレアはフランス人です。" } }
-      - { fr: "aussi", ipa: "osi", ja: "〜も", pos: "副詞", ex: { fr: "Moi aussi, je suis étudiant.", ja: "僕も学生です。" } }
+      - { fr: "aussi", ipa: "osi", ja: "〜も", pos: "副詞", note: "英語の too / also", ex: { fr: "Moi aussi, je suis étudiant.", ja: "僕も学生です。" } }
       - { fr: "un peu", ipa: "œ̃ pø", ja: "少し", pos: "副詞", ex: { fr: "Je parle un peu français.", ja: "フランス語を少し話します。" } }
-      - { fr: "à", ipa: "a", ja: "〜に・〜で（都市の前）", pos: "前置詞", note: "J'habite à Paris.", ex: { fr: "Elle habite à Marseille.", ja: "彼女はマルセイユに住んでいます。" } }
-      - { fr: "en", ipa: "ɑ̃", ja: "〜に・〜で（女性名詞の国の前）", pos: "前置詞", note: "J'habite en France.", ex: { fr: "Nous habitons en France.", ja: "私たちはフランスに住んでいます。" } }
-      - { fr: "au", ipa: "o", ja: "〜に・〜で（男性名詞の国の前）", pos: "前置詞", note: "J'habite au Japon.（à + le が au になる）", ex: { fr: "Il habite au Canada.", ja: "彼はカナダに住んでいます。" } }
-      - { fr: "Comment tu t'appelles ?", ipa: "kɔmɑ̃ ty tapɛl", ja: "名前は何？", pos: "表現", ex: { fr: "Salut ! Comment tu t'appelles ?", ja: "やあ！名前は何？" } }
-      - { fr: "Je m'appelle Kenji.", ipa: "ʒə mapɛl kɛnʒi", ja: "私の名前はケンジです", pos: "表現", note: "s'appeler は je のとき l が 2 つ（appelle）になり、e を [ɛ] と読む", ex: { fr: "Enchanté, je m'appelle Kenji.", ja: "はじめまして、ケンジです。" } }
-      - { fr: "Tu es d'où ?", ipa: "ty ɛ du", ja: "どこの出身？", pos: "表現", ex: { fr: "Salut, Léa ! Tu es d'où ?", ja: "やあ、レア！どこの出身？" } }
-      - { fr: "Tu as quel âge ?", ipa: "ty a kɛl aʒ", ja: "何歳？", pos: "表現", ex: { fr: "Et toi, Thomas, tu as quel âge ?", ja: "で、トマ、君は何歳？" } }
-      - { fr: "J'ai vingt ans.", ipa: "ʒe vɛ̃ tɑ̃", ja: "20 歳です", pos: "表現", note: "vingt の t が ans とリエゾンする", ex: { fr: "Moi, j'ai vingt ans.", ja: "僕は 20 歳です。" } }
+      - { fr: "à", ipa: "a", ja: "〜に・〜で（都市の前）", pos: "前置詞", note: "J'habite à Paris. 英語ではどれも in（in Paris / in France / in Japan）だが、フランス語は都市か国か、国の性で à / en / au を使い分ける", ex: { fr: "Elle habite à Marseille.", ja: "彼女はマルセイユに住んでいます。" } }
+      - { fr: "en", ipa: "ɑ̃", ja: "〜に・〜で（女性名詞の国の前）", pos: "前置詞", note: "J'habite en France. 英語の in France の in", ex: { fr: "Nous habitons en France.", ja: "私たちはフランスに住んでいます。" } }
+      - { fr: "au", ipa: "o", ja: "〜に・〜で（男性名詞の国の前）", pos: "前置詞", note: "J'habite au Japon.（à + le が au になる）。英語の in Japan の in", ex: { fr: "Il habite au Canada.", ja: "彼はカナダに住んでいます。" } }
+      - { fr: "Comment tu t'appelles ?", ipa: "kɔmɑ̃ ty tapɛl", ja: "名前は何？", pos: "表現", note: "英語の What's your name? 直訳は「君は自分をどう呼ぶ？」で、what ではなく comment（how）を使う", ex: { fr: "Salut ! Comment tu t'appelles ?", ja: "やあ！名前は何？" } }
+      - { fr: "Je m'appelle Kenji.", ipa: "ʒə mapɛl kɛnʒi", ja: "私の名前はケンジです", pos: "表現", note: "s'appeler は je のとき l が 2 つ（appelle）になり、e を [ɛ] と読む。英語の My name is Kenji.", ex: { fr: "Enchanté, je m'appelle Kenji.", ja: "はじめまして、ケンジです。" } }
+      - { fr: "Tu es d'où ?", ipa: "ty ɛ du", ja: "どこの出身？", pos: "表現", note: "英語の Where are you from? d'où = from where", ex: { fr: "Salut, Léa ! Tu es d'où ?", ja: "やあ、レア！どこの出身？" } }
+      - { fr: "Tu as quel âge ?", ipa: "ty a kɛl aʒ", ja: "何歳？", pos: "表現", note: "英語の How old are you? 直訳は「君は何歳を持っている？」で、être（be）ではなく avoir（have）を使う", ex: { fr: "Et toi, Thomas, tu as quel âge ?", ja: "で、トマ、君は何歳？" } }
+      - { fr: "J'ai vingt ans.", ipa: "ʒe vɛ̃ tɑ̃", ja: "20 歳です", pos: "表現", note: "vingt の t が ans とリエゾンする。英語の I'm twenty. と違い、avoir（have）を使い、ans（years）も省略しない", ex: { fr: "Moi, j'ai vingt ans.", ja: "僕は 20 歳です。" } }
 
   - name: "国と言語"
     words:
-      - { fr: "la France", ipa: "la fʁɑ̃s", ja: "フランス", pos: "名詞", g: "f", ex: { fr: "Paris est en France.", ja: "パリはフランスにあります。" } }
+      - { fr: "la France", ipa: "la fʁɑ̃s", ja: "フランス", pos: "名詞", g: "f", note: "英語は France と冠詞なしだが、フランス語は国名に le / la / l' を付ける", ex: { fr: "Paris est en France.", ja: "パリはフランスにあります。" } }
       - { fr: "le Japon", ipa: "lə ʒapɔ̃", ja: "日本", pos: "名詞", g: "m", ex: { fr: "J'habite au Japon, à Kyoto.", ja: "日本の京都に住んでいます。" } }
       - { fr: "l'Italie", ipa: "litali", ja: "イタリア", pos: "名詞", g: "f", ex: { fr: "Rome est en Italie.", ja: "ローマはイタリアにあります。" } }
       - { fr: "l'Espagne", ipa: "lɛspaɲ", ja: "スペイン", pos: "名詞", g: "f", ex: { fr: "Elle habite en Espagne.", ja: "彼女はスペインに住んでいます。" } }
       - { fr: "l'Allemagne", ipa: "lalmaɲ", ja: "ドイツ", pos: "名詞", g: "f", ex: { fr: "Il travaille en Allemagne.", ja: "彼はドイツで働いています。" } }
-      - { fr: "l'Angleterre", ipa: "lɑ̃ɡlətɛʁ", ja: "イギリス（イングランド）", pos: "名詞", g: "f", ex: { fr: "Londres est en Angleterre.", ja: "ロンドンはイングランドにあります。" } }
-      - { fr: "les États-Unis", ipa: "le zetazyni", ja: "アメリカ合衆国", pos: "名詞", g: "m", note: "複数形の国なので「〜に」は aux（aux États-Unis）", ex: { fr: "Ils habitent aux États-Unis.", ja: "彼らはアメリカに住んでいます。" } }
+      - { fr: "l'Angleterre", ipa: "lɑ̃ɡlətɛʁ", ja: "イギリス（イングランド）", pos: "名詞", g: "f", note: "英語の England。イギリス全体は le Royaume-Uni（the United Kingdom）", ex: { fr: "Londres est en Angleterre.", ja: "ロンドンはイングランドにあります。" } }
+      - { fr: "les États-Unis", ipa: "le zetazyni", ja: "アメリカ合衆国", pos: "名詞", g: "m", note: "複数形の国なので「〜に」は aux（aux États-Unis）。英語の the United States と同じく複数形", ex: { fr: "Ils habitent aux États-Unis.", ja: "彼らはアメリカに住んでいます。" } }
       - { fr: "la Chine", ipa: "la ʃin", ja: "中国", pos: "名詞", g: "f", ex: { fr: "Elle étudie en Chine.", ja: "彼女は中国で勉強しています。" } }
       - { fr: "la Corée", ipa: "la kɔʁe", ja: "韓国・朝鮮", pos: "名詞", g: "f", ex: { fr: "Séoul est en Corée.", ja: "ソウルは韓国にあります。" } }
       - { fr: "le Canada", ipa: "lə kanada", ja: "カナダ", pos: "名詞", g: "m", ex: { fr: "Montréal est au Canada.", ja: "モントリオールはカナダにあります。" } }
       - { fr: "la Belgique", ipa: "la bɛlʒik", ja: "ベルギー", pos: "名詞", g: "f", ex: { fr: "Nous travaillons en Belgique.", ja: "私たちはベルギーで働いています。" } }
       - { fr: "la Suisse", ipa: "la sɥis", ja: "スイス", pos: "名詞", g: "f", ex: { fr: "Genève est en Suisse.", ja: "ジュネーヴはスイスにあります。" } }
-      - { fr: "le français", ipa: "lə fʁɑ̃sɛ", ja: "フランス語", pos: "名詞", g: "m", note: "言語名は小文字で書く。parler の後では冠詞を省くことが多い（Je parle français.）", ex: { fr: "J'étudie le français à Nice.", ja: "ニースでフランス語を勉強しています。" } }
+      - { fr: "le français", ipa: "lə fʁɑ̃sɛ", ja: "フランス語", pos: "名詞", g: "m", note: "言語名は小文字で書く。parler の後では冠詞を省くことが多い（Je parle français.）。英語は言語名を大文字（French）で書く", ex: { fr: "J'étudie le français à Nice.", ja: "ニースでフランス語を勉強しています。" } }
       - { fr: "l'anglais", ipa: "lɑ̃ɡlɛ", ja: "英語", pos: "名詞", g: "m", ex: { fr: "Tu parles anglais ?", ja: "英語を話す？" } }
       - { fr: "le japonais", ipa: "lə ʒapɔnɛ", ja: "日本語", pos: "名詞", g: "m", ex: { fr: "Kenji parle japonais et français.", ja: "ケンジは日本語とフランス語を話します。" } }
       - { fr: "l'espagnol", ipa: "lɛspaɲɔl", ja: "スペイン語", pos: "名詞", g: "m", ex: { fr: "Vous parlez espagnol ?", ja: "スペイン語を話されますか？" } }
@@ -121,7 +122,7 @@ groups:
 
   - name: "国籍"
     words:
-      - { fr: "japonais", ipa: "ʒapɔnɛ", ja: "日本の・日本人の", pos: "形容詞", f: "japonaise", f_ipa: "ʒapɔnɛz", tts: "japonais, japonaise", note: "国籍は小文字で書く（Je suis japonais.）。「日本人」という名詞のときだけ大文字（un Japonais）", ex: { fr: "Yuki est japonaise.", ja: "ユキは日本人です。" } }
+      - { fr: "japonais", ipa: "ʒapɔnɛ", ja: "日本の・日本人の", pos: "形容詞", f: "japonaise", f_ipa: "ʒapɔnɛz", tts: "japonais, japonaise", note: "国籍は小文字で書く（Je suis japonais.）。「日本人」という名詞のときだけ大文字（un Japonais）。英語は Japanese と大文字で書く", ex: { fr: "Yuki est japonaise.", ja: "ユキは日本人です。" } }
       - { fr: "français", ipa: "fʁɑ̃sɛ", ja: "フランスの・フランス人の", pos: "形容詞", f: "française", f_ipa: "fʁɑ̃sɛz", tts: "français, française", ex: { fr: "Sophie est française.", ja: "ソフィーはフランス人です。" } }
       - { fr: "anglais", ipa: "ɑ̃ɡlɛ", ja: "イギリスの・イギリス人の", pos: "形容詞", f: "anglaise", f_ipa: "ɑ̃ɡlɛz", tts: "anglais, anglaise", ex: { fr: "Tom est anglais, il habite à Londres.", ja: "トムはイギリス人で、ロンドンに住んでいます。" } }
       - { fr: "américain", ipa: "ameʁikɛ̃", ja: "アメリカの・アメリカ人の", pos: "形容詞", f: "américaine", f_ipa: "ameʁikɛn", tts: "américain, américaine", note: "女性形は後ろに e が付くので鼻母音でなくなる", ex: { fr: "Il est américain, de New York.", ja: "彼はニューヨーク出身のアメリカ人です。" } }
@@ -136,15 +137,15 @@ groups:
 
   - name: "職業"
     words:
-      - { fr: "un étudiant", ipa: "œ̃ netydjɑ̃", ja: "学生", pos: "名詞", g: "m", f: "une étudiante", f_ipa: "yn etydjɑ̃t", tts: "un étudiant, une étudiante", note: "職業を言うときは冠詞を付けない（Je suis étudiant.）", ex: { fr: "Elle est étudiante à Tokyo.", ja: "彼女は東京の学生です。" } }
-      - { fr: "un professeur", ipa: "œ̃ pʁɔfesœʁ", ja: "先生・教師", pos: "名詞", g: "m", f: "une professeure", f_ipa: "yn pʁɔfesœʁ", tts: "un professeur, une professeure", ex: { fr: "Il est professeur de français.", ja: "彼はフランス語の先生です。" } }
-      - { fr: "un médecin", ipa: "œ̃ medsɛ̃", ja: "医者", pos: "名詞", g: "m", f: "une médecin", f_ipa: "yn medsɛ̃", tts: "un médecin, une médecin", note: "女性も同じ形で、冠詞だけ変わる", ex: { fr: "Elle est médecin à Lyon.", ja: "彼女はリヨンで医者をしています。" } }
+      - { fr: "un étudiant", ipa: "œ̃ netydjɑ̃", ja: "学生", pos: "名詞", g: "m", f: "une étudiante", f_ipa: "yn etydjɑ̃t", tts: "un étudiant, une étudiante", note: "職業を言うときは冠詞を付けない（Je suis étudiant.）。英語は I'm a student. と a を付けるが、フランス語は付けない", ex: { fr: "Elle est étudiante à Tokyo.", ja: "彼女は東京の学生です。" } }
+      - { fr: "un professeur", ipa: "œ̃ pʁɔfesœʁ", ja: "先生・教師", pos: "名詞", g: "m", f: "une professeure", f_ipa: "yn pʁɔfesœʁ", tts: "un professeur, une professeure", note: "英語の professor（大学教授）より広く、学校の先生全般に使う", ex: { fr: "Il est professeur de français.", ja: "彼はフランス語の先生です。" } }
+      - { fr: "un médecin", ipa: "œ̃ medsɛ̃", ja: "医者", pos: "名詞", g: "m", f: "une médecin", f_ipa: "yn medsɛ̃", tts: "un médecin, une médecin", note: "女性も同じ形で、冠詞だけ変わる。英語の doctor。英語の medicine（医学）は la médecine", ex: { fr: "Elle est médecin à Lyon.", ja: "彼女はリヨンで医者をしています。" } }
       - { fr: "un infirmier", ipa: "œ̃ nɛ̃fiʁmje", ja: "看護師", pos: "名詞", g: "m", f: "une infirmière", f_ipa: "yn ɛ̃fiʁmjɛʁ", tts: "un infirmier, une infirmière", ex: { fr: "Je suis infirmière à Paris.", ja: "私はパリで看護師をしています。" } }
-      - { fr: "un ingénieur", ipa: "œ̃ nɛ̃ʒenjœʁ", ja: "エンジニア・技師", pos: "名詞", g: "m", f: "une ingénieure", f_ipa: "yn ɛ̃ʒenjœʁ", tts: "un ingénieur, une ingénieure", ex: { fr: "Paul est ingénieur à Toulouse.", ja: "ポールはトゥールーズでエンジニアをしています。" } }
-      - { fr: "un employé", ipa: "œ̃ nɑ̃plwaje", ja: "会社員・従業員", pos: "名詞", g: "m", f: "une employée", f_ipa: "yn ɑ̃plwaje", tts: "un employé, une employée", ex: { fr: "Je suis employé à Tokyo.", ja: "私は東京で会社員をしています。" } }
+      - { fr: "un ingénieur", ipa: "œ̃ nɛ̃ʒenjœʁ", ja: "エンジニア・技師", pos: "名詞", g: "m", f: "une ingénieure", f_ipa: "yn ɛ̃ʒenjœʁ", tts: "un ingénieur, une ingénieure", note: "英語の engineer（同じ語源）", ex: { fr: "Paul est ingénieur à Toulouse.", ja: "ポールはトゥールーズでエンジニアをしています。" } }
+      - { fr: "un employé", ipa: "œ̃ nɑ̃plwaje", ja: "会社員・従業員", pos: "名詞", g: "m", f: "une employée", f_ipa: "yn ɑ̃plwaje", tts: "un employé, une employée", note: "英語の employee（同じ語源）", ex: { fr: "Je suis employé à Tokyo.", ja: "私は東京で会社員をしています。" } }
       - { fr: "un serveur", ipa: "œ̃ sɛʁvœʁ", ja: "ウェイター", pos: "名詞", g: "m", f: "une serveuse", f_ipa: "yn sɛʁvøz", tts: "un serveur, une serveuse", ex: { fr: "Thomas est serveur à Nice.", ja: "トマはニースでウェイターをしています。" } }
       - { fr: "un vendeur", ipa: "œ̃ vɑ̃dœʁ", ja: "店員・販売員", pos: "名詞", g: "m", f: "une vendeuse", f_ipa: "yn vɑ̃døz", tts: "un vendeur, une vendeuse", ex: { fr: "Elle est vendeuse à Paris.", ja: "彼女はパリで販売員をしています。" } }
       - { fr: "un cuisinier", ipa: "œ̃ kɥizinje", ja: "料理人", pos: "名詞", g: "m", f: "une cuisinière", f_ipa: "yn kɥizinjɛʁ", tts: "un cuisinier, une cuisinière", ex: { fr: "Kenji est cuisinier à Osaka.", ja: "ケンジは大阪で料理人をしています。" } }
       - { fr: "un journaliste", ipa: "œ̃ ʒuʁnalist", ja: "記者・ジャーナリスト", pos: "名詞", g: "m", f: "une journaliste", f_ipa: "yn ʒuʁnalist", tts: "un journaliste, une journaliste", ex: { fr: "Tu es journaliste ?", ja: "君は記者なの？" } }
-      - { fr: "un avocat", ipa: "œ̃ navɔka", ja: "弁護士", pos: "名詞", g: "m", f: "une avocate", f_ipa: "yn avɔkat", tts: "un avocat, une avocate", ex: { fr: "Madame Martin est avocate.", ja: "マルタンさんは弁護士です。" } }
+      - { fr: "un avocat", ipa: "œ̃ navɔka", ja: "弁護士", pos: "名詞", g: "m", f: "une avocate", f_ipa: "yn avɔkat", tts: "un avocat, une avocate", note: "英語の advocate と同じ語源。果物のアボカドも un avocat", ex: { fr: "Madame Martin est avocate.", ja: "マルタンさんは弁護士です。" } }
       - { fr: "un informaticien", ipa: "œ̃ nɛ̃fɔʁmatisjɛ̃", ja: "IT エンジニア", pos: "名詞", g: "m", f: "une informaticienne", f_ipa: "yn ɛ̃fɔʁmatisjɛn", tts: "un informaticien, une informaticienne", ex: { fr: "Moi, je suis informaticien.", ja: "僕は IT エンジニアです。" } }

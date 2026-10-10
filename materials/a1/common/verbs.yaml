@@ -4,6 +4,7 @@
 # inf は表示用（キーが fr だと音声化されてしまうため）。不定詞の音声は infinitive に別に持つ。
 # il / elle、ils / elles は発音が同じなので il / ils だけ載せる。
 # past は複合過去の je の形 1 つだけ。助動詞が avoir か être かを覚えるのが目的なので。
+# note は動詞全体の補足で、英語と比べて同じ点・違う点を書く（英語を足場にすると理解が早いため。2026-10-10）
 # être 助動詞の動詞は allé(e) のように表示し、tts には男性形を書く（(e) を TTS に読ませないため）。
 title: "動詞の活用"
 verbs:
@@ -13,6 +14,7 @@ verbs:
     ja: "〜である・いる"
     unit: "01"
     type: "不規則"
+    note: "英語の be。主語ごとに形が全部変わる（英語は am / are / is の 3 つだけ）。Je suis japonais. = I am Japanese. ただし年齢は être ではなく avoir で言う"
     infinitive: { fr: "être", ipa: "ɛtʁ" }
     present:
       - { fr: "je suis", ipa: "ʒə sɥi" }
@@ -28,6 +30,7 @@ verbs:
     ja: "〜という名前である"
     unit: "01"
     type: "代名動詞（-er）"
+    note: "英語の My name is… にあたる。直訳は「自分を〜と呼ぶ」（call oneself）。Je m'appelle Yuki. = My name is Yuki."
     infinitive: { fr: "s'appeler", ipa: "saple" }
     present:
       - { fr: "je m'appelle", ipa: "ʒə mapɛl", note: "l を 2 つ重ねて [ɛ] と読む" }
@@ -43,6 +46,7 @@ verbs:
     ja: "住む"
     unit: "01"
     type: "-er 規則"
+    note: "英語の live（住む）。J'habite à Tokyo. = I live in Tokyo. 都市の前の in は à になる"
     infinitive: { fr: "habiter", ipa: "abite" }
     present:
       - { fr: "j'habite", ipa: "ʒabit", note: "h は読まないので j' になる" }
@@ -58,6 +62,7 @@ verbs:
     ja: "話す"
     unit: "01"
     type: "-er 規則"
+    note: "英語の speak / talk。Je parle anglais. = I speak English. 言語名に冠詞を付けないのは英語と同じ"
     infinitive: { fr: "parler", ipa: "paʁle" }
     present:
       - { fr: "je parle", ipa: "ʒə paʁl" }
@@ -73,6 +78,7 @@ verbs:
     ja: "持っている"
     unit: "02"
     type: "不規則"
+    note: "英語の have。ただし英語で be を使う年齢・空腹なども avoir で言う：J'ai 30 ans. = I am 30. / J'ai faim. = I am hungry. 複合過去の助動詞になるのは英語の have（I have eaten）と同じ"
     infinitive: { fr: "avoir", ipa: "avwaʁ" }
     present:
       - { fr: "j'ai", ipa: "ʒe" }
@@ -88,6 +94,7 @@ verbs:
     ja: "食べる"
     unit: "03"
     type: "-er 規則"
+    note: "英語の eat。nous mangeons だけ g の後に e が入る（o の前でも g を [ʒ] で読ませるため）"
     infinitive: { fr: "manger", ipa: "mɑ̃ʒe" }
     present:
       - { fr: "je mange", ipa: "ʒə mɑ̃ʒ" }
@@ -103,6 +110,7 @@ verbs:
     ja: "始める・始まる"
     unit: "03"
     type: "-er 規則"
+    note: "英語の begin / start（英語の commence と同じ語源）。nous commençons だけ c が ç になる（o の前でも [s] で読ませるため）"
     infinitive: { fr: "commencer", ipa: "kɔmɑ̃se" }
     present:
       - { fr: "je commence", ipa: "ʒə kɔmɑ̃s" }
@@ -118,6 +126,7 @@ verbs:
     ja: "起きる"
     unit: "03"
     type: "代名動詞（-er）"
+    note: "英語の get up。直訳は「自分を起こす」。英語では oneself を付けないが、フランス語は me / te / se が必要"
     infinitive: { fr: "se lever", ipa: "sə ləve" }
     present:
       - { fr: "je me lève", ipa: "ʒə mə lɛv", note: "発音される語尾の前で e が è になる" }
@@ -133,6 +142,7 @@ verbs:
     ja: "寝る（床につく）"
     unit: "03"
     type: "代名動詞（-er）"
+    note: "英語の go to bed。直訳は「自分を寝かせる」。se lever と同じく me / te / se が必要"
     infinitive: { fr: "se coucher", ipa: "sə kuʃe" }
     present:
       - { fr: "je me couche", ipa: "ʒə mə kuʃ" }
@@ -148,6 +158,7 @@ verbs:
     ja: "取る・（乗り物に）乗る・（食事を）とる"
     unit: "03"
     type: "不規則"
+    note: "英語の take。食べ物・飲み物・乗り物にも使う：Je prends un café. = I'll have a coffee. / Je prends le bus. = I take the bus."
     infinitive: { fr: "prendre", ipa: "pʁɑ̃dʁ" }
     present:
       - { fr: "je prends", ipa: "ʒə pʁɑ̃", note: "d・s は読まない" }
@@ -163,6 +174,7 @@ verbs:
     ja: "終える・終わる"
     unit: "03"
     type: "-ir 規則"
+    note: "英語の finish（同じ語源）。-ir の規則動詞の代表"
     infinitive: { fr: "finir", ipa: "finiʁ" }
     present:
       - { fr: "je finis", ipa: "ʒə fini" }
@@ -178,6 +190,7 @@ verbs:
     ja: "出発する"
     unit: "03"
     type: "不規則（-ir）"
+    note: "英語の leave（出発する）。英語の depart と同じ語源"
     infinitive: { fr: "partir", ipa: "paʁtiʁ" }
     present:
       - { fr: "je pars", ipa: "ʒə paʁ", note: "単数は語幹の t が落ちる" }
@@ -193,6 +206,7 @@ verbs:
     ja: "眠る"
     unit: "03"
     type: "不規則（-ir）"
+    note: "英語の sleep。英語の dormitory（寮）と同じ語源"
     infinitive: { fr: "dormir", ipa: "dɔʁmiʁ" }
     present:
       - { fr: "je dors", ipa: "ʒə dɔʁ", note: "単数は語幹の m が落ちる" }
@@ -208,6 +222,7 @@ verbs:
     ja: "する・作る"
     unit: "04"
     type: "不規則"
+    note: "英語の do と make の両方。天気（Il fait beau. = It's nice.）やスポーツ（faire du sport = do sports）にも使う"
     infinitive: { fr: "faire", ipa: "fɛʁ" }
     present:
       - { fr: "je fais", ipa: "ʒə fɛ" }
@@ -223,6 +238,7 @@ verbs:
     ja: "好きだ・愛している"
     unit: "04"
     type: "-er 規則"
+    note: "英語の like と love の両方。好きなものには定冠詞を付ける：J'aime le café. = I like coffee.（英語は the を付けない）"
     infinitive: { fr: "aimer", ipa: "eme" }
     present:
       - { fr: "j'aime", ipa: "ʒɛm" }
@@ -238,6 +254,7 @@ verbs:
     ja: "〜のほうが好きだ"
     unit: "04"
     type: "-er 規則（綴りが変わる）"
+    note: "英語の prefer（同じ語源）"
     infinitive: { fr: "préférer", ipa: "pʁefeʁe" }
     present:
       - { fr: "je préfère", ipa: "ʒə pʁefɛʁ", note: "発音される語尾の前で é が è になる" }
@@ -253,6 +270,7 @@ verbs:
     ja: "出かける・外に出る"
     unit: "04"
     type: "不規則（-ir）"
+    note: "英語の go out。sortie は「出口」（exit）"
     infinitive: { fr: "sortir", ipa: "sɔʁtiʁ" }
     present:
       - { fr: "je sors", ipa: "ʒə sɔʁ", note: "単数は語幹の t が落ちる" }
@@ -268,6 +286,7 @@ verbs:
     ja: "読む"
     unit: "04"
     type: "不規則"
+    note: "英語の read。英語の lecture と同じ語源（ただし英語の lecture は「講義」）"
     infinitive: { fr: "lire", ipa: "liʁ" }
     present:
       - { fr: "je lis", ipa: "ʒə li" }
@@ -283,6 +302,7 @@ verbs:
     ja: "行く"
     unit: "05"
     type: "不規則"
+    note: "英語の go。aller + 原形 = be going to：Je vais manger. = I'm going to eat. 調子を聞くときにも使う：Ça va ? = How are you?"
     infinitive: { fr: "aller", ipa: "ale" }
     present:
       - { fr: "je vais", ipa: "ʒə vɛ" }
@@ -298,6 +318,7 @@ verbs:
     ja: "来る"
     unit: "05"
     type: "不規則"
+    note: "英語の come。出身は venir de：Je viens du Japon. = I come from Japan."
     infinitive: { fr: "venir", ipa: "vəniʁ" }
     present:
       - { fr: "je viens", ipa: "ʒə vjɛ̃" }
@@ -313,6 +334,7 @@ verbs:
     ja: "待つ"
     unit: "05"
     type: "-re 動詞"
+    note: "英語の wait for。for にあたる語は付けない：J'attends le bus. = I'm waiting for the bus. 英語の attend（出席する）とは意味が違う"
     infinitive: { fr: "attendre", ipa: "atɑ̃dʁ" }
     present:
       - { fr: "j'attends", ipa: "ʒatɑ̃" }
@@ -328,6 +350,7 @@ verbs:
     ja: "買う"
     unit: "06"
     type: "-er 規則（綴りが変わる）"
+    note: "英語の buy"
     infinitive: { fr: "acheter", ipa: "aʃte" }
     present:
       - { fr: "j'achète", ipa: "ʒaʃɛt", note: "発音される語尾の前で e が è になる" }
@@ -343,6 +366,7 @@ verbs:
     ja: "置く・着る"
     unit: "06"
     type: "不規則"
+    note: "英語の put と put on（服を着る）の両方"
     infinitive: { fr: "mettre", ipa: "mɛtʁ" }
     present:
       - { fr: "je mets", ipa: "ʒə mɛ" }
@@ -358,6 +382,7 @@ verbs:
     ja: "〜したい・ほしい"
     unit: "06"
     type: "不規則"
+    note: "英語の want。お願いするときは je voudrais = I would like（je veux は直接的すぎる）"
     infinitive: { fr: "vouloir", ipa: "vulwaʁ" }
     present:
       - { fr: "je veux", ipa: "ʒə vø", note: "丁寧に頼むときは je voudrais [ʒə vudʁɛ]" }
@@ -373,6 +398,7 @@ verbs:
     ja: "〜できる"
     unit: "06"
     type: "不規則"
+    note: "英語の can / may。後ろは原形（英語と同じ）：Je peux venir. = I can come."
     infinitive: { fr: "pouvoir", ipa: "puvwaʁ" }
     present:
       - { fr: "je peux", ipa: "ʒə pø" }
@@ -388,6 +414,7 @@ verbs:
     ja: "飲む"
     unit: "06"
     type: "不規則"
+    note: "英語の drink"
     infinitive: { fr: "boire", ipa: "bwaʁ" }
     present:
       - { fr: "je bois", ipa: "ʒə bwa" }
@@ -403,6 +430,7 @@ verbs:
     ja: "知っている（情報）・〜できる（技能）"
     unit: "07"
     type: "不規則"
+    note: "英語の know（事実・やり方）。savoir + 原形 = 〜できる：Je sais nager. = I can swim. 人・場所を知っているは connaître"
     infinitive: { fr: "savoir", ipa: "savwaʁ" }
     present:
       - { fr: "je sais", ipa: "ʒə sɛ" }
@@ -418,6 +446,7 @@ verbs:
     ja: "知っている（人・場所）"
     unit: "07"
     type: "不規則"
+    note: "英語の know（人・場所を知っている）。英語の know は 1 語だが、フランス語では savoir（事実・やり方）と使い分ける"
     infinitive: { fr: "connaître", ipa: "kɔnɛtʁ" }
     present:
       - { fr: "je connais", ipa: "ʒə kɔnɛ" }
@@ -433,6 +462,7 @@ verbs:
     ja: "言う"
     unit: "07"
     type: "不規則"
+    note: "英語の say と tell の両方"
     infinitive: { fr: "dire", ipa: "diʁ" }
     present:
       - { fr: "je dis", ipa: "ʒə di" }
@@ -448,6 +478,7 @@ verbs:
     ja: "〜しなければならない"
     unit: "08"
     type: "不規則"
+    note: "英語の must / have to。後ろは原形（英語と同じ）：Je dois partir. = I must leave."
     infinitive: { fr: "devoir", ipa: "dəvwaʁ" }
     present:
       - { fr: "je dois", ipa: "ʒə dwa" }
@@ -463,6 +494,7 @@ verbs:
     ja: "見る・会う"
     unit: "08"
     type: "不規則"
+    note: "英語の see"
     infinitive: { fr: "voir", ipa: "vwaʁ" }
     present:
       - { fr: "je vois", ipa: "ʒə vwa" }
@@ -478,6 +510,7 @@ verbs:
     ja: "書く"
     unit: "10"
     type: "不規則"
+    note: "英語の write。英語の script・describe と同じ語源"
     infinitive: { fr: "écrire", ipa: "ekʁiʁ" }
     present:
       - { fr: "j'écris", ipa: "ʒekʁi" }

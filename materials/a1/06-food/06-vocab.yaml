@@ -3,25 +3,26 @@
 # 数えられない食べ物・飲み物は部分冠詞 du / de la / de l' で書く。注文や買い物では、この形でそのまま使うため。
 # 服とサイズも買い物の場面として含める（色は単元 02 で扱うので除く）。
 # 数字・値段の言い方は common で扱うのでここには入れない。店の建物のうち食べ物以外（pharmacie など）は単元 05 で扱う。
+# note には英語と比べた補足（同じ点・違う点）も書く。英語を足場にすると理解が早いため（2026-10-10）。英語と同じで当たり前の語には付けない
 unit: "06"
 title: "買い物と食事"
 groups:
   - name: "食べ物（主食・肉・魚）"
     words:
-      - {fr: "du pain", ipa: "dy pɛ̃", ja: "パン", pos: "名詞", g: "m", ex: {fr: "Je voudrais du pain, s'il vous plaît.", ja: "パンをください。"}}
+      - {fr: "du pain", ipa: "dy pɛ̃", ja: "パン", pos: "名詞", g: "m", note: "du は英語の some にあたる（部分冠詞）。英語は bread と冠詞なしでも言えるが、フランス語は du を省けない", ex: {fr: "Je voudrais du pain, s'il vous plaît.", ja: "パンをください。"}}
       - {fr: "une baguette", ipa: "yn baɡɛt", ja: "バゲット", pos: "名詞", g: "f", ex: {fr: "Une baguette coûte un euro vingt.", ja: "バゲットは 1 ユーロ 20 です。"}}
       - {fr: "un croissant", ipa: "œ̃ kʁwasɑ̃", ja: "クロワッサン", pos: "名詞", g: "m", ex: {fr: "Je voudrais deux croissants, s'il vous plaît.", ja: "クロワッサンを 2 つください。"}}
       - {fr: "du riz", ipa: "dy ʁi", ja: "米・ごはん", pos: "名詞", g: "m", ex: {fr: "Au Japon, on mange du riz.", ja: "日本ではごはんを食べます。"}}
-      - {fr: "des pâtes", ipa: "de pat", ja: "パスタ", pos: "名詞", g: "f", note: "パスタの意味では複数形で使う", ex: {fr: "Ce soir, je mange des pâtes.", ja: "今夜はパスタを食べます。"}}
-      - {fr: "de la viande", ipa: "də la vjɑ̃d", ja: "肉", pos: "名詞", g: "f", ex: {fr: "Il y a de la viande dans ce plat ?", ja: "この料理に肉は入っていますか？"}}
+      - {fr: "des pâtes", ipa: "de pat", ja: "パスタ", pos: "名詞", g: "f", note: "パスタの意味では複数形で使う。英語の pasta は単数扱いだが、フランス語は複数形", ex: {fr: "Ce soir, je mange des pâtes.", ja: "今夜はパスタを食べます。"}}
+      - {fr: "de la viande", ipa: "də la vjɑ̃d", ja: "肉", pos: "名詞", g: "f", note: "英語の meat", ex: {fr: "Il y a de la viande dans ce plat ?", ja: "この料理に肉は入っていますか？"}}
       - {fr: "du poulet", ipa: "dy pulɛ", ja: "鶏肉", pos: "名詞", g: "m", ex: {fr: "Je voudrais du poulet avec du riz.", ja: "鶏肉とごはんをお願いします。"}}
-      - {fr: "du bœuf", ipa: "dy bœf", ja: "牛肉", pos: "名詞", g: "m", ex: {fr: "Ce soir, on mange du bœuf.", ja: "今夜は牛肉を食べます。"}}
-      - {fr: "du porc", ipa: "dy pɔʁ", ja: "豚肉", pos: "名詞", g: "m", note: "語末の c は読まない", ex: {fr: "Mon ami ne mange pas de porc.", ja: "友達は豚肉を食べません。"}}
+      - {fr: "du bœuf", ipa: "dy bœf", ja: "牛肉", pos: "名詞", g: "m", note: "英語の beef（同じ語源）", ex: {fr: "Ce soir, on mange du bœuf.", ja: "今夜は牛肉を食べます。"}}
+      - {fr: "du porc", ipa: "dy pɔʁ", ja: "豚肉", pos: "名詞", g: "m", note: "語末の c は読まない。英語の pork（同じ語源）", ex: {fr: "Mon ami ne mange pas de porc.", ja: "友達は豚肉を食べません。"}}
       - {fr: "du jambon", ipa: "dy ʒɑ̃bɔ̃", ja: "ハム", pos: "名詞", g: "m", ex: {fr: "J'achète du jambon et du fromage.", ja: "ハムとチーズを買います。"}}
-      - {fr: "du poisson", ipa: "dy pwasɔ̃", ja: "魚", pos: "名詞", g: "m", ex: {fr: "Le vendredi, nous mangeons du poisson.", ja: "金曜日、私たちは魚を食べます。"}}
+      - {fr: "du poisson", ipa: "dy pwasɔ̃", ja: "魚", pos: "名詞", g: "m", note: "英語の fish", ex: {fr: "Le vendredi, nous mangeons du poisson.", ja: "金曜日、私たちは魚を食べます。"}}
       - {fr: "un œuf", ipa: "œ̃ nœf", ja: "卵", pos: "名詞", g: "m", pl: "des œufs", note: "複数形 des œufs は [de zø]。f を読まなくなる", ex: {fr: "Je voudrais six œufs, s'il vous plaît.", ja: "卵を 6 個ください。"}}
       - {fr: "de la soupe", ipa: "də la sup", ja: "スープ", pos: "名詞", g: "f", ex: {fr: "Le soir, je mange de la soupe chaude.", ja: "夜は温かいスープを飲みます。"}}
-      - {fr: "de la salade", ipa: "də la salad", ja: "サラダ・レタス", pos: "名詞", g: "f", ex: {fr: "À midi, je mange de la salade.", ja: "お昼にサラダを食べます。"}}
+      - {fr: "de la salade", ipa: "də la salad", ja: "サラダ・レタス", pos: "名詞", g: "f", note: "英語の salad だが、野菜のレタスの意味もある", ex: {fr: "À midi, je mange de la salade.", ja: "お昼にサラダを食べます。"}}
       - {fr: "un sandwich", ipa: "œ̃ sɑ̃dwitʃ", ja: "サンドイッチ", pos: "名詞", g: "m", ex: {fr: "À midi, je mange un sandwich au parc.", ja: "お昼は公園でサンドイッチを食べます。"}}
   - name: "野菜・果物"
     words:
@@ -31,15 +32,15 @@ groups:
       - {fr: "une banane", ipa: "yn banan", ja: "バナナ", pos: "名詞", g: "f", ex: {fr: "Il y a une banane dans mon sac.", ja: "かばんにバナナが 1 本あります。"}}
       - {fr: "une orange", ipa: "yn ɔʁɑ̃ʒ", ja: "オレンジ", pos: "名詞", g: "f", ex: {fr: "Je voudrais trois oranges, s'il vous plaît.", ja: "オレンジを 3 つください。"}}
       - {fr: "une fraise", ipa: "yn fʁɛz", ja: "いちご", pos: "名詞", g: "f", ex: {fr: "J'aime beaucoup les fraises.", ja: "私はいちごが大好きです。"}}
-      - {fr: "du raisin", ipa: "dy ʁɛzɛ̃", ja: "ぶどう", pos: "名詞", g: "m", note: "ぶどうは房ごと数えないので、ふつう単数の du raisin", ex: {fr: "J'achète du raisin au marché.", ja: "市場でぶどうを買います。"}}
+      - {fr: "du raisin", ipa: "dy ʁɛzɛ̃", ja: "ぶどう", pos: "名詞", g: "m", note: "ぶどうは房ごと数えないので、ふつう単数の du raisin。英語の grape。英語の raisin（干しぶどう）とは意味が違う。干しぶどうは des raisins secs", ex: {fr: "J'achète du raisin au marché.", ja: "市場でぶどうを買います。"}}
       - {fr: "un citron", ipa: "œ̃ sitʁɔ̃", ja: "レモン", pos: "名詞", g: "m", ex: {fr: "Un thé au citron, s'il vous plaît.", ja: "レモンティーをお願いします。"}}
       - {fr: "une tomate", ipa: "yn tɔmat", ja: "トマト", pos: "名詞", g: "f", ex: {fr: "Je voudrais une salade de tomates.", ja: "トマトサラダをお願いします。"}}
-      - {fr: "une pomme de terre", ipa: "yn pɔm də tɛʁ", ja: "じゃがいも", pos: "名詞", g: "f", note: "直訳は「大地のりんご」", ex: {fr: "Les pommes de terre ne sont pas chères.", ja: "じゃがいもは高くありません。"}}
+      - {fr: "une pomme de terre", ipa: "yn pɔm də tɛʁ", ja: "じゃがいも", pos: "名詞", g: "f", note: "直訳は「大地のりんご」。英語の potato", ex: {fr: "Les pommes de terre ne sont pas chères.", ja: "じゃがいもは高くありません。"}}
       - {fr: "une carotte", ipa: "yn kaʁɔt", ja: "にんじん", pos: "名詞", g: "f", ex: {fr: "Mon fils n'aime pas les carottes.", ja: "息子はにんじんが好きではありません。"}}
       - {fr: "un oignon", ipa: "œ̃ nɔɲɔ̃", ja: "たまねぎ", pos: "名詞", g: "m", note: "oi を「オ」と読む例外", ex: {fr: "Il y a un oignon dans la soupe.", ja: "スープにたまねぎが 1 個入っています。"}}
   - name: "乳製品・甘いもの・調味料"
     words:
-      - {fr: "du fromage", ipa: "dy fʁɔmaʒ", ja: "チーズ", pos: "名詞", g: "m", ex: {fr: "Le fromage français est délicieux.", ja: "フランスのチーズはとてもおいしい。"}}
+      - {fr: "du fromage", ipa: "dy fʁɔmaʒ", ja: "チーズ", pos: "名詞", g: "m", note: "英語の cheese", ex: {fr: "Le fromage français est délicieux.", ja: "フランスのチーズはとてもおいしい。"}}
       - {fr: "du beurre", ipa: "dy bœʁ", ja: "バター", pos: "名詞", g: "m", ex: {fr: "J'achète du beurre au supermarché.", ja: "スーパーでバターを買います。"}}
       - {fr: "un yaourt", ipa: "œ̃ jauʁt", ja: "ヨーグルト", pos: "名詞", g: "m", note: "1 個ずつのカップで数えるので un。語末の t は読まない人もいる", ex: {fr: "Mon fils mange un yaourt au dessert.", ja: "息子はデザートにヨーグルトを食べます。"}}
       - {fr: "du sucre", ipa: "dy sykʁ", ja: "砂糖", pos: "名詞", g: "m", ex: {fr: "Vous voulez du sucre dans votre café ?", ja: "コーヒーに砂糖を入れますか？"}}
@@ -47,115 +48,115 @@ groups:
       - {fr: "du poivre", ipa: "dy pwavʁ", ja: "こしょう", pos: "名詞", g: "m", ex: {fr: "Du sel et du poivre, s'il vous plaît.", ja: "塩とこしょうをお願いします。"}}
       - {fr: "de la confiture", ipa: "də la kɔ̃fityʁ", ja: "ジャム", pos: "名詞", g: "f", ex: {fr: "Le matin, je mange du pain avec de la confiture.", ja: "朝はパンにジャムをつけて食べます。"}}
       - {fr: "du chocolat", ipa: "dy ʃɔkɔla", ja: "チョコレート", pos: "名詞", g: "m", ex: {fr: "Les enfants adorent le chocolat.", ja: "子どもたちはチョコレートが大好きです。"}}
-      - {fr: "un gâteau", ipa: "œ̃ ɡato", ja: "ケーキ", pos: "名詞", g: "m", pl: "des gâteaux", ex: {fr: "C'est l'anniversaire de Léa : on achète un gâteau.", ja: "レアの誕生日なので、ケーキを買います。"}}
+      - {fr: "un gâteau", ipa: "œ̃ ɡato", ja: "ケーキ", pos: "名詞", g: "m", pl: "des gâteaux", note: "英語の cake", ex: {fr: "C'est l'anniversaire de Léa : on achète un gâteau.", ja: "レアの誕生日なので、ケーキを買います。"}}
       - {fr: "une tarte", ipa: "yn taʁt", ja: "タルト", pos: "名詞", g: "f", ex: {fr: "La tarte aux pommes est délicieuse.", ja: "りんごのタルトはとてもおいしい。"}}
-      - {fr: "de la glace", ipa: "də la ɡlas", ja: "アイスクリーム", pos: "名詞", g: "f", ex: {fr: "Tu veux de la glace au chocolat ?", ja: "チョコレートアイスはいる？"}}
+      - {fr: "de la glace", ipa: "də la ɡlas", ja: "アイスクリーム", pos: "名詞", g: "f", note: "英語の ice cream。英語の ice（氷）の意味もある", ex: {fr: "Tu veux de la glace au chocolat ?", ja: "チョコレートアイスはいる？"}}
   - name: "飲み物"
     words:
-      - {fr: "de l'eau", ipa: "də lo", ja: "水", pos: "名詞", g: "f", note: "母音で始まる語の前では de la / du ではなく de l'", ex: {fr: "Les enfants boivent de l'eau.", ja: "子どもたちは水を飲みます。"}}
+      - {fr: "de l'eau", ipa: "də lo", ja: "水", pos: "名詞", g: "f", note: "母音で始まる語の前では de la / du ではなく de l'。英語の water", ex: {fr: "Les enfants boivent de l'eau.", ja: "子どもたちは水を飲みます。"}}
       - {fr: "de l'eau minérale", ipa: "də lo mineʁal", ja: "ミネラルウォーター", pos: "名詞", g: "f", ex: {fr: "Je bois de l'eau minérale au restaurant.", ja: "レストランではミネラルウォーターを飲みます。"}}
       - {fr: "du café", ipa: "dy kafe", ja: "コーヒー", pos: "名詞", g: "m", note: "カフェで 1 杯注文するときは un café", ex: {fr: "Je bois un café après le repas.", ja: "食後にコーヒーを飲みます。"}}
-      - {fr: "du thé", ipa: "dy te", ja: "紅茶・お茶", pos: "名詞", g: "m", ex: {fr: "Ma mère boit du thé vert.", ja: "母は緑茶を飲みます。"}}
-      - {fr: "du lait", ipa: "dy lɛ", ja: "牛乳", pos: "名詞", g: "m", ex: {fr: "Je voudrais un café au lait.", ja: "カフェオレをください。"}}
+      - {fr: "du thé", ipa: "dy te", ja: "紅茶・お茶", pos: "名詞", g: "m", note: "英語の tea", ex: {fr: "Ma mère boit du thé vert.", ja: "母は緑茶を飲みます。"}}
+      - {fr: "du lait", ipa: "dy lɛ", ja: "牛乳", pos: "名詞", g: "m", note: "英語の milk。カフェ・オ・レ（café au lait）の lait", ex: {fr: "Je voudrais un café au lait.", ja: "カフェオレをください。"}}
       - {fr: "du jus d'orange", ipa: "dy ʒy dɔʁɑ̃ʒ", ja: "オレンジジュース", pos: "名詞", g: "m", ex: {fr: "Un jus d'orange, s'il vous plaît.", ja: "オレンジジュースを 1 杯お願いします。"}}
-      - {fr: "du vin", ipa: "dy vɛ̃", ja: "ワイン", pos: "名詞", g: "m", ex: {fr: "On boit du vin avec le fromage.", ja: "チーズと一緒にワインを飲みます。"}}
+      - {fr: "du vin", ipa: "dy vɛ̃", ja: "ワイン", pos: "名詞", g: "m", note: "英語の wine（同じ語源）", ex: {fr: "On boit du vin avec le fromage.", ja: "チーズと一緒にワインを飲みます。"}}
       - {fr: "de la bière", ipa: "də la bjɛʁ", ja: "ビール", pos: "名詞", g: "f", ex: {fr: "Il ne boit pas de bière.", ja: "彼はビールを飲みません。"}}
       - {fr: "un chocolat chaud", ipa: "œ̃ ʃɔkɔla ʃo", ja: "ホットチョコレート（ココア）", pos: "名詞", g: "m", ex: {fr: "Mon fils boit un chocolat chaud au café.", ja: "息子はカフェでココアを飲みます。"}}
-      - {fr: "une boisson", ipa: "yn bwasɔ̃", ja: "飲み物", pos: "名詞", g: "f", ex: {fr: "Et comme boisson, madame ?", ja: "お飲み物はいかがなさいますか？"}}
+      - {fr: "une boisson", ipa: "yn bwasɔ̃", ja: "飲み物", pos: "名詞", g: "f", note: "英語の drink / beverage。英語の poison（毒）とは別の語（poison はフランス語でも poison）", ex: {fr: "Et comme boisson, madame ?", ja: "お飲み物はいかがなさいますか？"}}
   - name: "食事と味"
     words:
-      - {fr: "un repas", ipa: "œ̃ ʁəpa", ja: "食事", pos: "名詞", g: "m", ex: {fr: "Le repas est à sept heures et demie.", ja: "食事は 7 時半です。"}}
-      - {fr: "un plat", ipa: "œ̃ pla", ja: "料理・メインディッシュ", pos: "名詞", g: "m", ex: {fr: "Le plat coûte douze euros.", ja: "その料理は 12 ユーロです。"}}
+      - {fr: "un repas", ipa: "œ̃ ʁəpa", ja: "食事", pos: "名詞", g: "m", note: "英語の meal", ex: {fr: "Le repas est à sept heures et demie.", ja: "食事は 7 時半です。"}}
+      - {fr: "un plat", ipa: "œ̃ pla", ja: "料理・メインディッシュ", pos: "名詞", g: "m", note: "英語の dish（料理・皿）。英語の plate（皿）と同じ語源", ex: {fr: "Le plat coûte douze euros.", ja: "その料理は 12 ユーロです。"}}
       - {fr: "un dessert", ipa: "œ̃ desɛʁ", ja: "デザート", pos: "名詞", g: "m", note: "ss は [s]。désert（砂漠）[dezɛʁ] と区別する", ex: {fr: "Comme dessert, je voudrais une glace.", ja: "デザートにはアイスをお願いします。"}}
       - {fr: "manger", ipa: "mɑ̃ʒe", ja: "食べる", pos: "動詞", ex: {fr: "Nous mangeons au restaurant ce soir.", ja: "今夜、私たちはレストランで食べます。"}}
       - {fr: "boire", ipa: "bwaʁ", ja: "飲む", pos: "動詞", ex: {fr: "Je bois beaucoup d'eau.", ja: "私は水をたくさん飲みます。"}}
-      - {fr: "avoir faim", ipa: "avwaʁ fɛ̃", ja: "お腹がすいている", pos: "表現", note: "「空腹を持つ」と言う。être ではなく avoir", ex: {fr: "J'ai faim ! On mange ?", ja: "お腹がすいた！食べようか？"}}
-      - {fr: "avoir soif", ipa: "avwaʁ swaf", ja: "のどが渇いている", pos: "表現", ex: {fr: "Tu as soif ?", ja: "のどが渇いてる？"}}
-      - {fr: "bon", ipa: "bɔ̃", ja: "おいしい・良い", pos: "形容詞", f: "bonne", f_ipa: "bɔn", tts: "bon, bonne", ex: {fr: "Cette soupe est bonne.", ja: "このスープはおいしい。"}}
+      - {fr: "avoir faim", ipa: "avwaʁ fɛ̃", ja: "お腹がすいている", pos: "表現", note: "「空腹を持つ」と言う。être ではなく avoir。英語の be hungry（I am hungry）", ex: {fr: "J'ai faim ! On mange ?", ja: "お腹がすいた！食べようか？"}}
+      - {fr: "avoir soif", ipa: "avwaʁ swaf", ja: "のどが渇いている", pos: "表現", note: "英語の be thirsty。avoir faim と同じく be ではなく avoir（have）", ex: {fr: "Tu as soif ?", ja: "のどが渇いてる？"}}
+      - {fr: "bon", ipa: "bɔ̃", ja: "おいしい・良い", pos: "形容詞", f: "bonne", f_ipa: "bɔn", tts: "bon, bonne", note: "英語の good。英語の bonus と同じ語源", ex: {fr: "Cette soupe est bonne.", ja: "このスープはおいしい。"}}
       - {fr: "délicieux", ipa: "delisjø", ja: "とてもおいしい", pos: "形容詞", f: "délicieuse", f_ipa: "delisjøz", tts: "délicieux, délicieuse", ex: {fr: "Le poulet est délicieux !", ja: "鶏肉がとてもおいしい！"}}
-      - {fr: "chaud", ipa: "ʃo", ja: "熱い・温かい", pos: "形容詞", f: "chaude", f_ipa: "ʃod", tts: "chaud, chaude", ex: {fr: "Attention, l'assiette est chaude !", ja: "気をつけて、お皿が熱いよ！"}}
-      - {fr: "froid", ipa: "fʁwa", ja: "冷たい", pos: "形容詞", f: "froide", f_ipa: "fʁwad", tts: "froid, froide", ex: {fr: "Je voudrais une bière bien froide.", ja: "よく冷えたビールをください。"}}
+      - {fr: "chaud", ipa: "ʃo", ja: "熱い・温かい", pos: "形容詞", f: "chaude", f_ipa: "ʃod", tts: "chaud, chaude", note: "英語の hot / warm", ex: {fr: "Attention, l'assiette est chaude !", ja: "気をつけて、お皿が熱いよ！"}}
+      - {fr: "froid", ipa: "fʁwa", ja: "冷たい", pos: "形容詞", f: "froide", f_ipa: "fʁwad", tts: "froid, froide", note: "英語の cold", ex: {fr: "Je voudrais une bière bien froide.", ja: "よく冷えたビールをください。"}}
   - name: "レストラン・カフェ"
     words:
       - {fr: "un restaurant", ipa: "œ̃ ʁɛstɔʁɑ̃", ja: "レストラン", pos: "名詞", g: "m", ex: {fr: "Il y a un bon restaurant près d'ici.", ja: "この近くにいいレストランがあります。"}}
       - {fr: "une terrasse", ipa: "yn tɛʁas", ja: "テラス席", pos: "名詞", g: "f", ex: {fr: "On mange en terrasse ?", ja: "テラス席で食べる？"}}
-      - {fr: "une carte", ipa: "yn kaʁt", ja: "メニュー（料理の一覧）", pos: "名詞", g: "f", note: "料理の一覧は la carte。カードの意味もある", ex: {fr: "La carte, s'il vous plaît.", ja: "メニューをお願いします。"}}
-      - {fr: "un menu", ipa: "œ̃ məny", ja: "コース・定食", pos: "名詞", g: "m", note: "フランスでは「前菜＋メインなどのセット」のこと。一覧表は la carte", ex: {fr: "Le menu à quinze euros, s'il vous plaît.", ja: "15 ユーロのコースをお願いします。"}}
+      - {fr: "une carte", ipa: "yn kaʁt", ja: "メニュー（料理の一覧）", pos: "名詞", g: "f", note: "料理の一覧は la carte。カードの意味もある。英語の card / menu", ex: {fr: "La carte, s'il vous plaît.", ja: "メニューをお願いします。"}}
+      - {fr: "un menu", ipa: "œ̃ məny", ja: "コース・定食", pos: "名詞", g: "m", note: "フランスでは「前菜＋メインなどのセット」のこと。一覧表は la carte。英語の menu（一覧表）とは意味がずれる", ex: {fr: "Le menu à quinze euros, s'il vous plaît.", ja: "15 ユーロのコースをお願いします。"}}
       - {fr: "le plat du jour", ipa: "lə pla dy ʒuʁ", ja: "日替わり料理", pos: "表現", ex: {fr: "Le plat du jour, c'est du poisson.", ja: "日替わり料理は魚です。"}}
       - {fr: "une serveuse", ipa: "yn sɛʁvøz", ja: "ウェイトレス", pos: "名詞", g: "f", ex: {fr: "La serveuse est très gentille.", ja: "ウェイトレスはとても親切です。"}}
-      - {fr: "une addition", ipa: "yn adisjɔ̃", ja: "お会計・勘定", pos: "名詞", g: "f", ex: {fr: "Je peux avoir l'addition ?", ja: "お会計をお願いできますか？"}}
+      - {fr: "une addition", ipa: "yn adisjɔ̃", ja: "お会計・勘定", pos: "名詞", g: "f", note: "英語の check / bill。英語の addition（足し算）と同じ語源で、合計のこと", ex: {fr: "Je peux avoir l'addition ?", ja: "お会計をお願いできますか？"}}
       - {fr: "une assiette", ipa: "yn asjɛt", ja: "皿", pos: "名詞", g: "f", ex: {fr: "Je voudrais une autre assiette, s'il vous plaît.", ja: "別のお皿をお願いします。"}}
       - {fr: "une fourchette", ipa: "yn fuʁʃɛt", ja: "フォーク", pos: "名詞", g: "f", ex: {fr: "Je n'ai pas de fourchette.", ja: "フォークがありません。"}}
       - {fr: "un couteau", ipa: "œ̃ kuto", ja: "ナイフ", pos: "名詞", g: "m", pl: "des couteaux", ex: {fr: "Vous avez un couteau, s'il vous plaît ?", ja: "ナイフはありますか？"}}
       - {fr: "une cuillère", ipa: "yn kɥijɛʁ", ja: "スプーン", pos: "名詞", g: "f", ex: {fr: "On mange la soupe avec une cuillère.", ja: "スープはスプーンで食べます。"}}
-      - {fr: "un pourboire", ipa: "œ̃ puʁbwaʁ", ja: "チップ", pos: "名詞", g: "m", ex: {fr: "Je laisse un pourboire à la serveuse.", ja: "ウェイトレスにチップを置きます。"}}
-      - {fr: "commander", ipa: "kɔmɑ̃de", ja: "注文する", pos: "動詞", ex: {fr: "Vous voulez commander ?", ja: "ご注文はお決まりですか？"}}
-      - {fr: "réserver", ipa: "ʁezɛʁve", ja: "予約する", pos: "動詞", ex: {fr: "Je voudrais réserver une table pour deux.", ja: "2 人で予約したいのですが。"}}
-      - {fr: "Bon appétit !", ipa: "bɔ̃ napeti", ja: "召し上がれ・いただきます", pos: "表現", note: "bon の n が次の母音につながる", ex: {fr: "Bon appétit, les enfants !", ja: "みんな、召し上がれ！"}}
-      - {fr: "L'addition, s'il vous plaît.", ipa: "ladisjɔ̃ sil vu plɛ", ja: "お会計をお願いします。", pos: "表現", ex: {fr: "Monsieur, l'addition, s'il vous plaît.", ja: "すみません、お会計をお願いします。"}}
-      - {fr: "Sur place ou à emporter ?", ipa: "syʁ plas u a ɑ̃pɔʁte", ja: "店内でお召し上がりですか、お持ち帰りですか？", pos: "表現", ex: {fr: "Bonjour, sur place ou à emporter ?", ja: "いらっしゃいませ。店内ですか、お持ち帰りですか？"}}
+      - {fr: "un pourboire", ipa: "œ̃ puʁbwaʁ", ja: "チップ", pos: "名詞", g: "m", note: "英語の tip。直訳は「飲むために」（pour + boire）", ex: {fr: "Je laisse un pourboire à la serveuse.", ja: "ウェイトレスにチップを置きます。"}}
+      - {fr: "commander", ipa: "kɔmɑ̃de", ja: "注文する", pos: "動詞", note: "英語の order。英語の command（命令する）と同じ語源", ex: {fr: "Vous voulez commander ?", ja: "ご注文はお決まりですか？"}}
+      - {fr: "réserver", ipa: "ʁezɛʁve", ja: "予約する", pos: "動詞", note: "英語の reserve / book（同じ語源）", ex: {fr: "Je voudrais réserver une table pour deux.", ja: "2 人で予約したいのですが。"}}
+      - {fr: "Bon appétit !", ipa: "bɔ̃ napeti", ja: "召し上がれ・いただきます", pos: "表現", note: "bon の n が次の母音につながる。英語にぴったりの言い方はなく、英語でもそのまま Bon appétit! と言う", ex: {fr: "Bon appétit, les enfants !", ja: "みんな、召し上がれ！"}}
+      - {fr: "L'addition, s'il vous plaît.", ipa: "ladisjɔ̃ sil vu plɛ", ja: "お会計をお願いします。", pos: "表現", note: "英語の Check, please.", ex: {fr: "Monsieur, l'addition, s'il vous plaît.", ja: "すみません、お会計をお願いします。"}}
+      - {fr: "Sur place ou à emporter ?", ipa: "syʁ plas u a ɑ̃pɔʁte", ja: "店内でお召し上がりですか、お持ち帰りですか？", pos: "表現", note: "英語の For here or to go?", ex: {fr: "Bonjour, sur place ou à emporter ?", ja: "いらっしゃいませ。店内ですか、お持ち帰りですか？"}}
   - name: "店と買い物"
     words:
       - {fr: "une boulangerie", ipa: "yn bulɑ̃ʒʁi", ja: "パン屋", pos: "名詞", g: "f", ex: {fr: "La boulangerie est à côté de la poste.", ja: "パン屋は郵便局の隣です。"}}
       - {fr: "une boucherie", ipa: "yn buʃʁi", ja: "肉屋", pos: "名詞", g: "f", ex: {fr: "J'achète du poulet à la boucherie.", ja: "肉屋で鶏肉を買います。"}}
       - {fr: "une épicerie", ipa: "yn episʁi", ja: "食料品店", pos: "名詞", g: "f", ex: {fr: "L'épicerie est ouverte le dimanche.", ja: "その食料品店は日曜日も開いています。"}}
-      - {fr: "un supermarché", ipa: "œ̃ sypɛʁmaʁʃe", ja: "スーパー", pos: "名詞", g: "m", ex: {fr: "Je fais les courses au supermarché.", ja: "スーパーで買い物をします。"}}
-      - {fr: "un marché", ipa: "œ̃ maʁʃe", ja: "市場・マルシェ", pos: "名詞", g: "m", ex: {fr: "Il y a un marché le samedi matin.", ja: "土曜の朝にマルシェがあります。"}}
-      - {fr: "un magasin", ipa: "œ̃ maɡazɛ̃", ja: "店", pos: "名詞", g: "m", ex: {fr: "Ce magasin est fermé le lundi.", ja: "この店は月曜日が休みです。"}}
+      - {fr: "un supermarché", ipa: "œ̃ sypɛʁmaʁʃe", ja: "スーパー", pos: "名詞", g: "m", note: "英語の supermarket（同じ語源）", ex: {fr: "Je fais les courses au supermarché.", ja: "スーパーで買い物をします。"}}
+      - {fr: "un marché", ipa: "œ̃ maʁʃe", ja: "市場・マルシェ", pos: "名詞", g: "m", note: "英語の market（同じ語源）", ex: {fr: "Il y a un marché le samedi matin.", ja: "土曜の朝にマルシェがあります。"}}
+      - {fr: "un magasin", ipa: "œ̃ maɡazɛ̃", ja: "店", pos: "名詞", g: "m", note: "英語の shop / store。英語の magazine（雑誌）とは意味が違う。雑誌は un magazine", ex: {fr: "Ce magasin est fermé le lundi.", ja: "この店は月曜日が休みです。"}}
       - {fr: "un client", ipa: "œ̃ klijɑ̃", ja: "客（男性）", pos: "名詞", g: "m", ex: {fr: "Il y a beaucoup de clients aujourd'hui.", ja: "今日はお客さんが多いです。"}}
       - {fr: "une cliente", ipa: "yn klijɑ̃t", ja: "客（女性）", pos: "名詞", g: "f", ex: {fr: "La cliente veut un kilo de tomates.", ja: "女性客はトマトを 1 キロ欲しがっています。"}}
       - {fr: "une vendeuse", ipa: "yn vɑ̃døz", ja: "店員（女性）", pos: "名詞", g: "f", ex: {fr: "Je demande le prix à la vendeuse.", ja: "店員に値段を聞きます。"}}
-      - {fr: "un prix", ipa: "œ̃ pʁi", ja: "値段", pos: "名詞", g: "m", note: "語末の x は読まない", ex: {fr: "Je regarde les prix au supermarché.", ja: "スーパーで値段を見ます。"}}
+      - {fr: "un prix", ipa: "œ̃ pʁi", ja: "値段", pos: "名詞", g: "m", note: "語末の x は読まない。英語の price。賞（prize）の意味もある", ex: {fr: "Je regarde les prix au supermarché.", ja: "スーパーで値段を見ます。"}}
       - {fr: "un euro", ipa: "œ̃ nøʁo", ja: "ユーロ", pos: "名詞", g: "m", ex: {fr: "Un croissant coûte un euro.", ja: "クロワッサンは 1 ユーロです。"}}
       - {fr: "un centime", ipa: "œ̃ sɑ̃tim", ja: "サンチーム（1/100 ユーロ）", pos: "名詞", g: "m", ex: {fr: "J'ai seulement cinquante centimes.", ja: "50 サンチームしか持っていません。"}}
       - {fr: "une carte bancaire", ipa: "yn kaʁt bɑ̃kɛʁ", ja: "キャッシュカード・クレジットカード", pos: "名詞", g: "f", ex: {fr: "Je paie avec ma carte bancaire.", ja: "カードで払います。"}}
-      - {fr: "de l'argent", ipa: "də laʁʒɑ̃", ja: "お金", pos: "名詞", g: "m", ex: {fr: "Je n'ai pas d'argent.", ja: "お金がありません。"}}
-      - {fr: "de la monnaie", ipa: "də la mɔnɛ", ja: "小銭・おつり", pos: "名詞", g: "f", ex: {fr: "Vous avez de la monnaie ?", ja: "小銭はありますか？"}}
-      - {fr: "une caisse", ipa: "yn kɛs", ja: "レジ", pos: "名詞", g: "f", ex: {fr: "La caisse est là-bas.", ja: "レジはあちらです。"}}
-      - {fr: "acheter", ipa: "aʃte", ja: "買う", pos: "動詞", ex: {fr: "Nous achetons des fleurs pour maman.", ja: "私たちはママに花を買います。"}}
-      - {fr: "payer", ipa: "peje", ja: "払う", pos: "動詞", ex: {fr: "Mon père paie le repas.", ja: "父が食事代を払います。"}}
-      - {fr: "coûter", ipa: "kute", ja: "（値段が）〜する", pos: "動詞", ex: {fr: "La robe coûte quarante euros.", ja: "そのワンピースは 40 ユーロです。"}}
-      - {fr: "cher", ipa: "ʃɛʁ", ja: "高い（値段が）", pos: "形容詞", f: "chère", f_ipa: "ʃɛʁ", tts: "cher, chère", note: "男性形も女性形も同じ発音", ex: {fr: "Ce manteau est trop cher.", ja: "このコートは高すぎます。"}}
-      - {fr: "C'est combien ?", ipa: "sɛ kɔ̃bjɛ̃", ja: "いくらですか？", pos: "表現", ex: {fr: "Ces fraises, c'est combien ?", ja: "このいちごはいくらですか？"}}
-      - {fr: "Ça fait combien ?", ipa: "sa fɛ kɔ̃bjɛ̃", ja: "（合計で）いくらになりますか？", pos: "表現", ex: {fr: "Ça fait combien, s'il vous plaît ?", ja: "全部でいくらになりますか？"}}
-      - {fr: "Je peux payer par carte ?", ipa: "ʒə pø peje paʁ kaʁt", ja: "カードで払えますか？", pos: "表現", ex: {fr: "Bonjour, je peux payer par carte ici ?", ja: "こんにちは、ここでカードで払えますか？"}}
+      - {fr: "de l'argent", ipa: "də laʁʒɑ̃", ja: "お金", pos: "名詞", g: "m", note: "英語の money。銀（silver）の意味もある", ex: {fr: "Je n'ai pas d'argent.", ja: "お金がありません。"}}
+      - {fr: "de la monnaie", ipa: "də la mɔnɛ", ja: "小銭・おつり", pos: "名詞", g: "f", note: "英語の change（小銭・おつり）。英語の money とは意味が違う。お金全体は l'argent", ex: {fr: "Vous avez de la monnaie ?", ja: "小銭はありますか？"}}
+      - {fr: "une caisse", ipa: "yn kɛs", ja: "レジ", pos: "名詞", g: "f", note: "英語の cash register / checkout", ex: {fr: "La caisse est là-bas.", ja: "レジはあちらです。"}}
+      - {fr: "acheter", ipa: "aʃte", ja: "買う", pos: "動詞", note: "英語の buy", ex: {fr: "Nous achetons des fleurs pour maman.", ja: "私たちはママに花を買います。"}}
+      - {fr: "payer", ipa: "peje", ja: "払う", pos: "動詞", note: "英語の pay（同じ語源）。払うもの（l'addition など）が後ろに直接来る：payer l'addition = pay the bill", ex: {fr: "Mon père paie le repas.", ja: "父が食事代を払います。"}}
+      - {fr: "coûter", ipa: "kute", ja: "（値段が）〜する", pos: "動詞", note: "英語の cost（同じ語源）", ex: {fr: "La robe coûte quarante euros.", ja: "そのワンピースは 40 ユーロです。"}}
+      - {fr: "cher", ipa: "ʃɛʁ", ja: "高い（値段が）", pos: "形容詞", f: "chère", f_ipa: "ʃɛʁ", tts: "cher, chère", note: "男性形も女性形も同じ発音。英語の expensive。手紙の書き出しでは「親愛なる」（英語の dear）の意味になる", ex: {fr: "Ce manteau est trop cher.", ja: "このコートは高すぎます。"}}
+      - {fr: "C'est combien ?", ipa: "sɛ kɔ̃bjɛ̃", ja: "いくらですか？", pos: "表現", note: "英語の How much is it?", ex: {fr: "Ces fraises, c'est combien ?", ja: "このいちごはいくらですか？"}}
+      - {fr: "Ça fait combien ?", ipa: "sa fɛ kɔ̃bjɛ̃", ja: "（合計で）いくらになりますか？", pos: "表現", note: "英語の How much does that come to? 直訳は「それはいくらを作る？」（faire = make）", ex: {fr: "Ça fait combien, s'il vous plaît ?", ja: "全部でいくらになりますか？"}}
+      - {fr: "Je peux payer par carte ?", ipa: "ʒə pø peje paʁ kaʁt", ja: "カードで払えますか？", pos: "表現", note: "英語の Can I pay by card? by にあたる語は par", ex: {fr: "Bonjour, je peux payer par carte ici ?", ja: "こんにちは、ここでカードで払えますか？"}}
   - name: "服とサイズ"
     words:
-      - {fr: "un pantalon", ipa: "œ̃ pɑ̃talɔ̃", ja: "ズボン", pos: "名詞", g: "m", note: "1 本でも単数の un pantalon", ex: {fr: "Ce pantalon est trop long.", ja: "このズボンは長すぎます。"}}
+      - {fr: "un pantalon", ipa: "œ̃ pɑ̃talɔ̃", ja: "ズボン", pos: "名詞", g: "m", note: "1 本でも単数の un pantalon。英語の pants / trousers は複数形", ex: {fr: "Ce pantalon est trop long.", ja: "このズボンは長すぎます。"}}
       - {fr: "un jean", ipa: "œ̃ dʒin", ja: "ジーンズ", pos: "名詞", g: "m", note: "英語から来た語で、[dʒin] と読む", ex: {fr: "Le week-end, je porte un jean.", ja: "週末はジーンズをはきます。"}}
-      - {fr: "une chemise", ipa: "yn ʃəmiz", ja: "シャツ", pos: "名詞", g: "f", ex: {fr: "Je voudrais une chemise blanche.", ja: "白いシャツが欲しいのですが。"}}
+      - {fr: "une chemise", ipa: "yn ʃəmiz", ja: "シャツ", pos: "名詞", g: "f", note: "英語の shirt。英語の chemise（女性用の下着）とは意味が違う", ex: {fr: "Je voudrais une chemise blanche.", ja: "白いシャツが欲しいのですが。"}}
       - {fr: "un tee-shirt", ipa: "œ̃ tiʃœʁt", ja: "T シャツ", pos: "名詞", g: "m", ex: {fr: "J'achète un tee-shirt pour mon fils.", ja: "息子に T シャツを買います。"}}
       - {fr: "un pull", ipa: "œ̃ pyl", ja: "セーター", pos: "名詞", g: "m", ex: {fr: "Ce pull est très chaud.", ja: "このセーターはとても暖かい。"}}
       - {fr: "une robe", ipa: "yn ʁɔb", ja: "ワンピース・ドレス", pos: "名詞", g: "f", ex: {fr: "Cette robe est très jolie.", ja: "このワンピースはとてもかわいい。"}}
       - {fr: "une jupe", ipa: "yn ʒyp", ja: "スカート", pos: "名詞", g: "f", ex: {fr: "Ma sœur porte une jupe noire.", ja: "姉（妹）は黒いスカートをはいています。"}}
-      - {fr: "une veste", ipa: "yn vɛst", ja: "ジャケット", pos: "名詞", g: "f", ex: {fr: "Je cherche une veste pour l'hiver.", ja: "冬用のジャケットを探しています。"}}
-      - {fr: "un manteau", ipa: "œ̃ mɑ̃to", ja: "コート", pos: "名詞", g: "m", pl: "des manteaux", ex: {fr: "Mon manteau est dans la voiture.", ja: "私のコートは車の中にあります。"}}
-      - {fr: "des chaussures", ipa: "de ʃosyʁ", ja: "靴", pos: "名詞", g: "f", note: "ふつう 1 足を複数形で言う", ex: {fr: "Ces chaussures sont très confortables.", ja: "この靴はとても履きやすい。"}}
-      - {fr: "une taille", ipa: "yn taj", ja: "（服の）サイズ", pos: "名詞", g: "f", ex: {fr: "Je voudrais une taille plus grande.", ja: "もっと大きいサイズが欲しいのですが。"}}
+      - {fr: "une veste", ipa: "yn vɛst", ja: "ジャケット", pos: "名詞", g: "f", note: "英語の jacket。英語の vest（ベスト）とは意味が違う", ex: {fr: "Je cherche une veste pour l'hiver.", ja: "冬用のジャケットを探しています。"}}
+      - {fr: "un manteau", ipa: "œ̃ mɑ̃to", ja: "コート", pos: "名詞", g: "m", pl: "des manteaux", note: "英語の coat", ex: {fr: "Mon manteau est dans la voiture.", ja: "私のコートは車の中にあります。"}}
+      - {fr: "des chaussures", ipa: "de ʃosyʁ", ja: "靴", pos: "名詞", g: "f", note: "ふつう 1 足を複数形で言う。英語の shoes と同じ", ex: {fr: "Ces chaussures sont très confortables.", ja: "この靴はとても履きやすい。"}}
+      - {fr: "une taille", ipa: "yn taj", ja: "（服の）サイズ", pos: "名詞", g: "f", note: "英語の size。体の「腰（ウエスト）」の意味もある", ex: {fr: "Je voudrais une taille plus grande.", ja: "もっと大きいサイズが欲しいのですが。"}}
       - {fr: "une pointure", ipa: "yn pwɛ̃tyʁ", ja: "靴のサイズ", pos: "名詞", g: "f", note: "服は taille、靴は pointure と分ける", ex: {fr: "Vous avez ces chaussures dans ma pointure ?", ja: "この靴、私のサイズはありますか？"}}
-      - {fr: "essayer", ipa: "eseje", ja: "試着する・試す", pos: "動詞", ex: {fr: "Je peux essayer ce jean ?", ja: "このジーンズを試着できますか？"}}
+      - {fr: "essayer", ipa: "eseje", ja: "試着する・試す", pos: "動詞", note: "英語の try（試す）と try on（試着する）の両方", ex: {fr: "Je peux essayer ce jean ?", ja: "このジーンズを試着できますか？"}}
       - {fr: "une cabine d'essayage", ipa: "yn kabin desɛjaʒ", ja: "試着室", pos: "名詞", g: "f", ex: {fr: "La cabine d'essayage est à droite.", ja: "試着室は右です。"}}
-      - {fr: "Je fais du 38.", ipa: "ʒə fɛ dy tʁɑ̃tɥit", ja: "サイズは 38 です。", pos: "表現", tts: "Je fais du trente-huit.", note: "サイズは faire du + 数字で言う。数字を読み間違えないよう tts は綴りで書く", ex: {fr: "Pour les robes, je fais du trente-six.", ja: "ワンピースはサイズ 36 です。"}}
-      - {fr: "C'est trop grand.", ipa: "sɛ tʁo ɡʁɑ̃", ja: "大きすぎます。", pos: "表現", ex: {fr: "Non, c'est trop grand pour moi.", ja: "いいえ、私には大きすぎます。"}}
+      - {fr: "Je fais du 38.", ipa: "ʒə fɛ dy tʁɑ̃tɥit", ja: "サイズは 38 です。", pos: "表現", tts: "Je fais du trente-huit.", note: "サイズは faire du + 数字で言う。数字を読み間違えないよう tts は綴りで書く。英語の I'm a size 38.（英語は be を使う）", ex: {fr: "Pour les robes, je fais du trente-six.", ja: "ワンピースはサイズ 36 です。"}}
+      - {fr: "C'est trop grand.", ipa: "sɛ tʁo ɡʁɑ̃", ja: "大きすぎます。", pos: "表現", note: "英語の It's too big. trop = too", ex: {fr: "Non, c'est trop grand pour moi.", ja: "いいえ、私には大きすぎます。"}}
       - {fr: "C'est trop petit.", ipa: "sɛ tʁo pəti", ja: "小さすぎます。", pos: "表現", ex: {fr: "Ah non, c'est trop petit pour mon fils.", ja: "ああ、息子には小さすぎます。"}}
   - name: "数量と注文の言い方"
     words:
-      - {fr: "un kilo de", ipa: "œ̃ kilo də", ja: "1 キロの〜", pos: "名詞", g: "m", note: "数量のあとは du / de la ではなく de だけ（un kilo de pommes）", ex: {fr: "Un kilo de pommes, s'il vous plaît.", ja: "りんごを 1 キロお願いします。"}}
+      - {fr: "un kilo de", ipa: "œ̃ kilo də", ja: "1 キロの〜", pos: "名詞", g: "m", note: "数量のあとは du / de la ではなく de だけ（un kilo de pommes）。英語の a kilo of（de = of。英語でも a kilo of apples と the を付けない）", ex: {fr: "Un kilo de pommes, s'il vous plaît.", ja: "りんごを 1 キロお願いします。"}}
       - {fr: "un litre de", ipa: "œ̃ litʁ də", ja: "1 リットルの〜", pos: "名詞", g: "m", ex: {fr: "J'achète un litre de lait.", ja: "牛乳を 1 リットル買います。"}}
       - {fr: "une bouteille de", ipa: "yn butɛj də", ja: "1 本（瓶）の〜", pos: "名詞", g: "f", ex: {fr: "Une bouteille d'eau minérale, s'il vous plaît.", ja: "ミネラルウォーターを 1 本お願いします。"}}
-      - {fr: "un verre de", ipa: "œ̃ vɛʁ də", ja: "グラス 1 杯の〜", pos: "名詞", g: "m", ex: {fr: "Je voudrais un verre de vin rouge.", ja: "赤ワインをグラスで 1 杯ください。"}}
-      - {fr: "une tasse de", ipa: "yn tas də", ja: "カップ 1 杯の〜", pos: "名詞", g: "f", ex: {fr: "Je bois une tasse de thé le soir.", ja: "夜に紅茶を 1 杯飲みます。"}}
-      - {fr: "un morceau de", ipa: "œ̃ mɔʁso də", ja: "1 切れの〜", pos: "名詞", g: "m", ex: {fr: "Tu veux un morceau de gâteau ?", ja: "ケーキを 1 切れどう？"}}
+      - {fr: "un verre de", ipa: "œ̃ vɛʁ də", ja: "グラス 1 杯の〜", pos: "名詞", g: "m", note: "英語の a glass of", ex: {fr: "Je voudrais un verre de vin rouge.", ja: "赤ワインをグラスで 1 杯ください。"}}
+      - {fr: "une tasse de", ipa: "yn tas də", ja: "カップ 1 杯の〜", pos: "名詞", g: "f", note: "英語の a cup of", ex: {fr: "Je bois une tasse de thé le soir.", ja: "夜に紅茶を 1 杯飲みます。"}}
+      - {fr: "un morceau de", ipa: "œ̃ mɔʁso də", ja: "1 切れの〜", pos: "名詞", g: "m", note: "英語の a piece of", ex: {fr: "Tu veux un morceau de gâteau ?", ja: "ケーキを 1 切れどう？"}}
       - {fr: "une tranche de", ipa: "yn tʁɑ̃ʃ də", ja: "（薄切り）1 枚の〜", pos: "名詞", g: "f", ex: {fr: "Je voudrais quatre tranches de jambon.", ja: "ハムを 4 枚ください。"}}
       - {fr: "un paquet de", ipa: "œ̃ pakɛ də", ja: "1 袋・1 箱の〜", pos: "名詞", g: "m", ex: {fr: "Un paquet de pâtes coûte un euro.", ja: "パスタは 1 袋 1 ユーロです。"}}
       - {fr: "une boîte de", ipa: "yn bwat də", ja: "1 缶・1 箱の〜", pos: "名詞", g: "f", ex: {fr: "Je voudrais une boîte de chocolats.", ja: "チョコレートを 1 箱ください。"}}
       - {fr: "un peu de", ipa: "œ̃ pø də", ja: "少しの〜", pos: "表現", ex: {fr: "Encore un peu de pain ?", ja: "パンをもう少しいかが？"}}
-      - {fr: "beaucoup de", ipa: "boku də", ja: "たくさんの〜", pos: "表現", ex: {fr: "Il y a beaucoup de monde au marché.", ja: "マルシェは人がたくさんいます。"}}
-      - {fr: "assez de", ipa: "ase də", ja: "十分な〜", pos: "表現", ex: {fr: "On a assez de pain pour ce soir ?", ja: "今夜の分のパンは足りる？"}}
-      - {fr: "trop de", ipa: "tʁo də", ja: "多すぎる〜", pos: "表現", ex: {fr: "Il y a trop de sucre dans ce café.", ja: "このコーヒーは砂糖が多すぎます。"}}
+      - {fr: "beaucoup de", ipa: "boku də", ja: "たくさんの〜", pos: "表現", note: "英語の a lot of / many / much（数えられるかどうかで分けない）", ex: {fr: "Il y a beaucoup de monde au marché.", ja: "マルシェは人がたくさんいます。"}}
+      - {fr: "assez de", ipa: "ase də", ja: "十分な〜", pos: "表現", note: "英語の enough", ex: {fr: "On a assez de pain pour ce soir ?", ja: "今夜の分のパンは足りる？"}}
+      - {fr: "trop de", ipa: "tʁo də", ja: "多すぎる〜", pos: "表現", note: "英語の too many / too much", ex: {fr: "Il y a trop de sucre dans ce café.", ja: "このコーヒーは砂糖が多すぎます。"}}
       - {fr: "vouloir", ipa: "vulwaʁ", ja: "欲しい・〜したい", pos: "動詞", ex: {fr: "Mon fils veut une glace.", ja: "息子はアイスを欲しがっています。"}}
       - {fr: "pouvoir", ipa: "puvwaʁ", ja: "〜できる", pos: "動詞", ex: {fr: "Vous pouvez répéter, s'il vous plaît ?", ja: "もう一度言ってもらえますか？"}}
-      - {fr: "je voudrais", ipa: "ʒə vudʁɛ", ja: "〜が欲しいのですが", pos: "表現", note: "je veux より丁寧。店ではこちらを使う", ex: {fr: "Bonjour, je voudrais une baguette.", ja: "こんにちは、バゲットを 1 本ください。"}}
-      - {fr: "Vous désirez ?", ipa: "vu deziʁe", ja: "何になさいますか？", pos: "表現", ex: {fr: "Bonjour madame, vous désirez ?", ja: "いらっしゃいませ、何になさいますか？"}}
-      - {fr: "Et avec ceci ?", ipa: "e avɛk səsi", ja: "ほかに何か？", pos: "表現", ex: {fr: "Et avec ceci, madame ?", ja: "ほかに何かございますか？"}}
-      - {fr: "C'est tout.", ipa: "sɛ tu", ja: "以上です。", pos: "表現", ex: {fr: "Merci, c'est tout pour aujourd'hui.", ja: "ありがとう、今日はこれで全部です。"}}
+      - {fr: "je voudrais", ipa: "ʒə vudʁɛ", ja: "〜が欲しいのですが", pos: "表現", note: "je veux より丁寧。店ではこちらを使う。英語の I would like（je veux = I want）", ex: {fr: "Bonjour, je voudrais une baguette.", ja: "こんにちは、バゲットを 1 本ください。"}}
+      - {fr: "Vous désirez ?", ipa: "vu deziʁe", ja: "何になさいますか？", pos: "表現", note: "英語の What would you like?（英語の desire と同じ語源）", ex: {fr: "Bonjour madame, vous désirez ?", ja: "いらっしゃいませ、何になさいますか？"}}
+      - {fr: "Et avec ceci ?", ipa: "e avɛk səsi", ja: "ほかに何か？", pos: "表現", note: "英語の Anything else?", ex: {fr: "Et avec ceci, madame ?", ja: "ほかに何かございますか？"}}
+      - {fr: "C'est tout.", ipa: "sɛ tu", ja: "以上です。", pos: "表現", note: "英語の That's all.", ex: {fr: "Merci, c'est tout pour aujourd'hui.", ja: "ありがとう、今日はこれで全部です。"}}

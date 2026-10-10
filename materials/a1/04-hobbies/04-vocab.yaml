@@ -2,76 +2,77 @@
 # 名詞は不定冠詞 un / une を付けて読ませる。性（男性・女性）を音で一緒に覚えるため。
 # スポーツ・楽器・活動は un / une ではなく du / de la で書く。faire du tennis / jouer du piano の形でそのまま使うため。
 # jouer à（スポーツ・ゲーム）と jouer de（楽器）の区別は note に書き、単語と一緒に覚えられるようにしている。
+# note には英語と比べた補足（同じ点・違う点）も書く。英語を足場にすると理解が早いため（2026-10-10）。英語と同じで当たり前の語には付けない
 unit: "04"
 title: "好きなこと・趣味"
 groups:
   - name: "好き・嫌い"
     words:
-      - {fr: "aimer", ipa: "ɛme", ja: "好きだ・愛している", pos: "動詞", note: "後ろの名詞には定冠詞 le / la / les を付ける（J'aime le sport.）", ex: {fr: "Nous aimons la musique française.", ja: "私たちはフランスの音楽が好きです。"}}
-      - {fr: "aimer bien", ipa: "ɛme bjɛ̃", ja: "けっこう好きだ", pos: "表現", note: "bien を付けると aimer より弱くなる", ex: {fr: "J'aime bien le cinéma.", ja: "私は映画がけっこう好きです。"}}
-      - {fr: "adorer", ipa: "adɔʁe", ja: "大好きだ", pos: "動詞", ex: {fr: "Ma sœur adore la danse.", ja: "姉はダンスが大好きです。"}}
-      - {fr: "détester", ipa: "detɛste", ja: "大嫌いだ", pos: "動詞", ex: {fr: "Je déteste le lundi matin.", ja: "私は月曜日の朝が大嫌いです。"}}
+      - {fr: "aimer", ipa: "ɛme", ja: "好きだ・愛している", pos: "動詞", note: "後ろの名詞には定冠詞 le / la / les を付ける（J'aime le sport.）。英語の like と love の両方（英語は I like sports. と冠詞なし）", ex: {fr: "Nous aimons la musique française.", ja: "私たちはフランスの音楽が好きです。"}}
+      - {fr: "aimer bien", ipa: "ɛme bjɛ̃", ja: "けっこう好きだ", pos: "表現", note: "bien を付けると aimer より弱くなる。英語の like。人に対して aimer だけだと love の意味になる", ex: {fr: "J'aime bien le cinéma.", ja: "私は映画がけっこう好きです。"}}
+      - {fr: "adorer", ipa: "adɔʁe", ja: "大好きだ", pos: "動詞", note: "英語の adore（同じ語源）。英語より気軽に、食べ物や趣味にも使う", ex: {fr: "Ma sœur adore la danse.", ja: "姉はダンスが大好きです。"}}
+      - {fr: "détester", ipa: "detɛste", ja: "大嫌いだ", pos: "動詞", note: "英語の hate（英語の detest と同じ語源）", ex: {fr: "Je déteste le lundi matin.", ja: "私は月曜日の朝が大嫌いです。"}}
       - {fr: "préférer", ipa: "pʁefeʁe", ja: "〜のほうが好きだ", pos: "動詞", note: "je préfère のように、活用で é が è に変わる", ex: {fr: "Tu préfères le tennis ou le basket ?", ja: "テニスとバスケ、どっちが好き？"}}
-      - {fr: "beaucoup", ipa: "boku", ja: "とても・たくさん", pos: "副詞", ex: {fr: "J'aime beaucoup les mangas.", ja: "私は漫画がとても好きです。"}}
+      - {fr: "beaucoup", ipa: "boku", ja: "とても・たくさん", pos: "副詞", note: "英語の a lot / very much。J'aime beaucoup. = I like it a lot.", ex: {fr: "J'aime beaucoup les mangas.", ja: "私は漫画がとても好きです。"}}
       - {fr: "pas du tout", ipa: "pa dy tu", ja: "まったく〜ない", pos: "表現", tts: "Je n'aime pas du tout.", note: "ne と一緒に使う（Je n'aime pas du tout.）", ex: {fr: "Je n'aime pas du tout le jazz.", ja: "私はジャズがまったく好きではありません。"}}
-      - {fr: "ne ... pas", ipa: "nə pa", ja: "〜ない（否定）", pos: "副詞", tts: "Je n'aime pas.", note: "動詞を ne と pas ではさむ。母音の前では n' になる", ex: {fr: "Je ne joue pas au golf.", ja: "私はゴルフをしません。"}}
-      - {fr: "mieux", ipa: "mjø", ja: "より良く", pos: "副詞", tts: "J'aime mieux.", note: "J'aime mieux 〜 = 〜のほうが好き", ex: {fr: "J'aime mieux le vélo.", ja: "私は自転車のほうが好きです。"}}
+      - {fr: "ne ... pas", ipa: "nə pa", ja: "〜ない（否定）", pos: "副詞", tts: "Je n'aime pas.", note: "動詞を ne と pas ではさむ。母音の前では n' になる。英語の not。ただし英語の do / don't のような助動詞は使わない：Je n'aime pas. = I don't like.", ex: {fr: "Je ne joue pas au golf.", ja: "私はゴルフをしません。"}}
+      - {fr: "mieux", ipa: "mjø", ja: "より良く", pos: "副詞", tts: "J'aime mieux.", note: "J'aime mieux 〜 = 〜のほうが好き。英語の better（bien = well の比較級）", ex: {fr: "J'aime mieux le vélo.", ja: "私は自転車のほうが好きです。"}}
       - {fr: "J'adore !", ipa: "ʒadɔʁ", ja: "大好き！", pos: "表現", ex: {fr: "Le rock ? J'adore !", ja: "ロック？大好き！"}}
       - {fr: "J'aime ça.", ipa: "ʒɛm sa", ja: "それが好き。", pos: "表現", ex: {fr: "Le chocolat ? Oui, j'aime ça.", ja: "チョコレート？うん、それ好き。"}}
-      - {fr: "Moi aussi.", ipa: "mwa osi", ja: "私も。", pos: "表現", ex: {fr: "J'adore les chats. – Moi aussi !", ja: "猫が大好き。―私も！"}}
-      - {fr: "Moi non plus.", ipa: "mwa nɔ̃ ply", ja: "私も（〜ない）。", pos: "表現", note: "否定の文に「私も」と答えるときはこちら", ex: {fr: "Je n'aime pas le rugby. – Moi non plus.", ja: "ラグビーは好きじゃない。―私も。"}}
-      - {fr: "préféré", ipa: "pʁefeʁe", ja: "いちばん好きな", pos: "形容詞", f: "préférée", f_ipa: "pʁefeʁe", tts: "préféré, préférée", ex: {fr: "Mon sport préféré, c'est le tennis.", ja: "私のいちばん好きなスポーツはテニスです。"}}
-      - {fr: "favori", ipa: "favɔʁi", ja: "お気に入りの", pos: "形容詞", f: "favorite", f_ipa: "favɔʁit", tts: "favori, favorite", ex: {fr: "Ma série favorite est française.", ja: "私のお気に入りのドラマはフランスのものです。"}}
+      - {fr: "Moi aussi.", ipa: "mwa osi", ja: "私も。", pos: "表現", note: "英語の Me too.", ex: {fr: "J'adore les chats. – Moi aussi !", ja: "猫が大好き。―私も！"}}
+      - {fr: "Moi non plus.", ipa: "mwa nɔ̃ ply", ja: "私も（〜ない）。", pos: "表現", note: "否定の文に「私も」と答えるときはこちら。英語の Me neither.", ex: {fr: "Je n'aime pas le rugby. – Moi non plus.", ja: "ラグビーは好きじゃない。―私も。"}}
+      - {fr: "préféré", ipa: "pʁefeʁe", ja: "いちばん好きな", pos: "形容詞", f: "préférée", f_ipa: "pʁefeʁe", tts: "préféré, préférée", note: "英語の favorite", ex: {fr: "Mon sport préféré, c'est le tennis.", ja: "私のいちばん好きなスポーツはテニスです。"}}
+      - {fr: "favori", ipa: "favɔʁi", ja: "お気に入りの", pos: "形容詞", f: "favorite", f_ipa: "favɔʁit", tts: "favori, favorite", note: "英語の favorite（同じ語源）", ex: {fr: "Ma série favorite est française.", ja: "私のお気に入りのドラマはフランスのものです。"}}
       - {fr: "une passion", ipa: "yn pasjɔ̃", ja: "情熱・大好きなこと", pos: "名詞", g: "f", ex: {fr: "La danse, c'est ma passion.", ja: "ダンスは私の情熱です。"}}
   - name: "趣味と自由時間"
     words:
-      - {fr: "un loisir", ipa: "œ̃ lwaziʁ", ja: "余暇の活動・趣味", pos: "名詞", g: "m", note: "複数形 les loisirs で「趣味・レジャー」の意味でよく使う", ex: {fr: "Le sport est mon loisir préféré.", ja: "スポーツは私のいちばん好きな趣味です。"}}
-      - {fr: "un passe-temps", ipa: "œ̃ pas tɑ̃", ja: "趣味・気晴らし", pos: "名詞", g: "m", pl: "des passe-temps", ex: {fr: "Mon passe-temps, c'est la cuisine.", ja: "私の趣味は料理です。"}}
-      - {fr: "du temps libre", ipa: "dy tɑ̃ libʁ", ja: "自由な時間", pos: "名詞", g: "m", ex: {fr: "Le week-end, j'ai du temps libre.", ja: "週末は自由な時間があります。"}}
-      - {fr: "faire", ipa: "fɛʁ", ja: "する・作る", pos: "動詞", note: "faire du / de la + 活動（faire du sport）", ex: {fr: "Le samedi, je fais du vélo.", ja: "毎週土曜日、私は自転車に乗ります。"}}
-      - {fr: "jouer", ipa: "ʒwe", ja: "遊ぶ・（競技を）する・演奏する", pos: "動詞", note: "jouer à + スポーツ・ゲーム、jouer de + 楽器", ex: {fr: "Mon frère joue avec son chat.", ja: "弟は猫と遊んでいます。"}}
+      - {fr: "un loisir", ipa: "œ̃ lwaziʁ", ja: "余暇の活動・趣味", pos: "名詞", g: "m", note: "複数形 les loisirs で「趣味・レジャー」の意味でよく使う。英語の leisure（同じ語源）", ex: {fr: "Le sport est mon loisir préféré.", ja: "スポーツは私のいちばん好きな趣味です。"}}
+      - {fr: "un passe-temps", ipa: "œ̃ pas tɑ̃", ja: "趣味・気晴らし", pos: "名詞", g: "m", pl: "des passe-temps", note: "英語の pastime と同じ作り（pass + time）", ex: {fr: "Mon passe-temps, c'est la cuisine.", ja: "私の趣味は料理です。"}}
+      - {fr: "du temps libre", ipa: "dy tɑ̃ libʁ", ja: "自由な時間", pos: "名詞", g: "m", note: "英語の free time。形容詞 libre（free）が後ろに来る", ex: {fr: "Le week-end, j'ai du temps libre.", ja: "週末は自由な時間があります。"}}
+      - {fr: "faire", ipa: "fɛʁ", ja: "する・作る", pos: "動詞", note: "faire du / de la + 活動（faire du sport）。英語の do と make の両方。faire du sport = do sports", ex: {fr: "Le samedi, je fais du vélo.", ja: "毎週土曜日、私は自転車に乗ります。"}}
+      - {fr: "jouer", ipa: "ʒwe", ja: "遊ぶ・（競技を）する・演奏する", pos: "動詞", note: "jouer à + スポーツ・ゲーム、jouer de + 楽器。英語の play。英語は play tennis / play the piano と同じ形だが、フランス語は à（スポーツ）と de（楽器）で分ける", ex: {fr: "Mon frère joue avec son chat.", ja: "弟は猫と遊んでいます。"}}
       - {fr: "cuisiner", ipa: "kɥizine", ja: "料理する", pos: "動詞", ex: {fr: "Mon père cuisine le dimanche.", ja: "父は日曜日に料理をします。"}}
       - {fr: "faire la cuisine", ipa: "fɛʁ la kɥizin", ja: "料理をする", pos: "表現", ex: {fr: "Le soir, je fais la cuisine.", ja: "夜は私が料理をします。"}}
       - {fr: "de la pâtisserie", ipa: "də la patisʁi", ja: "お菓子作り", pos: "名詞", g: "f", note: "faire de la pâtisserie", ex: {fr: "Ma mère fait de la pâtisserie.", ja: "母はお菓子作りをします。"}}
-      - {fr: "voyager", ipa: "vwajaʒe", ja: "旅行する", pos: "動詞", ex: {fr: "J'adore voyager avec mes amis.", ja: "私は友達と旅行するのが大好きです。"}}
-      - {fr: "un voyage", ipa: "œ̃ vwajaʒ", ja: "旅行", pos: "名詞", g: "m", ex: {fr: "C'est un voyage très intéressant.", ja: "それはとても興味深い旅行です。"}}
+      - {fr: "voyager", ipa: "vwajaʒe", ja: "旅行する", pos: "動詞", note: "英語の travel。英語の voyage は「船旅・航海」", ex: {fr: "J'adore voyager avec mes amis.", ja: "私は友達と旅行するのが大好きです。"}}
+      - {fr: "un voyage", ipa: "œ̃ vwajaʒ", ja: "旅行", pos: "名詞", g: "m", note: "英語の trip。英語の voyage（航海）より広く、ふつうの旅行に使う", ex: {fr: "C'est un voyage très intéressant.", ja: "それはとても興味深い旅行です。"}}
       - {fr: "du jardinage", ipa: "dy ʒaʁdinaʒ", ja: "庭仕事・ガーデニング", pos: "名詞", g: "m", note: "faire du jardinage", ex: {fr: "Ma grand-mère fait du jardinage.", ja: "祖母はガーデニングをします。"}}
-      - {fr: "se promener", ipa: "sə pʁɔmne", ja: "散歩する", pos: "動詞", ex: {fr: "Je me promène le dimanche matin.", ja: "私は日曜日の朝に散歩します。"}}
+      - {fr: "se promener", ipa: "sə pʁɔmne", ja: "散歩する", pos: "動詞", note: "英語の take a walk（直訳は「自分を散歩させる」）", ex: {fr: "Je me promène le dimanche matin.", ja: "私は日曜日の朝に散歩します。"}}
       - {fr: "une promenade", ipa: "yn pʁɔmnad", ja: "散歩", pos: "名詞", g: "f", ex: {fr: "On fait une promenade ?", ja: "散歩しない？"}}
-      - {fr: "des réseaux sociaux", ipa: "de ʁezo sɔsjo", ja: "SNS", pos: "名詞", g: "m", ex: {fr: "Je n'aime pas les réseaux sociaux.", ja: "私は SNS が好きではありません。"}}
-      - {fr: "ensemble", ipa: "ɑ̃sɑ̃bl", ja: "一緒に", pos: "副詞", ex: {fr: "On joue au tennis ensemble ?", ja: "一緒にテニスをしない？"}}
-      - {fr: "seul", ipa: "sœl", ja: "一人で・一人の", pos: "形容詞", f: "seule", f_ipa: "sœl", tts: "seul, seule", ex: {fr: "Je préfère courir seul.", ja: "私は一人で走るほうが好きです。"}}
+      - {fr: "des réseaux sociaux", ipa: "de ʁezo sɔsjo", ja: "SNS", pos: "名詞", g: "m", note: "英語の social media / social networks。形容詞 sociaux が後ろに来る", ex: {fr: "Je n'aime pas les réseaux sociaux.", ja: "私は SNS が好きではありません。"}}
+      - {fr: "ensemble", ipa: "ɑ̃sɑ̃bl", ja: "一緒に", pos: "副詞", note: "英語の together。英語の ensemble（合奏団）と同じ語", ex: {fr: "On joue au tennis ensemble ?", ja: "一緒にテニスをしない？"}}
+      - {fr: "seul", ipa: "sœl", ja: "一人で・一人の", pos: "形容詞", f: "seule", f_ipa: "sœl", tts: "seul, seule", note: "英語の alone", ex: {fr: "Je préfère courir seul.", ja: "私は一人で走るほうが好きです。"}}
       - {fr: "ne ... jamais", ipa: "nə ʒamɛ", ja: "一度も〜ない", pos: "副詞", tts: "Je ne joue jamais.", note: "ne ... pas の pas の位置に jamais を置く", ex: {fr: "Je ne regarde jamais la télé.", ja: "私はテレビを一度も見ません。"}}
   - name: "スポーツ"
     words:
       - {fr: "du sport", ipa: "dy spɔʁ", ja: "スポーツ", pos: "名詞", g: "m", note: "faire du sport", ex: {fr: "Tu fais du sport le week-end ?", ja: "週末にスポーツをする？"}}
-      - {fr: "du football", ipa: "dy futbol", ja: "サッカー", pos: "名詞", g: "m", note: "jouer au football（au = à + le）。話し言葉では le foot", ex: {fr: "Mon frère joue au football.", ja: "兄はサッカーをします。"}}
+      - {fr: "du football", ipa: "dy futbol", ja: "サッカー", pos: "名詞", g: "m", note: "jouer au football（au = à + le）。話し言葉では le foot。英語の soccer（アメリカ）/ football（イギリス）", ex: {fr: "Mon frère joue au football.", ja: "兄はサッカーをします。"}}
       - {fr: "du tennis", ipa: "dy tenis", ja: "テニス", pos: "名詞", g: "m", note: "jouer au tennis / faire du tennis", ex: {fr: "Je fais du tennis le mercredi.", ja: "私は毎週水曜日にテニスをします。"}}
       - {fr: "du basket", ipa: "dy baskɛt", ja: "バスケットボール", pos: "名詞", g: "m", ex: {fr: "Nous jouons au basket le jeudi.", ja: "私たちは毎週木曜日にバスケをします。"}}
       - {fr: "du rugby", ipa: "dy ʁyɡbi", ja: "ラグビー", pos: "名詞", g: "m", ex: {fr: "Mon père regarde le rugby à la télé.", ja: "父はテレビでラグビーを見ます。"}}
-      - {fr: "de la natation", ipa: "də la natasjɔ̃", ja: "水泳", pos: "名詞", g: "f", note: "faire de la natation", ex: {fr: "Elle fait de la natation le matin.", ja: "彼女は朝に水泳をします。"}}
+      - {fr: "de la natation", ipa: "də la natasjɔ̃", ja: "水泳", pos: "名詞", g: "f", note: "faire de la natation。英語の swimming", ex: {fr: "Elle fait de la natation le matin.", ja: "彼女は朝に水泳をします。"}}
       - {fr: "nager", ipa: "naʒe", ja: "泳ぐ", pos: "動詞", ex: {fr: "Mon fils nage très bien.", ja: "息子はとても上手に泳ぎます。"}}
-      - {fr: "courir", ipa: "kuʁiʁ", ja: "走る", pos: "動詞", ex: {fr: "Le matin, je cours avec mon chien.", ja: "朝、私は犬と一緒に走ります。"}}
+      - {fr: "courir", ipa: "kuʁiʁ", ja: "走る", pos: "動詞", note: "英語の run（英語の courier と同じ語源）", ex: {fr: "Le matin, je cours avec mon chien.", ja: "朝、私は犬と一緒に走ります。"}}
       - {fr: "du jogging", ipa: "dy dʒɔɡiŋ", ja: "ジョギング", pos: "名詞", g: "m", ex: {fr: "Il fait du jogging le dimanche.", ja: "彼は日曜日にジョギングをします。"}}
       - {fr: "du vélo", ipa: "dy velo", ja: "自転車（に乗ること）", pos: "名詞", g: "m", note: "faire du vélo", ex: {fr: "Mes enfants font du vélo le week-end.", ja: "子どもたちは週末に自転車に乗ります。"}}
       - {fr: "du ski", ipa: "dy ski", ja: "スキー", pos: "名詞", g: "m", ex: {fr: "Tu fais du ski ?", ja: "スキーはする？"}}
       - {fr: "de la danse", ipa: "də la dɑ̃s", ja: "ダンス", pos: "名詞", g: "f", ex: {fr: "Ma fille fait de la danse.", ja: "娘はダンスを習っています。"}}
       - {fr: "du yoga", ipa: "dy jɔɡa", ja: "ヨガ", pos: "名詞", g: "m", ex: {fr: "Je fais du yoga le matin.", ja: "私は朝にヨガをします。"}}
-      - {fr: "de la randonnée", ipa: "də la ʁɑ̃dɔne", ja: "ハイキング", pos: "名詞", g: "f", ex: {fr: "Le dimanche, nous faisons de la randonnée.", ja: "日曜日、私たちはハイキングをします。"}}
+      - {fr: "de la randonnée", ipa: "də la ʁɑ̃dɔne", ja: "ハイキング", pos: "名詞", g: "f", note: "英語の hiking", ex: {fr: "Le dimanche, nous faisons de la randonnée.", ja: "日曜日、私たちはハイキングをします。"}}
       - {fr: "un match", ipa: "œ̃ matʃ", ja: "試合", pos: "名詞", g: "m", ex: {fr: "Je regarde un match de football.", ja: "私はサッカーの試合を見ています。"}}
-      - {fr: "une équipe", ipa: "yn ekip", ja: "チーム", pos: "名詞", g: "f", ex: {fr: "C'est une équipe très sympa.", ja: "とても感じのいいチームです。"}}
+      - {fr: "une équipe", ipa: "yn ekip", ja: "チーム", pos: "名詞", g: "f", note: "英語の team（英語の equip と同じ語源）", ex: {fr: "C'est une équipe très sympa.", ja: "とても感じのいいチームです。"}}
       - {fr: "un club", ipa: "œ̃ klœb", ja: "クラブ", pos: "名詞", g: "m", ex: {fr: "Je joue dans un club de tennis.", ja: "私はテニスクラブでプレーしています。"}}
-      - {fr: "gagner", ipa: "ɡaɲe", ja: "勝つ", pos: "動詞", ex: {fr: "Notre équipe gagne le match !", ja: "私たちのチームが試合に勝つ！"}}
+      - {fr: "gagner", ipa: "ɡaɲe", ja: "勝つ", pos: "動詞", note: "英語の win。お金を「稼ぐ」（earn）にも使う", ex: {fr: "Notre équipe gagne le match !", ja: "私たちのチームが試合に勝つ！"}}
   - name: "音楽と楽器"
     words:
       - {fr: "de la musique", ipa: "də la myzik", ja: "音楽", pos: "名詞", g: "f", ex: {fr: "Tu aimes la musique française ?", ja: "フランスの音楽は好き？"}}
-      - {fr: "écouter", ipa: "ekute", ja: "聞く", pos: "動詞", note: "écouter de la musique（à は付けない）", ex: {fr: "J'écoute de la musique dans le train.", ja: "私は電車で音楽を聞きます。"}}
-      - {fr: "chanter", ipa: "ʃɑ̃te", ja: "歌う", pos: "動詞", ex: {fr: "Ma mère chante très bien.", ja: "母は歌がとても上手です。"}}
+      - {fr: "écouter", ipa: "ekute", ja: "聞く", pos: "動詞", note: "écouter de la musique（à は付けない）。英語の listen to", ex: {fr: "J'écoute de la musique dans le train.", ja: "私は電車で音楽を聞きます。"}}
+      - {fr: "chanter", ipa: "ʃɑ̃te", ja: "歌う", pos: "動詞", note: "英語の sing（英語の chant と同じ語源）", ex: {fr: "Ma mère chante très bien.", ja: "母は歌がとても上手です。"}}
       - {fr: "danser", ipa: "dɑ̃se", ja: "踊る", pos: "動詞", ex: {fr: "Je ne danse pas bien.", ja: "私はダンスが上手ではありません。"}}
       - {fr: "une chanson", ipa: "yn ʃɑ̃sɔ̃", ja: "歌", pos: "名詞", g: "f", ex: {fr: "C'est une chanson française.", ja: "これはフランスの歌です。"}}
       - {fr: "un chanteur", ipa: "œ̃ ʃɑ̃tœʁ", ja: "歌手（男性）", pos: "名詞", g: "m", ex: {fr: "Stromae est un chanteur belge.", ja: "ストロマエはベルギーの歌手です。"}}
       - {fr: "une chanteuse", ipa: "yn ʃɑ̃tøz", ja: "歌手（女性）", pos: "名詞", g: "f", ex: {fr: "Édith Piaf est une chanteuse française.", ja: "エディット・ピアフはフランスの歌手です。"}}
-      - {fr: "un groupe", ipa: "œ̃ ɡʁup", ja: "バンド・グループ", pos: "名詞", g: "m", ex: {fr: "Mon frère joue dans un groupe de rock.", ja: "兄はロックバンドで演奏しています。"}}
+      - {fr: "un groupe", ipa: "œ̃ ɡʁup", ja: "バンド・グループ", pos: "名詞", g: "m", note: "英語の band / group", ex: {fr: "Mon frère joue dans un groupe de rock.", ja: "兄はロックバンドで演奏しています。"}}
       - {fr: "un concert", ipa: "œ̃ kɔ̃sɛʁ", ja: "コンサート", pos: "名詞", g: "m", ex: {fr: "Le concert commence à vingt heures.", ja: "コンサートは 20 時に始まります。"}}
       - {fr: "un instrument", ipa: "œ̃ nɛ̃stʁymɑ̃", ja: "楽器", pos: "名詞", g: "m", ex: {fr: "Tu joues d'un instrument ?", ja: "何か楽器を弾く？"}}
       - {fr: "du piano", ipa: "dy pjano", ja: "ピアノ", pos: "名詞", g: "m", note: "jouer du piano（du = de + le）", ex: {fr: "Ma fille joue du piano.", ja: "娘はピアノを弾きます。"}}
@@ -83,42 +84,42 @@ groups:
       - {fr: "de la musique classique", ipa: "də la myzik klasik", ja: "クラシック音楽", pos: "名詞", g: "f", ex: {fr: "Je préfère la musique classique.", ja: "私はクラシック音楽のほうが好きです。"}}
   - name: "読書・映画・ゲーム・アート"
     words:
-      - {fr: "lire", ipa: "liʁ", ja: "読む", pos: "動詞", ex: {fr: "J'aime lire le soir.", ja: "私は夜に読書するのが好きです。"}}
-      - {fr: "un livre", ipa: "œ̃ livʁ", ja: "本", pos: "名詞", g: "m", ex: {fr: "Je lis un livre en français.", ja: "私はフランス語の本を読んでいます。"}}
-      - {fr: "un roman", ipa: "œ̃ ʁɔmɑ̃", ja: "小説", pos: "名詞", g: "m", ex: {fr: "Ma mère adore les romans.", ja: "母は小説が大好きです。"}}
-      - {fr: "une BD", ipa: "yn bede", ja: "漫画（バンド・デシネ）", pos: "名詞", g: "f", note: "bande dessinée の略", ex: {fr: "Les enfants adorent les BD.", ja: "子どもたちはバンド・デシネが大好きです。"}}
+      - {fr: "lire", ipa: "liʁ", ja: "読む", pos: "動詞", note: "英語の read", ex: {fr: "J'aime lire le soir.", ja: "私は夜に読書するのが好きです。"}}
+      - {fr: "un livre", ipa: "œ̃ livʁ", ja: "本", pos: "名詞", g: "m", note: "英語の book。英語の library に似た une librairie は「本屋」（図書館は une bibliothèque）", ex: {fr: "Je lis un livre en français.", ja: "私はフランス語の本を読んでいます。"}}
+      - {fr: "un roman", ipa: "œ̃ ʁɔmɑ̃", ja: "小説", pos: "名詞", g: "m", note: "英語の novel（英語の romance と同じ語源だが、恋愛小説に限らない）", ex: {fr: "Ma mère adore les romans.", ja: "母は小説が大好きです。"}}
+      - {fr: "une BD", ipa: "yn bede", ja: "漫画（バンド・デシネ）", pos: "名詞", g: "f", note: "bande dessinée の略。英語の comic(s)", ex: {fr: "Les enfants adorent les BD.", ja: "子どもたちはバンド・デシネが大好きです。"}}
       - {fr: "un manga", ipa: "œ̃ mɑ̃ɡa", ja: "（日本の）漫画", pos: "名詞", g: "m", ex: {fr: "Je lis des mangas dans le train.", ja: "私は電車で漫画を読みます。"}}
       - {fr: "un magazine", ipa: "œ̃ maɡazin", ja: "雑誌", pos: "名詞", g: "m", ex: {fr: "Il lit un magazine de sport.", ja: "彼はスポーツ雑誌を読んでいます。"}}
-      - {fr: "regarder", ipa: "ʁəɡaʁde", ja: "見る", pos: "動詞", ex: {fr: "Nous regardons un film ensemble.", ja: "私たちは一緒に映画を見ます。"}}
-      - {fr: "un film", ipa: "œ̃ film", ja: "映画（作品）", pos: "名詞", g: "m", ex: {fr: "C'est un film japonais.", ja: "それは日本の映画です。"}}
-      - {fr: "un cinéma", ipa: "œ̃ sinema", ja: "映画館", pos: "名詞", g: "m", note: "J'aime le cinéma. では「映画（というもの）」", ex: {fr: "J'aime beaucoup le cinéma français.", ja: "私はフランス映画がとても好きです。"}}
-      - {fr: "une série", ipa: "yn seʁi", ja: "ドラマ（連続もの）", pos: "名詞", g: "f", ex: {fr: "Je regarde une série américaine.", ja: "私はアメリカのドラマを見ています。"}}
+      - {fr: "regarder", ipa: "ʁəɡaʁde", ja: "見る", pos: "動詞", note: "英語の watch / look at。at にあたる語は付けない：Je regarde la télé.", ex: {fr: "Nous regardons un film ensemble.", ja: "私たちは一緒に映画を見ます。"}}
+      - {fr: "un film", ipa: "œ̃ film", ja: "映画（作品）", pos: "名詞", g: "m", note: "英語の movie / film", ex: {fr: "C'est un film japonais.", ja: "それは日本の映画です。"}}
+      - {fr: "un cinéma", ipa: "œ̃ sinema", ja: "映画館", pos: "名詞", g: "m", note: "J'aime le cinéma. では「映画（というもの）」。英語の movie theater / cinema", ex: {fr: "J'aime beaucoup le cinéma français.", ja: "私はフランス映画がとても好きです。"}}
+      - {fr: "une série", ipa: "yn seʁi", ja: "ドラマ（連続もの）", pos: "名詞", g: "f", note: "英語の (TV) series / show", ex: {fr: "Je regarde une série américaine.", ja: "私はアメリカのドラマを見ています。"}}
       - {fr: "une télé", ipa: "yn tele", ja: "テレビ", pos: "名詞", g: "f", note: "regarder la télé", ex: {fr: "Le soir, on regarde la télé.", ja: "夜はテレビを見ます。"}}
-      - {fr: "un jeu", ipa: "œ̃ ʒø", ja: "ゲーム・遊び", pos: "名詞", g: "m", pl: "des jeux", ex: {fr: "C'est un jeu très facile.", ja: "それはとても簡単なゲームです。"}}
+      - {fr: "un jeu", ipa: "œ̃ ʒø", ja: "ゲーム・遊び", pos: "名詞", g: "m", pl: "des jeux", note: "英語の game", ex: {fr: "C'est un jeu très facile.", ja: "それはとても簡単なゲームです。"}}
       - {fr: "des jeux vidéo", ipa: "de ʒø video", ja: "テレビゲーム", pos: "名詞", g: "m", note: "jouer aux jeux vidéo（aux = à + les）", ex: {fr: "Mon fils joue aux jeux vidéo.", ja: "息子はテレビゲームをします。"}}
-      - {fr: "des échecs", ipa: "de zeʃɛk", ja: "チェス", pos: "名詞", g: "m", note: "jouer aux échecs。単数の un échec は「失敗」", ex: {fr: "Mon grand-père joue aux échecs.", ja: "祖父はチェスをします。"}}
+      - {fr: "des échecs", ipa: "de zeʃɛk", ja: "チェス", pos: "名詞", g: "m", note: "jouer aux échecs。単数の un échec は「失敗」。英語の chess（英語の check と同じ語源）", ex: {fr: "Mon grand-père joue aux échecs.", ja: "祖父はチェスをします。"}}
       - {fr: "des cartes", ipa: "de kaʁt", ja: "トランプ", pos: "名詞", g: "f", note: "jouer aux cartes", ex: {fr: "Le soir, nous jouons aux cartes.", ja: "夜、私たちはトランプをします。"}}
       - {fr: "de la photo", ipa: "də la fɔto", ja: "写真（を撮ること）", pos: "名詞", g: "f", note: "faire de la photo", ex: {fr: "Je fais de la photo en voyage.", ja: "私は旅行先で写真を撮ります。"}}
-      - {fr: "dessiner", ipa: "desine", ja: "絵を描く", pos: "動詞", ex: {fr: "Ma fille dessine très bien.", ja: "娘は絵がとても上手です。"}}
+      - {fr: "dessiner", ipa: "desine", ja: "絵を描く", pos: "動詞", note: "英語の draw（英語の design と同じ語源）", ex: {fr: "Ma fille dessine très bien.", ja: "娘は絵がとても上手です。"}}
       - {fr: "du dessin", ipa: "dy desɛ̃", ja: "デッサン・絵", pos: "名詞", g: "m", ex: {fr: "Il fait du dessin le mercredi.", ja: "彼は毎週水曜日に絵を描いています。"}}
-      - {fr: "de la peinture", ipa: "də la pɛ̃tyʁ", ja: "絵画・ペンキ", pos: "名詞", g: "f", ex: {fr: "J'aime la peinture moderne.", ja: "私は現代絵画が好きです。"}}
-      - {fr: "une exposition", ipa: "yn ɛkspozisjɔ̃", ja: "展覧会", pos: "名詞", g: "f", ex: {fr: "L'exposition est très intéressante.", ja: "その展覧会はとても興味深いです。"}}
+      - {fr: "de la peinture", ipa: "də la pɛ̃tyʁ", ja: "絵画・ペンキ", pos: "名詞", g: "f", note: "英語の painting / paint", ex: {fr: "J'aime la peinture moderne.", ja: "私は現代絵画が好きです。"}}
+      - {fr: "une exposition", ipa: "yn ɛkspozisjɔ̃", ja: "展覧会", pos: "名詞", g: "f", note: "英語の exhibition（英語の exposition は「説明」）", ex: {fr: "L'exposition est très intéressante.", ja: "その展覧会はとても興味深いです。"}}
       - {fr: "du théâtre", ipa: "dy teatʁ", ja: "演劇", pos: "名詞", g: "m", note: "faire du théâtre", ex: {fr: "Elle fait du théâtre à l'université.", ja: "彼女は大学で演劇をしています。"}}
   - name: "理由と感想"
     words:
-      - {fr: "parce que", ipa: "paʁs kə", ja: "なぜなら〜だから", pos: "接続詞", note: "母音の前では parce qu'（parce qu'il ...）", ex: {fr: "J'aime le yoga parce que c'est relaxant.", ja: "リラックスできるので、私はヨガが好きです。"}}
-      - {fr: "intéressant", ipa: "ɛ̃teʁesɑ̃", ja: "おもしろい・興味深い", pos: "形容詞", f: "intéressante", f_ipa: "ɛ̃teʁesɑ̃t", tts: "intéressant, intéressante", ex: {fr: "La photo, c'est très intéressant.", ja: "写真はとてもおもしろいです。"}}
-      - {fr: "ennuyeux", ipa: "ɑ̃nɥijø", ja: "退屈な", pos: "形容詞", f: "ennuyeuse", f_ipa: "ɑ̃nɥijøz", tts: "ennuyeux, ennuyeuse", ex: {fr: "Le golf, c'est ennuyeux.", ja: "ゴルフは退屈です。"}}
-      - {fr: "amusant", ipa: "amyzɑ̃", ja: "楽しい", pos: "形容詞", f: "amusante", f_ipa: "amyzɑ̃t", tts: "amusant, amusante", ex: {fr: "Les jeux vidéo, c'est amusant.", ja: "テレビゲームは楽しいです。"}}
-      - {fr: "passionnant", ipa: "pasjɔnɑ̃", ja: "夢中になる", pos: "形容詞", f: "passionnante", f_ipa: "pasjɔnɑ̃t", tts: "passionnant, passionnante", ex: {fr: "Le match est passionnant !", ja: "試合に夢中になる！"}}
+      - {fr: "parce que", ipa: "paʁs kə", ja: "なぜなら〜だから", pos: "接続詞", note: "母音の前では parce qu'（parce qu'il ...）。英語の because", ex: {fr: "J'aime le yoga parce que c'est relaxant.", ja: "リラックスできるので、私はヨガが好きです。"}}
+      - {fr: "intéressant", ipa: "ɛ̃teʁesɑ̃", ja: "おもしろい・興味深い", pos: "形容詞", f: "intéressante", f_ipa: "ɛ̃teʁesɑ̃t", tts: "intéressant, intéressante", note: "英語の interesting", ex: {fr: "La photo, c'est très intéressant.", ja: "写真はとてもおもしろいです。"}}
+      - {fr: "ennuyeux", ipa: "ɑ̃nɥijø", ja: "退屈な", pos: "形容詞", f: "ennuyeuse", f_ipa: "ɑ̃nɥijøz", tts: "ennuyeux, ennuyeuse", note: "英語の boring（英語の annoying と同じ語源）", ex: {fr: "Le golf, c'est ennuyeux.", ja: "ゴルフは退屈です。"}}
+      - {fr: "amusant", ipa: "amyzɑ̃", ja: "楽しい", pos: "形容詞", f: "amusante", f_ipa: "amyzɑ̃t", tts: "amusant, amusante", note: "英語の fun（英語の amusing と同じ語源）", ex: {fr: "Les jeux vidéo, c'est amusant.", ja: "テレビゲームは楽しいです。"}}
+      - {fr: "passionnant", ipa: "pasjɔnɑ̃", ja: "夢中になる", pos: "形容詞", f: "passionnante", f_ipa: "pasjɔnɑ̃t", tts: "passionnant, passionnante", note: "英語の exciting（英語の passionate「情熱的な」とは意味が違う）", ex: {fr: "Le match est passionnant !", ja: "試合に夢中になる！"}}
       - {fr: "relaxant", ipa: "ʁəlaksɑ̃", ja: "リラックスできる", pos: "形容詞", f: "relaxante", f_ipa: "ʁəlaksɑ̃t", tts: "relaxant, relaxante", ex: {fr: "La natation, c'est relaxant.", ja: "水泳はリラックスできます。"}}
-      - {fr: "fatigant", ipa: "fatiɡɑ̃", ja: "疲れる", pos: "形容詞", f: "fatigante", f_ipa: "fatiɡɑ̃t", tts: "fatigant, fatigante", ex: {fr: "Courir, c'est fatigant.", ja: "走るのは疲れます。"}}
-      - {fr: "facile", ipa: "fasil", ja: "簡単な", pos: "形容詞", ex: {fr: "Le vélo, c'est facile.", ja: "自転車は簡単です。"}}
-      - {fr: "difficile", ipa: "difisil", ja: "難しい", pos: "形容詞", ex: {fr: "Le violon, c'est difficile.", ja: "バイオリンは難しいです。"}}
-      - {fr: "super", ipa: "sypɛʁ", ja: "すごくいい", pos: "形容詞", note: "女性形も複数形も同じ形", ex: {fr: "Le concert est super !", ja: "コンサートはすごくいい！"}}
-      - {fr: "génial", ipa: "ʒenjal", ja: "最高の", pos: "形容詞", f: "géniale", f_ipa: "ʒenjal", tts: "génial, géniale", ex: {fr: "Les vacances, c'est génial !", ja: "休暇は最高！"}}
+      - {fr: "fatigant", ipa: "fatiɡɑ̃", ja: "疲れる", pos: "形容詞", f: "fatigante", f_ipa: "fatiɡɑ̃t", tts: "fatigant, fatigante", note: "英語の tiring（英語の fatigue と同じ語源）", ex: {fr: "Courir, c'est fatigant.", ja: "走るのは疲れます。"}}
+      - {fr: "facile", ipa: "fasil", ja: "簡単な", pos: "形容詞", note: "英語の easy（英語の facile は「安易な」）", ex: {fr: "Le vélo, c'est facile.", ja: "自転車は簡単です。"}}
+      - {fr: "difficile", ipa: "difisil", ja: "難しい", pos: "形容詞", note: "英語の difficult", ex: {fr: "Le violon, c'est difficile.", ja: "バイオリンは難しいです。"}}
+      - {fr: "super", ipa: "sypɛʁ", ja: "すごくいい", pos: "形容詞", note: "女性形も複数形も同じ形。英語の great", ex: {fr: "Le concert est super !", ja: "コンサートはすごくいい！"}}
+      - {fr: "génial", ipa: "ʒenjal", ja: "最高の", pos: "形容詞", f: "géniale", f_ipa: "ʒenjal", tts: "génial, géniale", note: "英語の great / brilliant（英語の genial「愛想のよい」とは意味が違う）", ex: {fr: "Les vacances, c'est génial !", ja: "休暇は最高！"}}
       - {fr: "cool", ipa: "kul", ja: "いい感じの・クールな", pos: "形容詞", note: "話し言葉。形は変わらない", ex: {fr: "Ton club de foot est cool.", ja: "君のサッカークラブはいい感じだね。"}}
-      - {fr: "nul", ipa: "nyl", ja: "ひどい・最低の", pos: "形容詞", f: "nulle", f_ipa: "nyl", tts: "nul, nulle", ex: {fr: "Le film est nul.", ja: "その映画はひどい。"}}
-      - {fr: "bon pour la santé", ipa: "bɔ̃ puʁ la sɑ̃te", ja: "体にいい", pos: "表現", ex: {fr: "Le sport, c'est bon pour la santé.", ja: "スポーツは体にいいです。"}}
-      - {fr: "vraiment", ipa: "vʁɛmɑ̃", ja: "本当に", pos: "副詞", ex: {fr: "J'aime vraiment la musique.", ja: "私は本当に音楽が好きです。"}}
-      - {fr: "trop", ipa: "tʁo", ja: "〜すぎる", pos: "副詞", ex: {fr: "Le rugby, c'est trop difficile pour moi.", ja: "ラグビーは私には難しすぎます。"}}
+      - {fr: "nul", ipa: "nyl", ja: "ひどい・最低の", pos: "形容詞", f: "nulle", f_ipa: "nyl", tts: "nul, nulle", note: "英語の terrible / rubbish（英語の null と同じ語源）", ex: {fr: "Le film est nul.", ja: "その映画はひどい。"}}
+      - {fr: "bon pour la santé", ipa: "bɔ̃ puʁ la sɑ̃te", ja: "体にいい", pos: "表現", note: "英語の good for your health", ex: {fr: "Le sport, c'est bon pour la santé.", ja: "スポーツは体にいいです。"}}
+      - {fr: "vraiment", ipa: "vʁɛmɑ̃", ja: "本当に", pos: "副詞", note: "英語の really", ex: {fr: "J'aime vraiment la musique.", ja: "私は本当に音楽が好きです。"}}
+      - {fr: "trop", ipa: "tʁo", ja: "〜すぎる", pos: "副詞", note: "英語の too（〜すぎる）", ex: {fr: "Le rugby, c'est trop difficile pour moi.", ja: "ラグビーは私には難しすぎます。"}}

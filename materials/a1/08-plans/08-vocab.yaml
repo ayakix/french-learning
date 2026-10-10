@@ -3,6 +3,7 @@
 # 天気は il fait beau / il pleut のように「il + 動詞」のかたまりで使うので、単語ではなく表現として覚える。
 # 季節は un été [œ̃ nete] のように un を付ける。l'été だと母音の前で性が聞き分けられないため。
 # la mer / la campagne などは「海に行く」の意味ではほぼ定冠詞で使うので、例外として la で載せる。
+# note には英語と比べた補足（同じ点・違う点）も書く。英語を足場にすると理解が早いため（2026-10-10）。英語と同じで当たり前の語には付けない
 # 数字・曜日・月・日付・時刻は common で扱うため、ここには入れない。
 # ex は単語を実際に使う形で入れた例文。単元 08 までの文法（近接未来・天気の表現まで）だけで書き、単語を場面ごと覚えられるようにする。
 unit: "08"
@@ -10,23 +11,23 @@ title: "予定と天気"
 groups:
   - name: "天気の言い方"
     words:
-      - {fr: "Quel temps fait-il ?", ipa: "kɛl tɑ̃ fɛtil", ja: "天気はどう？", pos: "表現", ex: { fr: "Quel temps fait-il à Paris aujourd'hui ?", ja: "今日のパリの天気はどう？" }}
-      - {fr: "il fait beau", ipa: "il fɛ bo", ja: "天気がいい", pos: "表現", ex: { fr: "Il fait beau aujourd'hui à Nice.", ja: "今日のニースはいい天気です。" }}
+      - {fr: "Quel temps fait-il ?", ipa: "kɛl tɑ̃ fɛtil", ja: "天気はどう？", pos: "表現", note: "英語の What's the weather like? 天気には faire（英語の do / make）を使う", ex: { fr: "Quel temps fait-il à Paris aujourd'hui ?", ja: "今日のパリの天気はどう？" }}
+      - {fr: "il fait beau", ipa: "il fɛ bo", ja: "天気がいい", pos: "表現", note: "英語の It's nice. 主語の il は英語の it にあたり、動詞は be ではなく faire を使う", ex: { fr: "Il fait beau aujourd'hui à Nice.", ja: "今日のニースはいい天気です。" }}
       - {fr: "il fait mauvais", ipa: "il fɛ movɛ", ja: "天気が悪い", pos: "表現", ex: { fr: "Il fait mauvais, on ne va pas au parc.", ja: "天気が悪いので、公園には行きません。" }}
-      - {fr: "il fait chaud", ipa: "il fɛ ʃo", ja: "暑い", pos: "表現", ex: { fr: "Il fait chaud, je vais boire de l'eau.", ja: "暑いので、水を飲みます。" }}
-      - {fr: "il fait froid", ipa: "il fɛ fʁwa", ja: "寒い", pos: "表現", ex: { fr: "Il fait froid, je vais prendre un manteau.", ja: "寒いので、コートを持っていきます。" }}
+      - {fr: "il fait chaud", ipa: "il fɛ ʃo", ja: "暑い", pos: "表現", note: "英語の It's hot.（be ではなく faire）", ex: { fr: "Il fait chaud, je vais boire de l'eau.", ja: "暑いので、水を飲みます。" }}
+      - {fr: "il fait froid", ipa: "il fɛ fʁwa", ja: "寒い", pos: "表現", note: "英語の It's cold.（be ではなく faire）", ex: { fr: "Il fait froid, je vais prendre un manteau.", ja: "寒いので、コートを持っていきます。" }}
       - {fr: "il fait doux", ipa: "il fɛ du", ja: "暖かい・穏やかだ", pos: "表現", ex: { fr: "Au printemps, il fait doux à Paris.", ja: "春のパリは暖かいです。" }}
       - {fr: "il fait frais", ipa: "il fɛ fʁɛ", ja: "涼しい・肌寒い", pos: "表現", ex: { fr: "Le soir, il fait frais à la montagne.", ja: "山では夜は涼しいです。" }}
-      - {fr: "il pleut", ipa: "il plø", ja: "雨が降っている", pos: "表現", ex: { fr: "Il pleut beaucoup en juin.", ja: "6 月は雨がたくさん降ります。" }}
-      - {fr: "il neige", ipa: "il nɛʒ", ja: "雪が降っている", pos: "表現", ex: { fr: "Il neige beaucoup à Sapporo.", ja: "札幌は雪がたくさん降ります。" }}
-      - {fr: "il y a du soleil", ipa: "il ja dy sɔlɛj", ja: "日が照っている", pos: "表現", ex: { fr: "Il y a du soleil, mais il fait froid.", ja: "日は照っているけれど、寒いです。" }}
+      - {fr: "il pleut", ipa: "il plø", ja: "雨が降っている", pos: "表現", note: "英語の It's raining. フランス語には進行形（-ing）がなく、現在形で「今降っている」を表す", ex: { fr: "Il pleut beaucoup en juin.", ja: "6 月は雨がたくさん降ります。" }}
+      - {fr: "il neige", ipa: "il nɛʒ", ja: "雪が降っている", pos: "表現", note: "英語の It's snowing.（現在形で今のことを表す）", ex: { fr: "Il neige beaucoup à Sapporo.", ja: "札幌は雪がたくさん降ります。" }}
+      - {fr: "il y a du soleil", ipa: "il ja dy sɔlɛj", ja: "日が照っている", pos: "表現", note: "英語の It's sunny. il y a は英語の there is / there are", ex: { fr: "Il y a du soleil, mais il fait froid.", ja: "日は照っているけれど、寒いです。" }}
       - {fr: "il y a du vent", ipa: "il ja dy vɑ̃", ja: "風がある", pos: "表現", ex: { fr: "Aujourd'hui, il y a du vent à Marseille.", ja: "今日、マルセイユは風があります。" }}
       - {fr: "il y a des nuages", ipa: "il ja de nɥaʒ", ja: "曇っている", pos: "表現", ex: { fr: "Il y a des nuages, mais il ne pleut pas.", ja: "曇っているけれど、雨は降っていません。" }}
-      - {fr: "il va faire beau", ipa: "il va fɛʁ bo", ja: "いい天気になる", pos: "表現", note: "近接未来 aller + 不定詞。fait が不定詞 faire に戻る", ex: { fr: "Demain, il va faire beau.", ja: "明日はいい天気になります。" }}
-      - {fr: "il va pleuvoir", ipa: "il va pløvwaʁ", ja: "雨が降りそうだ", pos: "表現", note: "pleut の不定詞は pleuvoir", ex: { fr: "Attention, il va pleuvoir ce soir.", ja: "気をつけて、今夜は雨になりそうです。" }}
+      - {fr: "il va faire beau", ipa: "il va fɛʁ bo", ja: "いい天気になる", pos: "表現", note: "近接未来 aller + 不定詞。fait が不定詞 faire に戻る。英語の It's going to be nice. と同じ作り（aller = go）", ex: { fr: "Demain, il va faire beau.", ja: "明日はいい天気になります。" }}
+      - {fr: "il va pleuvoir", ipa: "il va pløvwaʁ", ja: "雨が降りそうだ", pos: "表現", note: "pleut の不定詞は pleuvoir。英語の It's going to rain.", ex: { fr: "Attention, il va pleuvoir ce soir.", ja: "気をつけて、今夜は雨になりそうです。" }}
   - name: "天気の単語"
     words:
-      - {fr: "la météo", ipa: "la meteo", ja: "天気予報", pos: "名詞", g: "f", note: "ふつう定冠詞で使う（la météo de demain）", ex: { fr: "Je regarde la météo de demain.", ja: "明日の天気予報を見ます。" }}
+      - {fr: "la météo", ipa: "la meteo", ja: "天気予報", pos: "名詞", g: "f", note: "ふつう定冠詞で使う（la météo de demain）。英語の weather forecast。英語の meteorology（気象学）と同じ語源", ex: { fr: "Je regarde la météo de demain.", ja: "明日の天気予報を見ます。" }}
       - {fr: "le ciel", ipa: "lə sjɛl", ja: "空", pos: "名詞", g: "m", note: "空は 1 つなので定冠詞で覚える", ex: { fr: "Le ciel est bleu aujourd'hui.", ja: "今日は空が青いです。" }}
       - {fr: "du soleil", ipa: "dy sɔlɛj", ja: "日差し・太陽", pos: "名詞", g: "m", ex: { fr: "Demain, il va y avoir du soleil.", ja: "明日は日が差すでしょう。" }}
       - {fr: "de la pluie", ipa: "də la plɥi", ja: "雨", pos: "名詞", g: "f", ex: { fr: "La météo annonce de la pluie pour samedi.", ja: "天気予報によると、土曜日は雨です。" }}
@@ -34,83 +35,83 @@ groups:
       - {fr: "du vent", ipa: "dy vɑ̃", ja: "風", pos: "名詞", g: "m", ex: { fr: "Il y a trop de vent pour faire du vélo.", ja: "自転車に乗るには風が強すぎます。" }}
       - {fr: "un nuage", ipa: "œ̃ nɥaʒ", ja: "雲", pos: "名詞", g: "m", ex: { fr: "Un nuage cache le soleil.", ja: "雲が太陽を隠しています。" }}
       - {fr: "un orage", ipa: "œ̃ nɔʁaʒ", ja: "嵐・雷雨", pos: "名詞", g: "m", ex: { fr: "Ce soir, il va y avoir un orage.", ja: "今夜は雷雨になりそうです。" }}
-      - {fr: "un degré", ipa: "œ̃ dəɡʁe", ja: "（温度の）度", pos: "名詞", g: "m", ex: { fr: "Il fait vingt degrés à Lyon.", ja: "リヨンは 20 度です。" }}
+      - {fr: "un degré", ipa: "œ̃ dəɡʁe", ja: "（温度の）度", pos: "名詞", g: "m", note: "英語の degree（同じ語源）", ex: { fr: "Il fait vingt degrés à Lyon.", ja: "リヨンは 20 度です。" }}
       - {fr: "une température", ipa: "yn tɑ̃peʁatyʁ", ja: "気温", pos: "名詞", g: "f", ex: { fr: "Quelle est la température à Paris ?", ja: "パリの気温は何度ですか？" }}
       - {fr: "pleuvoir", ipa: "pløvwaʁ", ja: "雨が降る", pos: "動詞", note: "主語は il だけ（il pleut）", ex: { fr: "Est-ce qu'il va pleuvoir samedi ?", ja: "土曜日は雨が降りますか？" }}
       - {fr: "neiger", ipa: "neʒe", ja: "雪が降る", pos: "動詞", note: "主語は il だけ（il neige）", ex: { fr: "Il va neiger ce week-end à la montagne.", ja: "今週末、山では雪が降りそうです。" }}
-      - {fr: "ensoleillé", ipa: "ɑ̃sɔlɛje", ja: "晴れた・日当たりのよい", pos: "形容詞", f: "ensoleillée", f_ipa: "ɑ̃sɔlɛje", tts: "ensoleillé, ensoleillée", note: "女性形は綴りだけ変わり、音は同じ", ex: { fr: "Demain, la journée va être ensoleillée.", ja: "明日は晴れの一日になるでしょう。" }}
-      - {fr: "nuageux", ipa: "nɥaʒø", ja: "曇った", pos: "形容詞", f: "nuageuse", f_ipa: "nɥaʒøz", tts: "nuageux, nuageuse", ex: { fr: "Le temps est nuageux à Lille.", ja: "リールは曇っています。" }}
+      - {fr: "ensoleillé", ipa: "ɑ̃sɔlɛje", ja: "晴れた・日当たりのよい", pos: "形容詞", f: "ensoleillée", f_ipa: "ɑ̃sɔlɛje", tts: "ensoleillé, ensoleillée", note: "女性形は綴りだけ変わり、音は同じ。英語の sunny（soleil = sun）", ex: { fr: "Demain, la journée va être ensoleillée.", ja: "明日は晴れの一日になるでしょう。" }}
+      - {fr: "nuageux", ipa: "nɥaʒø", ja: "曇った", pos: "形容詞", f: "nuageuse", f_ipa: "nɥaʒøz", tts: "nuageux, nuageuse", note: "英語の cloudy（nuage = cloud）", ex: { fr: "Le temps est nuageux à Lille.", ja: "リールは曇っています。" }}
   - name: "季節"
     words:
-      - {fr: "une saison", ipa: "yn sɛzɔ̃", ja: "季節", pos: "名詞", g: "f", ex: { fr: "Quelle est ta saison préférée ?", ja: "好きな季節はどれ？" }}
+      - {fr: "une saison", ipa: "yn sɛzɔ̃", ja: "季節", pos: "名詞", g: "f", note: "英語の season（同じ語源）", ex: { fr: "Quelle est ta saison préférée ?", ja: "好きな季節はどれ？" }}
       - {fr: "un printemps", ipa: "œ̃ pʁɛ̃tɑ̃", ja: "春", pos: "名詞", g: "m", ex: { fr: "J'aime beaucoup le printemps.", ja: "春が大好きです。" }}
       - {fr: "un été", ipa: "œ̃ nete", ja: "夏", pos: "名詞", g: "m", ex: { fr: "Je n'aime pas l'été, il fait trop chaud.", ja: "夏は好きじゃない、暑すぎるから。" }}
-      - {fr: "un automne", ipa: "œ̃ notɔn", ja: "秋", pos: "名詞", g: "m", note: "m は読まない", ex: { fr: "L'automne est très beau à Kyoto.", ja: "京都の秋はとてもきれいです。" }}
+      - {fr: "un automne", ipa: "œ̃ notɔn", ja: "秋", pos: "名詞", g: "m", note: "m は読まない。英語の autumn（同じ語源）", ex: { fr: "L'automne est très beau à Kyoto.", ja: "京都の秋はとてもきれいです。" }}
       - {fr: "un hiver", ipa: "œ̃ nivɛʁ", ja: "冬", pos: "名詞", g: "m", ex: { fr: "L'hiver est froid à Hokkaido.", ja: "北海道の冬は寒いです。" }}
-      - {fr: "au printemps", ipa: "o pʁɛ̃tɑ̃", ja: "春に", pos: "表現", note: "printemps だけ子音で始まるので au", ex: { fr: "Au printemps, il y a des fleurs partout.", ja: "春には、あちこちに花があります。" }}
-      - {fr: "en été", ipa: "ɑ̃ nete", ja: "夏に", pos: "表現", ex: { fr: "En été, on va souvent à la mer.", ja: "夏は、よく海に行きます。" }}
+      - {fr: "au printemps", ipa: "o pʁɛ̃tɑ̃", ja: "春に", pos: "表現", note: "printemps だけ子音で始まるので au。英語ではどの季節も in（in spring / in summer）", ex: { fr: "Au printemps, il y a des fleurs partout.", ja: "春には、あちこちに花があります。" }}
+      - {fr: "en été", ipa: "ɑ̃ nete", ja: "夏に", pos: "表現", note: "英語の in summer の in", ex: { fr: "En été, on va souvent à la mer.", ja: "夏は、よく海に行きます。" }}
       - {fr: "en automne", ipa: "ɑ̃ notɔn", ja: "秋に", pos: "表現", ex: { fr: "En automne, il pleut souvent à Paris.", ja: "秋のパリはよく雨が降ります。" }}
       - {fr: "en hiver", ipa: "ɑ̃ nivɛʁ", ja: "冬に", pos: "表現", ex: { fr: "En hiver, je fais du ski.", ja: "冬はスキーをします。" }}
   - name: "時の表現"
     words:
       - {fr: "demain", ipa: "dəmɛ̃", ja: "明日", pos: "副詞", ex: { fr: "Demain, je vais travailler à la maison.", ja: "明日は家で仕事をします。" }}
-      - {fr: "après-demain", ipa: "apʁɛdmɛ̃", ja: "あさって", pos: "副詞", ex: { fr: "Après-demain, nous allons à Lyon.", ja: "あさって、私たちはリヨンに行きます。" }}
-      - {fr: "ce matin", ipa: "sə matɛ̃", ja: "今朝", pos: "表現", ex: { fr: "Ce matin, je vais à la piscine.", ja: "今朝はプールに行きます。" }}
-      - {fr: "cet après-midi", ipa: "sɛ tapʁɛmidi", ja: "今日の午後", pos: "表現", note: "母音の前なので ce ではなく cet", ex: { fr: "Cet après-midi, je vais faire les courses.", ja: "今日の午後は買い物をします。" }}
-      - {fr: "un week-end", ipa: "œ̃ wikɛnd", ja: "週末", pos: "名詞", g: "m", ex: { fr: "Le week-end, je joue au tennis.", ja: "週末はテニスをします。" }}
+      - {fr: "après-demain", ipa: "apʁɛdmɛ̃", ja: "あさって", pos: "副詞", note: "英語の the day after tomorrow。après = after", ex: { fr: "Après-demain, nous allons à Lyon.", ja: "あさって、私たちはリヨンに行きます。" }}
+      - {fr: "ce matin", ipa: "sə matɛ̃", ja: "今朝", pos: "表現", note: "英語の this morning。ce = this", ex: { fr: "Ce matin, je vais à la piscine.", ja: "今朝はプールに行きます。" }}
+      - {fr: "cet après-midi", ipa: "sɛ tapʁɛmidi", ja: "今日の午後", pos: "表現", note: "母音の前なので ce ではなく cet。英語の this afternoon。après-midi は after + midi（noon）で、英語と同じ作り", ex: { fr: "Cet après-midi, je vais faire les courses.", ja: "今日の午後は買い物をします。" }}
+      - {fr: "un week-end", ipa: "œ̃ wikɛnd", ja: "週末", pos: "名詞", g: "m", note: "英語の weekend から入った語", ex: { fr: "Le week-end, je joue au tennis.", ja: "週末はテニスをします。" }}
       - {fr: "ce week-end", ipa: "sə wikɛnd", ja: "今週末", pos: "表現", ex: { fr: "Ce week-end, je vais voir mes parents.", ja: "今週末は両親に会いに行きます。" }}
-      - {fr: "la semaine prochaine", ipa: "la səmɛn pʁɔʃɛn", ja: "来週", pos: "表現", ex: { fr: "La semaine prochaine, je vais à Marseille.", ja: "来週、マルセイユに行きます。" }}
+      - {fr: "la semaine prochaine", ipa: "la səmɛn pʁɔʃɛn", ja: "来週", pos: "表現", note: "英語の next week と違い、prochain は名詞の後ろに置く", ex: { fr: "La semaine prochaine, je vais à Marseille.", ja: "来週、マルセイユに行きます。" }}
       - {fr: "le mois prochain", ipa: "lə mwa pʁɔʃɛ̃", ja: "来月", pos: "表現", ex: { fr: "Le mois prochain, mon frère va venir au Japon.", ja: "来月、兄が日本に来ます。" }}
       - {fr: "l'année prochaine", ipa: "lane pʁɔʃɛn", ja: "来年", pos: "表現", ex: { fr: "L'année prochaine, je vais passer le DELF A2.", ja: "来年、DELF A2 を受けます。" }}
       - {fr: "prochain", ipa: "pʁɔʃɛ̃", ja: "次の・来〜", pos: "形容詞", f: "prochaine", f_ipa: "pʁɔʃɛn", tts: "prochain, prochaine", ex: { fr: "Le prochain train part à huit heures.", ja: "次の電車は 8 時に出ます。" }}
       - {fr: "bientôt", ipa: "bjɛ̃to", ja: "もうすぐ", pos: "副詞", ex: { fr: "Je vais bientôt aller en France.", ja: "もうすぐフランスに行きます。" }}
-      - {fr: "plus tard", ipa: "ply taʁ", ja: "あとで", pos: "表現", ex: { fr: "Je vais faire mes devoirs plus tard.", ja: "宿題はあとでやります。" }}
-      - {fr: "dans une semaine", ipa: "dɑ̃ zyn səmɛn", ja: "1 週間後に", pos: "表現", note: "dans + 期間 =「〜後に」", ex: { fr: "Dans une semaine, je pars en vacances.", ja: "1 週間後に休暇に出かけます。" }}
+      - {fr: "plus tard", ipa: "ply taʁ", ja: "あとで", pos: "表現", note: "英語の later。plus = more、tard = late", ex: { fr: "Je vais faire mes devoirs plus tard.", ja: "宿題はあとでやります。" }}
+      - {fr: "dans une semaine", ipa: "dɑ̃ zyn səmɛn", ja: "1 週間後に", pos: "表現", note: "dans + 期間 =「〜後に」。英語の in a week の in と同じ", ex: { fr: "Dans une semaine, je pars en vacances.", ja: "1 週間後に休暇に出かけます。" }}
   - name: "予定を話す・誘う・断る"
     words:
-      - {fr: "un projet", ipa: "œ̃ pʁɔʒɛ", ja: "予定・計画", pos: "名詞", g: "m", ex: { fr: "Tu as des projets pour ce week-end ?", ja: "今週末の予定はある？" }}
-      - {fr: "un rendez-vous", ipa: "œ̃ ʁɑ̃devu", ja: "会う約束・予約", pos: "名詞", g: "m", ex: { fr: "J'ai un rendez-vous chez le médecin demain.", ja: "明日、医者の予約があります。" }}
-      - {fr: "une fête", ipa: "yn fɛt", ja: "パーティー・祭り", pos: "名詞", g: "f", ex: { fr: "Samedi soir, il y a une fête chez Marie.", ja: "土曜の夜、マリーの家でパーティーがあります。" }}
+      - {fr: "un projet", ipa: "œ̃ pʁɔʒɛ", ja: "予定・計画", pos: "名詞", g: "m", note: "英語の project より広く、「予定」の意味でよく使う", ex: { fr: "Tu as des projets pour ce week-end ?", ja: "今週末の予定はある？" }}
+      - {fr: "un rendez-vous", ipa: "œ̃ ʁɑ̃devu", ja: "会う約束・予約", pos: "名詞", g: "m", note: "英語に入った rendezvous と同じ語。医者や美容院の予約（appointment）にも使う", ex: { fr: "J'ai un rendez-vous chez le médecin demain.", ja: "明日、医者の予約があります。" }}
+      - {fr: "une fête", ipa: "yn fɛt", ja: "パーティー・祭り", pos: "名詞", g: "f", note: "英語の party / festival", ex: { fr: "Samedi soir, il y a une fête chez Marie.", ja: "土曜の夜、マリーの家でパーティーがあります。" }}
       - {fr: "une invitation", ipa: "yn ɛ̃vitasjɔ̃", ja: "招待", pos: "名詞", g: "f", ex: { fr: "Merci pour ton invitation !", ja: "招待してくれてありがとう！" }}
       - {fr: "inviter", ipa: "ɛ̃vite", ja: "招待する・誘う", pos: "動詞", ex: { fr: "Paul invite Léa au cinéma.", ja: "ポールはレアを映画に誘います。" }}
-      - {fr: "rester", ipa: "ʁɛste", ja: "とどまる・家にいる", pos: "動詞", ex: { fr: "Dimanche, je vais rester à la maison.", ja: "日曜日は家にいます。" }}
-      - {fr: "avoir le temps", ipa: "avwaʁ lə tɑ̃", ja: "時間がある", pos: "表現", ex: { fr: "Désolé, je n'ai pas le temps aujourd'hui.", ja: "ごめん、今日は時間がないんだ。" }}
+      - {fr: "rester", ipa: "ʁɛste", ja: "とどまる・家にいる", pos: "動詞", note: "英語の stay。英語の rest（休む）とは意味が違う", ex: { fr: "Dimanche, je vais rester à la maison.", ja: "日曜日は家にいます。" }}
+      - {fr: "avoir le temps", ipa: "avwaʁ lə tɑ̃", ja: "時間がある", pos: "表現", note: "英語の have time（英語と同じく have を使う）", ex: { fr: "Désolé, je n'ai pas le temps aujourd'hui.", ja: "ごめん、今日は時間がないんだ。" }}
       - {fr: "Qu'est-ce que tu vas faire ce week-end ?", ipa: "kɛs kə ty va fɛʁ sə wikɛnd", ja: "今週末は何をするの？", pos: "表現", ex: { fr: "Salut Léa ! Qu'est-ce que tu vas faire ce week-end ?", ja: "やあ、レア！今週末は何をするの？" }}
-      - {fr: "Tu es libre ?", ipa: "ty ɛ libʁ", ja: "空いてる？", pos: "表現", ex: { fr: "Tu es libre vendredi soir ?", ja: "金曜の夜は空いてる？" }}
-      - {fr: "Tu veux venir ?", ipa: "ty vø vəniʁ", ja: "来ない？", pos: "表現", ex: { fr: "Tu veux venir au cinéma avec nous ?", ja: "一緒に映画に来ない？" }}
+      - {fr: "Tu es libre ?", ipa: "ty ɛ libʁ", ja: "空いてる？", pos: "表現", note: "英語の Are you free?（同じ言い方）", ex: { fr: "Tu es libre vendredi soir ?", ja: "金曜の夜は空いてる？" }}
+      - {fr: "Tu veux venir ?", ipa: "ty vø vəniʁ", ja: "来ない？", pos: "表現", note: "英語の Do you want to come? 英語の do は付けない", ex: { fr: "Tu veux venir au cinéma avec nous ?", ja: "一緒に映画に来ない？" }}
       - {fr: "On y va ?", ipa: "ɔ̃ ni va", ja: "行こうか？", pos: "表現", note: "on と y がリエゾンする", ex: { fr: "Il fait beau, on y va ?", ja: "いい天気だね、行こうか？" }}
-      - {fr: "Avec plaisir !", ipa: "avɛk plɛziʁ", ja: "喜んで！", pos: "表現", ex: { fr: "Oui, avec plaisir, merci !", ja: "うん、喜んで、ありがとう！" }}
-      - {fr: "Bonne idée !", ipa: "bɔn ide", ja: "いいね！", pos: "表現", ex: { fr: "C'est une bonne idée !", ja: "それはいい考えだね！" }}
-      - {fr: "Pourquoi pas ?", ipa: "puʁkwa pa", ja: "いいんじゃない？", pos: "表現", ex: { fr: "Pourquoi pas samedi après-midi ?", ja: "土曜の午後はどう？" }}
+      - {fr: "Avec plaisir !", ipa: "avɛk plɛziʁ", ja: "喜んで！", pos: "表現", note: "英語の With pleasure!（同じ言い方）", ex: { fr: "Oui, avec plaisir, merci !", ja: "うん、喜んで、ありがとう！" }}
+      - {fr: "Bonne idée !", ipa: "bɔn ide", ja: "いいね！", pos: "表現", note: "英語の Good idea!", ex: { fr: "C'est une bonne idée !", ja: "それはいい考えだね！" }}
+      - {fr: "Pourquoi pas ?", ipa: "puʁkwa pa", ja: "いいんじゃない？", pos: "表現", note: "英語の Why not?（同じ言い方）", ex: { fr: "Pourquoi pas samedi après-midi ?", ja: "土曜の午後はどう？" }}
       - {fr: "Désolé, je ne peux pas.", ipa: "dezɔle ʒə nə pø pa", ja: "ごめん、行けない。", pos: "表現", note: "女性が言うときは Désolée（音は同じ）", ex: { fr: "Désolé, je ne peux pas, je travaille.", ja: "ごめん、行けない。仕事なんだ。" }}
-      - {fr: "C'est dommage.", ipa: "sɛ dɔmaʒ", ja: "残念。", pos: "表現", ex: { fr: "C'est dommage, il pleut aujourd'hui.", ja: "残念、今日は雨だ。" }}
-      - {fr: "Une autre fois !", ipa: "yn otʁ fwa", ja: "また今度！", pos: "表現", ex: { fr: "Pas ce soir, une autre fois !", ja: "今夜はだめ、また今度！" }}
+      - {fr: "C'est dommage.", ipa: "sɛ dɔmaʒ", ja: "残念。", pos: "表現", note: "英語の That's a pity. 英語の damage と同じ語源だが、意味は「残念」", ex: { fr: "C'est dommage, il pleut aujourd'hui.", ja: "残念、今日は雨だ。" }}
+      - {fr: "Une autre fois !", ipa: "yn otʁ fwa", ja: "また今度！", pos: "表現", note: "英語の Another time!", ex: { fr: "Pas ce soir, une autre fois !", ja: "今夜はだめ、また今度！" }}
   - name: "旅行・休暇"
     words:
-      - {fr: "des vacances", ipa: "de vakɑ̃s", ja: "休暇・バカンス", pos: "名詞", g: "f", note: "いつも複数形で使う", ex: { fr: "Où est-ce que tu vas pendant les vacances ?", ja: "休暇中はどこに行くの？" }}
+      - {fr: "des vacances", ipa: "de vakɑ̃s", ja: "休暇・バカンス", pos: "名詞", g: "f", note: "いつも複数形で使う。英語の vacation（同じ語源）。英語は単数（a vacation）", ex: { fr: "Où est-ce que tu vas pendant les vacances ?", ja: "休暇中はどこに行くの？" }}
       - {fr: "les grandes vacances", ipa: "le ɡʁɑ̃d vakɑ̃s", ja: "夏休み", pos: "表現", ex: { fr: "Les grandes vacances commencent en juillet.", ja: "夏休みは 7 月に始まります。" }}
       - {fr: "partir en vacances", ipa: "paʁtiʁ ɑ̃ vakɑ̃s", ja: "休暇に出かける", pos: "表現", ex: { fr: "Nous allons partir en vacances en août.", ja: "私たちは 8 月に休暇に出かけます。" }}
-      - {fr: "visiter", ipa: "vizite", ja: "（場所を）訪れる・見物する", pos: "動詞", note: "人を訪ねるときは使わない", ex: { fr: "Demain, nous allons visiter le Louvre.", ja: "明日、ルーヴル美術館を見に行きます。" }}
-      - {fr: "une réservation", ipa: "yn ʁezɛʁvasjɔ̃", ja: "予約", pos: "名詞", g: "f", ex: { fr: "J'ai une réservation au nom de Tanaka.", ja: "田中の名前で予約しています。" }}
-      - {fr: "un billet", ipa: "œ̃ bijɛ", ja: "切符・チケット", pos: "名詞", g: "m", ex: { fr: "Je voudrais un billet pour Lyon, s'il vous plaît.", ja: "リヨンまでの切符を 1 枚ください。" }}
-      - {fr: "un aller-retour", ipa: "œ̃ nale ʁətuʁ", ja: "往復（切符）", pos: "名詞", g: "m", ex: { fr: "Un aller-retour pour Nice, s'il vous plaît.", ja: "ニースまで往復でお願いします。" }}
+      - {fr: "visiter", ipa: "vizite", ja: "（場所を）訪れる・見物する", pos: "動詞", note: "人を訪ねるときは使わない。英語の visit は人にも使うが、フランス語の visiter は場所だけ", ex: { fr: "Demain, nous allons visiter le Louvre.", ja: "明日、ルーヴル美術館を見に行きます。" }}
+      - {fr: "une réservation", ipa: "yn ʁezɛʁvasjɔ̃", ja: "予約", pos: "名詞", g: "f", note: "英語の reservation（同じ語源）", ex: { fr: "J'ai une réservation au nom de Tanaka.", ja: "田中の名前で予約しています。" }}
+      - {fr: "un billet", ipa: "œ̃ bijɛ", ja: "切符・チケット", pos: "名詞", g: "m", note: "英語の ticket。英語の bill（紙幣）と同じ語源で、お札も un billet", ex: { fr: "Je voudrais un billet pour Lyon, s'il vous plaît.", ja: "リヨンまでの切符を 1 枚ください。" }}
+      - {fr: "un aller-retour", ipa: "œ̃ nale ʁətuʁ", ja: "往復（切符）", pos: "名詞", g: "m", note: "英語の round trip / return ticket。直訳は「行って戻る」", ex: { fr: "Un aller-retour pour Nice, s'il vous plaît.", ja: "ニースまで往復でお願いします。" }}
       - {fr: "une valise", ipa: "yn valiz", ja: "スーツケース", pos: "名詞", g: "f", ex: { fr: "Ma valise est très lourde.", ja: "私のスーツケースはとても重いです。" }}
       - {fr: "un passeport", ipa: "œ̃ paspɔʁ", ja: "パスポート", pos: "名詞", g: "m", ex: { fr: "Tu as ton passeport ?", ja: "パスポートは持ってる？" }}
       - {fr: "un avion", ipa: "œ̃ navjɔ̃", ja: "飛行機", pos: "名詞", g: "m", ex: { fr: "Je vais à Paris en avion.", ja: "パリには飛行機で行きます。" }}
       - {fr: "un aéroport", ipa: "œ̃ naeʁɔpɔʁ", ja: "空港", pos: "名詞", g: "m", ex: { fr: "L'aéroport est loin du centre-ville.", ja: "空港は町の中心から遠いです。" }}
       - {fr: "une voie", ipa: "yn vwa", ja: "（駅の）〜番線", pos: "名詞", g: "f", note: "駅のアナウンスで「voie 3」のように使う", ex: { fr: "Le train pour Lyon part de la voie trois.", ja: "リヨン行きの電車は 3 番線から出ます。" }}
-      - {fr: "un départ", ipa: "œ̃ depaʁ", ja: "出発", pos: "名詞", g: "m", ex: { fr: "Le départ est à dix heures et demie.", ja: "出発は 10 時半です。" }}
-      - {fr: "une arrivée", ipa: "yn aʁive", ja: "到着", pos: "名詞", g: "f", ex: { fr: "L'arrivée à Paris est à midi.", ja: "パリ到着は正午です。" }}
-      - {fr: "à l'étranger", ipa: "a letʁɑ̃ʒe", ja: "外国で・外国へ", pos: "表現", ex: { fr: "Cet été, je vais travailler à l'étranger.", ja: "この夏は外国で働きます。" }}
+      - {fr: "un départ", ipa: "œ̃ depaʁ", ja: "出発", pos: "名詞", g: "m", note: "英語の departure（同じ語源）", ex: { fr: "Le départ est à dix heures et demie.", ja: "出発は 10 時半です。" }}
+      - {fr: "une arrivée", ipa: "yn aʁive", ja: "到着", pos: "名詞", g: "f", note: "英語の arrival（同じ語源）", ex: { fr: "L'arrivée à Paris est à midi.", ja: "パリ到着は正午です。" }}
+      - {fr: "à l'étranger", ipa: "a letʁɑ̃ʒe", ja: "外国で・外国へ", pos: "表現", note: "英語の abroad。英語の stranger と同じ語源（étranger = 外国の・外国人）", ex: { fr: "Cet été, je vais travailler à l'étranger.", ja: "この夏は外国で働きます。" }}
   - name: "行き先と自然"
     words:
       - {fr: "la mer", ipa: "la mɛʁ", ja: "海", pos: "名詞", g: "f", note: "aller à la mer のように定冠詞で使う", ex: { fr: "Samedi, nous allons à la mer.", ja: "土曜日、私たちは海に行きます。" }}
       - {fr: "la montagne", ipa: "la mɔ̃taɲ", ja: "山（山地）", pos: "名詞", g: "f", note: "aller à la montagne のように定冠詞で使う", ex: { fr: "En hiver, j'aime aller à la montagne.", ja: "冬は山に行くのが好きです。" }}
-      - {fr: "la campagne", ipa: "la kɑ̃paɲ", ja: "田舎", pos: "名詞", g: "f", note: "une campagne だと「キャンペーン」の意味になりやすい", ex: { fr: "Mes grands-parents habitent à la campagne.", ja: "祖父母は田舎に住んでいます。" }}
+      - {fr: "la campagne", ipa: "la kɑ̃paɲ", ja: "田舎", pos: "名詞", g: "f", note: "une campagne だと「キャンペーン」の意味になりやすい。英語の countryside。英語の campaign と同じ語源", ex: { fr: "Mes grands-parents habitent à la campagne.", ja: "祖父母は田舎に住んでいます。" }}
       - {fr: "une plage", ipa: "yn plaʒ", ja: "浜辺・ビーチ", pos: "名詞", g: "f", ex: { fr: "La plage est à cinq minutes de l'hôtel.", ja: "ビーチはホテルから 5 分です。" }}
-      - {fr: "une forêt", ipa: "yn fɔʁɛ", ja: "森", pos: "名詞", g: "f", ex: { fr: "Dimanche, on va marcher dans la forêt.", ja: "日曜日は森を歩きます。" }}
+      - {fr: "une forêt", ipa: "yn fɔʁɛ", ja: "森", pos: "名詞", g: "f", note: "英語の forest。ê は昔あった s の名残", ex: { fr: "Dimanche, on va marcher dans la forêt.", ja: "日曜日は森を歩きます。" }}
       - {fr: "un lac", ipa: "œ̃ lak", ja: "湖", pos: "名詞", g: "m", ex: { fr: "Il y a un beau lac près du village.", ja: "村の近くにきれいな湖があります。" }}
-      - {fr: "une île", ipa: "yn il", ja: "島", pos: "名詞", g: "f", ex: { fr: "La Corse est une grande île.", ja: "コルシカは大きな島です。" }}
+      - {fr: "une île", ipa: "yn il", ja: "島", pos: "名詞", g: "f", note: "英語の island / isle。î は昔あった s の名残", ex: { fr: "La Corse est une grande île.", ja: "コルシカは大きな島です。" }}
       - {fr: "au bord de la mer", ipa: "o bɔʁ də la mɛʁ", ja: "海辺で", pos: "表現", ex: { fr: "Nous avons une maison au bord de la mer.", ja: "私たちは海辺に家を持っています。" }}
-      - {fr: "se baigner", ipa: "sə beɲe", ja: "（海などで）泳ぐ・水浴びする", pos: "動詞", ex: { fr: "Il fait chaud, on va se baigner ?", ja: "暑いね、泳ぎに行こうか？" }}
-      - {fr: "des lunettes de soleil", ipa: "de lynɛt də sɔlɛj", ja: "サングラス", pos: "名詞", g: "f", ex: { fr: "J'ai mes lunettes de soleil dans mon sac.", ja: "かばんにサングラスが入っています。" }}
+      - {fr: "se baigner", ipa: "sə beɲe", ja: "（海などで）泳ぐ・水浴びする", pos: "動詞", note: "英語の bathe / swim（直訳は「自分を水に浸す」）", ex: { fr: "Il fait chaud, on va se baigner ?", ja: "暑いね、泳ぎに行こうか？" }}
+      - {fr: "des lunettes de soleil", ipa: "de lynɛt də sɔlɛj", ja: "サングラス", pos: "名詞", g: "f", note: "英語の sunglasses（直訳は「太陽のメガネ」）。メガネは英語の glasses と同じくいつも複数形", ex: { fr: "J'ai mes lunettes de soleil dans mon sac.", ja: "かばんにサングラスが入っています。" }}

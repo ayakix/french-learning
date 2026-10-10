@@ -4,86 +4,87 @@
 # 疑問詞だけでなく、est-ce que などの「質問の形」と、授業や会話で聞き返すための決まり文句をまとめている。
 # A1 では、わからないときに聞き返せることが会話を続ける一番の力になるため。
 # 答えの語（si など）も入れるのは、質問とセットで覚えたほうが使えるようになるため。
+# note には英語と比べた補足（同じ点・違う点）も書く。英語を足場にすると理解が早いため（2026-10-10）。英語と同じで当たり前の語には付けない
 unit: "07"
 title: "質問する"
 groups:
   - name: "疑問詞"
     words:
-      - {fr: "qui", ipa: "ki", ja: "誰", pos: "疑問詞", ex: {fr: "Qui est ton professeur de français ?", ja: "あなたのフランス語の先生は誰？"}}
-      - {fr: "que", ipa: "kə", ja: "何（動詞の前で）", pos: "疑問詞", note: "単独では使わず、qu'est-ce que・Que fais-tu ? の形で使う", ex: {fr: "Que fais-tu le dimanche ?", ja: "日曜日は何をしているの？"}}
-      - {fr: "quoi", ipa: "kwa", ja: "何（文末・前置詞の後で）", pos: "疑問詞", note: "que は文末に置けないので、文末では quoi になる（C'est quoi ?）", ex: {fr: "Tu fais quoi le week-end ?", ja: "週末は何してるの？"}}
-      - {fr: "où", ipa: "u", ja: "どこ", pos: "疑問詞", note: "ou（または）と区別するためにアクセント記号が付く", ex: {fr: "Tu habites où ?", ja: "どこに住んでるの？"}}
-      - {fr: "d'où", ipa: "du", ja: "どこから・どこの出身", pos: "疑問詞", ex: {fr: "Tu es d'où ?", ja: "どこの出身？"}}
-      - {fr: "quand", ipa: "kɑ̃", ja: "いつ", pos: "疑問詞", note: "後ろに母音が続くと d を [t] でつなぐ（quand est-ce que）", ex: {fr: "Le cours de français, c'est quand ?", ja: "フランス語の授業はいつ？"}}
-      - {fr: "comment", ipa: "kɔmɑ̃", ja: "どのように・どう", pos: "疑問詞", ex: {fr: "Comment tu t'appelles ?", ja: "名前は何ていうの？"}}
-      - {fr: "combien", ipa: "kɔ̃bjɛ̃", ja: "いくら・どれだけ", pos: "疑問詞", ex: {fr: "C'est combien, le croissant ?", ja: "そのクロワッサンはいくら？"}}
-      - {fr: "combien de", ipa: "kɔ̃bjɛ̃ də", ja: "いくつの〜", pos: "疑問詞", note: "名詞の前は冠詞なしで de（combien de langues）", ex: {fr: "Tu parles combien de langues ?", ja: "何か国語を話せるの？"}}
-      - {fr: "pourquoi", ipa: "puʁkwa", ja: "なぜ", pos: "疑問詞", note: "答えは parce que（なぜなら）で始める", ex: {fr: "Pourquoi tu apprends le français ?", ja: "どうしてフランス語を勉強しているの？"}}
-      - {fr: "quel", ipa: "kɛl", ja: "どの・何の（単数）", pos: "疑問詞", f: "quelle", f_ipa: "kɛl", tts: "quel, quelle", note: "後ろの名詞の性に合わせる。発音は同じ", ex: {fr: "Tu as quel âge ?", ja: "何歳？"}}
+      - {fr: "qui", ipa: "ki", ja: "誰", pos: "疑問詞", note: "英語の who", ex: {fr: "Qui est ton professeur de français ?", ja: "あなたのフランス語の先生は誰？"}}
+      - {fr: "que", ipa: "kə", ja: "何（動詞の前で）", pos: "疑問詞", note: "単独では使わず、qu'est-ce que・Que fais-tu ? の形で使う。英語の what（動詞の前で）", ex: {fr: "Que fais-tu le dimanche ?", ja: "日曜日は何をしているの？"}}
+      - {fr: "quoi", ipa: "kwa", ja: "何（文末・前置詞の後で）", pos: "疑問詞", note: "que は文末に置けないので、文末では quoi になる（C'est quoi ?）。英語の what（文末・前置詞の後で）。英語の what は 1 つだが、フランス語は位置で que / quoi を使い分ける", ex: {fr: "Tu fais quoi le week-end ?", ja: "週末は何してるの？"}}
+      - {fr: "où", ipa: "u", ja: "どこ", pos: "疑問詞", note: "ou（または）と区別するためにアクセント記号が付く。英語の where", ex: {fr: "Tu habites où ?", ja: "どこに住んでるの？"}}
+      - {fr: "d'où", ipa: "du", ja: "どこから・どこの出身", pos: "疑問詞", note: "英語の where from。英語は from を文末に置けるが（Where are you from?）、フランス語は de を où の前に付ける", ex: {fr: "Tu es d'où ?", ja: "どこの出身？"}}
+      - {fr: "quand", ipa: "kɑ̃", ja: "いつ", pos: "疑問詞", note: "後ろに母音が続くと d を [t] でつなぐ（quand est-ce que）。英語の when", ex: {fr: "Le cours de français, c'est quand ?", ja: "フランス語の授業はいつ？"}}
+      - {fr: "comment", ipa: "kɔmɑ̃", ja: "どのように・どう", pos: "疑問詞", note: "英語の how。英語の What's your name? も Comment tu t'appelles ?（how）と言う", ex: {fr: "Comment tu t'appelles ?", ja: "名前は何ていうの？"}}
+      - {fr: "combien", ipa: "kɔ̃bjɛ̃", ja: "いくら・どれだけ", pos: "疑問詞", note: "英語の how much / how many（数えられるかどうかで分けない）", ex: {fr: "C'est combien, le croissant ?", ja: "そのクロワッサンはいくら？"}}
+      - {fr: "combien de", ipa: "kɔ̃bjɛ̃ də", ja: "いくつの〜", pos: "疑問詞", note: "名詞の前は冠詞なしで de（combien de langues）。英語の how many / how much ＋ 名詞", ex: {fr: "Tu parles combien de langues ?", ja: "何か国語を話せるの？"}}
+      - {fr: "pourquoi", ipa: "puʁkwa", ja: "なぜ", pos: "疑問詞", note: "答えは parce que（なぜなら）で始める。英語の why。答えの parce que は英語の because", ex: {fr: "Pourquoi tu apprends le français ?", ja: "どうしてフランス語を勉強しているの？"}}
+      - {fr: "quel", ipa: "kɛl", ja: "どの・何の（単数）", pos: "疑問詞", f: "quelle", f_ipa: "kɛl", tts: "quel, quelle", note: "後ろの名詞の性に合わせる。発音は同じ。英語の which / what ＋ 名詞（What time? = Quelle heure ?）", ex: {fr: "Tu as quel âge ?", ja: "何歳？"}}
       - {fr: "quels", ipa: "kɛl", ja: "どの・何の（複数）", pos: "疑問詞", f: "quelles", f_ipa: "kɛl", tts: "quels, quelles", note: "s は読まないが、母音の前ではリエゾンする（quels amis [kɛl zami]）", ex: {fr: "Tu aimes quels sports ?", ja: "どんなスポーツが好き？"}}
-      - {fr: "avec qui", ipa: "avɛk ki", ja: "誰と", pos: "表現", ex: {fr: "Tu vas au cinéma avec qui ?", ja: "誰と映画に行くの？"}}
+      - {fr: "avec qui", ipa: "avɛk ki", ja: "誰と", pos: "表現", note: "英語の with whom / who ... with。英語は with を文末に置けるが、フランス語は前に置く", ex: {fr: "Tu vas au cinéma avec qui ?", ja: "誰と映画に行くの？"}}
   - name: "質問の形"
     words:
-      - {fr: "est-ce que", ipa: "ɛs kə", ja: "〜ですか（はい・いいえで答える質問）", pos: "表現", note: "文の頭に付けるだけで、語順を変えずに質問にできる", ex: {fr: "Est-ce que tu aimes le café ?", ja: "コーヒーは好き？"}}
-      - {fr: "qu'est-ce que", ipa: "kɛs kə", ja: "何を〜ですか", pos: "表現", ex: {fr: "Qu'est-ce que tu manges le matin ?", ja: "朝は何を食べる？"}}
+      - {fr: "est-ce que", ipa: "ɛs kə", ja: "〜ですか（はい・いいえで答える質問）", pos: "表現", note: "文の頭に付けるだけで、語順を変えずに質問にできる。英語の Do / Does ...? にあたる（英語は語順も変わる）", ex: {fr: "Est-ce que tu aimes le café ?", ja: "コーヒーは好き？"}}
+      - {fr: "qu'est-ce que", ipa: "kɛs kə", ja: "何を〜ですか", pos: "表現", note: "英語の What ... do / does ...?", ex: {fr: "Qu'est-ce que tu manges le matin ?", ja: "朝は何を食べる？"}}
       - {fr: "où est-ce que", ipa: "u ɛs kə", ja: "どこで〜ですか", pos: "表現", note: "疑問詞 + est-ce que + 普通の語順", ex: {fr: "Où est-ce que tu travailles ?", ja: "どこで働いているの？"}}
       - {fr: "quand est-ce que", ipa: "kɑ̃ tɛs kə", ja: "いつ〜ですか", pos: "表現", note: "quand の d は [t] の音でリエゾンする", ex: {fr: "Quand est-ce que le magasin ouvre ?", ja: "お店はいつ開くの？"}}
-      - {fr: "Qu'est-ce que c'est ?", ipa: "kɛs kə sɛ", ja: "これは何ですか？", pos: "表現", ex: {fr: "Qu'est-ce que c'est ? C'est un dictionnaire.", ja: "これは何？ 辞書だよ。"}}
-      - {fr: "Qui est-ce ?", ipa: "ki ɛs", ja: "（あの人は）誰ですか？", pos: "表現", ex: {fr: "Qui est-ce ? C'est mon père.", ja: "あの人は誰？ 私の父です。"}}
+      - {fr: "Qu'est-ce que c'est ?", ipa: "kɛs kə sɛ", ja: "これは何ですか？", pos: "表現", note: "英語の What is it? / What's this?", ex: {fr: "Qu'est-ce que c'est ? C'est un dictionnaire.", ja: "これは何？ 辞書だよ。"}}
+      - {fr: "Qui est-ce ?", ipa: "ki ɛs", ja: "（あの人は）誰ですか？", pos: "表現", note: "英語の Who is it?", ex: {fr: "Qui est-ce ? C'est mon père.", ja: "あの人は誰？ 私の父です。"}}
       - {fr: "C'est quoi ?", ipa: "sɛ kwa", ja: "それ何？（くだけた言い方）", pos: "表現", ex: {fr: "C'est quoi, ce gâteau ?", ja: "このケーキ、何？"}}
-      - {fr: "n'est-ce pas ?", ipa: "nɛs pa", ja: "〜ですよね？", pos: "表現", ex: {fr: "Tu es japonais, n'est-ce pas ?", ja: "あなたは日本人ですよね？"}}
-      - {fr: "Qu'est-ce qu'il y a ?", ipa: "kɛs kil i a", ja: "どうしたの？・何があるの？", pos: "表現", ex: {fr: "Tu es triste ? Qu'est-ce qu'il y a ?", ja: "悲しいの？ どうしたの？"}}
-      - {fr: "Quoi de neuf ?", ipa: "kwa də nœf", ja: "最近どう？（友達どうしで）", pos: "表現", ex: {fr: "Salut Marie ! Quoi de neuf ?", ja: "やあ、マリー！ 最近どう？"}}
+      - {fr: "n'est-ce pas ?", ipa: "nɛs pa", ja: "〜ですよね？", pos: "表現", note: "英語の isn't it? / don't you? など。英語は動詞に合わせて変わるが、フランス語はいつも n'est-ce pas", ex: {fr: "Tu es japonais, n'est-ce pas ?", ja: "あなたは日本人ですよね？"}}
+      - {fr: "Qu'est-ce qu'il y a ?", ipa: "kɛs kil i a", ja: "どうしたの？・何があるの？", pos: "表現", note: "英語の What's the matter? / What is there? il y a = there is / there are", ex: {fr: "Tu es triste ? Qu'est-ce qu'il y a ?", ja: "悲しいの？ どうしたの？"}}
+      - {fr: "Quoi de neuf ?", ipa: "kwa də nœf", ja: "最近どう？（友達どうしで）", pos: "表現", note: "英語の What's new?（neuf = new）", ex: {fr: "Salut Marie ! Quoi de neuf ?", ja: "やあ、マリー！ 最近どう？"}}
   - name: "聞き返す・尋ねる決まり文句"
     words:
-      - {fr: "Pardon ?", ipa: "paʁdɔ̃", ja: "えっ？（聞き返し）", pos: "表現", ex: {fr: "Pardon ? Je ne comprends pas.", ja: "えっ？ わかりません。"}}
-      - {fr: "Vous pouvez répéter, s'il vous plaît ?", ipa: "vu puve ʁepete sil vu plɛ", ja: "もう一度言っていただけますか？", pos: "表現", ex: {fr: "Excusez-moi, vous pouvez répéter, s'il vous plaît ?", ja: "すみません、もう一度言っていただけますか？"}}
-      - {fr: "Vous pouvez parler plus lentement ?", ipa: "vu puve paʁle ply lɑ̃tmɑ̃", ja: "もっとゆっくり話していただけますか？", pos: "表現", ex: {fr: "Désolé, vous pouvez parler plus lentement ?", ja: "すみません、もっとゆっくり話していただけますか？"}}
-      - {fr: "Qu'est-ce que ça veut dire ?", ipa: "kɛs kə sa vø diʁ", ja: "それはどういう意味ですか？", pos: "表現", ex: {fr: "« Boulot » ? Qu'est-ce que ça veut dire ?", ja: "「boulot」？ それはどういう意味ですか？"}}
+      - {fr: "Pardon ?", ipa: "paʁdɔ̃", ja: "えっ？（聞き返し）", pos: "表現", note: "英語の Pardon? / Sorry?", ex: {fr: "Pardon ? Je ne comprends pas.", ja: "えっ？ わかりません。"}}
+      - {fr: "Vous pouvez répéter, s'il vous plaît ?", ipa: "vu puve ʁepete sil vu plɛ", ja: "もう一度言っていただけますか？", pos: "表現", note: "英語の Could you repeat, please?", ex: {fr: "Excusez-moi, vous pouvez répéter, s'il vous plaît ?", ja: "すみません、もう一度言っていただけますか？"}}
+      - {fr: "Vous pouvez parler plus lentement ?", ipa: "vu puve paʁle ply lɑ̃tmɑ̃", ja: "もっとゆっくり話していただけますか？", pos: "表現", note: "英語の Could you speak more slowly? plus = more", ex: {fr: "Désolé, vous pouvez parler plus lentement ?", ja: "すみません、もっとゆっくり話していただけますか？"}}
+      - {fr: "Qu'est-ce que ça veut dire ?", ipa: "kɛs kə sa vø diʁ", ja: "それはどういう意味ですか？", pos: "表現", note: "英語の What does that mean? 直訳は「それは何を言いたいか」（vouloir dire = want to say）", ex: {fr: "« Boulot » ? Qu'est-ce que ça veut dire ?", ja: "「boulot」？ それはどういう意味ですか？"}}
       - {fr: "Ça veut dire quoi ?", ipa: "sa vø diʁ kwa", ja: "それってどういう意味？（くだけた言い方）", pos: "表現", ex: {fr: "« Bisous », ça veut dire quoi ?", ja: "「bisous」ってどういう意味？"}}
-      - {fr: "Comment on dit ... en français ?", ipa: "kɔmɑ̃ ɔ̃ di ... ɑ̃ fʁɑ̃sɛ", ja: "…はフランス語で何と言いますか？", pos: "表現", tts: "Comment on dit ça en français ?", note: "... に言いたい語を入れる。音声は ça（それ）で読ませている", ex: {fr: "Comment on dit « arigato » en français ?", ja: "「ありがとう」はフランス語で何と言いますか？"}}
-      - {fr: "Comment ça s'écrit ?", ipa: "kɔmɑ̃ sa sekʁi", ja: "それはどう書きますか？", pos: "表現", ex: {fr: "Votre nom, comment ça s'écrit ?", ja: "お名前はどう書きますか？"}}
-      - {fr: "Ça se prononce comment ?", ipa: "sa sə pʁɔnɔ̃s kɔmɑ̃", ja: "それはどう発音しますか？", pos: "表現", ex: {fr: "Ce mot, ça se prononce comment ?", ja: "この単語はどう発音しますか？"}}
+      - {fr: "Comment on dit ... en français ?", ipa: "kɔmɑ̃ ɔ̃ di ... ɑ̃ fʁɑ̃sɛ", ja: "…はフランス語で何と言いますか？", pos: "表現", tts: "Comment on dit ça en français ?", note: "... に言いたい語を入れる。音声は ça（それ）で読ませている。英語の How do you say ... in French?", ex: {fr: "Comment on dit « arigato » en français ?", ja: "「ありがとう」はフランス語で何と言いますか？"}}
+      - {fr: "Comment ça s'écrit ?", ipa: "kɔmɑ̃ sa sekʁi", ja: "それはどう書きますか？", pos: "表現", note: "英語の How do you spell / write that?", ex: {fr: "Votre nom, comment ça s'écrit ?", ja: "お名前はどう書きますか？"}}
+      - {fr: "Ça se prononce comment ?", ipa: "sa sə pʁɔnɔ̃s kɔmɑ̃", ja: "それはどう発音しますか？", pos: "表現", note: "英語の How do you pronounce that?", ex: {fr: "Ce mot, ça se prononce comment ?", ja: "この単語はどう発音しますか？"}}
       - {fr: "Vous pouvez épeler, s'il vous plaît ?", ipa: "vu puve eple sil vu plɛ", ja: "つづりを言っていただけますか？", pos: "表現", ex: {fr: "Votre prénom ? Vous pouvez épeler, s'il vous plaît ?", ja: "下の名前ですか？ つづりを言っていただけますか？"}}
-      - {fr: "J'ai une question.", ipa: "ʒe yn kɛstjɔ̃", ja: "質問があります。", pos: "表現", ex: {fr: "Madame, j'ai une question.", ja: "先生、質問があります。"}}
-      - {fr: "C'est correct ?", ipa: "sɛ kɔʁɛkt", ja: "これで合っていますか？", pos: "表現", ex: {fr: "« J'ai vingt ans. » C'est correct ?", ja: "「J'ai vingt ans.」これで合っていますか？"}}
+      - {fr: "J'ai une question.", ipa: "ʒe yn kɛstjɔ̃", ja: "質問があります。", pos: "表現", note: "英語の I have a question.", ex: {fr: "Madame, j'ai une question.", ja: "先生、質問があります。"}}
+      - {fr: "C'est correct ?", ipa: "sɛ kɔʁɛkt", ja: "これで合っていますか？", pos: "表現", note: "英語の Is that correct?（同じ語源）", ex: {fr: "« J'ai vingt ans. » C'est correct ?", ja: "「J'ai vingt ans.」これで合っていますか？"}}
   - name: "答える"
     words:
-      - {fr: "si", ipa: "si", ja: "いいえ、〜です（否定の質問を打ち消す）", pos: "副詞", note: "Tu n'aimes pas ... ? に「好きだよ」と答えるときは oui ではなく si", ex: {fr: "Tu n'aimes pas le thé ? Si, j'aime le thé !", ja: "紅茶は好きじゃないの？ いや、好きだよ！"}}
-      - {fr: "peut-être", ipa: "pøtɛtʁ", ja: "たぶん・かもしれない", pos: "副詞", ex: {fr: "Il est peut-être à la maison.", ja: "彼はたぶん家にいる。"}}
-      - {fr: "bien sûr", ipa: "bjɛ̃ syʁ", ja: "もちろん", pos: "表現", ex: {fr: "Tu peux m'aider ? Bien sûr !", ja: "手伝ってくれる？ もちろん！"}}
+      - {fr: "si", ipa: "si", ja: "いいえ、〜です（否定の質問を打ち消す）", pos: "副詞", note: "Tu n'aimes pas ... ? に「好きだよ」と答えるときは oui ではなく si。英語にはない語。英語の Don't you like it? — Yes, I do. の Yes にあたる（否定の質問を打ち消す）", ex: {fr: "Tu n'aimes pas le thé ? Si, j'aime le thé !", ja: "紅茶は好きじゃないの？ いや、好きだよ！"}}
+      - {fr: "peut-être", ipa: "pøtɛtʁ", ja: "たぶん・かもしれない", pos: "副詞", note: "英語の maybe / perhaps。直訳は「〜であり得る」（英語の may be と同じ作り）", ex: {fr: "Il est peut-être à la maison.", ja: "彼はたぶん家にいる。"}}
+      - {fr: "bien sûr", ipa: "bjɛ̃ syʁ", ja: "もちろん", pos: "表現", note: "英語の of course / sure", ex: {fr: "Tu peux m'aider ? Bien sûr !", ja: "手伝ってくれる？ もちろん！"}}
       - {fr: "C'est ça.", ipa: "sɛ sa", ja: "そのとおり。", pos: "表現", ex: {fr: "Vous êtes Monsieur Tanaka ? Oui, c'est ça.", ja: "田中さんですか？ はい、そうです。"}}
-      - {fr: "exactement", ipa: "ɛɡzaktəmɑ̃", ja: "まさにそのとおり", pos: "副詞", ex: {fr: "Tu habites à Lyon ? Exactement !", ja: "リヨンに住んでるの？ そのとおり！"}}
-      - {fr: "moi aussi", ipa: "mwa osi", ja: "私も（肯定に対して）", pos: "表現", ex: {fr: "J'aime le chocolat. Moi aussi !", ja: "チョコレートが好き。 私も！"}}
-      - {fr: "moi non plus", ipa: "mwa nɔ̃ ply", ja: "私も〜ない（否定に対して）", pos: "表現", note: "否定の文に「私も」と言うときは aussi ではなく non plus", ex: {fr: "Je n'aime pas le sport. Moi non plus.", ja: "スポーツは好きじゃない。 私も。"}}
-      - {fr: "Je ne sais pas.", ipa: "ʒə nə sɛ pa", ja: "わかりません・知りません。", pos: "表現", ex: {fr: "Où est Paul ? Je ne sais pas.", ja: "ポールはどこ？ 知らないよ。"}}
-      - {fr: "Ça dépend.", ipa: "sa depɑ̃", ja: "場合によります。", pos: "表現", ex: {fr: "Tu vas au travail en bus ? Ça dépend.", ja: "仕事にはバスで行くの？ 日によるね。"}}
-      - {fr: "Vraiment ?", ipa: "vʁɛmɑ̃", ja: "本当に？", pos: "表現", ex: {fr: "Tu parles cinq langues ? Vraiment ?", ja: "5 か国語を話せるの？ 本当に？"}}
+      - {fr: "exactement", ipa: "ɛɡzaktəmɑ̃", ja: "まさにそのとおり", pos: "副詞", note: "英語の exactly（-ment が英語の -ly にあたる）", ex: {fr: "Tu habites à Lyon ? Exactement !", ja: "リヨンに住んでるの？ そのとおり！"}}
+      - {fr: "moi aussi", ipa: "mwa osi", ja: "私も（肯定に対して）", pos: "表現", note: "英語の me too", ex: {fr: "J'aime le chocolat. Moi aussi !", ja: "チョコレートが好き。 私も！"}}
+      - {fr: "moi non plus", ipa: "mwa nɔ̃ ply", ja: "私も〜ない（否定に対して）", pos: "表現", note: "否定の文に「私も」と言うときは aussi ではなく non plus。英語の me neither。英語と同じく、否定の文には too ではなく別の語を使う", ex: {fr: "Je n'aime pas le sport. Moi non plus.", ja: "スポーツは好きじゃない。 私も。"}}
+      - {fr: "Je ne sais pas.", ipa: "ʒə nə sɛ pa", ja: "わかりません・知りません。", pos: "表現", note: "英語の I don't know.", ex: {fr: "Où est Paul ? Je ne sais pas.", ja: "ポールはどこ？ 知らないよ。"}}
+      - {fr: "Ça dépend.", ipa: "sa depɑ̃", ja: "場合によります。", pos: "表現", note: "英語の It depends.（同じ語源）", ex: {fr: "Tu vas au travail en bus ? Ça dépend.", ja: "仕事にはバスで行くの？ 日によるね。"}}
+      - {fr: "Vraiment ?", ipa: "vʁɛmɑ̃", ja: "本当に？", pos: "表現", note: "英語の Really?（-ment が英語の -ly にあたる）", ex: {fr: "Tu parles cinq langues ? Vraiment ?", ja: "5 か国語を話せるの？ 本当に？"}}
   - name: "尋ねる・答える動詞"
     words:
-      - {fr: "demander", ipa: "dəmɑ̃de", ja: "尋ねる・頼む", pos: "動詞", ex: {fr: "Je demande l'addition au serveur.", ja: "ウェイターに会計を頼む。"}}
-      - {fr: "répondre", ipa: "ʁepɔ̃dʁ", ja: "答える", pos: "動詞", ex: {fr: "Tu ne réponds pas au téléphone ?", ja: "電話に出ないの？"}}
-      - {fr: "poser une question", ipa: "poze yn kɛstjɔ̃", ja: "質問する", pos: "表現", note: "「質問をする」は faire ではなく poser を使う", ex: {fr: "Je peux poser une question ?", ja: "質問してもいいですか？"}}
-      - {fr: "comprendre", ipa: "kɔ̃pʁɑ̃dʁ", ja: "わかる・理解する", pos: "動詞", ex: {fr: "Je ne comprends pas ce mot.", ja: "この単語がわからない。"}}
-      - {fr: "répéter", ipa: "ʁepete", ja: "繰り返す・もう一度言う", pos: "動詞", ex: {fr: "Le professeur répète la phrase.", ja: "先生が文を繰り返す。"}}
-      - {fr: "épeler", ipa: "eple", ja: "つづりを言う", pos: "動詞", ex: {fr: "Tu épelles ton prénom, s'il te plaît ?", ja: "名前のつづりを言ってくれる？"}}
-      - {fr: "expliquer", ipa: "ɛksplike", ja: "説明する", pos: "動詞", ex: {fr: "Le professeur explique la grammaire.", ja: "先生が文法を説明する。"}}
-      - {fr: "dire", ipa: "diʁ", ja: "言う", pos: "動詞", ex: {fr: "Qu'est-ce que tu dis ?", ja: "何て言ってるの？"}}
-      - {fr: "vouloir dire", ipa: "vulwaʁ diʁ", ja: "意味する", pos: "動詞", ex: {fr: "« Salut » veut dire « bonjour ».", ja: "「salut」は「bonjour（こんにちは）」という意味。"}}
-      - {fr: "traduire", ipa: "tʁadɥiʁ", ja: "翻訳する", pos: "動詞", ex: {fr: "Je traduis la phrase en japonais.", ja: "その文を日本語に訳す。"}}
-      - {fr: "savoir", ipa: "savwaʁ", ja: "（事実を）知っている", pos: "動詞", ex: {fr: "Tu sais où est la poste ?", ja: "郵便局がどこか知ってる？"}}
-      - {fr: "connaître", ipa: "kɔnɛtʁ", ja: "（人・場所を）知っている", pos: "動詞", note: "事柄は savoir、人や場所は connaître", ex: {fr: "Tu connais un bon restaurant ici ?", ja: "このあたりでいいレストランを知ってる？"}}
+      - {fr: "demander", ipa: "dəmɑ̃de", ja: "尋ねる・頼む", pos: "動詞", note: "英語の ask。英語の demand（要求する）より弱く、ふつうに「尋ねる・頼む」", ex: {fr: "Je demande l'addition au serveur.", ja: "ウェイターに会計を頼む。"}}
+      - {fr: "répondre", ipa: "ʁepɔ̃dʁ", ja: "答える", pos: "動詞", note: "英語の answer / reply（英語の respond と同じ語源）", ex: {fr: "Tu ne réponds pas au téléphone ?", ja: "電話に出ないの？"}}
+      - {fr: "poser une question", ipa: "poze yn kɛstjɔ̃", ja: "質問する", pos: "表現", note: "「質問をする」は faire ではなく poser を使う。英語の ask a question。英語は ask を使うが、フランス語は poser（置く）を使う", ex: {fr: "Je peux poser une question ?", ja: "質問してもいいですか？"}}
+      - {fr: "comprendre", ipa: "kɔ̃pʁɑ̃dʁ", ja: "わかる・理解する", pos: "動詞", note: "英語の understand（英語の comprehend と同じ語源）", ex: {fr: "Je ne comprends pas ce mot.", ja: "この単語がわからない。"}}
+      - {fr: "répéter", ipa: "ʁepete", ja: "繰り返す・もう一度言う", pos: "動詞", note: "英語の repeat（同じ語源）", ex: {fr: "Le professeur répète la phrase.", ja: "先生が文を繰り返す。"}}
+      - {fr: "épeler", ipa: "eple", ja: "つづりを言う", pos: "動詞", note: "英語の spell（同じ語源）", ex: {fr: "Tu épelles ton prénom, s'il te plaît ?", ja: "名前のつづりを言ってくれる？"}}
+      - {fr: "expliquer", ipa: "ɛksplike", ja: "説明する", pos: "動詞", note: "英語の explain（同じ語源）", ex: {fr: "Le professeur explique la grammaire.", ja: "先生が文法を説明する。"}}
+      - {fr: "dire", ipa: "diʁ", ja: "言う", pos: "動詞", note: "英語の say / tell", ex: {fr: "Qu'est-ce que tu dis ?", ja: "何て言ってるの？"}}
+      - {fr: "vouloir dire", ipa: "vulwaʁ diʁ", ja: "意味する", pos: "動詞", note: "英語の mean。直訳は want to say", ex: {fr: "« Salut » veut dire « bonjour ».", ja: "「salut」は「bonjour（こんにちは）」という意味。"}}
+      - {fr: "traduire", ipa: "tʁadɥiʁ", ja: "翻訳する", pos: "動詞", note: "英語の translate", ex: {fr: "Je traduis la phrase en japonais.", ja: "その文を日本語に訳す。"}}
+      - {fr: "savoir", ipa: "savwaʁ", ja: "（事実を）知っている", pos: "動詞", note: "英語の know（事実・やり方）", ex: {fr: "Tu sais où est la poste ?", ja: "郵便局がどこか知ってる？"}}
+      - {fr: "connaître", ipa: "kɔnɛtʁ", ja: "（人・場所を）知っている", pos: "動詞", note: "事柄は savoir、人や場所は connaître。英語では savoir と同じく know", ex: {fr: "Tu connais un bon restaurant ici ?", ja: "このあたりでいいレストランを知ってる？"}}
   - name: "ことば・やりとりの語"
     words:
       - {fr: "une question", ipa: "yn kɛstjɔ̃", ja: "質問", pos: "名詞", g: "f", ex: {fr: "C'est une bonne question !", ja: "いい質問ですね！"}}
       - {fr: "une réponse", ipa: "yn ʁepɔ̃s", ja: "答え", pos: "名詞", g: "f", ex: {fr: "La réponse est dans le livre.", ja: "答えは教科書にある。"}}
-      - {fr: "un mot", ipa: "œ̃ mo", ja: "単語", pos: "名詞", g: "m", ex: {fr: "C'est un mot difficile.", ja: "難しい単語だ。"}}
-      - {fr: "une phrase", ipa: "yn fʁaz", ja: "文", pos: "名詞", g: "f", note: "日本語の「フレーズ」ではなく、1 つの文のこと", ex: {fr: "Cette phrase est trop longue.", ja: "この文は長すぎる。"}}
-      - {fr: "un exemple", ipa: "œ̃ nɛɡzɑ̃pl", ja: "例", pos: "名詞", g: "m", ex: {fr: "Vous avez un exemple, s'il vous plaît ?", ja: "例はありますか？"}}
-      - {fr: "un dictionnaire", ipa: "œ̃ diksjɔnɛʁ", ja: "辞書", pos: "名詞", g: "m", ex: {fr: "J'ai un dictionnaire sur mon téléphone.", ja: "スマホに辞書が入っている。"}}
-      - {fr: "une erreur", ipa: "yn ɛʁœʁ", ja: "間違い", pos: "名詞", g: "f", ex: {fr: "Il y a une erreur dans mon texte ?", ja: "私の文章に間違いはある？"}}
-      - {fr: "une information", ipa: "yn ɛ̃fɔʁmasjɔ̃", ja: "情報", pos: "名詞", g: "f", ex: {fr: "Toutes les informations sont sur le site.", ja: "情報はすべてサイトにあります。"}}
+      - {fr: "un mot", ipa: "œ̃ mo", ja: "単語", pos: "名詞", g: "m", note: "英語の word。英語の motto と同じ語源", ex: {fr: "C'est un mot difficile.", ja: "難しい単語だ。"}}
+      - {fr: "une phrase", ipa: "yn fʁaz", ja: "文", pos: "名詞", g: "f", note: "日本語の「フレーズ」ではなく、1 つの文のこと。英語の sentence。英語の phrase（句）とも意味が違う", ex: {fr: "Cette phrase est trop longue.", ja: "この文は長すぎる。"}}
+      - {fr: "un exemple", ipa: "œ̃ nɛɡzɑ̃pl", ja: "例", pos: "名詞", g: "m", note: "英語の example（同じ語源）", ex: {fr: "Vous avez un exemple, s'il vous plaît ?", ja: "例はありますか？"}}
+      - {fr: "un dictionnaire", ipa: "œ̃ diksjɔnɛʁ", ja: "辞書", pos: "名詞", g: "m", note: "英語の dictionary（同じ語源）", ex: {fr: "J'ai un dictionnaire sur mon téléphone.", ja: "スマホに辞書が入っている。"}}
+      - {fr: "une erreur", ipa: "yn ɛʁœʁ", ja: "間違い", pos: "名詞", g: "f", note: "英語の error / mistake", ex: {fr: "Il y a une erreur dans mon texte ?", ja: "私の文章に間違いはある？"}}
+      - {fr: "une information", ipa: "yn ɛ̃fɔʁmasjɔ̃", ja: "情報", pos: "名詞", g: "f", note: "英語の information は数えられないが、フランス語は une information / des informations と数えられる", ex: {fr: "Toutes les informations sont sur le site.", ja: "情報はすべてサイトにあります。"}}
       - {fr: "un renseignement", ipa: "œ̃ ʁɑ̃sɛɲmɑ̃", ja: "（窓口で尋ねる）案内・情報", pos: "名詞", g: "m", note: "駅や役所で「お尋ねしたいのですが」と言うときに使う", ex: {fr: "Bonjour, je voudrais un renseignement, s'il vous plaît.", ja: "こんにちは、お尋ねしたいのですが。"}}
-      - {fr: "lentement", ipa: "lɑ̃tmɑ̃", ja: "ゆっくり", pos: "副詞", ex: {fr: "Mon professeur parle lentement.", ja: "私の先生はゆっくり話す。"}}
-      - {fr: "plus fort", ipa: "ply fɔʁ", ja: "もっと大きな声で", pos: "表現", ex: {fr: "Vous pouvez parler plus fort ?", ja: "もっと大きな声で話していただけますか？"}}
-      - {fr: "encore une fois", ipa: "ɑ̃kɔʁ yn fwa", ja: "もう一度", pos: "表現", ex: {fr: "Tu peux répéter encore une fois ?", ja: "もう一度言ってくれる？"}}
+      - {fr: "lentement", ipa: "lɑ̃tmɑ̃", ja: "ゆっくり", pos: "副詞", note: "英語の slowly（-ment が英語の -ly にあたる）", ex: {fr: "Mon professeur parle lentement.", ja: "私の先生はゆっくり話す。"}}
+      - {fr: "plus fort", ipa: "ply fɔʁ", ja: "もっと大きな声で", pos: "表現", note: "英語の louder。fort は英語の strong / loud", ex: {fr: "Vous pouvez parler plus fort ?", ja: "もっと大きな声で話していただけますか？"}}
+      - {fr: "encore une fois", ipa: "ɑ̃kɔʁ yn fwa", ja: "もう一度", pos: "表現", note: "英語の once more / one more time", ex: {fr: "Tu peux répéter encore une fois ?", ja: "もう一度言ってくれる？"}}

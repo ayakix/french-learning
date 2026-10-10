@@ -42,6 +42,7 @@ const src = (f: { fr: string; tts?: string }) => audioUrl(f.tts ?? f.fr);
               <span class="type">{v.type}</span>
               {v.unit && <span class="unit">単元 {v.unit}</span>}
             </p>
+            {v.note && <p class="verb-note">{v.note}</p>}
             <ul class="forms">
               {v.present.map((f) => (
                 <li>
@@ -98,6 +99,11 @@ const src = (f: { fr: string; tts?: string }) => audioUrl(f.tts ?? f.fr);
   .meta {
     margin: 0 0 10px;
     font-size: 0.9rem;
+  }
+  .verb-note {
+    margin: -4px 0 10px;
+    font-size: 0.85rem;
+    color: var(--muted);
   }
   .type,
   .unit {

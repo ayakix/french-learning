@@ -5,6 +5,7 @@
 # unit はそのグループを最初に習う単元。
 # 数字は後ろの語とつながると音が変わる（six heures [si zœʁ]、neuf ans [nœ vɑ̃]）。
 # 単独の読み方だけ覚えると聞き取れないので、ipa はつながったときの実際の発音で書き、注意点を note に書いた。
+# note には英語と比べた補足（同じ点・違う点）も書く。英語を足場にすると理解が早いため（2026-10-10）。英語と同じで当たり前の項目には付けない
 title: "数字・日付・時刻・値段"
 groups:
   - slug: "0-20"
@@ -28,7 +29,7 @@ groups:
       - {show: "14", fr: "quatorze", ipa: "katɔʁz"}
       - {show: "15", fr: "quinze", ipa: "kɛ̃z"}
       - {show: "16", fr: "seize", ipa: "sɛz"}
-      - {show: "17", fr: "dix-sept", ipa: "disɛt", note: "17〜19 は「10 ＋ 7」のように足し算で言う"}
+      - {show: "17", fr: "dix-sept", ipa: "disɛt", note: "17〜19 は「10 ＋ 7」のように足し算で言う。英語は 13〜19 が -teen の専用の語だが、フランス語の専用の語は 16 まで"}
       - {show: "18", fr: "dix-huit", ipa: "dizɥit", note: "x を [z] と読む"}
       - {show: "19", fr: "dix-neuf", ipa: "diznœf", note: "x を [z] と読む"}
       - {show: "20", fr: "vingt", ipa: "vɛ̃", note: "単独では t を読まない。21〜29 では t を読む"}
@@ -36,7 +37,7 @@ groups:
     name: "数字 21〜69"
     unit: "03"
     items:
-      - {show: "21", fr: "vingt et un", ipa: "vɛ̃ te œ̃", note: "1 のときだけ et が入る（31・41・51・61 も同じ）"}
+      - {show: "21", fr: "vingt et un", ipa: "vɛ̃ te œ̃", note: "1 のときだけ et が入る（31・41・51・61 も同じ）。英語の twenty-one には and は入らない"}
       - {show: "22", fr: "vingt-deux", ipa: "vɛ̃t dø", note: "vingt の t を読む"}
       - {show: "23", fr: "vingt-trois", ipa: "vɛ̃t tʁwa"}
       - {show: "24", fr: "vingt-quatre", ipa: "vɛ̃t katʁ"}
@@ -89,7 +90,7 @@ groups:
     name: "数字 70〜100"
     unit: "03"
     items:
-      - {show: "70", fr: "soixante-dix", ipa: "swasɑ̃t dis", note: "「60 ＋ 10」と言う"}
+      - {show: "70", fr: "soixante-dix", ipa: "swasɑ̃t dis", note: "「60 ＋ 10」と言う。英語の seventy のような専用の語がない（ベルギー・スイスでは septante）"}
       - {show: "71", fr: "soixante et onze", ipa: "swasɑ̃ te ɔ̃z", note: "「60 ＋ 11」。et が入る"}
       - {show: "72", fr: "soixante-douze", ipa: "swasɑ̃t duz"}
       - {show: "73", fr: "soixante-treize", ipa: "swasɑ̃t tʁɛz"}
@@ -99,7 +100,7 @@ groups:
       - {show: "77", fr: "soixante-dix-sept", ipa: "swasɑ̃t disɛt", note: "「60 ＋ 17」"}
       - {show: "78", fr: "soixante-dix-huit", ipa: "swasɑ̃t dizɥit"}
       - {show: "79", fr: "soixante-dix-neuf", ipa: "swasɑ̃t diznœf"}
-      - {show: "80", fr: "quatre-vingts", ipa: "katʁə vɛ̃", note: "「4 × 20」。vingts の s は 80 ちょうどのときだけ付く"}
+      - {show: "80", fr: "quatre-vingts", ipa: "katʁə vɛ̃", note: "「4 × 20」。vingts の s は 80 ちょうどのときだけ付く。英語の eighty にあたるが、20 ずつ数える（英語の古い言い方 four score と同じ発想）"}
       - {show: "81", fr: "quatre-vingt-un", ipa: "katʁə vɛ̃ œ̃", note: "et が入らず、vingt の t も読まない"}
       - {show: "82", fr: "quatre-vingt-deux", ipa: "katʁə vɛ̃ dø"}
       - {show: "83", fr: "quatre-vingt-trois", ipa: "katʁə vɛ̃ tʁwa"}
@@ -109,7 +110,7 @@ groups:
       - {show: "87", fr: "quatre-vingt-sept", ipa: "katʁə vɛ̃ sɛt"}
       - {show: "88", fr: "quatre-vingt-huit", ipa: "katʁə vɛ̃ ɥit"}
       - {show: "89", fr: "quatre-vingt-neuf", ipa: "katʁə vɛ̃ nœf"}
-      - {show: "90", fr: "quatre-vingt-dix", ipa: "katʁə vɛ̃ dis", note: "「4 × 20 ＋ 10」"}
+      - {show: "90", fr: "quatre-vingt-dix", ipa: "katʁə vɛ̃ dis", note: "「4 × 20 ＋ 10」。英語の ninety（ベルギー・スイスでは nonante）"}
       - {show: "91", fr: "quatre-vingt-onze", ipa: "katʁə vɛ̃ ɔ̃z", note: "「4 × 20 ＋ 11」。81 と同じく et は入らない"}
       - {show: "92", fr: "quatre-vingt-douze", ipa: "katʁə vɛ̃ duz"}
       - {show: "93", fr: "quatre-vingt-treize", ipa: "katʁə vɛ̃ tʁɛz"}
@@ -119,7 +120,7 @@ groups:
       - {show: "97", fr: "quatre-vingt-dix-sept", ipa: "katʁə vɛ̃ disɛt"}
       - {show: "98", fr: "quatre-vingt-dix-huit", ipa: "katʁə vɛ̃ dizɥit"}
       - {show: "99", fr: "quatre-vingt-dix-neuf", ipa: "katʁə vɛ̃ diznœf", note: "「4 × 20 ＋ 19」"}
-      - {show: "100", fr: "cent", ipa: "sɑ̃", note: "un を付けずに cent とだけ言う"}
+      - {show: "100", fr: "cent", ipa: "sɑ̃", note: "un を付けずに cent とだけ言う。英語の a hundred / one hundred の a / one にあたる語が要らない"}
   - slug: "100-1000"
     name: "100〜1000 と大きな数"
     unit: "06"
@@ -128,25 +129,25 @@ groups:
       - {show: "101", fr: "cent un", ipa: "sɑ̃ œ̃", note: "et は入らない。cent の t も読まない"}
       - {show: "110", fr: "cent dix", ipa: "sɑ̃ dis"}
       - {show: "150", fr: "cent cinquante", ipa: "sɑ̃ sɛ̃kɑ̃t"}
-      - {show: "200", fr: "deux cents", ipa: "dø sɑ̃", note: "200 ちょうどなど、後ろに数が続かないときだけ cents に s が付く"}
+      - {show: "200", fr: "deux cents", ipa: "dø sɑ̃", note: "200 ちょうどなど、後ろに数が続かないときだけ cents に s が付く。英語の two hundred には s が付かない"}
       - {show: "250", fr: "deux cent cinquante", ipa: "dø sɑ̃ sɛ̃kɑ̃t", note: "後ろに数が続くので cent に s は付かない"}
       - {show: "300", fr: "trois cents", ipa: "tʁwa sɑ̃"}
       - {show: "600", fr: "six cents", ipa: "si sɑ̃", note: "子音の前なので six は [si]"}
       - {show: "800", fr: "huit cents", ipa: "ɥi sɑ̃", note: "子音の前なので huit は [ɥi]"}
       - {show: "999", fr: "neuf cent quatre-vingt-dix-neuf", ipa: "nœf sɑ̃ katʁə vɛ̃ diznœf"}
-      - {show: "1000", fr: "mille", ipa: "mil", note: "un を付けない。複数でも s は付かない"}
+      - {show: "1000", fr: "mille", ipa: "mil", note: "un を付けない。複数でも s は付かない。英語の a thousand の a にあたる語が要らない。s が付かないのは英語の two thousand と同じ"}
       - {show: "1200", fr: "mille deux cents", ipa: "mil dø sɑ̃"}
       - {show: "2000", fr: "deux mille", ipa: "dø mil", note: "mille には s を付けない"}
-      - {show: "10 000", fr: "dix mille", ipa: "di mil", note: "子音の前なので dix は [di]"}
+      - {show: "10 000", fr: "dix mille", ipa: "di mil", note: "子音の前なので dix は [di]。書くときは 10 000 と空白で区切る（英語は 10,000）"}
       - {show: "100 000", fr: "cent mille", ipa: "sɑ̃ mil"}
-      - {show: "1 000 000", fr: "un million", ipa: "œ̃ miljɔ̃", note: "million は名詞なので un を付ける"}
+      - {show: "1 000 000", fr: "un million", ipa: "œ̃ miljɔ̃", note: "million は名詞なので un を付ける。英語の a million と同じ"}
   - slug: "ordinal"
     name: "序数（〜番目）"
     unit: "08"
     items:
-      - {show: "1er", fr: "premier", ipa: "pʁəmje", ja: "1 番目（男性形）", note: "1 番目だけ形が特別"}
+      - {show: "1er", fr: "premier", ipa: "pʁəmje", ja: "1 番目（男性形）", note: "1 番目だけ形が特別。英語の first"}
       - {show: "1re", fr: "première", ipa: "pʁəmjɛʁ", ja: "1 番目（女性形）"}
-      - {show: "2e", fr: "deuxième", ipa: "døzjɛm", ja: "2 番目", note: "基本は 数 ＋ -ième。x は [z]"}
+      - {show: "2e", fr: "deuxième", ipa: "døzjɛm", ja: "2 番目", note: "基本は 数 ＋ -ième。x は [z]。英語の -th（fourth など）にあたるのが -ième"}
       - {show: "3e", fr: "troisième", ipa: "tʁwazjɛm", ja: "3 番目"}
       - {show: "4e", fr: "quatrième", ipa: "katʁijɛm", ja: "4 番目", note: "e で終わる数は e を取って -ième"}
       - {show: "5e", fr: "cinquième", ipa: "sɛ̃kjɛm", ja: "5 番目", note: "q のあとに u を足す"}
@@ -163,7 +164,7 @@ groups:
     name: "曜日"
     unit: "03"
     items:
-      - {show: "月曜日", fr: "lundi", ipa: "lœ̃di"}
+      - {show: "月曜日", fr: "lundi", ipa: "lœ̃di", note: "英語の Monday と違い、曜日は小文字で書く"}
       - {show: "火曜日", fr: "mardi", ipa: "maʁdi"}
       - {show: "水曜日", fr: "mercredi", ipa: "mɛʁkʁədi"}
       - {show: "木曜日", fr: "jeudi", ipa: "ʒødi"}
@@ -175,7 +176,7 @@ groups:
     name: "月"
     unit: "08"
     items:
-      - {show: "1 月", fr: "janvier", ipa: "ʒɑ̃vje"}
+      - {show: "1 月", fr: "janvier", ipa: "ʒɑ̃vje", note: "英語の January と違い、月は小文字で書く"}
       - {show: "2 月", fr: "février", ipa: "fevʁije"}
       - {show: "3 月", fr: "mars", ipa: "maʁs", note: "s を読む"}
       - {show: "4 月", fr: "avril", ipa: "avʁil"}
@@ -187,7 +188,7 @@ groups:
       - {show: "10 月", fr: "octobre", ipa: "ɔktɔbʁ"}
       - {show: "11 月", fr: "novembre", ipa: "nɔvɑ̃bʁ"}
       - {show: "12 月", fr: "décembre", ipa: "desɑ̃bʁ"}
-      - {show: "5 月に", fr: "en mai", ipa: "ɑ̃ mɛ", note: "「〜月に」は en ＋ 月"}
+      - {show: "5 月に", fr: "en mai", ipa: "ɑ̃ mɛ", note: "「〜月に」は en ＋ 月。英語の in May の in"}
   - slug: "seasons"
     name: "季節"
     unit: "08"
@@ -196,7 +197,7 @@ groups:
       - {show: "夏", fr: "l'été", ipa: "lete"}
       - {show: "秋", fr: "l'automne", ipa: "lotɔn", note: "m は読まない"}
       - {show: "冬", fr: "l'hiver", ipa: "livɛʁ"}
-      - {show: "春に", fr: "au printemps", ipa: "o pʁɛ̃tɑ̃", note: "春だけ au。子音で始まるため"}
+      - {show: "春に", fr: "au printemps", ipa: "o pʁɛ̃tɑ̃", note: "春だけ au。子音で始まるため。英語ではどの季節も in（in spring / in summer）"}
       - {show: "夏に", fr: "en été", ipa: "ɑ̃ nete", note: "リエゾン。母音で始まる季節は en"}
       - {show: "秋に", fr: "en automne", ipa: "ɑ̃ notɔn", note: "リエゾン"}
       - {show: "冬に", fr: "en hiver", ipa: "ɑ̃ nivɛʁ", note: "h は読まないのでリエゾンする"}
@@ -204,8 +205,8 @@ groups:
     name: "日付"
     unit: "08"
     items:
-      - {show: "5 月 1 日", fr: "le premier mai", ipa: "lə pʁəmje mɛ", note: "1 日だけ序数 premier。ほかは普通の数"}
-      - {show: "1 月 2 日", fr: "le deux janvier", ipa: "lə dø ʒɑ̃vje"}
+      - {show: "5 月 1 日", fr: "le premier mai", ipa: "lə pʁəmje mɛ", note: "1 日だけ序数 premier。ほかは普通の数。英語の May 1st（the first）と違い、日 → 月の順"}
+      - {show: "1 月 2 日", fr: "le deux janvier", ipa: "lə dø ʒɑ̃vje", note: "英語の January 2nd（the second）と違い、2 日以降は序数ではなく普通の数（deux = two）"}
       - {show: "3 月 3 日", fr: "le trois mars", ipa: "lə tʁwa maʁs"}
       - {show: "2 月 6 日", fr: "le six février", ipa: "lə si fevʁije", note: "子音の前なので six は [si]"}
       - {show: "4 月 8 日", fr: "le huit avril", ipa: "lə ɥi tavʁil", note: "huit の前では le を l' にしない。t は次の母音とつながる"}
@@ -218,14 +219,14 @@ groups:
       - {show: "6 月 21 日", fr: "le vingt et un juin", ipa: "lə vɛ̃ te œ̃ ʒɥɛ̃"}
       - {show: "12 月 25 日", fr: "le vingt-cinq décembre", ipa: "lə vɛ̃t sɛ̃k desɑ̃bʁ"}
       - {show: "12 月 31 日", fr: "le trente et un décembre", ipa: "lə tʁɑ̃ te œ̃ desɑ̃bʁ"}
-      - {show: "2027 年 1 月 1 日", fr: "le premier janvier deux mille vingt-sept", ipa: "lə pʁəmje ʒɑ̃vje dø mil vɛ̃t sɛt", note: "日 → 月 → 年 の順"}
+      - {show: "2027 年 1 月 1 日", fr: "le premier janvier deux mille vingt-sept", ipa: "lə pʁəmje ʒɑ̃vje dø mil vɛ̃t sɛt", note: "日 → 月 → 年 の順。数字で書くと 01/01/2027（日/月/年）。アメリカ英語の 月/日/年 と順番が違う"}
       - {show: "今日は 10 月 4 日", fr: "Aujourd'hui, c'est le quatre octobre.", ipa: "oʒuʁdɥi sɛ lə ka tʁɔktɔbʁ", ja: "今日は 10 月 4 日です。"}
   - slug: "time"
     name: "時刻"
     unit: "03"
     items:
-      - {show: "？", fr: "Quelle heure est-il ?", ipa: "kɛ lœ ʁɛ til", ja: "何時ですか？"}
-      - {show: "1:00", fr: "Il est une heure.", ipa: "il ɛ ty nœʁ", ja: "1 時です。", note: "heure は女性名詞なので une。est の t がリエゾン"}
+      - {show: "？", fr: "Quelle heure est-il ?", ipa: "kɛ lœ ʁɛ til", ja: "何時ですか？", note: "英語の What time is it? heure は英語の hour と同じ語源"}
+      - {show: "1:00", fr: "Il est une heure.", ipa: "il ɛ ty nœʁ", ja: "1 時です。", note: "heure は女性名詞なので une。est の t がリエゾン。英語の It's one o'clock. の It's が Il est"}
       - {show: "2:00", fr: "Il est deux heures.", ipa: "il ɛ dø zœʁ", ja: "2 時です。", note: "douze heures [du zœʁ]（12 時）と聞き分ける"}
       - {show: "3:00", fr: "Il est trois heures.", ipa: "il ɛ tʁwa zœʁ", ja: "3 時です。"}
       - {show: "4:00", fr: "Il est quatre heures.", ipa: "il ɛ ka tʁœʁ", ja: "4 時です。", note: "アンシェヌマン"}
@@ -238,14 +239,14 @@ groups:
       - {show: "11:00", fr: "Il est onze heures.", ipa: "il ɛ ɔ̃ zœʁ", ja: "11 時です。"}
       - {show: "12:00", fr: "Il est midi.", ipa: "il ɛ midi", ja: "昼の 12 時です。", note: "昼の 12 時は douze heures より midi が普通"}
       - {show: "0:00", fr: "Il est minuit.", ipa: "il ɛ minɥi", ja: "夜の 12 時です。"}
-      - {show: "8:30", fr: "Il est huit heures et demie.", ipa: "il ɛ ɥi tœʁ e dəmi", ja: "8 時半です。", note: "heure が女性名詞なので demie"}
-      - {show: "9:15", fr: "Il est neuf heures et quart.", ipa: "il ɛ nœ vœʁ e kaʁ", ja: "9 時 15 分です。"}
-      - {show: "10:45", fr: "Il est onze heures moins le quart.", ipa: "il ɛ ɔ̃ zœʁ mwɛ̃ lə kaʁ", ja: "10 時 45 分です。", note: "「11 時 − 15 分」と言う。10 時と聞き間違えない"}
+      - {show: "8:30", fr: "Il est huit heures et demie.", ipa: "il ɛ ɥi tœʁ e dəmi", ja: "8 時半です。", note: "heure が女性名詞なので demie。英語の half past eight と違い、時 → 分の順で言う"}
+      - {show: "9:15", fr: "Il est neuf heures et quart.", ipa: "il ɛ nœ vœʁ e kaʁ", ja: "9 時 15 分です。", note: "英語の quarter past nine。quart = quarter"}
+      - {show: "10:45", fr: "Il est onze heures moins le quart.", ipa: "il ɛ ɔ̃ zœʁ mwɛ̃ lə kaʁ", ja: "10 時 45 分です。", note: "「11 時 − 15 分」と言う。10 時と聞き間違えない。英語の quarter to eleven と同じ発想（moins = minus）"}
       - {show: "7:10", fr: "Il est sept heures dix.", ipa: "il ɛ sɛ tœʁ dis", ja: "7 時 10 分です。"}
-      - {show: "6:50", fr: "Il est sept heures moins dix.", ipa: "il ɛ sɛ tœʁ mwɛ̃ dis", ja: "6 時 50 分です。", note: "「7 時 − 10 分」と言う"}
+      - {show: "6:50", fr: "Il est sept heures moins dix.", ipa: "il ɛ sɛ tœʁ mwɛ̃ dis", ja: "6 時 50 分です。", note: "「7 時 − 10 分」と言う。英語の ten to seven と同じ発想"}
       - {show: "12:30", fr: "Il est midi et demi.", ipa: "il ɛ midi e dəmi", ja: "12 時半です。", note: "midi は男性名詞なので demi（e なし）"}
       - {show: "0:30", fr: "Il est minuit et demi.", ipa: "il ɛ minɥi e dəmi", ja: "夜中の 0 時半です。"}
-      - {show: "13:05", fr: "Il est treize heures cinq.", ipa: "il ɛ tʁɛ zœʁ sɛ̃k", ja: "13 時 5 分です。", note: "駅・店・テレビなどの公式な時刻は 24 時間制"}
+      - {show: "13:05", fr: "Il est treize heures cinq.", ipa: "il ɛ tʁɛ zœʁ sɛ̃k", ja: "13 時 5 分です。", note: "駅・店・テレビなどの公式な時刻は 24 時間制。英語の 1:05 p.m. のような a.m. / p.m. の言い方はあまり使わない"}
       - {show: "14:30", fr: "Il est quatorze heures trente.", ipa: "il ɛ katɔʁ zœʁ tʁɑ̃t", ja: "14 時 30 分です。", note: "24 時間制では et demie ではなく trente"}
       - {show: "18:45", fr: "Il est dix-huit heures quarante-cinq.", ipa: "il ɛ dizɥi tœʁ kaʁɑ̃t sɛ̃k", ja: "18 時 45 分です。", note: "24 時間制では moins le quart ではなく quarante-cinq"}
       - {show: "20:00", fr: "Il est vingt heures.", ipa: "il ɛ vɛ̃ tœʁ", ja: "20 時です。", note: "リエゾンで vingt の t を読む"}
@@ -254,7 +255,7 @@ groups:
     name: "値段"
     unit: "06"
     items:
-      - {show: "？", fr: "C'est combien ?", ipa: "sɛ kɔ̃bjɛ̃", ja: "いくらですか？"}
+      - {show: "？", fr: "C'est combien ?", ipa: "sɛ kɔ̃bjɛ̃", ja: "いくらですか？", note: "英語の How much is it?"}
       - {show: "1 €", fr: "un euro", ipa: "œ̃ nøʁo", note: "リエゾン"}
       - {show: "2 €", fr: "deux euros", ipa: "dø zøʁo", note: "リエゾン。s は読まないが前の x を [z] でつなぐ"}
       - {show: "3 €", fr: "trois euros", ipa: "tʁwa zøʁo", note: "リエゾン"}
@@ -265,8 +266,8 @@ groups:
       - {show: "10 €", fr: "dix euros", ipa: "di zøʁo"}
       - {show: "20 €", fr: "vingt euros", ipa: "vɛ̃ tøʁo", note: "リエゾンで vingt の t を読む"}
       - {show: "100 €", fr: "cent euros", ipa: "sɑ̃ tøʁo", note: "リエゾンで cent の t を読む"}
-      - {show: "0,50 €", fr: "cinquante centimes", ipa: "sɛ̃kɑ̃t sɑ̃tim", note: "1 ユーロ未満は centimes"}
-      - {show: "1,20 €", fr: "un euro vingt", ipa: "œ̃ nøʁo vɛ̃", note: "セントの centimes は省略するのが普通"}
+      - {show: "0,50 €", fr: "cinquante centimes", ipa: "sɛ̃kɑ̃t sɑ̃tim", note: "1 ユーロ未満は centimes。英語の cents"}
+      - {show: "1,20 €", fr: "un euro vingt", ipa: "œ̃ nøʁo vɛ̃", note: "セントの centimes は省略するのが普通。英語の €1.20 と違い、小数点はカンマで、€ は数の後ろに書く（1,20 €）"}
       - {show: "3,50 €", fr: "trois euros cinquante", ipa: "tʁwa zøʁo sɛ̃kɑ̃t"}
       - {show: "12,80 €", fr: "douze euros quatre-vingts", ipa: "du zøʁo katʁə vɛ̃"}
       - {show: "29,99 €", fr: "vingt-neuf euros quatre-vingt-dix-neuf", ipa: "vɛ̃t nœ føʁo katʁə vɛ̃ diznœf"}
@@ -274,7 +275,7 @@ groups:
     name: "電話番号"
     unit: "03"
     items:
-      - {show: "06 12 34 56 78", fr: "zéro six, douze, trente-quatre, cinquante-six, soixante-dix-huit", ipa: "zeʁo sis duz tʁɑ̃t katʁ sɛ̃kɑ̃t sis swasɑ̃t dizɥit", note: "2 桁ずつ区切って読む。06・07 で始まるのは携帯電話"}
+      - {show: "06 12 34 56 78", fr: "zéro six, douze, trente-quatre, cinquante-six, soixante-dix-huit", ipa: "zeʁo sis duz tʁɑ̃t katʁ sɛ̃kɑ̃t sis swasɑ̃t dizɥit", note: "2 桁ずつ区切って読む。06・07 で始まるのは携帯電話。英語は 1 桁ずつ読むことが多い"}
       - {show: "01 45 67 89 10", fr: "zéro un, quarante-cinq, soixante-sept, quatre-vingt-neuf, dix", ipa: "zeʁo œ̃ kaʁɑ̃t sɛ̃k swasɑ̃t sɛt katʁə vɛ̃ nœf dis", note: "01 はパリ周辺の固定電話"}
       - {show: "07 21 80 93 05", fr: "zéro sept, vingt et un, quatre-vingts, quatre-vingt-treize, zéro cinq", ipa: "zeʁo sɛt vɛ̃ te œ̃ katʁə vɛ̃ katʁə vɛ̃ tʁɛz zeʁo sɛ̃k"}
       - {show: "06 70 11 99 16", fr: "zéro six, soixante-dix, onze, quatre-vingt-dix-neuf, seize", ipa: "zeʁo sis swasɑ̃t dis ɔ̃z katʁə vɛ̃ diznœf sɛz", note: "soixante-dix（70）を 60 と 10 に分けて聞かない"}
@@ -283,11 +284,11 @@ groups:
     name: "年齢・年"
     unit: "01"
     items:
-      - {show: "？", fr: "Tu as quel âge ?", ipa: "ty a kɛ lɑʒ", ja: "何歳？"}
-      - {show: "2 歳", fr: "J'ai deux ans.", ipa: "ʒe dø zɑ̃", ja: "2 歳です。", note: "リエゾン。年齢は avoir ＋ 数 ＋ ans（ans は省略しない）"}
+      - {show: "？", fr: "Tu as quel âge ?", ipa: "ty a kɛ lɑʒ", ja: "何歳？", note: "英語の How old are you? être（be）ではなく avoir（have）を使う"}
+      - {show: "2 歳", fr: "J'ai deux ans.", ipa: "ʒe dø zɑ̃", ja: "2 歳です。", note: "リエゾン。年齢は avoir ＋ 数 ＋ ans（ans は省略しない）。英語の I'm two (years old). にあたる"}
       - {show: "9 歳", fr: "J'ai neuf ans.", ipa: "ʒe nœ vɑ̃", ja: "9 歳です。", note: "f が [v] になる"}
       - {show: "18 歳", fr: "J'ai dix-huit ans.", ipa: "ʒe dizɥi tɑ̃", ja: "18 歳です。"}
       - {show: "20 歳", fr: "J'ai vingt ans.", ipa: "ʒe vɛ̃ tɑ̃", ja: "20 歳です。", note: "リエゾンで vingt の t を読む"}
       - {show: "35 歳", fr: "J'ai trente-cinq ans.", ipa: "ʒe tʁɑ̃t sɛ̃ kɑ̃", ja: "35 歳です。"}
-      - {show: "2026 年に", fr: "en deux mille vingt-six", ipa: "ɑ̃ dø mil vɛ̃t sis", ja: "2026 年に", note: "年は普通の数と同じに読む。「〜年に」は en"}
-      - {show: "1998 年に", fr: "en mille neuf cent quatre-vingt-dix-huit", ipa: "ɑ̃ mil nœf sɑ̃ katʁə vɛ̃ dizɥit", ja: "1998 年に"}
+      - {show: "2026 年に", fr: "en deux mille vingt-six", ipa: "ɑ̃ dø mil vɛ̃t sis", ja: "2026 年に", note: "年は普通の数と同じに読む。「〜年に」は en。英語の twenty twenty-six のように 2 桁ずつには区切らない"}
+      - {show: "1998 年に", fr: "en mille neuf cent quatre-vingt-dix-huit", ipa: "ɑ̃ mil nœf sɑ̃ katʁə vɛ̃ dizɥit", ja: "1998 年に", note: "英語は nineteen ninety-eight と 2 桁ずつ読むが、フランス語は「千 九百 九十八」と普通の数で読む"}

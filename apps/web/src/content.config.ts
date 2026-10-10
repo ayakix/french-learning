@@ -225,6 +225,8 @@ const verbs = defineCollection({
         ja: z.string(),
         unit: z.string().optional(),
         type: z.string(),
+        // 英語と比べた補足（同じ点・違う点）。英語を足場にすると理解が早いため
+        note: z.string().optional(),
         infinitive: form,
         present: z.array(form),
         past: form.optional(),
