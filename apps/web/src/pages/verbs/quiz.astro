@@ -1,0 +1,353 @@
+---
+// 動詞の活用のクイズ。動詞の画面（/verbs）で聞いて覚えた後に、書けるかを確かめる。
+// 選択肢から選ぶ形式にしないのは、選べても書けないことが多かったため（2026-10-11、je suis を Ju sis と書いた）。
+// 形式は 2 つ：主語と原形から書く（活用を思い出す力）・聞いて書く（音と綴りを結びつける力）
+import { getCollection } from 'astro:content';
+import Base from '../../layouts/Base.astro';
+import MistakeList from '../../components/MistakeList.astro';
+import { audioUrl } from '../../lib/audio';
+import '../../styles/material.css';
+
+const [entry] = await getCollection('verbs');
+const verbs = entry?.data.verbs ?? [];
+
+// present は je・tu・il・nous・vous・ils の順に並んでいる（verbs.yaml の決まり）
+const subjects = [
+  { fr: 'je', ja: '私は' },
+  { fr: 'tu', ja: '君は' },
+  { fr: 'il', ja: '彼は' },
+  { fr: 'nous', ja: '私たちは' },
+  { fr: 'vous', ja: 'あなた（たち）は' },
+  { fr: 'ils', ja: '彼らは' },
+];
+const forms = verbs.flatMap((v) =>
+  v.present.map((f, i) => ({
+    slug: v.slug,
+    inf: v.inf,
+    verbJa: v.ja,
+    unit: v.unit ?? '',
+    subject: subjects[i].fr,
+    ja: `${subjects[i].ja}${v.ja}`,
+    fr: f.fr,
+    ipa: f.ipa,
+    src: audioUrl(f.tts ?? f.fr),
+  })),
+);
+const units = [...new Set(verbs.map((v) => v.unit).filter(Boolean))].sort();
+---
+
+<Base title="動詞の活用クイズ">
+  <main>
+    <header>
+      <a href="/verbs" class="back">← 動詞の活用</a>
+      <h1>動詞の活用クイズ</h1>
+      <p class="lead">
+        主語から書いて、Enter で答え合わせ（もう一度 Enter で次の問題）。20 問ずつ解きます。大文字・小文字と句読点は区別しません。
+        間違えた問題は復習画面（/review）にも出ます。
+      </p>
+    </header>
+
+    <!-- アクセント記号はキーボードでの入れ方に慣れるまで時間がかかるので、押すだけで入力できるようにする（ディクテーションと同じ） -->
+    <div class="keys" aria-label="アクセント記号の入力">
+      {['é', 'è', 'ê', 'à', 'â', 'ç', 'ù', 'û', 'ô', 'î', 'ï', 'ë', 'œ', "'"].map((k) => (
+        <button type="button" class="key" data-key={k}>
+          {k}
+        </button>
+      ))}
+    </div>
+
+    <section class="card" id="quiz" data-forms={JSON.stringify(forms)}>
+      <div class="settings">
+        <label>
+          形式
+          <select id="mode">
+            <option value="write">主語と原形から書く</option>
+            <option value="listen">聞いて書く</option>
+          </select>
+        </label>
+        <label>
+          範囲
+          <select id="range">
+            {units.map((u) => <option value={`unit:${u}`}>単元 {u} の動詞</option>)}
+            <option value="all">全部</option>
+            {verbs.map((v) => <option value={`verb:${v.slug}`}>{v.inf}</option>)}
+          </select>
+        </label>
+      </div>
+      <div class="quiz-controls">
+        <button type="button" id="quiz-next" class="pill primary">▶ 出題する</button>
+        <button type="button" id="quiz-replay" class="pill" hidden>もう一度聞く</button>
+        <span id="quiz-score" class="score">0 / 0（全 20 問）</span>
+      </div>
+      <p id="quiz-word" class="quiz-word" aria-live="polite">&nbsp;</p>
+      <p id="quiz-sub" class="sub center">&nbsp;</p>
+      <div class="row">
+        <input id="quiz-input" type="text" autocomplete="off" autocapitalize="off" spellcheck="false" lang="fr" disabled />
+        <button type="button" id="quiz-check" class="pill" disabled>答え合わせ</button>
+      </div>
+      <p id="quiz-result" class="result" aria-live="polite"></p>
+      <MistakeList />
+    </section>
+  </main>
+</Base>
+
+<script>
+  import { judge, verdictLabel } from '../../scripts/judge';
+  import { createMistakeList } from '../../scripts/mistakes';
+  import { play } from '../../scripts/player';
+  import { saveResult, verbKey, type ReviewItem } from '../../scripts/results';
+  import { ROUND_SIZE, createDeck } from '../../scripts/round';
+
+  type Form = {
+    slug: string;
+    inf: string;
+    verbJa: string;
+    unit: string;
+    subject: string;
+    ja: string;
+    fr: string;
+    ipa: string;
+    src: string;
+  };
+  type Mode = 'write' | 'listen';
+
+  const modeNames: Record<Mode, string> = { write: '主語と原形から書く', listen: '聞いて書く' };
+
+  const quiz = document.querySelector<HTMLElement>('#quiz')!;
+  const forms: Form[] = JSON.parse(quiz.dataset.forms!);
+  const modeSelect = document.querySelector<HTMLSelectElement>('#mode')!;
+  const rangeSelect = document.querySelector<HTMLSelectElement>('#range')!;
+  const nextButton = document.querySelector<HTMLButtonElement>('#quiz-next')!;
+  const replayButton = document.querySelector<HTMLButtonElement>('#quiz-replay')!;
+  const scoreLabel = document.querySelector<HTMLElement>('#quiz-score')!;
+  const wordLabel = document.querySelector<HTMLElement>('#quiz-word')!;
+  const subLabel = document.querySelector<HTMLElement>('#quiz-sub')!;
+  const input = document.querySelector<HTMLInputElement>('#quiz-input')!;
+  const checkButton = document.querySelector<HTMLButtonElement>('#quiz-check')!;
+  const resultLabel = document.querySelector<HTMLElement>('#quiz-result')!;
+
+  const mistakes = createMistakeList((src, button) => play(src, button));
+
+  let current: { form: Form; item: ReviewItem; key: string } | null = null;
+  let correct = 0;
+  let total = 0;
+
+  function selected() {
+    const [kind, value] = rangeSelect.value.split(':');
+    if (kind === 'unit') return forms.filter((f) => f.unit === value);
+    if (kind === 'verb') return forms.filter((f) => f.slug === value);
+    return forms;
+  }
+  let nextForm = createDeck(selected());
+
+  // 形式・範囲を変えたら、点数と出題の順番をやり直す
+  function reset() {
+    nextForm = createDeck(selected());
+    correct = 0;
+    total = 0;
+    current = null;
+    scoreLabel.textContent = `0 / 0（全 ${ROUND_SIZE} 問）`;
+    wordLabel.innerHTML = '&nbsp;';
+    subLabel.innerHTML = '&nbsp;';
+    input.value = '';
+    input.disabled = true;
+    checkButton.disabled = true;
+    resultLabel.textContent = '';
+    replayButton.hidden = true;
+    nextButton.textContent = '▶ 出題する';
+  }
+
+  function makeItem(form: Form, mode: Mode): ReviewItem {
+    return {
+      title: `動詞の活用（${modeNames[mode]}）`,
+      href: '/verbs/quiz',
+      fr: form.fr,
+      ipa: form.ipa,
+      ja: form.ja,
+      src: form.src,
+      // 主語は je で出すが、答えは母音の前なら j'（j'habite）になる。そこも書けるかを見る
+      prompt: mode === 'write' ? `${form.subject} ＋ ${form.inf}` : undefined,
+      answer: form.fr,
+      choices: [],
+    };
+  }
+
+  function ask() {
+    if (total >= ROUND_SIZE) {
+      correct = 0;
+      total = 0;
+      scoreLabel.textContent = `0 / 0（全 ${ROUND_SIZE} 問）`;
+    }
+    const mode = modeSelect.value as Mode;
+    const form = nextForm();
+    const item = makeItem(form, mode);
+    current = { form, item, key: verbKey(mode, form.slug, form.fr) };
+    resultLabel.textContent = '';
+    resultLabel.className = 'result';
+    nextButton.textContent = '▶ 次の問題';
+    input.value = '';
+    input.disabled = false;
+    checkButton.disabled = false;
+    input.focus();
+    if (item.prompt) {
+      wordLabel.textContent = item.prompt;
+      subLabel.textContent = form.ja;
+      replayButton.hidden = true;
+    } else {
+      // 聞いて書く形式は、文字を見せずに音だけで出題する
+      wordLabel.textContent = '🔊';
+      subLabel.innerHTML = '&nbsp;';
+      replayButton.hidden = false;
+      play(item.src);
+    }
+  }
+
+  function check() {
+    if (!current || input.disabled || input.value.trim() === '') return;
+    const { form, item, key } = current;
+    const chosen = input.value.trim();
+    const verdict = judge(chosen, form.fr);
+    const ok = verdict === 'ok';
+    total++;
+    if (ok) correct++;
+    scoreLabel.textContent = `${correct} / ${total}（全 ${ROUND_SIZE} 問）`;
+    input.disabled = true;
+    checkButton.disabled = true;
+    wordLabel.textContent = form.fr;
+    subLabel.textContent = form.ja;
+    resultLabel.className = `result ${ok ? 'ok' : 'ng'}`;
+    resultLabel.textContent = `${verdictLabel[verdict]}　${form.fr} [${form.ipa}]${ok ? '' : `（あなた：${chosen}）`}`;
+    // 答えた後は、どの形式でも発音を流す（綴りと音を結びつけるため）
+    play(form.src);
+    if (total >= ROUND_SIZE) {
+      resultLabel.textContent += `　── ${ROUND_SIZE} 問終わり：${correct} / ${ROUND_SIZE}`;
+      nextButton.textContent = `▶ もう一度 ${ROUND_SIZE} 問`;
+    }
+    saveResult({ type: 'verb', key, word: form.fr, chosen, answer: form.fr, ok, item });
+    if (!ok) {
+      mistakes.add({
+        key,
+        word: document.createTextNode(form.fr),
+        detail: `[${form.ipa}] ${form.ja}`,
+        chosen,
+        correct: form.fr,
+        src: form.src,
+      });
+    }
+    current = null;
+    // Enter で次の問題へ進めるよう、出題ボタンにフォーカスを移す。
+    // ただし 20 問終わったときは移さない。Enter を続けて押すうちに次の 20 問に入ってしまい、やめ時がわからなくなったため（2026-10-11）
+    if (total < ROUND_SIZE) nextButton.focus();
+  }
+
+  // 入力欄からフォーカスが外れないよう、クリックではなく mousedown を止める（カーソル位置を保つため）
+  document.querySelectorAll<HTMLButtonElement>('.key').forEach((k) => {
+    k.addEventListener('mousedown', (e) => e.preventDefault());
+    k.addEventListener('click', () => {
+      if (input.disabled) return;
+      input.setRangeText(k.dataset.key!, input.selectionStart ?? input.value.length, input.selectionEnd ?? input.value.length, 'end');
+      input.focus();
+    });
+  });
+
+  input.addEventListener('keydown', (e) => {
+    if (e.key === 'Enter' && !e.isComposing) check();
+  });
+  checkButton.addEventListener('click', check);
+  modeSelect.addEventListener('change', reset);
+  rangeSelect.addEventListener('change', reset);
+  nextButton.addEventListener('click', ask);
+  replayButton.addEventListener('click', () => current && play(current.item.src));
+</script>
+
+<style>
+  .keys {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    padding: 8px 0;
+    margin-bottom: 8px;
+    background: var(--bg);
+  }
+  .key {
+    min-width: 2.4em;
+    padding: 6px 8px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background: var(--surface);
+    font: inherit;
+    font-size: 1.1rem;
+    color: inherit;
+  }
+  .key:hover {
+    border-color: var(--accent);
+  }
+  .settings {
+    display: flex;
+    gap: 16px;
+    flex-wrap: wrap;
+    margin-bottom: 12px;
+  }
+  .settings label {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.9rem;
+  }
+  select {
+    padding: 4px 8px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background: var(--surface);
+    font: inherit;
+    color: inherit;
+  }
+  .quiz-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 12px;
+  }
+  .score {
+    margin-left: auto;
+    font-weight: 600;
+  }
+  .quiz-word {
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: 700;
+    margin: 4px 0 4px;
+  }
+  .center {
+    text-align: center;
+    margin: 0 0 16px;
+  }
+  .row {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+  }
+  input {
+    flex: 1;
+    min-width: 0;
+    padding: 10px 12px;
+    border: 2px solid var(--border);
+    border-radius: 10px;
+    background: var(--bg);
+    font: inherit;
+    font-size: 1.2rem;
+    color: inherit;
+  }
+  input:focus {
+    outline: none;
+    border-color: var(--accent);
+  }
+  .result {
+    min-height: 1.6em;
+    margin: 12px 0 0;
+    font-weight: 600;
+  }
+</style>

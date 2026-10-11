@@ -20,6 +20,8 @@ const src = (f: { fr: string; tts?: string }) => audioUrl(f.tts ?? f.fr);
       </p>
     </header>
 
+    <p><a href="/verbs/quiz" class="pill primary quiz-link">書けるか確かめる（活用クイズ）→</a></p>
+
     <nav class="toolbar">
       {verbs.map((v) => <a class="pill" href={`#${v.slug}`}>{v.inf}</a>)}
     </nav>
@@ -85,6 +87,9 @@ const src = (f: { fr: string; tts?: string }) => audioUrl(f.tts ?? f.fr);
 </script>
 
 <style>
+  .quiz-link {
+    text-decoration: none;
+  }
   nav.toolbar a {
     text-decoration: none;
     font-size: 0.85rem;

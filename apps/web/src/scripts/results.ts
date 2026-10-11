@@ -12,19 +12,19 @@ export type ReviewItem = {
   ja: string;
   src: string;
   prompt?: string; // 画面に出す問題文。ないときは音声だけで出題する
-  answer: string; // 正解の選択肢の id
-  choices: { id: string; name: string; hint: string }[];
+  answer: string; // 正解の選択肢の id（選択肢がない、書いて答える問題では正解の綴り）
+  choices: { id: string; name: string; hint: string }[]; // 書いて答える問題（動詞の活用）では空
 };
 
 export type Result = {
-  type: 'contrast' | 'rules' | 'spelling' | 'vocab' | 'question' | 'dictation'; // どの形式のクイズか
+  type: 'contrast' | 'rules' | 'spelling' | 'vocab' | 'question' | 'dictation' | 'verb'; // どの形式のクイズか
   key: string; // 同じ問題かどうかの判定に使う（復習画面で問題を引き当てる）
   page: string; // 答えた画面
   word: string; // 問題の単語・質問（記録を人が読むため）
   chosen: string; // ユーザーの答え
   answer: string; // 正解
   ok: boolean;
-  item?: ReviewItem; // 復習画面で出題し直すための中身（単語のクイズだけ）
+  item?: ReviewItem; // 復習画面で出題し直すための中身（単語と動詞の活用のクイズだけ）
 };
 
 export type SavedResult = Result & { date: string; time: string };
@@ -55,3 +55,5 @@ export const spellingKey = (slug: string, fr: string) => `spelling:${slug}:${fr}
 // 単語は形式（聞いて意味・見て意味・意味からフランス語）ごとに別の問題として扱う（必要な力が違うため）
 export const vocabKey = (unit: string, mode: string, fr: string) => `vocab:${unit}:${mode}:${fr}`;
 export const dictationKey = (slug: string, fr: string) => `dictation:${slug}:${fr}`;
+// 動詞の活用は、形式（主語と原形から書く・聞いて書く）ごとに別の問題として扱う（単語と同じく必要な力が違うため）
+export const verbKey = (mode: string, slug: string, fr: string) => `verb:${mode}:${slug}:${fr}`;

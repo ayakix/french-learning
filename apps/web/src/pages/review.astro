@@ -102,11 +102,12 @@ const items = [
 </Base>
 
 <script>
+  import { judge, verdictLabel } from '../scripts/judge';
   import { loadResults, saveResult, type ReviewItem, type SavedResult } from '../scripts/results';
 
   type Choice = { id: string; name: string; hint: string };
   type Item = {
-    type: 'contrast' | 'rules' | 'spelling' | 'vocab';
+    type: 'contrast' | 'rules' | 'spelling' | 'vocab' | 'verb';
     key: string;
     title: string;
     href: string;
@@ -187,15 +188,20 @@ const items = [
     const shuffled = current.type === 'spelling' || current.type === 'vocab';
     const choices = shuffled ? [...current.choices].sort(() => Math.random() - 0.5) : current.choices;
     // 単語の選択肢（意味・フランス語）は長いので 2 列にする
-    answers.style.gridTemplateColumns = `repeat(${current.type === 'vocab' ? 2 : current.choices.length}, 1fr)`;
-    answers.replaceChildren(
-      ...choices.map((c) => {
-        const b = Object.assign(document.createElement('button'), { type: 'button', className: 'answer' });
-        b.append(c.name, Object.assign(document.createElement('small'), { textContent: c.hint }));
-        b.addEventListener('click', () => answer(c));
-        return b;
-      }),
-    );
+    answers.style.gridTemplateColumns = `repeat(${current.type === 'vocab' ? 2 : current.type === 'verb' ? 1 : current.choices.length}, 1fr)`;
+    if (current.type === 'verb') {
+      // 動詞の活用は選択肢がなく、書いて答える（選べても書けないことが多かったため）
+      answers.replaceChildren(typedForm());
+    } else {
+      answers.replaceChildren(
+        ...choices.map((c) => {
+          const b = Object.assign(document.createElement('button'), { type: 'button', className: 'answer' });
+          b.append(c.name, Object.assign(document.createElement('small'), { textContent: c.hint }));
+          b.addEventListener('click', () => answer(c));
+          return b;
+        }),
+      );
+    }
     if (current.prompt) {
       // 単語の「見て意味を選ぶ」「意味からフランス語を選ぶ」は、文字だけで出題する
       wordLabel.textContent = current.prompt;
@@ -213,6 +219,47 @@ const items = [
     }
   }
 
+  // 書いて答える問題の入力欄。アクセント記号はキーボードで入れにくいので、押すだけで入力できるボタンも付ける
+  function typedForm() {
+    const form = Object.assign(document.createElement('div'), { className: 'typed' });
+    const input = Object.assign(document.createElement('input'), { type: 'text', autocomplete: 'off', spellcheck: false, lang: 'fr' });
+    input.setAttribute('autocapitalize', 'off');
+    const keys = Object.assign(document.createElement('div'), { className: 'keys' });
+    for (const k of ['é', 'è', 'ê', 'à', 'ç', "'"]) {
+      const b = Object.assign(document.createElement('button'), { type: 'button', className: 'key', textContent: k });
+      b.addEventListener('mousedown', (e) => e.preventDefault());
+      b.addEventListener('click', () => {
+        if (input.disabled) return;
+        input.setRangeText(k, input.selectionStart ?? input.value.length, input.selectionEnd ?? input.value.length, 'end');
+        input.focus();
+      });
+      keys.append(b);
+    }
+    const checkButton = Object.assign(document.createElement('button'), { type: 'button', className: 'pill', textContent: '答え合わせ' });
+    function check() {
+      if (!current || input.disabled || input.value.trim() === '') return;
+      const chosen = input.value.trim();
+      const verdict = judge(chosen, current.answer);
+      input.disabled = true;
+      checkButton.disabled = true;
+      // 選択肢の問題と同じ流れで記録・表示する（正解なら id を正解にそろえる）
+      answer({ id: verdict === 'ok' ? current.answer : chosen, name: chosen, hint: '' });
+      if (verdict === 'near') resultLabel.textContent = `${verdictLabel.near}　${resultLabel.textContent}`;
+      // Enter で次の問題へ進めるよう、出題ボタンにフォーカスを移す
+      nextButton.focus();
+    }
+    input.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' && !e.isComposing) check();
+    });
+    checkButton.addEventListener('click', check);
+    const row = Object.assign(document.createElement('div'), { className: 'typed-row' });
+    row.append(input, checkButton);
+    form.append(keys, row);
+    // 画面に追加された後でフォーカスする
+    setTimeout(() => input.focus());
+    return form;
+  }
+
   function toReviewItem(item: Item): ReviewItem {
     const { title, href, fr, ipa, ja, src, prompt, answer, choices } = item;
     return { title, href, fr, ipa, ja, src, prompt, answer, choices };
@@ -222,7 +269,8 @@ const items = [
     if (!current) return;
     const item = current;
     const ok = choice.id === item.answer;
-    const correctName = item.choices.find((c) => c.id === item.answer)!.name;
+    // 書いて答える問題（動詞の活用）は選択肢がないので、正解の綴りをそのまま使う
+    const correctName = item.choices.find((c) => c.id === item.answer)?.name ?? item.answer;
     total++;
     if (ok) correct++;
     push(item.key, ok);
@@ -233,8 +281,8 @@ const items = [
       chosen: choice.name,
       answer: correctName,
       ok,
-      // 単語は復習画面に問題が埋め込まれていないので、次の復習でも出せるよう中身も保存する
-      ...(item.type === 'vocab' && { item: toReviewItem(item) }),
+      // 単語と動詞の活用は復習画面に問題が埋め込まれていないので、次の復習でも出せるよう中身も保存する
+      ...((item.type === 'vocab' || item.type === 'verb') && { item: toReviewItem(item) }),
     });
     answers.querySelectorAll('button').forEach((b) => (b.disabled = true));
     resultLabel.className = `result ${ok ? 'ok' : 'ng'}`;
@@ -268,9 +316,9 @@ const items = [
     status.textContent = '結果を読み込めませんでした。結果の保存と復習は、開発サーバー（npm run dev）でだけ動きます。';
   } else {
     for (const r of results) push(r.key, r.ok);
-    // 単語の問題は、結果に保存した中身（最後に答えたときのもの）から作る
+    // 単語と動詞の活用の問題は、結果に保存した中身（最後に答えたときのもの）から作る
     const vocab = new Map<string, Item>();
-    for (const r of results) if (r.type === 'vocab' && r.item) vocab.set(r.key, { type: 'vocab', key: r.key, ...r.item });
+    for (const r of results) if ((r.type === 'vocab' || r.type === 'verb') && r.item) vocab.set(r.key, { type: r.type, key: r.key, ...r.item });
     items.push(...vocab.values());
     showQuestions(results);
     const left = items.filter((i) => isWeak(i.key)).length;
@@ -348,6 +396,41 @@ const items = [
     font-weight: 600;
     /* 理由は改行して別の行に出す */
     white-space: pre-line;
+  }
+  .answers :global(.typed-row) {
+    display: flex;
+    gap: 8px;
+  }
+  .answers :global(.typed input) {
+    flex: 1;
+    min-width: 0;
+    padding: 10px 12px;
+    border: 2px solid var(--border);
+    border-radius: 10px;
+    background: var(--bg);
+    font: inherit;
+    font-size: 1.2rem;
+    color: inherit;
+  }
+  .answers :global(.typed input:focus) {
+    outline: none;
+    border-color: var(--accent);
+  }
+  .answers :global(.keys) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+    margin-bottom: 8px;
+  }
+  .answers :global(.key) {
+    min-width: 2.4em;
+    padding: 6px 8px;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background: var(--surface);
+    font: inherit;
+    font-size: 1.1rem;
+    color: inherit;
   }
   #questions ul {
     padding-left: 1.2em;
