@@ -51,7 +51,7 @@ total_minutes: 0
 
 ### Web のクイズの結果
 
-- Web のクイズ（聞き比べ・読み方ルール・聞き取りや文書の質問・動詞の活用・復習）の結果は、答えるたびに `results/YYYY/MM/YYYY-MM-DD.jsonl` に追記される（開発サーバーでだけ動く。`apps/web/results-api.mjs`）
+- Web のクイズ（聞き比べ・読み方ルール・聞き取りや文書の質問・動詞の活用・数字の聞き取り・復習）の結果は、答えるたびに `results/YYYY/MM/YYYY-MM-DD.jsonl` に追記される（開発サーバーでだけ動く。`apps/web/results-api.mjs`）
 - 「終了」の合図で `scripts/results` を実行し、画面ごとの結果を journal に、間違えた問題を `mistakes/` に転記する。ユーザーに結果を聞き直さない
 - 復習は Web の `/review`（間違えた後に 2 回続けて正解するまで出題される）。CLI の `scripts/quiz` の結果は自動では残らないので、間違いを手で `results/` に追記する
 - 新しい内容は Web の画面で学ぶ。画面がまだない回は、先に画面を作ってから学習に入る
@@ -64,6 +64,7 @@ total_minutes: 0
   - Starter プラン（月約 30k クレジット）のため、不要な再生成は避ける
   - ボイスとモデルは `config/tts.json`。変えると音声のファイル名（ハッシュ）が変わり、全音声の再生成が必要になる
   - 会話の 2 人目（女性）の声は `config/tts.json` の `voices`（今は Lucie。Claire より聞き取りやすいため 2026-10-04 に変更）。YAML の項目に `voice: lucie` と書くとその声で読む
+  - 会話に限らず、文の話し手が女性だと推測できるとき（Enchantée、je suis japonaise などの女性形）も女性の声にする（2026-10-15、ユーザーの希望。作成済みの音声は作り直さない）
 - Web アプリで使う教材は `materials/` に YAML で置き、`scripts/gen-audio <yaml>` で音声を生成する（詳細は `apps/web/README.md`）
   - まとめて生成する前に `scripts/gen-audio --dry-run <yaml>` で件数と消費クレジットを見積もる
   - 単元 01〜10 の単語・1 文リーディング・聞き取りと、`materials/a1/common/`（数字・動詞の活用）は 2026-10-04 にまとめて作成済み。形式は各 YAML の先頭のコメントを参照

@@ -2,9 +2,11 @@
 // ディクテーション（/dictation）にも同じ処理があるが、今回の変更の範囲外なのでそのままにしている。
 
 // 大文字・小文字、句読点、空白の違いは綴りの理解と関係ないので無視する。
-// アポストロフィは入力方法で ' と ’ が混ざるのでそろえる
+// アポストロフィは入力方法で ' と ’ が混ざるのでそろえる。
+// 全角数字は半角にそろえる（数字のクイズで、日本語入力のまま打つことがあるため）
 export function normalize(s: string) {
   return s
+    .replace(/[０-９]/g, (c) => String.fromCharCode(c.charCodeAt(0) - 0xfee0))
     .toLowerCase()
     .replace(/[’`]/g, "'")
     .replace(/[.,!?;:]/g, ' ')

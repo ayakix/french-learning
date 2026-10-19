@@ -6,6 +6,7 @@ import Base from '../../../layouts/Base.astro';
 import MistakeList from '../../../components/MistakeList.astro';
 import { audioUrl } from '../../../lib/audio';
 import '../../../styles/material.css';
+import '../../../styles/quiz-keys.css';
 
 export async function getStaticPaths() {
   const entries = await getCollection('vocab');
@@ -59,6 +60,7 @@ const words = groups.flatMap((g, gi) =>
 </Base>
 
 <script>
+  import { bindQuizKeys } from '../../../scripts/quiz-keys';
   import { createMistakeList } from '../../../scripts/mistakes';
   import { play } from '../../../scripts/player';
   import { saveResult, vocabKey, type ReviewItem } from '../../../scripts/results';
@@ -205,6 +207,7 @@ const words = groups.flatMap((g, gi) =>
   groupSelect.addEventListener('change', reset);
   nextButton.addEventListener('click', ask);
   replayButton.addEventListener('click', () => current && play(current.item.src));
+  bindQuizKeys({ canNext: () => total < ROUND_SIZE });
 </script>
 
 <style>

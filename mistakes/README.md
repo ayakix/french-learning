@@ -4,3 +4,4 @@
 
 - [単元 00：発音と綴り](a1-00-pronunciation.md)
 - [単元 01：あいさつ・自己紹介](a1-01-greetings.md)
+- [数字・日付・時刻・値段](a1-numbers.md)

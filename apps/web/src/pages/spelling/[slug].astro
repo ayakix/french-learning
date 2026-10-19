@@ -4,6 +4,7 @@ import Base from '../../layouts/Base.astro';
 import MistakeList from '../../components/MistakeList.astro';
 import { audioUrl } from '../../lib/audio';
 import '../../styles/material.css';
+import '../../styles/quiz-keys.css';
 
 export async function getStaticPaths() {
   const entries = await getCollection('spellings');
@@ -37,6 +38,7 @@ const quizItems = items.map((i) => ({ ...i, src: audioUrl(i.fr) }));
 </Base>
 
 <script>
+  import { bindQuizKeys } from '../../scripts/quiz-keys';
   import { createMistakeList } from '../../scripts/mistakes';
   import { play } from '../../scripts/player';
   import { saveResult, spellingKey } from '../../scripts/results';
@@ -114,6 +116,7 @@ const quizItems = items.map((i) => ({ ...i, src: audioUrl(i.fr) }));
 
   nextButton.addEventListener('click', ask);
   replayButton.addEventListener('click', () => current && play(current.src));
+  bindQuizKeys({ canNext: () => total < ROUND_SIZE });
 </script>
 
 <style>

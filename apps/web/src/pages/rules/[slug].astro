@@ -3,6 +3,7 @@ import { getCollection, type CollectionEntry } from 'astro:content';
 import Base from '../../layouts/Base.astro';
 import MistakeList from '../../components/MistakeList.astro';
 import { audioUrl } from '../../lib/audio';
+import '../../styles/quiz-keys.css';
 
 export async function getStaticPaths() {
   const rules = await getCollection('rules');
@@ -98,6 +99,7 @@ const quizItems = quiz.map((q) => ({ ...q, ...splitShow(q.show), src: audioUrl(q
 </Base>
 
 <script>
+  import { bindQuizKeys } from '../../scripts/quiz-keys';
   import { createMistakeList } from '../../scripts/mistakes';
   import { rulesKey, saveResult } from '../../scripts/results';
   import { ROUND_SIZE, createDeck } from '../../scripts/round';
@@ -205,6 +207,7 @@ const quizItems = quiz.map((q) => ({ ...q, ...splitShow(q.show), src: audioUrl(q
 
   nextButton.addEventListener('click', ask);
   answerButtons.forEach((b) => b.addEventListener('click', () => answer(b.dataset.answer!)));
+  bindQuizKeys({ canNext: () => total < ROUND_SIZE });
 </script>
 
 <style>

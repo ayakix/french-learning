@@ -1,0 +1,17 @@
+/* 選択肢に 1〜4 の番号を付ける。キーボードの数字で答えられるように（scripts/quiz-keys.ts。2026-10-16） */
+.answers {
+  counter-reset: choice;
+}
+.answers .answer {
+  position: relative;
+  counter-increment: choice;
+}
+.answers .answer::before {
+  content: counter(choice);
+  position: absolute;
+  top: 4px;
+  left: 8px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--muted);
+}

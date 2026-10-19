@@ -21,6 +21,8 @@ const groups = entry
       </p>
     </header>
 
+    <p><a href="/numbers/quiz" class="pill primary quiz-link">聞いて数字で答える（聞き取りクイズ）→</a></p>
+
     <nav class="toolbar">
       {groups.map((g) => <a class="pill" href={`#${g.slug}`}>{g.name}</a>)}
     </nav>
@@ -89,6 +91,9 @@ const groups = entry
 </script>
 
 <style>
+  .quiz-link {
+    text-decoration: none;
+  }
   nav.toolbar a {
     text-decoration: none;
     font-size: 0.85rem;

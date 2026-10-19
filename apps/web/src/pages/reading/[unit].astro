@@ -22,6 +22,7 @@ const { unit, title, sentences } = entry.data;
         まず自分で読んで意味を考える → ▶ で発音を確かめる → 「意味と単語」で答え合わせ。
         「文を隠す」にすると、音声だけを聞いて書き取る練習（ディクテーション）になります。
       </p>
+      <p class="lead">キーボード：j / k か ↓ / ↑ で文を移動、スペースで再生、Enter で「意味と単語」を開く・閉じる。</p>
     </header>
 
     <div class="toolbar">
@@ -75,6 +76,34 @@ const { unit, title, sentences } = entry.data;
   });
   // 書き取りの答え合わせ：隠しているときは、文をクリックするとその文だけ表示する
   document.querySelectorAll('.text').forEach((el) => el.addEventListener('click', () => el.classList.add('revealed')));
+
+  // キーボードだけで読み進められるようにする（ユーザーの希望。2026-10-15）。
+  // マウスとキーボードを行き来すると、読むことへの集中が途切れるため
+  const sentences = [...document.querySelectorAll<HTMLElement>('.sentence')];
+  let current = 0;
+  function select(i: number) {
+    current = Math.max(0, Math.min(sentences.length - 1, i));
+    sentences.forEach((s, j) => s.classList.toggle('current', j === current));
+    sentences[current].scrollIntoView({ block: 'nearest' });
+  }
+  // クリックした文も選ぶ。マウスで再生した後にキーボードで続けられるように
+  sentences.forEach((s, i) => s.addEventListener('click', () => select(i)));
+  select(0);
+
+  document.addEventListener('keydown', (e) => {
+    if (e.metaKey || e.ctrlKey || e.altKey) return;
+    if (e.target instanceof HTMLSelectElement || e.target instanceof HTMLInputElement) return;
+    const sentence = sentences[current];
+    if (e.key === 'j' || e.key === 'ArrowDown') select(current + 1);
+    else if (e.key === 'k' || e.key === 'ArrowUp') select(current - 1);
+    else if (e.key === ' ') sentence.querySelector<HTMLButtonElement>('.play')!.click();
+    else if (e.key === 'Enter') {
+      const details = sentence.querySelector('details')!;
+      details.open = !details.open;
+    } else return;
+    // 既定の動作（ページのスクロール、フォーカス中のボタンや summary の操作）と二重に動かないよう止める
+    e.preventDefault();
+  });
 </script>
 
 <style>
@@ -86,6 +115,9 @@ const { unit, title, sentences } = entry.data;
   .sentence {
     margin-bottom: 10px;
     padding: 12px 16px;
+  }
+  .sentence.current {
+    outline: 2px solid var(--accent);
   }
   .row {
     display: flex;

@@ -7,6 +7,7 @@ import Base from '../layouts/Base.astro';
 import { audioUrl } from '../lib/audio';
 import { contrastKey, rulesKey, spellingKey } from '../scripts/results';
 import '../styles/material.css';
+import '../styles/quiz-keys.css';
 
 const contrasts = await getCollection('contrasts');
 const rules = await getCollection('rules');
@@ -102,12 +103,13 @@ const items = [
 </Base>
 
 <script>
+  import { bindQuizKeys } from '../scripts/quiz-keys';
   import { judge, verdictLabel } from '../scripts/judge';
   import { loadResults, saveResult, type ReviewItem, type SavedResult } from '../scripts/results';
 
   type Choice = { id: string; name: string; hint: string };
   type Item = {
-    type: 'contrast' | 'rules' | 'spelling' | 'vocab' | 'verb';
+    type: 'contrast' | 'rules' | 'spelling' | 'vocab' | 'verb' | 'number';
     key: string;
     title: string;
     href: string;
@@ -188,10 +190,10 @@ const items = [
     const shuffled = current.type === 'spelling' || current.type === 'vocab';
     const choices = shuffled ? [...current.choices].sort(() => Math.random() - 0.5) : current.choices;
     // 単語の選択肢（意味・フランス語）は長いので 2 列にする
-    answers.style.gridTemplateColumns = `repeat(${current.type === 'vocab' ? 2 : current.type === 'verb' ? 1 : current.choices.length}, 1fr)`;
-    if (current.type === 'verb') {
-      // 動詞の活用は選択肢がなく、書いて答える（選べても書けないことが多かったため）
-      answers.replaceChildren(typedForm());
+    answers.style.gridTemplateColumns = `repeat(${current.type === 'vocab' ? 2 : current.type === 'verb' || current.type === 'number' ? 1 : current.choices.length}, 1fr)`;
+    if (current.type === 'verb' || current.type === 'number') {
+      // 動詞の活用は選択肢がなく、書いて答える（選べても書けないことが多かったため）。数字も聞いて数字で書く
+      answers.replaceChildren(typedForm(current.type === 'verb'));
     } else {
       answers.replaceChildren(
         ...choices.map((c) => {
@@ -220,7 +222,8 @@ const items = [
   }
 
   // 書いて答える問題の入力欄。アクセント記号はキーボードで入れにくいので、押すだけで入力できるボタンも付ける
-  function typedForm() {
+  // withKeys：アクセント記号のボタンを出すか（数字では使わないので出さない）
+  function typedForm(withKeys: boolean) {
     const form = Object.assign(document.createElement('div'), { className: 'typed' });
     const input = Object.assign(document.createElement('input'), { type: 'text', autocomplete: 'off', spellcheck: false, lang: 'fr' });
     input.setAttribute('autocapitalize', 'off');
@@ -249,12 +252,15 @@ const items = [
       nextButton.focus();
     }
     input.addEventListener('keydown', (e) => {
-      if (e.key === 'Enter' && !e.isComposing) check();
+      if (e.key !== 'Enter' || e.isComposing) return;
+      // 既定の動作を止める。止めないと、check() でフォーカスを移した出題ボタンが同じ Enter で押され、答えを見る前に次の問題へ進んでしまう（2026-10-14）
+      e.preventDefault();
+      check();
     });
     checkButton.addEventListener('click', check);
     const row = Object.assign(document.createElement('div'), { className: 'typed-row' });
     row.append(input, checkButton);
-    form.append(keys, row);
+    form.append(...(withKeys ? [keys] : []), row);
     // 画面に追加された後でフォーカスする
     setTimeout(() => input.focus());
     return form;
@@ -281,8 +287,8 @@ const items = [
       chosen: choice.name,
       answer: correctName,
       ok,
-      // 単語と動詞の活用は復習画面に問題が埋め込まれていないので、次の復習でも出せるよう中身も保存する
-      ...((item.type === 'vocab' || item.type === 'verb') && { item: toReviewItem(item) }),
+      // 単語・動詞の活用・数字は復習画面に問題が埋め込まれていないので、次の復習でも出せるよう中身も保存する
+      ...((item.type === 'vocab' || item.type === 'verb' || item.type === 'number') && { item: toReviewItem(item) }),
     });
     answers.querySelectorAll('button').forEach((b) => (b.disabled = true));
     resultLabel.className = `result ${ok ? 'ok' : 'ng'}`;
@@ -316,9 +322,9 @@ const items = [
     status.textContent = '結果を読み込めませんでした。結果の保存と復習は、開発サーバー（npm run dev）でだけ動きます。';
   } else {
     for (const r of results) push(r.key, r.ok);
-    // 単語と動詞の活用の問題は、結果に保存した中身（最後に答えたときのもの）から作る
+    // 単語・動詞の活用・数字の問題は、結果に保存した中身（最後に答えたときのもの）から作る
     const vocab = new Map<string, Item>();
-    for (const r of results) if ((r.type === 'vocab' || r.type === 'verb') && r.item) vocab.set(r.key, { type: r.type, key: r.key, ...r.item });
+    for (const r of results) if ((r.type === 'vocab' || r.type === 'verb' || r.type === 'number') && r.item) vocab.set(r.key, { type: r.type, key: r.key, ...r.item });
     items.push(...vocab.values());
     showQuestions(results);
     const left = items.filter((i) => isWeak(i.key)).length;
@@ -332,7 +338,14 @@ const items = [
   }
 
   nextButton.addEventListener('click', ask);
+  // 答えた後は Tab でも次の問題へ進める（ユーザーの希望。2026-10-14）。フォーカスは答え合わせのときに出題ボタンへ移している
+  nextButton.addEventListener('keydown', (e) => {
+    if (e.key !== 'Tab' || e.shiftKey) return;
+    e.preventDefault();
+    nextButton.click();
+  });
   replayButton.addEventListener('click', () => current && play(current.src));
+  bindQuizKeys();
 </script>
 
 <style>

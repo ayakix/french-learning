@@ -12,6 +12,12 @@ export async function getStaticPaths() {
 const { entry } = Astro.props as { entry: CollectionEntry<'vocab'> };
 const { unit, title, groups } = entry.data;
 const total = groups.reduce((n, g) => n + g.words.length, 0);
+
+// 冠詞で性がわかる名詞（un / une、le / la、du / de la）には、カードごとの「男」「女」を付けない。
+// 冠詞と印が重なって、どの語の性か紛らわしかったため（2026-10-16、un infirmier / une infirmière 男 の表示で混乱した）。
+// 代わりに、名詞のあるグループの最初に「un なら男性、une なら女性」と一度だけ書く。
+// 冠詞から性がわからないもの（l'、les、des、冠詞なし）だけ、カードに印を付ける
+const showsGender = (fr: string) => /^(un|une|le|la|du|de la) /i.test(fr);
 ---
 
 <Base title={`${unit} 単語`}>
@@ -48,6 +54,12 @@ const total = groups.reduce((n, g) => n + g.words.length, 0);
             </h2>
             <button type="button" class="pill play-group">▶ まとめて再生</button>
           </div>
+          {g.words.some((w) => w.g) && (
+            <p class="gender-note">
+              名詞は un（le・du）が付いていたら男性、une（la・de la）なら女性。
+              {g.words.some((w) => w.f) && '「un … / une …」の 2 つが並ぶ語は、男性のときの形と女性のときの形。'}
+            </p>
+          )}
           <ul class="words">
             {g.words.map((w) => (
               <li>
@@ -55,7 +67,7 @@ const total = groups.reduce((n, g) => n + g.words.length, 0);
                   <span class="line">
                     <span class="fr">{w.fr}</span>
                     {w.f && <span class="fem">/ {w.f}</span>}
-                    {w.g && <span class={`gender ${w.g}`}>{w.g === 'm' ? '男' : '女'}</span>}
+                    {w.g && !w.f && !showsGender(w.fr) && <span class={`gender ${w.g}`}>{w.g === 'm' ? '男' : '女'}</span>}
                   </span>
                   <span class="ipa">
                     [{w.ipa}]{w.f_ipa && ` / [${w.f_ipa}]`}
@@ -192,6 +204,11 @@ const total = groups.reduce((n, g) => n + g.words.length, 0);
   }
   .fem {
     font-weight: 600;
+  }
+  .gender-note {
+    margin: -4px 0 10px;
+    font-size: 0.85rem;
+    color: var(--muted);
   }
   .gender {
     font-size: 0.7rem;

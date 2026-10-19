@@ -42,7 +42,7 @@ const units = [...new Set(verbs.map((v) => v.unit).filter(Boolean))].sort();
       <a href="/verbs" class="back">← 動詞の活用</a>
       <h1>動詞の活用クイズ</h1>
       <p class="lead">
-        主語から書いて、Enter で答え合わせ（もう一度 Enter で次の問題）。20 問ずつ解きます。大文字・小文字と句読点は区別しません。
+        主語から書いて、Enter で答え合わせ（もう一度 Enter か Tab で次の問題）。20 問ずつ解きます。大文字・小文字と句読点は区別しません。
         間違えた問題は復習画面（/review）にも出ます。
       </p>
     </header>
@@ -251,7 +251,16 @@ const units = [...new Set(verbs.map((v) => v.unit).filter(Boolean))].sort();
   });
 
   input.addEventListener('keydown', (e) => {
-    if (e.key === 'Enter' && !e.isComposing) check();
+    if (e.key !== 'Enter' || e.isComposing) return;
+    // 既定の動作を止める。止めないと、check() でフォーカスを移した出題ボタンが同じ Enter で押され、答えを見る前に次の問題へ進んでしまう（2026-10-14）
+    e.preventDefault();
+    check();
+  });
+  // 答えた後は Tab でも次の問題へ進める（ユーザーの希望。2026-10-14）。フォーカスは答え合わせのときに出題ボタンへ移している
+  nextButton.addEventListener('keydown', (e) => {
+    if (e.key !== 'Tab' || e.shiftKey) return;
+    e.preventDefault();
+    nextButton.click();
   });
   checkButton.addEventListener('click', check);
   modeSelect.addEventListener('change', reset);
