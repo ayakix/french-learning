@@ -41,3 +41,8 @@
 | 2026-10-19 | 1 文リーディング（自己申告） | 15 番 Je travaille à Lyon | 分からなかった：travaille | 働いている（travailler の je の形） | 活用は parler と同じ -er。ill は「イユ」[tʁavaj]。英語の travel の語源 |
 | 2026-10-19 | 活用クイズ（主語と原形から書く） | j'habite / vous habitez | ja'bite / vous habitons | j'habite / vous habitez | j' の後に habite をそのまま続ける（h は読まないが書く）。vous は -ez、-ons は nous。この日は 18 / 20 |
 | 2026-10-19 | 聞き取り（/listening/01-1・自己申告） | J'habite à Lyon | 音がつながって聞き取れなかった | J'habite à Lyon | habite の t と à がつながって「ジャビタ」（アンシェヌマン）。Lyon は 1 音節 [ljɔ̃]。問題は 3 / 3 |
+| 2026-10-20 | 単語クイズ（聞いて意味） | l'Angleterre / l'anglais | 英語 / イギリス | イギリス（イングランド） / 英語 | 最後が「エ」[ɛ] なら言語。terre は「土地」（terrain・territory）、Angleterre ＝ アングル人の土地（England と同じ）。この日は 18 / 20 |
+| 2026-10-20 | 聞き取り（/listening/01-2） | 年齢・国籍・クラス番号 | 20 ans / français / 4 | 19 ans / belge / 14 | dix-neuf ans は f が v になって「ディズヌヴァン」。Je parle français は話せる言語で、国籍は Je suis belge。quatorze は最後に [z]（11〜16）。1 回目 0 / 3、解き直し 3 / 3 |
+| 2026-10-20 | 活用クイズ（主語と原形から書く） | il parle | il parlent | il parle | il（1 人）は -e、ils（複数）は -ent。音は同じなので主語の s で決める。この日は 19 / 20 |
+| 2026-10-20 | 聞き取り（/listening/01-3） | Pablo est... | italien | espagnol | Pablo, un étudiant espagnol。フランス語は国籍が名詞の後ろ（英語は a Spanish student）。この日は 2 / 3 |
+| 2026-10-21 | 活用クイズ（主語と原形から書く） | tu es / il est | tu et / il este | tu es / il est | es と est は音が同じ [ɛ] でつづりだけ違う。et は「〜と」（and）で別の語。est の後ろに e は付けない。この日の être は 18 / 20 |
