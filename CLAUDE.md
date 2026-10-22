@@ -53,7 +53,7 @@ total_minutes: 0
 
 - Web のクイズ（聞き比べ・読み方ルール・聞き取りや文書の質問・動詞の活用・数字の聞き取り・復習）の結果は、答えるたびに `results/YYYY/MM/YYYY-MM-DD.jsonl` に追記される（開発サーバーでだけ動く。`apps/web/results-api.mjs`）
 - 「終了」の合図で `scripts/results` を実行し、画面ごとの結果を journal に、間違えた問題を `mistakes/` に転記する。ユーザーに結果を聞き直さない
-- 復習は Web の `/review`（間違えた後に 2 回続けて正解するまで出題される）。CLI の `scripts/quiz` の結果は自動では残らないので、間違いを手で `results/` に追記する
+- 復習は Web の `/review`（間違えた後に 2 回続けて正解するまで出題される）。開く前に `scripts/review-left` で残りを確かめ、なければ `/review` は省略して次に進む（空の画面を開かせない）。CLI の `scripts/quiz` の結果は自動では残らないので、間違いを手で `results/` に追記する
 - 新しい内容は Web の画面で学ぶ。画面がまだない回は、先に画面を作ってから学習に入る
 - 学習で画面を使うときは、URL を伝えるだけでなく `open -a "Google Chrome" <URL>` でユーザーの Chrome に開く（1 つ終わったら次の画面を開く）
 

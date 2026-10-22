@@ -1,0 +1,23 @@
+#!/bin/bash
+# Web の復習画面（/review）に出る問題が残っているかを、画面を開かずに数える。
+# 使い方: scripts/review-left
+#
+# /review を開く前に Claude が確かめるため。復習する問題がないのに画面を開くのはユーザーの時間の無駄（2026-10-22 に指摘）。
+# 判定は apps/web/src/pages/review.astro と同じ：
+#   - 聞き取り・文書の質問（question）と書き取り（dictation）は、最後の結果が不正解のもの
+#   - それ以外（単語・動詞の活用・数字など）は、一度でも間違え、まだ最後の 2 回が続けて正解になっていないもの
+set -euo pipefail
+
+root="$(cd "$(dirname "$0")/.." && pwd)"
+shopt -s nullglob
+files=("$root"/results/*/*/*.jsonl)
+[ ${#files[@]} -gt 0 ] || { echo "復習する問題はありません（結果なし）"; exit 0; }
+
+jq -rs '
+  def weak:
+    if (.[0].type == "question" or .[0].type == "dictation") then (.[-1].ok | not)
+    else (any(.[]; .ok | not)) and ((length < 2) or ((.[-1].ok and .[-2].ok) | not))
+    end;
+  [group_by(.key)[] | select(weak) | "\(.[0].page)\t\(.[-1].word)（正解：\(.[-1].answer)）"]
+  | if length == 0 then "復習する問題はありません" else "復習する問題：\(length) 件", .[] end
+' "${files[@]}"
