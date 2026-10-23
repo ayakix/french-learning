@@ -46,3 +46,4 @@
 | 2026-10-20 | 活用クイズ（主語と原形から書く） | il parle | il parlent | il parle | il（1 人）は -e、ils（複数）は -ent。音は同じなので主語の s で決める。この日は 19 / 20 |
 | 2026-10-20 | 聞き取り（/listening/01-3） | Pablo est... | italien | espagnol | Pablo, un étudiant espagnol。フランス語は国籍が名詞の後ろ（英語は a Spanish student）。この日は 2 / 3 |
 | 2026-10-21 | 活用クイズ（主語と原形から書く） | tu es / il est | tu et / il este | tu es / il est | es と est は音が同じ [ɛ] でつづりだけ違う。et は「〜と」（and）で別の語。est の後ろに e は付けない。この日の être は 18 / 20 |
+| 2026-10-23 | 活用クイズ（主語と原形から書く） | tu t'appelles ×2 / ils s'appellent ×2 / nous nous appelons | tu s'appeles・tu t'appelle / ils appellent・ils s'appelent / nous nous appelent | tu t'appelles / ils s'appellent / nous nous appelons | 「自分を」は主語とペア（je → m'、tu → t'、il・ils → s'、nous → nous、vous → vous。英語の myself / yourself と同じ対応）。語尾を読まない形（je・tu・il・ils）は ll。10-18 の 13 / 20 → 15 / 20 |
