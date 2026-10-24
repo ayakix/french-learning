@@ -47,3 +47,5 @@
 | 2026-10-20 | 聞き取り（/listening/01-3） | Pablo est... | italien | espagnol | Pablo, un étudiant espagnol。フランス語は国籍が名詞の後ろ（英語は a Spanish student）。この日は 2 / 3 |
 | 2026-10-21 | 活用クイズ（主語と原形から書く） | tu es / il est | tu et / il este | tu es / il est | es と est は音が同じ [ɛ] でつづりだけ違う。et は「〜と」（and）で別の語。est の後ろに e は付けない。この日の être は 18 / 20 |
 | 2026-10-23 | 活用クイズ（主語と原形から書く） | tu t'appelles ×2 / ils s'appellent ×2 / nous nous appelons | tu s'appeles・tu t'appelle / ils appellent・ils s'appelent / nous nous appelent | tu t'appelles / ils s'appellent / nous nous appelons | 「自分を」は主語とペア（je → m'、tu → t'、il・ils → s'、nous → nous、vous → vous。英語の myself / yourself と同じ対応）。語尾を読まない形（je・tu・il・ils）は ll。10-18 の 13 / 20 → 15 / 20 |
+| 2026-10-24 | 復習（/review・主語と原形から書く） | nous nous appelons | nous nous appelont | nous nous appelons | nous の語尾は -ons。10-23 に続いて 2 回目 |
+| 2026-10-24 | 活用クイズ（主語と原形から書く） | j'habite / tu habites / il habite | j'abite / tu habite / il habites | j'habite / tu habites / il habite | h は読まないが書く。tu は -es、il は -e（音は同じ）。この日の habiter は 17 / 20 |

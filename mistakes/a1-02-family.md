@@ -5,3 +5,5 @@
 | 2026-10-22 | 単語クイズ（聞いて意味） | une femme / une fille | 姪 / 姉・妹 | 妻・女性 / 娘・女の子 | femme は「ファム」[fam]（e なのに「ア」）。fille は「フィーユ」[fij]、姪は nièce [njɛs]、姉妹は sœur [sœʁ]。家族の 1 回目は 18 / 20 |
 | 2026-10-23 | 単語クイズ（聞いて意味） | un homme / une personne / un garçon / âgé | 人 / 人々 / 男の人 / 隣人（男） | 男の人 / 人 / 男の子 / 高齢の | homme（男の人）・personne（1 人の人）・gens（人々）を役割で分ける。garçon は男の子（カフェの店員の呼びかけにも）。隣人は voisin。「人」は 19 / 23 |
 | 2026-10-23 | 単語クイズ（聞いて意味） | un oiseau / un chien | うさぎ / 馬 | 鳥 / 犬 | oiseau「ワゾ」[wazo]（un とつながって「アンナワゾ」）、うさぎは lapin「ラパン」。chien「シヤン」[ʃjɛ̃]、馬は cheval「シュヴァル」。「ペット」は 19 / 21 |
+| 2026-10-24 | 復習（/review・聞いて意味） | un homme / un chien / un oiseau | 子ども / うさぎ / 動物 | 男の人 / 犬 / 鳥 | 10-23 に続いて 2 回目。人・ペットの語がまだ音と結びついていない。/review は 15 / 19 |
+| 2026-10-24 | 単語クイズ（聞いて意味） | frisé / brun / mince / beau / court / grand | 太っている / めがね / 栗色の / 短い / かわいい / 金髪の | 巻き毛の / 茶〜黒っぽい髪の / やせている / 美しい / 短い / 背が高い | 意味のグループ内で混同。髪の色 4 語（blond・brun・châtain・roux）、体型 4 語（grand・petit・mince・gros）、長短（long・court）に小分けして覚える。「外見」は 14 / 20 |
